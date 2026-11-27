@@ -1,0 +1,4506 @@
+[
+  {
+    "id": "B01-H0-json-1701",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 419,
+          "completion_tokens": 174,
+          "total_tokens": 593,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3616
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 621,
+          "completion_tokens": 133,
+          "total_tokens": 754,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2845
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-json-1702",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 419,
+          "completion_tokens": 121,
+          "total_tokens": 540,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2185
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 568,
+          "completion_tokens": 114,
+          "total_tokens": 682,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2653
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-json-1703",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 419,
+          "completion_tokens": 151,
+          "total_tokens": 570,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2073
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 598,
+          "completion_tokens": 125,
+          "total_tokens": 723,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1775
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-oui-1701",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 405,
+          "completion_tokens": 131,
+          "total_tokens": 536,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3491
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 564,
+          "completion_tokens": 134,
+          "total_tokens": 698,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3150
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-oui-1702",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 405,
+          "completion_tokens": 114,
+          "total_tokens": 519,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1810
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 547,
+          "completion_tokens": 97,
+          "total_tokens": 644,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1609
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-oui-1703",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 405,
+          "completion_tokens": 98,
+          "total_tokens": 503,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1792
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 531,
+          "completion_tokens": 100,
+          "total_tokens": 631,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1811
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-json-1701",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 475,
+          "completion_tokens": 106,
+          "total_tokens": 581,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3510
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 609,
+          "completion_tokens": 105,
+          "total_tokens": 714,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2296
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-json-1702",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 475,
+          "completion_tokens": 107,
+          "total_tokens": 582,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2514
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 610,
+          "completion_tokens": 107,
+          "total_tokens": 717,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1538
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-json-1703",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 475,
+          "completion_tokens": 98,
+          "total_tokens": 573,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1531
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 601,
+          "completion_tokens": 87,
+          "total_tokens": 688,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1700
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-oui-1701",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 461,
+          "completion_tokens": 97,
+          "total_tokens": 558,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3240
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 586,
+          "completion_tokens": 89,
+          "total_tokens": 675,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1766
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-oui-1702",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 461,
+          "completion_tokens": 99,
+          "total_tokens": 560,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1973
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 588,
+          "completion_tokens": 101,
+          "total_tokens": 689,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1853
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-oui-1703",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 461,
+          "completion_tokens": 510,
+          "total_tokens": 971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6224
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 999,
+          "completion_tokens": 93,
+          "total_tokens": 1092,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1501
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-json-1701",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 585,
+          "completion_tokens": 139,
+          "total_tokens": 724,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2151
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 752,
+          "completion_tokens": 125,
+          "total_tokens": 877,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1819
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-json-1702",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 585,
+          "completion_tokens": 98,
+          "total_tokens": 683,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1825
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-json-1703",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 585,
+          "completion_tokens": 94,
+          "total_tokens": 679,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1612
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-oui-1701",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 514,
+          "completion_tokens": 96,
+          "total_tokens": 610,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1690
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-oui-1702",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 514,
+          "completion_tokens": 91,
+          "total_tokens": 605,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1664
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-oui-1703",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 514,
+          "completion_tokens": 151,
+          "total_tokens": 665,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2552
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-json-1701",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 434,
+          "completion_tokens": 236,
+          "total_tokens": 670,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3200
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 698,
+          "completion_tokens": 204,
+          "total_tokens": 902,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2727
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-json-1702",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 434,
+          "completion_tokens": 235,
+          "total_tokens": 669,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3015
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 697,
+          "completion_tokens": 217,
+          "total_tokens": 914,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3174
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-json-1703",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 434,
+          "completion_tokens": 294,
+          "total_tokens": 728,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3937
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 756,
+          "completion_tokens": 198,
+          "total_tokens": 954,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2440
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-oui-1701",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 420,
+          "completion_tokens": 314,
+          "total_tokens": 734,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5346
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 762,
+          "completion_tokens": 202,
+          "total_tokens": 964,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2836
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-oui-1702",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 420,
+          "completion_tokens": 282,
+          "total_tokens": 702,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3545
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 730,
+          "completion_tokens": 236,
+          "total_tokens": 966,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3493
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-oui-1703",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 420,
+          "completion_tokens": 351,
+          "total_tokens": 771,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5937
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 799,
+          "completion_tokens": 196,
+          "total_tokens": 995,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2738
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-json-1701",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 490,
+          "completion_tokens": 256,
+          "total_tokens": 746,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3371
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 774,
+          "completion_tokens": 174,
+          "total_tokens": 948,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2314
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-json-1702",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 490,
+          "completion_tokens": 224,
+          "total_tokens": 714,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3189
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-json-1703",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 490,
+          "completion_tokens": 236,
+          "total_tokens": 726,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2833
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-oui-1701",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 476,
+          "completion_tokens": 112,
+          "total_tokens": 588,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2109
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 616,
+          "completion_tokens": 139,
+          "total_tokens": 755,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2594
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-oui-1702",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 476,
+          "completion_tokens": 295,
+          "total_tokens": 771,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3789
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-oui-1703",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 476,
+          "completion_tokens": 153,
+          "total_tokens": 629,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2009
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 657,
+          "completion_tokens": 194,
+          "total_tokens": 851,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2512
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-json-1701",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 600,
+          "completion_tokens": 232,
+          "total_tokens": 832,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2932
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-json-1702",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 600,
+          "completion_tokens": 244,
+          "total_tokens": 844,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3516
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-json-1703",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 600,
+          "completion_tokens": 280,
+          "total_tokens": 880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3304
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-oui-1701",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 529,
+          "completion_tokens": 257,
+          "total_tokens": 786,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3391
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-oui-1702",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 529,
+          "completion_tokens": 250,
+          "total_tokens": 779,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3569
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-oui-1703",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 529,
+          "completion_tokens": 273,
+          "total_tokens": 802,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3891
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B03-H0-json-1701",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 480,
+          "completion_tokens": 768,
+          "total_tokens": 1248,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8118
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1275,
+          "completion_tokens": 768,
+          "total_tokens": 2043,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8419
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-json-1702",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 480,
+          "completion_tokens": 221,
+          "total_tokens": 701,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2967
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 729,
+          "completion_tokens": 279,
+          "total_tokens": 1008,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4264
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-json-1703",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 480,
+          "completion_tokens": 385,
+          "total_tokens": 865,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5240
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 893,
+          "completion_tokens": 465,
+          "total_tokens": 1358,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5826
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-oui-1701",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 466,
+          "completion_tokens": 623,
+          "total_tokens": 1089,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6759
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1117,
+          "completion_tokens": 503,
+          "total_tokens": 1620,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5645
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-oui-1702",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 466,
+          "completion_tokens": 469,
+          "total_tokens": 935,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5511
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 963,
+          "completion_tokens": 581,
+          "total_tokens": 1544,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6270
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n\n'text' !== 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-oui-1703",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 466,
+          "completion_tokens": 377,
+          "total_tokens": 843,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4258
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": true,
+        "usage": {
+          "prompt_tokens": 871,
+          "completion_tokens": 376,
+          "total_tokens": 1247,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4228
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-json-1701",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 536,
+          "completion_tokens": 768,
+          "total_tokens": 1304,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8552
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1331,
+          "completion_tokens": 768,
+          "total_tokens": 2099,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8223
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-json-1702",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 536,
+          "completion_tokens": 219,
+          "total_tokens": 755,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2945
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 783,
+          "completion_tokens": 276,
+          "total_tokens": 1059,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3617
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-json-1703",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 536,
+          "completion_tokens": 357,
+          "total_tokens": 893,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 10343
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 921,
+          "completion_tokens": 463,
+          "total_tokens": 1384,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6122
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-oui-1701",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 522,
+          "completion_tokens": 606,
+          "total_tokens": 1128,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6735
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1156,
+          "completion_tokens": 622,
+          "total_tokens": 1778,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6848
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-oui-1702",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 522,
+          "completion_tokens": 768,
+          "total_tokens": 1290,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8466
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1317,
+          "completion_tokens": 768,
+          "total_tokens": 2085,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 17666
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-oui-1703",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 522,
+          "completion_tokens": 624,
+          "total_tokens": 1146,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 9416
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": true,
+        "usage": {
+          "prompt_tokens": 1174,
+          "completion_tokens": 626,
+          "total_tokens": 1800,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 7393
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-json-1701",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 646,
+          "completion_tokens": 444,
+          "total_tokens": 1090,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5539
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1132,
+          "completion_tokens": 384,
+          "total_tokens": 1516,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5081
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-json-1702",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 646,
+          "completion_tokens": 356,
+          "total_tokens": 1002,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4769
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1044,
+          "completion_tokens": 356,
+          "total_tokens": 1400,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6004
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-json-1703",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 646,
+          "completion_tokens": 458,
+          "total_tokens": 1104,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5787
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1146,
+          "completion_tokens": 544,
+          "total_tokens": 1690,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6615
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-oui-1701",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 575,
+          "completion_tokens": 442,
+          "total_tokens": 1017,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5117
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1045,
+          "completion_tokens": 427,
+          "total_tokens": 1472,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5407
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-oui-1702",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 575,
+          "completion_tokens": 390,
+          "total_tokens": 965,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6151
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 990,
+          "completion_tokens": 390,
+          "total_tokens": 1380,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4791
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-oui-1703",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 575,
+          "completion_tokens": 460,
+          "total_tokens": 1035,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4874
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1060,
+          "completion_tokens": 447,
+          "total_tokens": 1507,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5590
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-json-1701",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 462,
+          "completion_tokens": 768,
+          "total_tokens": 1230,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8412
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1257,
+          "completion_tokens": 768,
+          "total_tokens": 2025,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8317
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-json-1702",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 462,
+          "completion_tokens": 377,
+          "total_tokens": 839,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5835
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 867,
+          "completion_tokens": 380,
+          "total_tokens": 1247,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5403
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-json-1703",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 462,
+          "completion_tokens": 334,
+          "total_tokens": 796,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4576
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 824,
+          "completion_tokens": 324,
+          "total_tokens": 1148,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3657
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-oui-1701",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 448,
+          "completion_tokens": 136,
+          "total_tokens": 584,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2014
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 612,
+          "completion_tokens": 144,
+          "total_tokens": 756,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2072
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-oui-1702",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 448,
+          "completion_tokens": 139,
+          "total_tokens": 587,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2392
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 615,
+          "completion_tokens": 147,
+          "total_tokens": 762,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3129
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-oui-1703",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 448,
+          "completion_tokens": 168,
+          "total_tokens": 616,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3179
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 644,
+          "completion_tokens": 170,
+          "total_tokens": 814,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2263
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-json-1701",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 518,
+          "completion_tokens": 577,
+          "total_tokens": 1095,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6168
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1123,
+          "completion_tokens": 768,
+          "total_tokens": 1891,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 8507
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-json-1702",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 518,
+          "completion_tokens": 589,
+          "total_tokens": 1107,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 7401
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1135,
+          "completion_tokens": 591,
+          "total_tokens": 1726,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 6584
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-json-1703",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 518,
+          "completion_tokens": 485,
+          "total_tokens": 1003,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5154
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1031,
+          "completion_tokens": 487,
+          "total_tokens": 1518,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5807
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-oui-1701",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 504,
+          "completion_tokens": 177,
+          "total_tokens": 681,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2980
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 709,
+          "completion_tokens": 179,
+          "total_tokens": 888,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2565
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-oui-1702",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 504,
+          "completion_tokens": 214,
+          "total_tokens": 718,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 3104
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 746,
+          "completion_tokens": 79,
+          "total_tokens": 825,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1429
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n\n'text' !== 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-oui-1703",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 504,
+          "completion_tokens": 159,
+          "total_tokens": 663,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2160
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 691,
+          "completion_tokens": 77,
+          "total_tokens": 768,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1293
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n\n'text' !== 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-json-1701",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 628,
+          "completion_tokens": 413,
+          "total_tokens": 1041,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4821
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1084,
+          "completion_tokens": 417,
+          "total_tokens": 1501,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4794
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-json-1702",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 628,
+          "completion_tokens": 419,
+          "total_tokens": 1047,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5118
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1089,
+          "completion_tokens": 428,
+          "total_tokens": 1517,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 4890
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-json-1703",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 628,
+          "completion_tokens": 426,
+          "total_tokens": 1054,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5907
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 1096,
+          "completion_tokens": 426,
+          "total_tokens": 1522,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 5509
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-oui-1701",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 557,
+          "completion_tokens": 217,
+          "total_tokens": 774,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2780
+      }
+    ],
+    "functional": {
+      "pass": true,
+      "checked": 124
+    }
+  },
+  {
+    "id": "B04-H2-oui-1702",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 557,
+          "completion_tokens": 210,
+          "total_tokens": 767,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2671
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 797,
+          "completion_tokens": 215,
+          "total_tokens": 1012,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2502
+      }
+    ],
+    "functional": {
+      "pass": true,
+      "checked": 124
+    }
+  },
+  {
+    "id": "B04-H2-oui-1703",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 557,
+          "completion_tokens": 207,
+          "total_tokens": 764,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 2765
+      }
+    ],
+    "functional": {
+      "pass": true,
+      "checked": 124
+    }
+  },
+  {
+    "id": "B06-H0-json-1701",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 412,
+          "completion_tokens": 38,
+          "total_tokens": 450,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1073
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 478,
+          "completion_tokens": 39,
+          "total_tokens": 517,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1052
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-json-1702",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 412,
+          "completion_tokens": 68,
+          "total_tokens": 480,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1872
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 508,
+          "completion_tokens": 69,
+          "total_tokens": 577,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1416
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-json-1703",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 412,
+          "completion_tokens": 35,
+          "total_tokens": 447,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 961
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 475,
+          "completion_tokens": 42,
+          "total_tokens": 517,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1095
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-oui-1701",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 398,
+          "completion_tokens": 41,
+          "total_tokens": 439,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1280
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 467,
+          "completion_tokens": 43,
+          "total_tokens": 510,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1183
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-oui-1702",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 398,
+          "completion_tokens": 37,
+          "total_tokens": 435,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1218
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 463,
+          "completion_tokens": 44,
+          "total_tokens": 507,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1221
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-oui-1703",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 398,
+          "completion_tokens": 35,
+          "total_tokens": 433,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 975
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 461,
+          "completion_tokens": 37,
+          "total_tokens": 498,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1158
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-json-1701",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 468,
+          "completion_tokens": 43,
+          "total_tokens": 511,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1136
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 539,
+          "completion_tokens": 43,
+          "total_tokens": 582,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1321
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-json-1702",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 468,
+          "completion_tokens": 59,
+          "total_tokens": 527,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1358
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 555,
+          "completion_tokens": 62,
+          "total_tokens": 617,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1245
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-json-1703",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 468,
+          "completion_tokens": 31,
+          "total_tokens": 499,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1200
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 527,
+          "completion_tokens": 31,
+          "total_tokens": 558,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1056
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-oui-1701",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 37,
+          "total_tokens": 491,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1299
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 519,
+          "completion_tokens": 50,
+          "total_tokens": 569,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1187
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-oui-1702",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 32,
+          "total_tokens": 486,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1221
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 514,
+          "completion_tokens": 35,
+          "total_tokens": 549,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 983
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-oui-1703",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 39,
+          "total_tokens": 493,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1261
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 521,
+          "completion_tokens": 41,
+          "total_tokens": 562,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1023
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-json-1701",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 578,
+          "completion_tokens": 61,
+          "total_tokens": 639,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1364
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 667,
+          "completion_tokens": 61,
+          "total_tokens": 728,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1252
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-json-1702",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 578,
+          "completion_tokens": 62,
+          "total_tokens": 640,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1301
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-json-1703",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 578,
+          "completion_tokens": 53,
+          "total_tokens": 631,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1460
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 659,
+          "completion_tokens": 53,
+          "total_tokens": 712,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1555
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-oui-1701",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 507,
+          "completion_tokens": 64,
+          "total_tokens": 571,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1279
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-oui-1702",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 507,
+          "completion_tokens": 70,
+          "total_tokens": 577,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1535
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-oui-1703",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "prompt_tokens": 507,
+          "completion_tokens": 42,
+          "total_tokens": 549,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "latencyMs": 1070
+      }
+    ],
+    "functional": null
+  }
+]

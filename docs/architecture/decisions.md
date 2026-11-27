@@ -24,3 +24,5 @@ Alternatives considered: chat-centric faster initial delivery but context/artifa
 2026-11-27 · UI-02 evidence and proposed protocol direction are recorded in [ADR 0001](adr/0001-genui-protocol-feasibility.md). Human architecture review is pending.
 
 2026-11-27 · OpenUI Lang is conditionally accepted as the primary candidate and json-render is retained for comparison. [ADR 0002](adr/0002-generated-spec-admission.md) supersedes the fixture-only admission proposal. Its restricted runtime and Goal 2 readiness assessment await human review.
+
+2026-11-27 · ADR 0002 conditionally accepted for Goal 2A only. [ADR 0003](adr/0003-restricted-generation.md) records the restricted generation results, residual risks and proposed next experiment. Human architecture review is pending.

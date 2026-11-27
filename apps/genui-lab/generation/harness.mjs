@@ -1,0 +1,24 @@
+export const version='2a.1'
+export const tasks={
+ B01:'Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.',
+ B02:'Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.',
+ B03:'Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.',
+ B04:'Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.',
+ B06:'What does BYOK mean in a model-powered application?'
+}
+const common='Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.'
+const profiles={
+ oui:'One assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text("text"), Metric("label",numericValue), Control("label",literalMin,literalMax,choices,$variable), Table([{label:"name",score:number}]), Graphic("label",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,"score","desc") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.',
+ json:'Return strict JSON with only root (element ID) and elements (object). Root element {"type":"Stack","props":{},"children":["leafId"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{"$bindState":"/name"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {"$state":"/name"}. Computations use {"$computed":"Add","args":{"a":number,"b":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.'
+}
+const policy='Choose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.'
+const examples={
+ oui:'UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control("Hours", 0, 12, [], $hours)\nminutes = Metric("Minutes", $hours * 60)',
+ json:'UI\nSTATE {"hours":1}\n{"root":"layout","elements":{"layout":{"type":"Stack","props":{},"children":["knob","minutes"]},"knob":{"type":"Control","props":{"label":"Hours","min":0,"max":12,"choices":[],"value":{"$bindState":"/hours"}}},"minutes":{"type":"Metric","props":{"label":"Minutes","value":{"$computed":"Multiply","args":{"a":{"$state":"/hours"},"b":60}}}}}}'
+}
+export function messages(protocol,variant,task,previous){
+ const system=[common,profiles[protocol],...(variant==='H0'?[]:[policy]),...(variant==='H2'?['Example for an unrelated duration converter:',examples[protocol]]:[])].join('\n')
+ const result=[{role:'system',content:system},{role:'user',content:tasks[task]}]
+ if(previous)result.push({role:'assistant',content:previous.raw},{role:'user',content:'The complete response was rejected: '+previous.diagnostic+'. Return one complete corrected response.'})
+ return result
+}

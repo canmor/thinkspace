@@ -1,0 +1,70 @@
+{
+  "task": "B02",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B02-H0-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "To decouple the Conversation Engine, Context Engine, and Application Orchestrator, you can create separate interfaces or abstract classes for each component. Each interface or abstract class should define the methods that the component needs to implement. Then, you can create concrete implementations of these interfaces or abstract classes for each component. Finally, you can create a third component that acts as the orchestrator, which will use the interfaces or abstract classes to interact with the other components. The orchestrator can then coordinate the interactions between the components and ensure that they are working together as intended.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 113,
+        "prompt_tokens": 439,
+        "total_tokens": 552,
+        "prompt_tokens_details": {
+          "cached_tokens": 402
+        }
+      },
+      "latencyMs": 1102,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack([leafName, otherLeaf])\",\n    \"Leaf('Text', 'text')\",\n    \"Leaf('Metric', 'label', 10)\",\n    \"Leaf('Control', 'budget', 50, 100, ['yes', 'no'], $variable)\",\n    \"Leaf('Table', [{label: 'name', score: 100}])\",\n    \"Leaf('Graphic', 'budget', ['group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text', 'path', 'group', 'circle', 'text',",
+      "finish": "length",
+      "usage": {
+        "completion_tokens": 768,
+        "prompt_tokens": 581,
+        "total_tokens": 1349,
+        "prompt_tokens_details": {
+          "cached_tokens": 551
+        }
+      },
+      "latencyMs": 7317,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Incomplete provider output: length",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "To decouple the Conversation Engine, Context Engine, and Application Orchestrator, you can create separate interfaces or abstract classes for each component. Each interface or abstract class should define the methods that the component needs to implement. Then, you can create concrete implementations of these interfaces or abstract classes for each component. Finally, you can create a third component that acts as the orchestrator, which will use the interfaces or abstract classes to interact with the other components. The orchestrator can then coordinate the interactions between the components and ensure that they are working together as intended."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

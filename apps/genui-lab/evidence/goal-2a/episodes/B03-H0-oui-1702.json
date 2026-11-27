@@ -1,0 +1,70 @@
+{
+  "task": "B03",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B03-H0-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Table([{label:\\\"Native Hybrid\\\",score:40},{label:\\\"Tauri\\\",score:25},{label:\\\"Electron\\\",score:35}])\",\n    \"Control(\\\"Native Experience\\\",40,40,40,40)\",\n    \"Control(\\\"Lightweight Runtime\\\",25,25,25,25)\",\n    \"Control(\\\"Delivery Efficiency\\\",35,35,35,35)\"\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 107,
+        "prompt_tokens": 489,
+        "total_tokens": 596,
+        "prompt_tokens_details": {
+          "cached_tokens": 394
+        }
+      },
+      "latencyMs": 998,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Invalid or duplicate declaration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Table([{label:\\\"Native Hybrid\\\",score:40},{label:\\\"Tauri\\\",score:25},{label:\\\"Electron\\\",score:35}])\",\n    \"Control(\\\"Native Experience\\\",40,40,40,40)\",\n    \"Control(\\\"Lightweight Runtime\\\",25,25,25,25)\",\n    \"Control(\\\"Delivery Efficiency\\\",35,35,35,35)\"\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 107,
+        "prompt_tokens": 624,
+        "total_tokens": 731,
+        "prompt_tokens_details": {
+          "cached_tokens": 595
+        }
+      },
+      "latencyMs": 967,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Invalid or duplicate declaration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\n{\n  \"root\": [\n    \"Table([{label:\\\"Native Hybrid\\\",score:40},{label:\\\"Tauri\\\",score:25},{label:\\\"Electron\\\",score:35}])\",\n    \"Control(\\\"Native Experience\\\",40,40,40,40)\",\n    \"Control(\\\"Lightweight Runtime\\\",25,25,25,25)\",\n    \"Control(\\\"Delivery Efficiency\\\",35,35,35,35)\"\n  ]\n}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Invalid or duplicate declaration. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

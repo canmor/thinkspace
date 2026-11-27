@@ -1,0 +1,70 @@
+{
+  "task": "B06",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1703,
+  "id": "B06-H0-oui-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "BYOK stands for Bring Your Own Key, which is a security practice in which a user is responsible for managing their own cryptographic keys and certificates. This approach allows users to have more control over their security and can be used in a variety of scenarios, including cloud computing, mobile devices, and embedded systems.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 416,
+        "total_tokens": 478,
+        "prompt_tokens_details": {
+          "cached_tokens": 400
+        }
+      },
+      "latencyMs": 664,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        }
+      ]
+    },
+    {
+      "raw": "UI",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 507,
+        "total_tokens": 509,
+        "prompt_tokens_details": {
+          "cached_tokens": 477
+        }
+      },
+      "latencyMs": 52,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        },
+        {
+          "role": "assistant",
+          "content": "BYOK stands for Bring Your Own Key, which is a security practice in which a user is responsible for managing their own cryptographic keys and certificates. This approach allows users to have more control over their security and can be used in a variety of scenarios, including cloud computing, mobile devices, and embedded systems."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

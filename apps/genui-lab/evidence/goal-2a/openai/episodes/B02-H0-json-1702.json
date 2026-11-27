@@ -1,0 +1,84 @@
+{
+  "task": "B02",
+  "variant": "H0",
+  "protocol": "json",
+  "seed": 1702,
+  "id": "B02-H0-json-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clear separation of responsibilities and well-defined interfaces:\n\n1. Conversation Engine: Owns message storage and lineage tracking. It manages the sequence and history of messages, ensuring consistency and retrieval of conversation state.\n\n2. Context Engine: Independently selects relevant references and manages budgeting (limits) on context usage. It provides context snippets or data on demand without managing message history.\n\n3. Application Orchestrator: Coordinates interactions between Conversation and Context Engines. It triggers context selection based on conversation state, manages budgets, and integrates results to drive application logic.\n\nDecoupling strategy:\n- Define clear APIs for each engine: Conversation Engine exposes message history and lineage queries; Context Engine exposes context retrieval and budgeting controls.\n- Use asynchronous or event-driven communication so the Orchestrator can request context updates and receive message updates without tight coupling.\n- Keep data ownership exclusive: Conversation Engine owns messages; Context Engine owns references and budgets; Orchestrator owns coordination logic.\n- Avoid shared mutable state; pass data via messages or API calls.\n- This separation allows independent development, testing, scaling, and replacement of each component.",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 434,
+        "completion_tokens": 235,
+        "total_tokens": 669,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 3015,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ]
+    },
+    {
+      "raw": "TEXT To decouple a Conversation Engine, Context Engine, and Application Orchestrator, assign clear responsibilities and define explicit interfaces:\n\n- The Conversation Engine exclusively manages messages and their lineage, maintaining conversation history and message sequencing.\n\n- The Context Engine independently handles selecting relevant references and managing context usage budgets, providing context data without managing message history.\n\n- The Application Orchestrator coordinates these engines by invoking context selection based on conversation state, managing budgets, and integrating results to control application flow.\n\nDecoupling is achieved by:\n\n1. Defining clear APIs so the Conversation Engine exposes message history and lineage queries, while the Context Engine exposes context retrieval and budgeting controls.\n\n2. Using asynchronous or event-driven communication so the Orchestrator can request context updates and receive message updates without tight coupling.\n\n3. Maintaining exclusive data ownership—messages by the Conversation Engine, references and budgets by the Context Engine, and coordination logic by the Orchestrator.\n\n4. Avoiding shared mutable state by passing data through messages or API calls.\n\nThis separation enables independent development, testing, scaling, and replacement of each component.",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 697,
+        "completion_tokens": 217,
+        "total_tokens": 914,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 3174,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clear separation of responsibilities and well-defined interfaces:\n\n1. Conversation Engine: Owns message storage and lineage tracking. It manages the sequence and history of messages, ensuring consistency and retrieval of conversation state.\n\n2. Context Engine: Independently selects relevant references and manages budgeting (limits) on context usage. It provides context snippets or data on demand without managing message history.\n\n3. Application Orchestrator: Coordinates interactions between Conversation and Context Engines. It triggers context selection based on conversation state, manages budgets, and integrates results to drive application logic.\n\nDecoupling strategy:\n- Define clear APIs for each engine: Conversation Engine exposes message history and lineage queries; Context Engine exposes context retrieval and budgeting controls.\n- Use asynchronous or event-driven communication so the Orchestrator can request context updates and receive message updates without tight coupling.\n- Keep data ownership exclusive: Conversation Engine owns messages; Context Engine owns references and budgets; Orchestrator owns coordination logic.\n- Avoid shared mutable state; pass data via messages or API calls.\n- This separation allows independent development, testing, scaling, and replacement of each component."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

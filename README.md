@@ -23,3 +23,7 @@ Handoff baseline: 2026-11-27. Product discovery, not an implemented system. Star
 ## Goal 1.5 evidence
 
 [Generated specification admission, trust boundaries and Goal 2 readiness](docs/architecture/adr/0002-generated-spec-admission.md).
+
+## Goal 2A evidence
+
+[Restricted generation results and architecture review](docs/architecture/adr/0003-restricted-generation.md) · [Run or replay the experiments](apps/genui-lab/generation/README.md).

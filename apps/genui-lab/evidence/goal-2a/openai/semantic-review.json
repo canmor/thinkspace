@@ -1,0 +1,152 @@
+[
+  {
+    "id": "B01-H1-oui-1703",
+    "semanticCorrect": true,
+    "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B01-H2-json-1702",
+    "semanticCorrect": true,
+    "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B01-H2-json-1703",
+    "semanticCorrect": true,
+    "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B01-H2-oui-1701",
+    "semanticCorrect": true,
+    "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B01-H2-oui-1702",
+    "semanticCorrect": true,
+    "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B01-H2-oui-1703",
+    "semanticCorrect": true,
+    "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H1-json-1702",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H1-json-1703",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H1-oui-1702",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-json-1701",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-json-1702",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-json-1703",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-oui-1701",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Assigns budget management to both Context Engine and Orchestrator.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-oui-1703",
+    "semanticCorrect": true,
+    "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B03-H0-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Claims a slider and ranking are displayed, but returns their proposed source as inert prose.",
+    "presentationIssue": "Specification printed as text."
+  },
+  {
+    "id": "B04-H1-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Claims interactive inputs are present, but delivers a prose description.",
+    "presentationIssue": "Requested explorer is absent."
+  },
+  {
+    "id": "B04-H1-oui-1703",
+    "semanticCorrect": false,
+    "reason": "Claims interactive inputs are present, but delivers a prose description.",
+    "presentationIssue": "Requested explorer is absent."
+  },
+  {
+    "id": "B04-H2-oui-1701",
+    "semanticCorrect": false,
+    "reason": "Introduces a First class fare outside the fictional rules.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B04-H2-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Introduces a First class fare and Silver membership outside the fictional rules.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B04-H2-oui-1703",
+    "semanticCorrect": true,
+    "reason": "Uses only the specified fare and membership cases. Fee and allowance agree with the exhaustive independent oracle.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B06-H2-json-1702",
+    "semanticCorrect": false,
+    "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B06-H2-oui-1701",
+    "semanticCorrect": false,
+    "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B06-H2-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B06-H2-oui-1703",
+    "semanticCorrect": false,
+    "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+    "presentationIssue": null
+  }
+]

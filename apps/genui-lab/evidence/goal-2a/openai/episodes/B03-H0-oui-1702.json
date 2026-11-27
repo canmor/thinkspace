@@ -1,0 +1,84 @@
+{
+  "task": "B03",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B03-H0-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "root = Stack([WeightsControl, ScoresTable, NormalizedWeightsText, RankedResultsText])\n\nWeightsControl = Control(\"Adjust Criteria Weights\",0,100,[40,25,35],$weights)\nweights = integer\n\nNormalizedWeightsText = Text(\"Normalized Weights: \" + (sumWeights == 0 ? \"N/A\" : \"Native Experience: \" + nativeNorm + \", Lightweight Runtime: \" + lightweightNorm + \", Delivery Efficiency: \" + deliveryNorm))\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", native:9, lightweight:8, delivery:7},\n  {label:\"Tauri\", native:7, lightweight:8, delivery:8},\n  {label:\"Electron\", native:6, lightweight:4, delivery:10}\n])\n\nsumWeights = weights[0] + weights[1] + weights[2]\nnativeNorm = sumWeights == 0 ? 0 : weights[0] * 1.0 / sumWeights\nlightweightNorm = sumWeights == 0 ? 0 : weights[1] * 1.0 / sumWeights\ndeliveryNorm = sumWeights == 0 ? 0 : weights[2] * 1.0 / sumWeights\n\nscoreNativeHybrid = 9 * nativeNorm + 8 * lightweightNorm + 7 * deliveryNorm\nscoreTauri = 7 * nativeNorm + 8 * lightweightNorm + 8 * deliveryNorm\nscoreElectron = 6 * nativeNorm + 4 * lightweightNorm + 10 * deliveryNorm\n\nranked = sumWeights == 0 ? [] : @Sort([\n  {label:\"Native Hybrid\", score:scoreNativeHybrid},\n  {label:\"Tauri\", score:scoreTauri},\n  {label:\"Electron\", score:scoreElectron}\n],\"score\",\"desc\")\n\nrankStrings = sumWeights == 0 ? \"No ranking (all weights zero)\" : \"Ranking:\\n1. \" + ranked[0].label + \" (\" + ranked[0].score + \")\\n2. \" + ranked[1].label + \" (\" + ranked[1].score + \")\\n3. \" + ranked[2].label + \" (\" + ranked[2].score + \")\"\n\nRankedResultsText = Text(rankStrings)",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 469,
+        "total_tokens": 935,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 5511,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "TEXT\nAdjust the criteria weights using the slider below. The scores for Native Hybrid, Tauri, and Electron are weighted by native experience, lightweight runtime, and delivery efficiency. Normalized weights and ranking are shown. If all weights are zero, no ranking is displayed.\n\nroot = Stack([WeightsControl, NormalizedWeightsText, ScoresTable, RankedResultsText])\n\nweights = integer[3]\nweights = [40,25,35]\n\nWeightsControl = Control(\"Criteria Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,weights,$weights)\n\nsumWeights = weights[0] + weights[1] + weights[2]\nnativeNorm = sumWeights == 0 ? 0 : weights[0] / sumWeights\nlightweightNorm = sumWeights == 0 ? 0 : weights[1] / sumWeights\ndeliveryNorm = sumWeights == 0 ? 0 : weights[2] / sumWeights\n\nNormalizedWeightsText = Text(\n  sumWeights == 0 ? \n  \"Normalized Weights: N/A (all weights zero)\" : \n  \"Normalized Weights: Native Experience: \" + (nativeNorm*100).toFixed(1) + \"%, Lightweight Runtime: \" + (lightweightNorm*100).toFixed(1) + \"%, Delivery Efficiency: \" + (deliveryNorm*100).toFixed(1) + \"%\"\n)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", native:9, lightweight:8, delivery:7},\n  {label:\"Tauri\", native:7, lightweight:8, delivery:8},\n  {label:\"Electron\", native:6, lightweight:4, delivery:10}\n])\n\nscoreNativeHybrid = 9 * nativeNorm + 8 * lightweightNorm + 7 * deliveryNorm\nscoreTauri = 7 * nativeNorm + 8 * lightweightNorm + 8 * deliveryNorm\nscoreElectron = 6 * nativeNorm + 4 * lightweightNorm + 10 * deliveryNorm\n\nranked = sumWeights == 0 ? [] : @Sort([\n  {label:\"Native Hybrid\", score:scoreNativeHybrid},\n  {label:\"Tauri\", score:scoreTauri},\n  {label:\"Electron\", score:scoreElectron}\n],\"score\",\"desc\")\n\nrankStrings = sumWeights == 0 ? \"No ranking (all weights zero)\" : \n  \"Ranking:\\n1. \" + ranked[0].label + \" (\" + ranked[0].score.toFixed(2) + \")\\n2. \" + ranked[1].label + \" (\" + ranked[1].score.toFixed(2) + \")\\n3. \" + ranked[2].label + \" (\" + ranked[2].score.toFixed(2) + \")\"\n\nRankedResultsText = Text(rankStrings)",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 963,
+        "completion_tokens": 581,
+        "total_tokens": 1544,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 6270,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "text",
+      "text": "Adjust the criteria weights using the slider below. The scores for Native Hybrid, Tauri, and Electron are weighted by native experience, lightweight runtime, and delivery efficiency. Normalized weights and ranking are shown. If all weights are zero, no ranking is displayed.\n\nroot = Stack([WeightsControl, NormalizedWeightsText, ScoresTable, RankedResultsText])\n\nweights = integer[3]\nweights = [40,25,35]\n\nWeightsControl = Control(\"Criteria Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,weights,$weights)\n\nsumWeights = weights[0] + weights[1] + weights[2]\nnativeNorm = sumWeights == 0 ? 0 : weights[0] / sumWeights\nlightweightNorm = sumWeights == 0 ? 0 : weights[1] / sumWeights\ndeliveryNorm = sumWeights == 0 ? 0 : weights[2] / sumWeights\n\nNormalizedWeightsText = Text(\n  sumWeights == 0 ? \n  \"Normalized Weights: N/A (all weights zero)\" : \n  \"Normalized Weights: Native Experience: \" + (nativeNorm*100).toFixed(1) + \"%, Lightweight Runtime: \" + (lightweightNorm*100).toFixed(1) + \"%, Delivery Efficiency: \" + (deliveryNorm*100).toFixed(1) + \"%\"\n)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", native:9, lightweight:8, delivery:7},\n  {label:\"Tauri\", native:7, lightweight:8, delivery:8},\n  {label:\"Electron\", native:6, lightweight:4, delivery:10}\n])\n\nscoreNativeHybrid = 9 * nativeNorm + 8 * lightweightNorm + 7 * deliveryNorm\nscoreTauri = 7 * nativeNorm + 8 * lightweightNorm + 8 * deliveryNorm\nscoreElectron = 6 * nativeNorm + 4 * lightweightNorm + 10 * deliveryNorm\n\nranked = sumWeights == 0 ? [] : @Sort([\n  {label:\"Native Hybrid\", score:scoreNativeHybrid},\n  {label:\"Tauri\", score:scoreTauri},\n  {label:\"Electron\", score:scoreElectron}\n],\"score\",\"desc\")\n\nrankStrings = sumWeights == 0 ? \"No ranking (all weights zero)\" : \n  \"Ranking:\\n1. \" + ranked[0].label + \" (\" + ranked[0].score.toFixed(2) + \")\\n2. \" + ranked[1].label + \" (\" + ranked[1].score.toFixed(2) + \")\\n3. \" + ranked[2].label + \" (\" + ranked[2].score.toFixed(2) + \")\"\n\nRankedResultsText = Text(rankStrings)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "root = Stack([WeightsControl, ScoresTable, NormalizedWeightsText, RankedResultsText])\n\nWeightsControl = Control(\"Adjust Criteria Weights\",0,100,[40,25,35],$weights)\nweights = integer\n\nNormalizedWeightsText = Text(\"Normalized Weights: \" + (sumWeights == 0 ? \"N/A\" : \"Native Experience: \" + nativeNorm + \", Lightweight Runtime: \" + lightweightNorm + \", Delivery Efficiency: \" + deliveryNorm))\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", native:9, lightweight:8, delivery:7},\n  {label:\"Tauri\", native:7, lightweight:8, delivery:8},\n  {label:\"Electron\", native:6, lightweight:4, delivery:10}\n])\n\nsumWeights = weights[0] + weights[1] + weights[2]\nnativeNorm = sumWeights == 0 ? 0 : weights[0] * 1.0 / sumWeights\nlightweightNorm = sumWeights == 0 ? 0 : weights[1] * 1.0 / sumWeights\ndeliveryNorm = sumWeights == 0 ? 0 : weights[2] * 1.0 / sumWeights\n\nscoreNativeHybrid = 9 * nativeNorm + 8 * lightweightNorm + 7 * deliveryNorm\nscoreTauri = 7 * nativeNorm + 8 * lightweightNorm + 8 * deliveryNorm\nscoreElectron = 6 * nativeNorm + 4 * lightweightNorm + 10 * deliveryNorm\n\nranked = sumWeights == 0 ? [] : @Sort([\n  {label:\"Native Hybrid\", score:scoreNativeHybrid},\n  {label:\"Tauri\", score:scoreTauri},\n  {label:\"Electron\", score:scoreElectron}\n],\"score\",\"desc\")\n\nrankStrings = sumWeights == 0 ? \"No ranking (all weights zero)\" : \"Ranking:\\n1. \" + ranked[0].label + \" (\" + ranked[0].score + \")\\n2. \" + ranked[1].label + \" (\" + ranked[1].score + \")\\n3. \" + ranked[2].label + \" (\" + ranked[2].score + \")\"\n\nRankedResultsText = Text(rankStrings)"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

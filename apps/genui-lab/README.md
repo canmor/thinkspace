@@ -38,3 +38,7 @@ The adapters use the published package sources recorded in the lockfile. The jso
 OpenUI's React renderer initializes dollar-prefixed bindings from initialState, and publishes the store snapshot on updates. Its language core implements Sum and Sort. Both 1.2.0 packages ship the MIT license. [Official repository](https://github.com/thesysdev/openui) · [Reactive state](https://www.openui.com/docs/openui-lang/reactive-state)
 
 Apps SDK UI 0.2.2 supplies the version Badge in the host. The common input, scalar, table and SVG components belong to this lab. The package includes an MIT license with OpenAI's copyright notice. [Official repository](https://github.com/openai/apps-sdk-ui) · [License texts from installed packages](licenses)
+
+## Goal 2A generation
+
+[Run restricted generation, inspect evidence and replay without a provider](generation/README.md). [Architecture findings](../../docs/architecture/adr/0003-restricted-generation.md).

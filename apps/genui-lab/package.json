@@ -4,7 +4,10 @@
   "scripts": {
     "test": "playwright test",
     "dev": "vite",
-    "build": "tsc --noEmit && vite build"
+    "build": "tsc --noEmit && vite build",
+    "generate": "node generation/run.mjs",
+    "replay": "node generation/audit.mjs",
+    "report": "node generation/report.mjs"
   },
   "type": "module",
   "dependencies": {

@@ -1,0 +1,70 @@
+{
+  "task": "B01",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B01-H0-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "The geometric meaning of a vector dot product is the projection of one vector onto another. It is a scalar value that represents the amount of one vector that is parallel to another. The dot product of two vectors A and B is given by the formula:\n\nA · B = |A| |B| cos(θ)\n\nwhere |A| and |B| are the magnitudes of vectors A and B, and θ is the angle between them.\n\nIf A and B are orthogonal vectors, meaning they are perpendicular to each other, then cos(θ) = 0. In this case, the dot product is zero, and the vectors are perpendicular to each other.\n\nIf A and B are negative projections of each other, meaning one vector is the negative of the other, then cos(θ) = -1. In this case, the dot product is negative, and the vectors are pointing in opposite directions.\n\nThe dot product can also be used to find the angle between two vectors. If A and B are unit vectors (i.e., their magnitudes are 1), then the dot product is simply the cosine of the angle between them. For example, if A · B = 0.5, then the angle between A and B is 60 degrees.\n\nIn summary, the geometric meaning of a vector dot product is the projection of one vector onto another, and it can be used to find the angle between two vectors and to determine if two vectors are orthogonal or negative projections of each other.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 305,
+        "prompt_tokens": 423,
+        "total_tokens": 728,
+        "prompt_tokens_details": {
+          "cached_tokens": 400
+        }
+      },
+      "latencyMs": 2772,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack([leafName, otherLeaf])\",\n    \"Text('text')\",\n    \"Metric('label',numericValue)\",\n    \"Control('label',literalMin,literalMax,choices,$variable)\",\n    \"Table([{label:\"name\",score:number}])\",\n    \"Graphic('label',items)\"\n  ],\n  \"variables\": {\n    \"$variable\": {\n      \"type\": \"integer\"\n    }\n  }\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 97,
+        "prompt_tokens": 757,
+        "total_tokens": 854,
+        "prompt_tokens_details": {
+          "cached_tokens": 727
+        }
+      },
+      "latencyMs": 1011,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Invalid or duplicate declaration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "The geometric meaning of a vector dot product is the projection of one vector onto another. It is a scalar value that represents the amount of one vector that is parallel to another. The dot product of two vectors A and B is given by the formula:\n\nA · B = |A| |B| cos(θ)\n\nwhere |A| and |B| are the magnitudes of vectors A and B, and θ is the angle between them.\n\nIf A and B are orthogonal vectors, meaning they are perpendicular to each other, then cos(θ) = 0. In this case, the dot product is zero, and the vectors are perpendicular to each other.\n\nIf A and B are negative projections of each other, meaning one vector is the negative of the other, then cos(θ) = -1. In this case, the dot product is negative, and the vectors are pointing in opposite directions.\n\nThe dot product can also be used to find the angle between two vectors. If A and B are unit vectors (i.e., their magnitudes are 1), then the dot product is simply the cosine of the angle between them. For example, if A · B = 0.5, then the angle between A and B is 60 degrees.\n\nIn summary, the geometric meaning of a vector dot product is the projection of one vector onto another, and it can be used to find the angle between two vectors and to determine if two vectors are orthogonal or negative projections of each other."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

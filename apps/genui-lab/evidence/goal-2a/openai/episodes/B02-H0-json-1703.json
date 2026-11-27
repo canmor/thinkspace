@@ -1,0 +1,84 @@
+{
+  "task": "B02",
+  "variant": "H0",
+  "protocol": "json",
+  "seed": 1703,
+  "id": "B02-H0-json-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clear separation of responsibilities, well-defined interfaces, and asynchronous communication patterns:\n\n1. Conversation Engine:\n- Owns messages and lineage (conversation history and structure).\n- Exposes APIs to add, retrieve, and update messages and lineage data.\n- Does not manage context selection or budgeting; it only stores and provides conversation data.\n\n2. Context Engine:\n- Responsible for selecting relevant references and managing their usage budgets.\n- Interfaces with the Conversation Engine to receive conversation state or message cues.\n- Provides APIs to request context references and report usage.\n- Does not store messages or lineage; focuses solely on context management.\n\n3. Application Orchestrator:\n- Coordinates interactions between Conversation and Context Engines.\n- Calls Conversation Engine APIs to get conversation state.\n- Requests context references from Context Engine based on conversation needs.\n- Manages workflows, timing, and error handling.\n- Acts as the mediator without owning message or context data.\n\nKey decoupling strategies:\n- Define clear API contracts for each engine with minimal overlap.\n- Use asynchronous messaging or event-driven communication to avoid tight coupling.\n- Keep data ownership exclusive: Conversation Engine owns messages; Context Engine owns references.\n- Orchestrator manages control flow but not data storage.\n- Employ dependency injection or service registries to allow engines to be replaced or updated independently.\n\nThis separation improves modularity, testability, scalability, and maintainability of the overall system.",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 434,
+        "completion_tokens": 294,
+        "total_tokens": 728,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 3937,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ]
+    },
+    {
+      "raw": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator requires clear separation of responsibilities and well-defined interfaces:\n\n1. Conversation Engine owns messages and lineage (conversation history). It provides APIs to add, retrieve, and update messages and their relationships but does not manage context or references.\n\n2. Context Engine selects and budgets references relevant to the conversation. It interfaces with the Conversation Engine to understand current conversation state but only manages context data and usage limits, not messages.\n\n3. Application Orchestrator coordinates the two engines. It queries the Conversation Engine for conversation state, requests context references from the Context Engine, and manages workflow, timing, and error handling without owning message or context data.\n\nKey decoupling principles:\n- Each engine owns distinct data and logic domains.\n- Communication occurs via well-defined APIs or asynchronous events.\n- The Orchestrator acts as a mediator, not a data owner.\n- This modular design enables independent development, testing, and scaling of each component.",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 756,
+        "completion_tokens": 198,
+        "total_tokens": 954,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 2440,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clear separation of responsibilities, well-defined interfaces, and asynchronous communication patterns:\n\n1. Conversation Engine:\n- Owns messages and lineage (conversation history and structure).\n- Exposes APIs to add, retrieve, and update messages and lineage data.\n- Does not manage context selection or budgeting; it only stores and provides conversation data.\n\n2. Context Engine:\n- Responsible for selecting relevant references and managing their usage budgets.\n- Interfaces with the Conversation Engine to receive conversation state or message cues.\n- Provides APIs to request context references and report usage.\n- Does not store messages or lineage; focuses solely on context management.\n\n3. Application Orchestrator:\n- Coordinates interactions between Conversation and Context Engines.\n- Calls Conversation Engine APIs to get conversation state.\n- Requests context references from Context Engine based on conversation needs.\n- Manages workflows, timing, and error handling.\n- Acts as the mediator without owning message or context data.\n\nKey decoupling strategies:\n- Define clear API contracts for each engine with minimal overlap.\n- Use asynchronous messaging or event-driven communication to avoid tight coupling.\n- Keep data ownership exclusive: Conversation Engine owns messages; Context Engine owns references.\n- Orchestrator manages control flow but not data storage.\n- Employ dependency injection or service registries to allow engines to be replaced or updated independently.\n\nThis separation improves modularity, testability, scalability, and maintainability of the overall system."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

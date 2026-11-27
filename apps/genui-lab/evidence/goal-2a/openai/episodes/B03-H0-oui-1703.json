@@ -1,0 +1,84 @@
+{
+  "task": "B03",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1703,
+  "id": "B03-H0-oui-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "root = Stack([WeightsControl, ScoresTable, RankingText])\n\nWeightsControl = Control(\"Weights\",0,100,[40,25,35],$weights)\nweights = 40 + 25 + 35\n\nSumWeights = weights\nNormWeights = SumWeights == 0 ? [0,0,0] : [$weights[0]*100/SumWeights, $weights[1]*100/SumWeights, $weights[2]*100/SumWeights]\n\nScores = [\n  {name:\"Native Hybrid\", scores:[9,8,7]},\n  {name:\"Tauri\", scores:[7,8,8]},\n  {name:\"Electron\", scores:[6,4,10]}\n]\n\nWeightedScores = [\n  {name:\"Native Hybrid\", score: NormWeights[0]*9 + NormWeights[1]*8 + NormWeights[2]*7},\n  {name:\"Tauri\", score: NormWeights[0]*7 + NormWeights[1]*8 + NormWeights[2]*8},\n  {name:\"Electron\", score: NormWeights[0]*6 + NormWeights[1]*4 + NormWeights[2]*10}\n]\n\nSortedScores = SumWeights == 0 ? [] : @Sort(WeightedScores,\"score\",\"desc\")\n\nRankingText = Text(10,120, SumWeights == 0 ? \"No ranking: all weights are zero.\" : \"Ranking: \" + SortedScores[0].name + \" > \" + SortedScores[1].name + \" > \" + SortedScores[2].name)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", score: WeightedScores[0].score/100},\n  {label:\"Tauri\", score: WeightedScores[1].score/100},\n  {label:\"Electron\", score: WeightedScores[2].score/100}\n])",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 466,
+        "completion_tokens": 377,
+        "total_tokens": 843,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 4258,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "UI\nroot = Stack([WeightsControl, ScoresTable, RankingText])\n\nWeightsControl = Control(\"Weights\",0,100,[40,25,35],$weights)\n\nweights = $weights[0] + $weights[1] + $weights[2]\n\nNormWeights = weights == 0 ? [0,0,0] : [$weights[0]*100/weights, $weights[1]*100/weights, $weights[2]*100/weights]\n\nScores = [\n  {name:\"Native Hybrid\", scores:[9,8,7]},\n  {name:\"Tauri\", scores:[7,8,8]},\n  {name:\"Electron\", scores:[6,4,10]}\n]\n\nWeightedScores = [\n  {name:\"Native Hybrid\", score: NormWeights[0]*9 + NormWeights[1]*8 + NormWeights[2]*7},\n  {name:\"Tauri\", score: NormWeights[0]*7 + NormWeights[1]*8 + NormWeights[2]*8},\n  {name:\"Electron\", score: NormWeights[0]*6 + NormWeights[1]*4 + NormWeights[2]*10}\n]\n\nSortedScores = weights == 0 ? [] : @Sort(WeightedScores,\"score\",\"desc\")\n\nRankingText = Text(10,120, weights == 0 ? \"No ranking: all weights are zero.\" : \"Ranking: \" + SortedScores[0].name + \" > \" + SortedScores[1].name + \" > \" + SortedScores[2].name)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", score: WeightedScores[0].score/100},\n  {label:\"Tauri\", score: WeightedScores[1].score/100},\n  {label:\"Electron\", score: WeightedScores[2].score/100}\n])",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 871,
+        "completion_tokens": 376,
+        "total_tokens": 1247,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 4228,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Unsupported syntax: MemberExpression",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "root = Stack([WeightsControl, ScoresTable, RankingText])\n\nWeightsControl = Control(\"Weights\",0,100,[40,25,35],$weights)\nweights = 40 + 25 + 35\n\nSumWeights = weights\nNormWeights = SumWeights == 0 ? [0,0,0] : [$weights[0]*100/SumWeights, $weights[1]*100/SumWeights, $weights[2]*100/SumWeights]\n\nScores = [\n  {name:\"Native Hybrid\", scores:[9,8,7]},\n  {name:\"Tauri\", scores:[7,8,8]},\n  {name:\"Electron\", scores:[6,4,10]}\n]\n\nWeightedScores = [\n  {name:\"Native Hybrid\", score: NormWeights[0]*9 + NormWeights[1]*8 + NormWeights[2]*7},\n  {name:\"Tauri\", score: NormWeights[0]*7 + NormWeights[1]*8 + NormWeights[2]*8},\n  {name:\"Electron\", score: NormWeights[0]*6 + NormWeights[1]*4 + NormWeights[2]*10}\n]\n\nSortedScores = SumWeights == 0 ? [] : @Sort(WeightedScores,\"score\",\"desc\")\n\nRankingText = Text(10,120, SumWeights == 0 ? \"No ranking: all weights are zero.\" : \"Ranking: \" + SortedScores[0].name + \" > \" + SortedScores[1].name + \" > \" + SortedScores[2].name)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", score: WeightedScores[0].score/100},\n  {label:\"Tauri\", score: WeightedScores[1].score/100},\n  {label:\"Electron\", score: WeightedScores[2].score/100}\n])"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

@@ -121,7 +121,11 @@ function Pane({ task, format }: { task: string; format: Protocol }) {
       projection: {
         inputs: frame.state,
         outputs: { ...outputs.current },
-        components: frame.items.map(({ type, props }) => ({ type, props })),
+        components: frame.items.map(({ type, props }, index) => ({
+          index,
+          type,
+          props,
+        })),
         rules: { protocol: format, revision },
         artifactId: id,
         revision,
@@ -248,6 +252,7 @@ function App() {
             {k}
           </button>
         ))}
+        <a href="/replay.html">Generation replay</a>
       </nav>
       <div className="panes">
         {(["json", "oui"] as const).map((f) => (

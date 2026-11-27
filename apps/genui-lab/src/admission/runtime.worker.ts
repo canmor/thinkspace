@@ -1,7 +1,9 @@
+import { validateTransfer } from "./transport";
 import { admit } from "./session";
 let session: ReturnType<typeof admit> | undefined;
 self.onmessage = ({ data }) => {
   try {
+    validateTransfer(data);
     let frame;
     if (data.kind === "open") {
       const next = admit(data.protocol, data.source, data.state);

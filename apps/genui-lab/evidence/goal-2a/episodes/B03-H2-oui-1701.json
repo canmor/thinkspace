@@ -1,0 +1,70 @@
+{
+  "task": "B03",
+  "variant": "H2",
+  "protocol": "oui",
+  "seed": 1701,
+  "id": "B03-H2-oui-1701",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\nroot = Stack([\n  knob1,\n  knob2,\n  knob3,\n  table1,\n  table2,\n  table3,\n  graphic1,\n  graphic2,\n  graphic3\n])\n\n$nativeExperience1 = 40\n$nativeExperience2 = 25\n$nativeExperience3 = 35\n\n$lightweightRuntime1 = 40\n$lightweightRuntime2 = 25\n$lightweightRuntime3 = 35\n\n$deliveryEfficiency1 = 40\n$deliveryEfficiency2 = 25\n$deliveryEfficiency3 = 35\n\nknob1 = Control(\"Native Experience\", 0, 100, [], $nativeExperience1)\nknob2 = Control(\"Lightweight Runtime\", 0, 100, [], $lightweightRuntime1)\nknob3 = Control(\"Delivery Efficiency\", 0, 100, [], $deliveryEfficiency1)\n\ntable1 = Table([{label:\"Native Experience\", score:$nativeExperience1}])\ntable2 = Table([{label:\"Lightweight Runtime\", score:$lightweightRuntime1}])\ntable3 = Table([{label:\"Delivery Efficiency\", score:$deliveryEfficiency1}])\n\ngraphic1 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])\n\ngraphic2 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])\n\ngraphic3 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 731,
+        "prompt_tokens": 599,
+        "total_tokens": 1330,
+        "prompt_tokens_details": {
+          "cached_tokens": 510
+        }
+      },
+      "latencyMs": 6697,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Statement budget",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "UI\nroot = Stack([\n  knob1,\n  knob2,\n  knob3,\n  table1,\n  table2,\n  table3,\n  graphic1,\n  graphic2,\n  graphic3\n])\n\n$nativeExperience1 = 40\n$nativeExperience2 = 25\n$nativeExperience3 = 35\n\n$lightweightRuntime1 = 40\n$lightweightRuntime2 = 25\n$lightweightRuntime3 = 35\n\n$deliveryEfficiency1 = 40\n$deliveryEfficiency2 = 25\n$deliveryEfficiency3 = 35\n\nknob1 = Control(\"Native Experience\", 0, 100, [], $nativeExperience1)\nknob2 = Control(\"Lightweight Runtime\", 0, 100, [], $lightweightRuntime1)\nknob3 = Control(\"Delivery Efficiency\", 0, 100, [], $deliveryEfficiency1)\n\ntable1 = Table([{label:\"Native Experience\", score:$nativeExperience1}])\ntable2 = Table([{label:\"Lightweight Runtime\", score:$lightweightRuntime1}])\ntable3 = Table([{label:\"Delivery Efficiency\", score:$deliveryEfficiency1}])\n\ngraphic1 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])\n\ngraphic2 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])\n\ngraphic3 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 731,
+        "prompt_tokens": 1356,
+        "total_tokens": 2087,
+        "prompt_tokens_details": {
+          "cached_tokens": 1329
+        }
+      },
+      "latencyMs": 6901,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Statement budget",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\nroot = Stack([\n  knob1,\n  knob2,\n  knob3,\n  table1,\n  table2,\n  table3,\n  graphic1,\n  graphic2,\n  graphic3\n])\n\n$nativeExperience1 = 40\n$nativeExperience2 = 25\n$nativeExperience3 = 35\n\n$lightweightRuntime1 = 40\n$lightweightRuntime2 = 25\n$lightweightRuntime3 = 35\n\n$deliveryEfficiency1 = 40\n$deliveryEfficiency2 = 25\n$deliveryEfficiency3 = 35\n\nknob1 = Control(\"Native Experience\", 0, 100, [], $nativeExperience1)\nknob2 = Control(\"Lightweight Runtime\", 0, 100, [], $lightweightRuntime1)\nknob3 = Control(\"Delivery Efficiency\", 0, 100, [], $deliveryEfficiency1)\n\ntable1 = Table([{label:\"Native Experience\", score:$nativeExperience1}])\ntable2 = Table([{label:\"Lightweight Runtime\", score:$lightweightRuntime1}])\ntable3 = Table([{label:\"Delivery Efficiency\", score:$deliveryEfficiency1}])\n\ngraphic1 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])\n\ngraphic2 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])\n\ngraphic3 = Graphic(\"Native Hybrid\", [\n  group([\n    text(10, 10, \"Native Hybrid\"),\n    text(10, 30, \"Tauri\"),\n    text(10, 50, \"Electron\")\n  ]),\n  group([\n    text(10, 70, \"Native Hybrid\"),\n    text(10, 90, \"Tauri\"),\n    text(10, 110, \"Electron\")\n  ]),\n  group([\n    text(10, 130, \"Native Hybrid\"),\n    text(10, 150, \"Tauri\"),\n    text(10, 170, \"Electron\")\n  ])\n])"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Statement budget. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

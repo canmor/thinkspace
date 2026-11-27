@@ -1,0 +1,44 @@
+{
+  "harness": "2a.1",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "settings": {
+    "model": "gpt-4.1-mini-2025-04-14",
+    "max_tokens": 768,
+    "temperature": 0.35,
+    "top_p": 0.9,
+    "stream": false,
+    "store": false
+  },
+  "node": "v26.7.0",
+  "runtime": "2a.1",
+  "protocols": {
+    "oui": "1.2.0",
+    "json": "0.23.2"
+  },
+  "catalog": "1.1",
+  "policy": "1.5.0",
+  "lockSha256": "4ec29fd626ab4366d46b8a400a05c4e119af430e3063e18e5bbf72c7daa464b3",
+  "harnessSha256": "3131239545dd170c96b0ab780dd38571450964dc9593a6009c58f4b28964db5f",
+  "browserRevision": {
+    "name": "chromium-headless-shell",
+    "revision": "1255",
+    "installByDefault": true,
+    "browserVersion": "159.0.8154.6",
+    "title": "Chrome Headless Shell"
+  },
+  "repeatSeeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "repairLimit": 1,
+  "preflight": {
+    "startTime": "2026-11-27T10:53:11.162Z",
+    "duration": 15381.26,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

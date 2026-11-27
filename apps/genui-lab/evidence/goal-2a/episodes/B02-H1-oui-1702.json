@@ -1,0 +1,70 @@
+{
+  "task": "B02",
+  "variant": "H1",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B02-H1-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "To decouple the Conversation Engine, Context Engine, and Application Orchestrator, you can create separate interfaces or services for each component. For example, you can create an interface for the Conversation Engine that defines methods for sending and receiving messages, and another interface for the Context Engine that defines methods for selecting and budgeting references. The Application Orchestrator can then use these interfaces to coordinate the interactions between the components. This decoupling allows each component to be developed, tested, and maintained independently, and can be scaled or replaced without affecting the others.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 112,
+        "prompt_tokens": 494,
+        "total_tokens": 606,
+        "prompt_tokens_details": {
+          "cached_tokens": 457
+        }
+      },
+      "latencyMs": 1045,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack([Text('Welcome to the Conversation Engine'), Control('Select Reference', [], ['Option 1', 'Option 2', 'Option 3'], 'Selected Reference', 'None', '100', '200', '300'), Table([{label: 'Name', score: 100}]), Graphic('Reference', ['Text('Selected Reference')'])])\"\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 95,
+        "prompt_tokens": 635,
+        "total_tokens": 730,
+        "prompt_tokens_details": {
+          "cached_tokens": 605
+        }
+      },
+      "latencyMs": 874,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Invalid or duplicate declaration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "To decouple the Conversation Engine, Context Engine, and Application Orchestrator, you can create separate interfaces or services for each component. For example, you can create an interface for the Conversation Engine that defines methods for sending and receiving messages, and another interface for the Context Engine that defines methods for selecting and budgeting references. The Application Orchestrator can then use these interfaces to coordinate the interactions between the components. This decoupling allows each component to be developed, tested, and maintained independently, and can be scaled or replaced without affecting the others."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

@@ -12,5 +12,13 @@ export default defineConfig({
       "npx --no-install vite preview --host 127.0.0.1 --port 4187 --strictPort",
     url: "http://127.0.0.1:4187",
   },
-  reporter: [["list"], ["json", { outputFile: "evidence/goal-1.5/results.json" }]],
+  reporter: [
+    ["list"],
+    [
+      "json",
+      {
+        outputFile: process.env.GENUI_REPORT || "test-results/regressions.json",
+      },
+    ],
+  ],
 });

@@ -1,0 +1,70 @@
+{
+  "task": "B04",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1701,
+  "id": "B04-H0-oui-1701",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack([Text('Allowance'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n    \"Table([{label: 'Bag Weight', score: 10}, {label: 'Allowance', score: 20}, {label: 'Fee', score: 30}])\",\n    \"Graphic('Bag Explorer', [\n      \"group([Text('Allowance'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('",
+      "finish": "length",
+      "usage": {
+        "completion_tokens": 768,
+        "prompt_tokens": 471,
+        "total_tokens": 1239,
+        "prompt_tokens_details": {
+          "cached_tokens": 403
+        }
+      },
+      "latencyMs": 7203,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Incomplete provider output: length",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack([Text('Allowance'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n    \"Table([{label: 'Bag Weight', score: 10}, {label: 'Allowance', score: 20}, {label: 'Fee', score: 30}])\",\n    \"Graphic('Bag Explorer', [\n      \"group([Text('Allowance'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('",
+      "finish": "length",
+      "usage": {
+        "completion_tokens": 768,
+        "prompt_tokens": 1268,
+        "total_tokens": 2036,
+        "prompt_tokens_details": {
+          "cached_tokens": 1238
+        }
+      },
+      "latencyMs": 7549,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Incomplete provider output: length",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\n{\n  \"root\": [\n    \"Stack([Text('Allowance'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n    \"Table([{label: 'Bag Weight', score: 10}, {label: 'Allowance', score: 20}, {label: 'Fee', score: 30}])\",\n    \"Graphic('Bag Explorer', [\n      \"group([Text('Allowance'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('Fee'), Text('Allowance + Fee')])\",\n      \"group([Text('Bag Weight'), Control('Bag Weight', 10, 40, [], 15), Text('"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Incomplete provider output: length. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

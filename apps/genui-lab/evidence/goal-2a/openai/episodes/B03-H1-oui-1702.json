@@ -1,0 +1,84 @@
+{
+  "task": "B03",
+  "variant": "H1",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B03-H1-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "root = Stack([WeightsControl, ScoresTable, RankingsTable, ScoresGraphic])\n\nWeightsControl = Control(\"Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,[40,25,35],$weights)\nweights_sum = $weights[0] + $weights[1] + $weights[2]\nweights_norm = weights_sum > 0 ? [$weights[0]*100/weights_sum, $weights[1]*100/weights_sum, $weights[2]*100/weights_sum] : [0,0,0]\n\nNativeHybridScores = [9,8,7]\nTauriScores = [7,8,8]\nElectronScores = [6,4,10]\n\nNativeHybridWeighted = weights_sum > 0 ? (NativeHybridScores[0]*$weights[0] + NativeHybridScores[1]*$weights[1] + NativeHybridScores[2]*$weights[2]) : 0\nTauriWeighted = weights_sum > 0 ? (TauriScores[0]*$weights[0] + TauriScores[1]*$weights[1] + TauriScores[2]*$weights[2]) : 0\nElectronWeighted = weights_sum > 0 ? (ElectronScores[0]*$weights[0] + ElectronScores[1]*$weights[1] + ElectronScores[2]*$weights[2]) : 0\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", \"Native Experience\":9, \"Lightweight Runtime\":8, \"Delivery Efficiency\":7, \"Weighted Score\":NativeHybridWeighted},\n  {label:\"Tauri\", \"Native Experience\":7, \"Lightweight Runtime\":8, \"Delivery Efficiency\":8, \"Weighted Score\":TauriWeighted},\n  {label:\"Electron\", \"Native Experience\":6, \"Lightweight Runtime\":4, \"Delivery Efficiency\":10, \"Weighted Score\":ElectronWeighted}\n])\n\nrankings = weights_sum > 0 ? @Sort([\n  {label:\"Native Hybrid\", score:NativeHybridWeighted},\n  {label:\"Tauri\", score:TauriWeighted},\n  {label:\"Electron\", score:ElectronWeighted}\n],\"score\",\"desc\") : []\n\nRankingsTable = Table(rankings)\n\nbar_width = 120\nbar_max_height = 100\nbar_spacing = 140\nbar_base_y = 120\n\nmax_score = @Max([NativeHybridWeighted, TauriWeighted, ElectronWeighted, 1])\n\nNativeHybridBarHeight = max_score > 0 ? (NativeHybridWeighted * bar_max_height / max_score) : 0\nTauriBarHeight = max_score > 0 ? (TauriWeighted * bar_max_height / max_score) : 0\nElectronBarHeight = max_score > 0 ? (ElectronWeighted * bar_max_height / max_score) : 0\n\nScoresGraphic = Graphic(\"Weighted Scores Bar Chart\", [\n  text(10,15,\"Weights (Normalized): Native Experience \"+weights_norm[0].toFixed(1)+\"%, Lightweight Runtime \"+weights_norm[1].toFixed(1)+\"%, Delivery Efficiency \"+weights_norm[2].toFixed(1)+\"%\"),\n  text(10,30,\"Adjust weights to see impact on rankings.\"),\n  text(20,bar_base_y+15,\"Native Hybrid\"),\n  rect(20,bar_base_y-NativeHybridBarHeight,bar_width,NativeHybridBarHeight),\n  text(20,bar_base_y-NativeHybridBarHeight-5,NativeHybridWeighted.toFixed(1)),\n  text(20+bar_spacing,bar_base_y+15,\"Tauri\"),\n  rect(20+bar_spacing,bar_base_y-TauriBarHeight,bar_width,TauriBarHeight),\n  text(20+",
+      "finish": "length",
+      "usage": {
+        "prompt_tokens": 522,
+        "completion_tokens": 768,
+        "total_tokens": 1290,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 8466,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Incomplete provider output: length",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "root = Stack([WeightsControl, ScoresTable, RankingsTable, ScoresGraphic])\n\nWeightsControl = Control(\"Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,[40,25,35],$weights)\nweights_sum = $weights[0] + $weights[1] + $weights[2]\nweights_norm = weights_sum > 0 ? [$weights[0]*100/weights_sum, $weights[1]*100/weights_sum, $weights[2]*100/weights_sum] : [0,0,0]\n\nNativeHybridScores = [9,8,7]\nTauriScores = [7,8,8]\nElectronScores = [6,4,10]\n\nNativeHybridWeighted = weights_sum > 0 ? (NativeHybridScores[0]*$weights[0] + NativeHybridScores[1]*$weights[1] + NativeHybridScores[2]*$weights[2]) : 0\nTauriWeighted = weights_sum > 0 ? (TauriScores[0]*$weights[0] + TauriScores[1]*$weights[1] + TauriScores[2]*$weights[2]) : 0\nElectronWeighted = weights_sum > 0 ? (ElectronScores[0]*$weights[0] + ElectronScores[1]*$weights[1] + ElectronScores[2]*$weights[2]) : 0\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", \"Native Experience\":9, \"Lightweight Runtime\":8, \"Delivery Efficiency\":7, \"Weighted Score\":NativeHybridWeighted},\n  {label:\"Tauri\", \"Native Experience\":7, \"Lightweight Runtime\":8, \"Delivery Efficiency\":8, \"Weighted Score\":TauriWeighted},\n  {label:\"Electron\", \"Native Experience\":6, \"Lightweight Runtime\":4, \"Delivery Efficiency\":10, \"Weighted Score\":ElectronWeighted}\n])\n\nrankings = weights_sum > 0 ? @Sort([\n  {label:\"Native Hybrid\", score:NativeHybridWeighted},\n  {label:\"Tauri\", score:TauriWeighted},\n  {label:\"Electron\", score:ElectronWeighted}\n],\"score\",\"desc\") : []\n\nRankingsTable = Table(rankings)\n\nbar_width = 120\nbar_max_height = 100\nbar_spacing = 140\nbar_base_y = 120\n\nmax_score = @Max([NativeHybridWeighted, TauriWeighted, ElectronWeighted, 1])\n\nNativeHybridBarHeight = max_score > 0 ? (NativeHybridWeighted * bar_max_height / max_score) : 0\nTauriBarHeight = max_score > 0 ? (TauriWeighted * bar_max_height / max_score) : 0\nElectronBarHeight = max_score > 0 ? (ElectronWeighted * bar_max_height / max_score) : 0\n\nScoresGraphic = Graphic(\"Weighted Scores Bar Chart\", [\n  text(10,15,\"Weights (Normalized): Native Experience \"+weights_norm[0].toFixed(1)+\"%, Lightweight Runtime \"+weights_norm[1].toFixed(1)+\"%, Delivery Efficiency \"+weights_norm[2].toFixed(1)+\"%\"),\n  text(10,30,\"Adjust weights to see impact on rankings.\"),\n  text(20,bar_base_y+15,\"Native Hybrid\"),\n  rect(20,bar_base_y-NativeHybridBarHeight,bar_width,NativeHybridBarHeight),\n  text(20,bar_base_y-NativeHybridBarHeight-5,NativeHybridWeighted.toFixed(1)),\n  text(20+bar_spacing,bar_base_y+15,\"Tauri\"),\n  rect(20+bar_spacing,bar_base_y-TauriBarHeight,bar_width,TauriBarHeight),\n  text(20+",
+      "finish": "length",
+      "usage": {
+        "prompt_tokens": 1317,
+        "completion_tokens": 768,
+        "total_tokens": 2085,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 17666,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Incomplete provider output: length",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "root = Stack([WeightsControl, ScoresTable, RankingsTable, ScoresGraphic])\n\nWeightsControl = Control(\"Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,[40,25,35],$weights)\nweights_sum = $weights[0] + $weights[1] + $weights[2]\nweights_norm = weights_sum > 0 ? [$weights[0]*100/weights_sum, $weights[1]*100/weights_sum, $weights[2]*100/weights_sum] : [0,0,0]\n\nNativeHybridScores = [9,8,7]\nTauriScores = [7,8,8]\nElectronScores = [6,4,10]\n\nNativeHybridWeighted = weights_sum > 0 ? (NativeHybridScores[0]*$weights[0] + NativeHybridScores[1]*$weights[1] + NativeHybridScores[2]*$weights[2]) : 0\nTauriWeighted = weights_sum > 0 ? (TauriScores[0]*$weights[0] + TauriScores[1]*$weights[1] + TauriScores[2]*$weights[2]) : 0\nElectronWeighted = weights_sum > 0 ? (ElectronScores[0]*$weights[0] + ElectronScores[1]*$weights[1] + ElectronScores[2]*$weights[2]) : 0\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", \"Native Experience\":9, \"Lightweight Runtime\":8, \"Delivery Efficiency\":7, \"Weighted Score\":NativeHybridWeighted},\n  {label:\"Tauri\", \"Native Experience\":7, \"Lightweight Runtime\":8, \"Delivery Efficiency\":8, \"Weighted Score\":TauriWeighted},\n  {label:\"Electron\", \"Native Experience\":6, \"Lightweight Runtime\":4, \"Delivery Efficiency\":10, \"Weighted Score\":ElectronWeighted}\n])\n\nrankings = weights_sum > 0 ? @Sort([\n  {label:\"Native Hybrid\", score:NativeHybridWeighted},\n  {label:\"Tauri\", score:TauriWeighted},\n  {label:\"Electron\", score:ElectronWeighted}\n],\"score\",\"desc\") : []\n\nRankingsTable = Table(rankings)\n\nbar_width = 120\nbar_max_height = 100\nbar_spacing = 140\nbar_base_y = 120\n\nmax_score = @Max([NativeHybridWeighted, TauriWeighted, ElectronWeighted, 1])\n\nNativeHybridBarHeight = max_score > 0 ? (NativeHybridWeighted * bar_max_height / max_score) : 0\nTauriBarHeight = max_score > 0 ? (TauriWeighted * bar_max_height / max_score) : 0\nElectronBarHeight = max_score > 0 ? (ElectronWeighted * bar_max_height / max_score) : 0\n\nScoresGraphic = Graphic(\"Weighted Scores Bar Chart\", [\n  text(10,15,\"Weights (Normalized): Native Experience \"+weights_norm[0].toFixed(1)+\"%, Lightweight Runtime \"+weights_norm[1].toFixed(1)+\"%, Delivery Efficiency \"+weights_norm[2].toFixed(1)+\"%\"),\n  text(10,30,\"Adjust weights to see impact on rankings.\"),\n  text(20,bar_base_y+15,\"Native Hybrid\"),\n  rect(20,bar_base_y-NativeHybridBarHeight,bar_width,NativeHybridBarHeight),\n  text(20,bar_base_y-NativeHybridBarHeight-5,NativeHybridWeighted.toFixed(1)),\n  text(20+bar_spacing,bar_base_y+15,\"Tauri\"),\n  rect(20+bar_spacing,bar_base_y-TauriBarHeight,bar_width,TauriBarHeight),\n  text(20+"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Incomplete provider output: length. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

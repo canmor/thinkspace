@@ -1,0 +1,70 @@
+{
+  "task": "B06",
+  "variant": "H0",
+  "protocol": "json",
+  "seed": 1701,
+  "id": "B06-H0-json-1701",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "BYOK stands for Bring Your Own Key, which refers to the practice of using a private key to authenticate access to a service or system. In the context of a model-powered application, BYOK allows developers to manage their own keys and securely store them in a secure location, rather than relying on a central key management system. This can provide greater flexibility and control over access to the application, as well as the ability to manage key rotation and access policies.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 92,
+        "prompt_tokens": 431,
+        "total_tokens": 523,
+        "prompt_tokens_details": {
+          "cached_tokens": 415
+        }
+      },
+      "latencyMs": 902,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 17,
+        "prompt_tokens": 552,
+        "total_tokens": 569,
+        "prompt_tokens_details": {
+          "cached_tokens": 522
+        }
+      },
+      "latencyMs": 215,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Unexpected object fields",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        },
+        {
+          "role": "assistant",
+          "content": "BYOK stands for Bring Your Own Key, which refers to the practice of using a private key to authenticate access to a service or system. In the context of a model-powered application, BYOK allows developers to manage their own keys and securely store them in a secure location, rather than relying on a central key management system. This can provide greater flexibility and control over access to the application, as well as the ability to manage key rotation and access policies."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

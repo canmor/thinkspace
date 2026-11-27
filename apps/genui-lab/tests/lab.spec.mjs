@@ -18,12 +18,21 @@ for (const [idx, format] of ["json", "oui"].entries()) {
         true,
       );
       await page.screenshot({
-        path: "evidence/goal-1.5/" + task + "-" + format + ".png",
+        path:
+          (process.env.GENUI_REGRESSION_DIR || "test-results/") +
+          task +
+          "-" +
+          format +
+          ".png",
       });
       await expect(pane.getByRole("alert")).toHaveCount(0);
       await pane.getByText("Save snapshot").click();
       writeFileSync(
-        "evidence/goal-1.5/" + task + "-" + format + ".initial.json",
+        (process.env.GENUI_REGRESSION_DIR || "test-results/") +
+          task +
+          "-" +
+          format +
+          ".initial.json",
         await pane.getByLabel("Snapshot").inputValue(),
       );
       if (task === "B02") {
@@ -85,7 +94,14 @@ for (const [idx, format] of ["json", "oui"].entries()) {
       await pane.getByText("Save snapshot").click();
       await pane.locator("summary").first().click();
       const raw = await pane.getByLabel("Snapshot").inputValue();
-      writeFileSync("evidence/goal-1.5/" + task + "-" + format + ".snapshot.json", raw);
+      writeFileSync(
+        (process.env.GENUI_REGRESSION_DIR || "test-results/") +
+          task +
+          "-" +
+          format +
+          ".snapshot.json",
+        raw,
+      );
       const artifact = JSON.parse(raw);
       if (task === "B04") {
         expect(artifact.state).toEqual({ fare: 1, gold: 1, weight: 40 });
@@ -112,7 +128,11 @@ for (const [idx, format] of ["json", "oui"].entries()) {
         await expect(isolated.getByRole("slider").nth(2)).toHaveValue("2");
       await fresh.close();
       writeFileSync(
-        "evidence/goal-1.5/" + task + "-" + format + ".timing.json",
+        (process.env.GENUI_REGRESSION_DIR || "test-results/") +
+          task +
+          "-" +
+          format +
+          ".timing.json",
         JSON.stringify(
           { firstVisibleMs, caseDriverRoundTripsMs: interactionMs },
           null,

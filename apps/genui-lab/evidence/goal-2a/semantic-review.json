@@ -1,0 +1,128 @@
+[
+  {
+    "id": "B01-H1-json-1701",
+    "semanticCorrect": false,
+    "reason": "Conflates the dot product with scalar projection, omitting the magnitude factor from that interpretation. Also calls orthogonal vectors parallel.",
+    "presentationIssue": "Repetition or contradiction distracts from the geometric explanation."
+  },
+  {
+    "id": "B01-H1-json-1702",
+    "semanticCorrect": false,
+    "reason": "Conflates the dot product with scalar projection, omitting the magnitude factor from that interpretation.",
+    "presentationIssue": "Repetition or contradiction distracts from the geometric explanation."
+  },
+  {
+    "id": "B01-H2-json-1701",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B01-H2-json-1702",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B01-H2-oui-1701",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B01-H2-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B01-H2-oui-1703",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B02-H1-json-1701",
+    "semanticCorrect": false,
+    "reason": "Restates the request without an interface or coordination design.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B02-H2-json-1701",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B02-H2-json-1702",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B02-H2-json-1703",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B02-H2-oui-1701",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B02-H2-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B02-H2-oui-1703",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B06-H1-oui-1703",
+    "semanticCorrect": false,
+    "reason": "Echoes the repair instruction instead of defining BYOK.",
+    "presentationIssue": null
+  },
+  {
+    "id": "B06-H2-json-1701",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B06-H2-json-1702",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B06-H2-json-1703",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B06-H2-oui-1701",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B06-H2-oui-1702",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  },
+  {
+    "id": "B06-H2-oui-1703",
+    "semanticCorrect": false,
+    "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+    "presentationIssue": "Irrelevant controls"
+  }
+]

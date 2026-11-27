@@ -1,0 +1,70 @@
+{
+  "task": "B01",
+  "variant": "H1",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B01-H1-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "The geometric meaning of a vector dot product is the projection of one vector onto another. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector. The dot product is calculated as the sum of the products of the corresponding components of the two vectors.\n\nWhen the vectors are orthogonal, the dot product is zero. This means that the vectors are perpendicular to each other, and the projection of one vector onto the other is zero. In this case, the vectors are perpendicular to each other, and the projection of one vector onto the other is zero.\n\nWhen the vectors are not orthogonal, the dot product is non-zero. This means that the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero. In this case, the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero.\n\nThe negative projection of one vector onto the other is the negative of the dot product of the two vectors. This means that the negative projection of one vector onto the other is the negative of the length of the projection of the first vector onto the second vector.\n\nThe geometric meaning of a vector dot product is the projection of one vector onto another. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector. The dot product is calculated as the sum of the products of the corresponding components of the two vectors.\n\nWhen the vectors are orthogonal, the dot product is zero. This means that the vectors are perpendicular to each other, and the projection of one vector onto the other is zero. In this case, the vectors are perpendicular to each other, and the projection of one vector onto the other is zero.\n\nWhen the vectors are not orthogonal, the dot product is non-zero. This means that the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero. In this case, the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero.\n\nThe negative projection of one vector onto the other is the negative of the dot product of the two vectors. This means that the negative projection of one vector onto the other is the negative of the length of the projection of the first vector onto the second vector.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 469,
+        "prompt_tokens": 478,
+        "total_tokens": 947,
+        "prompt_tokens_details": {
+          "cached_tokens": 455
+        }
+      },
+      "latencyMs": 4399,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ]
+    },
+    {
+      "raw": "UI",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 976,
+        "total_tokens": 978,
+        "prompt_tokens_details": {
+          "cached_tokens": 946
+        }
+      },
+      "latencyMs": 57,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "The geometric meaning of a vector dot product is the projection of one vector onto another. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector. The dot product is calculated as the sum of the products of the corresponding components of the two vectors.\n\nWhen the vectors are orthogonal, the dot product is zero. This means that the vectors are perpendicular to each other, and the projection of one vector onto the other is zero. In this case, the vectors are perpendicular to each other, and the projection of one vector onto the other is zero.\n\nWhen the vectors are not orthogonal, the dot product is non-zero. This means that the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero. In this case, the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero.\n\nThe negative projection of one vector onto the other is the negative of the dot product of the two vectors. This means that the negative projection of one vector onto the other is the negative of the length of the projection of the first vector onto the second vector.\n\nThe geometric meaning of a vector dot product is the projection of one vector onto another. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector. The dot product is calculated as the sum of the products of the corresponding components of the two vectors.\n\nWhen the vectors are orthogonal, the dot product is zero. This means that the vectors are perpendicular to each other, and the projection of one vector onto the other is zero. In this case, the vectors are perpendicular to each other, and the projection of one vector onto the other is zero.\n\nWhen the vectors are not orthogonal, the dot product is non-zero. This means that the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero. In this case, the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero.\n\nThe negative projection of one vector onto the other is the negative of the dot product of the two vectors. This means that the negative projection of one vector onto the other is the negative of the length of the projection of the first vector onto the second vector."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "task": "B03",
+  "variant": "H2",
+  "protocol": "json",
+  "seed": 1703,
+  "id": "B03-H2-json-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\nSTATE {\"weight_native\":40,\"weight_lightweight\":25,\"weight_delivery\":35}\n{\"root\":\"mainStack\",\"elements\":{\n  \"mainStack\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightNative\",\"weightLightweight\",\"weightDelivery\",\"ranking\"]},\n  \"weightNative\":{\"type\":\"Control\",\"props\":{\"label\":\"Native Experience Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_native\"}}},\n  \"weightLightweight\":{\"type\":\"Control\",\"props\":{\"label\":\"Lightweight Runtime Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_lightweight\"}}},\n  \"weightDelivery\":{\"type\":\"Control\",\"props\":{\"label\":\"Delivery Efficiency Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_delivery\"}}},\n  \"ranking\":{\"type\":\"Table\",\"props\":{\n    \"values\":{\"$computed\":\"Rank\",\n      \"args\":{\n        \"rows\":[\n          [\"Native Hybrid\",[9,8,7]],\n          [\"Tauri\",[7,8,8]],\n          [\"Electron\",[6,4,10]]\n        ],\n        \"a\":{\"$computed\":\"Divide\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$state\":\"/weight_lightweight\"}}},\"b\":{\"$state\":\"/weight_delivery\"}}}}},\n        \"b\":{\"$computed\":\"Divide\",\"args\":{\"a\":{\"$state\":\"/weight_lightweight\"},\"b\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$state\":\"/weight_lightweight\"}}},\"b\":{\"$state\":\"/weight_delivery\"}}}}},\n        \"c\":{\"$computed\":\"Divide\",\"args\":{\"a\":{\"$state\":\"/weight_delivery\"},\"b\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$state\":\"/weight_lightweight\"}}},\"b\":{\"$state\":\"/weight_delivery\"}}}}}\n      }\n    }\n  }}\n}}}",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 646,
+        "completion_tokens": 458,
+        "total_tokens": 1104,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 5787,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1606 (line 20 column 3)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "UI\nSTATE {\"weight_native\":40,\"weight_lightweight\":25,\"weight_delivery\":35}\n{\"root\":\"mainStack\",\"elements\":{\n  \"mainStack\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightNative\",\"weightLightweight\",\"weightDelivery\",\"ranking\"]},\n  \"weightNative\":{\"type\":\"Control\",\"props\":{\"label\":\"Native Experience Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_native\"}}},\n  \"weightLightweight\":{\"type\":\"Control\",\"props\":{\"label\":\"Lightweight Runtime Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_lightweight\"}}},\n  \"weightDelivery\":{\"type\":\"Control\",\"props\":{\"label\":\"Delivery Efficiency Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_delivery\"}}},\n  \"ranking\":{\"type\":\"Table\",\"props\":{\n    \"values\":{\"$computed\":\"Rank\",\n      \"args\":{\n        \"rows\":[\n          [\"Native Hybrid\",[9,8,7]],\n          [\"Tauri\",[7,8,8]],\n          [\"Electron\",[6,4,10]]\n        ],\n        \"a\":{\n          \"$computed\":\"Divide\",\n          \"args\":{\n            \"a\":{\"$state\":\"/weight_native\"},\n            \"b\":{\n              \"$computed\":\"Add\",\n              \"args\":{\n                \"a\":{\n                  \"$computed\":\"Add\",\n                  \"args\":{\n                    \"a\":{\"$state\":\"/weight_native\"},\n                    \"b\":{\"$state\":\"/weight_lightweight\"}\n                  }\n                },\n                \"b\":{\"$state\":\"/weight_delivery\"}\n              }\n            }\n          }\n        },\n        \"b\":{\n          \"$computed\":\"Divide\",\n          \"args\":{\n            \"a\":{\"$state\":\"/weight_lightweight\"},\n            \"b\":{\n              \"$computed\":\"Add\",\n              \"args\":{\n                \"a\":{\n                  \"$computed\":\"Add\",\n                  \"args\":{\n                    \"a\":{\"$state\":\"/weight_native\"},\n                    \"b\":{\"$state\":\"/weight_lightweight\"}\n                  }\n                },\n                \"b\":{\"$state\":\"/weight_delivery\"}\n              }\n            }\n          }\n        },\n        \"c\":{\n          \"$computed\":\"Divide\",\n          \"args\":{\n            \"a\":{\"$state\":\"/weight_delivery\"},\n            \"b\":{\n              \"$computed\":\"Add\",\n              \"args\":{\n                \"a\":{\n                  \"$computed\":\"Add\",\n                  \"args\":{\n                    \"a\":{\"$state\":\"/weight_native\"},\n                    \"b\":{\"$state\":\"/weight_lightweight\"}\n                  }\n                },\n                \"b\":{\"$state\":\"/weight_delivery\"}\n              }\n            }\n          }\n        }\n      }\n    }\n  }}\n}}}",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 1146,
+        "completion_tokens": 544,
+        "total_tokens": 1690,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 6615,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 2434 (line 74 column 3)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\nSTATE {\"weight_native\":40,\"weight_lightweight\":25,\"weight_delivery\":35}\n{\"root\":\"mainStack\",\"elements\":{\n  \"mainStack\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightNative\",\"weightLightweight\",\"weightDelivery\",\"ranking\"]},\n  \"weightNative\":{\"type\":\"Control\",\"props\":{\"label\":\"Native Experience Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_native\"}}},\n  \"weightLightweight\":{\"type\":\"Control\",\"props\":{\"label\":\"Lightweight Runtime Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_lightweight\"}}},\n  \"weightDelivery\":{\"type\":\"Control\",\"props\":{\"label\":\"Delivery Efficiency Weight\",\"min\":0,\"max\":100,\"choices\":[],\"value\":{\"$bindState\":\"/weight_delivery\"}}},\n  \"ranking\":{\"type\":\"Table\",\"props\":{\n    \"values\":{\"$computed\":\"Rank\",\n      \"args\":{\n        \"rows\":[\n          [\"Native Hybrid\",[9,8,7]],\n          [\"Tauri\",[7,8,8]],\n          [\"Electron\",[6,4,10]]\n        ],\n        \"a\":{\"$computed\":\"Divide\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$state\":\"/weight_lightweight\"}}},\"b\":{\"$state\":\"/weight_delivery\"}}}}},\n        \"b\":{\"$computed\":\"Divide\",\"args\":{\"a\":{\"$state\":\"/weight_lightweight\"},\"b\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$state\":\"/weight_lightweight\"}}},\"b\":{\"$state\":\"/weight_delivery\"}}}}},\n        \"c\":{\"$computed\":\"Divide\",\"args\":{\"a\":{\"$state\":\"/weight_delivery\"},\"b\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weight_native\"},\"b\":{\"$state\":\"/weight_lightweight\"}}},\"b\":{\"$state\":\"/weight_delivery\"}}}}}\n      }\n    }\n  }}\n}}}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Unexpected non-whitespace character after JSON at position 1606 (line 20 column 3). Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

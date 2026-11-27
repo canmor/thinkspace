@@ -1,0 +1,3692 @@
+[
+  {
+    "id": "B01-H0-json-1701",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 344,
+          "prompt_tokens": 438,
+          "total_tokens": 782,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "latencyMs": 4001
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 811,
+          "total_tokens": 828,
+          "prompt_tokens_details": {
+            "cached_tokens": 781
+          }
+        },
+        "latencyMs": 178
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-json-1702",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 269,
+          "prompt_tokens": 438,
+          "total_tokens": 707,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 2520
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 736,
+          "total_tokens": 760,
+          "prompt_tokens_details": {
+            "cached_tokens": 706
+          }
+        },
+        "latencyMs": 309
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-json-1703",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 438,
+          "total_tokens": 542,
+          "prompt_tokens_details": {
+            "cached_tokens": 415
+          }
+        },
+        "latencyMs": 1004
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 571,
+          "total_tokens": 573,
+          "prompt_tokens_details": {
+            "cached_tokens": 541
+          }
+        },
+        "latencyMs": 92
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-oui-1701",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 183,
+          "prompt_tokens": 423,
+          "total_tokens": 606,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "latencyMs": 2369
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 59,
+          "prompt_tokens": 635,
+          "total_tokens": 694,
+          "prompt_tokens_details": {
+            "cached_tokens": 605
+          }
+        },
+        "latencyMs": 578
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-oui-1702",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 305,
+          "prompt_tokens": 423,
+          "total_tokens": 728,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "latencyMs": 2772
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 97,
+          "prompt_tokens": 757,
+          "total_tokens": 854,
+          "prompt_tokens_details": {
+            "cached_tokens": 727
+          }
+        },
+        "latencyMs": 1011
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H0-oui-1703",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 221,
+          "prompt_tokens": 423,
+          "total_tokens": 644,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 2347
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 673,
+          "total_tokens": 737,
+          "prompt_tokens_details": {
+            "cached_tokens": 643
+          }
+        },
+        "latencyMs": 647
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-json-1701",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 275,
+          "prompt_tokens": 493,
+          "total_tokens": 768,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "latencyMs": 3354
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 277,
+          "prompt_tokens": 797,
+          "total_tokens": 1074,
+          "prompt_tokens_details": {
+            "cached_tokens": 767
+          }
+        },
+        "latencyMs": 2765
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-json-1702",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 519,
+          "prompt_tokens": 493,
+          "total_tokens": 1012,
+          "prompt_tokens_details": {
+            "cached_tokens": 470
+          }
+        },
+        "latencyMs": 4920
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 262,
+          "prompt_tokens": 1041,
+          "total_tokens": 1303,
+          "prompt_tokens_details": {
+            "cached_tokens": 1011
+          }
+        },
+        "latencyMs": 2469
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-json-1703",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 493,
+          "total_tokens": 1261,
+          "prompt_tokens_details": {
+            "cached_tokens": 470
+          }
+        },
+        "latencyMs": 7494
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1290,
+          "total_tokens": 2058,
+          "prompt_tokens_details": {
+            "cached_tokens": 1260
+          }
+        },
+        "latencyMs": 7437
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-oui-1701",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 422,
+          "prompt_tokens": 478,
+          "total_tokens": 900,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "latencyMs": 4809
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 929,
+          "total_tokens": 931,
+          "prompt_tokens_details": {
+            "cached_tokens": 899
+          }
+        },
+        "latencyMs": 64
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-oui-1702",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 469,
+          "prompt_tokens": 478,
+          "total_tokens": 947,
+          "prompt_tokens_details": {
+            "cached_tokens": 455
+          }
+        },
+        "latencyMs": 4399
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 976,
+          "total_tokens": 978,
+          "prompt_tokens_details": {
+            "cached_tokens": 946
+          }
+        },
+        "latencyMs": 57
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H1-oui-1703",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 412,
+          "prompt_tokens": 478,
+          "total_tokens": 890,
+          "prompt_tokens_details": {
+            "cached_tokens": 455
+          }
+        },
+        "latencyMs": 4102
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 919,
+          "total_tokens": 921,
+          "prompt_tokens_details": {
+            "cached_tokens": 889
+          }
+        },
+        "latencyMs": 71
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-json-1701",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 180,
+          "prompt_tokens": 602,
+          "total_tokens": 782,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 1852
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 811,
+          "total_tokens": 914,
+          "prompt_tokens_details": {
+            "cached_tokens": 781
+          }
+        },
+        "latencyMs": 986
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-json-1702",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 325,
+          "prompt_tokens": 602,
+          "total_tokens": 927,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 2946
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 956,
+          "total_tokens": 1059,
+          "prompt_tokens_details": {
+            "cached_tokens": 926
+          }
+        },
+        "latencyMs": 1002
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-json-1703",
+    "task": "B01",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 602,
+          "total_tokens": 1370,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 7587
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1399,
+          "total_tokens": 2167,
+          "prompt_tokens_details": {
+            "cached_tokens": 1369
+          }
+        },
+        "latencyMs": 7221
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-oui-1701",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 131,
+          "prompt_tokens": 533,
+          "total_tokens": 664,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 1307
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 693,
+          "total_tokens": 742,
+          "prompt_tokens_details": {
+            "cached_tokens": 663
+          }
+        },
+        "latencyMs": 589
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-oui-1702",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 463,
+          "prompt_tokens": 533,
+          "total_tokens": 996,
+          "prompt_tokens_details": {
+            "cached_tokens": 510
+          }
+        },
+        "latencyMs": 4308
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1025,
+          "total_tokens": 1074,
+          "prompt_tokens_details": {
+            "cached_tokens": 995
+          }
+        },
+        "latencyMs": 594
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B01-H2-oui-1703",
+    "task": "B01",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 531,
+          "prompt_tokens": 533,
+          "total_tokens": 1064,
+          "prompt_tokens_details": {
+            "cached_tokens": 510
+          }
+        },
+        "latencyMs": 5067
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1093,
+          "total_tokens": 1142,
+          "prompt_tokens_details": {
+            "cached_tokens": 1063
+          }
+        },
+        "latencyMs": 496
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-json-1701",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 454,
+          "total_tokens": 1222,
+          "prompt_tokens_details": {
+            "cached_tokens": 417
+          }
+        },
+        "latencyMs": 7163
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 1251,
+          "total_tokens": 1271,
+          "prompt_tokens_details": {
+            "cached_tokens": 1221
+          }
+        },
+        "latencyMs": 246
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-json-1702",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 546,
+          "prompt_tokens": 454,
+          "total_tokens": 1000,
+          "prompt_tokens_details": {
+            "cached_tokens": 417
+          }
+        },
+        "latencyMs": 5047
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 1029,
+          "total_tokens": 1046,
+          "prompt_tokens_details": {
+            "cached_tokens": 999
+          }
+        },
+        "latencyMs": 190
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-json-1703",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 337,
+          "prompt_tokens": 454,
+          "total_tokens": 791,
+          "prompt_tokens_details": {
+            "cached_tokens": 453
+          }
+        },
+        "latencyMs": 3159
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 820,
+          "total_tokens": 837,
+          "prompt_tokens_details": {
+            "cached_tokens": 790
+          }
+        },
+        "latencyMs": 280
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-oui-1701",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 384,
+          "prompt_tokens": 439,
+          "total_tokens": 823,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 3510
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 852,
+          "total_tokens": 925,
+          "prompt_tokens_details": {
+            "cached_tokens": 822
+          }
+        },
+        "latencyMs": 753
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-oui-1702",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 113,
+          "prompt_tokens": 439,
+          "total_tokens": 552,
+          "prompt_tokens_details": {
+            "cached_tokens": 402
+          }
+        },
+        "latencyMs": 1102
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 581,
+          "total_tokens": 1349,
+          "prompt_tokens_details": {
+            "cached_tokens": 551
+          }
+        },
+        "latencyMs": 7317
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H0-oui-1703",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 631,
+          "prompt_tokens": 439,
+          "total_tokens": 1070,
+          "prompt_tokens_details": {
+            "cached_tokens": 402
+          }
+        },
+        "latencyMs": 6044
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 9,
+          "prompt_tokens": 1099,
+          "total_tokens": 1108,
+          "prompt_tokens_details": {
+            "cached_tokens": 1069
+          }
+        },
+        "latencyMs": 135
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-json-1701",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 362,
+          "prompt_tokens": 509,
+          "total_tokens": 871,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "latencyMs": 3417
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 900,
+          "total_tokens": 937,
+          "prompt_tokens_details": {
+            "cached_tokens": 870
+          }
+        },
+        "latencyMs": 361
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-json-1702",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 324,
+          "prompt_tokens": 509,
+          "total_tokens": 833,
+          "prompt_tokens_details": {
+            "cached_tokens": 472
+          }
+        },
+        "latencyMs": 3065
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 862,
+          "total_tokens": 910,
+          "prompt_tokens_details": {
+            "cached_tokens": 832
+          }
+        },
+        "latencyMs": 463
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-json-1703",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 354,
+          "prompt_tokens": 509,
+          "total_tokens": 863,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 3274
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 28,
+          "prompt_tokens": 892,
+          "total_tokens": 920,
+          "prompt_tokens_details": {
+            "cached_tokens": 862
+          }
+        },
+        "latencyMs": 295
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-oui-1701",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 300,
+          "prompt_tokens": 494,
+          "total_tokens": 794,
+          "prompt_tokens_details": {
+            "cached_tokens": 457
+          }
+        },
+        "latencyMs": 2792
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 823,
+          "total_tokens": 825,
+          "prompt_tokens_details": {
+            "cached_tokens": 793
+          }
+        },
+        "latencyMs": 54
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-oui-1702",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 112,
+          "prompt_tokens": 494,
+          "total_tokens": 606,
+          "prompt_tokens_details": {
+            "cached_tokens": 457
+          }
+        },
+        "latencyMs": 1045
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 95,
+          "prompt_tokens": 635,
+          "total_tokens": 730,
+          "prompt_tokens_details": {
+            "cached_tokens": 605
+          }
+        },
+        "latencyMs": 874
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H1-oui-1703",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 494,
+          "total_tokens": 1262,
+          "prompt_tokens_details": {
+            "cached_tokens": 457
+          }
+        },
+        "latencyMs": 7198
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 1291,
+          "total_tokens": 1311,
+          "prompt_tokens_details": {
+            "cached_tokens": 1261
+          }
+        },
+        "latencyMs": 236
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-json-1701",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 282,
+          "prompt_tokens": 618,
+          "total_tokens": 900,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "latencyMs": 2589
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 929,
+          "total_tokens": 1032,
+          "prompt_tokens_details": {
+            "cached_tokens": 899
+          }
+        },
+        "latencyMs": 1131
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-json-1702",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 342,
+          "prompt_tokens": 618,
+          "total_tokens": 960,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        },
+        "latencyMs": 3204
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 989,
+          "total_tokens": 1092,
+          "prompt_tokens_details": {
+            "cached_tokens": 959
+          }
+        },
+        "latencyMs": 1094
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-json-1703",
+    "task": "B02",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 666,
+          "prompt_tokens": 618,
+          "total_tokens": 1284,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 6658
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 1313,
+          "total_tokens": 1416,
+          "prompt_tokens_details": {
+            "cached_tokens": 1283
+          }
+        },
+        "latencyMs": 1145
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-oui-1701",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 401,
+          "prompt_tokens": 549,
+          "total_tokens": 950,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          }
+        },
+        "latencyMs": 3955
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 979,
+          "total_tokens": 1028,
+          "prompt_tokens_details": {
+            "cached_tokens": 949
+          }
+        },
+        "latencyMs": 572
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-oui-1702",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 666,
+          "prompt_tokens": 549,
+          "total_tokens": 1215,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          }
+        },
+        "latencyMs": 6224
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1244,
+          "total_tokens": 1293,
+          "prompt_tokens_details": {
+            "cached_tokens": 1214
+          }
+        },
+        "latencyMs": 467
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B02-H2-oui-1703",
+    "task": "B02",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 467,
+          "prompt_tokens": 549,
+          "total_tokens": 1016,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          }
+        },
+        "latencyMs": 4441
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1045,
+          "total_tokens": 1094,
+          "prompt_tokens_details": {
+            "cached_tokens": 1015
+          }
+        },
+        "latencyMs": 599
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B03-H0-json-1701",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 456,
+          "prompt_tokens": 504,
+          "total_tokens": 960,
+          "prompt_tokens_details": {
+            "cached_tokens": 415
+          }
+        },
+        "latencyMs": 4333
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 456,
+          "prompt_tokens": 989,
+          "total_tokens": 1445,
+          "prompt_tokens_details": {
+            "cached_tokens": 959
+          }
+        },
+        "latencyMs": 4237
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-json-1702",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 430,
+          "prompt_tokens": 504,
+          "total_tokens": 934,
+          "prompt_tokens_details": {
+            "cached_tokens": 503
+          }
+        },
+        "latencyMs": 4126
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 430,
+          "prompt_tokens": 963,
+          "total_tokens": 1393,
+          "prompt_tokens_details": {
+            "cached_tokens": 933
+          }
+        },
+        "latencyMs": 4113
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-json-1703",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 396,
+          "prompt_tokens": 504,
+          "total_tokens": 900,
+          "prompt_tokens_details": {
+            "cached_tokens": 503
+          }
+        },
+        "latencyMs": 4235
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 396,
+          "prompt_tokens": 929,
+          "total_tokens": 1325,
+          "prompt_tokens_details": {
+            "cached_tokens": 899
+          }
+        },
+        "latencyMs": 4166
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-oui-1701",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 489,
+          "total_tokens": 596,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 1044
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 624,
+          "total_tokens": 731,
+          "prompt_tokens_details": {
+            "cached_tokens": 595
+          }
+        },
+        "latencyMs": 1222
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-oui-1702",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 489,
+          "total_tokens": 596,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 998
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 624,
+          "total_tokens": 731,
+          "prompt_tokens_details": {
+            "cached_tokens": 595
+          }
+        },
+        "latencyMs": 967
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H0-oui-1703",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 489,
+          "total_tokens": 578,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "latencyMs": 967
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 606,
+          "total_tokens": 695,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        },
+        "latencyMs": 954
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-json-1701",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 389,
+          "prompt_tokens": 559,
+          "total_tokens": 948,
+          "prompt_tokens_details": {
+            "cached_tokens": 470
+          }
+        },
+        "latencyMs": 3632
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 389,
+          "prompt_tokens": 975,
+          "total_tokens": 1364,
+          "prompt_tokens_details": {
+            "cached_tokens": 947
+          }
+        },
+        "latencyMs": 3556
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-json-1702",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 424,
+          "prompt_tokens": 559,
+          "total_tokens": 983,
+          "prompt_tokens_details": {
+            "cached_tokens": 473
+          }
+        },
+        "latencyMs": 4025
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 424,
+          "prompt_tokens": 1010,
+          "total_tokens": 1434,
+          "prompt_tokens_details": {
+            "cached_tokens": 982
+          }
+        },
+        "latencyMs": 4008
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-json-1703",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 389,
+          "prompt_tokens": 559,
+          "total_tokens": 948,
+          "prompt_tokens_details": {
+            "cached_tokens": 558
+          }
+        },
+        "latencyMs": 4011
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 389,
+          "prompt_tokens": 975,
+          "total_tokens": 1364,
+          "prompt_tokens_details": {
+            "cached_tokens": 947
+          }
+        },
+        "latencyMs": 3991
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-oui-1701",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 544,
+          "total_tokens": 719,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 1645
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 747,
+          "total_tokens": 922,
+          "prompt_tokens_details": {
+            "cached_tokens": 718
+          }
+        },
+        "latencyMs": 1534
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-oui-1702",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 544,
+          "total_tokens": 1312,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 7454
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1341,
+          "total_tokens": 2109,
+          "prompt_tokens_details": {
+            "cached_tokens": 1311
+          }
+        },
+        "latencyMs": 7544
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H1-oui-1703",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 544,
+          "total_tokens": 688,
+          "prompt_tokens_details": {
+            "cached_tokens": 449
+          }
+        },
+        "latencyMs": 1439
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 716,
+          "total_tokens": 860,
+          "prompt_tokens_details": {
+            "cached_tokens": 687
+          }
+        },
+        "latencyMs": 1438
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-json-1701",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 402,
+          "prompt_tokens": 668,
+          "total_tokens": 1070,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 3670
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 402,
+          "prompt_tokens": 1097,
+          "total_tokens": 1499,
+          "prompt_tokens_details": {
+            "cached_tokens": 1069
+          }
+        },
+        "latencyMs": 3812
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-json-1702",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 668,
+          "total_tokens": 1436,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 7398
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1462,
+          "total_tokens": 2230,
+          "prompt_tokens_details": {
+            "cached_tokens": 969
+          }
+        },
+        "latencyMs": 7765
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-json-1703",
+    "task": "B03",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 668,
+          "total_tokens": 843,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 1855
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 873,
+          "total_tokens": 1048,
+          "prompt_tokens_details": {
+            "cached_tokens": 842
+          }
+        },
+        "latencyMs": 1869
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-oui-1701",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 731,
+          "prompt_tokens": 599,
+          "total_tokens": 1330,
+          "prompt_tokens_details": {
+            "cached_tokens": 510
+          }
+        },
+        "latencyMs": 6697
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 731,
+          "prompt_tokens": 1356,
+          "total_tokens": 2087,
+          "prompt_tokens_details": {
+            "cached_tokens": 1329
+          }
+        },
+        "latencyMs": 6901
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-oui-1702",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 136,
+          "prompt_tokens": 599,
+          "total_tokens": 735,
+          "prompt_tokens_details": {
+            "cached_tokens": 598
+          }
+        },
+        "latencyMs": 1251
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 136,
+          "prompt_tokens": 761,
+          "total_tokens": 897,
+          "prompt_tokens_details": {
+            "cached_tokens": 734
+          }
+        },
+        "latencyMs": 1236
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B03-H2-oui-1703",
+    "task": "B03",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 105,
+          "prompt_tokens": 599,
+          "total_tokens": 704,
+          "prompt_tokens_details": {
+            "cached_tokens": 449
+          }
+        },
+        "latencyMs": 1101
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 105,
+          "prompt_tokens": 732,
+          "total_tokens": 837,
+          "prompt_tokens_details": {
+            "cached_tokens": 703
+          }
+        },
+        "latencyMs": 1137
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-json-1701",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 177,
+          "prompt_tokens": 486,
+          "total_tokens": 663,
+          "prompt_tokens_details": {
+            "cached_tokens": 418
+          }
+        },
+        "latencyMs": 1613
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 177,
+          "prompt_tokens": 692,
+          "total_tokens": 869,
+          "prompt_tokens_details": {
+            "cached_tokens": 662
+          }
+        },
+        "latencyMs": 1679
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-json-1702",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 427,
+          "prompt_tokens": 486,
+          "total_tokens": 913,
+          "prompt_tokens_details": {
+            "cached_tokens": 415
+          }
+        },
+        "latencyMs": 4282
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 427,
+          "prompt_tokens": 942,
+          "total_tokens": 1369,
+          "prompt_tokens_details": {
+            "cached_tokens": 912
+          }
+        },
+        "latencyMs": 4160
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-json-1703",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 481,
+          "prompt_tokens": 486,
+          "total_tokens": 967,
+          "prompt_tokens_details": {
+            "cached_tokens": 485
+          }
+        },
+        "latencyMs": 4874
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 481,
+          "prompt_tokens": 996,
+          "total_tokens": 1477,
+          "prompt_tokens_details": {
+            "cached_tokens": 966
+          }
+        },
+        "latencyMs": 5030
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-oui-1701",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 471,
+          "total_tokens": 1239,
+          "prompt_tokens_details": {
+            "cached_tokens": 403
+          }
+        },
+        "latencyMs": 7203
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1268,
+          "total_tokens": 2036,
+          "prompt_tokens_details": {
+            "cached_tokens": 1238
+          }
+        },
+        "latencyMs": 7549
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-oui-1702",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 76,
+          "prompt_tokens": 471,
+          "total_tokens": 547,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "latencyMs": 762
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 76,
+          "prompt_tokens": 575,
+          "total_tokens": 651,
+          "prompt_tokens_details": {
+            "cached_tokens": 546
+          }
+        },
+        "latencyMs": 715
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H0-oui-1703",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 75,
+          "prompt_tokens": 471,
+          "total_tokens": 546,
+          "prompt_tokens_details": {
+            "cached_tokens": 403
+          }
+        },
+        "latencyMs": 787
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 75,
+          "prompt_tokens": 574,
+          "total_tokens": 649,
+          "prompt_tokens_details": {
+            "cached_tokens": 545
+          }
+        },
+        "latencyMs": 772
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-json-1701",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 419,
+          "prompt_tokens": 541,
+          "total_tokens": 960,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 3884
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 419,
+          "prompt_tokens": 987,
+          "total_tokens": 1406,
+          "prompt_tokens_details": {
+            "cached_tokens": 959
+          }
+        },
+        "latencyMs": 3932
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-json-1702",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 240,
+          "prompt_tokens": 541,
+          "total_tokens": 781,
+          "prompt_tokens_details": {
+            "cached_tokens": 470
+          }
+        },
+        "latencyMs": 2271
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 240,
+          "prompt_tokens": 808,
+          "total_tokens": 1048,
+          "prompt_tokens_details": {
+            "cached_tokens": 780
+          }
+        },
+        "latencyMs": 2274
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-json-1703",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 209,
+          "prompt_tokens": 541,
+          "total_tokens": 750,
+          "prompt_tokens_details": {
+            "cached_tokens": 470
+          }
+        },
+        "latencyMs": 2047
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 209,
+          "prompt_tokens": 777,
+          "total_tokens": 986,
+          "prompt_tokens_details": {
+            "cached_tokens": 749
+          }
+        },
+        "latencyMs": 2177
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-oui-1701",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 526,
+          "total_tokens": 1294,
+          "prompt_tokens_details": {
+            "cached_tokens": 458
+          }
+        },
+        "latencyMs": 7217
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1322,
+          "total_tokens": 2090,
+          "prompt_tokens_details": {
+            "cached_tokens": 1292
+          }
+        },
+        "latencyMs": 7666
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-oui-1702",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 163,
+          "prompt_tokens": 526,
+          "total_tokens": 689,
+          "prompt_tokens_details": {
+            "cached_tokens": 525
+          }
+        },
+        "latencyMs": 1541
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 163,
+          "prompt_tokens": 717,
+          "total_tokens": 880,
+          "prompt_tokens_details": {
+            "cached_tokens": 688
+          }
+        },
+        "latencyMs": 1773
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H1-oui-1703",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 526,
+          "total_tokens": 1294,
+          "prompt_tokens_details": {
+            "cached_tokens": 449
+          }
+        },
+        "latencyMs": 7920
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1323,
+          "total_tokens": 2091,
+          "prompt_tokens_details": {
+            "cached_tokens": 1293
+          }
+        },
+        "latencyMs": 5708
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-json-1701",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 173,
+          "prompt_tokens": 650,
+          "total_tokens": 823,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        },
+        "latencyMs": 1629
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 173,
+          "prompt_tokens": 850,
+          "total_tokens": 1023,
+          "prompt_tokens_details": {
+            "cached_tokens": 822
+          }
+        },
+        "latencyMs": 1782
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-json-1702",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 145,
+          "prompt_tokens": 650,
+          "total_tokens": 795,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "latencyMs": 1526
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 145,
+          "prompt_tokens": 825,
+          "total_tokens": 970,
+          "prompt_tokens_details": {
+            "cached_tokens": 794
+          }
+        },
+        "latencyMs": 1563
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-json-1703",
+    "task": "B04",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 146,
+          "prompt_tokens": 650,
+          "total_tokens": 796,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 1550
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 146,
+          "prompt_tokens": 826,
+          "total_tokens": 972,
+          "prompt_tokens_details": {
+            "cached_tokens": 795
+          }
+        },
+        "latencyMs": 1443
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-oui-1701",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 581,
+          "total_tokens": 722,
+          "prompt_tokens_details": {
+            "cached_tokens": 513
+          }
+        },
+        "latencyMs": 1406
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 149,
+          "prompt_tokens": 748,
+          "total_tokens": 897,
+          "prompt_tokens_details": {
+            "cached_tokens": 721
+          }
+        },
+        "latencyMs": 1381
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-oui-1702",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 78,
+          "prompt_tokens": 581,
+          "total_tokens": 659,
+          "prompt_tokens_details": {
+            "cached_tokens": 513
+          }
+        },
+        "latencyMs": 811
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 78,
+          "prompt_tokens": 685,
+          "total_tokens": 763,
+          "prompt_tokens_details": {
+            "cached_tokens": 658
+          }
+        },
+        "latencyMs": 734
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B04-H2-oui-1703",
+    "task": "B04",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 112,
+          "prompt_tokens": 581,
+          "total_tokens": 693,
+          "prompt_tokens_details": {
+            "cached_tokens": 513
+          }
+        },
+        "latencyMs": 1118
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 116,
+          "prompt_tokens": 721,
+          "total_tokens": 837,
+          "prompt_tokens_details": {
+            "cached_tokens": 692
+          }
+        },
+        "latencyMs": 1133
+      }
+    ],
+    "functional": {
+      "pass": false,
+      "checked": 0,
+      "context": null,
+      "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+    }
+  },
+  {
+    "id": "B06-H0-json-1701",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 92,
+          "prompt_tokens": 431,
+          "total_tokens": 523,
+          "prompt_tokens_details": {
+            "cached_tokens": 415
+          }
+        },
+        "latencyMs": 902
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 552,
+          "total_tokens": 569,
+          "prompt_tokens_details": {
+            "cached_tokens": 522
+          }
+        },
+        "latencyMs": 215
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-json-1702",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 29,
+          "prompt_tokens": 431,
+          "total_tokens": 460,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 304
+      },
+      {
+        "status": "rejected",
+        "syntax": true,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 29,
+          "prompt_tokens": 487,
+          "total_tokens": 516,
+          "prompt_tokens_details": {
+            "cached_tokens": 459
+          }
+        },
+        "latencyMs": 311
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-json-1703",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 431,
+          "total_tokens": 487,
+          "prompt_tokens_details": {
+            "cached_tokens": 415
+          }
+        },
+        "latencyMs": 604
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 516,
+          "total_tokens": 542,
+          "prompt_tokens_details": {
+            "cached_tokens": 486
+          }
+        },
+        "latencyMs": 280
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-oui-1701",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 62,
+          "prompt_tokens": 416,
+          "total_tokens": 478,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 603
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 507,
+          "total_tokens": 542,
+          "prompt_tokens_details": {
+            "cached_tokens": 477
+          }
+        },
+        "latencyMs": 364
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-oui-1702",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 61,
+          "prompt_tokens": 416,
+          "total_tokens": 477,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "latencyMs": 562
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "model generation failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 506,
+          "total_tokens": 1274,
+          "prompt_tokens_details": {
+            "cached_tokens": 476
+          }
+        },
+        "latencyMs": 7920
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H0-oui-1703",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H0",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 62,
+          "prompt_tokens": 416,
+          "total_tokens": 478,
+          "prompt_tokens_details": {
+            "cached_tokens": 400
+          }
+        },
+        "latencyMs": 664
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 507,
+          "total_tokens": 509,
+          "prompt_tokens_details": {
+            "cached_tokens": 477
+          }
+        },
+        "latencyMs": 52
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-json-1701",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 486,
+          "total_tokens": 553,
+          "prompt_tokens_details": {
+            "cached_tokens": 409
+          }
+        },
+        "latencyMs": 708
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 582,
+          "total_tokens": 584,
+          "prompt_tokens_details": {
+            "cached_tokens": 552
+          }
+        },
+        "latencyMs": 59
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-json-1702",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 62,
+          "prompt_tokens": 486,
+          "total_tokens": 548,
+          "prompt_tokens_details": {
+            "cached_tokens": 470
+          }
+        },
+        "latencyMs": 596
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 577,
+          "total_tokens": 579,
+          "prompt_tokens_details": {
+            "cached_tokens": 547
+          }
+        },
+        "latencyMs": 60
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-json-1703",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 486,
+          "total_tokens": 553,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "latencyMs": 713
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 69,
+          "prompt_tokens": 582,
+          "total_tokens": 651,
+          "prompt_tokens_details": {
+            "cached_tokens": 552
+          }
+        },
+        "latencyMs": 755
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-oui-1701",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 471,
+          "total_tokens": 538,
+          "prompt_tokens_details": {
+            "cached_tokens": 449
+          }
+        },
+        "latencyMs": 711
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 567,
+          "total_tokens": 569,
+          "prompt_tokens_details": {
+            "cached_tokens": 537
+          }
+        },
+        "latencyMs": 56
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-oui-1702",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 62,
+          "prompt_tokens": 471,
+          "total_tokens": 533,
+          "prompt_tokens_details": {
+            "cached_tokens": 455
+          }
+        },
+        "latencyMs": 597
+      },
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 562,
+          "total_tokens": 564,
+          "prompt_tokens_details": {
+            "cached_tokens": 532
+          }
+        },
+        "latencyMs": 60
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H1-oui-1703",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H1",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 81,
+          "prompt_tokens": 471,
+          "total_tokens": 552,
+          "prompt_tokens_details": {
+            "cached_tokens": 394
+          }
+        },
+        "latencyMs": 858
+      },
+      {
+        "status": "text",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 581,
+          "total_tokens": 604,
+          "prompt_tokens_details": {
+            "cached_tokens": 551
+          }
+        },
+        "latencyMs": 240
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-json-1701",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 595,
+          "total_tokens": 659,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 775
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 688,
+          "total_tokens": 791,
+          "prompt_tokens_details": {
+            "cached_tokens": 658
+          }
+        },
+        "latencyMs": 920
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-json-1702",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 59,
+          "prompt_tokens": 595,
+          "total_tokens": 654,
+          "prompt_tokens_details": {
+            "cached_tokens": 579
+          }
+        },
+        "latencyMs": 639
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 683,
+          "total_tokens": 786,
+          "prompt_tokens_details": {
+            "cached_tokens": 653
+          }
+        },
+        "latencyMs": 1044
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-json-1703",
+    "task": "B06",
+    "protocol": "json",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 595,
+          "total_tokens": 647,
+          "prompt_tokens_details": {
+            "cached_tokens": 464
+          }
+        },
+        "latencyMs": 534
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 676,
+          "total_tokens": 779,
+          "prompt_tokens_details": {
+            "cached_tokens": 646
+          }
+        },
+        "latencyMs": 944
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-oui-1701",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 58,
+          "prompt_tokens": 526,
+          "total_tokens": 584,
+          "prompt_tokens_details": {
+            "cached_tokens": 449
+          }
+        },
+        "latencyMs": 558
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 613,
+          "total_tokens": 662,
+          "prompt_tokens_details": {
+            "cached_tokens": 583
+          }
+        },
+        "latencyMs": 603
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-oui-1702",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 526,
+          "total_tokens": 590,
+          "prompt_tokens_details": {
+            "cached_tokens": 510
+          }
+        },
+        "latencyMs": 689
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 619,
+          "total_tokens": 668,
+          "prompt_tokens_details": {
+            "cached_tokens": 589
+          }
+        },
+        "latencyMs": 479
+      }
+    ],
+    "functional": null
+  },
+  {
+    "id": "B06-H2-oui-1703",
+    "task": "B06",
+    "protocol": "oui",
+    "variant": "H2",
+    "checks": [
+      {
+        "status": "rejected",
+        "syntax": false,
+        "category": "harness contract failure",
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 55,
+          "prompt_tokens": 526,
+          "total_tokens": 581,
+          "prompt_tokens_details": {
+            "cached_tokens": 449
+          }
+        },
+        "latencyMs": 654
+      },
+      {
+        "status": "accepted",
+        "syntax": true,
+        "category": null,
+        "explicitCapabilityDenial": false,
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 610,
+          "total_tokens": 659,
+          "prompt_tokens_details": {
+            "cached_tokens": 580
+          }
+        },
+        "latencyMs": 577
+      }
+    ],
+    "functional": null
+  }
+]

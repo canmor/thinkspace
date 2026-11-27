@@ -1,0 +1,94 @@
+{
+  "task": "B02",
+  "variant": "H2",
+  "protocol": "json",
+  "seed": 1701,
+  "id": "B02-H2-json-1701",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "To decouple the Conversation Engine, Context Engine, and Application Orchestrator, you can use the following approach:\n\n1. **Conversation Engine**:\n   - **Input**: Receive messages from the user.\n   - **Output**: Generate responses and store them in a message queue.\n   - **Decoupling**: Use a message broker (like RabbitMQ or Kafka) to send messages between the Conversation Engine and other components.\n\n2. **Context Engine**:\n   - **Input**: Receive messages from the Conversation Engine and the Application Orchestrator.\n   - **Output**: Select and budget references based on the context and the conversation state.\n   - **Decoupling**: Use a message broker to send messages between the Context Engine and the Conversation Engine.\n\n3. **Application Orchestrator**:\n   - **Input**: Receive messages from the Conversation Engine, the Context Engine, and the Application Orchestrator.\n   - **Output**: Coordinate the conversation, handle user interactions, and manage the conversation state.\n   - **Decoupling**: Use a message broker to send messages between the Application Orchestrator and the Conversation Engine, the Context Engine, and other components.\n\nBy using a message broker, you can decouple the Conversation Engine, Context Engine, and Application Orchestrator, allowing them to communicate and interact independently. This decoupling also makes it easier to scale and maintain the system.",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 282,
+        "prompt_tokens": 618,
+        "total_tokens": 900,
+        "prompt_tokens_details": {
+          "cached_tokens": 464
+        }
+      },
+      "latencyMs": 2589,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ]
+    },
+    {
+      "raw": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 103,
+        "prompt_tokens": 929,
+        "total_tokens": 1032,
+        "prompt_tokens_details": {
+          "cached_tokens": 899
+        }
+      },
+      "latencyMs": 1131,
+      "model": "qwen2a",
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Control",
+            "props": {
+              "label": "Hours",
+              "min": 0,
+              "max": 12,
+              "choices": [],
+              "value": 1
+            },
+            "binding": "hours"
+          },
+          {
+            "type": "Metric",
+            "props": {
+              "label": "Minutes",
+              "value": 60
+            }
+          }
+        ],
+        "state": {
+          "hours": 1
+        }
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "To decouple the Conversation Engine, Context Engine, and Application Orchestrator, you can use the following approach:\n\n1. **Conversation Engine**:\n   - **Input**: Receive messages from the user.\n   - **Output**: Generate responses and store them in a message queue.\n   - **Decoupling**: Use a message broker (like RabbitMQ or Kafka) to send messages between the Conversation Engine and other components.\n\n2. **Context Engine**:\n   - **Input**: Receive messages from the Conversation Engine and the Application Orchestrator.\n   - **Output**: Select and budget references based on the context and the conversation state.\n   - **Decoupling**: Use a message broker to send messages between the Context Engine and the Conversation Engine.\n\n3. **Application Orchestrator**:\n   - **Input**: Receive messages from the Conversation Engine, the Context Engine, and the Application Orchestrator.\n   - **Output**: Coordinate the conversation, handle user interactions, and manage the conversation state.\n   - **Decoupling**: Use a message broker to send messages between the Application Orchestrator and the Conversation Engine, the Context Engine, and other components.\n\nBy using a message broker, you can decouple the Conversation Engine, Context Engine, and Application Orchestrator, allowing them to communicate and interact independently. This decoupling also makes it easier to scale and maintain the system."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

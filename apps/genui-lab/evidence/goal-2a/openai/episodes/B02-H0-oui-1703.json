@@ -1,0 +1,84 @@
+{
+  "task": "B02",
+  "variant": "H0",
+  "protocol": "oui",
+  "seed": 1703,
+  "id": "B02-H0-oui-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities, interfaces, and communication patterns to minimize dependencies and maximize modularity:\n\n1. Define Clear Responsibilities:\n- Conversation Engine: Owns message handling, conversation state, and lineage tracking.\n- Context Engine: Manages selection, budgeting, and provision of contextual references or knowledge.\n- Application Orchestrator: Coordinates workflows, triggers interactions, and manages overall application logic.\n\n2. Establish Explicit Interfaces:\n- Conversation Engine exposes APIs to send/receive messages, query conversation state, and lineage.\n- Context Engine exposes APIs to request contextual references with budget constraints.\n- Application Orchestrator invokes these APIs without internal knowledge of their implementations.\n\n3. Use Message Passing or Event-Driven Communication:\n- Components communicate via asynchronous messages or events rather than direct calls.\n- For example, the Orchestrator sends a message to the Conversation Engine to process input, which requests context from the Context Engine via events.\n\n4. Separate Data Ownership:\n- Each engine owns its data exclusively; no shared mutable state.\n- Data needed by others is passed through interfaces or events.\n\n5. Introduce Abstraction Layers or Adapters:\n- If needed, use adapters to translate between component protocols or data formats.\n\n6. Define Contracts and Protocols:\n- Use well-defined data schemas and protocols for interactions to avoid tight coupling.\n\n7. Enable Independent Deployment and Testing:\n- Components can be developed, deployed, and tested independently.\n\nSummary: The Application Orchestrator acts as a coordinator invoking Conversation and Context Engines through well-defined APIs or event messages. The Conversation Engine manages messages and lineage internally, requesting context from the Context Engine as needed. This separation ensures modularity, easier maintenance, and scalability.",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 420,
+        "completion_tokens": 351,
+        "total_tokens": 771,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 5937,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ]
+    },
+    {
+      "raw": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves assigning clear responsibilities and defining explicit interfaces to minimize dependencies:\n\n1. Responsibilities:\n- Conversation Engine: Owns message management and conversation lineage.\n- Context Engine: Selects and budgets contextual references.\n- Application Orchestrator: Coordinates interactions between engines.\n\n2. Interfaces:\n- Conversation Engine exposes APIs to send/receive messages and query lineage.\n- Context Engine exposes APIs to request and budget references.\n- Application Orchestrator calls these APIs without internal knowledge of implementations.\n\n3. Communication:\n- Use asynchronous message passing or events to communicate between components.\n- The Orchestrator triggers Conversation Engine actions; Conversation Engine requests context from Context Engine.\n\n4. Data Ownership:\n- Each engine owns its data exclusively; data sharing occurs only via interfaces.\n\n5. Abstraction:\n- Use adapters or abstraction layers if needed to translate protocols or data formats.\n\nThis approach ensures modularity, independent development, and easier maintenance.",
+      "finish": "stop",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 196,
+        "total_tokens": 995,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "latencyMs": 2738,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "TEXT Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities, interfaces, and communication patterns to minimize dependencies and maximize modularity:\n\n1. Define Clear Responsibilities:\n- Conversation Engine: Owns message handling, conversation state, and lineage tracking.\n- Context Engine: Manages selection, budgeting, and provision of contextual references or knowledge.\n- Application Orchestrator: Coordinates workflows, triggers interactions, and manages overall application logic.\n\n2. Establish Explicit Interfaces:\n- Conversation Engine exposes APIs to send/receive messages, query conversation state, and lineage.\n- Context Engine exposes APIs to request contextual references with budget constraints.\n- Application Orchestrator invokes these APIs without internal knowledge of their implementations.\n\n3. Use Message Passing or Event-Driven Communication:\n- Components communicate via asynchronous messages or events rather than direct calls.\n- For example, the Orchestrator sends a message to the Conversation Engine to process input, which requests context from the Context Engine via events.\n\n4. Separate Data Ownership:\n- Each engine owns its data exclusively; no shared mutable state.\n- Data needed by others is passed through interfaces or events.\n\n5. Introduce Abstraction Layers or Adapters:\n- If needed, use adapters to translate between component protocols or data formats.\n\n6. Define Contracts and Protocols:\n- Use well-defined data schemas and protocols for interactions to avoid tight coupling.\n\n7. Enable Independent Deployment and Testing:\n- Components can be developed, deployed, and tested independently.\n\nSummary: The Application Orchestrator acts as a coordinator invoking Conversation and Context Engines through well-defined APIs or event messages. The Conversation Engine manages messages and lineage internally, requesting context from the Context Engine as needed. This separation ensures modularity, easier maintenance, and scalability."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

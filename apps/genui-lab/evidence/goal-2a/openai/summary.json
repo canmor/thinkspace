@@ -1,0 +1,1154 @@
+{
+  "overall": {
+    "firstAdmittedAmongSubmittedUI": {
+      "count": 2,
+      "denominator": 12,
+      "percent": 16.7
+    },
+    "finalAdmittedAmongSubmittedUI": {
+      "count": 3,
+      "denominator": 28,
+      "percent": 10.7
+    },
+    "rejectedAtAdmission": {
+      "count": 35,
+      "denominator": 38,
+      "percent": 92.1
+    },
+    "episodes": 90,
+    "attempts": 160,
+    "firstWireAndSurfaceSyntax": {
+      "count": 21,
+      "denominator": 90,
+      "percent": 23.3
+    },
+    "firstAcceptedResponse": {
+      "count": 20,
+      "denominator": 90,
+      "percent": 22.2
+    },
+    "finalAcceptedResponse": {
+      "count": 25,
+      "denominator": 90,
+      "percent": 27.8
+    },
+    "firstAdmittedUI": {
+      "count": 2,
+      "denominator": 90,
+      "percent": 2.2
+    },
+    "finalAdmittedUI": {
+      "count": 3,
+      "denominator": 90,
+      "percent": 3.3
+    },
+    "finalText": 22,
+    "functionality": {
+      "count": 3,
+      "denominator": 36,
+      "percent": 8.3
+    },
+    "semanticErrors": {
+      "count": 10,
+      "denominator": 25,
+      "percent": 40
+    },
+    "taskSuccess": {
+      "count": 15,
+      "denominator": 90,
+      "percent": 16.7
+    },
+    "explicitUnsupportedCapability": {
+      "count": 2,
+      "denominator": 160,
+      "percent": 1.3
+    },
+    "runtimeFailure": {
+      "count": 0,
+      "denominator": 160,
+      "percent": 0
+    },
+    "b06TextOnly": {
+      "count": 4,
+      "denominator": 18,
+      "percent": 22.2
+    },
+    "presentationIssues": 3,
+    "classifications": {
+      "harness contract failure": 91,
+      "model generation failure": 44
+    },
+    "allUsage": {
+      "calls": 160,
+      "input": 100184,
+      "output": 41059,
+      "cached": 4352,
+      "medianLatencyMs": 2945,
+      "estimatedProviderUSD": 0.10446240000000001
+    },
+    "repairUsage": {
+      "calls": 70,
+      "input": 55283,
+      "output": 18463,
+      "cached": 4352,
+      "medianLatencyMs": 2727,
+      "estimatedProviderUSD": 0.05034840000000001
+    }
+  },
+  "byVariantAndProtocol": {
+    "H0-oui": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 5,
+        "percent": 0
+      },
+      "rejectedAtAdmission": {
+        "count": 5,
+        "denominator": 5,
+        "percent": 100
+      },
+      "episodes": 15,
+      "attempts": 30,
+      "firstWireAndSurfaceSyntax": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "firstAcceptedResponse": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAcceptedResponse": {
+        "count": 1,
+        "denominator": 15,
+        "percent": 6.7
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalText": 1,
+      "functionality": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "semanticErrors": {
+        "count": 1,
+        "denominator": 1,
+        "percent": 100
+      },
+      "taskSuccess": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "explicitUnsupportedCapability": {
+        "count": 1,
+        "denominator": 30,
+        "percent": 3.3
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 30,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 3,
+        "percent": 0
+      },
+      "presentationIssues": 1,
+      "classifications": {
+        "harness contract failure": 24,
+        "model generation failure": 5
+      },
+      "allUsage": {
+        "calls": 30,
+        "input": 16557,
+        "output": 6325,
+        "cached": 0,
+        "medianLatencyMs": 2836,
+        "estimatedProviderUSD": 0.0167428
+      },
+      "repairUsage": {
+        "calls": 15,
+        "input": 10146,
+        "output": 3010,
+        "cached": 0,
+        "medianLatencyMs": 2738,
+        "estimatedProviderUSD": 0.0088744
+      }
+    },
+    "H0-json": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 4,
+        "percent": 0
+      },
+      "rejectedAtAdmission": {
+        "count": 4,
+        "denominator": 4,
+        "percent": 100
+      },
+      "episodes": 15,
+      "attempts": 30,
+      "firstWireAndSurfaceSyntax": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "firstAcceptedResponse": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAcceptedResponse": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalText": 0,
+      "functionality": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "semanticErrors": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "taskSuccess": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 30,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 30,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 3,
+        "percent": 0
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "harness contract failure": 22,
+        "model generation failure": 8
+      },
+      "allUsage": {
+        "calls": 30,
+        "input": 17865,
+        "output": 8330,
+        "cached": 2048,
+        "medianLatencyMs": 3174,
+        "estimatedProviderUSD": 0.019859599999999998
+      },
+      "repairUsage": {
+        "calls": 15,
+        "input": 11244,
+        "output": 4125,
+        "cached": 2048,
+        "medianLatencyMs": 2845,
+        "estimatedProviderUSD": 0.010483200000000002
+      }
+    },
+    "H1-oui": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 3,
+        "percent": 0
+      },
+      "rejectedAtAdmission": {
+        "count": 3,
+        "denominator": 3,
+        "percent": 100
+      },
+      "episodes": 15,
+      "attempts": 29,
+      "firstWireAndSurfaceSyntax": {
+        "count": 1,
+        "denominator": 15,
+        "percent": 6.7
+      },
+      "firstAcceptedResponse": {
+        "count": 1,
+        "denominator": 15,
+        "percent": 6.7
+      },
+      "finalAcceptedResponse": {
+        "count": 4,
+        "denominator": 15,
+        "percent": 26.7
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalText": 4,
+      "functionality": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "semanticErrors": {
+        "count": 2,
+        "denominator": 4,
+        "percent": 50
+      },
+      "taskSuccess": {
+        "count": 2,
+        "denominator": 15,
+        "percent": 13.3
+      },
+      "explicitUnsupportedCapability": {
+        "count": 1,
+        "denominator": 29,
+        "percent": 3.4
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 29,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 3,
+        "percent": 0
+      },
+      "presentationIssues": 2,
+      "classifications": {
+        "harness contract failure": 20,
+        "model generation failure": 5
+      },
+      "allUsage": {
+        "calls": 29,
+        "input": 18044,
+        "output": 7015,
+        "cached": 1152,
+        "medianLatencyMs": 2160,
+        "estimatedProviderUSD": 0.018096
+      },
+      "repairUsage": {
+        "calls": 14,
+        "input": 10793,
+        "output": 3093,
+        "cached": 1152,
+        "medianLatencyMs": 1853,
+        "estimatedProviderUSD": 0.0089204
+      }
+    },
+    "H1-json": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 4,
+        "percent": 0
+      },
+      "rejectedAtAdmission": {
+        "count": 4,
+        "denominator": 4,
+        "percent": 100
+      },
+      "episodes": 15,
+      "attempts": 28,
+      "firstWireAndSurfaceSyntax": {
+        "count": 2,
+        "denominator": 15,
+        "percent": 13.3
+      },
+      "firstAcceptedResponse": {
+        "count": 2,
+        "denominator": 15,
+        "percent": 13.3
+      },
+      "finalAcceptedResponse": {
+        "count": 2,
+        "denominator": 15,
+        "percent": 13.3
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalText": 2,
+      "functionality": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "semanticErrors": {
+        "count": 0,
+        "denominator": 2,
+        "percent": 0
+      },
+      "taskSuccess": {
+        "count": 2,
+        "denominator": 15,
+        "percent": 13.3
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 28,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 28,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 3,
+        "percent": 0
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "harness contract failure": 19,
+        "model generation failure": 7
+      },
+      "allUsage": {
+        "calls": 28,
+        "input": 18000,
+        "output": 8117,
+        "cached": 1152,
+        "medianLatencyMs": 3189,
+        "estimatedProviderUSD": 0.0198416
+      },
+      "repairUsage": {
+        "calls": 13,
+        "input": 10539,
+        "output": 3962,
+        "cached": 1152,
+        "medianLatencyMs": 2314,
+        "estimatedProviderUSD": 0.0102092
+      }
+    },
+    "H2-oui": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 2,
+        "denominator": 6,
+        "percent": 33.3
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 3,
+        "denominator": 6,
+        "percent": 50
+      },
+      "rejectedAtAdmission": {
+        "count": 7,
+        "denominator": 10,
+        "percent": 70
+      },
+      "episodes": 15,
+      "attempts": 19,
+      "firstWireAndSurfaceSyntax": {
+        "count": 12,
+        "denominator": 15,
+        "percent": 80
+      },
+      "firstAcceptedResponse": {
+        "count": 11,
+        "denominator": 15,
+        "percent": 73.3
+      },
+      "finalAcceptedResponse": {
+        "count": 12,
+        "denominator": 15,
+        "percent": 80
+      },
+      "firstAdmittedUI": {
+        "count": 2,
+        "denominator": 15,
+        "percent": 13.3
+      },
+      "finalAdmittedUI": {
+        "count": 3,
+        "denominator": 15,
+        "percent": 20
+      },
+      "finalText": 9,
+      "functionality": {
+        "count": 3,
+        "denominator": 6,
+        "percent": 50
+      },
+      "semanticErrors": {
+        "count": 6,
+        "denominator": 12,
+        "percent": 50
+      },
+      "taskSuccess": {
+        "count": 6,
+        "denominator": 15,
+        "percent": 40
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 19,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 19,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 3,
+        "denominator": 3,
+        "percent": 100
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "model generation failure": 7
+      },
+      "allUsage": {
+        "calls": 19,
+        "input": 11938,
+        "output": 4699,
+        "cached": 0,
+        "medianLatencyMs": 2780,
+        "estimatedProviderUSD": 0.0122936
+      },
+      "repairUsage": {
+        "calls": 4,
+        "input": 3892,
+        "output": 1479,
+        "cached": 0,
+        "medianLatencyMs": 5407,
+        "estimatedProviderUSD": 0.0039232
+      }
+    },
+    "H2-json": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "rejectedAtAdmission": {
+        "count": 12,
+        "denominator": 12,
+        "percent": 100
+      },
+      "episodes": 15,
+      "attempts": 24,
+      "firstWireAndSurfaceSyntax": {
+        "count": 6,
+        "denominator": 15,
+        "percent": 40
+      },
+      "firstAcceptedResponse": {
+        "count": 6,
+        "denominator": 15,
+        "percent": 40
+      },
+      "finalAcceptedResponse": {
+        "count": 6,
+        "denominator": 15,
+        "percent": 40
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 15,
+        "percent": 0
+      },
+      "finalText": 6,
+      "functionality": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "semanticErrors": {
+        "count": 1,
+        "denominator": 6,
+        "percent": 16.7
+      },
+      "taskSuccess": {
+        "count": 5,
+        "denominator": 15,
+        "percent": 33.3
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 24,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 24,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 1,
+        "denominator": 3,
+        "percent": 33.3
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "harness contract failure": 6,
+        "model generation failure": 12
+      },
+      "allUsage": {
+        "calls": 24,
+        "input": 17780,
+        "output": 6573,
+        "cached": 0,
+        "medianLatencyMs": 4769,
+        "estimatedProviderUSD": 0.017628800000000003
+      },
+      "repairUsage": {
+        "calls": 9,
+        "input": 8669,
+        "output": 2794,
+        "cached": 0,
+        "medianLatencyMs": 4890,
+        "estimatedProviderUSD": 0.007938
+      }
+    }
+  },
+  "byTask": {
+    "B01": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "rejectedAtAdmission": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "episodes": 18,
+      "attempts": 31,
+      "firstWireAndSurfaceSyntax": {
+        "count": 5,
+        "denominator": 18,
+        "percent": 27.8
+      },
+      "firstAcceptedResponse": {
+        "count": 5,
+        "denominator": 18,
+        "percent": 27.8
+      },
+      "finalAcceptedResponse": {
+        "count": 6,
+        "denominator": 18,
+        "percent": 33.3
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalText": 6,
+      "functionality": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "semanticErrors": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "taskSuccess": {
+        "count": 6,
+        "denominator": 18,
+        "percent": 33.3
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 31,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 31,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "harness contract failure": 25
+      },
+      "allUsage": {
+        "calls": 31,
+        "input": 16751,
+        "output": 3885,
+        "cached": 0,
+        "medianLatencyMs": 1853,
+        "estimatedProviderUSD": 0.012916400000000001
+      },
+      "repairUsage": {
+        "calls": 13,
+        "input": 8174,
+        "output": 1410,
+        "cached": 0,
+        "medianLatencyMs": 1811,
+        "estimatedProviderUSD": 0.0055256
+      }
+    },
+    "B02": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "rejectedAtAdmission": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "episodes": 18,
+      "attempts": 27,
+      "firstWireAndSurfaceSyntax": {
+        "count": 9,
+        "denominator": 18,
+        "percent": 50
+      },
+      "firstAcceptedResponse": {
+        "count": 9,
+        "denominator": 18,
+        "percent": 50
+      },
+      "finalAcceptedResponse": {
+        "count": 9,
+        "denominator": 18,
+        "percent": 50
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalText": 9,
+      "functionality": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "semanticErrors": {
+        "count": 1,
+        "denominator": 9,
+        "percent": 11.1
+      },
+      "taskSuccess": {
+        "count": 8,
+        "denominator": 18,
+        "percent": 44.4
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 27,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 27,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "harness contract failure": 18
+      },
+      "allUsage": {
+        "calls": 27,
+        "input": 15336,
+        "output": 6284,
+        "cached": 0,
+        "medianLatencyMs": 3189,
+        "estimatedProviderUSD": 0.016188800000000003
+      },
+      "repairUsage": {
+        "calls": 9,
+        "input": 6489,
+        "output": 1760,
+        "cached": 0,
+        "medianLatencyMs": 2727,
+        "estimatedProviderUSD": 0.005411600000000001
+      }
+    },
+    "B03": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 6,
+        "percent": 0
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 14,
+        "percent": 0
+      },
+      "rejectedAtAdmission": {
+        "count": 20,
+        "denominator": 20,
+        "percent": 100
+      },
+      "episodes": 18,
+      "attempts": 36,
+      "firstWireAndSurfaceSyntax": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "firstAcceptedResponse": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalAcceptedResponse": {
+        "count": 1,
+        "denominator": 18,
+        "percent": 5.6
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalText": 1,
+      "functionality": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "semanticErrors": {
+        "count": 1,
+        "denominator": 1,
+        "percent": 100
+      },
+      "taskSuccess": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "explicitUnsupportedCapability": {
+        "count": 2,
+        "denominator": 36,
+        "percent": 5.6
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 36,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "presentationIssues": 1,
+      "classifications": {
+        "model generation failure": 26,
+        "harness contract failure": 9
+      },
+      "allUsage": {
+        "calls": 36,
+        "input": 28622,
+        "output": 17778,
+        "cached": 3328,
+        "medianLatencyMs": 5826,
+        "estimatedProviderUSD": 0.038895200000000005
+      },
+      "repairUsage": {
+        "calls": 18,
+        "input": 18947,
+        "output": 9043,
+        "cached": 3328,
+        "medianLatencyMs": 6004,
+        "estimatedProviderUSD": 0.0210492
+      }
+    },
+    "B04": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 2,
+        "denominator": 6,
+        "percent": 33.3
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 3,
+        "denominator": 14,
+        "percent": 21.4
+      },
+      "rejectedAtAdmission": {
+        "count": 15,
+        "denominator": 18,
+        "percent": 83.3
+      },
+      "episodes": 18,
+      "attempts": 34,
+      "firstWireAndSurfaceSyntax": {
+        "count": 3,
+        "denominator": 18,
+        "percent": 16.7
+      },
+      "firstAcceptedResponse": {
+        "count": 2,
+        "denominator": 18,
+        "percent": 11.1
+      },
+      "finalAcceptedResponse": {
+        "count": 5,
+        "denominator": 18,
+        "percent": 27.8
+      },
+      "firstAdmittedUI": {
+        "count": 2,
+        "denominator": 18,
+        "percent": 11.1
+      },
+      "finalAdmittedUI": {
+        "count": 3,
+        "denominator": 18,
+        "percent": 16.7
+      },
+      "finalText": 2,
+      "functionality": {
+        "count": 3,
+        "denominator": 18,
+        "percent": 16.7
+      },
+      "semanticErrors": {
+        "count": 4,
+        "denominator": 5,
+        "percent": 80
+      },
+      "taskSuccess": {
+        "count": 1,
+        "denominator": 18,
+        "percent": 5.6
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 34,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 34,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "presentationIssues": 2,
+      "classifications": {
+        "model generation failure": 18,
+        "harness contract failure": 11
+      },
+      "allUsage": {
+        "calls": 34,
+        "input": 23671,
+        "output": 11615,
+        "cached": 1024,
+        "medianLatencyMs": 4576,
+        "estimatedProviderUSD": 0.0277452
+      },
+      "repairUsage": {
+        "calls": 16,
+        "input": 14320,
+        "output": 5600,
+        "cached": 1024,
+        "medianLatencyMs": 4794,
+        "estimatedProviderUSD": 0.0143808
+      }
+    },
+    "B06": {
+      "firstAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "finalAdmittedAmongSubmittedUI": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "rejectedAtAdmission": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "episodes": 18,
+      "attempts": 32,
+      "firstWireAndSurfaceSyntax": {
+        "count": 4,
+        "denominator": 18,
+        "percent": 22.2
+      },
+      "firstAcceptedResponse": {
+        "count": 4,
+        "denominator": 18,
+        "percent": 22.2
+      },
+      "finalAcceptedResponse": {
+        "count": 4,
+        "denominator": 18,
+        "percent": 22.2
+      },
+      "firstAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalAdmittedUI": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "finalText": 4,
+      "functionality": {
+        "count": 0,
+        "denominator": 0,
+        "percent": null
+      },
+      "semanticErrors": {
+        "count": 4,
+        "denominator": 4,
+        "percent": 100
+      },
+      "taskSuccess": {
+        "count": 0,
+        "denominator": 18,
+        "percent": 0
+      },
+      "explicitUnsupportedCapability": {
+        "count": 0,
+        "denominator": 32,
+        "percent": 0
+      },
+      "runtimeFailure": {
+        "count": 0,
+        "denominator": 32,
+        "percent": 0
+      },
+      "b06TextOnly": {
+        "count": 4,
+        "denominator": 18,
+        "percent": 22.2
+      },
+      "presentationIssues": 0,
+      "classifications": {
+        "harness contract failure": 28
+      },
+      "allUsage": {
+        "calls": 32,
+        "input": 15804,
+        "output": 1497,
+        "cached": 0,
+        "medianLatencyMs": 1221,
+        "estimatedProviderUSD": 0.0087168
+      },
+      "repairUsage": {
+        "calls": 14,
+        "input": 7353,
+        "output": 650,
+        "cached": 0,
+        "medianLatencyMs": 1187,
+        "estimatedProviderUSD": 0.0039812
+      }
+    }
+  }
+}

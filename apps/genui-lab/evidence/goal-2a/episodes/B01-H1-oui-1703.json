@@ -1,0 +1,70 @@
+{
+  "task": "B01",
+  "variant": "H1",
+  "protocol": "oui",
+  "seed": 1703,
+  "id": "B01-H1-oui-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "The geometric meaning of a vector dot product is the projection of one vector onto another. This can be visualized as the length of the projection of the first vector onto the second vector, scaled by the length of the second vector. The dot product of two vectors can be calculated using the formula:\n\n\\[\n\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}| |\\mathbf{b}| \\cos \\theta\n\\]\n\nwhere \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) are the vectors, \\(|\\mathbf{a}|\\) and \\(|\\mathbf{b}|\\) are their magnitudes, and \\(\\theta\\) is the angle between them.\n\n**Orthogonal Vectors:**\nTwo vectors are orthogonal if their dot product is zero. This means that the vectors are perpendicular to each other. In a 2-dimensional space, if \\(\\mathbf{a} = (a_1, a_2)\\) and \\(\\mathbf{b} = (b_1, b_2)\\), then:\n\n\\[\n\\mathbf{a} \\cdot \\mathbf{b} = a_1 b_1 + a_2 b_2 = 0\n\\]\n\n**Negative Projection:**\nThe negative projection of vector \\(\\mathbf{a}\\) onto vector \\(\\mathbf{b}\\) is the projection of \\(\\mathbf{a}\\) onto \\(\\mathbf{b}\\) in the opposite direction. This can be calculated using the formula:\n\n\\[\n-\\text{proj}_{\\mathbf{b}} \\mathbf{a} = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{b}|^2} \\mathbf{b}\n\\]\n\nThis is equivalent to the projection of \\(\\mathbf{a}\\) onto \\(\\mathbf{b}\\) scaled by \\(-1\\).",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 412,
+        "prompt_tokens": 478,
+        "total_tokens": 890,
+        "prompt_tokens_details": {
+          "cached_tokens": 455
+        }
+      },
+      "latencyMs": 4102,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ]
+    },
+    {
+      "raw": "TEXT",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 919,
+        "total_tokens": 921,
+        "prompt_tokens_details": {
+          "cached_tokens": 889
+        }
+      },
+      "latencyMs": 71,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "The geometric meaning of a vector dot product is the projection of one vector onto another. This can be visualized as the length of the projection of the first vector onto the second vector, scaled by the length of the second vector. The dot product of two vectors can be calculated using the formula:\n\n\\[\n\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}| |\\mathbf{b}| \\cos \\theta\n\\]\n\nwhere \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\) are the vectors, \\(|\\mathbf{a}|\\) and \\(|\\mathbf{b}|\\) are their magnitudes, and \\(\\theta\\) is the angle between them.\n\n**Orthogonal Vectors:**\nTwo vectors are orthogonal if their dot product is zero. This means that the vectors are perpendicular to each other. In a 2-dimensional space, if \\(\\mathbf{a} = (a_1, a_2)\\) and \\(\\mathbf{b} = (b_1, b_2)\\), then:\n\n\\[\n\\mathbf{a} \\cdot \\mathbf{b} = a_1 b_1 + a_2 b_2 = 0\n\\]\n\n**Negative Projection:**\nThe negative projection of vector \\(\\mathbf{a}\\) onto vector \\(\\mathbf{b}\\) is the projection of \\(\\mathbf{a}\\) onto \\(\\mathbf{b}\\) in the opposite direction. This can be calculated using the formula:\n\n\\[\n-\\text{proj}_{\\mathbf{b}} \\mathbf{a} = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{b}|^2} \\mathbf{b}\n\\]\n\nThis is equivalent to the projection of \\(\\mathbf{a}\\) onto \\(\\mathbf{b}\\) scaled by \\(-1\\)."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

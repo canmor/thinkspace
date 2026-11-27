@@ -1,0 +1,70 @@
+{
+  "task": "B03",
+  "variant": "H2",
+  "protocol": "json",
+  "seed": 1703,
+  "id": "B03-H2-json-1703",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\nSTATE {\"nativeExperience\":40,\"lightweightRuntime\":25,\"deliveryEfficiency\":35}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"nativeExperience\",\"lightweightRuntime\",\"deliveryEfficiency\"]},\"nativeExperience\":{\"type\":\"Metric\",\"props\":{\"label\":\"Native Experience\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/nativeExperience\"},\"b\":40}}}},\"lightweightRuntime\":{\"type\":\"Metric\",\"props\":{\"label\":\"Lightweight Runtime\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/lightweightRuntime\"},\"b\":25}}}},\"deliveryEfficiency\":{\"type\":\"Metric\",\"props\":{\"label\":\"Delivery Efficiency\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/deliveryEfficiency\"},\"b\":35}}}}}}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 175,
+        "prompt_tokens": 668,
+        "total_tokens": 843,
+        "prompt_tokens_details": {
+          "cached_tokens": 579
+        }
+      },
+      "latencyMs": 1855,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Unreachable component or missing state",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "UI\nSTATE {\"nativeExperience\":40,\"lightweightRuntime\":25,\"deliveryEfficiency\":35}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"nativeExperience\",\"lightweightRuntime\",\"deliveryEfficiency\"]},\"nativeExperience\":{\"type\":\"Metric\",\"props\":{\"label\":\"Native Experience\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/nativeExperience\"},\"b\":40}}}},\"lightweightRuntime\":{\"type\":\"Metric\",\"props\":{\"label\":\"Lightweight Runtime\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/lightweightRuntime\"},\"b\":25}}}},\"deliveryEfficiency\":{\"type\":\"Metric\",\"props\":{\"label\":\"Delivery Efficiency\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/deliveryEfficiency\"},\"b\":35}}}}}}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 175,
+        "prompt_tokens": 873,
+        "total_tokens": 1048,
+        "prompt_tokens_details": {
+          "cached_tokens": 842
+        }
+      },
+      "latencyMs": 1869,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Unreachable component or missing state",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\nSTATE {\"nativeExperience\":40,\"lightweightRuntime\":25,\"deliveryEfficiency\":35}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"nativeExperience\",\"lightweightRuntime\",\"deliveryEfficiency\"]},\"nativeExperience\":{\"type\":\"Metric\",\"props\":{\"label\":\"Native Experience\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/nativeExperience\"},\"b\":40}}}},\"lightweightRuntime\":{\"type\":\"Metric\",\"props\":{\"label\":\"Lightweight Runtime\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/lightweightRuntime\"},\"b\":25}}}},\"deliveryEfficiency\":{\"type\":\"Metric\",\"props\":{\"label\":\"Delivery Efficiency\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/deliveryEfficiency\"},\"b\":35}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Unreachable component or missing state. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

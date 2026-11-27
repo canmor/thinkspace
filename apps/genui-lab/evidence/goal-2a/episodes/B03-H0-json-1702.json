@@ -1,0 +1,70 @@
+{
+  "task": "B03",
+  "variant": "H0",
+  "protocol": "json",
+  "seed": 1702,
+  "id": "B03-H0-json-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "```json\n{\n  \"type\": \"Stack\",\n  \"props\": {},\n  \"children\": [\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Native Hybrid\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 40\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 25\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 35\n            }\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Tauri\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 7\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 8\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 8\n            }\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Electron\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 6\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 4\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 10\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n```",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 430,
+        "prompt_tokens": 504,
+        "total_tokens": 934,
+        "prompt_tokens_details": {
+          "cached_tokens": 503
+        }
+      },
+      "latencyMs": 4126,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ]
+    },
+    {
+      "raw": "```json\n{\n  \"type\": \"Stack\",\n  \"props\": {},\n  \"children\": [\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Native Hybrid\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 40\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 25\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 35\n            }\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Tauri\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 7\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 8\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 8\n            }\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Electron\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 6\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 4\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 10\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n```",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 430,
+        "prompt_tokens": 963,
+        "total_tokens": 1393,
+        "prompt_tokens_details": {
+          "cached_tokens": 933
+        }
+      },
+      "latencyMs": 4113,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Expected UI or TEXT header",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "```json\n{\n  \"type\": \"Stack\",\n  \"props\": {},\n  \"children\": [\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Native Hybrid\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 40\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 25\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 35\n            }\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Tauri\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 7\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 8\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 8\n            }\n          }\n        ]\n      }\n    },\n    {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Electron\",\n        \"items\": [\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Native Experience\",\n              \"value\": 6\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Lightweight Runtime\",\n              \"value\": 4\n            }\n          },\n          {\n            \"type\": \"Metric\",\n            \"props\": {\n              \"label\": \"Delivery Efficiency\",\n              \"value\": 10\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n```"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

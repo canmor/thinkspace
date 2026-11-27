@@ -1,0 +1,70 @@
+{
+  "task": "B04",
+  "variant": "H2",
+  "protocol": "oui",
+  "seed": 1701,
+  "id": "B04-H2-oui-1701",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\nroot = Stack([\n  knob,\n  allowance,\n  fee\n])\n\n$bagWeight = 10\nknob = Control(\"Bag Weight\", 10, 40, [], $bagWeight)\nallowance = Metric(\"Allowance\", $bagWeight - 23)\nfee = Metric(\"Fee\", max(0, $bagWeight - 32 - 5))\n\nknob = Control(\"Bag Weight\", 10, 40, [], $bagWeight)\nallowance = Metric(\"Allowance\", $bagWeight - 23)\nfee = Metric(\"Fee\", max(0, $bagWeight - 32 - 5))",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 141,
+        "prompt_tokens": 581,
+        "total_tokens": 722,
+        "prompt_tokens_details": {
+          "cached_tokens": 513
+        }
+      },
+      "latencyMs": 1406,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Syntax balance",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ]
+    },
+    {
+      "raw": "UI\nroot = Stack([\n  knob,\n  allowance,\n  fee\n])\n\n$bagWeight = 10\nknob = Control(\"Bag Weight\", 10, 40, [], $bagWeight)\nallowance = Metric(\"Allowance\", max(0, $bagWeight - 23))\nfee = Metric(\"Fee\", max(0, $bagWeight - 32 - 5))\n\nknob = Control(\"Bag Weight\", 10, 40, [], $bagWeight)\nallowance = Metric(\"Allowance\", max(0, $bagWeight - 23))\nfee = Metric(\"Fee\", max(0, $bagWeight - 32 - 5))",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 149,
+        "prompt_tokens": 748,
+        "total_tokens": 897,
+        "prompt_tokens_details": {
+          "cached_tokens": 721
+        }
+      },
+      "latencyMs": 1381,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Syntax balance",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nExample for an unrelated duration converter:\nUI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\nroot = Stack([\n  knob,\n  allowance,\n  fee\n])\n\n$bagWeight = 10\nknob = Control(\"Bag Weight\", 10, 40, [], $bagWeight)\nallowance = Metric(\"Allowance\", $bagWeight - 23)\nfee = Metric(\"Fee\", max(0, $bagWeight - 32 - 5))\n\nknob = Control(\"Bag Weight\", 10, 40, [], $bagWeight)\nallowance = Metric(\"Allowance\", $bagWeight - 23)\nfee = Metric(\"Fee\", max(0, $bagWeight - 32 - 5))"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Syntax balance. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

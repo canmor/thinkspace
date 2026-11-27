@@ -1,3 +1,4 @@
+import { validateTransfer } from "./transport";
 import { limits, type Frame } from "./policy";
 export class RestrictedClient {
   private worker = new Worker(new URL("./runtime.worker.ts", import.meta.url), {
@@ -21,6 +22,11 @@ export class RestrictedClient {
     this.worker.onmessageerror = () => this.close("Invalid runtime response");
   }
   request(message: object): Promise<Frame> {
+    try {
+      validateTransfer(message);
+    } catch (e) {
+      return Promise.reject(e);
+    }
     if (this.closed || this.queue.length >= limits.queue)
       return Promise.reject(Error("Runtime closed or queue budget exceeded"));
     return new Promise((resolve, reject) => {

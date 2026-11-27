@@ -1,0 +1,70 @@
+{
+  "task": "B04",
+  "variant": "H1",
+  "protocol": "oui",
+  "seed": 1702,
+  "id": "B04-H1-oui-1702",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack\",\n    [\n      \"Text\",\n      \"Allowance\",\n      \"0\"\n    ],\n    [\n      \"Text\",\n      \"Fee\",\n      \"0\"\n    ],\n    [\n      \"Control\",\n      \"Bag Weight\",\n      \"10\",\n      \"40\",\n      \"23\",\n      \"32\",\n      \"5\",\n      \"15\",\n      \"$variable\"\n    ],\n    [\n      \"Table\",\n      [\n        {\n          \"label\": \"Bag Weight\",\n          \"score\": 1\n        },\n        {\n          \"label\": \"Allowance\",\n          \"score\": 2\n        },\n        {\n          \"label\": \"Fee\",\n          \"score\": 3\n        }\n      ]\n    ]\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 163,
+        "prompt_tokens": 526,
+        "total_tokens": 689,
+        "prompt_tokens_details": {
+          "cached_tokens": 525
+        }
+      },
+      "latencyMs": 1541,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Invalid or duplicate declaration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"root\": [\n    \"Stack\",\n    [\n      \"Text\",\n      \"Allowance\",\n      \"0\"\n    ],\n    [\n      \"Text\",\n      \"Fee\",\n      \"0\"\n    ],\n    [\n      \"Control\",\n      \"Bag Weight\",\n      \"10\",\n      \"40\",\n      \"23\",\n      \"32\",\n      \"5\",\n      \"15\",\n      \"$variable\"\n    ],\n    [\n      \"Table\",\n      [\n        {\n          \"label\": \"Bag Weight\",\n          \"score\": 1\n        },\n        {\n          \"label\": \"Allowance\",\n          \"score\": 2\n        },\n        {\n          \"label\": \"Fee\",\n          \"score\": 3\n        }\n      ]\n    ]\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 163,
+        "prompt_tokens": 717,
+        "total_tokens": 880,
+        "prompt_tokens_details": {
+          "cached_tokens": 688
+        }
+      },
+      "latencyMs": 1773,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Invalid or duplicate declaration",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\n{\n  \"root\": [\n    \"Stack\",\n    [\n      \"Text\",\n      \"Allowance\",\n      \"0\"\n    ],\n    [\n      \"Text\",\n      \"Fee\",\n      \"0\"\n    ],\n    [\n      \"Control\",\n      \"Bag Weight\",\n      \"10\",\n      \"40\",\n      \"23\",\n      \"32\",\n      \"5\",\n      \"15\",\n      \"$variable\"\n    ],\n    [\n      \"Table\",\n      [\n        {\n          \"label\": \"Bag Weight\",\n          \"score\": 1\n        },\n        {\n          \"label\": \"Allowance\",\n          \"score\": 2\n        },\n        {\n          \"label\": \"Fee\",\n          \"score\": 3\n        }\n      ]\n    ]\n  ]\n}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Invalid or duplicate declaration. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

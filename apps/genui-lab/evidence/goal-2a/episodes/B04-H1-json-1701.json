@@ -1,0 +1,70 @@
+{
+  "task": "B04",
+  "variant": "H1",
+  "protocol": "json",
+  "seed": 1701,
+  "id": "B04-H1-json-1701",
+  "complete": true,
+  "attempts": [
+    {
+      "raw": "UI\n{\n  \"type\": \"Stack\",\n  \"props\": {},\n  \"children\": [\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Economy\",\n        \"min\": 10,\n        \"max\": 23,\n        \"choices\": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],\n        \"value\": {\"$bindState\": \"/economy\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Business\",\n        \"min\": 24,\n        \"max\": 32,\n        \"choices\": [24, 25, 26, 27, 28, 29, 30, 31, 32],\n        \"value\": {\"$bindState\": \"/business\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Gold\",\n        \"min\": 33,\n        \"max\": 38,\n        \"choices\": [33, 34, 35, 36, 37, 38],\n        \"value\": {\"$bindState\": \"/gold\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Allowance\",\n        \"min\": 0,\n        \"max\": 40,\n        \"value\": {\"$bindState\": \"/allowance\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Fee\",\n        \"min\": 0,\n        \"max\": 40,\n        \"value\": {\"$bindState\": \"/fee\"}\n      }\n    }\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 419,
+        "prompt_tokens": 541,
+        "total_tokens": 960,
+        "prompt_tokens_details": {
+          "cached_tokens": 409
+        }
+      },
+      "latencyMs": 3884,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Unexpected object fields",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ]
+    },
+    {
+      "raw": "UI\n{\n  \"type\": \"Stack\",\n  \"props\": {},\n  \"children\": [\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Economy\",\n        \"min\": 10,\n        \"max\": 23,\n        \"choices\": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],\n        \"value\": {\"$bindState\": \"/economy\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Business\",\n        \"min\": 24,\n        \"max\": 32,\n        \"choices\": [24, 25, 26, 27, 28, 29, 30, 31, 32],\n        \"value\": {\"$bindState\": \"/business\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Gold\",\n        \"min\": 33,\n        \"max\": 38,\n        \"choices\": [33, 34, 35, 36, 37, 38],\n        \"value\": {\"$bindState\": \"/gold\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Allowance\",\n        \"min\": 0,\n        \"max\": 40,\n        \"value\": {\"$bindState\": \"/allowance\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Fee\",\n        \"min\": 0,\n        \"max\": 40,\n        \"value\": {\"$bindState\": \"/fee\"}\n      }\n    }\n  ]\n}",
+      "finish": "stop",
+      "usage": {
+        "completion_tokens": 419,
+        "prompt_tokens": 987,
+        "total_tokens": 1406,
+        "prompt_tokens_details": {
+          "cached_tokens": 959
+        }
+      },
+      "latencyMs": 3932,
+      "model": "qwen2a",
+      "status": "rejected",
+      "diagnostic": "Error: Unexpected object fields",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "UI\n{\n  \"type\": \"Stack\",\n  \"props\": {},\n  \"children\": [\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Economy\",\n        \"min\": 10,\n        \"max\": 23,\n        \"choices\": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],\n        \"value\": {\"$bindState\": \"/economy\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Business\",\n        \"min\": 24,\n        \"max\": 32,\n        \"choices\": [24, 25, 26, 27, 28, 29, 30, 31, 32],\n        \"value\": {\"$bindState\": \"/business\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Gold\",\n        \"min\": 33,\n        \"max\": 38,\n        \"choices\": [33, 34, 35, 36, 37, 38],\n        \"value\": {\"$bindState\": \"/gold\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Allowance\",\n        \"min\": 0,\n        \"max\": 40,\n        \"value\": {\"$bindState\": \"/allowance\"}\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Fee\",\n        \"min\": 0,\n        \"max\": 40,\n        \"value\": {\"$bindState\": \"/fee\"}\n      }\n    }\n  ]\n}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Unexpected object fields. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

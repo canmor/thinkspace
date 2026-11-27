@@ -1,5 +1,8 @@
 import { defineConfig } from "vite";
 export default defineConfig({
+  build: {
+    rollupOptions: { input: { lab: "index.html", replay: "replay.html" } },
+  },
   preview: {
     headers: {
       "Content-Security-Policy":
