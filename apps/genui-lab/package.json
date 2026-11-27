@@ -19,6 +19,7 @@
     "@playwright/test": "1.65.1",
     "@types/react": "19.3.3",
     "@types/react-dom": "19.3.0",
+    "@xyflow/react": "12.9.3",
     "acorn": "8.15.0",
     "d3-shape": "3.2.0",
     "react": "19.3.1",

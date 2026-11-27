@@ -1,0 +1,12 @@
+✔ binding identity and complete contracts control migration; new fields keep admitted defaults (1.454292ms)
+✔ anchors, direct inclusion, snapshot stability, missing sources and byte budget (5.751958ms)
+✔ provider receives the inspected attributed history (2.018333ms)
+✔ restart restores branch, anchor and positions and rejects a stale writer (9.302042ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 75.757875
