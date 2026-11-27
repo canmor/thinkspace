@@ -21,7 +21,9 @@ export class RestrictedClient {
     this.worker.onerror = () => this.close("Worker failed");
     this.worker.onmessageerror = () => this.close("Invalid runtime response");
   }
-  request(message: object): Promise<Frame> {
+  request(message: {kind:"reconstruct";protocol:string;source:string;raw:string;artifact:string;base:number}): Promise<{source:string}>;
+  request(message: object): Promise<Frame>;
+  request(message: object): Promise<any> {
     try {
       validateTransfer(message);
     } catch (e) {

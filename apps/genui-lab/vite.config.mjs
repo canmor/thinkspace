@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 export default defineConfig({
   build: {
-    rollupOptions: { input: { lab: "index.html", replay: "replay.html" } },
+    rollupOptions: { input: { lab: "index.html", replay: "replay.html", revision: "revision.html" } },
   },
   preview: {
     headers: {

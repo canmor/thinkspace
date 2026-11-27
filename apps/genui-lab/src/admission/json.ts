@@ -157,7 +157,7 @@ export function jsonProgram(source: string, chartEnabled = false) {
   };
 }
 
-function checkUniqueJsonMembers(source: string) {
+export function checkUniqueJsonMembers(source: string) {
   const tree = parseExpressionAt(source, source.search(/\S/), {
     ecmaVersion: 2022,
   });
