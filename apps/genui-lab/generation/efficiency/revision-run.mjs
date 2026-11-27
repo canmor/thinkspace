@@ -10,19 +10,21 @@ import {prompt,arms} from '../v2/plan.mjs'
 import {request} from '../v2/provider.mjs'
 
 const [outDir,dir]=process.argv.slice(2)
+const offline=process.argv.includes("--offline")
 if(!outDir||!dir)throw Error('Supply build and output directories')
 const schema={type:'object',additionalProperties:false,required:['artifact','base','operations'],properties:{
  artifact:{type:'string'},base:{type:'integer'},operations:{type:'array',items:{type:'object',additionalProperties:false,
  required:['op','key','value'],properties:{op:{type:'string',enum:['add','replace','remove']},key:{type:'string'},value:{type:'string'}}}}}}
 const arm={...arms.at(-1),model:'gpt-6.2-sol'}
 const guide='Return only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose.'
-const seeds=[1701,1702], key=parseEnv(await readFile('../../.env','utf8')).OPENAI_TOKEN
-assert.ok(key);assert.equal(JSON.parse(await readFile('evidence/goal-2b3/revision-preflight.json')).length,30)
-await mkdir(dir,{recursive:true})
+const seeds=[1701,1702], key=offline?null:parseEnv(await readFile('../../.env','utf8')).OPENAI_TOKEN
+if(!offline)assert.ok(key);assert.equal(JSON.parse(await readFile('evidence/goal-2b3/revision-preflight.json')).length,30)
+if(!offline)await mkdir(dir,{recursive:true})
 const save=(name,value)=>writeFile(join(dir,name+'.json'),JSON.stringify(value,null,2)+'\n')
 const load=async name=>{try{return JSON.parse(await readFile(join(dir,name+'.json')))}catch(e){if(e.code==='ENOENT')return null;throw e}}
 const manifest={arm,seeds,revisions,schema,guide,repairs:1,context:'current artifact, prior user requirements, and host selections; same in both arms',origin:'matched hand-authored fresh tasks and historical B04'}
 const oldManifest=await load('manifest')
+if(offline)assert.ok(oldManifest);
 if(oldManifest)assert.deepEqual(oldManifest,manifest);else await save('manifest',manifest)
 const server=await preview({build:{outDir},preview:{host:'127.0.0.1',port:0}})
 const browser=await chromium.launch(),signal=new AbortController()
@@ -61,6 +63,7 @@ async function lane(protocol,seed){
      const started=performance.now()
      for(let n=0;n<=1;n++){
       const record=stem+'.attempt'+n,saved=await load(record)
+      if(offline)assert.ok(saved,"Missing "+record);
       const a=saved??await request(arm,messages,seed+turn*10+n,key,signal.signal,mode==='patch'?schema:undefined).catch(e=>({status:'provider-error',diagnostic:e.message}))
       let result
       try{
@@ -78,14 +81,20 @@ async function lane(protocol,seed){
      current=await invoke('snapshot')
      const delivery=attempts.at(-1).status
      if(delivery!=='accepted')assert.deepEqual(current,before)
-     if(!await load(stem)){
+     const recorded=await load(stem)
+     if(offline){
+      assert.ok(recorded,stem);assert.deepEqual(before,recorded.before);assert.deepEqual(current,recorded.after)
+      assert.equal(delivery,recorded.delivery);assert.equal(attempts.length,recorded.attempts)
+     }
+     if(!recorded){
       await page.locator('#root').screenshot({path:join(dir,stem+'.png')})
       await save(stem,{task,protocol,seed,mode,turn:turn+1,before,after:current,delivery,endToEndMs,attempts:attempts.length})
      }
      if(turn===0){
       const selections={baggage:[/route|international|domestic/i,'International'],tickets:[/adult|child|category|type/i,'Child'],water:[/drain rate|litres per minute|liters per minute/i,4],fabric:[/hem/i,1]}
       const selected=await select(...selections[task])
-      await save(stem+'.selection',{selected,state:current.frame.state})
+      const outcome={selected,state:current.frame.state}
+      if(offline)assert.deepEqual(outcome,await load(stem+'.selection'));else await save(stem+'.selection',outcome)
      }
     }
    }finally{await page.close()}
