@@ -1,0 +1,258 @@
+[
+  {
+    "file": "json-1701-turn1.json",
+    "delivery": "accepted",
+    "calls": 1,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "NA",
+    "curveValues": "NA",
+    "before": [
+      "Economy",
+      "Gold",
+      null,
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "Domestic",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "new",
+      "identified"
+    ],
+    "domains": "pass"
+  },
+  {
+    "file": "json-1701-turn2.json",
+    "delivery": "truncated",
+    "calls": 2,
+    "checked": 0,
+    "continuity": "NE",
+    "numeric": "NE",
+    "curve": "NE",
+    "curveValues": "NE"
+  },
+  {
+    "file": "json-1701-turn3.json",
+    "delivery": "truncated",
+    "calls": 2,
+    "checked": 0,
+    "continuity": "NE",
+    "numeric": "NE",
+    "curve": "NE",
+    "curveValues": "NE"
+  },
+  {
+    "file": "json-1702-turn1.json",
+    "delivery": "accepted",
+    "calls": 1,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "NA",
+    "curveValues": "NA",
+    "before": [
+      "Economy",
+      "Gold",
+      null,
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "Domestic",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "new",
+      "identified"
+    ],
+    "domains": "pass"
+  },
+  {
+    "file": "json-1702-turn2.json",
+    "delivery": "truncated",
+    "calls": 2,
+    "checked": 0,
+    "continuity": "NE",
+    "numeric": "NE",
+    "curve": "NE",
+    "curveValues": "NE"
+  },
+  {
+    "file": "json-1702-turn3.json",
+    "delivery": "truncated",
+    "calls": 2,
+    "checked": 0,
+    "continuity": "NE",
+    "numeric": "NE",
+    "curve": "NE",
+    "curveValues": "NE"
+  },
+  {
+    "file": "oui-1701-turn1.json",
+    "delivery": "accepted",
+    "calls": 1,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "NA",
+    "curveValues": "NA",
+    "before": [
+      "Economy",
+      "Gold",
+      null,
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "Domestic",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "new",
+      "identified"
+    ],
+    "domains": "pass"
+  },
+  {
+    "file": "oui-1701-turn2.json",
+    "delivery": "accepted",
+    "calls": 1,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "present",
+    "curveValues": "pass",
+    "before": [
+      "Economy",
+      "Gold",
+      "International",
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "International",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "identified",
+      "identified"
+    ],
+    "domains": "pass",
+    "verifiedCurveSamples": 248
+  },
+  {
+    "file": "oui-1701-turn3.json",
+    "delivery": "truncated",
+    "calls": 2,
+    "checked": 0,
+    "continuity": "NE",
+    "numeric": "NE",
+    "curve": "NE",
+    "curveValues": "NE"
+  },
+  {
+    "file": "oui-1702-turn1.json",
+    "delivery": "accepted",
+    "calls": 1,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "NA",
+    "curveValues": "NA",
+    "before": [
+      "Economy",
+      "Gold",
+      null,
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "Domestic",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "new",
+      "identified"
+    ],
+    "domains": "pass"
+  },
+  {
+    "file": "oui-1702-turn2.json",
+    "delivery": "accepted",
+    "calls": 1,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "present",
+    "curveValues": "pass",
+    "before": [
+      "Economy",
+      "Gold",
+      "International",
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "International",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "identified",
+      "identified"
+    ],
+    "domains": "pass",
+    "verifiedCurveSamples": 248
+  },
+  {
+    "file": "oui-1702-turn3.json",
+    "delivery": "accepted",
+    "calls": 2,
+    "checked": 248,
+    "continuity": "pass",
+    "numeric": "pass",
+    "curve": "present",
+    "curveValues": "pass",
+    "before": [
+      "Economy",
+      "Gold",
+      "International",
+      38
+    ],
+    "after": [
+      "Economy",
+      "Gold",
+      "International",
+      38
+    ],
+    "priorRoles": [
+      "identified",
+      "identified",
+      "identified",
+      "identified"
+    ],
+    "domains": "pass",
+    "verifiedCurveSamples": 248
+  }
+]

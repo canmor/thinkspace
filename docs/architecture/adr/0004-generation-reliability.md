@@ -44,8 +44,12 @@ Under the original automated rubric, G scored 16/20 core and 11/12 holdout versu
 | Delivered with domain pending | 2 | 16 | 5 | 7 |
 | Median provider call latency including repair calls | 2.65 s | 10.00 s | 1.60 s | 3.95 s |
 
-G used 30,514 input and 13,201 completion tokens over 35 calls. Its billed cost is unknown. Rendered presentation, modality and domain are distinct axes. No independent human ratings or native ChatGPT comparison are available. B03 now tests ten vectors; finite probes leave untested cases. Unverified labels and prose are routed for assessment even when accurate, so confirmed counts are conservative. [All reviewed arms](../../../apps/genui-lab/evidence/goal-2b1/summary-reviewed.json) · [Sol review packet](../../../apps/genui-lab/evidence/goal-2b1-sol-default/review-cases.json)
+G used 30,514 input and 13,201 completion tokens over 35 calls. Its billed cost is unknown. Rendered presentation, modality and domain are distinct axes. At the Goal 2B.1 cutoff there were no independent human ratings or native ChatGPT captures. Goal 2B.2 subsequently collected native product captures. Independent human assessment remains pending. B03 now tests ten vectors; finite probes leave untested cases. Unverified labels and prose are routed for assessment even when accurate, so confirmed counts are conservative. [All reviewed arms](../../../apps/genui-lab/evidence/goal-2b1/summary-reviewed.json) · [Sol review packet](../../../apps/genui-lab/evidence/goal-2b1-sol-default/review-cases.json)
 
 ## Next experiment for separate review
 
 Freeze Sol and the current profile. Arrange independent assessments of rendered outputs including B01/B02, compare representation choice and cognitive quality with actual native ChatGPT responses, and add B05 multi-turn refinement. Record model configuration, latency and available cost data. This decision covers local experiments only. Goal 2C and product integration require separate approval.
+
+## Goal 2B.2 follow-up evidence
+
+[Goal 2B.2 results](../../../apps/genui-lab/evidence/goal-2b2/findings.md) exercise this decision with B05 and native product samples. Rejected revisions retained the last admitted artifact. Chart generation within the existing output cap was the principal observed delivery bottleneck. The independent reader assessment remains pending.
