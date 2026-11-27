@@ -11,7 +11,18 @@ test("restart restores branch, anchor and positions and rejects a stale writer",
   const path = join(directory, "workspace.sqlite");
   const w = workspace("Architecture Exploration"),
     root = w.conversations[0];
-  const child = branch(w, root, append(root, "assistant", "Alternatives").id);
+  const child = branch(
+    w,
+    root,
+    append(
+      root,
+      "assistant",
+      JSON.stringify({
+        version: "2b1",
+        blocks: [{ type: "text", text: "Alternatives" }],
+      }),
+    ).id,
+  );
   w.positions[child.id] = { x: 200, y: 120 };
   let store = openStore(path);
   store.save(w, 0);

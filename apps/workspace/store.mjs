@@ -1,5 +1,6 @@
 import { DatabaseSync } from "node:sqlite";
 
+import { validateWorkspace } from "./integrity.mjs";
 export function openStore(path) {
   const db = new DatabaseSync(path);
   db.exec("PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL");
@@ -16,7 +17,7 @@ export function openStore(path) {
     list() {
       return db
         .prepare(
-          "SELECT id,json_extract(document,'$.name') AS name FROM workspace ORDER BY rowid",
+          "SELECT id,CASE WHEN json_valid(document) THEN json_extract(document,'$.name') ELSE 'Damaged workspace' END AS name FROM workspace ORDER BY rowid",
         )
         .all();
     },
@@ -24,10 +25,11 @@ export function openStore(path) {
       const row = read.get(id);
       if (!row) throw Error("Workspace unavailable");
       const value = JSON.parse(row.document);
-      if (value.schema !== 1) throw Error("Unsupported workspace schema");
+      validateWorkspace(value, id);
       return { revision: row.revision, value };
     },
     save(value, expectedRevision) {
+      validateWorkspace(value);
       const document = JSON.stringify(value);
       if (expectedRevision === 0) {
         db.prepare("INSERT INTO workspace VALUES(?,1,?)").run(

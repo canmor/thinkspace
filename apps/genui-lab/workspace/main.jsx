@@ -4,6 +4,7 @@ import { flushSync } from "react-dom";
 import { ReactFlow, Background, Controls } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import "./workspace.css";
+import { compatibility } from "../../workspace/integrity.mjs";
 import { migrateControls } from "../../workspace/artifact.mjs";
 import { RestrictedClient } from "../src/admission/client";
 import { Surface, ArtifactBoundary } from "../src/surface";
@@ -38,6 +39,35 @@ async function evaluate(source, state) {
     });
   } finally {
     client.close();
+  }
+}
+async function artifactValue(art, version = art, state = version.state) {
+  compatibility(art);
+  const frame = await evaluate(version.source, state);
+  return {
+    revision: version.revision,
+    protocol: art.protocol,
+    catalog: art.catalog,
+    policy: "1.5.0",
+    source: version.source,
+    state: frame.state,
+    projection: frame.items,
+  };
+}
+function RevisionDetails({ title, children }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <details onToggle={(e) => setOpen(e.currentTarget.open)}>
+      <summary>{title}</summary>
+      {open && children}
+    </details>
+  );
+}
+function MessageBlocks({ message, render }) {
+  try {
+    return decodeEnvelope(message.content).blocks.map(render);
+  } catch (e) {
+    return <p role="alert">Historical response unavailable: {e.message}</p>;
   }
 }
 function checkRenderer(frame) {
@@ -114,7 +144,7 @@ function Interactive({ artifact, onChange, onChangeFrame, onError, disabled }) {
     </fieldset>
   );
 }
-function graph(w) {
+function graph(w, selected) {
   const nodes = [...w.conversations, ...w.artifacts.filter((a) => a.promoted)];
   const edges = [];
   for (const node of w.conversations) {
@@ -137,24 +167,32 @@ function graph(w) {
     nodes: nodes.map((n, i) => ({
       id: n.id,
       data: { label: n.title },
+      className:
+        (n.origin ? "artifact-node" : "conversation-node") +
+        (n.id === selected ? " focused-node" : ""),
       position: w.positions[n.id] || {
         x: (i % 2) * 225,
         y: Math.floor(i / 2) * 106,
       },
     })),
-    edges: edges.map((e, i) => ({ ...e, id: String(i) })),
+    edges: edges.map((e, i) => ({
+      ...e,
+      id: String(i),
+      markerEnd: { type: "arrowclosed" },
+      style: { strokeDasharray: e.label === "context" ? "5 3" : undefined },
+    })),
   };
 }
-function Canvas({ w, select, move }) {
-  const model = graph(w);
+function Canvas({ w, select, selected, move }) {
+  const model = graph(w, selected);
   const [nodes, setNodes] = useState(model.nodes);
-  useEffect(() => setNodes(graph(w).nodes), [w]);
+  useEffect(() => setNodes(graph(w, selected).nodes), [w, selected]);
   return (
     <ReactFlow
       nodes={nodes}
       edges={model.edges}
       fitView
-      fitViewOptions={{maxZoom:1.15,padding:0.2}}
+      fitViewOptions={{ maxZoom: 1.15, padding: 0.2 }}
       onNodeClick={(_, n) => select(n.id)}
       onNodeDrag={(_, n) =>
         setNodes((ns) =>
@@ -175,6 +213,7 @@ function App() {
   const [name, setName] = useState("Architecture Exploration"),
     [draft, setDraft] = useState(""),
     [ref, setRef] = useState("");
+  const [invalidCapture, setInvalidCapture] = useState(null);
   const [error, setError] = useState(""),
     [busy, setBusy] = useState(false);
   const lock = React.useRef(false);
@@ -221,7 +260,7 @@ function App() {
   function mutate(fn) {
     return run(async () => {
       const next = structuredClone(w);
-      const id = fn(next);
+      const id = await fn(next);
       await persist(next);
       if (typeof id === "string") select(id);
     });
@@ -243,11 +282,34 @@ function App() {
         "\nRegenerate the complete artifact. Preserve existing semantic bindings and control contracts.\n" +
         JSON.stringify({ source: a.source, state: a.state })
       : draft;
+    for (const reference of node.references.filter(
+      (r) => r.representation === "artifact",
+    )) {
+      const art = w.artifacts.find((x) => x.id === reference.source),
+        value = reference.values[0];
+      const version = [...art.versions, art].find(
+        (v) => v.revision === value.revision,
+      );
+      const validated = await artifactValue(art, version, value.state);
+      if (
+        (value.source !== undefined && value.source !== validated.source) ||
+        JSON.stringify(value.projection) !==
+          JSON.stringify(validated.projection)
+      )
+        throw Error(
+          "Invalid artifact snapshot. Remove and capture the source again.",
+        );
+    }
     const gen = await api("generate", {
       id: w.id,
       revision: record.revision,
       node: node.id,
       instruction,
+    });
+    Object.assign(gen, {
+      instruction: draft,
+      conversation: node.id,
+      ...(a ? { artifact: a.id, baseRevision: a.revision } : {}),
     });
     next.generations.push(gen);
     try {
@@ -307,11 +369,17 @@ function App() {
       }
     } catch (e) {
       gen.failure = e.message;
+      gen.retryStatus = "Available";
       await persist(next);
       throw e;
     }
     await persist(next);
     setDraft("");
+    requestAnimationFrame(() =>
+      document
+        .querySelector("section article:last-of-type")
+        ?.scrollIntoView({ block: "start" }),
+    );
   }
   const sources = [];
   if (w && c) {
@@ -339,24 +407,17 @@ function App() {
         label: art.title + " · revision " + art.revision,
         source: art.id,
         kind: "artifact",
-        values: [
-          {
-            revision: art.revision,
-            state: art.state,
-            projection: art.projection,
-            protocol: art.protocol,
-          },
-        ],
+        artifact: art,
       });
   }
-  function interactive(art) {
+  function interactive(art, frozen = false) {
     return (
       <Interactive
         artifact={art}
         onChange={run}
         onChangeFrame={(frame) => saveFrame(art, frame)}
         onError={setError}
-        disabled={busy}
+        disabled={busy || frozen}
       />
     );
   }
@@ -419,8 +480,14 @@ function App() {
             </button>
             <div className="canvas">
               <Canvas
-                key={w.id + ":" + (w.conversations.length + w.artifacts.filter(x=>x.promoted).length)}
+                key={
+                  w.id +
+                  ":" +
+                  (w.conversations.length +
+                    w.artifacts.filter((x) => x.promoted).length)
+                }
                 w={w}
+                selected={selected}
                 select={(id) => {
                   if (!busy) {
                     select(id);
@@ -438,24 +505,112 @@ function App() {
           </aside>
           <section>
             <h1>{c?.title || a?.title}</h1>
+            <button
+              disabled={busy}
+              onClick={() => {
+                const title = window
+                  .prompt("Node title", (a || c).title)
+                  ?.trim();
+                if (title)
+                  mutate((next) => {
+                    [...next.conversations, ...next.artifacts].find(
+                      (n) => n.id === selected,
+                    ).title = title;
+                  });
+              }}
+            >
+              Rename node
+            </button>
+            {c &&
+              w.generations
+                .filter(
+                  (g) => g.conversation === c.id && !g.artifact && g.failure,
+                )
+                .map((g) => (
+                  <details key={g.id}>
+                    <summary>Request failed · retry available</summary>
+                    <p>{g.instruction}</p>
+                    <p>{g.failure}</p>
+                    <button onClick={() => setDraft(g.instruction)}>
+                      Restore request to composer
+                    </button>
+                  </details>
+                ))}
+            {c?.parent && (
+              <p>
+                Inherited through assistant message {c.parent.message} in{" "}
+                {
+                  w.conversations.find((n) => n.id === c.parent.conversation)
+                    .title
+                }
+              </p>
+            )}
             {c &&
               history(w, c).map((m) => (
                 <article key={m.id}>
                   <b>{m.role}</b>
                   {m.role === "assistant" ? (
                     <>
-                      {decodeEnvelope(m.content).blocks.map((block, i) =>
-                        block.type === "text" ? (
-                          <p key={i}>{block.text}</p>
-                        ) : (
-                          <React.Fragment key={i}>
-                            {interactive(
-                              w.artifacts.find((x) => x.id === m.artifact),
-                            )}
-                          </React.Fragment>
-                        ),
-                      )}
-                      <details><summary>Submitted context</summary><pre>{JSON.stringify(w.generations.find(g=>g.id===m.generation)?.context,null,2)}</pre></details>
+                      {
+                        <MessageBlocks
+                          message={m}
+                          render={(block, i) =>
+                            block.type === "text" ? (
+                              <p key={i}>{block.text}</p>
+                            ) : (
+                              <React.Fragment key={i}>
+                                {(() => {
+                                  const art = w.artifacts.find(
+                                    (x) => x.id === m.artifact,
+                                  );
+                                  const historical =
+                                    art.promoted ||
+                                    c.id !== m.conversation ||
+                                    c.messages.at(-1)?.id !== m.id;
+                                  const original = {
+                                    ...art,
+                                    id: m.id,
+                                    revision: 1,
+                                    source: block.source,
+                                    state: block.state.length
+                                      ? Object.fromEntries(
+                                          block.state.map((entry) => [
+                                            entry.name,
+                                            entry.value,
+                                          ]),
+                                        )
+                                      : undefined,
+                                  };
+                                  return (
+                                    <>
+                                      <small>
+                                        {historical
+                                          ? "Original response · revision 1 · read only"
+                                          : "Interactive working copy · revision 1"}
+                                      </small>
+                                      {interactive(
+                                        historical ? original : art,
+                                        historical,
+                                      )}
+                                    </>
+                                  );
+                                })()}
+                              </React.Fragment>
+                            )
+                          }
+                        />
+                      }
+                      <details>
+                        <summary>Submitted context</summary>
+                        <pre>
+                          {JSON.stringify(
+                            w.generations.find((g) => g.id === m.generation)
+                              ?.context,
+                            null,
+                            2,
+                          )}
+                        </pre>
+                      </details>
                       <button
                         disabled={busy}
                         onClick={() =>
@@ -477,7 +632,10 @@ function App() {
                             })
                           }
                         >
-                          Open as workspace artifact
+                          {w.artifacts.find((x) => x.id === m.artifact)
+                            ?.promoted
+                            ? "Open current workspace artifact"
+                            : "Open as workspace artifact"}
                         </button>
                       )}
                     </>
@@ -492,6 +650,45 @@ function App() {
                   Revision {a.revision} · {a.protocol}
                 </p>
                 {interactive(a)}
+                {[...a.versions, a]
+                  .slice()
+                  .reverse()
+                  .map((v) => {
+                    const g = w.generations.find(
+                      (item) => item.id === v.generation,
+                    );
+                    return (
+                      <RevisionDetails
+                        key={v.revision}
+                        title={"Revision " + v.revision + " provenance"}
+                      >
+                        <p>{g.instruction || g.messages.at(-1).content}</p>
+                        <p>
+                          {g.model} · {g.id}
+                        </p>
+                        <MessageBlocks
+                          message={{ content: g.raw }}
+                          render={(b, i) =>
+                            b.type === "text" ? <p key={i}>{b.text}</p> : null
+                          }
+                        />
+                        {v !== a && (
+                          <>
+                            <p>Saved state before replacement</p>
+                            {interactive({ ...a, ...v }, true)}
+                          </>
+                        )}
+                      </RevisionDetails>
+                    );
+                  })}
+                {w.generations
+                  .filter((g) => g.artifact === a.id && g.failure)
+                  .map((g) => (
+                    <p key={g.id}>
+                      Revision failed · retry available: {g.instruction} —{" "}
+                      {g.failure}
+                    </p>
+                  ))}
               </>
             )}
             {c && (
@@ -512,25 +709,81 @@ function App() {
                 <button
                   disabled={!ref || busy}
                   onClick={() =>
-                    mutate((next) => {
+                    mutate(async (next) => {
                       const s = sources.find((x) => x.id === ref);
-                      next.conversations
-                        .find((n) => n.id === c.id)
-                        .references.push(snapshot(s.source, s.kind, s.values));
+                      try {
+                        const values = s.artifact
+                          ? [await artifactValue(s.artifact)]
+                          : s.values;
+                        next.conversations
+                          .find((n) => n.id === c.id)
+                          .references.push(snapshot(s.source, s.kind, values));
+                        setInvalidCapture(null);
+                      } catch (e) {
+                        setInvalidCapture(c.id);
+                        throw e;
+                      }
                     })
                   }
                 >
                   Include snapshot
                 </button>
-                <pre>
-                  {(() => {
-                    try {
-                      return JSON.stringify(compile(w, c), null, 2);
-                    } catch (e) {
-                      return e.message;
-                    }
-                  })()}
-                </pre>
+                {invalidCapture === c.id && (
+                  <button
+                    onClick={() => {
+                      setInvalidCapture(null);
+                      setRef("");
+                      setError("");
+                    }}
+                  >
+                    Discard invalid selection
+                  </button>
+                )}
+                <ul>
+                  {c.references.map((r) => (
+                    <li key={r.id}>
+                      {
+                        [...w.conversations, ...w.artifacts].find(
+                          (x) => x.id === r.source,
+                        )?.title
+                      }{" "}
+                      · {r.representation}{" "}
+                      {r.representation === "artifact"
+                        ? "revision " +
+                          r.values[0].revision +
+                          " · " +
+                          JSON.stringify(r.values[0].state)
+                        : "· " + r.values.length + " message(s)"}{" "}
+                      <button
+                        disabled={busy}
+                        onClick={() =>
+                          mutate((next) => {
+                            const n = next.conversations.find(
+                              (x) => x.id === c.id,
+                            );
+                            n.references = n.references.filter(
+                              (x) => x.id !== r.id,
+                            );
+                          })
+                        }
+                      >
+                        Remove snapshot
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <details>
+                  <summary>Compiled context JSON</summary>
+                  <pre>
+                    {(() => {
+                      try {
+                        return JSON.stringify(compile(w, c), null, 2);
+                      } catch (e) {
+                        return e.message;
+                      }
+                    })()}
+                  </pre>
+                </details>
               </details>
             )}
             <label>
@@ -540,7 +793,10 @@ function App() {
                 onChange={(e) => setDraft(e.target.value)}
               />
             </label>
-            <button disabled={!draft.trim() || busy} onClick={() => run(send)}>
+            <button
+              disabled={!draft.trim() || busy || (c && invalidCapture === c.id)}
+              onClick={() => run(send)}
+            >
               {busy ? "Working…" : a ? "Regenerate artifact" : "Send message"}
             </button>
           </section>

@@ -97,3 +97,11 @@ td,
 th {
   padding: 6px;
 }
+.react-flow__node.artifact-node {
+  background: #fff4d9;
+  border-color: #91680b;
+}
+.react-flow__node.focused-node {
+  outline: 3px solid #277563;
+  outline-offset: 2px;
+}

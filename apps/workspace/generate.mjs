@@ -23,7 +23,12 @@ export async function generate(w, conversation, instruction, provider = live) {
     { role: "user", content: JSON.stringify({ context }) },
     { role: "user", content: instruction },
   ];
-  const result = await provider(messages);
+  let result;
+  try {
+    result = await provider(messages);
+  } catch (error) {
+    result = { status: "retryable-error", diagnostic: error.message };
+  }
   return {
     id: crypto.randomUUID(),
     model: arm.model,

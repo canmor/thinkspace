@@ -20,3 +20,9 @@ The final live artifact ranked Tauri (8.00), Electron (7.50) and Native Hybrid (
 - The first graph drag test found the artifact outside the visible canvas after nodes were added. It timed out with zero stored manual positions. Refitting on graph membership changes fixed the failed drag and the subsequent restart comparison. [Before](layout-regression/before.png) · [After](acceptance-final/09-restored.png)
 
 The tests establish browser and storage behavior for this scenario. Ease of branching, cognitive benefit, comparative architecture quality and perceived latency require observed user sessions. Renderer preflight and version checks cannot establish the correctness of arbitrary model-generated calculations.
+
+## PR 4 follow-up
+
+The [deterministic review run](pr4-review/journey.json) branches from the UI-bearing assistant message, changes the independent artifact state, and checks the branch's original weight before and after regeneration. It opens both revision provenance views, removes and recaptures the artifact snapshot, and checks the submitted representations in order (history, conversation, artifact). A separate SQLite corruption injection exercises snapshot capture before mounting the damaged artifact. Capture displays a diagnostic, disables submission and leaves the provider invocation counter unchanged. Six Node tests and all 35 GenUI Lab tests passed. The live-provider evidence above belongs to the original review baseline.
+
+[Inherited matrix](pr4-review/05-branch.png) · [Selected sources](pr4-review/06-context.png) · [Revision provenance](pr4-review/07-revision.png) · [Restored artifact](pr4-review/09-restored.png)

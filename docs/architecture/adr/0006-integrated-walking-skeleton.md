@@ -27,3 +27,11 @@ One document per workspace reduces transaction coordination and enables exact re
 Matching field contracts cannot establish domain meaning if the model changes a calculation under an unchanged label. Reviewers should examine the regenerated rule. A changed binding or category ordering requires a new explicit migration design. Independent reader observations, broader model reliability, WebKit behavior, desktop storage paths, credential management and equivalent per-Worker policy enforcement in a packaged shell remain open.
 
 The proposed next milestone is an observed architecture-exploration session. Ask users to recover an earlier decision, inspect submitted context, and refine an artifact after changing its weights. Use those observations to prioritize context selection, revision recovery and graph navigation.
+
+## PR 4 review corrections
+
+The origin conversation exposes an interactive working copy while its latest generated UI awaits promotion. An inherited, promoted or superseded message block opens the original envelope and initial state in a read-only restricted Worker. The link from the message opens the current independent artifact. The artifact view exposes generation instructions, returned commentary and saved pre-replacement revision states.
+
+SQLite reads and writes validate identities, lineage, references, revision structure and protocol/catalog compatibility. Existing schema-1 records imply policy 1.5.0 when the policy field is absent. The browser captures artifact references by evaluating the selected revision and state in a fresh baseline Worker and deriving the projection from its frame. New snapshots carry the specification, protocol, catalog and policy. At submission the host rechecks snapshot state and projection against the referenced immutable content revision. A failed capture blocks sending until discarded or replaced. The context inspector supports removal and displays the selected state alongside its source.
+
+Provider exceptions return an attributed generation diagnostic. The failure retains the request and the composer permits retry. Local storage or transport failure can still prevent durable recording. Independent product-experience evaluation remains pending.
