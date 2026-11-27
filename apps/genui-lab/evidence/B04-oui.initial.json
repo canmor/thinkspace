@@ -1,0 +1,31 @@
+{
+  "id": "B04-oui",
+  "version": "1.2.0",
+  "protocol": "oui",
+  "revision": 1,
+  "provenance": "manual",
+  "spec": "root = Stack([summary, fareInput, goldInput, weightInput, allowance, fee, axis])\nsummary = Text(\"Fictional single-bag policy. Excess costs $15 per kg.\")\n$fare = 0\nfareInput = Control(\"Fare\", 0, 1, [\"Economy\",\"Business\"], $fare)\n$gold = 0\ngoldInput = Control(\"Membership\", 0, 1, [\"Standard\",\"Gold\"], $gold)\n$weight = 23\nweightInput = Control(\"Weight (kg)\", 10, 40, [], $weight)\nlimit = 23 + $fare * 9 + $gold * 5\nallowance = Metric(\"Allowance (kg)\", limit)\ncost = $weight > limit ? ($weight - limit) * 15 : 0\nfee = Metric(\"Fee ($)\", cost)\naxis = Graphic(\"Bag weight\", [{\"kind\":\"path\",\"d\":\"M100 65 H400\"},{\"kind\":\"text\",\"x\":85,\"y\":100,\"text\":\"10 kg\"},{\"kind\":\"text\",\"x\":370,\"y\":100,\"text\":\"40 kg\"}, {kind:\"rect\", x:100, y:58, width:($weight - 10) * 10, height:3}, {kind:\"circle\", cx:$weight * 10, cy:65, r:6}])\n",
+  "state": {
+    "fare": 0,
+    "gold": 0,
+    "weight": 23
+  },
+  "projection": {
+    "inputs": {
+      "fare": 0,
+      "gold": 0,
+      "weight": 23
+    },
+    "outputs": {
+      "description": "Fictional single-bag policy. Excess costs $15 per kg.",
+      "Allowance (kg)": 23,
+      "Fee ($)": 0
+    },
+    "rules": {
+      "protocol": "oui",
+      "source": "root = Stack([summary, fareInput, goldInput, weightInput, allowance, fee, axis])\nsummary = Text(\"Fictional single-bag policy. Excess costs $15 per kg.\")\n$fare = 0\nfareInput = Control(\"Fare\", 0, 1, [\"Economy\",\"Business\"], $fare)\n$gold = 0\ngoldInput = Control(\"Membership\", 0, 1, [\"Standard\",\"Gold\"], $gold)\n$weight = 23\nweightInput = Control(\"Weight (kg)\", 10, 40, [], $weight)\nlimit = 23 + $fare * 9 + $gold * 5\nallowance = Metric(\"Allowance (kg)\", limit)\ncost = $weight > limit ? ($weight - limit) * 15 : 0\nfee = Metric(\"Fee ($)\", cost)\naxis = Graphic(\"Bag weight\", [{\"kind\":\"path\",\"d\":\"M100 65 H400\"},{\"kind\":\"text\",\"x\":85,\"y\":100,\"text\":\"10 kg\"},{\"kind\":\"text\",\"x\":370,\"y\":100,\"text\":\"40 kg\"}, {kind:\"rect\", x:100, y:58, width:($weight - 10) * 10, height:3}, {kind:\"circle\", cx:$weight * 10, cy:65, r:6}])\n"
+    },
+    "artifactId": "B04-oui",
+    "revision": 1
+  }
+}

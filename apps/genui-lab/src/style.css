@@ -1,0 +1,97 @@
+:root {
+  font: 16px/1.5 system-ui;
+  color: #172e3c;
+  background: #f3f5f6;
+}
+main {
+  max-width: 1220px;
+  margin: auto;
+  padding: 2vw;
+}
+nav,
+footer {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0;
+}
+.panes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+article {
+  background: white;
+  border: 1px solid #cbd4da;
+  border-radius: 10px;
+  padding: 20px;
+}
+small {
+  font-size: 14px;
+  color: #52636d;
+}
+h2 {
+  margin-top: 0;
+}
+.stack {
+  display: grid;
+  gap: 12px;
+}
+p {
+  margin: 0;
+}
+label,
+input,
+textarea {
+  display: block;
+}
+input,
+textarea,
+svg,
+table {
+  width: 100%;
+}
+svg {
+  fill: #263d49;
+}
+svg path {
+  fill: none;
+  stroke: #398073;
+  stroke-width: 2;
+}
+svg circle {
+  fill: #ac4c16;
+}
+svg text {
+  font: 15px system-ui;
+}
+button,
+select {
+  padding: 6px 10px;
+  font: inherit;
+}
+button[aria-pressed="true"] {
+  background: #184c47;
+  color: white;
+}
+th {
+  text-align: left;
+}
+td {
+  text-align: right;
+}
+details {
+  margin-top: 10px;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+textarea {
+  height: 12em;
+  box-sizing: border-box;
+}
+@media (max-width: 760px) {
+  .panes {
+    grid-template-columns: 1fr;
+  }
+}

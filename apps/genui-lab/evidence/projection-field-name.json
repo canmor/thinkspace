@@ -1,0 +1,380 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/26.7.0/bin/node",
+      "<repo>/apps/genui-lab/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "<repo>/apps/genui-lab/playwright.config.mjs",
+    "rootDir": "<repo>/apps/genui-lab/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "<repo>/apps/genui-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "<repo>/apps/genui-lab/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "<repo>/apps/genui-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "<repo>/apps/genui-lab/tests",
+        "snapshotDir": "<repo>/apps/genui-lab/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4187",
+          "viewport": {
+            "width": 1340,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npx --no-install vite preview --host 127.0.0.1 --port 4187 --strictPort",
+      "url": "http://127.0.0.1:4187"
+    }
+  },
+  "suites": [
+    {
+      "title": "lab.spec.mjs",
+      "file": "lab.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "json B02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 738,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:53:08.051Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-c8cbacc2f4d802ac4759",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "json B03",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 324,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Electron\",\u001b[39m\n\u001b[31m+     \"label\": \"Electron\",\u001b[39m\n\u001b[2m      \"score\": 8.666666666666666,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Native Hybrid\",\u001b[39m\n\u001b[31m+     \"label\": \"Native Hybrid\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Tauri\",\u001b[39m\n\u001b[31m+     \"label\": \"Tauri\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Electron\",\u001b[39m\n\u001b[31m+     \"label\": \"Electron\",\u001b[39m\n\u001b[2m      \"score\": 8.666666666666666,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Native Hybrid\",\u001b[39m\n\u001b[31m+     \"label\": \"Native Hybrid\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Tauri\",\u001b[39m\n\u001b[31m+     \"label\": \"Tauri\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:46:63",
+                    "location": {
+                      "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                      "column": 63,
+                      "line": 46
+                    },
+                    "snippet": " \u001b[90m 44 |\u001b[39m     expect(artifact\u001b[33m.\u001b[39mprojection\u001b[33m.\u001b[39moutputs[\u001b[32m'Fee ($)'\u001b[39m])\u001b[33m.\u001b[39mtoBe(\u001b[35m45\u001b[39m)\n \u001b[90m 45 |\u001b[39m   }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m   \u001b[36mif\u001b[39m(task\u001b[33m===\u001b[39m\u001b[32m'B03'\u001b[39m)expect(artifact\u001b[33m.\u001b[39mprojection\u001b[33m.\u001b[39moutputs\u001b[33m.\u001b[39mranking)\u001b[33m.\u001b[39mtoEqual(ranking([\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m\u001b[35m2\u001b[39m]))\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   \u001b[36mconst\u001b[39m fresh\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewContext()\n \u001b[90m 48 |\u001b[39m   \u001b[36mconst\u001b[39m reopened\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m fresh\u001b[33m.\u001b[39mnewPage()\n \u001b[90m 49 |\u001b[39m   \u001b[36mawait\u001b[39m reopened\u001b[33m.\u001b[39mgoto(page\u001b[33m.\u001b[39murl())"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                        "column": 63,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Electron\",\u001b[39m\n\u001b[31m+     \"label\": \"Electron\",\u001b[39m\n\u001b[2m      \"score\": 8.666666666666666,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Native Hybrid\",\u001b[39m\n\u001b[31m+     \"label\": \"Native Hybrid\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Tauri\",\u001b[39m\n\u001b[31m+     \"label\": \"Tauri\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  44 |     expect(artifact.projection.outputs['Fee ($)']).toBe(45)\n  45 |   }\n> 46 |   if(task==='B03')expect(artifact.projection.outputs.ranking).toEqual(ranking([1,0,2]))\n     |                                                               ^\n  47 |   const fresh=await browser.newContext()\n  48 |   const reopened=await fresh.newPage()\n  49 |   await reopened.goto(page.url())\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:46:63"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:53:08.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<repo>/apps/genui-lab/test-results/lab-json-B03/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                    "column": 63,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-aff92b737033612679b3",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "json B04",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:53:09.386Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-ad2df2ea992933856a6a",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "oui B02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 688,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:53:10.948Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-a0553afeb7fc32602db0",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "oui B03",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 302,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Electron\",\u001b[39m\n\u001b[31m+     \"label\": \"Electron\",\u001b[39m\n\u001b[2m      \"score\": 8.666666666666666,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Native Hybrid\",\u001b[39m\n\u001b[31m+     \"label\": \"Native Hybrid\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Tauri\",\u001b[39m\n\u001b[31m+     \"label\": \"Tauri\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Electron\",\u001b[39m\n\u001b[31m+     \"label\": \"Electron\",\u001b[39m\n\u001b[2m      \"score\": 8.666666666666666,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Native Hybrid\",\u001b[39m\n\u001b[31m+     \"label\": \"Native Hybrid\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Tauri\",\u001b[39m\n\u001b[31m+     \"label\": \"Tauri\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:46:63",
+                    "location": {
+                      "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                      "column": 63,
+                      "line": 46
+                    },
+                    "snippet": " \u001b[90m 44 |\u001b[39m     expect(artifact\u001b[33m.\u001b[39mprojection\u001b[33m.\u001b[39moutputs[\u001b[32m'Fee ($)'\u001b[39m])\u001b[33m.\u001b[39mtoBe(\u001b[35m45\u001b[39m)\n \u001b[90m 45 |\u001b[39m   }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m   \u001b[36mif\u001b[39m(task\u001b[33m===\u001b[39m\u001b[32m'B03'\u001b[39m)expect(artifact\u001b[33m.\u001b[39mprojection\u001b[33m.\u001b[39moutputs\u001b[33m.\u001b[39mranking)\u001b[33m.\u001b[39mtoEqual(ranking([\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m\u001b[35m2\u001b[39m]))\n \u001b[90m    |\u001b[39m                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   \u001b[36mconst\u001b[39m fresh\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewContext()\n \u001b[90m 48 |\u001b[39m   \u001b[36mconst\u001b[39m reopened\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m fresh\u001b[33m.\u001b[39mnewPage()\n \u001b[90m 49 |\u001b[39m   \u001b[36mawait\u001b[39m reopened\u001b[33m.\u001b[39mgoto(page\u001b[33m.\u001b[39murl())"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                        "column": 63,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Electron\",\u001b[39m\n\u001b[31m+     \"label\": \"Electron\",\u001b[39m\n\u001b[2m      \"score\": 8.666666666666666,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Native Hybrid\",\u001b[39m\n\u001b[31m+     \"label\": \"Native Hybrid\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m    Object {\u001b[22m\n\u001b[32m-     \"name\": \"Tauri\",\u001b[39m\n\u001b[31m+     \"label\": \"Tauri\",\u001b[39m\n\u001b[2m      \"score\": 7.666666666666667,\u001b[22m\n\u001b[2m    },\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  44 |     expect(artifact.projection.outputs['Fee ($)']).toBe(45)\n  45 |   }\n> 46 |   if(task==='B03')expect(artifact.projection.outputs.ranking).toEqual(ranking([1,0,2]))\n     |                                                               ^\n  47 |   const fresh=await browser.newContext()\n  48 |   const reopened=await fresh.newPage()\n  49 |   await reopened.goto(page.url())\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:46:63"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:53:11.640Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<repo>/apps/genui-lab/test-results/lab-oui-B03/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                    "column": 63,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-f1766047cdf1bb427a12",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "oui B04",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1484,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:53:12.133Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-895acf2ef3a275024a09",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-27T09:53:07.483Z",
+    "duration": 6247.05,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

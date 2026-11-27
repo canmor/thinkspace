@@ -1,0 +1,15 @@
+root = Stack([summary, aInput, bInput, cInput, ranking])
+summary = Text("Synthetic scores. Weights are normalized by their total.")
+$a = 40
+aInput = Control("Native experience", 0, 100, [], $a)
+$b = 25
+bInput = Control("Lightweight runtime", 0, 100, [], $b)
+$c = 35
+cInput = Control("Delivery efficiency", 0, 100, [], $c)
+total = @Sum([$a, $b, $c])
+denominator = total == 0 ? 1 : total
+native = (9 * $a + 8 * $b + 7 * $c) / denominator
+tauri = (7 * $a + 8 * $b + 8 * $c) / denominator
+electron = (6 * $a + 4 * $b + 10 * $c) / denominator
+values = [{label: "Native Hybrid", score: native}, {label: "Tauri", score: tauri}, {label: "Electron", score: electron}]
+ranking = Table(total == 0 ? [] : @Sort(values, "score", "desc"))

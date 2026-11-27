@@ -1,0 +1,21 @@
+{
+  "id": "B02-json",
+  "version": "0.23.2",
+  "protocol": "json",
+  "revision": 1,
+  "provenance": "manual",
+  "spec": "{\n  \"root\": \"root\",\n  \"elements\": {\n    \"root\": {\n      \"type\": \"Stack\",\n      \"props\": {},\n      \"children\": [\n        \"diagram\",\n        \"summary\"\n      ]\n    },\n    \"diagram\": {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Responsibility boundaries\",\n        \"items\": [\n          {\n            \"kind\": \"group\",\n            \"items\": [\n              {\n                \"kind\": \"text\",\n                \"x\": 140,\n                \"y\": 20,\n                \"text\": \"Application Orchestrator\"\n              },\n              {\n                \"kind\": \"path\",\n                \"d\": \"M225 30 V55 H90 V78 M85 72 L90 78 L95 72 M225 55 H340 V78 M335 72 L340 78 L345 72\"\n              },\n              {\n                \"kind\": \"text\",\n                \"x\": 25,\n                \"y\": 103,\n                \"text\": \"Conversation Engine\"\n              },\n              {\n                \"kind\": \"text\",\n                \"x\": 285,\n                \"y\": 103,\n                \"text\": \"Context Engine\"\n              }\n            ]\n          }\n        ]\n      }\n    },\n    \"summary\": {\n      \"type\": \"Text\",\n      \"props\": {\n        \"text\": \"The orchestrator coordinates both engines. Conversation owns messages and lineage. Context selects and budgets references.\"\n      }\n    }\n  }\n}\n",
+  "state": {},
+  "projection": {
+    "inputs": {},
+    "outputs": {
+      "description": "The orchestrator coordinates both engines. Conversation owns messages and lineage. Context selects and budgets references."
+    },
+    "rules": {
+      "protocol": "json",
+      "source": "{\n  \"root\": \"root\",\n  \"elements\": {\n    \"root\": {\n      \"type\": \"Stack\",\n      \"props\": {},\n      \"children\": [\n        \"diagram\",\n        \"summary\"\n      ]\n    },\n    \"diagram\": {\n      \"type\": \"Graphic\",\n      \"props\": {\n        \"label\": \"Responsibility boundaries\",\n        \"items\": [\n          {\n            \"kind\": \"group\",\n            \"items\": [\n              {\n                \"kind\": \"text\",\n                \"x\": 140,\n                \"y\": 20,\n                \"text\": \"Application Orchestrator\"\n              },\n              {\n                \"kind\": \"path\",\n                \"d\": \"M225 30 V55 H90 V78 M85 72 L90 78 L95 72 M225 55 H340 V78 M335 72 L340 78 L345 72\"\n              },\n              {\n                \"kind\": \"text\",\n                \"x\": 25,\n                \"y\": 103,\n                \"text\": \"Conversation Engine\"\n              },\n              {\n                \"kind\": \"text\",\n                \"x\": 285,\n                \"y\": 103,\n                \"text\": \"Context Engine\"\n              }\n            ]\n          }\n        ]\n      }\n    },\n    \"summary\": {\n      \"type\": \"Text\",\n      \"props\": {\n        \"text\": \"The orchestrator coordinates both engines. Conversation owns messages and lineage. Context selects and budgets references.\"\n      }\n    }\n  }\n}\n"
+    },
+    "artifactId": "B02-json",
+    "revision": 1
+  }
+}

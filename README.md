@@ -15,3 +15,7 @@ Handoff baseline: 2026-11-27. Product discovery, not an implemented system. Star
 - [Goal 1](docs/spikes/genui-lab/goal-01.md), [Goal 2](docs/spikes/genui-lab/goal-02.md)
 - [References](docs/references/research.md), [UI concepts](docs/references/ui-concepts.md), [Open questions](docs/open-questions.md)
 - [Agent instructions](AGENTS.md)
+
+## Goal 1 evidence
+
+[Run the local protocol lab](apps/genui-lab/README.md) and review the [proposed feasibility decision](docs/architecture/adr/0001-genui-protocol-feasibility.md).

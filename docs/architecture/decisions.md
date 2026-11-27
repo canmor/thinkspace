@@ -20,3 +20,5 @@ Accepted = explicit product agreement, not technical verification. Proposed = re
 | ENG-02 | Deferred | Knowledge graph, RAG, cross-device sync, collaboration, commercial rollout |
 
 Alternatives considered: chat-centric faster initial delivery but context/artifact coupling; event-driven runtime useful for streaming but full event sourcing premature. Native rendering maximizes system fidelity but reduces Web ecosystem reuse; native shell + Web content balances; Electron consistent Chromium with resource tradeoffs; Tauri uses system WebView and requires compatibility tests. No final shell or protocol selection.
+
+2026-11-27 · UI-02 evidence and proposed protocol direction are recorded in [ADR 0001](adr/0001-genui-protocol-feasibility.md). Human architecture review is pending.

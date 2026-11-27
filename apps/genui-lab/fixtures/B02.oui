@@ -1,0 +1,3 @@
+root = Stack([diagram, summary])
+diagram = Graphic("Responsibility boundaries", [{kind:"group",items:[{"kind":"text","x":140,"y":20,"text":"Application Orchestrator"},{"kind":"path","d":"M225 30 V55 H90 V78 M85 72 L90 78 L95 72 M225 55 H340 V78 M335 72 L340 78 L345 72"},{"kind":"text","x":25,"y":103,"text":"Conversation Engine"},{"kind":"text","x":285,"y":103,"text":"Context Engine"}]}])
+summary = Text("The orchestrator coordinates both engines. Conversation owns messages and lineage. Context selects and budgets references.")

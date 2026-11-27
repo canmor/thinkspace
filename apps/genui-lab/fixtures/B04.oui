@@ -1,0 +1,13 @@
+root = Stack([summary, fareInput, goldInput, weightInput, allowance, fee, axis])
+summary = Text("Fictional single-bag policy. Excess costs $15 per kg.")
+$fare = 0
+fareInput = Control("Fare", 0, 1, ["Economy","Business"], $fare)
+$gold = 0
+goldInput = Control("Membership", 0, 1, ["Standard","Gold"], $gold)
+$weight = 23
+weightInput = Control("Weight (kg)", 10, 40, [], $weight)
+limit = 23 + $fare * 9 + $gold * 5
+allowance = Metric("Allowance (kg)", limit)
+cost = $weight > limit ? ($weight - limit) * 15 : 0
+fee = Metric("Fee ($)", cost)
+axis = Graphic("Bag weight", [{"kind":"path","d":"M100 65 H400"},{"kind":"text","x":85,"y":100,"text":"10 kg"},{"kind":"text","x":370,"y":100,"text":"40 kg"}, {kind:"rect", x:100, y:58, width:($weight - 10) * 10, height:3}, {kind:"circle", cx:$weight * 10, cy:65, r:6}])

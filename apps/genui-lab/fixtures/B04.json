@@ -1,0 +1,209 @@
+{
+  "root": "root",
+  "elements": {
+    "root": {
+      "type": "Stack",
+      "props": {},
+      "children": [
+        "summary",
+        "fareInput",
+        "goldInput",
+        "weightInput",
+        "allowance",
+        "fee",
+        "axis"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Fictional single-bag policy. Excess costs $15 per kg."
+      }
+    },
+    "fareInput": {
+      "type": "Control",
+      "props": {
+        "label": "Fare",
+        "value": {
+          "$bindState": "/fare"
+        },
+        "min": 0,
+        "max": 1,
+        "choices": [
+          "Economy",
+          "Business"
+        ]
+      }
+    },
+    "goldInput": {
+      "type": "Control",
+      "props": {
+        "label": "Membership",
+        "value": {
+          "$bindState": "/gold"
+        },
+        "min": 0,
+        "max": 1,
+        "choices": [
+          "Standard",
+          "Gold"
+        ]
+      }
+    },
+    "weightInput": {
+      "type": "Control",
+      "props": {
+        "label": "Weight (kg)",
+        "value": {
+          "$bindState": "/weight"
+        },
+        "min": 10,
+        "max": 40,
+        "choices": []
+      }
+    },
+    "allowance": {
+      "type": "Metric",
+      "props": {
+        "label": "Allowance (kg)",
+        "value": {
+          "$computed": "Add",
+          "args": {
+            "a": 23,
+            "b": {
+              "$computed": "Add",
+              "args": {
+                "a": {
+                  "$computed": "Multiply",
+                  "args": {
+                    "a": {
+                      "$state": "/fare"
+                    },
+                    "b": 9
+                  }
+                },
+                "b": {
+                  "$computed": "Multiply",
+                  "args": {
+                    "a": {
+                      "$state": "/gold"
+                    },
+                    "b": 5
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "fee": {
+      "type": "Metric",
+      "props": {
+        "label": "Fee ($)",
+        "value": {
+          "$computed": "Multiply",
+          "args": {
+            "a": 15,
+            "b": {
+              "$computed": "Excess",
+              "args": {
+                "a": {
+                  "$state": "/weight"
+                },
+                "b": {
+                  "$computed": "Add",
+                  "args": {
+                    "a": 23,
+                    "b": {
+                      "$computed": "Add",
+                      "args": {
+                        "a": {
+                          "$computed": "Multiply",
+                          "args": {
+                            "a": {
+                              "$state": "/fare"
+                            },
+                            "b": 9
+                          }
+                        },
+                        "b": {
+                          "$computed": "Multiply",
+                          "args": {
+                            "a": {
+                              "$state": "/gold"
+                            },
+                            "b": 5
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "axis": {
+      "type": "Graphic",
+      "props": {
+        "label": "Bag weight",
+        "items": [
+          {
+            "kind": "path",
+            "d": "M100 65 H400"
+          },
+          {
+            "kind": "text",
+            "x": 85,
+            "y": 100,
+            "text": "10 kg"
+          },
+          {
+            "kind": "text",
+            "x": 370,
+            "y": 100,
+            "text": "40 kg"
+          },
+          {
+            "kind": "rect",
+            "x": 100,
+            "y": 58,
+            "width": {
+              "$computed": "Multiply",
+              "args": {
+                "a": 10,
+                "b": {
+                  "$computed": "Excess",
+                  "args": {
+                    "a": {
+                      "$state": "/weight"
+                    },
+                    "b": 10
+                  }
+                }
+              }
+            },
+            "height": 3
+          },
+          {
+            "kind": "circle",
+            "cx": {
+              "$computed": "Multiply",
+              "args": {
+                "a": 10,
+                "b": {
+                  "$state": "/weight"
+                }
+              }
+            },
+            "cy": 65,
+            "r": 6
+          }
+        ]
+      }
+    }
+  }
+}

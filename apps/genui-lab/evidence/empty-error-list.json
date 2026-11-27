@@ -1,0 +1,410 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/26.7.0/bin/node",
+      "<repo>/apps/genui-lab/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "<repo>/apps/genui-lab/playwright.config.mjs",
+    "rootDir": "<repo>/apps/genui-lab/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "<repo>/apps/genui-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "<repo>/apps/genui-lab/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "<repo>/apps/genui-lab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "<repo>/apps/genui-lab/tests",
+        "snapshotDir": "<repo>/apps/genui-lab/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4187",
+          "viewport": {
+            "width": 1340,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npx --no-install vite preview --host 127.0.0.1 --port 4187 --strictPort",
+      "url": "http://127.0.0.1:4187"
+    }
+  },
+  "suites": [
+    {
+      "title": "lab.spec.mjs",
+      "file": "lab.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "json B02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 984,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:50:44.934Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-c8cbacc2f4d802ac4759",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "json B03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 524,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:50:47.316Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-aff92b737033612679b3",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "json B04",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:50:47.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-ad2df2ea992933856a6a",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "oui B02",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5150,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:11:41",
+                    "location": {
+                      "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                      "column": 41,
+                      "line": 11
+                    },
+                    "snippet": " \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'.stack'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({path\u001b[33m:\u001b[39m\u001b[32m'evidence/'\u001b[39m\u001b[33m+\u001b[39mtask\u001b[33m+\u001b[39m\u001b[32m'-'\u001b[39m\u001b[33m+\u001b[39mformat\u001b[33m+\u001b[39m\u001b[32m'.png'\u001b[39m})\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\n \u001b[90m    |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mif\u001b[39m(task\u001b[33m===\u001b[39m\u001b[32m'B02'\u001b[39m){\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'svg text'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[32m'Application Orchestrator'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'Conversation Engine'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'Context Engine'\u001b[39m])\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'section p'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'selects and budgets'\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                        "column": 41,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n   9 |   await expect(pane.locator('.stack')).toBeVisible()\n  10 |   await page.screenshot({path:'evidence/'+task+'-'+format+'.png'})\n> 11 |   await expect(pane.getByRole('alert')).toHaveCount(0)\n     |                                         ^\n  12 |   if(task==='B02'){\n  13 |     await expect(pane.locator('svg text')).toHaveText(['Application Orchestrator','Conversation Engine','Context Engine'])\n  14 |     await expect(pane.locator('section p')).toContainText('selects and budgets')\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:11:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:50:49.023Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<repo>/apps/genui-lab/test-results/lab-oui-B02/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                    "column": 41,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-a0553afeb7fc32602db0",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "oui B03",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5217,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:11:41",
+                    "location": {
+                      "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                      "column": 41,
+                      "line": 11
+                    },
+                    "snippet": " \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'.stack'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({path\u001b[33m:\u001b[39m\u001b[32m'evidence/'\u001b[39m\u001b[33m+\u001b[39mtask\u001b[33m+\u001b[39m\u001b[32m'-'\u001b[39m\u001b[33m+\u001b[39mformat\u001b[33m+\u001b[39m\u001b[32m'.png'\u001b[39m})\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\n \u001b[90m    |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mif\u001b[39m(task\u001b[33m===\u001b[39m\u001b[32m'B02'\u001b[39m){\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'svg text'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[32m'Application Orchestrator'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'Conversation Engine'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'Context Engine'\u001b[39m])\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'section p'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'selects and budgets'\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                        "column": 41,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n   9 |   await expect(pane.locator('.stack')).toBeVisible()\n  10 |   await page.screenshot({path:'evidence/'+task+'-'+format+'.png'})\n> 11 |   await expect(pane.getByRole('alert')).toHaveCount(0)\n     |                                         ^\n  12 |   if(task==='B02'){\n  13 |     await expect(pane.locator('svg text')).toHaveText(['Application Orchestrator','Conversation Engine','Context Engine'])\n  14 |     await expect(pane.locator('section p')).toContainText('selects and budgets')\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:11:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:50:54.384Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<repo>/apps/genui-lab/test-results/lab-oui-B03/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                    "column": 41,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-f1766047cdf1bb427a12",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "title": "oui B04",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5226,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:11:41",
+                    "location": {
+                      "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                      "column": 41,
+                      "line": 11
+                    },
+                    "snippet": " \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'.stack'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({path\u001b[33m:\u001b[39m\u001b[32m'evidence/'\u001b[39m\u001b[33m+\u001b[39mtask\u001b[33m+\u001b[39m\u001b[32m'-'\u001b[39m\u001b[33m+\u001b[39mformat\u001b[33m+\u001b[39m\u001b[32m'.png'\u001b[39m})\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\n \u001b[90m    |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mif\u001b[39m(task\u001b[33m===\u001b[39m\u001b[32m'B02'\u001b[39m){\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'svg text'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[32m'Application Orchestrator'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'Conversation Engine'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'Context Engine'\u001b[39m])\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(pane\u001b[33m.\u001b[39mlocator(\u001b[32m'section p'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'selects and budgets'\u001b[39m)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                        "column": 41,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('article').nth(1).getByRole('alert')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('article').nth(1).getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('article').nth(1).getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n   9 |   await expect(pane.locator('.stack')).toBeVisible()\n  10 |   await page.screenshot({path:'evidence/'+task+'-'+format+'.png'})\n> 11 |   await expect(pane.getByRole('alert')).toHaveCount(0)\n     |                                         ^\n  12 |   if(task==='B02'){\n  13 |     await expect(pane.locator('svg text')).toHaveText(['Application Orchestrator','Conversation Engine','Context Engine'])\n  14 |     await expect(pane.locator('section p')).toContainText('selects and budgets')\n    at <repo>/apps/genui-lab/tests/lab.spec.mjs:11:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:50:59.907Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<repo>/apps/genui-lab/test-results/lab-oui-B04/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<repo>/apps/genui-lab/tests/lab.spec.mjs",
+                    "column": 41,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3940a60593a5c9b9e668-895acf2ef3a275024a09",
+          "file": "lab.spec.mjs",
+          "line": 6,
+          "column": 40
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-27T09:50:43.819Z",
+    "duration": 21459.216,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

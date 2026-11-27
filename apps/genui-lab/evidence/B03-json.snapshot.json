@@ -1,0 +1,43 @@
+{
+  "id": "B03-json",
+  "version": "0.23.2",
+  "protocol": "json",
+  "revision": 1,
+  "provenance": "manual",
+  "spec": "{\n  \"root\": \"root\",\n  \"elements\": {\n    \"root\": {\n      \"type\": \"Stack\",\n      \"props\": {},\n      \"children\": [\n        \"summary\",\n        \"aInput\",\n        \"bInput\",\n        \"cInput\",\n        \"ranking\"\n      ]\n    },\n    \"summary\": {\n      \"type\": \"Text\",\n      \"props\": {\n        \"text\": \"Synthetic scores. Weights are normalized by their total.\"\n      }\n    },\n    \"aInput\": {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Native experience\",\n        \"value\": {\n          \"$bindState\": \"/a\"\n        },\n        \"min\": 0,\n        \"max\": 100,\n        \"choices\": []\n      }\n    },\n    \"bInput\": {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Lightweight runtime\",\n        \"value\": {\n          \"$bindState\": \"/b\"\n        },\n        \"min\": 0,\n        \"max\": 100,\n        \"choices\": []\n      }\n    },\n    \"cInput\": {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Delivery efficiency\",\n        \"value\": {\n          \"$bindState\": \"/c\"\n        },\n        \"min\": 0,\n        \"max\": 100,\n        \"choices\": []\n      }\n    },\n    \"ranking\": {\n      \"type\": \"Table\",\n      \"props\": {\n        \"values\": {\n          \"$computed\": \"Rank\",\n          \"args\": {\n            \"rows\": [\n              [\n                \"Native Hybrid\",\n                [\n                  9,\n                  8,\n                  7\n                ]\n              ],\n              [\n                \"Tauri\",\n                [\n                  7,\n                  8,\n                  8\n                ]\n              ],\n              [\n                \"Electron\",\n                [\n                  6,\n                  4,\n                  10\n                ]\n              ]\n            ],\n            \"a\": {\n              \"$state\": \"/a\"\n            },\n            \"b\": {\n              \"$state\": \"/b\"\n            },\n            \"c\": {\n              \"$state\": \"/c\"\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+  "state": {
+    "a": 1,
+    "b": 0,
+    "c": 2
+  },
+  "projection": {
+    "inputs": {
+      "a": 1,
+      "b": 0,
+      "c": 2
+    },
+    "outputs": {
+      "description": "Synthetic scores. Weights are normalized by their total.",
+      "ranking": [
+        {
+          "label": "Electron",
+          "score": 8.666666666666666
+        },
+        {
+          "label": "Native Hybrid",
+          "score": 7.666666666666667
+        },
+        {
+          "label": "Tauri",
+          "score": 7.666666666666667
+        }
+      ]
+    },
+    "rules": {
+      "protocol": "json",
+      "source": "{\n  \"root\": \"root\",\n  \"elements\": {\n    \"root\": {\n      \"type\": \"Stack\",\n      \"props\": {},\n      \"children\": [\n        \"summary\",\n        \"aInput\",\n        \"bInput\",\n        \"cInput\",\n        \"ranking\"\n      ]\n    },\n    \"summary\": {\n      \"type\": \"Text\",\n      \"props\": {\n        \"text\": \"Synthetic scores. Weights are normalized by their total.\"\n      }\n    },\n    \"aInput\": {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Native experience\",\n        \"value\": {\n          \"$bindState\": \"/a\"\n        },\n        \"min\": 0,\n        \"max\": 100,\n        \"choices\": []\n      }\n    },\n    \"bInput\": {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Lightweight runtime\",\n        \"value\": {\n          \"$bindState\": \"/b\"\n        },\n        \"min\": 0,\n        \"max\": 100,\n        \"choices\": []\n      }\n    },\n    \"cInput\": {\n      \"type\": \"Control\",\n      \"props\": {\n        \"label\": \"Delivery efficiency\",\n        \"value\": {\n          \"$bindState\": \"/c\"\n        },\n        \"min\": 0,\n        \"max\": 100,\n        \"choices\": []\n      }\n    },\n    \"ranking\": {\n      \"type\": \"Table\",\n      \"props\": {\n        \"values\": {\n          \"$computed\": \"Rank\",\n          \"args\": {\n            \"rows\": [\n              [\n                \"Native Hybrid\",\n                [\n                  9,\n                  8,\n                  7\n                ]\n              ],\n              [\n                \"Tauri\",\n                [\n                  7,\n                  8,\n                  8\n                ]\n              ],\n              [\n                \"Electron\",\n                [\n                  6,\n                  4,\n                  10\n                ]\n              ]\n            ],\n            \"a\": {\n              \"$state\": \"/a\"\n            },\n            \"b\": {\n              \"$state\": \"/b\"\n            },\n            \"c\": {\n              \"$state\": \"/c\"\n            }\n          }\n        }\n      }\n    }\n  }\n}\n"
+    },
+    "artifactId": "B03-json",
+    "revision": 1
+  }
+}
