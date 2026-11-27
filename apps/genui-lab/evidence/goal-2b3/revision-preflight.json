@@ -1,0 +1,192 @@
+[
+  {
+    "protocol": "oui",
+    "name": "unknown operation",
+    "diagnostic": "page.evaluate: Error: [",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "missing target",
+    "diagnostic": "page.evaluate: Error: Invalid operation target",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "wrong artifact",
+    "diagnostic": "page.evaluate: Error: Wrong artifact or stale revision",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "stale base",
+    "diagnostic": "page.evaluate: Error: Wrong artifact or stale revision",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "overlapping edits",
+    "diagnostic": "page.evaluate: Error: Conflicting revision operations",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "oversized patch",
+    "diagnostic": "page.evaluate: Error: Revision byte budget",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "duplicate identifier",
+    "diagnostic": "page.evaluate: Error: Invalid operation target",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "invalid reference",
+    "diagnostic": "page.evaluate: Error: Unknown or cyclic reference: missing",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "cycle",
+    "diagnostic": "page.evaluate: Error: Component capability denied",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "unauthorized component",
+    "diagnostic": "page.evaluate: Error: Component capability denied",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "unauthorized function",
+    "diagnostic": "page.evaluate: Error: Function capability denied: Unknown",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "invalid reconstructed document",
+    "diagnostic": "page.evaluate: Error: Component capability denied",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "changed domain excludes selected value",
+    "diagnostic": "page.evaluate: Error: Incompatible retained value: count",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "resource budget",
+    "diagnostic": "page.evaluate: Error: [",
+    "rollback": true
+  },
+  {
+    "protocol": "oui",
+    "name": "concurrent publication",
+    "pair": [
+      "rejected",
+      "fulfilled"
+    ],
+    "state": {
+      "count": 4
+    }
+  },
+  {
+    "protocol": "json",
+    "name": "unknown operation",
+    "diagnostic": "page.evaluate: Error: [",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "missing target",
+    "diagnostic": "page.evaluate: Error: Invalid operation target",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "wrong artifact",
+    "diagnostic": "page.evaluate: Error: Wrong artifact or stale revision",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "stale base",
+    "diagnostic": "page.evaluate: Error: Wrong artifact or stale revision",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "overlapping edits",
+    "diagnostic": "page.evaluate: Error: Conflicting revision operations",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "oversized patch",
+    "diagnostic": "page.evaluate: Error: Revision byte budget",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "duplicate identifier",
+    "diagnostic": "page.evaluate: Error: Invalid operation target",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "invalid reference",
+    "diagnostic": "page.evaluate: Error: Unreachable component or missing state",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "cycle",
+    "diagnostic": "page.evaluate: Error: Unknown, duplicate or cyclic component",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "unauthorized component",
+    "diagnostic": "page.evaluate: Error: Unknown component",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "unauthorized function",
+    "diagnostic": "page.evaluate: Error: Unknown function",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "invalid reconstructed document",
+    "diagnostic": "page.evaluate: Error: Unknown, duplicate or cyclic component",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "changed domain excludes selected value",
+    "diagnostic": "page.evaluate: Error: Incompatible retained value: count",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "resource budget",
+    "diagnostic": "page.evaluate: Error: [",
+    "rollback": true
+  },
+  {
+    "protocol": "json",
+    "name": "concurrent publication",
+    "pair": [
+      "rejected",
+      "fulfilled"
+    ],
+    "state": {
+      "count": 4
+    }
+  }
+]

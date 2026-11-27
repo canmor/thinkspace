@@ -1,0 +1,9 @@
+{
+  "protocol": "oui",
+  "task": "kiln",
+  "seed": 1702,
+  "mode": "chart",
+  "endToEndMs": 4615.889291999978,
+  "attempts": 1,
+  "delivery": "accepted"
+}

@@ -1,0 +1,107 @@
+{
+  "task": "tickets",
+  "protocol": "oui",
+  "seed": 1701,
+  "mode": "full",
+  "turn": 2,
+  "before": {
+    "artifact": "tickets-oui-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([countInput, typeInput, total])\\n$count = 2\\n$ticketType = 0\\ncountInput = Control(\\\"Ticket count\\\", 1, 5, [], $count)\\ntypeInput = Control(\\\"Ticket type\\\", 0, 1, [\\\"Adult\\\", \\\"Child\\\"], $ticketType)\\nprice = $ticketType == 0 ? 8 : 5\\ntotal = Metric(\\\"Total ($)\\\", $count * price)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"ticketType\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "ticketType",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 15
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "ticketType": 1
+      }
+    }
+  },
+  "after": {
+    "artifact": "tickets-oui-1701",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([countInput, typeInput, total, savings])\\n$count = 2\\n$ticketType = 0\\ncountInput = Control(\\\"Ticket count\\\", 1, 5, [], $count)\\ntypeInput = Control(\\\"Ticket type\\\", 0, 1, [\\\"Adult\\\", \\\"Child\\\"], $ticketType)\\nprice = $ticketType == 0 ? 8 : 4\\ntotal = Metric(\\\"Total ($)\\\", $count * price)\\nsavings = Metric(\\\"Savings vs. adult tickets ($)\\\", $count * (8 - price))\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"ticketType\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "ticketType",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Savings vs. adult tickets ($)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "ticketType": 1
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 3665.8955829999904,
+  "attempts": 1
+}

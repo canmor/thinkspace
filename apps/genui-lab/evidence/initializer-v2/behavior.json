@@ -1,0 +1,86 @@
+[
+  {
+    "file": "water-json-1701-full-turn1.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "introducedDefault": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1701-full-turn2.json",
+    "status": "truncated",
+    "checked": 0,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1701-full-turn3.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1701-patch-v2-turn1.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "introducedDefault": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1701-patch-v2-turn2.json",
+    "status": "truncated",
+    "checked": 0,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1701-patch-v2-turn3.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1702-full-turn1.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "introducedDefault": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1702-full-turn2.json",
+    "status": "truncated",
+    "checked": 0,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1702-full-turn3.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1702-patch-v2-turn1.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "introducedDefault": true,
+    "behavior": "pass"
+  },
+  {
+    "file": "water-json-1702-patch-v2-turn2.json",
+    "status": "truncated",
+    "checked": 0,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1702-patch-v2-turn3.json",
+    "status": "accepted",
+    "checked": 28,
+    "continuity": true,
+    "behavior": "pass"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "tide",
+  "seed": 1702,
+  "mode": "svg",
+  "endToEndMs": 25684.434666999965,
+  "attempts": 2,
+  "delivery": "accepted"
+}

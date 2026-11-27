@@ -1,0 +1,258 @@
+[
+  {
+    "file": "archive-json-1701-chart.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "archive-json-1701-chart.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-json-1701-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "archive-json-1701-svg.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-json-1702-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-json-1702-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "archive-json-1702-svg.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-oui-1701-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-oui-1701-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "archive-oui-1701-svg.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-oui-1702-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "archive-oui-1702-svg.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "fee-json-1701-chart.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1701-chart.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1701-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1701-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1702-chart.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1702-chart.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1702-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-json-1702-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-oui-1701-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "fee-oui-1701-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "fee-oui-1701-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-oui-1702-chart.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "fee-oui-1702-chart.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "fee-oui-1702-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "fee-oui-1702-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "kiln-json-1701-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-json-1701-svg.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-json-1702-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-json-1702-svg.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-oui-1701-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-oui-1701-svg.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-oui-1702-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "kiln-oui-1702-svg.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "policies-json-1701-chart.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1701-chart.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1701-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1701-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1702-chart.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1702-chart.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1702-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-json-1702-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-oui-1701-chart.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "policies-oui-1701-chart.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-oui-1701-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-oui-1701-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-oui-1702-chart.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "policies-oui-1702-chart.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "policies-oui-1702-svg.attempt0.json",
+    "status": "truncated"
+  },
+  {
+    "file": "policies-oui-1702-svg.attempt1.json",
+    "status": "truncated"
+  },
+  {
+    "file": "tide-json-1701-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-json-1701-svg.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-json-1702-chart.attempt0.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-json-1702-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "tide-json-1702-svg.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-oui-1701-chart.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "tide-oui-1701-chart.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-oui-1701-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "tide-oui-1701-svg.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-oui-1702-chart.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "tide-oui-1702-chart.attempt1.json",
+    "status": "accepted"
+  },
+  {
+    "file": "tide-oui-1702-svg.attempt0.json",
+    "status": "rejected"
+  },
+  {
+    "file": "tide-oui-1702-svg.attempt1.json",
+    "status": "accepted"
+  }
+]

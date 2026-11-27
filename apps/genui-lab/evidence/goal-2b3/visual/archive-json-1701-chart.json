@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "archive",
+  "seed": 1701,
+  "mode": "chart",
+  "endToEndMs": 17325.921207999985,
+  "attempts": 2,
+  "delivery": "accepted"
+}

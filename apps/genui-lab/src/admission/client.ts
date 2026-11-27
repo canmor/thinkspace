@@ -1,16 +1,18 @@
+import type { Reconstruction } from "./revision";
 import { validateTransfer } from "./transport";
 import { limits, type Frame } from "./policy";
 export class RestrictedClient {
-  private worker = new Worker(new URL("./runtime.worker.ts", import.meta.url), {
-    type: "module",
-  });
+  private worker: Worker;
   private queue: {
-    resolve: (frame: Frame) => void;
+    resolve: (frame: Frame | Reconstruction) => void;
     reject: (e: Error) => void;
   }[] = [];
   private closed = false;
   private timer: ReturnType<typeof setTimeout> | undefined;
-  constructor() {
+  constructor(purpose: "baseline" | "revision-experiment" = "baseline") {
+    this.worker = new Worker(new URL("./runtime.worker.ts", import.meta.url), {
+      type: "module", name: purpose,
+    });
     this.worker.onmessage = ({ data }) => {
       const task = this.queue.shift();
       if (!task) return;
@@ -21,7 +23,9 @@ export class RestrictedClient {
     this.worker.onerror = () => this.close("Worker failed");
     this.worker.onmessageerror = () => this.close("Invalid runtime response");
   }
-  request(message: object): Promise<Frame> {
+  request(message: {kind:"reconstruct";protocol:string;source:string;raw:string;artifact:string;base:number;version?:2}): Promise<Reconstruction>;
+  request(message: object): Promise<Frame>;
+  request(message: object): Promise<Frame | Reconstruction> {
     try {
       validateTransfer(message);
     } catch (e) {

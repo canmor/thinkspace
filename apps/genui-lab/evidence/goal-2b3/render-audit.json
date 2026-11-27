@@ -1,0 +1,218 @@
+[
+  {
+    "file": "archive-json-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      1,
+      0.40000009536743164,
+      0.40000009536743164
+    ]
+  },
+  {
+    "file": "archive-json-1701-svg.json",
+    "renderToLayoutEffectMs": [
+      0.7000000476837158,
+      0.2999999523162842,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "archive-json-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.39999985694885254,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "archive-json-1702-svg.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.3000001907348633,
+      0.5
+    ]
+  },
+  {
+    "file": "archive-oui-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.40000009536743164,
+      0.5
+    ]
+  },
+  {
+    "file": "archive-oui-1701-svg.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.5,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "archive-oui-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.39999985694885254,
+      0.40000009536743164,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "archive-oui-1702-svg.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.5,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "fee-oui-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      0.5999999046325684,
+      0.5999999046325684,
+      0.5
+    ]
+  },
+  {
+    "file": "fee-oui-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.5999999046325684,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "file": "kiln-json-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.2999999523162842,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "kiln-json-1701-svg.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.2999999523162842,
+      0.40000009536743164
+    ]
+  },
+  {
+    "file": "kiln-json-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.2999999523162842,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "kiln-json-1702-svg.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.2999999523162842,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "kiln-oui-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      0.39999985694885254,
+      0.40000009536743164,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "kiln-oui-1701-svg.json",
+    "renderToLayoutEffectMs": [
+      0.39999985694885254,
+      0.2999999523162842,
+      0.3000001907348633
+    ]
+  },
+  {
+    "file": "kiln-oui-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.40000009536743164,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "kiln-oui-1702-svg.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.3000001907348633,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "policies-oui-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.5999999046325684,
+      0.5999999046325684,
+      0.5
+    ]
+  },
+  {
+    "file": "tide-json-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.40000009536743164,
+      0.5
+    ]
+  },
+  {
+    "file": "tide-json-1701-svg.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.40000009536743164,
+      0.40000009536743164
+    ]
+  },
+  {
+    "file": "tide-json-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.5,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "tide-json-1702-svg.json",
+    "renderToLayoutEffectMs": [
+      0.5,
+      0.2999999523162842,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "tide-oui-1701-chart.json",
+    "renderToLayoutEffectMs": [
+      0.2999999523162842,
+      0.40000009536743164,
+      0.19999980926513672
+    ]
+  },
+  {
+    "file": "tide-oui-1701-svg.json",
+    "renderToLayoutEffectMs": [
+      0.39999985694885254,
+      0.39999985694885254,
+      0.2999999523162842
+    ]
+  },
+  {
+    "file": "tide-oui-1702-chart.json",
+    "renderToLayoutEffectMs": [
+      0.39999985694885254,
+      0.5,
+      0.39999985694885254
+    ]
+  },
+  {
+    "file": "tide-oui-1702-svg.json",
+    "renderToLayoutEffectMs": [
+      0.40000009536743164,
+      0.2999999523162842,
+      0.39999985694885254
+    ]
+  }
+]

@@ -1,12 +1,18 @@
+import { reconstruct } from "./revision";
 import { validateTransfer } from "./transport";
 import { admit } from "./session";
 let session: ReturnType<typeof admit> | undefined;
 self.onmessage = ({ data }) => {
   try {
     validateTransfer(data);
+    if(data.kind==="reconstruct" && self.name==="revision-experiment"){
+      const result=reconstruct(data.protocol,data.source,data.raw,data.artifact,data.base,data.version===2);
+      self.postMessage({frame:result});
+      return;
+    }
     let frame;
     if (data.kind === "open") {
-      const next = admit(data.protocol, data.source, data.state);
+      const next = admit(data.protocol, data.source, data.state, data.profile === "chart-experiment");
       session = next;
       frame = session.initial;
     } else if (data.kind === "change" && session) {

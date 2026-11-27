@@ -1,0 +1,97 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-Eopc1nFRHTIeijfNEgQnUkfUAWdd5\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783505,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"artifact\\\": \\\"water-oui-1701\\\",\\n  \\\"base\\\": 2,\\n  \\\"operations\\\": [\\n    {\\n      \\\"op\\\": \\\"replace\\\",\\n      \\\"key\\\": \\\"root\\\",\\n      \\\"value\\\": \\\"Stack([input,rateInput,result,drained])\\\"\\n    },\\n    {\\n      \\\"op\\\": \\\"remove\\\",\\n      \\\"key\\\": \\\"remainingPlot\\\",\\n      \\\"value\\\": \\\"\\\"\\n    },\\n    {\\n      \\\"op\\\": \\\"remove\\\",\\n      \\\"key\\\": \\\"plotLine\\\",\\n      \\\"value\\\": \\\"\\\"\\n    },\\n    {\\n      \\\"op\\\": \\\"add\\\",\\n      \\\"key\\\": \\\"drained\\\",\\n      \\\"value\\\": \\\"Metric(\\\\\\\"Drained (litres)\\\\\\\", balance > 0 ? 24 - balance : 24)\\\"\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1535,\n    \"completion_tokens\": 166,\n    \"total_tokens\": 1701,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1532,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 3782,
+  "usage": {
+    "prompt_tokens": 1535,
+    "completion_tokens": 166,
+    "total_tokens": 1701,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1532,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"artifact\": \"water-oui-1701\",\n  \"base\": 2,\n  \"operations\": [\n    {\n      \"op\": \"replace\",\n      \"key\": \"root\",\n      \"value\": \"Stack([input,rateInput,result,drained])\"\n    },\n    {\n      \"op\": \"remove\",\n      \"key\": \"remainingPlot\",\n      \"value\": \"\"\n    },\n    {\n      \"op\": \"remove\",\n      \"key\": \"plotLine\",\n      \"value\": \"\"\n    },\n    {\n      \"op\": \"add\",\n      \"key\": \"drained\",\n      \"value\": \"Metric(\\\"Drained (litres)\\\", balance > 0 ? 24 - balance : 24)\"\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\n\nReturn only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose."
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"water-oui-1701\",\"base\":2,\"original\":\"Build a water tank calculator. Elapsed time is 0–6 whole minutes, initially 2. A tank starts with 24 litres and drains 3 litres per minute. Show remaining litres.\",\"previousRequests\":[\"Add a control for the drain rate, 2–5 whole litres per minute, initially 3. Stop at zero litres.\",\"Add a line plot of remaining litres at each whole minute from 0 through 6 for the chosen rate.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([input,rateInput,result,remainingPlot])\\\\n$minutes = 2\\\\ninput = Control(\\\\\\\"Elapsed time (minutes)\\\\\\\", 0, 6, [], $minutes)\\\\nresult = Metric(\\\\\\\"Remaining (litres)\\\\\\\", balance > 0 ? balance : 0)\\\\n$rate = 3\\\\nrateInput = Control(\\\\\\\"Drain rate (litres per minute)\\\\\\\", 2, 5, [], $rate)\\\\nbalance = 24 - ($minutes * $rate)\\\\nplotLine = $rate == 2 ? \\\\\\\"M 60 8 L 120 16 L 180 24 L 240 32 L 300 40 L 360 48 L 420 56\\\\\\\" : ($rate == 3 ? \\\\\\\"M 60 8 L 120 20 L 180 32 L 240 44 L 300 56 L 360 68 L 420 80\\\\\\\" : ($rate == 4 ? \\\\\\\"M 60 8 L 120 24 L 180 40 L 240 56 L 300 72 L 360 88 L 420 104\\\\\\\" : \\\\\\\"M 60 8 L 120 28 L 180 48 L 240 68 L 300 88 L 360 104 L 420 104\\\\\\\"))\\\\nremainingPlot = Graphic(\\\\\\\"Remaining litres by elapsed minute\\\\\\\",[{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 60 8 V 104 H 430 M 55 8 H 60 M 55 56 H 60 M 55 104 H 60 M 60 104 V 108 M 120 104 V 108 M 180 104 V 108 M 240 104 V 108 M 300 104 V 108 M 360 104 V 108 M 420 104 V 108\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:35,y:13,text:\\\\\\\"24\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:35,y:61,text:\\\\\\\"12\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:44,y:108,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:3,y:38,text:\\\\\\\"Litres\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:56,y:121,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:116,y:121,text:\\\\\\\"1\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:176,y:121,text:\\\\\\\"2\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:236,y:121,text:\\\\\\\"3\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:296,y:121,text:\\\\\\\"4\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:356,y:121,text:\\\\\\\"5\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:416,y:121,text:\\\\\\\"6\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:189,y:134,text:\\\\\\\"Elapsed minutes\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:plotLine}])\\\",\\\"state\\\":[{\\\"name\\\":\\\"minutes\\\",\\\"value\\\":4},{\\\"name\\\":\\\"rate\\\",\\\"value\\\":4}]}]}\",\"controls\":[{\"type\":\"Control\",\"binding\":\"minutes\",\"props\":{\"label\":\"Elapsed time (minutes)\",\"min\":0,\"max\":6,\"choices\":[],\"value\":4}},{\"type\":\"Control\",\"binding\":\"rate\",\"props\":{\"label\":\"Drain rate (litres per minute)\",\"min\":2,\"max\":5,\"choices\":[],\"value\":4}}],\"request\":\"Replace the plot with a metric for litres drained by the selected time. Retain the remaining-litres metric.\"}"
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input,rateInput,result,drained])\\n$minutes = 2\\ninput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nresult = Metric(\\\"Remaining (litres)\\\", balance > 0 ? balance : 0)\\n$rate = 3\\nrateInput = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - ($minutes * $rate)\\ndrained = Metric(\\\"Drained (litres)\\\", balance > 0 ? 24 - balance : 24)\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Drained (litres)",
+            "value": 16
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 4
+      }
+    },
+    "decisions": [
+      {
+        "role": "time",
+        "from": "minutes",
+        "key": "minutes",
+        "action": "retained",
+        "value": 4,
+        "domainChanged": false
+      },
+      {
+        "role": "rate",
+        "from": "rate",
+        "key": "rate",
+        "action": "retained",
+        "value": 4,
+        "domainChanged": false
+      }
+    ]
+  }
+}

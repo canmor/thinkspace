@@ -30,3 +30,5 @@ Alternatives considered: chat-centric faster initial delivery but context/artifa
 [ADR 0004 — Restricted generation reliability](adr/0004-generation-reliability.md) records the conditional architecture review, revised scoring and Sol reference configuration for the next local experiment.
 
 Goal 2B.2 exercised ADR 0004's approved local scope. The selected Sol configuration delivered one of four complete three-revision trajectories. Keep the existing execution and admission limits for review. Native render captures and a separate reader worksheet are available for independent assessment. [Evidence and limitations](../../apps/genui-lab/evidence/goal-2b2/findings.md)
+
+2026-11-27 · Goal 2B.3 architecture review closed. [ADR 0005](adr/0005-representation-and-revision-efficiency.md) records the accepted local baseline and the decision to direct future GenUI optimization through real Thinkspace product scenarios.

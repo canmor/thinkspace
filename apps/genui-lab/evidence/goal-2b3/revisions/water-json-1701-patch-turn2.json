@@ -1,0 +1,94 @@
+{
+  "task": "water",
+  "protocol": "json",
+  "seed": 1701,
+  "mode": "patch",
+  "turn": 2,
+  "before": {
+    "artifact": "water-json-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"input\\\",\\\"drainRate\\\",\\\"result\\\"]},\\\"input\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Elapsed time (minutes)\\\",\\\"min\\\":0,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/minutes\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Remaining (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":24,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/minutes\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/drainRate\\\"}}}}}}},\\\"drainRate\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Drain rate (litres per minute)\\\",\\\"min\\\":2,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/drainRate\\\"}}}}}\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"drainRate\",\"value\":2}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "minutes"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "drainRate"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "drainRate": 4
+      }
+    }
+  },
+  "after": {
+    "artifact": "water-json-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"input\\\",\\\"drainRate\\\",\\\"result\\\"]},\\\"input\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Elapsed time (minutes)\\\",\\\"min\\\":0,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/minutes\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Remaining (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":24,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/minutes\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/drainRate\\\"}}}}}}},\\\"drainRate\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Drain rate (litres per minute)\\\",\\\"min\\\":2,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/drainRate\\\"}}}}}\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"drainRate\",\"value\":2}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "minutes"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "drainRate"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "drainRate": 4
+      }
+    }
+  },
+  "delivery": "truncated",
+  "endToEndMs": 78383.39179200004,
+  "attempts": 2
+}

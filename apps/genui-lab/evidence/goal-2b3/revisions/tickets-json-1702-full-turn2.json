@@ -1,0 +1,107 @@
+{
+  "task": "tickets",
+  "protocol": "json",
+  "seed": 1702,
+  "mode": "full",
+  "turn": 2,
+  "before": {
+    "artifact": "tickets-json-1702",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Adult tickets cost $8 each; child tickets cost $5 each. The selected ticket type applies to the whole order.\"},{\"type\":\"ui\",\"source\":\"{\\n  \\\"root\\\": \\\"layout\\\",\\n  \\\"elements\\\": {\\n    \\\"layout\\\": {\\\"type\\\": \\\"Stack\\\", \\\"props\\\": {}, \\\"children\\\": [\\\"input\\\", \\\"ticketType\\\", \\\"result\\\"]},\\n    \\\"input\\\": {\\\"type\\\": \\\"Control\\\", \\\"props\\\": {\\\"label\\\": \\\"Ticket count\\\", \\\"min\\\": 1, \\\"max\\\": 5, \\\"choices\\\": [], \\\"value\\\": {\\\"$bindState\\\": \\\"/count\\\"}}},\\n    \\\"ticketType\\\": {\\\"type\\\": \\\"Control\\\", \\\"props\\\": {\\\"label\\\": \\\"Ticket type\\\", \\\"min\\\": 0, \\\"max\\\": 1, \\\"choices\\\": [\\\"Adult\\\", \\\"Child\\\"], \\\"value\\\": {\\\"$bindState\\\": \\\"/child\\\"}}},\\n    \\\"result\\\": {\\n      \\\"type\\\": \\\"Metric\\\",\\n      \\\"props\\\": {\\n        \\\"label\\\": \\\"Total ($)\\\",\\n        \\\"value\\\": {\\n          \\\"$computed\\\": \\\"Multiply\\\",\\n          \\\"args\\\": {\\n            \\\"a\\\": {\\\"$state\\\": \\\"/count\\\"},\\n            \\\"b\\\": {\\n              \\\"$computed\\\": \\\"Excess\\\",\\n              \\\"args\\\": {\\\"a\\\": 8, \\\"b\\\": {\\\"$computed\\\": \\\"Multiply\\\", \\\"args\\\": {\\\"a\\\": 3, \\\"b\\\": {\\\"$state\\\": \\\"/child\\\"}}}}\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"child\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 1
+          },
+          "binding": "child"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 15
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "child": 1
+      }
+    }
+  },
+  "after": {
+    "artifact": "tickets-json-1702",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Adult tickets cost $8 each; child tickets cost $4 each. The selected ticket type applies to the whole order. Savings are measured against buying the same number of adult tickets.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"input\\\",\\\"ticketType\\\",\\\"result\\\",\\\"savings\\\"]},\\\"input\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Ticket count\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/count\\\"}}},\\\"ticketType\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Ticket type\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[\\\"Adult\\\",\\\"Child\\\"],\\\"value\\\":{\\\"$bindState\\\":\\\"/child\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total ($)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":8,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":4,\\\"b\\\":{\\\"$state\\\":\\\"/child\\\"}}}}}}}}},\\\"savings\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Savings vs. adult tickets ($)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":4,\\\"b\\\":{\\\"$state\\\":\\\"/child\\\"}}}}}}}}}\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"child\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 1
+          },
+          "binding": "child"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Savings vs. adult tickets ($)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "child": 1
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 6282.528083000041,
+  "attempts": 1
+}

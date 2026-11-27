@@ -1,0 +1,390 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-EopaBvyPwOTKZdNlcli6U1syhLnRm\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783391,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"artifact\\\": \\\"baggage-oui-1701\\\",\\n  \\\"base\\\": 1,\\n  \\\"operations\\\": [\\n    {\\n      \\\"op\\\": \\\"replace\\\",\\n      \\\"key\\\": \\\"root\\\",\\n      \\\"value\\\": \\\"Stack([route, cabin, status, weight, allowance, fee, feeCurve])\\\"\\n    },\\n    {\\n      \\\"op\\\": \\\"replace\\\",\\n      \\\"key\\\": \\\"$route\\\",\\n      \\\"value\\\": \\\"1\\\"\\n    },\\n    {\\n      \\\"op\\\": \\\"add\\\",\\n      \\\"key\\\": \\\"curvePath\\\",\\n      \\\"value\\\": \\\"allowed == 23 ? \\\\\\\"M 40 105 H 196 L 400 20\\\\\\\" : allowed == 25 ? \\\\\\\"M 40 105 H 220 L 400 30\\\\\\\" : allowed == 28 ? \\\\\\\"M 40 105 H 256 L 400 45\\\\\\\" : allowed == 30 ? \\\\\\\"M 40 105 H 280 L 400 55\\\\\\\" : allowed == 32 ? \\\\\\\"M 40 105 H 304 L 400 65\\\\\\\" : allowed == 34 ? \\\\\\\"M 40 105 H 328 L 400 75\\\\\\\" : allowed == 37 ? \\\\\\\"M 40 105 H 364 L 400 90\\\\\\\" : \\\\\\\"M 40 105 H 388 L 400 100\\\\\\\"\\\"\\n    },\\n    {\\n      \\\"op\\\": \\\"add\\\",\\n      \\\"key\\\": \\\"feeCurve\\\",\\n      \\\"value\\\": \\\"Graphic(\\\\\\\"Single-bag fee by weight (one dot per kg)\\\\\\\", [{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 40 15 V 105 H 400 M 36 20 H 40 M 40 105 V 109 M 160 105 V 109 M 280 105 V 109 M 400 105 V 109\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:curvePath},{kind:\\\\\\\"circle\\\\\\\",cx:40,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:52,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:64,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:76,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:88,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:100,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:112,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:124,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:136,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:148,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:160,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:172,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:184,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:196,cy:105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:208,cy:24 > allowed ? 105 - (24 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:220,cy:25 > allowed ? 105 - (25 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:232,cy:26 > allowed ? 105 - (26 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:244,cy:27 > allowed ? 105 - (27 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:256,cy:28 > allowed ? 105 - (28 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:268,cy:29 > allowed ? 105 - (29 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:280,cy:30 > allowed ? 105 - (30 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:292,cy:31 > allowed ? 105 - (31 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:304,cy:32 > allowed ? 105 - (32 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:316,cy:33 > allowed ? 105 - (33 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:328,cy:34 > allowed ? 105 - (34 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:340,cy:35 > allowed ? 105 - (35 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:352,cy:36 > allowed ? 105 - (36 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:364,cy:37 > allowed ? 105 - (37 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:376,cy:38 > allowed ? 105 - (38 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:388,cy:39 > allowed ? 105 - (39 - allowed) * 5 : 105,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:400,cy:105 - (40 - allowed) * 5,r:2},{kind:\\\\\\\"text\\\\\\\",x:1,y:23,text:\\\\\\\"$255\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:15,y:108,text:\\\\\\\"$0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:33,y:125,text:\\\\\\\"10\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:153,y:125,text:\\\\\\\"20\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:273,y:125,text:\\\\\\\"30\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:393,y:125,text:\\\\\\\"40\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:418,y:125,text:\\\\\\\"kg\\\\\\\"}])\\\"\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1272,\n    \"completion_tokens\": 1773,\n    \"total_tokens\": 3045,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1269,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 512,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 33301,
+  "usage": {
+    "prompt_tokens": 1272,
+    "completion_tokens": 1773,
+    "total_tokens": 3045,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1269,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 512,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"artifact\": \"baggage-oui-1701\",\n  \"base\": 1,\n  \"operations\": [\n    {\n      \"op\": \"replace\",\n      \"key\": \"root\",\n      \"value\": \"Stack([route, cabin, status, weight, allowance, fee, feeCurve])\"\n    },\n    {\n      \"op\": \"replace\",\n      \"key\": \"$route\",\n      \"value\": \"1\"\n    },\n    {\n      \"op\": \"add\",\n      \"key\": \"curvePath\",\n      \"value\": \"allowed == 23 ? \\\"M 40 105 H 196 L 400 20\\\" : allowed == 25 ? \\\"M 40 105 H 220 L 400 30\\\" : allowed == 28 ? \\\"M 40 105 H 256 L 400 45\\\" : allowed == 30 ? \\\"M 40 105 H 280 L 400 55\\\" : allowed == 32 ? \\\"M 40 105 H 304 L 400 65\\\" : allowed == 34 ? \\\"M 40 105 H 328 L 400 75\\\" : allowed == 37 ? \\\"M 40 105 H 364 L 400 90\\\" : \\\"M 40 105 H 388 L 400 100\\\"\"\n    },\n    {\n      \"op\": \"add\",\n      \"key\": \"feeCurve\",\n      \"value\": \"Graphic(\\\"Single-bag fee by weight (one dot per kg)\\\", [{kind:\\\"path\\\",d:\\\"M 40 15 V 105 H 400 M 36 20 H 40 M 40 105 V 109 M 160 105 V 109 M 280 105 V 109 M 400 105 V 109\\\"},{kind:\\\"path\\\",d:curvePath},{kind:\\\"circle\\\",cx:40,cy:105,r:2},{kind:\\\"circle\\\",cx:52,cy:105,r:2},{kind:\\\"circle\\\",cx:64,cy:105,r:2},{kind:\\\"circle\\\",cx:76,cy:105,r:2},{kind:\\\"circle\\\",cx:88,cy:105,r:2},{kind:\\\"circle\\\",cx:100,cy:105,r:2},{kind:\\\"circle\\\",cx:112,cy:105,r:2},{kind:\\\"circle\\\",cx:124,cy:105,r:2},{kind:\\\"circle\\\",cx:136,cy:105,r:2},{kind:\\\"circle\\\",cx:148,cy:105,r:2},{kind:\\\"circle\\\",cx:160,cy:105,r:2},{kind:\\\"circle\\\",cx:172,cy:105,r:2},{kind:\\\"circle\\\",cx:184,cy:105,r:2},{kind:\\\"circle\\\",cx:196,cy:105,r:2},{kind:\\\"circle\\\",cx:208,cy:24 > allowed ? 105 - (24 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:220,cy:25 > allowed ? 105 - (25 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:232,cy:26 > allowed ? 105 - (26 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:244,cy:27 > allowed ? 105 - (27 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:256,cy:28 > allowed ? 105 - (28 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:268,cy:29 > allowed ? 105 - (29 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:280,cy:30 > allowed ? 105 - (30 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:292,cy:31 > allowed ? 105 - (31 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:304,cy:32 > allowed ? 105 - (32 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:316,cy:33 > allowed ? 105 - (33 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:328,cy:34 > allowed ? 105 - (34 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:340,cy:35 > allowed ? 105 - (35 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:352,cy:36 > allowed ? 105 - (36 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:364,cy:37 > allowed ? 105 - (37 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:376,cy:38 > allowed ? 105 - (38 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:388,cy:39 > allowed ? 105 - (39 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:400,cy:105 - (40 - allowed) * 5,r:2},{kind:\\\"text\\\",x:1,y:23,text:\\\"$255\\\"},{kind:\\\"text\\\",x:15,y:108,text:\\\"$0\\\"},{kind:\\\"text\\\",x:33,y:125,text:\\\"10\\\"},{kind:\\\"text\\\",x:153,y:125,text:\\\"20\\\"},{kind:\\\"text\\\",x:273,y:125,text:\\\"30\\\"},{kind:\\\"text\\\",x:393,y:125,text:\\\"40\\\"},{kind:\\\"text\\\",x:418,y:125,text:\\\"kg\\\"}])\"\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\n\nReturn only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose."
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"baggage-oui-1701\",\"base\":1,\"original\":\"Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.\",\"previousRequests\":[\"Add a route selector. Domestic stays the default with the same rules. International adds 2 kg to every allowance. Keep my current selections.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Explore the fee for one bag. Gold adds 5 kg to your cabin allowance. You pay $15 per kg over the allowance and nothing at or below it.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([route, cabin, status, weight, allowance, fee])\\\\n$cabin = 0\\\\n$gold = 1\\\\n$weight = 38\\\\ncabin = Control(\\\\\\\"Cabin\\\\\\\", 0, 1, [\\\\\\\"Economy\\\\\\\", \\\\\\\"Business\\\\\\\"], $cabin)\\\\nstatus = Control(\\\\\\\"Gold status\\\\\\\", 0, 1, [\\\\\\\"No Gold\\\\\\\", \\\\\\\"Gold\\\\\\\"], $gold)\\\\nweight = Control(\\\\\\\"Bag weight (kg)\\\\\\\", 10, 40, [], $weight)\\\\nbase = $cabin == 0 ? 23 : 32\\\\nallowed = base + $gold * 5 + $route * 2\\\\nexcess = $weight > allowed ? $weight - allowed : 0\\\\nallowance = Metric(\\\\\\\"Bag allowance (kg)\\\\\\\", allowed)\\\\nfee = Metric(\\\\\\\"Single-bag fee ($)\\\\\\\", excess * 15)\\\\n$route = 0\\\\nroute = Control(\\\\\\\"Route\\\\\\\", 0, 1, [\\\\\\\"Domestic\\\\\\\", \\\\\\\"International\\\\\\\"], $route)\\\",\\\"state\\\":[{\\\"name\\\":\\\"cabin\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":1},{\\\"name\\\":\\\"weight\\\",\\\"value\\\":38},{\\\"name\\\":\\\"route\\\",\\\"value\\\":0}]}]}\",\"controls\":[{\"type\":\"Control\",\"binding\":\"route\",\"props\":{\"label\":\"Route\",\"min\":0,\"max\":1,\"choices\":[\"Domestic\",\"International\"],\"value\":1}},{\"type\":\"Control\",\"binding\":\"cabin\",\"props\":{\"label\":\"Cabin\",\"min\":0,\"max\":1,\"choices\":[\"Economy\",\"Business\"],\"value\":0}},{\"type\":\"Control\",\"binding\":\"gold\",\"props\":{\"label\":\"Gold status\",\"min\":0,\"max\":1,\"choices\":[\"No Gold\",\"Gold\"],\"value\":1}},{\"type\":\"Control\",\"binding\":\"weight\",\"props\":{\"label\":\"Bag weight (kg)\",\"min\":10,\"max\":40,\"choices\":[],\"value\":38}}],\"request\":\"Add a fee curve covering every whole weight from 10 to 40 kg for the selected fare, membership and route. Keep the calculator and my selections.\"}"
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Explore the fee for one bag. Gold adds 5 kg to your cabin allowance. You pay $15 per kg over the allowance and nothing at or below it.\"},{\"type\":\"ui\",\"source\":\"root = Stack([route, cabin, status, weight, allowance, fee, feeCurve])\\n$cabin = 0\\n$gold = 1\\n$weight = 38\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowed = base + $gold * 5 + $route * 2\\nexcess = $weight > allowed ? $weight - allowed : 0\\nallowance = Metric(\\\"Bag allowance (kg)\\\", allowed)\\nfee = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\\n$route = 1\\nroute = Control(\\\"Route\\\", 0, 1, [\\\"Domestic\\\", \\\"International\\\"], $route)\\ncurvePath = allowed == 23 ? \\\"M 40 105 H 196 L 400 20\\\" : allowed == 25 ? \\\"M 40 105 H 220 L 400 30\\\" : allowed == 28 ? \\\"M 40 105 H 256 L 400 45\\\" : allowed == 30 ? \\\"M 40 105 H 280 L 400 55\\\" : allowed == 32 ? \\\"M 40 105 H 304 L 400 65\\\" : allowed == 34 ? \\\"M 40 105 H 328 L 400 75\\\" : allowed == 37 ? \\\"M 40 105 H 364 L 400 90\\\" : \\\"M 40 105 H 388 L 400 100\\\"\\nfeeCurve = Graphic(\\\"Single-bag fee by weight (one dot per kg)\\\", [{kind:\\\"path\\\",d:\\\"M 40 15 V 105 H 400 M 36 20 H 40 M 40 105 V 109 M 160 105 V 109 M 280 105 V 109 M 400 105 V 109\\\"},{kind:\\\"path\\\",d:curvePath},{kind:\\\"circle\\\",cx:40,cy:105,r:2},{kind:\\\"circle\\\",cx:52,cy:105,r:2},{kind:\\\"circle\\\",cx:64,cy:105,r:2},{kind:\\\"circle\\\",cx:76,cy:105,r:2},{kind:\\\"circle\\\",cx:88,cy:105,r:2},{kind:\\\"circle\\\",cx:100,cy:105,r:2},{kind:\\\"circle\\\",cx:112,cy:105,r:2},{kind:\\\"circle\\\",cx:124,cy:105,r:2},{kind:\\\"circle\\\",cx:136,cy:105,r:2},{kind:\\\"circle\\\",cx:148,cy:105,r:2},{kind:\\\"circle\\\",cx:160,cy:105,r:2},{kind:\\\"circle\\\",cx:172,cy:105,r:2},{kind:\\\"circle\\\",cx:184,cy:105,r:2},{kind:\\\"circle\\\",cx:196,cy:105,r:2},{kind:\\\"circle\\\",cx:208,cy:24 > allowed ? 105 - (24 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:220,cy:25 > allowed ? 105 - (25 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:232,cy:26 > allowed ? 105 - (26 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:244,cy:27 > allowed ? 105 - (27 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:256,cy:28 > allowed ? 105 - (28 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:268,cy:29 > allowed ? 105 - (29 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:280,cy:30 > allowed ? 105 - (30 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:292,cy:31 > allowed ? 105 - (31 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:304,cy:32 > allowed ? 105 - (32 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:316,cy:33 > allowed ? 105 - (33 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:328,cy:34 > allowed ? 105 - (34 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:340,cy:35 > allowed ? 105 - (35 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:352,cy:36 > allowed ? 105 - (36 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:364,cy:37 > allowed ? 105 - (37 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:376,cy:38 > allowed ? 105 - (38 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:388,cy:39 > allowed ? 105 - (39 - allowed) * 5 : 105,r:2},{kind:\\\"circle\\\",cx:400,cy:105 - (40 - allowed) * 5,r:2},{kind:\\\"text\\\",x:1,y:23,text:\\\"$255\\\"},{kind:\\\"text\\\",x:15,y:108,text:\\\"$0\\\"},{kind:\\\"text\\\",x:33,y:125,text:\\\"10\\\"},{kind:\\\"text\\\",x:153,y:125,text:\\\"20\\\"},{kind:\\\"text\\\",x:273,y:125,text:\\\"30\\\"},{kind:\\\"text\\\",x:393,y:125,text:\\\"40\\\"},{kind:\\\"text\\\",x:418,y:125,text:\\\"kg\\\"}])\",\"state\":[{\"name\":\"cabin\",\"value\":0},{\"name\":\"gold\",\"value\":1},{\"name\":\"weight\",\"value\":38},{\"name\":\"route\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "route",
+          "props": {
+            "label": "Route",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Domestic",
+              "International"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "cabin",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "gold",
+          "props": {
+            "label": "Gold status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No Gold",
+              "Gold"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "weight",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 30
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 120
+          }
+        },
+        {
+          "type": "Graphic",
+          "props": {
+            "label": "Single-bag fee by weight (one dot per kg)",
+            "items": [
+              {
+                "kind": "path",
+                "d": "M 40 15 V 105 H 400 M 36 20 H 40 M 40 105 V 109 M 160 105 V 109 M 280 105 V 109 M 400 105 V 109"
+              },
+              {
+                "kind": "path",
+                "d": "M 40 105 H 280 L 400 55"
+              },
+              {
+                "kind": "circle",
+                "cx": 40,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 52,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 64,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 76,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 88,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 100,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 112,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 124,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 136,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 148,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 160,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 172,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 184,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 196,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 208,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 220,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 232,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 244,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 256,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 268,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 280,
+                "cy": 105,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 292,
+                "cy": 100,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 304,
+                "cy": 95,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 316,
+                "cy": 90,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 328,
+                "cy": 85,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 340,
+                "cy": 80,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 352,
+                "cy": 75,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 364,
+                "cy": 70,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 376,
+                "cy": 65,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 388,
+                "cy": 60,
+                "r": 2
+              },
+              {
+                "kind": "circle",
+                "cx": 400,
+                "cy": 55,
+                "r": 2
+              },
+              {
+                "kind": "text",
+                "x": 1,
+                "y": 23,
+                "text": "$255"
+              },
+              {
+                "kind": "text",
+                "x": 15,
+                "y": 108,
+                "text": "$0"
+              },
+              {
+                "kind": "text",
+                "x": 33,
+                "y": 125,
+                "text": "10"
+              },
+              {
+                "kind": "text",
+                "x": 153,
+                "y": 125,
+                "text": "20"
+              },
+              {
+                "kind": "text",
+                "x": 273,
+                "y": 125,
+                "text": "30"
+              },
+              {
+                "kind": "text",
+                "x": 393,
+                "y": 125,
+                "text": "40"
+              },
+              {
+                "kind": "text",
+                "x": 418,
+                "y": 125,
+                "text": "kg"
+              }
+            ]
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 1,
+        "weight": 38,
+        "route": 1
+      }
+    },
+    "decisions": [
+      {
+        "role": "route",
+        "from": "route",
+        "key": "route",
+        "action": "retained",
+        "value": 1,
+        "domainChanged": false
+      },
+      {
+        "role": "fare",
+        "from": "cabin",
+        "key": "cabin",
+        "action": "retained",
+        "value": 0,
+        "domainChanged": false
+      },
+      {
+        "role": "member",
+        "from": "gold",
+        "key": "gold",
+        "action": "retained",
+        "value": 1,
+        "domainChanged": false
+      },
+      {
+        "role": "weight",
+        "from": "weight",
+        "key": "weight",
+        "action": "retained",
+        "value": 38,
+        "domainChanged": false
+      }
+    ]
+  }
+}

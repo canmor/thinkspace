@@ -1,0 +1,100 @@
+{
+  "arm": {
+    "id": "F",
+    "wire": "structured",
+    "tokens": 2048,
+    "ground": true,
+    "examples": true,
+    "model": "gpt-6.2-sol"
+  },
+  "seeds": [
+    1701,
+    1702
+  ],
+  "revisions": {
+    "water": {
+      "origin": "Build a water tank calculator. Elapsed time is 0–6 whole minutes, initially 2. A tank starts with 24 litres and drains 3 litres per minute. Show remaining litres.",
+      "changes": [
+        "Add a control for the drain rate, 2–5 whole litres per minute, initially 3. Stop at zero litres.",
+        "Add a line plot of remaining litres at each whole minute from 0 through 6 for the chosen rate.",
+        "Replace the plot with a metric for litres drained by the selected time. Retain the remaining-litres metric."
+      ]
+    }
+  },
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "artifact",
+      "base",
+      "operations",
+      "version",
+      "initializers"
+    ],
+    "properties": {
+      "artifact": {
+        "type": "string"
+      },
+      "base": {
+        "type": "integer"
+      },
+      "operations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "op",
+            "key",
+            "value"
+          ],
+          "properties": {
+            "op": {
+              "type": "string",
+              "enum": [
+                "add",
+                "replace",
+                "remove"
+              ]
+            },
+            "key": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "version": {
+        "type": "integer",
+        "enum": [
+          2
+        ]
+      },
+      "initializers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "value"
+          ],
+          "properties": {
+            "role": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "guide": "Return only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose. Use version 2. Include initializers with exactly one {role,value} for each newly introduced role, using the requested initial integer. Host water roles are time and rate. Retained or renamed roles must be omitted. Use [] if none are introduced.",
+  "repairs": 1,
+  "context": "current artifact, prior user requirements, and host selections; same in both arms",
+  "origin": "matched hand-authored fresh tasks and historical B04"
+}

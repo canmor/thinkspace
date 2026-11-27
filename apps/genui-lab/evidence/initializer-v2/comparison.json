@@ -1,0 +1,222 @@
+{
+  "byMode": {
+    "full": {
+      "turns": 6,
+      "published": 4,
+      "correct": 4,
+      "firstPassCorrect": 4,
+      "correctTrajectories": 0,
+      "inputTokens": 11254,
+      "completionTokens": 9665,
+      "attempts": 8,
+      "totalMs": 185105.37512399998,
+      "inputPerCorrect": 2813.5,
+      "completionPerCorrect": 2416.25,
+      "msPerCorrect": 46276.343780999996
+    },
+    "patch-v2": {
+      "turns": 6,
+      "published": 4,
+      "correct": 4,
+      "firstPassCorrect": 4,
+      "correctTrajectories": 0,
+      "inputTokens": 10234,
+      "completionTokens": 9099,
+      "attempts": 8,
+      "totalMs": 173131.08870900003,
+      "inputPerCorrect": 2558.5,
+      "completionPerCorrect": 2274.75,
+      "msPerCorrect": 43282.77217725001
+    }
+  },
+  "rows": [
+    {
+      "mode": "full",
+      "seed": 1701,
+      "turn": 1,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 5652.179,
+      "input": 1243,
+      "completion": 319,
+      "beforeProse": [],
+      "afterProse": [
+        "The tank starts with 24 litres and drains at the selected rate until it is empty."
+      ]
+    },
+    {
+      "mode": "full",
+      "seed": 1701,
+      "turn": 2,
+      "correct": false,
+      "publication": false,
+      "firstPassCorrect": false,
+      "attempts": 2,
+      "ms": 79902.083,
+      "input": 2916,
+      "completion": 4096,
+      "beforeProse": [
+        "The tank starts with 24 litres and drains at the selected rate until it is empty."
+      ],
+      "afterProse": [
+        "The tank starts with 24 litres and drains at the selected rate until it is empty."
+      ]
+    },
+    {
+      "mode": "full",
+      "seed": 1701,
+      "turn": 3,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 6626.309166000006,
+      "input": 1465,
+      "completion": 420,
+      "beforeProse": [
+        "The tank starts with 24 litres and drains at the selected rate until it is empty."
+      ],
+      "afterProse": [
+        "The tank starts with 24 litres and drains at the selected rate until it is empty."
+      ]
+    },
+    {
+      "mode": "full",
+      "seed": 1702,
+      "turn": 1,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 6198.053291999997,
+      "input": 1243,
+      "completion": 323,
+      "beforeProse": [],
+      "afterProse": [
+        "The tank starts with 24 litres. It drains at the selected rate until it is empty."
+      ]
+    },
+    {
+      "mode": "full",
+      "seed": 1702,
+      "turn": 2,
+      "correct": false,
+      "publication": false,
+      "firstPassCorrect": false,
+      "attempts": 2,
+      "ms": 79911.54358299999,
+      "input": 2920,
+      "completion": 4096,
+      "beforeProse": [
+        "The tank starts with 24 litres. It drains at the selected rate until it is empty."
+      ],
+      "afterProse": [
+        "The tank starts with 24 litres. It drains at the selected rate until it is empty."
+      ]
+    },
+    {
+      "mode": "full",
+      "seed": 1702,
+      "turn": 3,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 6815.207082999987,
+      "input": 1467,
+      "completion": 411,
+      "beforeProse": [
+        "The tank starts with 24 litres. It drains at the selected rate until it is empty."
+      ],
+      "afterProse": [
+        "The tank starts with 24 litres and drains at the selected rate until it is empty."
+      ]
+    },
+    {
+      "mode": "patch-v2",
+      "seed": 1701,
+      "turn": 1,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 4544.710208999997,
+      "input": 1141,
+      "completion": 260,
+      "beforeProse": [],
+      "afterProse": []
+    },
+    {
+      "mode": "patch-v2",
+      "seed": 1701,
+      "turn": 2,
+      "correct": false,
+      "publication": false,
+      "firstPassCorrect": false,
+      "attempts": 2,
+      "ms": 75448.39975,
+      "input": 2648,
+      "completion": 4096,
+      "beforeProse": [],
+      "afterProse": []
+    },
+    {
+      "mode": "patch-v2",
+      "seed": 1701,
+      "turn": 3,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 4136.569125000009,
+      "input": 1331,
+      "completion": 195,
+      "beforeProse": [],
+      "afterProse": []
+    },
+    {
+      "mode": "patch-v2",
+      "seed": 1702,
+      "turn": 1,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 5568.201540999999,
+      "input": 1141,
+      "completion": 258,
+      "beforeProse": [],
+      "afterProse": []
+    },
+    {
+      "mode": "patch-v2",
+      "seed": 1702,
+      "turn": 2,
+      "correct": false,
+      "publication": false,
+      "firstPassCorrect": false,
+      "attempts": 2,
+      "ms": 79527.989125,
+      "input": 2644,
+      "completion": 4096,
+      "beforeProse": [],
+      "afterProse": []
+    },
+    {
+      "mode": "patch-v2",
+      "seed": 1702,
+      "turn": 3,
+      "correct": true,
+      "publication": true,
+      "firstPassCorrect": true,
+      "attempts": 1,
+      "ms": 3905.2189590000053,
+      "input": 1329,
+      "completion": 194,
+      "beforeProse": [],
+      "afterProse": []
+    }
+  ]
+}

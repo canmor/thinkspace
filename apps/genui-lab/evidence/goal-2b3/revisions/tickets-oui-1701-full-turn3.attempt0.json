@@ -1,0 +1,100 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-EopbCbypCN9qP1YOxGTtQA6DeEBm9\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783454,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([countInput, typeInput, savings, total])\\\\n$count = 2\\\\n$ticketType = 0\\\\ncountInput = Control(\\\\\\\"Ticket count\\\\\\\", 1, 5, [], $count)\\\\ntypeInput = Control(\\\\\\\"Ticket type\\\\\\\", 0, 1, [\\\\\\\"Adult\\\\\\\", \\\\\\\"Child\\\\\\\"], $ticketType)\\\\nprice = $ticketType == 0 ? 8 : 4\\\\nsavings = Metric(\\\\\\\"Group savings ($)\\\\\\\", $count * (8 - price))\\\\ntotal = Metric(\\\\\\\"Total ($)\\\\\\\", $count * price)\\\",\\n      \\\"state\\\": [\\n        {\\\"name\\\": \\\"count\\\", \\\"value\\\": 3},\\n        {\\\"name\\\": \\\"ticketType\\\", \\\"value\\\": 1}\\n      ]\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1131,\n    \"completion_tokens\": 199,\n    \"total_tokens\": 1330,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1128,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 3958,
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 199,
+    "total_tokens": 1330,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1128,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([countInput, typeInput, savings, total])\\n$count = 2\\n$ticketType = 0\\ncountInput = Control(\\\"Ticket count\\\", 1, 5, [], $count)\\ntypeInput = Control(\\\"Ticket type\\\", 0, 1, [\\\"Adult\\\", \\\"Child\\\"], $ticketType)\\nprice = $ticketType == 0 ? 8 : 4\\nsavings = Metric(\\\"Group savings ($)\\\", $count * (8 - price))\\ntotal = Metric(\\\"Total ($)\\\", $count * price)\",\n      \"state\": [\n        {\"name\": \"count\", \"value\": 3},\n        {\"name\": \"ticketType\", \"value\": 1}\n      ]\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"tickets-oui-1701\",\"base\":2,\"original\":\"Build a ticket calculator. Count is 1 to 5 whole tickets, initially 2. Each ticket costs 8 dollars. Show total dollars.\",\"previousRequests\":[\"Add an Adult or Child selector, default Adult. Children pay 5 dollars per ticket. Keep my selections.\",\"Change the child price to 4 dollars. Add a metric for the savings compared with adult tickets.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([countInput, typeInput, total, savings])\\\\n$count = 2\\\\n$ticketType = 0\\\\ncountInput = Control(\\\\\\\"Ticket count\\\\\\\", 1, 5, [], $count)\\\\ntypeInput = Control(\\\\\\\"Ticket type\\\\\\\", 0, 1, [\\\\\\\"Adult\\\\\\\", \\\\\\\"Child\\\\\\\"], $ticketType)\\\\nprice = $ticketType == 0 ? 8 : 4\\\\ntotal = Metric(\\\\\\\"Total ($)\\\\\\\", $count * price)\\\\nsavings = Metric(\\\\\\\"Savings vs. adult tickets ($)\\\\\\\", $count * (8 - price))\\\",\\\"state\\\":[{\\\"name\\\":\\\"count\\\",\\\"value\\\":3},{\\\"name\\\":\\\"ticketType\\\",\\\"value\\\":1}]}]}\",\"controls\":[{\"type\":\"Control\",\"binding\":\"count\",\"props\":{\"label\":\"Ticket count\",\"min\":1,\"max\":5,\"choices\":[],\"value\":3}},{\"type\":\"Control\",\"binding\":\"ticketType\",\"props\":{\"label\":\"Ticket type\",\"min\":0,\"max\":1,\"choices\":[\"Adult\",\"Child\"],\"value\":1}}],\"request\":\"Put the savings metric before the total. Label it Group savings ($). Keep the same behavior.\"}"
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([countInput, typeInput, savings, total])\\n$count = 2\\n$ticketType = 0\\ncountInput = Control(\\\"Ticket count\\\", 1, 5, [], $count)\\ntypeInput = Control(\\\"Ticket type\\\", 0, 1, [\\\"Adult\\\", \\\"Child\\\"], $ticketType)\\nprice = $ticketType == 0 ? 8 : 4\\nsavings = Metric(\\\"Group savings ($)\\\", $count * (8 - price))\\ntotal = Metric(\\\"Total ($)\\\", $count * price)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"ticketType\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "ticketType",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Group savings ($)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "ticketType": 1
+      }
+    },
+    "decisions": [
+      {
+        "role": "count",
+        "from": "count",
+        "key": "count",
+        "action": "retained",
+        "value": 3,
+        "domainChanged": false
+      },
+      {
+        "role": "category",
+        "from": "ticketType",
+        "key": "ticketType",
+        "action": "retained",
+        "value": 1,
+        "domainChanged": false
+      }
+    ]
+  }
+}

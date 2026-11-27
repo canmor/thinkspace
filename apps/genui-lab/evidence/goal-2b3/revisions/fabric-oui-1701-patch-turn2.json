@@ -1,0 +1,101 @@
+{
+  "task": "fabric",
+  "protocol": "oui",
+  "seed": 1701,
+  "mode": "patch",
+  "turn": 2,
+  "before": {
+    "artifact": "fabric-oui-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, hemInput, result])\\n$count = 2\\ninput = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nresult = Metric(\\\"Total cloth (metres)\\\", $count * (3 + $hem))\\n$hem = 0\\nhemInput = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $hem)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "hem",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth (metres)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 1
+      }
+    }
+  },
+  "after": {
+    "artifact": "fabric-oui-1701",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, hemInput, result, cost])\\n$count = 2\\ninput = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nresult = Metric(\\\"Total cloth (metres)\\\", totalMetres)\\n$hem = 0\\nhemInput = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $hem)\\ntotalMetres = $count * (3 + $hem)\\ncost = Metric(\\\"Total cost (dollars)\\\", totalMetres * 6)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "hem",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth (metres)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cost (dollars)",
+            "value": 72
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 1
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 3843.3741670000018,
+  "attempts": 1
+}

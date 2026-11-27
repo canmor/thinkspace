@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "kiln",
+  "seed": 1701,
+  "mode": "chart",
+  "endToEndMs": 5125.145334000001,
+  "attempts": 1,
+  "delivery": "accepted"
+}

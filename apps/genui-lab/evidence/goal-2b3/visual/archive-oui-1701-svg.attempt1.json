@@ -1,0 +1,217 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-EopavXZg5bu2CzQXcSOk351fFSSew\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783437,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([pace, plot])\\\\n$daily = 4\\\\npace = Control(\\\\\\\"Reading pace (pages per day)\\\\\\\", 3, 6, [], $daily)\\\\np1 = 30 - $daily\\\\np2 = 30 - 2 * $daily\\\\np3 = 30 - 3 * $daily\\\\np4 = 30 - 4 * $daily\\\\np5 = 30 - 5 * $daily\\\\np6 = 30 - 6 * $daily\\\\np7 = 30 - 7 * $daily\\\\np8 = 30 - 8 * $daily\\\\nplot = Graphic(\\\\\\\"Pages remaining at the end of each day\\\\\\\", [{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 40 14 H 434 M 40 44 H 434 M 40 74 H 434 M 40 14 V 104 H 434\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:14,y:18,text:\\\\\\\"30\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:14,y:48,text:\\\\\\\"20\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:14,y:78,text:\\\\\\\"10\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:22,y:108,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"circle\\\\\\\",cx:60,cy:14,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:104,cy:104 - 3 * p1,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:148,cy:104 - 3 * p2,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:192,cy:104 - 3 * p3,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:236,cy:104 - 3 * p4,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:280,cy:104 - 3 * p5,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:324,cy:p6 > 0 ? 104 - 3 * p6 : 104,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:368,cy:p7 > 0 ? 104 - 3 * p7 : 104,r:4},{kind:\\\\\\\"circle\\\\\\\",cx:412,cy:p8 > 0 ? 104 - 3 * p8 : 104,r:4},{kind:\\\\\\\"text\\\\\\\",x:56,y:119,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:100,y:119,text:\\\\\\\"1\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:144,y:119,text:\\\\\\\"2\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:188,y:119,text:\\\\\\\"3\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:232,y:119,text:\\\\\\\"4\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:276,y:119,text:\\\\\\\"5\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:320,y:119,text:\\\\\\\"6\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:364,y:119,text:\\\\\\\"7\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:408,y:119,text:\\\\\\\"8\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:224,y:132,text:\\\\\\\"Day\\\\\\\"}])\\\",\\\"state\\\":[]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1719,\n    \"completion_tokens\": 668,\n    \"total_tokens\": 2387,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1716,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 23,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 10273,
+  "usage": {
+    "prompt_tokens": 1719,
+    "completion_tokens": 668,
+    "total_tokens": 2387,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1716,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 23,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([pace, plot])\\n$daily = 4\\npace = Control(\\\"Reading pace (pages per day)\\\", 3, 6, [], $daily)\\np1 = 30 - $daily\\np2 = 30 - 2 * $daily\\np3 = 30 - 3 * $daily\\np4 = 30 - 4 * $daily\\np5 = 30 - 5 * $daily\\np6 = 30 - 6 * $daily\\np7 = 30 - 7 * $daily\\np8 = 30 - 8 * $daily\\nplot = Graphic(\\\"Pages remaining at the end of each day\\\", [{kind:\\\"path\\\",d:\\\"M 40 14 H 434 M 40 44 H 434 M 40 74 H 434 M 40 14 V 104 H 434\\\"},{kind:\\\"text\\\",x:14,y:18,text:\\\"30\\\"},{kind:\\\"text\\\",x:14,y:48,text:\\\"20\\\"},{kind:\\\"text\\\",x:14,y:78,text:\\\"10\\\"},{kind:\\\"text\\\",x:22,y:108,text:\\\"0\\\"},{kind:\\\"circle\\\",cx:60,cy:14,r:4},{kind:\\\"circle\\\",cx:104,cy:104 - 3 * p1,r:4},{kind:\\\"circle\\\",cx:148,cy:104 - 3 * p2,r:4},{kind:\\\"circle\\\",cx:192,cy:104 - 3 * p3,r:4},{kind:\\\"circle\\\",cx:236,cy:104 - 3 * p4,r:4},{kind:\\\"circle\\\",cx:280,cy:104 - 3 * p5,r:4},{kind:\\\"circle\\\",cx:324,cy:p6 > 0 ? 104 - 3 * p6 : 104,r:4},{kind:\\\"circle\\\",cx:368,cy:p7 > 0 ? 104 - 3 * p7 : 104,r:4},{kind:\\\"circle\\\",cx:412,cy:p8 > 0 ? 104 - 3 * p8 : 104,r:4},{kind:\\\"text\\\",x:56,y:119,text:\\\"0\\\"},{kind:\\\"text\\\",x:100,y:119,text:\\\"1\\\"},{kind:\\\"text\\\",x:144,y:119,text:\\\"2\\\"},{kind:\\\"text\\\",x:188,y:119,text:\\\"3\\\"},{kind:\\\"text\\\",x:232,y:119,text:\\\"4\\\"},{kind:\\\"text\\\",x:276,y:119,text:\\\"5\\\"},{kind:\\\"text\\\",x:320,y:119,text:\\\"6\\\"},{kind:\\\"text\\\",x:364,y:119,text:\\\"7\\\"},{kind:\\\"text\\\",x:408,y:119,text:\\\"8\\\"},{kind:\\\"text\\\",x:224,y:132,text:\\\"Day\\\"}])\",\"state\":[]}]}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}\nUse the existing Graphic component for this plot. Include complete requested data."
+    },
+    {
+      "role": "user",
+      "content": "Plot the number of pages remaining after each whole day from 0 through 8. Start with 30 pages. A control selects a daily pace of 3 to 6 whole pages, initially 4. Remaining pages cannot go below zero."
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Day 0 starts at 30 pages. Each whole day uses the selected reading pace until no pages remain.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([pace, plot, values])\\n$daily = 4\\npace = Control(\\\"Reading pace (pages per day)\\\", 3, 6, [], $daily)\\nday0 = 30\\nday1 = day0 - $daily > 0 ? day0 - $daily : 0\\nday2 = day1 - $daily > 0 ? day1 - $daily : 0\\nday3 = day2 - $daily > 0 ? day2 - $daily : 0\\nday4 = day3 - $daily > 0 ? day3 - $daily : 0\\nday5 = day4 - $daily > 0 ? day4 - $daily : 0\\nday6 = day5 - $daily > 0 ? day5 - $daily : 0\\nday7 = day6 - $daily > 0 ? day6 - $daily : 0\\nday8 = day7 - $daily > 0 ? day7 - $daily : 0\\nplot = Graphic(\\\"Pages remaining by day\\\", [{kind:\\\"path\\\",d:\\\"M 40 14 H 434 M 40 44 H 434 M 40 74 H 434 M 40 14 V 104 H 434\\\"},{kind:\\\"text\\\",x:14,y:18,text:\\\"30\\\"},{kind:\\\"text\\\",x:14,y:48,text:\\\"20\\\"},{kind:\\\"text\\\",x:14,y:78,text:\\\"10\\\"},{kind:\\\"text\\\",x:22,y:108,text:\\\"0\\\"},{kind:\\\"circle\\\",cx:60,cy:104 - day0 * 3,r:4},{kind:\\\"circle\\\",cx:104,cy:104 - day1 * 3,r:4},{kind:\\\"circle\\\",cx:148,cy:104 - day2 * 3,r:4},{kind:\\\"circle\\\",cx:192,cy:104 - day3 * 3,r:4},{kind:\\\"circle\\\",cx:236,cy:104 - day4 * 3,r:4},{kind:\\\"circle\\\",cx:280,cy:104 - day5 * 3,r:4},{kind:\\\"circle\\\",cx:324,cy:104 - day6 * 3,r:4},{kind:\\\"circle\\\",cx:368,cy:104 - day7 * 3,r:4},{kind:\\\"circle\\\",cx:412,cy:104 - day8 * 3,r:4},{kind:\\\"text\\\",x:56,y:119,text:\\\"0\\\"},{kind:\\\"text\\\",x:100,y:119,text:\\\"1\\\"},{kind:\\\"text\\\",x:144,y:119,text:\\\"2\\\"},{kind:\\\"text\\\",x:188,y:119,text:\\\"3\\\"},{kind:\\\"text\\\",x:232,y:119,text:\\\"4\\\"},{kind:\\\"text\\\",x:276,y:119,text:\\\"5\\\"},{kind:\\\"text\\\",x:320,y:119,text:\\\"6\\\"},{kind:\\\"text\\\",x:364,y:119,text:\\\"7\\\"},{kind:\\\"text\\\",x:408,y:119,text:\\\"8\\\"},{kind:\\\"text\\\",x:224,y:133,text:\\\"Day\\\"}])\\nvalues = Table([{label:\\\"Day 0 (pages left)\\\",score:day0},{label:\\\"Day 1 (pages left)\\\",score:day1},{label:\\\"Day 2 (pages left)\\\",score:day2},{label:\\\"Day 3 (pages left)\\\",score:day3},{label:\\\"Day 4 (pages left)\\\",score:day4},{label:\\\"Day 5 (pages left)\\\",score:day5},{label:\\\"Day 6 (pages left)\\\",score:day6},{label:\\\"Day 7 (pages left)\\\",score:day7},{label:\\\"Day 8 (pages left)\\\",score:day8}])\",\n      \"state\": []\n    }\n  ]\n}"
+    },
+    {
+      "role": "user",
+      "content": "Complete response rejected: Error: Static expansion budget. Return one complete corrected response."
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "daily",
+          "props": {
+            "label": "Reading pace (pages per day)",
+            "min": 3,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Graphic",
+          "props": {
+            "label": "Pages remaining at the end of each day",
+            "items": [
+              {
+                "kind": "path",
+                "d": "M 40 14 H 434 M 40 44 H 434 M 40 74 H 434 M 40 14 V 104 H 434"
+              },
+              {
+                "kind": "text",
+                "x": 14,
+                "y": 18,
+                "text": "30"
+              },
+              {
+                "kind": "text",
+                "x": 14,
+                "y": 48,
+                "text": "20"
+              },
+              {
+                "kind": "text",
+                "x": 14,
+                "y": 78,
+                "text": "10"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 108,
+                "text": "0"
+              },
+              {
+                "kind": "circle",
+                "cx": 60,
+                "cy": 14,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 104,
+                "cy": 26,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 148,
+                "cy": 38,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 192,
+                "cy": 50,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 236,
+                "cy": 62,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 280,
+                "cy": 74,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 324,
+                "cy": 86,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 368,
+                "cy": 98,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 412,
+                "cy": 104,
+                "r": 4
+              },
+              {
+                "kind": "text",
+                "x": 56,
+                "y": 119,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 119,
+                "text": "1"
+              },
+              {
+                "kind": "text",
+                "x": 144,
+                "y": 119,
+                "text": "2"
+              },
+              {
+                "kind": "text",
+                "x": 188,
+                "y": 119,
+                "text": "3"
+              },
+              {
+                "kind": "text",
+                "x": 232,
+                "y": 119,
+                "text": "4"
+              },
+              {
+                "kind": "text",
+                "x": 276,
+                "y": 119,
+                "text": "5"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 119,
+                "text": "6"
+              },
+              {
+                "kind": "text",
+                "x": 364,
+                "y": 119,
+                "text": "7"
+              },
+              {
+                "kind": "text",
+                "x": 408,
+                "y": 119,
+                "text": "8"
+              },
+              {
+                "kind": "text",
+                "x": 224,
+                "y": 132,
+                "text": "Day"
+              }
+            ]
+          }
+        }
+      ],
+      "state": {
+        "daily": 4
+      }
+    },
+    "blocks": [
+      {
+        "type": "ui"
+      }
+    ],
+    "transport": true
+  },
+  "replayMs": 96.47529199998826
+}

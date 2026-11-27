@@ -1,0 +1,102 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-Eopa6M1q0atcTbz3CIBABcGfbIXlo\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783386,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([datum, depthChart])\\\\n$datumChoice = 1\\\\ndatum = Control(\\\\\\\"Datum adjustment (m)\\\\\\\", 0, 2, [\\\\\\\"-1\\\\\\\", \\\\\\\"0\\\\\\\", \\\\\\\"+1\\\\\\\"], $datumChoice)\\\\nadjustment = $datumChoice - 1\\\\ndepthChart = Chart(\\\\\\\"Adjusted harbor depth\\\\\\\", \\\\\\\"Time (h)\\\\\\\", \\\\\\\"Depth (m)\\\\\\\", [0, 1, 2, 3, 4, 5], [{label:\\\\\\\"Adjusted depth\\\\\\\",values:[2 + adjustment, 3 + adjustment, 5 + adjustment, 4 + adjustment, 2 + adjustment, 1 + adjustment]}], [], 0)\\\",\\n      \\\"state\\\": []\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1110,\n    \"completion_tokens\": 231,\n    \"total_tokens\": 1341,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1107,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 31,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 4497,
+  "usage": {
+    "prompt_tokens": 1110,
+    "completion_tokens": 231,
+    "total_tokens": 1341,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1107,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([datum, depthChart])\\n$datumChoice = 1\\ndatum = Control(\\\"Datum adjustment (m)\\\", 0, 2, [\\\"-1\\\", \\\"0\\\", \\\"+1\\\"], $datumChoice)\\nadjustment = $datumChoice - 1\\ndepthChart = Chart(\\\"Adjusted harbor depth\\\", \\\"Time (h)\\\", \\\"Depth (m)\\\", [0, 1, 2, 3, 4, 5], [{label:\\\"Adjusted depth\\\",values:[2 + adjustment, 3 + adjustment, 5 + adjustment, 4 + adjustment, 2 + adjustment, 1 + adjustment]}], [], 0)\",\n      \"state\": []\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}\nUse the experimental Chart line component for this plot. Its exact positional arguments (json-render prop names in order) are title, xLabel, yLabel, x, series, selected, decimals. Axis labels include units. x is an increasing numeric array (2–40 values). series is 1–3 objects with distinct label strings and numeric values arrays aligned to x. selected is [] or [one x value]. decimals is a fixed integer 0–3. Include complete requested data. No new functions."
+    },
+    {
+      "role": "user",
+      "content": "Plot harbor depth in metres at hours 0 through 5. The six readings are 2, 3, 5, 4, 2, 1 metres. A datum adjustment control ranges from -1 to 1 whole metres, initially 0. Add that adjustment to every reading."
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([datum,depthChart])\\n$adjustment = 0\\ndatum = Control(\\\"Datum adjustment (m)\\\", -1, 1, [], $adjustment)\\ndepthChart = Chart(\\\"Adjusted harbor depth\\\", \\\"Time (h)\\\", \\\"Depth (m)\\\", [0, 1, 2, 3, 4, 5], [{label:\\\"Adjusted depth\\\",values:[2 + $adjustment, 3 + $adjustment, 5 + $adjustment, 4 + $adjustment, 2 + $adjustment, 1 + $adjustment]}], [], 0)\",\n      \"state\": []\n    }\n  ]\n}"
+    },
+    {
+      "role": "user",
+      "content": "Complete response rejected: Error: Unsupported syntax: UnaryExpression. Return one complete corrected response."
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "datumChoice",
+          "props": {
+            "label": "Datum adjustment (m)",
+            "min": 0,
+            "max": 2,
+            "choices": [
+              "-1",
+              "0",
+              "+1"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Chart",
+          "props": {
+            "title": "Adjusted harbor depth",
+            "xLabel": "Time (h)",
+            "yLabel": "Depth (m)",
+            "x": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "series": [
+              {
+                "label": "Adjusted depth",
+                "values": [
+                  2,
+                  3,
+                  5,
+                  4,
+                  2,
+                  1
+                ]
+              }
+            ],
+            "selected": [],
+            "decimals": 0
+          }
+        }
+      ],
+      "state": {
+        "datumChoice": 1
+      }
+    },
+    "blocks": [
+      {
+        "type": "ui"
+      }
+    ],
+    "transport": true
+  },
+  "replayMs": 95.19441699999152
+}

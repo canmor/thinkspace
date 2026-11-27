@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "fee",
+  "seed": 1701,
+  "mode": "svg",
+  "endToEndMs": 63448.472542,
+  "attempts": 2,
+  "delivery": "truncated"
+}

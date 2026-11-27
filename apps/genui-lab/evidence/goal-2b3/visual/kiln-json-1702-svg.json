@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "kiln",
+  "seed": 1702,
+  "mode": "svg",
+  "endToEndMs": 12684.255207999959,
+  "attempts": 1,
+  "delivery": "accepted"
+}

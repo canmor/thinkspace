@@ -1,0 +1,4050 @@
+{
+  "byMode": {
+    "svg": {
+      "episodes": 20,
+      "calls": 34,
+      "firstPass": 6,
+      "delivered": 12,
+      "truncatedCalls": 15,
+      "repairCalls": 14,
+      "repairCompletion": {
+        "n": 14,
+        "total": 21783,
+        "median": 2048
+      },
+      "endToEndMs": {
+        "n": 20,
+        "total": 847750.2378759999,
+        "median": 31468.6634585
+      },
+      "input": {
+        "n": 34,
+        "total": 37339,
+        "median": 902
+      },
+      "completion": {
+        "n": 34,
+        "total": 50911,
+        "median": 1326.5
+      },
+      "reasoning": {
+        "n": 34,
+        "total": 33949,
+        "median": 322
+      },
+      "visibleEstimate": {
+        "n": 34,
+        "total": 16962,
+        "median": 621.5
+      },
+      "outputBytes": {
+        "n": 34,
+        "total": 47997,
+        "median": 1495
+      },
+      "specBytes": {
+        "n": 19,
+        "total": 37469,
+        "median": 1825
+      },
+      "patchBytes": {
+        "n": 0,
+        "total": null,
+        "median": null
+      },
+      "providerMs": {
+        "n": 34,
+        "total": 845202,
+        "median": 22190.5
+      },
+      "replayMs": {
+        "n": 34,
+        "total": 2516.9441269999734,
+        "median": 95.76372899999842
+      }
+    },
+    "chart": {
+      "episodes": 20,
+      "calls": 30,
+      "firstPass": 10,
+      "delivered": 15,
+      "truncatedCalls": 9,
+      "repairCalls": 10,
+      "repairCompletion": {
+        "n": 10,
+        "total": 14619,
+        "median": 2041
+      },
+      "endToEndMs": {
+        "n": 20,
+        "total": 548258.104876,
+        "median": 10342.109874500005
+      },
+      "input": {
+        "n": 30,
+        "total": 33294,
+        "median": 994
+      },
+      "completion": {
+        "n": 30,
+        "total": 31041,
+        "median": 719.5
+      },
+      "reasoning": {
+        "n": 30,
+        "total": 20367,
+        "median": 77.5
+      },
+      "visibleEstimate": {
+        "n": 30,
+        "total": 10674,
+        "median": 211.5
+      },
+      "outputBytes": {
+        "n": 30,
+        "total": 28773,
+        "median": 602
+      },
+      "specBytes": {
+        "n": 21,
+        "total": 22166,
+        "median": 781
+      },
+      "patchBytes": {
+        "n": 0,
+        "total": null,
+        "median": null
+      },
+      "providerMs": {
+        "n": 30,
+        "total": 545181,
+        "median": 12801.5
+      },
+      "replayMs": {
+        "n": 30,
+        "total": 3046.623583000175,
+        "median": 133.02814550002222
+      }
+    },
+    "full": {
+      "episodes": 48,
+      "calls": 59,
+      "firstPass": 37,
+      "delivered": 40,
+      "truncatedCalls": 14,
+      "repairCalls": 11,
+      "repairCompletion": {
+        "n": 11,
+        "total": 17029,
+        "median": 2048
+      },
+      "endToEndMs": {
+        "n": 48,
+        "total": 988439.700878,
+        "median": 6669.004604000016
+      },
+      "input": {
+        "n": 59,
+        "total": 88380,
+        "median": 1426
+      },
+      "completion": {
+        "n": 59,
+        "total": 49350,
+        "median": 378
+      },
+      "reasoning": {
+        "n": 59,
+        "total": 31294,
+        "median": 24
+      },
+      "visibleEstimate": {
+        "n": 59,
+        "total": 18056,
+        "median": 246
+      },
+      "outputBytes": {
+        "n": 59,
+        "total": 55548,
+        "median": 742
+      },
+      "specBytes": {
+        "n": 45,
+        "total": 36228,
+        "median": 612
+      },
+      "patchBytes": {
+        "n": 0,
+        "total": null,
+        "median": null
+      },
+      "providerMs": {
+        "n": 59,
+        "total": 987096,
+        "median": 6770
+      },
+      "replayMs": {
+        "n": 0,
+        "total": null,
+        "median": null
+      }
+    },
+    "patch": {
+      "episodes": 48,
+      "calls": 57,
+      "firstPass": 39,
+      "delivered": 41,
+      "truncatedCalls": 14,
+      "repairCalls": 9,
+      "repairCompletion": {
+        "n": 9,
+        "total": 15207,
+        "median": 2048
+      },
+      "endToEndMs": {
+        "n": 48,
+        "total": 878817.7323760003,
+        "median": 5435.668458
+      },
+      "input": {
+        "n": 57,
+        "total": 76817,
+        "median": 1227
+      },
+      "completion": {
+        "n": 57,
+        "total": 43929,
+        "median": 284
+      },
+      "reasoning": {
+        "n": 57,
+        "total": 31284,
+        "median": 30
+      },
+      "visibleEstimate": {
+        "n": 57,
+        "total": 12645,
+        "median": 180
+      },
+      "outputBytes": {
+        "n": 57,
+        "total": 36309,
+        "median": 496
+      },
+      "specBytes": {
+        "n": 0,
+        "total": null,
+        "median": null
+      },
+      "patchBytes": {
+        "n": 43,
+        "total": 36309,
+        "median": 619
+      },
+      "providerMs": {
+        "n": 57,
+        "total": 877470,
+        "median": 6034
+      },
+      "replayMs": {
+        "n": 0,
+        "total": null,
+        "median": null
+      }
+    }
+  },
+  "rows": [
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 17325.921207999985,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 8895,
+          "replayMs": 132.1610000000219,
+          "input": 982,
+          "completion": 563,
+          "reasoning": 41,
+          "visibleEstimate": 522,
+          "outputBytes": 1758,
+          "specBytes": 1313,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 8201,
+          "replayMs": 96.97412500000792,
+          "input": 1631,
+          "completion": 514,
+          "reasoning": 9,
+          "visibleEstimate": 505,
+          "outputBytes": 1705,
+          "specBytes": 1306,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 30641.16841699998,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 15887,
+          "replayMs": 144.9402499999851,
+          "input": 893,
+          "completion": 1310,
+          "reasoning": 115,
+          "visibleEstimate": 1195,
+          "outputBytes": 3951,
+          "specBytes": 2896,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 14510,
+          "replayMs": 97.977332999988,
+          "input": 2206,
+          "completion": 1157,
+          "reasoning": 10,
+          "visibleEstimate": 1147,
+          "outputBytes": 3808,
+          "specBytes": 2889,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 10970.387708000024,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 10797,
+          "replayMs": 172.0017499999958,
+          "input": 982,
+          "completion": 604,
+          "reasoning": 57,
+          "visibleEstimate": 547,
+          "outputBytes": 1860,
+          "specBytes": 1276,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 32296.15850000002,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 16353,
+          "replayMs": 152.34591699996963,
+          "input": 893,
+          "completion": 1343,
+          "reasoning": 148,
+          "visibleEstimate": 1195,
+          "outputBytes": 3958,
+          "specBytes": 2911,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 15689,
+          "replayMs": 100.2884170000325,
+          "input": 2206,
+          "completion": 1277,
+          "reasoning": 83,
+          "visibleEstimate": 1194,
+          "outputBytes": 3962,
+          "specBytes": 2907,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 7099.755958999973,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6917,
+          "replayMs": 180.70075000001816,
+          "input": 908,
+          "completion": 340,
+          "reasoning": 0,
+          "visibleEstimate": 340,
+          "outputBytes": 787,
+          "specBytes": 523,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 34779.76058299997,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 24224,
+          "replayMs": 184.75387499999488,
+          "input": 819,
+          "completion": 1270,
+          "reasoning": 359,
+          "visibleEstimate": 911,
+          "outputBytes": 2243,
+          "specBytes": 1873,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 10273,
+          "replayMs": 96.47529199998826,
+          "input": 1719,
+          "completion": 668,
+          "reasoning": 23,
+          "visibleEstimate": 645,
+          "outputBytes": 1472,
+          "specBytes": 1314,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 6084.917709000001,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5949,
+          "replayMs": 135.6383340000175,
+          "input": 908,
+          "completion": 312,
+          "reasoning": 0,
+          "visibleEstimate": 312,
+          "outputBytes": 704,
+          "specBytes": 570,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "archive",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 19506.118541000003,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 19371,
+          "replayMs": 134.62683300004574,
+          "input": 819,
+          "completion": 985,
+          "reasoning": 285,
+          "visibleEstimate": 700,
+          "outputBytes": 1624,
+          "specBytes": 1345,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 59010.40204200001,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 29438,
+          "replayMs": 0.07437499999650754,
+          "input": 1012,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 29569,
+          "replayMs": 0.02508300000044983,
+          "input": 1044,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 63448.472542,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 34165,
+          "replayMs": 0.026624999998603016,
+          "input": 923,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 29281,
+          "replayMs": 0.010915999999269843,
+          "input": 955,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 59990.221833,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 31236,
+          "replayMs": 0.050208000000566244,
+          "input": 1012,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 28751,
+          "replayMs": 0.052250000000640284,
+          "input": 1044,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 58303.4765,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 27894,
+          "replayMs": 0.021124999999301508,
+          "input": 923,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 30408,
+          "replayMs": 0.016792000009445474,
+          "input": 955,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 14954.613417,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 14806,
+          "replayMs": 148.30337500000314,
+          "input": 938,
+          "completion": 835,
+          "reasoning": 98,
+          "visibleEstimate": 737,
+          "outputBytes": 2026,
+          "specBytes": 1631,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 68250.774292,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 33035,
+          "replayMs": 144.51425000000017,
+          "input": 849,
+          "completion": 1968,
+          "reasoning": 573,
+          "visibleEstimate": 1395,
+          "outputBytes": 3703,
+          "specBytes": 3254,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 35069,
+          "replayMs": 0.015291999996406958,
+          "input": 2227,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 41323.32475,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 17272,
+          "replayMs": 151.85595900000044,
+          "input": 938,
+          "completion": 1048,
+          "reasoning": 108,
+          "visibleEstimate": 940,
+          "outputBytes": 2571,
+          "specBytes": 2196,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 23783,
+          "replayMs": 114.75704099999712,
+          "input": 1868,
+          "completion": 1381,
+          "reasoning": 293,
+          "visibleEstimate": 1088,
+          "outputBytes": 2180,
+          "specBytes": 1800,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "fee",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 67452.65570900001,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 35666,
+          "replayMs": 0.03641700001026038,
+          "input": 849,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 31784,
+          "replayMs": 0.024166999995941296,
+          "input": 881,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 5125.145334000001,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4873,
+          "replayMs": 250.727125000034,
+          "input": 988,
+          "completion": 223,
+          "reasoning": 0,
+          "visibleEstimate": 223,
+          "outputBytes": 686,
+          "specBytes": 392,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 14513.117290999973,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 14364,
+          "replayMs": 148.15258300001733,
+          "input": 899,
+          "completion": 1141,
+          "reasoning": 231,
+          "visibleEstimate": 910,
+          "outputBytes": 2508,
+          "specBytes": 1825,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 5309.440500000026,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5159,
+          "replayMs": 149.2017080000369,
+          "input": 988,
+          "completion": 259,
+          "reasoning": 0,
+          "visibleEstimate": 259,
+          "outputBytes": 761,
+          "specBytes": 406,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 12684.255207999959,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 12514,
+          "replayMs": 168.97829100000672,
+          "input": 899,
+          "completion": 997,
+          "reasoning": 102,
+          "visibleEstimate": 895,
+          "outputBytes": 2471,
+          "specBytes": 1801,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 4670.922833000019,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4536,
+          "replayMs": 133.89529100002255,
+          "input": 914,
+          "completion": 185,
+          "reasoning": 0,
+          "visibleEstimate": 185,
+          "outputBytes": 490,
+          "specBytes": 228,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 20289.40174999996,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 20157,
+          "replayMs": 131.86991700000362,
+          "input": 825,
+          "completion": 1029,
+          "reasoning": 246,
+          "visibleEstimate": 783,
+          "outputBytes": 1910,
+          "specBytes": 1482,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 4615.889291999978,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4449,
+          "replayMs": 166.1085829999647,
+          "input": 914,
+          "completion": 189,
+          "reasoning": 0,
+          "visibleEstimate": 189,
+          "outputBytes": 500,
+          "specBytes": 238,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "kiln",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 18982.03833400004,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 18809,
+          "replayMs": 171.0928750000312,
+          "input": 825,
+          "completion": 924,
+          "reasoning": 285,
+          "visibleEstimate": 639,
+          "outputBytes": 1609,
+          "specBytes": 1160,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 81380.75329200001,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 40295,
+          "replayMs": 0.028125000011641532,
+          "input": 1023,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 41084,
+          "replayMs": 0.046750000008614734,
+          "input": 1055,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 78280.08887499999,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 35138,
+          "replayMs": 0.021957999997539446,
+          "input": 934,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 43141,
+          "replayMs": 0.024833999981638044,
+          "input": 966,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 75243.43283299997,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 38484,
+          "replayMs": 0.01416699998662807,
+          "input": 1023,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 36757,
+          "replayMs": 0.019417000003159046,
+          "input": 1055,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 71910.11470899999,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 31772,
+          "replayMs": 0.011417000001529232,
+          "input": 934,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 40137,
+          "replayMs": 0.010167000000365078,
+          "input": 966,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 57783.34895899998,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 19157,
+          "replayMs": 152.14416599999822,
+          "input": 949,
+          "completion": 1162,
+          "reasoning": 177,
+          "visibleEstimate": 985,
+          "outputBytes": 2592,
+          "specBytes": 2128,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 38472,
+          "replayMs": 0.030916999996406958,
+          "input": 1924,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 82343.59591600002,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 40245,
+          "replayMs": 0.012583999981870875,
+          "input": 860,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 42098,
+          "replayMs": 0.009417000022949651,
+          "input": 892,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 65308.75537500001,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 22206,
+          "replayMs": 151.61991700000362,
+          "input": 949,
+          "completion": 1390,
+          "reasoning": 130,
+          "visibleEstimate": 1260,
+          "outputBytes": 3273,
+          "specBytes": 2857,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 42838,
+          "replayMs": 111.7987500000163,
+          "input": 2199,
+          "completion": 2034,
+          "reasoning": 917,
+          "visibleEstimate": 1117,
+          "outputBytes": 2641,
+          "specBytes": 2244,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "policies",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 81568.00187500002,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 43546,
+          "replayMs": 0.011417000001529232,
+          "input": 860,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 38017,
+          "replayMs": 0.010999999998603016,
+          "input": 892,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 6229.609125000017,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6094,
+          "replayMs": 134.54870799998753,
+          "input": 994,
+          "completion": 347,
+          "reasoning": 0,
+          "visibleEstimate": 347,
+          "outputBytes": 1154,
+          "specBytes": 831,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 11756.59474999999,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 11628,
+          "replayMs": 127.77262499998324,
+          "input": 905,
+          "completion": 936,
+          "reasoning": 94,
+          "visibleEstimate": 842,
+          "outputBytes": 2680,
+          "specBytes": 2039,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 7218.978332999977,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 7069,
+          "replayMs": 148.75491700001294,
+          "input": 994,
+          "completion": 374,
+          "reasoning": 24,
+          "visibleEstimate": 350,
+          "outputBytes": 1129,
+          "specBytes": 781,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 25684.434666999965,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 14326,
+          "replayMs": 129.9785419999971,
+          "input": 905,
+          "completion": 1140,
+          "reasoning": 159,
+          "visibleEstimate": 981,
+          "outputBytes": 3062,
+          "specBytes": 2361,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 11133,
+          "replayMs": 94.14029099995969,
+          "input": 2013,
+          "completion": 878,
+          "reasoning": 0,
+          "visibleEstimate": 878,
+          "outputBytes": 2730,
+          "specBytes": 2089,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 8898.452332999965,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 3889,
+          "replayMs": 152.2196249999979,
+          "input": 920,
+          "completion": 181,
+          "reasoning": 0,
+          "visibleEstimate": 181,
+          "outputBytes": 460,
+          "specBytes": 336,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 4758,
+          "replayMs": 97.29979200003436,
+          "input": 1108,
+          "completion": 219,
+          "reasoning": 21,
+          "visibleEstimate": 198,
+          "outputBytes": 508,
+          "specBytes": 377,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 30115.44754199998,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 17718,
+          "replayMs": 147.5870419999992,
+          "input": 831,
+          "completion": 995,
+          "reasoning": 267,
+          "visibleEstimate": 728,
+          "outputBytes": 1652,
+          "specBytes": 1449,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 12136,
+          "replayMs": 112.42062499999884,
+          "input": 1559,
+          "completion": 785,
+          "reasoning": 46,
+          "visibleEstimate": 739,
+          "outputBytes": 1702,
+          "specBytes": 1492,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "chart",
+      "turn": null,
+      "endToEndMs": 9713.832040999987,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 4950,
+          "replayMs": 170.37695800000802,
+          "input": 920,
+          "completion": 218,
+          "reasoning": 29,
+          "visibleEstimate": 189,
+          "outputBytes": 470,
+          "specBytes": 346,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 4497,
+          "replayMs": 95.19441699999152,
+          "input": 1110,
+          "completion": 231,
+          "reasoning": 31,
+          "visibleEstimate": 200,
+          "outputBytes": 518,
+          "specBytes": 387,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "visual",
+      "task": "tide",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "svg",
+      "turn": null,
+      "endToEndMs": 24944.561875000014,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 14437,
+          "replayMs": 133.71287499996834,
+          "input": 831,
+          "completion": 754,
+          "reasoning": 150,
+          "visibleEstimate": 604,
+          "outputBytes": 1518,
+          "specBytes": 1153,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 10277,
+          "replayMs": 95.05216600000858,
+          "input": 1426,
+          "completion": 634,
+          "reasoning": 53,
+          "visibleEstimate": 581,
+          "outputBytes": 1434,
+          "specBytes": 1229,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 11755.308917,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 11730,
+          "replayMs": null,
+          "input": 1966,
+          "completion": 691,
+          "reasoning": 24,
+          "visibleEstimate": 667,
+          "outputBytes": 2421,
+          "specBytes": 1586,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 80448.191334,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 38151,
+          "replayMs": null,
+          "input": 2268,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 42296,
+          "replayMs": null,
+          "input": 2298,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 91258.898208,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 39689,
+          "replayMs": null,
+          "input": 2305,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 51568,
+          "replayMs": null,
+          "input": 2335,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 8033.220832999999,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 8011,
+          "replayMs": null,
+          "input": 1772,
+          "completion": 516,
+          "reasoning": 26,
+          "visibleEstimate": 490,
+          "outputBytes": 1721,
+          "specBytes": null,
+          "patchBytes": 1721
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 57689.674624999985,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 28843,
+          "replayMs": null,
+          "input": 2079,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 28844,
+          "replayMs": null,
+          "input": 2109,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 99471.26529199997,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 52500,
+          "replayMs": null,
+          "input": 2116,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 46969,
+          "replayMs": null,
+          "input": 2146,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 10296.286583000008,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 10270,
+          "replayMs": null,
+          "input": 1946,
+          "completion": 687,
+          "reasoning": 12,
+          "visibleEstimate": 675,
+          "outputBytes": 2390,
+          "specBytes": 1529,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 77257.53312500002,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 34861,
+          "replayMs": null,
+          "input": 2258,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 42394,
+          "replayMs": null,
+          "input": 2288,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 107453.40320900001,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 58072,
+          "replayMs": null,
+          "input": 2295,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 49379,
+          "replayMs": null,
+          "input": 2325,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 8388.196166,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 8353,
+          "replayMs": null,
+          "input": 1752,
+          "completion": 496,
+          "reasoning": 11,
+          "visibleEstimate": 485,
+          "outputBytes": 1680,
+          "specBytes": null,
+          "patchBytes": 1680
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 84888.217792,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 40681,
+          "replayMs": null,
+          "input": 2046,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 44206,
+          "replayMs": null,
+          "input": 2076,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 109702.80174999998,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 61530,
+          "replayMs": null,
+          "input": 2083,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 48171,
+          "replayMs": null,
+          "input": 2113,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 6859.885875,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6833,
+          "replayMs": null,
+          "input": 1305,
+          "completion": 385,
+          "reasoning": 0,
+          "visibleEstimate": 385,
+          "outputBytes": 1116,
+          "specBytes": 580,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 24609.943499999998,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 24571,
+          "replayMs": null,
+          "input": 1425,
+          "completion": 1206,
+          "reasoning": 400,
+          "visibleEstimate": 806,
+          "outputBytes": 2121,
+          "specBytes": 1441,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 22561.870041000002,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 22524,
+          "replayMs": null,
+          "input": 1930,
+          "completion": 1364,
+          "reasoning": 194,
+          "visibleEstimate": 1170,
+          "outputBytes": 3089,
+          "specBytes": 2170,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 4552.773625000002,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4521,
+          "replayMs": null,
+          "input": 1168,
+          "completion": 233,
+          "reasoning": 0,
+          "visibleEstimate": 233,
+          "outputBytes": 676,
+          "specBytes": null,
+          "patchBytes": 676
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 33330.799083,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 33301,
+          "replayMs": null,
+          "input": 1272,
+          "completion": 1773,
+          "reasoning": 512,
+          "visibleEstimate": 1261,
+          "outputBytes": 3072,
+          "specBytes": null,
+          "patchBytes": 3072
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 12408.346332999994,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 12371,
+          "replayMs": null,
+          "input": 2536,
+          "completion": 526,
+          "reasoning": 264,
+          "visibleEstimate": 262,
+          "outputBytes": 796,
+          "specBytes": null,
+          "patchBytes": 796
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 12011.843499999988,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 6703,
+          "replayMs": null,
+          "input": 1312,
+          "completion": 364,
+          "reasoning": 0,
+          "visibleEstimate": 364,
+          "outputBytes": 1081,
+          "specBytes": 612,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 5257,
+          "replayMs": null,
+          "input": 1657,
+          "completion": 303,
+          "reasoning": 0,
+          "visibleEstimate": 303,
+          "outputBytes": 931,
+          "specBytes": 660,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 55197.049417,
+      "delivery": "rejected",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 32507,
+          "replayMs": null,
+          "input": 1426,
+          "completion": 1986,
+          "reasoning": 340,
+          "visibleEstimate": 1646,
+          "outputBytes": 4374,
+          "specBytes": 3671,
+          "patchBytes": null
+        },
+        {
+          "status": "rejected",
+          "providerMs": 22629,
+          "replayMs": null,
+          "input": 3041,
+          "completion": 1344,
+          "reasoning": 290,
+          "visibleEstimate": 1054,
+          "outputBytes": 2615,
+          "specBytes": 1965,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 82896.403834,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 38321,
+          "replayMs": null,
+          "input": 1463,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 44574,
+          "replayMs": null,
+          "input": 1493,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 4505.413042,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4470,
+          "replayMs": null,
+          "input": 1175,
+          "completion": 237,
+          "reasoning": 0,
+          "visibleEstimate": 237,
+          "outputBytes": 690,
+          "specBytes": null,
+          "patchBytes": 690
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 61789.38516699999,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 36649,
+          "replayMs": null,
+          "input": 1280,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 25106,
+          "replayMs": null,
+          "input": 1310,
+          "completion": 1408,
+          "reasoning": 330,
+          "visibleEstimate": 1078,
+          "outputBytes": 2733,
+          "specBytes": null,
+          "patchBytes": 2733
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "baggage",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 56987.08029099999,
+      "delivery": "rejected",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 33894,
+          "replayMs": null,
+          "input": 2360,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "rejected",
+          "providerMs": 23058,
+          "replayMs": null,
+          "input": 2390,
+          "completion": 1429,
+          "reasoning": 175,
+          "visibleEstimate": 1254,
+          "outputBytes": 3366,
+          "specBytes": null,
+          "patchBytes": 3366
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 6565.482750000083,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6544,
+          "replayMs": null,
+          "input": 1195,
+          "completion": 330,
+          "reasoning": 42,
+          "visibleEstimate": 288,
+          "outputBytes": 993,
+          "specBytes": 570,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 6174.818749999977,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6145,
+          "replayMs": null,
+          "input": 1413,
+          "completion": 368,
+          "reasoning": 0,
+          "visibleEstimate": 368,
+          "outputBytes": 1314,
+          "specBytes": 820,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 9308.348750000005,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 9280,
+          "replayMs": null,
+          "input": 1612,
+          "completion": 605,
+          "reasoning": 74,
+          "visibleEstimate": 531,
+          "outputBytes": 1907,
+          "specBytes": 1224,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 4216.342875000089,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4185,
+          "replayMs": null,
+          "input": 1001,
+          "completion": 227,
+          "reasoning": 0,
+          "visibleEstimate": 227,
+          "outputBytes": 764,
+          "specBytes": null,
+          "patchBytes": 764
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 4000.86020799994,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3977,
+          "replayMs": null,
+          "input": 1195,
+          "completion": 183,
+          "reasoning": 0,
+          "visibleEstimate": 183,
+          "outputBytes": 606,
+          "specBytes": null,
+          "patchBytes": 606
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 6643.981583000044,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6614,
+          "replayMs": null,
+          "input": 1393,
+          "completion": 327,
+          "reasoning": 85,
+          "visibleEstimate": 242,
+          "outputBytes": 789,
+          "specBytes": null,
+          "patchBytes": 789
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 5067.379291999969,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5042,
+          "replayMs": null,
+          "input": 1195,
+          "completion": 290,
+          "reasoning": 0,
+          "visibleEstimate": 290,
+          "outputBytes": 1051,
+          "specBytes": 596,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 5966.256750000059,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5936,
+          "replayMs": null,
+          "input": 1421,
+          "completion": 370,
+          "reasoning": 0,
+          "visibleEstimate": 370,
+          "outputBytes": 1341,
+          "specBytes": 846,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 10356.654624999966,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 10326,
+          "replayMs": null,
+          "input": 1614,
+          "completion": 642,
+          "reasoning": 75,
+          "visibleEstimate": 567,
+          "outputBytes": 2042,
+          "specBytes": 1335,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 6061.418082999997,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6034,
+          "replayMs": null,
+          "input": 1001,
+          "completion": 302,
+          "reasoning": 69,
+          "visibleEstimate": 233,
+          "outputBytes": 764,
+          "specBytes": null,
+          "patchBytes": 764
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 6616.132416000008,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6586,
+          "replayMs": null,
+          "input": 1195,
+          "completion": 185,
+          "reasoning": 0,
+          "visibleEstimate": 185,
+          "outputBytes": 618,
+          "specBytes": null,
+          "patchBytes": 618
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 5540.431708000018,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5515,
+          "replayMs": null,
+          "input": 1395,
+          "completion": 280,
+          "reasoning": 38,
+          "visibleEstimate": 242,
+          "outputBytes": 763,
+          "specBytes": null,
+          "patchBytes": 763
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 3811.1501249999856,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3789,
+          "replayMs": null,
+          "input": 962,
+          "completion": 165,
+          "reasoning": 0,
+          "visibleEstimate": 165,
+          "outputBytes": 461,
+          "specBytes": 257,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 4583.188750000001,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4547,
+          "replayMs": null,
+          "input": 1068,
+          "completion": 194,
+          "reasoning": 0,
+          "visibleEstimate": 194,
+          "outputBytes": 552,
+          "specBytes": 344,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 4755.344749999989,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4733,
+          "replayMs": null,
+          "input": 1129,
+          "completion": 246,
+          "reasoning": 0,
+          "visibleEstimate": 246,
+          "outputBytes": 742,
+          "specBytes": 357,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 3336.527541999996,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3310,
+          "replayMs": null,
+          "input": 825,
+          "completion": 140,
+          "reasoning": 0,
+          "visibleEstimate": 140,
+          "outputBytes": 399,
+          "specBytes": null,
+          "patchBytes": 399
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 3843.3741670000018,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3819,
+          "replayMs": null,
+          "input": 931,
+          "completion": 180,
+          "reasoning": 0,
+          "visibleEstimate": 180,
+          "outputBytes": 522,
+          "specBytes": null,
+          "patchBytes": 522
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 6214.529791999987,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 3347,
+          "replayMs": null,
+          "input": 991,
+          "completion": 90,
+          "reasoning": 0,
+          "visibleEstimate": 90,
+          "outputBytes": 226,
+          "specBytes": null,
+          "patchBytes": 226
+        },
+        {
+          "status": "accepted",
+          "providerMs": 2816,
+          "replayMs": null,
+          "input": 1083,
+          "completion": 82,
+          "reasoning": 0,
+          "visibleEstimate": 82,
+          "outputBytes": 226,
+          "specBytes": null,
+          "patchBytes": 226
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 3945.055208000005,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3915,
+          "replayMs": null,
+          "input": 962,
+          "completion": 197,
+          "reasoning": 0,
+          "visibleEstimate": 197,
+          "outputBytes": 567,
+          "specBytes": 248,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 4280.532082999998,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4257,
+          "replayMs": null,
+          "input": 1093,
+          "completion": 236,
+          "reasoning": 0,
+          "visibleEstimate": 236,
+          "outputBytes": 710,
+          "specBytes": 326,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 5109.836499999976,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5076,
+          "replayMs": null,
+          "input": 1164,
+          "completion": 266,
+          "reasoning": 0,
+          "visibleEstimate": 266,
+          "outputBytes": 797,
+          "specBytes": 356,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 3725.259667000035,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3686,
+          "replayMs": null,
+          "input": 825,
+          "completion": 158,
+          "reasoning": 0,
+          "visibleEstimate": 158,
+          "outputBytes": 417,
+          "specBytes": null,
+          "patchBytes": 417
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 3370.946249999979,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3335,
+          "replayMs": null,
+          "input": 930,
+          "completion": 121,
+          "reasoning": 0,
+          "visibleEstimate": 121,
+          "outputBytes": 324,
+          "specBytes": null,
+          "patchBytes": 324
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "fabric",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 3021.8330840000417,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 2994,
+          "replayMs": null,
+          "input": 991,
+          "completion": 114,
+          "reasoning": 0,
+          "visibleEstimate": 114,
+          "outputBytes": 289,
+          "specBytes": null,
+          "patchBytes": 289
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 7064.92425000004,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 7028,
+          "replayMs": null,
+          "input": 1189,
+          "completion": 380,
+          "reasoning": 80,
+          "visibleEstimate": 300,
+          "outputBytes": 1047,
+          "specBytes": 614,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 5854.422833999968,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5820,
+          "replayMs": null,
+          "input": 1447,
+          "completion": 375,
+          "reasoning": 0,
+          "visibleEstimate": 375,
+          "outputBytes": 1385,
+          "specBytes": 841,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 6124.544999999984,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6092,
+          "replayMs": null,
+          "input": 1618,
+          "completion": 372,
+          "reasoning": 0,
+          "visibleEstimate": 372,
+          "outputBytes": 1373,
+          "specBytes": 829,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 7786.7800419999985,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 7764,
+          "replayMs": null,
+          "input": 995,
+          "completion": 364,
+          "reasoning": 104,
+          "visibleEstimate": 260,
+          "outputBytes": 871,
+          "specBytes": null,
+          "patchBytes": 871
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 5330.905207999982,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5296,
+          "replayMs": null,
+          "input": 1262,
+          "completion": 264,
+          "reasoning": 0,
+          "visibleEstimate": 264,
+          "outputBytes": 920,
+          "specBytes": null,
+          "patchBytes": 920
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 3576.4959160000435,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3553,
+          "replayMs": null,
+          "input": 1390,
+          "completion": 165,
+          "reasoning": 0,
+          "visibleEstimate": 165,
+          "outputBytes": 557,
+          "specBytes": null,
+          "patchBytes": 557
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 25263.214042000007,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 7015,
+          "replayMs": null,
+          "input": 1189,
+          "completion": 362,
+          "reasoning": 51,
+          "visibleEstimate": 311,
+          "outputBytes": 1117,
+          "specBytes": 644,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 18175,
+          "replayMs": null,
+          "input": 1484,
+          "completion": 847,
+          "reasoning": 411,
+          "visibleEstimate": 436,
+          "outputBytes": 1354,
+          "specBytes": 850,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 6282.528083000041,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6246,
+          "replayMs": null,
+          "input": 1530,
+          "completion": 381,
+          "reasoning": 0,
+          "visibleEstimate": 381,
+          "outputBytes": 1421,
+          "specBytes": 826,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 6357.187124999997,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6322,
+          "replayMs": null,
+          "input": 1623,
+          "completion": 378,
+          "reasoning": 0,
+          "visibleEstimate": 378,
+          "outputBytes": 1409,
+          "specBytes": 814,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 10124.050875000015,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 10086,
+          "replayMs": null,
+          "input": 995,
+          "completion": 435,
+          "reasoning": 175,
+          "visibleEstimate": 260,
+          "outputBytes": 871,
+          "specBytes": null,
+          "patchBytes": 871
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 4800.2421670000185,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4764,
+          "replayMs": null,
+          "input": 1262,
+          "completion": 264,
+          "reasoning": 0,
+          "visibleEstimate": 264,
+          "outputBytes": 920,
+          "specBytes": null,
+          "patchBytes": 920
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 3640.2663750000065,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3616,
+          "replayMs": null,
+          "input": 1390,
+          "completion": 165,
+          "reasoning": 0,
+          "visibleEstimate": 165,
+          "outputBytes": 557,
+          "specBytes": null,
+          "patchBytes": 557
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 3724.7845839999936,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3703,
+          "replayMs": null,
+          "input": 956,
+          "completion": 178,
+          "reasoning": 0,
+          "visibleEstimate": 178,
+          "outputBytes": 493,
+          "specBytes": 277,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 3665.8955829999904,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3642,
+          "replayMs": null,
+          "input": 1086,
+          "completion": 172,
+          "reasoning": 0,
+          "visibleEstimate": 172,
+          "outputBytes": 500,
+          "specBytes": 358,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 3986.6388330000045,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3958,
+          "replayMs": null,
+          "input": 1131,
+          "completion": 199,
+          "reasoning": 0,
+          "visibleEstimate": 199,
+          "outputBytes": 565,
+          "specBytes": 346,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 3857.972458000004,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3830,
+          "replayMs": null,
+          "input": 819,
+          "completion": 185,
+          "reasoning": 0,
+          "visibleEstimate": 185,
+          "outputBytes": 496,
+          "specBytes": null,
+          "patchBytes": 496
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 2882.084499999997,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 2852,
+          "replayMs": null,
+          "input": 942,
+          "completion": 134,
+          "reasoning": 0,
+          "visibleEstimate": 134,
+          "outputBytes": 407,
+          "specBytes": null,
+          "patchBytes": 407
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 2945.469959000009,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 2923,
+          "replayMs": null,
+          "input": 995,
+          "completion": 84,
+          "reasoning": 0,
+          "visibleEstimate": 84,
+          "outputBytes": 249,
+          "specBytes": null,
+          "patchBytes": 249
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 7794.081374999951,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "rejected",
+          "providerMs": 3673,
+          "replayMs": null,
+          "input": 956,
+          "completion": 152,
+          "reasoning": 0,
+          "visibleEstimate": 152,
+          "outputBytes": 405,
+          "specBytes": 249,
+          "patchBytes": null
+        },
+        {
+          "status": "accepted",
+          "providerMs": 4063,
+          "replayMs": null,
+          "input": 1112,
+          "completion": 199,
+          "reasoning": 24,
+          "visibleEstimate": 175,
+          "outputBytes": 459,
+          "specBytes": 249,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 3926.0553750000545,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3897,
+          "replayMs": null,
+          "input": 1077,
+          "completion": 193,
+          "reasoning": 0,
+          "visibleEstimate": 193,
+          "outputBytes": 541,
+          "specBytes": 328,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 3471.260500000033,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3447,
+          "replayMs": null,
+          "input": 1122,
+          "completion": 162,
+          "reasoning": 0,
+          "visibleEstimate": 162,
+          "outputBytes": 452,
+          "specBytes": 316,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 6636.198417000007,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6599,
+          "replayMs": null,
+          "input": 819,
+          "completion": 286,
+          "reasoning": 96,
+          "visibleEstimate": 190,
+          "outputBytes": 494,
+          "specBytes": null,
+          "patchBytes": 494
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 3241.9577500000014,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3209,
+          "replayMs": null,
+          "input": 941,
+          "completion": 133,
+          "reasoning": 0,
+          "visibleEstimate": 133,
+          "outputBytes": 404,
+          "specBytes": null,
+          "patchBytes": 404
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "tickets",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 2921.323167000024,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 2889,
+          "replayMs": null,
+          "input": 994,
+          "completion": 107,
+          "reasoning": 0,
+          "visibleEstimate": 107,
+          "outputBytes": 282,
+          "specBytes": null,
+          "patchBytes": 282
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 6806.6618339999695,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6770,
+          "replayMs": null,
+          "input": 1243,
+          "completion": 378,
+          "reasoning": 79,
+          "visibleEstimate": 299,
+          "outputBytes": 1036,
+          "specBytes": 590,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 82329.64708300005,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 45791,
+          "replayMs": null,
+          "input": 1444,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 36536,
+          "replayMs": null,
+          "input": 1474,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 6772.526457999949,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6751,
+          "replayMs": null,
+          "input": 1466,
+          "completion": 413,
+          "reasoning": 20,
+          "visibleEstimate": 393,
+          "outputBytes": 1384,
+          "specBytes": 853,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 7034.984625000041,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 6997,
+          "replayMs": null,
+          "input": 1049,
+          "completion": 360,
+          "reasoning": 121,
+          "visibleEstimate": 239,
+          "outputBytes": 774,
+          "specBytes": null,
+          "patchBytes": 774
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 78383.39179200004,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 41586,
+          "replayMs": null,
+          "input": 1227,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 36796,
+          "replayMs": null,
+          "input": 1257,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 3914.949790999992,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3883,
+          "replayMs": null,
+          "input": 1249,
+          "completion": 188,
+          "reasoning": 0,
+          "visibleEstimate": 188,
+          "outputBytes": 619,
+          "specBytes": null,
+          "patchBytes": 619
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 4963.395540999947,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4941,
+          "replayMs": null,
+          "input": 1243,
+          "completion": 253,
+          "reasoning": 0,
+          "visibleEstimate": 253,
+          "outputBytes": 888,
+          "specBytes": 580,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 89790.41399999999,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 42703,
+          "replayMs": null,
+          "input": 1410,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 47086,
+          "replayMs": null,
+          "input": 1440,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 9945.358958999976,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 9915,
+          "replayMs": null,
+          "input": 1432,
+          "completion": 367,
+          "reasoning": 0,
+          "visibleEstimate": 367,
+          "outputBytes": 1325,
+          "specBytes": 844,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 5987.521083,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5963,
+          "replayMs": null,
+          "input": 1049,
+          "completion": 284,
+          "reasoning": 45,
+          "visibleEstimate": 239,
+          "outputBytes": 774,
+          "specBytes": null,
+          "patchBytes": 774
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 72028.21724999993,
+      "delivery": "truncated",
+      "attempts": [
+        {
+          "status": "truncated",
+          "providerMs": 39975,
+          "replayMs": null,
+          "input": 1227,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        },
+        {
+          "status": "truncated",
+          "providerMs": 32050,
+          "replayMs": null,
+          "input": 1257,
+          "completion": 2048,
+          "reasoning": 2048,
+          "visibleEstimate": 0,
+          "outputBytes": 0,
+          "specBytes": null,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "json",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 4847.536167000071,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4818,
+          "replayMs": null,
+          "input": 1249,
+          "completion": 224,
+          "reasoning": 30,
+          "visibleEstimate": 194,
+          "outputBytes": 619,
+          "specBytes": null,
+          "patchBytes": 619
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 5453.096792000011,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 5429,
+          "replayMs": null,
+          "input": 981,
+          "completion": 235,
+          "reasoning": 50,
+          "visibleEstimate": 185,
+          "outputBytes": 507,
+          "specBytes": 299,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 17518.83591600001,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 17489,
+          "replayMs": null,
+          "input": 1104,
+          "completion": 907,
+          "reasoning": 239,
+          "visibleEstimate": 668,
+          "outputBytes": 1655,
+          "specBytes": 1326,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 4330.691041999991,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4303,
+          "replayMs": null,
+          "input": 1659,
+          "completion": 208,
+          "reasoning": 0,
+          "visibleEstimate": 208,
+          "outputBytes": 637,
+          "specBytes": 425,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 4843.484499999991,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4821,
+          "replayMs": null,
+          "input": 844,
+          "completion": 184,
+          "reasoning": 0,
+          "visibleEstimate": 184,
+          "outputBytes": 495,
+          "specBytes": null,
+          "patchBytes": 495
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 14001.112458999996,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 13962,
+          "replayMs": null,
+          "input": 966,
+          "completion": 793,
+          "reasoning": 196,
+          "visibleEstimate": 597,
+          "outputBytes": 1402,
+          "specBytes": null,
+          "patchBytes": 1402
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1701,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 3819.1630000000005,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3782,
+          "replayMs": null,
+          "input": 1535,
+          "completion": 166,
+          "reasoning": 0,
+          "visibleEstimate": 166,
+          "outputBytes": 479,
+          "specBytes": null,
+          "patchBytes": 479
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 1,
+      "endToEndMs": 4073.1130840000114,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4039,
+          "replayMs": null,
+          "input": 981,
+          "completion": 196,
+          "reasoning": 0,
+          "visibleEstimate": 196,
+          "outputBytes": 572,
+          "specBytes": 361,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 2,
+      "endToEndMs": 16270.09833399998,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 16229,
+          "replayMs": null,
+          "input": 1124,
+          "completion": 903,
+          "reasoning": 217,
+          "visibleEstimate": 686,
+          "outputBytes": 1685,
+          "specBytes": 1408,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "full",
+      "turn": 3,
+      "endToEndMs": 4139.658374999999,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 4114,
+          "replayMs": null,
+          "input": 1695,
+          "completion": 229,
+          "reasoning": 0,
+          "visibleEstimate": 229,
+          "outputBytes": 723,
+          "specBytes": 508,
+          "patchBytes": null
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 1,
+      "endToEndMs": 3991.0430419999757,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3953,
+          "replayMs": null,
+          "input": 844,
+          "completion": 185,
+          "reasoning": 0,
+          "visibleEstimate": 185,
+          "outputBytes": 497,
+          "specBytes": null,
+          "patchBytes": 497
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 2,
+      "endToEndMs": 20317.156000000017,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 20276,
+          "replayMs": null,
+          "input": 967,
+          "completion": 1137,
+          "reasoning": 335,
+          "visibleEstimate": 802,
+          "outputBytes": 1803,
+          "specBytes": null,
+          "patchBytes": 1803
+        }
+      ]
+    },
+    {
+      "experiment": "revisions",
+      "task": "water",
+      "protocol": "oui",
+      "seed": 1702,
+      "mode": "patch",
+      "turn": 3,
+      "endToEndMs": 3566.614459000004,
+      "delivery": "accepted",
+      "attempts": [
+        {
+          "status": "accepted",
+          "providerMs": 3531,
+          "replayMs": null,
+          "input": 1754,
+          "completion": 143,
+          "reasoning": 0,
+          "visibleEstimate": 143,
+          "outputBytes": 378,
+          "specBytes": null,
+          "patchBytes": 378
+        }
+      ]
+    }
+  ]
+}

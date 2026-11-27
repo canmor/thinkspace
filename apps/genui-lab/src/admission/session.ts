@@ -1,7 +1,7 @@
 import { openProgram } from "./open";
 import { jsonProgram } from "./json";
 import { bytes, check, limits, type Protocol, type State } from "./policy";
-export function admit(protocol: Protocol, source: string, seed?: State) {
+export function admit(protocol: Protocol, source: string, seed?: State, chartEnabled = false) {
   check(
     typeof source === "string" &&
       source.length <= limits.sourceBytes &&
@@ -10,7 +10,7 @@ export function admit(protocol: Protocol, source: string, seed?: State) {
   );
   check(protocol === "json" || protocol === "oui", "Unknown protocol");
   const program =
-    protocol === "oui" ? openProgram(source) : jsonProgram(source);
+    protocol === "oui" ? openProgram(source, chartEnabled) : jsonProgram(source, chartEnabled);
   if (seed !== undefined)
     check(
       seed && typeof seed === "object" && !Array.isArray(seed),

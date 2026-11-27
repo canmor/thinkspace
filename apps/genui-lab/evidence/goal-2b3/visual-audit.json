@@ -1,0 +1,229 @@
+[
+  {
+    "f": "archive-json-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-json-1701-svg.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-json-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-json-1702-svg.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-oui-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-oui-1701-svg.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-oui-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "archive-oui-1702-svg.json",
+    "delivery": "accepted",
+    "checked": 4,
+    "status": "pass"
+  },
+  {
+    "f": "fee-json-1701-chart.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "fee-json-1701-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "fee-json-1702-chart.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "fee-json-1702-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "fee-oui-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 248,
+    "status": "pass"
+  },
+  {
+    "f": "fee-oui-1701-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "fee-oui-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 248,
+    "status": "pass"
+  },
+  {
+    "f": "fee-oui-1702-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "kiln-json-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-json-1701-svg.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-json-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-json-1702-svg.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-oui-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-oui-1701-svg.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-oui-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "kiln-oui-1702-svg.json",
+    "delivery": "accepted",
+    "checked": 1,
+    "status": "pass"
+  },
+  {
+    "f": "policies-json-1701-chart.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "policies-json-1701-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "policies-json-1702-chart.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "policies-json-1702-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "policies-oui-1701-chart.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "policies-oui-1701-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "policies-oui-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 248,
+    "status": "pass"
+  },
+  {
+    "f": "policies-oui-1702-svg.json",
+    "delivery": "truncated",
+    "checked": 0
+  },
+  {
+    "f": "tide-json-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-json-1701-svg.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-json-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-json-1702-svg.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-oui-1701-chart.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-oui-1701-svg.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-oui-1702-chart.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  },
+  {
+    "f": "tide-oui-1702-svg.json",
+    "delivery": "accepted",
+    "checked": 3,
+    "status": "pass"
+  }
+]

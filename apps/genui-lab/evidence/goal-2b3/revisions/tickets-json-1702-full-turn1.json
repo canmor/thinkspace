@@ -1,0 +1,85 @@
+{
+  "task": "tickets",
+  "protocol": "json",
+  "seed": 1702,
+  "mode": "full",
+  "turn": 1,
+  "before": {
+    "artifact": "tickets-json-1702",
+    "revision": 0,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"input\\\",\\\"result\\\"]},\\\"input\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Ticket count\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/count\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total ($)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":8}}}}}}\",\"state\":[{\"name\":\"count\",\"value\":2}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 24
+          }
+        }
+      ],
+      "state": {
+        "count": 3
+      }
+    }
+  },
+  "after": {
+    "artifact": "tickets-json-1702",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Adult tickets cost $8 each; child tickets cost $5 each. The selected ticket type applies to the whole order.\"},{\"type\":\"ui\",\"source\":\"{\\n  \\\"root\\\": \\\"layout\\\",\\n  \\\"elements\\\": {\\n    \\\"layout\\\": {\\\"type\\\": \\\"Stack\\\", \\\"props\\\": {}, \\\"children\\\": [\\\"input\\\", \\\"ticketType\\\", \\\"result\\\"]},\\n    \\\"input\\\": {\\\"type\\\": \\\"Control\\\", \\\"props\\\": {\\\"label\\\": \\\"Ticket count\\\", \\\"min\\\": 1, \\\"max\\\": 5, \\\"choices\\\": [], \\\"value\\\": {\\\"$bindState\\\": \\\"/count\\\"}}},\\n    \\\"ticketType\\\": {\\\"type\\\": \\\"Control\\\", \\\"props\\\": {\\\"label\\\": \\\"Ticket type\\\", \\\"min\\\": 0, \\\"max\\\": 1, \\\"choices\\\": [\\\"Adult\\\", \\\"Child\\\"], \\\"value\\\": {\\\"$bindState\\\": \\\"/child\\\"}}},\\n    \\\"result\\\": {\\n      \\\"type\\\": \\\"Metric\\\",\\n      \\\"props\\\": {\\n        \\\"label\\\": \\\"Total ($)\\\",\\n        \\\"value\\\": {\\n          \\\"$computed\\\": \\\"Multiply\\\",\\n          \\\"args\\\": {\\n            \\\"a\\\": {\\\"$state\\\": \\\"/count\\\"},\\n            \\\"b\\\": {\\n              \\\"$computed\\\": \\\"Excess\\\",\\n              \\\"args\\\": {\\\"a\\\": 8, \\\"b\\\": {\\\"$computed\\\": \\\"Multiply\\\", \\\"args\\\": {\\\"a\\\": 3, \\\"b\\\": {\\\"$state\\\": \\\"/child\\\"}}}}\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"child\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 0
+          },
+          "binding": "child"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 24
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "child": 0
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 25263.214042000007,
+  "attempts": 2
+}

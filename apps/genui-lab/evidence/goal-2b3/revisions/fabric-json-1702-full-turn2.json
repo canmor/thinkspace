@@ -1,0 +1,101 @@
+{
+  "task": "fabric",
+  "protocol": "json",
+  "seed": 1702,
+  "mode": "full",
+  "turn": 2,
+  "before": {
+    "artifact": "fabric-json-1702",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each panel needs 3 metres of cloth before the hem allowance. The allowance applies to every panel.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"panelCount\\\",\\\"hemAllowance\\\",\\\"total\\\"]},\\\"panelCount\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Panel count\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/count\\\"}}},\\\"hemAllowance\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Hem allowance (metres per panel)\\\",\\\"min\\\":0,\\\"max\\\":2,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/hem\\\"}}},\\\"total\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth including hems (metres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}}}}\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "hem"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth including hems (metres)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 1
+      }
+    }
+  },
+  "after": {
+    "artifact": "fabric-json-1702",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each panel needs 3 metres of cloth plus its hem allowance. Cloth costs $6 per metre.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"panelCount\\\",\\\"hemAllowance\\\",\\\"total\\\",\\\"cost\\\"]},\\\"panelCount\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Panel count\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/count\\\"}}},\\\"hemAllowance\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Hem allowance (metres per panel)\\\",\\\"min\\\":0,\\\"max\\\":2,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/hem\\\"}}},\\\"total\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth including hems (metres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}},\\\"cost\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth cost (dollars)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":6,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}}}}}}\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "hem"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth including hems (metres)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth cost (dollars)",
+            "value": 72
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 1
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 5966.256750000059,
+  "attempts": 1
+}

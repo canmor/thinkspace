@@ -1,0 +1,88 @@
+{
+  "task": "water",
+  "protocol": "oui",
+  "seed": 1702,
+  "mode": "full",
+  "turn": 1,
+  "before": {
+    "artifact": "water-oui-1702",
+    "revision": 0,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input,result])\\n$minutes = 2\\ninput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nresult = Metric(\\\"Remaining (litres)\\\", 24 - ($minutes * 3))\",\"state\":[{\"name\":\"minutes\",\"value\":2}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4
+      }
+    }
+  },
+  "after": {
+    "artifact": "water-oui-1702",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([start,timeInput,rateInput,result])\\n$minutes = 2\\n$rate = 3\\nstart = Text(\\\"The tank starts with 24 litres.\\\")\\ntimeInput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nrateInput = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - ($minutes * $rate)\\nresult = Metric(\\\"Water remaining (litres)\\\", balance > 0 ? balance : 0)\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":3}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Text",
+          "props": {
+            "text": "The tank starts with 24 litres."
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water remaining (litres)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 3
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 4073.1130840000114,
+  "attempts": 1
+}

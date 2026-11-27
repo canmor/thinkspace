@@ -5,7 +5,7 @@ import {
   bind,
   boundedValue,
   check,
-  fields,
+  experimentalFields as fields,
   limits,
   number,
   safeKey,
@@ -32,7 +32,7 @@ function keys(input: unknown, expected: string[]) {
     "Unexpected object fields",
   );
 }
-export function jsonProgram(source: string) {
+export function jsonProgram(source: string, chartEnabled = false) {
   const doc = JSON.parse(source);
   // JSON.parse has already checked strict JSON syntax. Inspect its source tree
   // before using the decoded object because duplicate members disappear on decode.
@@ -115,7 +115,7 @@ export function jsonProgram(source: string) {
     const el = doc.elements[key];
     keys(el, ["type", "props"]);
     const type = el.type as keyof typeof fields;
-    check(Object.hasOwn(fields, type), "Unknown component");
+    check(Object.hasOwn(fields, type) && (chartEnabled || type !== "Chart"), "Unknown component");
     keys(el.props, Object.keys(fields[type].shape));
     inspect(el.props, 0);
     let binding: string | undefined;
@@ -152,12 +152,12 @@ export function jsonProgram(source: string) {
         boundedValue(values);
         return { type, props: values, binding } as Item;
       });
-      return validateFrame({ items, state });
+      return validateFrame({ items, state }, chartEnabled);
     },
   };
 }
 
-function checkUniqueJsonMembers(source: string) {
+export function checkUniqueJsonMembers(source: string) {
   const tree = parseExpressionAt(source, source.search(/\S/), {
     ecmaVersion: 2022,
   });

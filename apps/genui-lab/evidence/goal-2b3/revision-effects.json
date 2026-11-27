@@ -1,0 +1,1350 @@
+[
+  {
+    "file": "baggage-json-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 1204,
+    "afterBytes": 1586,
+    "modifiedDeclarations": [
+      "layout",
+      "allowance",
+      "fee",
+      "route"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "baggage-json-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 1586,
+    "afterBytes": 1586,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 1586,
+    "afterBytes": 1586,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 1204,
+    "afterBytes": 1593,
+    "modifiedDeclarations": [
+      "layout",
+      "allowance",
+      "fee",
+      "route"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-json-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "truncated",
+    "beforeBytes": 1593,
+    "afterBytes": 1593,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "truncated",
+    "beforeBytes": 1593,
+    "afterBytes": 1593,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 1179,
+    "afterBytes": 1529,
+    "modifiedDeclarations": [
+      "layout",
+      "allowance",
+      "fee",
+      "route"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "baggage-json-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 1529,
+    "afterBytes": 1529,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 1529,
+    "afterBytes": 1529,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 1179,
+    "afterBytes": 1529,
+    "modifiedDeclarations": [
+      "layout",
+      "allowance",
+      "fee",
+      "route"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-json-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "truncated",
+    "beforeBytes": 1529,
+    "afterBytes": 1529,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-json-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "truncated",
+    "beforeBytes": 1529,
+    "afterBytes": 1529,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-oui-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 479,
+    "afterBytes": 580,
+    "modifiedDeclarations": [
+      "root",
+      "allowed",
+      "$route",
+      "route"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 580,
+    "afterBytes": 1441,
+    "modifiedDeclarations": [
+      "root",
+      "line",
+      "markX",
+      "markY",
+      "curve"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 1441,
+    "afterBytes": 2170,
+    "modifiedDeclarations": [
+      "root",
+      "fee",
+      "line",
+      "markY",
+      "curve",
+      "oldFee",
+      "newFee",
+      "increase",
+      "oldLine",
+      "newLine",
+      "oldY",
+      "newY",
+      "axes",
+      "oldCurve",
+      "newCurve"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 479,
+    "afterBytes": 580,
+    "modifiedDeclarations": [
+      "root",
+      "$gold",
+      "$weight",
+      "allowed",
+      "$route",
+      "route"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 580,
+    "afterBytes": 3135,
+    "modifiedDeclarations": [
+      "root",
+      "$route",
+      "curvePath",
+      "feeCurve"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 3135,
+    "afterBytes": 3410,
+    "modifiedDeclarations": [
+      "root",
+      "fee",
+      "newFee",
+      "feeIncrease",
+      "curveNote"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 511,
+    "afterBytes": 660,
+    "modifiedDeclarations": [
+      "root",
+      "$gold",
+      "$weight",
+      "cabin",
+      "status",
+      "weight",
+      "allowance",
+      "$route",
+      "routeChoice",
+      "cabinChoice",
+      "statusChoice",
+      "weightChoice"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "rejected",
+    "beforeBytes": 660,
+    "afterBytes": 660,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-oui-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 660,
+    "afterBytes": 660,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "baggage-oui-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 511,
+    "afterBytes": 612,
+    "modifiedDeclarations": [
+      "root",
+      "$gold",
+      "$weight",
+      "allowance",
+      "$route",
+      "route"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 612,
+    "afterBytes": 2897,
+    "modifiedDeclarations": [
+      "root",
+      "$route",
+      "feeCurve"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "baggage-oui-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "rejected",
+    "beforeBytes": 2897,
+    "afterBytes": 2897,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "fabric-json-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 351,
+    "afterBytes": 570,
+    "modifiedDeclarations": [
+      "layout",
+      "input",
+      "result",
+      "panels",
+      "hem",
+      "total"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 570,
+    "afterBytes": 820,
+    "modifiedDeclarations": [
+      "layout",
+      "cost"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 820,
+    "afterBytes": 1224,
+    "modifiedDeclarations": [
+      "cost"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 351,
+    "afterBytes": 570,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "hem"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 570,
+    "afterBytes": 836,
+    "modifiedDeclarations": [
+      "layout",
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 836,
+    "afterBytes": 1120,
+    "modifiedDeclarations": [
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 351,
+    "afterBytes": 596,
+    "modifiedDeclarations": [
+      "layout",
+      "input",
+      "result",
+      "panelCount",
+      "hemAllowance",
+      "total"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 596,
+    "afterBytes": 846,
+    "modifiedDeclarations": [
+      "layout",
+      "cost"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 846,
+    "afterBytes": 1335,
+    "modifiedDeclarations": [
+      "cost"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 351,
+    "afterBytes": 570,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "hem"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 570,
+    "afterBytes": 848,
+    "modifiedDeclarations": [
+      "layout",
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-json-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 848,
+    "afterBytes": 1094,
+    "modifiedDeclarations": [
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 134,
+    "afterBytes": 257,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$hem",
+      "hemControl"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 257,
+    "afterBytes": 344,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "total",
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 344,
+    "afterBytes": 357,
+    "modifiedDeclarations": [
+      "cost",
+      "rate"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 134,
+    "afterBytes": 240,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$hem",
+      "hemInput"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 240,
+    "afterBytes": 327,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "totalMetres",
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 327,
+    "afterBytes": 380,
+    "modifiedDeclarations": [
+      "cost",
+      "pricePerMetre"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 134,
+    "afterBytes": 248,
+    "modifiedDeclarations": [
+      "root",
+      "input",
+      "result",
+      "$allowance",
+      "panels",
+      "hem",
+      "total"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 248,
+    "afterBytes": 326,
+    "modifiedDeclarations": [
+      "root",
+      "total",
+      "metres",
+      "cost"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 326,
+    "afterBytes": 356,
+    "modifiedDeclarations": [
+      "cost",
+      "rate"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 134,
+    "afterBytes": 238,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$hem",
+      "hemInput"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 238,
+    "afterBytes": 322,
+    "modifiedDeclarations": [
+      "root",
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "fabric-oui-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 322,
+    "afterBytes": 393,
+    "modifiedDeclarations": [
+      "cost"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 347,
+    "afterBytes": 614,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "ticketType"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 614,
+    "afterBytes": 841,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "savings"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 841,
+    "afterBytes": 829,
+    "modifiedDeclarations": [
+      "layout",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 347,
+    "afterBytes": 653,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "ticketType"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 653,
+    "afterBytes": 841,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 841,
+    "afterBytes": 829,
+    "modifiedDeclarations": [
+      "layout",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 347,
+    "afterBytes": 850,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "ticketType"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 850,
+    "afterBytes": 826,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "savings"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 826,
+    "afterBytes": 814,
+    "modifiedDeclarations": [
+      "layout",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 347,
+    "afterBytes": 653,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "ticketType"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 653,
+    "afterBytes": 841,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-json-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 841,
+    "afterBytes": 829,
+    "modifiedDeclarations": [
+      "layout",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 130,
+    "afterBytes": 277,
+    "modifiedDeclarations": [
+      "root",
+      "input",
+      "result",
+      "$ticketType",
+      "countInput",
+      "typeInput",
+      "price",
+      "total"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 277,
+    "afterBytes": 358,
+    "modifiedDeclarations": [
+      "root",
+      "price",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 358,
+    "afterBytes": 346,
+    "modifiedDeclarations": [
+      "root",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 130,
+    "afterBytes": 259,
+    "modifiedDeclarations": [
+      "root",
+      "$count",
+      "result",
+      "$ticketType",
+      "ticketType"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 259,
+    "afterBytes": 355,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$ticketType",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 355,
+    "afterBytes": 343,
+    "modifiedDeclarations": [
+      "root",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 130,
+    "afterBytes": 249,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$type",
+      "ticketType",
+      "rate"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 249,
+    "afterBytes": 328,
+    "modifiedDeclarations": [
+      "root",
+      "rate",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 328,
+    "afterBytes": 316,
+    "modifiedDeclarations": [
+      "root",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 130,
+    "afterBytes": 257,
+    "modifiedDeclarations": [
+      "root",
+      "$count",
+      "result",
+      "$ticketType",
+      "ticketType"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 257,
+    "afterBytes": 352,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$ticketType",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "tickets-oui-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 352,
+    "afterBytes": 340,
+    "modifiedDeclarations": [
+      "root",
+      "savings"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 413,
+    "afterBytes": 590,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "rate"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 590,
+    "afterBytes": 590,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 590,
+    "afterBytes": 853,
+    "modifiedDeclarations": [
+      "layout",
+      "drained"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 413,
+    "afterBytes": 594,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "drainRate"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "truncated",
+    "beforeBytes": 594,
+    "afterBytes": 594,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 594,
+    "afterBytes": 868,
+    "modifiedDeclarations": [
+      "layout",
+      "drained"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 413,
+    "afterBytes": 580,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "rate"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "truncated",
+    "beforeBytes": 580,
+    "afterBytes": 580,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 580,
+    "afterBytes": 844,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "remaining",
+      "drained"
+    ],
+    "proseChanged": true,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 413,
+    "afterBytes": 594,
+    "modifiedDeclarations": [
+      "layout",
+      "result",
+      "drainRate"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-json-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "truncated",
+    "beforeBytes": 594,
+    "afterBytes": 594,
+    "modifiedDeclarations": [],
+    "proseChanged": false,
+    "rollback": true
+  },
+  {
+    "file": "water-json-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 594,
+    "afterBytes": 868,
+    "modifiedDeclarations": [
+      "layout",
+      "drained"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1701-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 162,
+    "afterBytes": 299,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$rate",
+      "rateControl",
+      "balance"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1701-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 299,
+    "afterBytes": 1326,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "remaining",
+      "line",
+      "plot"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1701-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 1326,
+    "afterBytes": 425,
+    "modifiedDeclarations": [
+      "root",
+      "input",
+      "result",
+      "line",
+      "plot",
+      "timeControl",
+      "remainingMetric",
+      "drainedMetric"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1701-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 162,
+    "afterBytes": 293,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$rate",
+      "rateInput",
+      "balance"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1701-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 293,
+    "afterBytes": 1330,
+    "modifiedDeclarations": [
+      "root",
+      "plotLine",
+      "remainingPlot"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1701-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 1330,
+    "afterBytes": 371,
+    "modifiedDeclarations": [
+      "root",
+      "plotLine",
+      "remainingPlot",
+      "drained"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1702-full-turn1.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 162,
+    "afterBytes": 361,
+    "modifiedDeclarations": [
+      "root",
+      "input",
+      "result",
+      "$rate",
+      "start",
+      "timeInput",
+      "rateInput",
+      "balance"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1702-full-turn2.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 361,
+    "afterBytes": 1408,
+    "modifiedDeclarations": [
+      "root",
+      "start",
+      "balance",
+      "line",
+      "plot"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1702-full-turn3.json",
+    "mode": "full",
+    "delivery": "accepted",
+    "beforeBytes": 1408,
+    "afterBytes": 508,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "line",
+      "plot",
+      "remaining",
+      "remainingMetric",
+      "drainedMetric"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1702-patch-turn1.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 162,
+    "afterBytes": 295,
+    "modifiedDeclarations": [
+      "root",
+      "result",
+      "$rate",
+      "rateInput",
+      "balance"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1702-patch-turn2.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 295,
+    "afterBytes": 1717,
+    "modifiedDeclarations": [
+      "root",
+      "plotLine",
+      "plot"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  },
+  {
+    "file": "water-oui-1702-patch-turn3.json",
+    "mode": "patch",
+    "delivery": "accepted",
+    "beforeBytes": 1717,
+    "afterBytes": 375,
+    "modifiedDeclarations": [
+      "root",
+      "plotLine",
+      "plot",
+      "drained"
+    ],
+    "proseChanged": false,
+    "rollback": null
+  }
+]

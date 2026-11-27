@@ -1,0 +1,231 @@
+{
+  "task": "water",
+  "protocol": "oui",
+  "seed": 1702,
+  "mode": "patch",
+  "turn": 3,
+  "before": {
+    "artifact": "water-oui-1702",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, rateInput, result, plot])\\n$minutes = 2\\ninput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nresult = Metric(\\\"Remaining (litres)\\\", balance > 0 ? balance : 0)\\n$rate = 3\\nrateInput = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - ($minutes * $rate)\\nplotLine = $rate == 2 ? \\\"M 65 12 L 120 20 L 175 28 L 230 36 L 285 44 L 340 52 L 395 60\\\" : ($rate == 3 ? \\\"M 65 12 L 120 24 L 175 36 L 230 48 L 285 60 L 340 72 L 395 84\\\" : ($rate == 4 ? \\\"M 65 12 L 120 28 L 175 44 L 230 60 L 285 76 L 340 92 L 395 108\\\" : \\\"M 65 12 L 120 32 L 175 52 L 230 72 L 285 92 L 340 108 L 395 108\\\"))\\nplot = Graphic(\\\"Remaining water (litres) by elapsed time (minutes)\\\", [{kind:\\\"path\\\",d:\\\"M 60 12 V 108 H 405 M 55 12 H 60 M 55 36 H 60 M 55 60 H 60 M 55 84 H 60 M 55 108 H 60 M 65 108 V 113 M 120 108 V 113 M 175 108 V 113 M 230 108 V 113 M 285 108 V 113 M 340 108 V 113 M 395 108 V 113\\\"}, {kind:\\\"text\\\",x:29,y:16,text:\\\"24\\\"}, {kind:\\\"text\\\",x:29,y:40,text:\\\"18\\\"}, {kind:\\\"text\\\",x:29,y:64,text:\\\"12\\\"}, {kind:\\\"text\\\",x:37,y:88,text:\\\"6\\\"}, {kind:\\\"text\\\",x:37,y:112,text:\\\"0\\\"}, {kind:\\\"text\\\",x:61,y:128,text:\\\"0\\\"}, {kind:\\\"text\\\",x:116,y:128,text:\\\"1\\\"}, {kind:\\\"text\\\",x:171,y:128,text:\\\"2\\\"}, {kind:\\\"text\\\",x:226,y:128,text:\\\"3\\\"}, {kind:\\\"text\\\",x:281,y:128,text:\\\"4\\\"}, {kind:\\\"text\\\",x:336,y:128,text:\\\"5\\\"}, {kind:\\\"text\\\",x:391,y:128,text:\\\"6\\\"}, {kind:\\\"path\\\",d:plotLine}, {kind:\\\"circle\\\",cx:65,cy:12,r:3}, {kind:\\\"circle\\\",cx:120,cy:12 + 4 * $rate,r:3}, {kind:\\\"circle\\\",cx:175,cy:12 + 8 * $rate,r:3}, {kind:\\\"circle\\\",cx:230,cy:12 + 12 * $rate,r:3}, {kind:\\\"circle\\\",cx:285,cy:12 + 16 * $rate,r:3}, {kind:\\\"circle\\\",cx:340,cy:5 * $rate > 24 ? 108 : 12 + 20 * $rate,r:3}, {kind:\\\"circle\\\",cx:395,cy:6 * $rate > 24 ? 108 : 12 + 24 * $rate,r:3}])\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Graphic",
+          "props": {
+            "label": "Remaining water (litres) by elapsed time (minutes)",
+            "items": [
+              {
+                "kind": "path",
+                "d": "M 60 12 V 108 H 405 M 55 12 H 60 M 55 36 H 60 M 55 60 H 60 M 55 84 H 60 M 55 108 H 60 M 65 108 V 113 M 120 108 V 113 M 175 108 V 113 M 230 108 V 113 M 285 108 V 113 M 340 108 V 113 M 395 108 V 113"
+              },
+              {
+                "kind": "text",
+                "x": 29,
+                "y": 16,
+                "text": "24"
+              },
+              {
+                "kind": "text",
+                "x": 29,
+                "y": 40,
+                "text": "18"
+              },
+              {
+                "kind": "text",
+                "x": 29,
+                "y": 64,
+                "text": "12"
+              },
+              {
+                "kind": "text",
+                "x": 37,
+                "y": 88,
+                "text": "6"
+              },
+              {
+                "kind": "text",
+                "x": 37,
+                "y": 112,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 61,
+                "y": 128,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 116,
+                "y": 128,
+                "text": "1"
+              },
+              {
+                "kind": "text",
+                "x": 171,
+                "y": 128,
+                "text": "2"
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 128,
+                "text": "3"
+              },
+              {
+                "kind": "text",
+                "x": 281,
+                "y": 128,
+                "text": "4"
+              },
+              {
+                "kind": "text",
+                "x": 336,
+                "y": 128,
+                "text": "5"
+              },
+              {
+                "kind": "text",
+                "x": 391,
+                "y": 128,
+                "text": "6"
+              },
+              {
+                "kind": "path",
+                "d": "M 65 12 L 120 28 L 175 44 L 230 60 L 285 76 L 340 92 L 395 108"
+              },
+              {
+                "kind": "circle",
+                "cx": 65,
+                "cy": 12,
+                "r": 3
+              },
+              {
+                "kind": "circle",
+                "cx": 120,
+                "cy": 28,
+                "r": 3
+              },
+              {
+                "kind": "circle",
+                "cx": 175,
+                "cy": 44,
+                "r": 3
+              },
+              {
+                "kind": "circle",
+                "cx": 230,
+                "cy": 60,
+                "r": 3
+              },
+              {
+                "kind": "circle",
+                "cx": 285,
+                "cy": 76,
+                "r": 3
+              },
+              {
+                "kind": "circle",
+                "cx": 340,
+                "cy": 92,
+                "r": 3
+              },
+              {
+                "kind": "circle",
+                "cx": 395,
+                "cy": 108,
+                "r": 3
+              }
+            ]
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 4
+      }
+    }
+  },
+  "after": {
+    "artifact": "water-oui-1702",
+    "revision": 3,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, rateInput, result, drained])\\n$minutes = 2\\ninput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nresult = Metric(\\\"Remaining (litres)\\\", balance > 0 ? balance : 0)\\n$rate = 3\\nrateInput = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - ($minutes * $rate)\\ndrained = Metric(\\\"Drained (litres)\\\", 24 - (balance > 0 ? balance : 0))\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Drained (litres)",
+            "value": 16
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 4
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 3566.614459000004,
+  "attempts": 1
+}
