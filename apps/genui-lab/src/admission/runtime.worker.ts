@@ -6,7 +6,7 @@ self.onmessage = ({ data }) => {
     validateTransfer(data);
     let frame;
     if (data.kind === "open") {
-      const next = admit(data.protocol, data.source, data.state);
+      const next = admit(data.protocol, data.source, data.state, data.profile === "chart-experiment");
       session = next;
       frame = session.initial;
     } else if (data.kind === "change" && session) {

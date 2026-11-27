@@ -1,3 +1,4 @@
+import { Chart } from "./chart";
 import { Component, type ReactNode } from "react";
 import { Control, Graphic, Metric, Stack, Table } from "./catalog";
 import { Text } from "./projection";
@@ -40,6 +41,8 @@ export function Surface({
                 onChange={(v) => change(item.binding!, v)}
               />
             );
+          case "Chart":
+            return <Chart key={i} {...item.props} />;
           case "Graphic":
             return <Graphic key={i} {...item.props} />;
           case "Metric":

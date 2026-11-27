@@ -4,7 +4,7 @@ import {
   bind,
   boundedValue,
   check,
-  fields,
+  experimentalFields as fields,
   limits,
   safeKey,
   stateCheck,
@@ -19,8 +19,9 @@ const props = {
   Control: ["label", "min", "max", "choices", "value"],
   Graphic: ["label", "items"],
   Table: ["values"],
+  Chart: ["title","xLabel","yLabel","x","series","selected","decimals"],
 } as const;
-export function openProgram(source: string) {
+export function openProgram(source: string, chartEnabled = false) {
   const lines = source
     .trim()
     .split(/\r?\n/)
@@ -114,7 +115,7 @@ export function openProgram(source: string) {
     seen.add(child.n);
     const comp = defs.get(child.n);
     check(
-      comp?.k === "Comp" && Object.hasOwn(props, comp.name),
+      comp?.k === "Comp" && Object.hasOwn(props, comp.name) && (chartEnabled || comp.name !== "Chart"),
       "Component capability denied",
     );
     const type = comp.name as keyof typeof props;
@@ -199,7 +200,7 @@ export function openProgram(source: string) {
           ),
         }) as Item,
     );
-    return validateFrame({ items, state });
+    return validateFrame({ items, state }, chartEnabled);
   }
   return { contract, defaults: states, run };
 }

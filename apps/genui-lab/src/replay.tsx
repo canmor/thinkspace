@@ -71,6 +71,7 @@ function Replay() {
       client.current = next;
       const frame = await next.request({
         kind: "open",
+        profile: new URLSearchParams(location.search).get("profile"),
         protocol,
         source,
         state,
