@@ -30,3 +30,14 @@ Incremental revision reduced visible output and median latency in these lanes. T
 The median size of a parseable returned full specification was 612 bytes across 45 calls. A returned patch packet had median size 619 bytes across 43 calls. The packet includes operation metadata, and the accepted task mix differs by arm. Compare paired turn records for a given artifact before interpreting savings. revision-effects.json records complete before/after source sizes and changed identifiers; measurements.json records individual input, completion, visible-estimate, provider timing and repair data. Each failed call and turn remains in revisions/.
 
 Three core modules add 149 lines of reconstruction, transaction and migration logic, plus the Worker command, host lab adapter, test corpus and replay infrastructure. Calls can reconstruct a much larger complete specification from a short patch. The host still pays for complete admission and runtime evaluation. Migration requires domain knowledge and an unambiguous identity mapping. A production decision requires stronger field identity and a way to initialize newly introduced fields before the measured savings can justify making patching the default.
+
+## Architecture review clarification
+
+| Recorded outcome | Full | Incremental |
+|---|---:|---:|
+| Published revision | 40/48 | 41/48 |
+| Correct initial value for the introduced field, first turns only | 16/16 | 14/16 |
+| Correct initial water rate, json-render first turns | 2/2 | 0/2 |
+| Published and passed recorded numeric, domain and default checks | 40/48 (83.33%) | 39/48 (81.25%) |
+
+The last row counts each default failure once. Both affected trajectories also failed their second turn, so both arms still completed 11/16 publication trajectories. Existing-value continuity covers 81 published versions. Rollback covers the 15 failed publications. The two wrong defaults appeared in published versions and remain recorded as such. Independent human semantic assessment remains pending.

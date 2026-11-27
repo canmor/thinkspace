@@ -40,3 +40,17 @@ D3 line generation adds two runtime packages and two type packages. Chart also a
 ## Proposed next milestone
 
 Keep full regeneration available as the reference implementation. Review the bounded Chart contract, real accessible data-table use, long labels and units with independent participants. Require stable author-defined state-role identifiers and explicit semantics for changed domains before generalizing revision migration. Re-evaluate the measured trade-offs on held-out tasks before promoting either extension to the accepted catalog or protocol.
+
+## Architecture review disposition
+
+The review accepted the conservative direction. Full regeneration remains the default and reference. Chart remains opt-in alongside SVG. The paired reduction in median size was 71.8% on the three simpler tasks. B05 yielded no equivalent SVG delivery. Human accessibility assessment and dependency advisory triage precede any catalog promotion.
+
+Correctness-qualified delivery on the recorded numeric, domain and default checks was **40/48 full versus 39/48 incremental**. Correct initialization was **16/16 versus 14/16**. The two json-render water cases failed under both patch seeds and passed under both full seeds. Publication, retention and rollback retain their original denominators. Independent human semantic success remains unmeasured.
+
+### Proposed initialization contract · P1 before patch promotion
+
+The current packet changes declarations or elements. Reconstruction clears the candidate envelope state, json-render supplies the control minimum, and migration copies the candidate value for an introduced role. This path cannot convey a requested non-minimum initial value. Both saved water counterexamples exercised it.
+
+A separately versioned, artifact-only packet should carry explicit initializers keyed by stable semantic role. After reconstructing and admitting the candidate, the host compares the old and new role contracts. Require exactly one initializer for each introduced role and zero for retained, renamed or removed roles. Reject unknown, duplicate, missing or ambiguous roles. Retain compatible prior values across renames and domain changes, resolving categorical choices by identity. Reject incompatible existing values. Validate each new value against its candidate domain, assemble the complete state, run complete admission and evaluation, and publish only if the base and epoch still match. Any failure retains the prior artifact and state. A valid in-range number still needs an independent oracle to establish agreement with the requested default.
+
+Acceptance cases for that future version include an explicit non-minimum default, an omitted or extra initializer, a retained-field override, a rename with reordered choices, an invalid default, concurrent or stale submissions, and exact rollback. Replay both archived water cases under the original packet and test their corrected counterparts separately. The current patch covers artifact-only changes. If retained prose becomes stale or contradicts a revision, use full regeneration. The follow-up should audit that commentary, distinguish requested changes from semantic drift, and report first-pass, correctness-qualified and complete-trajectory delivery plus tokens and latency per correct turn. The architecture review did not promote the initializer design or either experimental extension.
