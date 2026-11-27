@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f7f7f2;
+  color: #23342f;
+  font: 16px/1.5 system-ui;
+}
+header,
+aside,
+section {
+  padding: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #183a32;
+  color: white;
+}
+header strong {
+  margin-right: auto;
+  font-size: 22px;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 7px 11px;
+  border: 1px solid #a8b9ae;
+  border-radius: 5px;
+}
+button {
+  background: #e6eee6;
+  color: #193d31;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 40%) 1fr;
+  height: calc(100vh - 80px);
+}
+aside,
+section {
+  min-width: 0;
+  overflow: auto;
+}
+section {
+  background: white;
+}
+.canvas {
+  height: 72vh;
+  margin-top: 14px;
+}
+article {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+fieldset {
+  min-width: 0;
+  border: 0;
+  padding: 8px;
+}
+textarea {
+  width: 100%;
+  min-height: 80px;
+}
+label,
+details {
+  display: block;
+  margin: 18px 0;
+}
+pre {
+  overflow: auto;
+  max-height: 18rem;
+  font-size: 12px;
+}
+p {
+  white-space: pre-wrap;
+}
+button + button {
+  margin-left: 8px;
+}
+[role="alert"] {
+  padding: 10px;
+  color: #882e11;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 6px;
+}

@@ -1,0 +1,730 @@
+{
+  "mode": "live",
+  "interactiveMs": 20317,
+  "interactionMs": 11,
+  "workerNetworkDirective": "connect-src",
+  "workspace": {
+    "schema": 1,
+    "id": "642c3862-919e-4de4-a519-d596e1bbf19c",
+    "name": "Architecture Exploration",
+    "conversations": [
+      {
+        "id": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+        "title": "Exploration",
+        "parent": null,
+        "messages": [
+          {
+            "id": "df471fca-0bd2-48de-a177-1c6bfaf3a8e1",
+            "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+            "role": "user",
+            "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+          },
+          {
+            "id": "0e4f147b-6eac-47da-a6c4-3402cfa469d8",
+            "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+            "role": "assistant",
+            "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\"\n    }\n  ]\n}",
+            "generation": "8c92f0ae-f3c9-4fe7-8b03-e639517c4978"
+          },
+          {
+            "id": "301cf37c-f5fa-4473-b1fe-8835556d0808",
+            "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+            "role": "user",
+            "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+          },
+          {
+            "id": "409c6005-9043-4783-be3a-aba80fa3409c",
+            "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+            "role": "assistant",
+            "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\n      \"state\": []\n    }\n  ]\n}",
+            "generation": "b6ad7b51-7ad7-4907-bf21-b27dfede9738",
+            "artifact": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e"
+          }
+        ],
+        "references": []
+      },
+      {
+        "id": "2f1e7b55-d7ba-4026-8a32-6337a8a696cb",
+        "title": "Branch of Exploration",
+        "parent": {
+          "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+          "message": "0e4f147b-6eac-47da-a6c4-3402cfa469d8"
+        },
+        "messages": [],
+        "references": []
+      },
+      {
+        "id": "844dbe70-5bc0-4f4e-882f-a37d7d77d6d7",
+        "title": "Conversation 3",
+        "parent": null,
+        "messages": [
+          {
+            "id": "52ea05c1-2cf9-4283-8d2f-c8132a4ad0ed",
+            "conversation": "844dbe70-5bc0-4f4e-882f-a37d7d77d6d7",
+            "role": "user",
+            "content": "Synthesize the architecture trade-offs using the selected artifact state and conversation."
+          },
+          {
+            "id": "59eccdd7-5615-4d71-852d-f27f4d65dffb",
+            "conversation": "844dbe70-5bc0-4f4e-882f-a37d7d77d6d7",
+            "role": "assistant",
+            "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri is the best starting point at the selected weights. Native experience has zero weight; lightweight runtime gets about 42% and delivery efficiency about 58%. On the synthetic scores, Tauri ranks first (8.00), followed by Electron (7.50) and Native Hybrid (7.42). Tauri’s runtime advantage outweighs Electron’s delivery advantage.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri uses the system webview, which helps keep the installer small but means editor behavior can vary by OS. Electron bundles Chromium, giving the editor a more consistent environment and a mature ecosystem at the cost of a larger installer and typically higher baseline memory use. Native Hybrid pairs a reusable web editor with a native shell for deeper OS integration, but requires more platform-specific maintenance. Its strongest criterion scores highest of the three, but that criterion is currently weighted at zero.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Prototype the editor in Tauri first. Test rich editing, clipboard behavior, and keyboard shortcuts on each target OS. If webview differences cost too much engineering time, revisit Electron. If native menus and window behavior become central to the workspace, give native experience a nonzero weight and reassess Native Hybrid. The scores are synthetic, so use the ranking to guide the prototype, not as a benchmark.\"\n    }\n  ]\n}",
+            "generation": "3054f276-ce6b-40aa-8976-405249d59a21"
+          }
+        ],
+        "references": [
+          {
+            "id": "055b9f0f-3b59-4a71-a823-7a1d37b7c78a",
+            "source": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+            "representation": "conversation",
+            "values": [
+              {
+                "id": "df471fca-0bd2-48de-a177-1c6bfaf3a8e1",
+                "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                "role": "user",
+                "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+              },
+              {
+                "id": "0e4f147b-6eac-47da-a6c4-3402cfa469d8",
+                "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                "role": "assistant",
+                "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\"\n    }\n  ]\n}",
+                "generation": "8c92f0ae-f3c9-4fe7-8b03-e639517c4978"
+              },
+              {
+                "id": "301cf37c-f5fa-4473-b1fe-8835556d0808",
+                "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                "role": "user",
+                "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+              },
+              {
+                "id": "409c6005-9043-4783-be3a-aba80fa3409c",
+                "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                "role": "assistant",
+                "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\n      \"state\": []\n    }\n  ]\n}",
+                "generation": "b6ad7b51-7ad7-4907-bf21-b27dfede9738",
+                "artifact": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e"
+              }
+            ]
+          },
+          {
+            "id": "2a532ca3-ecd1-4dfd-aeb9-0ef01058683f",
+            "source": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e",
+            "representation": "artifact",
+            "values": [
+              {
+                "revision": 1,
+                "state": {
+                  "native": 0,
+                  "runtime": 25,
+                  "delivery": 35
+                },
+                "projection": [
+                  {
+                    "type": "Control",
+                    "binding": "native",
+                    "props": {
+                      "label": "Native experience (weight points)",
+                      "min": 0,
+                      "max": 100,
+                      "choices": [],
+                      "value": 0
+                    }
+                  },
+                  {
+                    "type": "Control",
+                    "binding": "runtime",
+                    "props": {
+                      "label": "Lightweight runtime (weight points)",
+                      "min": 0,
+                      "max": 100,
+                      "choices": [],
+                      "value": 25
+                    }
+                  },
+                  {
+                    "type": "Control",
+                    "binding": "delivery",
+                    "props": {
+                      "label": "Delivery efficiency (weight points)",
+                      "min": 0,
+                      "max": 100,
+                      "choices": [],
+                      "value": 35
+                    }
+                  },
+                  {
+                    "type": "Metric",
+                    "props": {
+                      "label": "Total weight points",
+                      "value": 60
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "props": {
+                      "text": "Ranking by weighted score (highest first)"
+                    }
+                  },
+                  {
+                    "type": "Table",
+                    "props": {
+                      "values": [
+                        {
+                          "label": "Tauri",
+                          "score": 8
+                        },
+                        {
+                          "label": "Electron",
+                          "score": 7.5
+                        },
+                        {
+                          "label": "Native Hybrid",
+                          "score": 7.416666666666667
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "protocol": "oui@1.2.0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e",
+        "title": "Interactive artifact",
+        "source": "root = Stack([scoreAssumptions, nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\nscoreAssumptions = Text(\"These scores are illustrative assumptions, not measured benchmarks. Higher is better for each criterion. In order—native experience, lightweight runtime, delivery efficiency—the fixed scores are Native Hybrid (9, 8, 7), Tauri (7, 8, 8), and Electron (6, 4, 10). Changing the weights changes how much each criterion counts, not its scores.\")\n$native = 40\n$runtime = 25\n$delivery = 35\nnativeWeight = Control(\"Native experience (weight points)\", 0, 100, [], $native)\nruntimeWeight = Control(\"Lightweight runtime (weight points)\", 0, 100, [], $runtime)\ndeliveryWeight = Control(\"Delivery efficiency (weight points)\", 0, 100, [], $delivery)\ntotal = @Sum([$native, $runtime, $delivery])\nweightTotal = Metric(\"Total weight points\", total)\ndivisor = total == 0 ? 1 : total\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\nrows = [{label:\"Native Hybrid\",score:hybridScore},{label:\"Tauri\",score:tauriScore},{label:\"Electron\",score:electronScore}]\nrankedRows = total == 0 ? [] : @Sort(rows, \"score\", \"desc\")\nrankingLabel = Text(\"Ranking by weighted score (highest first)\")\nranking = Table(rankedRows)",
+        "state": {
+          "native": 0,
+          "runtime": 25,
+          "delivery": 35
+        },
+        "projection": [
+          {
+            "type": "Text",
+            "props": {
+              "text": "These scores are illustrative assumptions, not measured benchmarks. Higher is better for each criterion. In order—native experience, lightweight runtime, delivery efficiency—the fixed scores are Native Hybrid (9, 8, 7), Tauri (7, 8, 8), and Electron (6, 4, 10). Changing the weights changes how much each criterion counts, not its scores."
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "native",
+            "props": {
+              "label": "Native experience (weight points)",
+              "min": 0,
+              "max": 100,
+              "choices": [],
+              "value": 0
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "runtime",
+            "props": {
+              "label": "Lightweight runtime (weight points)",
+              "min": 0,
+              "max": 100,
+              "choices": [],
+              "value": 25
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "delivery",
+            "props": {
+              "label": "Delivery efficiency (weight points)",
+              "min": 0,
+              "max": 100,
+              "choices": [],
+              "value": 35
+            }
+          },
+          {
+            "type": "Metric",
+            "props": {
+              "label": "Total weight points",
+              "value": 60
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "text": "Ranking by weighted score (highest first)"
+            }
+          },
+          {
+            "type": "Table",
+            "props": {
+              "values": [
+                {
+                  "label": "Tauri",
+                  "score": 8
+                },
+                {
+                  "label": "Electron",
+                  "score": 7.5
+                },
+                {
+                  "label": "Native Hybrid",
+                  "score": 7.416666666666667
+                }
+              ]
+            }
+          }
+        ],
+        "revision": 2,
+        "generation": "93a67587-7fdd-4dab-ad7b-28bfaeda3596",
+        "versions": [
+          {
+            "revision": 1,
+            "source": "root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\n$native = 40\n$runtime = 25\n$delivery = 35\nnativeWeight = Control(\"Native experience (weight points)\", 0, 100, [], $native)\nruntimeWeight = Control(\"Lightweight runtime (weight points)\", 0, 100, [], $runtime)\ndeliveryWeight = Control(\"Delivery efficiency (weight points)\", 0, 100, [], $delivery)\ntotal = @Sum([$native, $runtime, $delivery])\nweightTotal = Metric(\"Total weight points\", total)\ndivisor = total == 0 ? 1 : total\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\nrows = [{label:\"Native Hybrid\",score:hybridScore},{label:\"Tauri\",score:tauriScore},{label:\"Electron\",score:electronScore}]\nrankedRows = total == 0 ? [] : @Sort(rows, \"score\", \"desc\")\nrankingLabel = Text(\"Ranking by weighted score (highest first)\")\nranking = Table(rankedRows)",
+            "state": {
+              "native": 0,
+              "runtime": 25,
+              "delivery": 35
+            },
+            "projection": [
+              {
+                "type": "Control",
+                "binding": "native",
+                "props": {
+                  "label": "Native experience (weight points)",
+                  "min": 0,
+                  "max": 100,
+                  "choices": [],
+                  "value": 0
+                }
+              },
+              {
+                "type": "Control",
+                "binding": "runtime",
+                "props": {
+                  "label": "Lightweight runtime (weight points)",
+                  "min": 0,
+                  "max": 100,
+                  "choices": [],
+                  "value": 25
+                }
+              },
+              {
+                "type": "Control",
+                "binding": "delivery",
+                "props": {
+                  "label": "Delivery efficiency (weight points)",
+                  "min": 0,
+                  "max": 100,
+                  "choices": [],
+                  "value": 35
+                }
+              },
+              {
+                "type": "Metric",
+                "props": {
+                  "label": "Total weight points",
+                  "value": 60
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "text": "Ranking by weighted score (highest first)"
+                }
+              },
+              {
+                "type": "Table",
+                "props": {
+                  "values": [
+                    {
+                      "label": "Tauri",
+                      "score": 8
+                    },
+                    {
+                      "label": "Electron",
+                      "score": 7.5
+                    },
+                    {
+                      "label": "Native Hybrid",
+                      "score": 7.416666666666667
+                    }
+                  ]
+                }
+              }
+            ],
+            "generation": "b6ad7b51-7ad7-4907-bf21-b27dfede9738"
+          }
+        ],
+        "protocol": "oui@1.2.0",
+        "catalog": "1.1",
+        "origin": {
+          "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+          "message": "409c6005-9043-4783-be3a-aba80fa3409c",
+          "block": 2
+        },
+        "promoted": true
+      }
+    ],
+    "generations": [
+      {
+        "id": "8c92f0ae-f3c9-4fe7-8b03-e639517c4978",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "snapshot": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "representation": "history",
+              "values": []
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"snapshot\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"representation\":\"history\",\"values\":[]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+          }
+        ],
+        "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\"\n    }\n  ]\n}",
+        "latencyMs": 7432,
+        "usage": {
+          "prompt_tokens": 857,
+          "completion_tokens": 241,
+          "total_tokens": 1098,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      {
+        "id": "b6ad7b51-7ad7-4907-bf21-b27dfede9738",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "snapshot": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "representation": "history",
+              "values": [
+                {
+                  "id": "df471fca-0bd2-48de-a177-1c6bfaf3a8e1",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "0e4f147b-6eac-47da-a6c4-3402cfa469d8",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "assistant",
+                  "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\"\n    }\n  ]\n}",
+                  "generation": "8c92f0ae-f3c9-4fe7-8b03-e639517c4978"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"snapshot\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"representation\":\"history\",\"values\":[{\"id\":\"df471fca-0bd2-48de-a177-1c6bfaf3a8e1\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"0e4f147b-6eac-47da-a6c4-3402cfa469d8\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"assistant\",\"content\":\"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\\\"\\n    }\\n  ]\\n}\",\"generation\":\"8c92f0ae-f3c9-4fe7-8b03-e639517c4978\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+          }
+        ],
+        "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\n      \"state\": []\n    }\n  ]\n}",
+        "latencyMs": 11961,
+        "usage": {
+          "prompt_tokens": 1350,
+          "completion_tokens": 595,
+          "total_tokens": 1945,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1347,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 108,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      {
+        "id": "3054f276-ce6b-40aa-8976-405249d59a21",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "844dbe70-5bc0-4f4e-882f-a37d7d77d6d7",
+              "snapshot": "844dbe70-5bc0-4f4e-882f-a37d7d77d6d7",
+              "representation": "history",
+              "values": []
+            },
+            {
+              "source": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "snapshot": "055b9f0f-3b59-4a71-a823-7a1d37b7c78a",
+              "representation": "conversation",
+              "values": [
+                {
+                  "id": "df471fca-0bd2-48de-a177-1c6bfaf3a8e1",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "0e4f147b-6eac-47da-a6c4-3402cfa469d8",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "assistant",
+                  "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\"\n    }\n  ]\n}",
+                  "generation": "8c92f0ae-f3c9-4fe7-8b03-e639517c4978"
+                },
+                {
+                  "id": "301cf37c-f5fa-4473-b1fe-8835556d0808",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "user",
+                  "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+                },
+                {
+                  "id": "409c6005-9043-4783-be3a-aba80fa3409c",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "assistant",
+                  "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\n      \"state\": []\n    }\n  ]\n}",
+                  "generation": "b6ad7b51-7ad7-4907-bf21-b27dfede9738",
+                  "artifact": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e"
+                }
+              ]
+            },
+            {
+              "source": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e",
+              "snapshot": "2a532ca3-ecd1-4dfd-aeb9-0ef01058683f",
+              "representation": "artifact",
+              "values": [
+                {
+                  "revision": 1,
+                  "state": {
+                    "native": 0,
+                    "runtime": 25,
+                    "delivery": 35
+                  },
+                  "projection": [
+                    {
+                      "type": "Control",
+                      "binding": "native",
+                      "props": {
+                        "label": "Native experience (weight points)",
+                        "min": 0,
+                        "max": 100,
+                        "choices": [],
+                        "value": 0
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "binding": "runtime",
+                      "props": {
+                        "label": "Lightweight runtime (weight points)",
+                        "min": 0,
+                        "max": 100,
+                        "choices": [],
+                        "value": 25
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "binding": "delivery",
+                      "props": {
+                        "label": "Delivery efficiency (weight points)",
+                        "min": 0,
+                        "max": 100,
+                        "choices": [],
+                        "value": 35
+                      }
+                    },
+                    {
+                      "type": "Metric",
+                      "props": {
+                        "label": "Total weight points",
+                        "value": 60
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "text": "Ranking by weighted score (highest first)"
+                      }
+                    },
+                    {
+                      "type": "Table",
+                      "props": {
+                        "values": [
+                          {
+                            "label": "Tauri",
+                            "score": 8
+                          },
+                          {
+                            "label": "Electron",
+                            "score": 7.5
+                          },
+                          {
+                            "label": "Native Hybrid",
+                            "score": 7.416666666666667
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "protocol": "oui@1.2.0"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"844dbe70-5bc0-4f4e-882f-a37d7d77d6d7\",\"snapshot\":\"844dbe70-5bc0-4f4e-882f-a37d7d77d6d7\",\"representation\":\"history\",\"values\":[]},{\"source\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"snapshot\":\"055b9f0f-3b59-4a71-a823-7a1d37b7c78a\",\"representation\":\"conversation\",\"values\":[{\"id\":\"df471fca-0bd2-48de-a177-1c6bfaf3a8e1\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"0e4f147b-6eac-47da-a6c4-3402cfa469d8\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"assistant\",\"content\":\"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\\\"\\n    }\\n  ]\\n}\",\"generation\":\"8c92f0ae-f3c9-4fe7-8b03-e639517c4978\"},{\"id\":\"301cf37c-f5fa-4473-b1fe-8835556d0808\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"user\",\"content\":\"Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.\"},{\"id\":\"409c6005-9043-4783-be3a-aba80fa3409c\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"assistant\",\"content\":\"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\\\n$native = 40\\\\n$runtime = 25\\\\n$delivery = 35\\\\nnativeWeight = Control(\\\\\\\"Native experience (weight points)\\\\\\\", 0, 100, [], $native)\\\\nruntimeWeight = Control(\\\\\\\"Lightweight runtime (weight points)\\\\\\\", 0, 100, [], $runtime)\\\\ndeliveryWeight = Control(\\\\\\\"Delivery efficiency (weight points)\\\\\\\", 0, 100, [], $delivery)\\\\ntotal = @Sum([$native, $runtime, $delivery])\\\\nweightTotal = Metric(\\\\\\\"Total weight points\\\\\\\", total)\\\\ndivisor = total == 0 ? 1 : total\\\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\\\nrows = [{label:\\\\\\\"Native Hybrid\\\\\\\",score:hybridScore},{label:\\\\\\\"Tauri\\\\\\\",score:tauriScore},{label:\\\\\\\"Electron\\\\\\\",score:electronScore}]\\\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\\\\\"score\\\\\\\", \\\\\\\"desc\\\\\\\")\\\\nrankingLabel = Text(\\\\\\\"Ranking by weighted score (highest first)\\\\\\\")\\\\nranking = Table(rankedRows)\\\",\\n      \\\"state\\\": []\\n    }\\n  ]\\n}\",\"generation\":\"b6ad7b51-7ad7-4907-bf21-b27dfede9738\",\"artifact\":\"54c5f1e3-e3f5-4e66-b999-953592dfbe5e\"}]},{\"source\":\"54c5f1e3-e3f5-4e66-b999-953592dfbe5e\",\"snapshot\":\"2a532ca3-ecd1-4dfd-aeb9-0ef01058683f\",\"representation\":\"artifact\",\"values\":[{\"revision\":1,\"state\":{\"native\":0,\"runtime\":25,\"delivery\":35},\"projection\":[{\"type\":\"Control\",\"binding\":\"native\",\"props\":{\"label\":\"Native experience (weight points)\",\"min\":0,\"max\":100,\"choices\":[],\"value\":0}},{\"type\":\"Control\",\"binding\":\"runtime\",\"props\":{\"label\":\"Lightweight runtime (weight points)\",\"min\":0,\"max\":100,\"choices\":[],\"value\":25}},{\"type\":\"Control\",\"binding\":\"delivery\",\"props\":{\"label\":\"Delivery efficiency (weight points)\",\"min\":0,\"max\":100,\"choices\":[],\"value\":35}},{\"type\":\"Metric\",\"props\":{\"label\":\"Total weight points\",\"value\":60}},{\"type\":\"Text\",\"props\":{\"text\":\"Ranking by weighted score (highest first)\"}},{\"type\":\"Table\",\"props\":{\"values\":[{\"label\":\"Tauri\",\"score\":8},{\"label\":\"Electron\",\"score\":7.5},{\"label\":\"Native Hybrid\",\"score\":7.416666666666667}]}}],\"protocol\":\"oui@1.2.0\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Synthesize the architecture trade-offs using the selected artifact state and conversation."
+          }
+        ],
+        "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri is the best starting point at the selected weights. Native experience has zero weight; lightweight runtime gets about 42% and delivery efficiency about 58%. On the synthetic scores, Tauri ranks first (8.00), followed by Electron (7.50) and Native Hybrid (7.42). Tauri’s runtime advantage outweighs Electron’s delivery advantage.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri uses the system webview, which helps keep the installer small but means editor behavior can vary by OS. Electron bundles Chromium, giving the editor a more consistent environment and a mature ecosystem at the cost of a larger installer and typically higher baseline memory use. Native Hybrid pairs a reusable web editor with a native shell for deeper OS integration, but requires more platform-specific maintenance. Its strongest criterion scores highest of the three, but that criterion is currently weighted at zero.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Prototype the editor in Tauri first. Test rich editing, clipboard behavior, and keyboard shortcuts on each target OS. If webview differences cost too much engineering time, revisit Electron. If native menus and window behavior become central to the workspace, give native experience a nonzero weight and reassess Native Hybrid. The scores are synthetic, so use the ranking to guide the prototype, not as a benchmark.\"\n    }\n  ]\n}",
+        "latencyMs": 7667,
+        "usage": {
+          "prompt_tokens": 2408,
+          "completion_tokens": 322,
+          "total_tokens": 2730,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 2405,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      {
+        "id": "93a67587-7fdd-4dab-ad7b-28bfaeda3596",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "snapshot": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+              "representation": "history",
+              "values": [
+                {
+                  "id": "df471fca-0bd2-48de-a177-1c6bfaf3a8e1",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "0e4f147b-6eac-47da-a6c4-3402cfa469d8",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "assistant",
+                  "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\"\n    }\n  ]\n}",
+                  "generation": "8c92f0ae-f3c9-4fe7-8b03-e639517c4978"
+                },
+                {
+                  "id": "301cf37c-f5fa-4473-b1fe-8835556d0808",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "user",
+                  "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+                },
+                {
+                  "id": "409c6005-9043-4783-be3a-aba80fa3409c",
+                  "conversation": "54e24e63-fdbd-4ac9-80ab-5e3d7df500d8",
+                  "role": "assistant",
+                  "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\n      \"state\": []\n    }\n  ]\n}",
+                  "generation": "b6ad7b51-7ad7-4907-bf21-b27dfede9738",
+                  "artifact": "54c5f1e3-e3f5-4e66-b999-953592dfbe5e"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"snapshot\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"representation\":\"history\",\"values\":[{\"id\":\"df471fca-0bd2-48de-a177-1c6bfaf3a8e1\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"0e4f147b-6eac-47da-a6c4-3402cfa469d8\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"assistant\",\"content\":\"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Native Hybrid (native shell, web editor): Best when platform-native menus, shortcuts, and window behavior matter. You can reuse the editor across platforms, but you’ll maintain more platform-specific code.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Tauri (system webview, Rust backend): A good fit for a lightweight, local-first workspace. Installers are typically smaller than Electron’s, but test rich editing, clipboard behavior, and keyboard shortcuts across OS webviews.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Electron (bundled Chromium, Node.js): A good fit when consistent editor behavior across platforms and a mature ecosystem matter most. The trade-off is typically larger installers and higher baseline memory use.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Start with Tauri if footprint is the priority, Electron if editor consistency is, or Native Hybrid if deep OS integration defines the experience.\\\"\\n    }\\n  ]\\n}\",\"generation\":\"8c92f0ae-f3c9-4fe7-8b03-e639517c4978\"},{\"id\":\"301cf37c-f5fa-4473-b1fe-8835556d0808\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"user\",\"content\":\"Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.\"},{\"id\":\"409c6005-9043-4783-be3a-aba80fa3409c\",\"conversation\":\"54e24e63-fdbd-4ac9-80ab-5e3d7df500d8\",\"role\":\"assistant\",\"content\":\"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Synthetic scores, in order: native experience, lightweight runtime, delivery efficiency. Native Hybrid: 9, 8, 7. Tauri: 7, 8, 8. Electron: 6, 4, 10.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\\\n$native = 40\\\\n$runtime = 25\\\\n$delivery = 35\\\\nnativeWeight = Control(\\\\\\\"Native experience (weight points)\\\\\\\", 0, 100, [], $native)\\\\nruntimeWeight = Control(\\\\\\\"Lightweight runtime (weight points)\\\\\\\", 0, 100, [], $runtime)\\\\ndeliveryWeight = Control(\\\\\\\"Delivery efficiency (weight points)\\\\\\\", 0, 100, [], $delivery)\\\\ntotal = @Sum([$native, $runtime, $delivery])\\\\nweightTotal = Metric(\\\\\\\"Total weight points\\\\\\\", total)\\\\ndivisor = total == 0 ? 1 : total\\\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\\\nrows = [{label:\\\\\\\"Native Hybrid\\\\\\\",score:hybridScore},{label:\\\\\\\"Tauri\\\\\\\",score:tauriScore},{label:\\\\\\\"Electron\\\\\\\",score:electronScore}]\\\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\\\\\"score\\\\\\\", \\\\\\\"desc\\\\\\\")\\\\nrankingLabel = Text(\\\\\\\"Ranking by weighted score (highest first)\\\\\\\")\\\\nranking = Table(rankedRows)\\\",\\n      \\\"state\\\": []\\n    }\\n  ]\\n}\",\"generation\":\"b6ad7b51-7ad7-4907-bf21-b27dfede9738\",\"artifact\":\"54c5f1e3-e3f5-4e66-b999-953592dfbe5e\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Clarify the synthetic-score assumptions in a Text block inside the UI. Keep every control, binding, domain, and calculation identical.\nRegenerate the complete artifact. Preserve existing semantic bindings and control contracts.\n{\"source\":\"root = Stack([nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\"state\":{\"native\":0,\"runtime\":25,\"delivery\":35}}"
+          }
+        ],
+        "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Adjust the three weights independently. Each criterion’s share is its weight divided by the total, so the weights don’t need to add up to 100. If all three weights are zero, the ranking is blank.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([scoreAssumptions, nativeWeight, runtimeWeight, deliveryWeight, weightTotal, rankingLabel, ranking])\\nscoreAssumptions = Text(\\\"These scores are illustrative assumptions, not measured benchmarks. Higher is better for each criterion. In order—native experience, lightweight runtime, delivery efficiency—the fixed scores are Native Hybrid (9, 8, 7), Tauri (7, 8, 8), and Electron (6, 4, 10). Changing the weights changes how much each criterion counts, not its scores.\\\")\\n$native = 40\\n$runtime = 25\\n$delivery = 35\\nnativeWeight = Control(\\\"Native experience (weight points)\\\", 0, 100, [], $native)\\nruntimeWeight = Control(\\\"Lightweight runtime (weight points)\\\", 0, 100, [], $runtime)\\ndeliveryWeight = Control(\\\"Delivery efficiency (weight points)\\\", 0, 100, [], $delivery)\\ntotal = @Sum([$native, $runtime, $delivery])\\nweightTotal = Metric(\\\"Total weight points\\\", total)\\ndivisor = total == 0 ? 1 : total\\nhybridScore = ($native * 9 + $runtime * 8 + $delivery * 7) / divisor\\ntauriScore = ($native * 7 + $runtime * 8 + $delivery * 8) / divisor\\nelectronScore = ($native * 6 + $runtime * 4 + $delivery * 10) / divisor\\nrows = [{label:\\\"Native Hybrid\\\",score:hybridScore},{label:\\\"Tauri\\\",score:tauriScore},{label:\\\"Electron\\\",score:electronScore}]\\nrankedRows = total == 0 ? [] : @Sort(rows, \\\"score\\\", \\\"desc\\\")\\nrankingLabel = Text(\\\"Ranking by weighted score (highest first)\\\")\\nranking = Table(rankedRows)\",\n      \"state\": [\n        {\"name\": \"native\", \"value\": 0},\n        {\"name\": \"runtime\", \"value\": 25},\n        {\"name\": \"delivery\", \"value\": 35}\n      ]\n    }\n  ]\n}",
+        "latencyMs": 10435,
+        "usage": {
+          "prompt_tokens": 2415,
+          "completion_tokens": 619,
+          "total_tokens": 3034,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 2412,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 63,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      }
+    ],
+    "positions": {
+      "54c5f1e3-e3f5-4e66-b999-953592dfbe5e": {
+        "x": 244.1304347826087,
+        "y": 119.91304347826086
+      }
+    }
+  }
+}

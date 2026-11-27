@@ -26,3 +26,7 @@ Deployment proposal: GenUI Lab local Web app (React/TS/Vite); later desktop PoC 
 Quality drivers: responsiveness, provenance, recoverability, security, portability, extensibility and provider interoperability. Suggested desktop performance targets (unmeasured): 200 summary nodes, 20 visible complex nodes without sustained lag, local interaction <100 ms, focus switch <300 ms, pan/zoom near 60 FPS. Local-first does not imply remote inference keeps data local.
 
 Walking skeleton: create workspace, chat, generate decision UI, branch from answer, promote UI, change state, reference chat/branch/state, synthesize, reopen and restore all. Workstreams GenUI Lab, Context Core, Graph Lab; integrate only after evidence. No graph/vector database, agent framework, cloud sync or collaboration needed initially.
+
+## Goal 3 implementation
+
+The local browser workspace combines a React Flow graph and focused views with the lab's restricted Worker. A loopback Node backend owns model invocation and SQLite persistence. The conversation and context functions are shared by the host and the trusted request compiler. [Module boundaries, publication order and remaining constraints](adr/0006-integrated-walking-skeleton.md)

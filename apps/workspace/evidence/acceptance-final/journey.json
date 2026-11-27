@@ -1,0 +1,693 @@
+{
+  "mode": "deterministic",
+  "interactiveMs": 199,
+  "interactionMs": 8,
+  "workerNetworkDirective": "connect-src",
+  "workspace": {
+    "schema": 1,
+    "id": "bacf4245-e50a-47ca-a643-425f609a7e71",
+    "name": "Architecture Exploration",
+    "conversations": [
+      {
+        "id": "60af3901-3751-499d-84e1-58e1c69e529a",
+        "title": "Exploration",
+        "parent": null,
+        "messages": [
+          {
+            "id": "732f8ee8-68d7-42f2-b1d2-6bf206ca70e9",
+            "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+            "role": "user",
+            "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+          },
+          {
+            "id": "28c71da7-c11c-4efb-aa21-d49905f1781e",
+            "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+            "role": "assistant",
+            "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+            "generation": "c771d9b3-e246-41d4-9791-e78527abf5e3"
+          },
+          {
+            "id": "b185960e-20c2-44d1-a1ea-8190534caac3",
+            "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+            "role": "user",
+            "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+          },
+          {
+            "id": "4fce7802-d695-4a11-89c8-16cb32b95cf6",
+            "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+            "role": "assistant",
+            "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+            "generation": "0f23075f-42c6-494c-b4ba-6ad829ea3f13",
+            "artifact": "182e5fef-920a-4b58-8c0c-698c4edc9279"
+          }
+        ],
+        "references": []
+      },
+      {
+        "id": "351e68f2-b863-4cc9-8cb4-02ebf9800bed",
+        "title": "Branch of Exploration",
+        "parent": {
+          "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+          "message": "28c71da7-c11c-4efb-aa21-d49905f1781e"
+        },
+        "messages": [],
+        "references": []
+      },
+      {
+        "id": "8f1d7790-5cde-46fa-9f72-4a81dc3e65a2",
+        "title": "Conversation 3",
+        "parent": null,
+        "messages": [
+          {
+            "id": "f0bafb0a-669c-424c-8697-dac4372ca5c0",
+            "conversation": "8f1d7790-5cde-46fa-9f72-4a81dc3e65a2",
+            "role": "user",
+            "content": "Synthesize the architecture trade-offs using the selected artifact state and conversation."
+          },
+          {
+            "id": "6a04be81-21b9-41d3-9483-17893861ff1f",
+            "conversation": "8f1d7790-5cde-46fa-9f72-4a81dc3e65a2",
+            "role": "assistant",
+            "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+            "generation": "068061be-0bc6-4b4d-aa39-ca9aea2c5a2b"
+          }
+        ],
+        "references": [
+          {
+            "id": "74663076-7640-468d-b120-65e9d69a2032",
+            "source": "60af3901-3751-499d-84e1-58e1c69e529a",
+            "representation": "conversation",
+            "values": [
+              {
+                "id": "732f8ee8-68d7-42f2-b1d2-6bf206ca70e9",
+                "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                "role": "user",
+                "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+              },
+              {
+                "id": "28c71da7-c11c-4efb-aa21-d49905f1781e",
+                "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                "role": "assistant",
+                "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+                "generation": "c771d9b3-e246-41d4-9791-e78527abf5e3"
+              },
+              {
+                "id": "b185960e-20c2-44d1-a1ea-8190534caac3",
+                "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                "role": "user",
+                "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+              },
+              {
+                "id": "4fce7802-d695-4a11-89c8-16cb32b95cf6",
+                "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                "role": "assistant",
+                "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+                "generation": "0f23075f-42c6-494c-b4ba-6ad829ea3f13",
+                "artifact": "182e5fef-920a-4b58-8c0c-698c4edc9279"
+              }
+            ]
+          },
+          {
+            "id": "06ea6cda-229c-4301-88e5-d0a8f242c6b4",
+            "source": "182e5fef-920a-4b58-8c0c-698c4edc9279",
+            "representation": "artifact",
+            "values": [
+              {
+                "revision": 1,
+                "state": {
+                  "a": 0,
+                  "b": 25,
+                  "c": 35
+                },
+                "projection": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "text": "Synthetic scores. Weights are normalized by their total."
+                    }
+                  },
+                  {
+                    "type": "Control",
+                    "binding": "a",
+                    "props": {
+                      "label": "Native experience",
+                      "min": 0,
+                      "max": 100,
+                      "choices": [],
+                      "value": 0
+                    }
+                  },
+                  {
+                    "type": "Control",
+                    "binding": "b",
+                    "props": {
+                      "label": "Lightweight runtime",
+                      "min": 0,
+                      "max": 100,
+                      "choices": [],
+                      "value": 25
+                    }
+                  },
+                  {
+                    "type": "Control",
+                    "binding": "c",
+                    "props": {
+                      "label": "Delivery efficiency",
+                      "min": 0,
+                      "max": 100,
+                      "choices": [],
+                      "value": 35
+                    }
+                  },
+                  {
+                    "type": "Table",
+                    "props": {
+                      "values": [
+                        {
+                          "label": "Tauri",
+                          "score": 8
+                        },
+                        {
+                          "label": "Electron",
+                          "score": 7.5
+                        },
+                        {
+                          "label": "Native Hybrid",
+                          "score": 7.416666666666667
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "protocol": "oui@1.2.0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "182e5fef-920a-4b58-8c0c-698c4edc9279",
+        "title": "Interactive artifact",
+        "source": "root = Stack([summary, aInput, bInput, cInput, ranking])\nsummary = Text(\"Illustrative assumptions. Weights are normalized by their total.\")\n$a = 40\naInput = Control(\"Native experience\", 0, 100, [], $a)\n$b = 25\nbInput = Control(\"Lightweight runtime\", 0, 100, [], $b)\n$c = 35\ncInput = Control(\"Delivery efficiency\", 0, 100, [], $c)\ntotal = @Sum([$a, $b, $c])\ndenominator = total == 0 ? 1 : total\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\nvalues = [{label: \"Native Hybrid\", score: native}, {label: \"Tauri\", score: tauri}, {label: \"Electron\", score: electron}]\nranking = Table(total == 0 ? [] : @Sort(values, \"score\", \"desc\"))\n",
+        "state": {
+          "a": 0,
+          "b": 25,
+          "c": 35
+        },
+        "projection": [
+          {
+            "type": "Text",
+            "props": {
+              "text": "Illustrative assumptions. Weights are normalized by their total."
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "a",
+            "props": {
+              "label": "Native experience",
+              "min": 0,
+              "max": 100,
+              "choices": [],
+              "value": 0
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "b",
+            "props": {
+              "label": "Lightweight runtime",
+              "min": 0,
+              "max": 100,
+              "choices": [],
+              "value": 25
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "c",
+            "props": {
+              "label": "Delivery efficiency",
+              "min": 0,
+              "max": 100,
+              "choices": [],
+              "value": 35
+            }
+          },
+          {
+            "type": "Table",
+            "props": {
+              "values": [
+                {
+                  "label": "Tauri",
+                  "score": 8
+                },
+                {
+                  "label": "Electron",
+                  "score": 7.5
+                },
+                {
+                  "label": "Native Hybrid",
+                  "score": 7.416666666666667
+                }
+              ]
+            }
+          }
+        ],
+        "revision": 2,
+        "generation": "eb56faae-4416-4325-8350-c8b805d0ed0a",
+        "versions": [
+          {
+            "revision": 1,
+            "source": "root = Stack([summary, aInput, bInput, cInput, ranking])\nsummary = Text(\"Synthetic scores. Weights are normalized by their total.\")\n$a = 40\naInput = Control(\"Native experience\", 0, 100, [], $a)\n$b = 25\nbInput = Control(\"Lightweight runtime\", 0, 100, [], $b)\n$c = 35\ncInput = Control(\"Delivery efficiency\", 0, 100, [], $c)\ntotal = @Sum([$a, $b, $c])\ndenominator = total == 0 ? 1 : total\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\nvalues = [{label: \"Native Hybrid\", score: native}, {label: \"Tauri\", score: tauri}, {label: \"Electron\", score: electron}]\nranking = Table(total == 0 ? [] : @Sort(values, \"score\", \"desc\"))\n",
+            "state": {
+              "a": 0,
+              "b": 25,
+              "c": 35
+            },
+            "projection": [
+              {
+                "type": "Text",
+                "props": {
+                  "text": "Synthetic scores. Weights are normalized by their total."
+                }
+              },
+              {
+                "type": "Control",
+                "binding": "a",
+                "props": {
+                  "label": "Native experience",
+                  "min": 0,
+                  "max": 100,
+                  "choices": [],
+                  "value": 0
+                }
+              },
+              {
+                "type": "Control",
+                "binding": "b",
+                "props": {
+                  "label": "Lightweight runtime",
+                  "min": 0,
+                  "max": 100,
+                  "choices": [],
+                  "value": 25
+                }
+              },
+              {
+                "type": "Control",
+                "binding": "c",
+                "props": {
+                  "label": "Delivery efficiency",
+                  "min": 0,
+                  "max": 100,
+                  "choices": [],
+                  "value": 35
+                }
+              },
+              {
+                "type": "Table",
+                "props": {
+                  "values": [
+                    {
+                      "label": "Tauri",
+                      "score": 8
+                    },
+                    {
+                      "label": "Electron",
+                      "score": 7.5
+                    },
+                    {
+                      "label": "Native Hybrid",
+                      "score": 7.416666666666667
+                    }
+                  ]
+                }
+              }
+            ],
+            "generation": "0f23075f-42c6-494c-b4ba-6ad829ea3f13"
+          }
+        ],
+        "protocol": "oui@1.2.0",
+        "catalog": "1.1",
+        "origin": {
+          "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+          "message": "4fce7802-d695-4a11-89c8-16cb32b95cf6",
+          "block": 0
+        },
+        "promoted": true
+      }
+    ],
+    "generations": [
+      {
+        "id": "c771d9b3-e246-41d4-9791-e78527abf5e3",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "snapshot": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "representation": "history",
+              "values": []
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"snapshot\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"representation\":\"history\",\"values\":[]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+          }
+        ],
+        "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+        "latencyMs": 0
+      },
+      {
+        "id": "0f23075f-42c6-494c-b4ba-6ad829ea3f13",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "snapshot": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "representation": "history",
+              "values": [
+                {
+                  "id": "732f8ee8-68d7-42f2-b1d2-6bf206ca70e9",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "28c71da7-c11c-4efb-aa21-d49905f1781e",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+                  "generation": "c771d9b3-e246-41d4-9791-e78527abf5e3"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"snapshot\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"representation\":\"history\",\"values\":[{\"id\":\"732f8ee8-68d7-42f2-b1d2-6bf206ca70e9\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"28c71da7-c11c-4efb-aa21-d49905f1781e\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Compare native integration, runtime size and delivery efficiency.\\\"}]}\",\"generation\":\"c771d9b3-e246-41d4-9791-e78527abf5e3\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+          }
+        ],
+        "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+        "latencyMs": 0
+      },
+      {
+        "id": "068061be-0bc6-4b4d-aa39-ca9aea2c5a2b",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "8f1d7790-5cde-46fa-9f72-4a81dc3e65a2",
+              "snapshot": "8f1d7790-5cde-46fa-9f72-4a81dc3e65a2",
+              "representation": "history",
+              "values": []
+            },
+            {
+              "source": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "snapshot": "74663076-7640-468d-b120-65e9d69a2032",
+              "representation": "conversation",
+              "values": [
+                {
+                  "id": "732f8ee8-68d7-42f2-b1d2-6bf206ca70e9",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "28c71da7-c11c-4efb-aa21-d49905f1781e",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+                  "generation": "c771d9b3-e246-41d4-9791-e78527abf5e3"
+                },
+                {
+                  "id": "b185960e-20c2-44d1-a1ea-8190534caac3",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+                },
+                {
+                  "id": "4fce7802-d695-4a11-89c8-16cb32b95cf6",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+                  "generation": "0f23075f-42c6-494c-b4ba-6ad829ea3f13",
+                  "artifact": "182e5fef-920a-4b58-8c0c-698c4edc9279"
+                }
+              ]
+            },
+            {
+              "source": "182e5fef-920a-4b58-8c0c-698c4edc9279",
+              "snapshot": "06ea6cda-229c-4301-88e5-d0a8f242c6b4",
+              "representation": "artifact",
+              "values": [
+                {
+                  "revision": 1,
+                  "state": {
+                    "a": 0,
+                    "b": 25,
+                    "c": 35
+                  },
+                  "projection": [
+                    {
+                      "type": "Text",
+                      "props": {
+                        "text": "Synthetic scores. Weights are normalized by their total."
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "binding": "a",
+                      "props": {
+                        "label": "Native experience",
+                        "min": 0,
+                        "max": 100,
+                        "choices": [],
+                        "value": 0
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "binding": "b",
+                      "props": {
+                        "label": "Lightweight runtime",
+                        "min": 0,
+                        "max": 100,
+                        "choices": [],
+                        "value": 25
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "binding": "c",
+                      "props": {
+                        "label": "Delivery efficiency",
+                        "min": 0,
+                        "max": 100,
+                        "choices": [],
+                        "value": 35
+                      }
+                    },
+                    {
+                      "type": "Table",
+                      "props": {
+                        "values": [
+                          {
+                            "label": "Tauri",
+                            "score": 8
+                          },
+                          {
+                            "label": "Electron",
+                            "score": 7.5
+                          },
+                          {
+                            "label": "Native Hybrid",
+                            "score": 7.416666666666667
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "protocol": "oui@1.2.0"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"8f1d7790-5cde-46fa-9f72-4a81dc3e65a2\",\"snapshot\":\"8f1d7790-5cde-46fa-9f72-4a81dc3e65a2\",\"representation\":\"history\",\"values\":[]},{\"source\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"snapshot\":\"74663076-7640-468d-b120-65e9d69a2032\",\"representation\":\"conversation\",\"values\":[{\"id\":\"732f8ee8-68d7-42f2-b1d2-6bf206ca70e9\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"28c71da7-c11c-4efb-aa21-d49905f1781e\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Compare native integration, runtime size and delivery efficiency.\\\"}]}\",\"generation\":\"c771d9b3-e246-41d4-9791-e78527abf5e3\"},{\"id\":\"b185960e-20c2-44d1-a1ea-8190534caac3\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.\"},{\"id\":\"4fce7802-d695-4a11-89c8-16cb32b95cf6\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([summary, aInput, bInput, cInput, ranking])\\\\nsummary = Text(\\\\\\\"Synthetic scores. Weights are normalized by their total.\\\\\\\")\\\\n$a = 40\\\\naInput = Control(\\\\\\\"Native experience\\\\\\\", 0, 100, [], $a)\\\\n$b = 25\\\\nbInput = Control(\\\\\\\"Lightweight runtime\\\\\\\", 0, 100, [], $b)\\\\n$c = 35\\\\ncInput = Control(\\\\\\\"Delivery efficiency\\\\\\\", 0, 100, [], $c)\\\\ntotal = @Sum([$a, $b, $c])\\\\ndenominator = total == 0 ? 1 : total\\\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\\\nvalues = [{label: \\\\\\\"Native Hybrid\\\\\\\", score: native}, {label: \\\\\\\"Tauri\\\\\\\", score: tauri}, {label: \\\\\\\"Electron\\\\\\\", score: electron}]\\\\nranking = Table(total == 0 ? [] : @Sort(values, \\\\\\\"score\\\\\\\", \\\\\\\"desc\\\\\\\"))\\\\n\\\",\\\"state\\\":[]}]}\",\"generation\":\"0f23075f-42c6-494c-b4ba-6ad829ea3f13\",\"artifact\":\"182e5fef-920a-4b58-8c0c-698c4edc9279\"}]},{\"source\":\"182e5fef-920a-4b58-8c0c-698c4edc9279\",\"snapshot\":\"06ea6cda-229c-4301-88e5-d0a8f242c6b4\",\"representation\":\"artifact\",\"values\":[{\"revision\":1,\"state\":{\"a\":0,\"b\":25,\"c\":35},\"projection\":[{\"type\":\"Text\",\"props\":{\"text\":\"Synthetic scores. Weights are normalized by their total.\"}},{\"type\":\"Control\",\"binding\":\"a\",\"props\":{\"label\":\"Native experience\",\"min\":0,\"max\":100,\"choices\":[],\"value\":0}},{\"type\":\"Control\",\"binding\":\"b\",\"props\":{\"label\":\"Lightweight runtime\",\"min\":0,\"max\":100,\"choices\":[],\"value\":25}},{\"type\":\"Control\",\"binding\":\"c\",\"props\":{\"label\":\"Delivery efficiency\",\"min\":0,\"max\":100,\"choices\":[],\"value\":35}},{\"type\":\"Table\",\"props\":{\"values\":[{\"label\":\"Tauri\",\"score\":8},{\"label\":\"Electron\",\"score\":7.5},{\"label\":\"Native Hybrid\",\"score\":7.416666666666667}]}}],\"protocol\":\"oui@1.2.0\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Synthesize the architecture trade-offs using the selected artifact state and conversation."
+          }
+        ],
+        "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+        "latencyMs": 0
+      },
+      {
+        "id": "eb56faae-4416-4325-8350-c8b805d0ed0a",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "snapshot": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "representation": "history",
+              "values": [
+                {
+                  "id": "732f8ee8-68d7-42f2-b1d2-6bf206ca70e9",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "28c71da7-c11c-4efb-aa21-d49905f1781e",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+                  "generation": "c771d9b3-e246-41d4-9791-e78527abf5e3"
+                },
+                {
+                  "id": "b185960e-20c2-44d1-a1ea-8190534caac3",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+                },
+                {
+                  "id": "4fce7802-d695-4a11-89c8-16cb32b95cf6",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+                  "generation": "0f23075f-42c6-494c-b4ba-6ad829ea3f13",
+                  "artifact": "182e5fef-920a-4b58-8c0c-698c4edc9279"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"snapshot\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"representation\":\"history\",\"values\":[{\"id\":\"732f8ee8-68d7-42f2-b1d2-6bf206ca70e9\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"28c71da7-c11c-4efb-aa21-d49905f1781e\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Compare native integration, runtime size and delivery efficiency.\\\"}]}\",\"generation\":\"c771d9b3-e246-41d4-9791-e78527abf5e3\"},{\"id\":\"b185960e-20c2-44d1-a1ea-8190534caac3\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.\"},{\"id\":\"4fce7802-d695-4a11-89c8-16cb32b95cf6\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([summary, aInput, bInput, cInput, ranking])\\\\nsummary = Text(\\\\\\\"Synthetic scores. Weights are normalized by their total.\\\\\\\")\\\\n$a = 40\\\\naInput = Control(\\\\\\\"Native experience\\\\\\\", 0, 100, [], $a)\\\\n$b = 25\\\\nbInput = Control(\\\\\\\"Lightweight runtime\\\\\\\", 0, 100, [], $b)\\\\n$c = 35\\\\ncInput = Control(\\\\\\\"Delivery efficiency\\\\\\\", 0, 100, [], $c)\\\\ntotal = @Sum([$a, $b, $c])\\\\ndenominator = total == 0 ? 1 : total\\\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\\\nvalues = [{label: \\\\\\\"Native Hybrid\\\\\\\", score: native}, {label: \\\\\\\"Tauri\\\\\\\", score: tauri}, {label: \\\\\\\"Electron\\\\\\\", score: electron}]\\\\nranking = Table(total == 0 ? [] : @Sort(values, \\\\\\\"score\\\\\\\", \\\\\\\"desc\\\\\\\"))\\\\n\\\",\\\"state\\\":[]}]}\",\"generation\":\"0f23075f-42c6-494c-b4ba-6ad829ea3f13\",\"artifact\":\"182e5fef-920a-4b58-8c0c-698c4edc9279\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Clarify the synthetic-score assumptions in a Text block inside the UI. Keep every control, binding, domain, and calculation identical.\nRegenerate the complete artifact. Preserve existing semantic bindings and control contracts.\n{\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":{\"a\":0,\"b\":25,\"c\":35}}"
+          }
+        ],
+        "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Illustrative assumptions. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+        "latencyMs": 0
+      },
+      {
+        "id": "7d9d5254-4df4-43d0-8932-0993f7df47a8",
+        "model": "gpt-6.2-sol",
+        "context": {
+          "version": 1,
+          "included": [
+            {
+              "source": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "snapshot": "60af3901-3751-499d-84e1-58e1c69e529a",
+              "representation": "history",
+              "values": [
+                {
+                  "id": "732f8ee8-68d7-42f2-b1d2-6bf206ca70e9",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison."
+                },
+                {
+                  "id": "28c71da7-c11c-4efb-aa21-d49905f1781e",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Compare native integration, runtime size and delivery efficiency.\"}]}",
+                  "generation": "c771d9b3-e246-41d4-9791-e78527abf5e3"
+                },
+                {
+                  "id": "b185960e-20c2-44d1-a1ea-8190534caac3",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "user",
+                  "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+                },
+                {
+                  "id": "4fce7802-d695-4a11-89c8-16cb32b95cf6",
+                  "conversation": "60af3901-3751-499d-84e1-58e1c69e529a",
+                  "role": "assistant",
+                  "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Synthetic scores. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":[]}]}",
+                  "generation": "0f23075f-42c6-494c-b4ba-6ad829ea3f13",
+                  "artifact": "182e5fef-920a-4b58-8c0c-698c4edc9279"
+                }
+              ]
+            }
+          ],
+          "excluded": []
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+          },
+          {
+            "role": "user",
+            "content": "{\"context\":{\"version\":1,\"included\":[{\"source\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"snapshot\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"representation\":\"history\",\"values\":[{\"id\":\"732f8ee8-68d7-42f2-b1d2-6bf206ca70e9\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Explore Native Hybrid, Tauri and Electron for a desktop thinking workspace. Give a short text comparison.\"},{\"id\":\"28c71da7-c11c-4efb-aa21-d49905f1781e\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Compare native integration, runtime size and delivery efficiency.\\\"}]}\",\"generation\":\"c771d9b3-e246-41d4-9791-e78527abf5e3\"},{\"id\":\"b185960e-20c2-44d1-a1ea-8190534caac3\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"user\",\"content\":\"Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.\"},{\"id\":\"4fce7802-d695-4a11-89c8-16cb32b95cf6\",\"conversation\":\"60af3901-3751-499d-84e1-58e1c69e529a\",\"role\":\"assistant\",\"content\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([summary, aInput, bInput, cInput, ranking])\\\\nsummary = Text(\\\\\\\"Synthetic scores. Weights are normalized by their total.\\\\\\\")\\\\n$a = 40\\\\naInput = Control(\\\\\\\"Native experience\\\\\\\", 0, 100, [], $a)\\\\n$b = 25\\\\nbInput = Control(\\\\\\\"Lightweight runtime\\\\\\\", 0, 100, [], $b)\\\\n$c = 35\\\\ncInput = Control(\\\\\\\"Delivery efficiency\\\\\\\", 0, 100, [], $c)\\\\ntotal = @Sum([$a, $b, $c])\\\\ndenominator = total == 0 ? 1 : total\\\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\\\nvalues = [{label: \\\\\\\"Native Hybrid\\\\\\\", score: native}, {label: \\\\\\\"Tauri\\\\\\\", score: tauri}, {label: \\\\\\\"Electron\\\\\\\", score: electron}]\\\\nranking = Table(total == 0 ? [] : @Sort(values, \\\\\\\"score\\\\\\\", \\\\\\\"desc\\\\\\\"))\\\\n\\\",\\\"state\\\":[]}]}\",\"generation\":\"0f23075f-42c6-494c-b4ba-6ad829ea3f13\",\"artifact\":\"182e5fef-920a-4b58-8c0c-698c4edc9279\"}]}],\"excluded\":[]}}"
+          },
+          {
+            "role": "user",
+            "content": "Reject this malformed revision\nRegenerate the complete artifact. Preserve existing semantic bindings and control contracts.\n{\"source\":\"root = Stack([summary, aInput, bInput, cInput, ranking])\\nsummary = Text(\\\"Illustrative assumptions. Weights are normalized by their total.\\\")\\n$a = 40\\naInput = Control(\\\"Native experience\\\", 0, 100, [], $a)\\n$b = 25\\nbInput = Control(\\\"Lightweight runtime\\\", 0, 100, [], $b)\\n$c = 35\\ncInput = Control(\\\"Delivery efficiency\\\", 0, 100, [], $c)\\ntotal = @Sum([$a, $b, $c])\\ndenominator = total == 0 ? 1 : total\\nnative = (9 * $a + 8 * $b + 7 * $c) / denominator\\ntauri = (7 * $a + 8 * $b + 8 * $c) / denominator\\nelectron = (6 * $a + 4 * $b + 10 * $c) / denominator\\nvalues = [{label: \\\"Native Hybrid\\\", score: native}, {label: \\\"Tauri\\\", score: tauri}, {label: \\\"Electron\\\", score: electron}]\\nranking = Table(total == 0 ? [] : @Sort(values, \\\"score\\\", \\\"desc\\\"))\\n\",\"state\":{\"a\":0,\"b\":25,\"c\":35}}"
+          }
+        ],
+        "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"invalid\",\"state\":[]}]}",
+        "latencyMs": 0,
+        "failure": "Invalid or duplicate declaration"
+      }
+    ],
+    "positions": {
+      "182e5fef-920a-4b58-8c0c-698c4edc9279": {
+        "x": 244.1304347826087,
+        "y": 119.91304347826086
+      }
+    }
+  }
+}
