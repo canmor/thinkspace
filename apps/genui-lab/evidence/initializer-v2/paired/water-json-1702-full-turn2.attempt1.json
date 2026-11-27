@@ -1,0 +1,44 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-Eoq1TeW6O5aJULeyF6Njs53mcpQUb\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795785083,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"length\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1440,\n    \"completion_tokens\": 2048,\n    \"total_tokens\": 3488,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 1437,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 2048,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 38134,
+  "usage": {
+    "prompt_tokens": 1440,
+    "completion_tokens": 2048,
+    "total_tokens": 3488,
+    "prompt_tokens_details": {
+      "cached_tokens": 1437,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2048,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "status": "truncated",
+  "diagnostic": "Incomplete output: length",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"choice\\\",\\\"result\\\"]},\\\"choice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Chimes\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/n\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Beats\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/n\\\"},\\\"b\\\":3}}}}}}\",\"state\":[]}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"water-json-1702\",\"base\":1,\"original\":\"Build a water tank calculator. Elapsed time is 0–6 whole minutes, initially 2. A tank starts with 24 litres and drains 3 litres per minute. Show remaining litres.\",\"previousRequests\":[\"Add a control for the drain rate, 2–5 whole litres per minute, initially 3. Stop at zero litres.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"{\\\\\\\"root\\\\\\\":\\\\\\\"layout\\\\\\\",\\\\\\\"elements\\\\\\\":{\\\\\\\"layout\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"props\\\\\\\":{},\\\\\\\"children\\\\\\\":[\\\\\\\"input\\\\\\\",\\\\\\\"rate\\\\\\\",\\\\\\\"result\\\\\\\"]},\\\\\\\"input\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Elapsed time (minutes)\\\\\\\",\\\\\\\"min\\\\\\\":0,\\\\\\\"max\\\\\\\":6,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/minutes\\\\\\\"}}},\\\\\\\"rate\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Drain rate (litres per minute)\\\\\\\",\\\\\\\"min\\\\\\\":2,\\\\\\\"max\\\\\\\":5,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/rate\\\\\\\"}}},\\\\\\\"result\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Metric\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Remaining water (litres)\\\\\\\",\\\\\\\"value\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Excess\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":24,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/minutes\\\\\\\"},\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/rate\\\\\\\"}}}}}}}}}\\\",\\\"state\\\":[{\\\"name\\\":\\\"minutes\\\",\\\"value\\\":4},{\\\"name\\\":\\\"rate\\\",\\\"value\\\":3}]}]}\",\"controls\":[{\"type\":\"Control\",\"props\":{\"label\":\"Elapsed time (minutes)\",\"min\":0,\"max\":6,\"choices\":[],\"value\":4},\"binding\":\"minutes\"},{\"type\":\"Control\",\"props\":{\"label\":\"Drain rate (litres per minute)\",\"min\":2,\"max\":5,\"choices\":[],\"value\":4},\"binding\":\"rate\"}],\"request\":\"Add a line plot of remaining litres at each whole minute from 0 through 6 for the chosen rate.\"}"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "Revision rejected: Incomplete output: length. Return a corrected response."
+    }
+  ],
+  "result": {
+    "status": "truncated",
+    "diagnostic": "Incomplete output: length"
+  }
+}
