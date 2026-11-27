@@ -1,0 +1,25 @@
+{
+  "id": "G-B01-json-1701",
+  "task": "B01",
+  "protocol": "json",
+  "seed": 1701,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"error\": {\n    \"message\": \"Unsupported value: 'temperature' does not support 0.35 with this model. Only the default (1) value is supported.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": \"unsupported_value\"\n  }\n}",
+      "latencyMs": 986,
+      "status": "provider-error",
+      "diagnostic": "HTTP 400",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"choice\\\",\\\"result\\\"]},\\\"choice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Chimes\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/n\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Beats\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/n\\\"},\\\"b\\\":3}}}}}}\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ]
+    }
+  ]
+}

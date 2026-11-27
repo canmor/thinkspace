@@ -1,0 +1,156 @@
+{
+  "id": "G-B01-json-1701",
+  "task": "B01",
+  "protocol": "json",
+  "seed": 1701,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooIGRwqa3asUyGhUOtpBHD7fXpMH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795778436,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"The dot product measures how much one vector points along another. For nonzero vectors a and b with angle θ between them, a · b = ‖a‖‖b‖ cos θ. Drop a perpendicular from the tip of b to the line through a. The signed distance from the shared tail to that point is ‖b‖ cos θ. Multiply this signed projection by ‖a‖ to get the dot product.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"{\\\\\\\"root\\\\\\\":\\\\\\\"layout\\\\\\\",\\\\\\\"elements\\\\\\\":{\\\\\\\"layout\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"props\\\\\\\":{},\\\\\\\"children\\\\\\\":[\\\\\\\"diagram\\\\\\\"]},\\\\\\\"diagram\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Graphic\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Project b onto the line through a. The circle marks where the vertical perpendicular from b's tip meets the line.\\\\\\\",\\\\\\\"items\\\\\\\":[{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":16,\\\\\\\"y\\\\\\\":20,\\\\\\\"text\\\\\\\":\\\\\\\"Positive\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":166,\\\\\\\"y\\\\\\\":20,\\\\\\\"text\\\\\\\":\\\\\\\"Orthogonal\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":316,\\\\\\\"y\\\\\\\":20,\\\\\\\"text\\\\\\\":\\\\\\\"Negative\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"path\\\\\\\",\\\\\\\"d\\\\\\\":\\\\\\\"M 16 99 H 133 M 166 99 H 283 M 316 99 H 433\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"path\\\\\\\",\\\\\\\"d\\\\\\\":\\\\\\\"M 62 99 H 124 M 117 94 L 124 99 L 117 104 M 212 99 H 274 M 267 94 L 274 99 L 267 104 M 362 99 H 424 M 417 94 L 424 99 L 417 104\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"path\\\\\\\",\\\\\\\"d\\\\\\\":\\\\\\\"M 62 99 L 97 49 M 89 52 L 97 49 L 97 58 M 212 99 V 49 M 207 56 L 212 49 L 217 56 M 362 99 L 327 49 M 327 58 L 327 49 L 335 52\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"path\\\\\\\",\\\\\\\"d\\\\\\\":\\\\\\\"M 97 55 V 62 M 97 67 V 74 M 97 79 V 86 M 97 91 V 95 M 327 55 V 62 M 327 67 V 74 M 327 79 V 86 M 327 91 V 95\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":97,\\\\\\\"cy\\\\\\\":99,\\\\\\\"r\\\\\\\":3},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":212,\\\\\\\"cy\\\\\\\":99,\\\\\\\"r\\\\\\\":3},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":327,\\\\\\\"cy\\\\\\\":99,\\\\\\\"r\\\\\\\":3},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":113,\\\\\\\"y\\\\\\\":121,\\\\\\\"text\\\\\\\":\\\\\\\"a\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":263,\\\\\\\"y\\\\\\\":121,\\\\\\\"text\\\\\\\":\\\\\\\"a\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":413,\\\\\\\"y\\\\\\\":121,\\\\\\\"text\\\\\\\":\\\\\\\"a\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":100,\\\\\\\"y\\\\\\\":45,\\\\\\\"text\\\\\\\":\\\\\\\"b\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":220,\\\\\\\"y\\\\\\\":49,\\\\\\\"text\\\\\\\":\\\\\\\"b\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":316,\\\\\\\"y\\\\\\\":44,\\\\\\\"text\\\\\\\":\\\\\\\"b\\\\\\\"}]}}}}\\\",\\n      \\\"state\\\": []\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"For an acute angle, the projection lands ahead of the shared tail, in a’s direction, so the dot product is positive. At 90°, the vectors are orthogonal: the projection lands at the tail, so the dot product is zero. For an obtuse angle, the projection lands behind the tail, opposite a’s direction, so the dot product is negative. If either vector is zero, the dot product is zero even though the angle is undefined.\\\"\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 848,\n    \"completion_tokens\": 809,\n    \"total_tokens\": 1657,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 13981,
+      "usage": {
+        "prompt_tokens": 848,
+        "completion_tokens": 809,
+        "total_tokens": 1657,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"The dot product measures how much one vector points along another. For nonzero vectors a and b with angle θ between them, a · b = ‖a‖‖b‖ cos θ. Drop a perpendicular from the tip of b to the line through a. The signed distance from the shared tail to that point is ‖b‖ cos θ. Multiply this signed projection by ‖a‖ to get the dot product.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"diagram\\\"]},\\\"diagram\\\":{\\\"type\\\":\\\"Graphic\\\",\\\"props\\\":{\\\"label\\\":\\\"Project b onto the line through a. The circle marks where the vertical perpendicular from b's tip meets the line.\\\",\\\"items\\\":[{\\\"kind\\\":\\\"text\\\",\\\"x\\\":16,\\\"y\\\":20,\\\"text\\\":\\\"Positive\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":166,\\\"y\\\":20,\\\"text\\\":\\\"Orthogonal\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":316,\\\"y\\\":20,\\\"text\\\":\\\"Negative\\\"},{\\\"kind\\\":\\\"path\\\",\\\"d\\\":\\\"M 16 99 H 133 M 166 99 H 283 M 316 99 H 433\\\"},{\\\"kind\\\":\\\"path\\\",\\\"d\\\":\\\"M 62 99 H 124 M 117 94 L 124 99 L 117 104 M 212 99 H 274 M 267 94 L 274 99 L 267 104 M 362 99 H 424 M 417 94 L 424 99 L 417 104\\\"},{\\\"kind\\\":\\\"path\\\",\\\"d\\\":\\\"M 62 99 L 97 49 M 89 52 L 97 49 L 97 58 M 212 99 V 49 M 207 56 L 212 49 L 217 56 M 362 99 L 327 49 M 327 58 L 327 49 L 335 52\\\"},{\\\"kind\\\":\\\"path\\\",\\\"d\\\":\\\"M 97 55 V 62 M 97 67 V 74 M 97 79 V 86 M 97 91 V 95 M 327 55 V 62 M 327 67 V 74 M 327 79 V 86 M 327 91 V 95\\\"},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":97,\\\"cy\\\":99,\\\"r\\\":3},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":212,\\\"cy\\\":99,\\\"r\\\":3},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":327,\\\"cy\\\":99,\\\"r\\\":3},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":113,\\\"y\\\":121,\\\"text\\\":\\\"a\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":263,\\\"y\\\":121,\\\"text\\\":\\\"a\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":413,\\\"y\\\":121,\\\"text\\\":\\\"a\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":100,\\\"y\\\":45,\\\"text\\\":\\\"b\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":220,\\\"y\\\":49,\\\"text\\\":\\\"b\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":316,\\\"y\\\":44,\\\"text\\\":\\\"b\\\"}]}}}}\",\n      \"state\": []\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"For an acute angle, the projection lands ahead of the shared tail, in a’s direction, so the dot product is positive. At 90°, the vectors are orthogonal: the projection lands at the tail, so the dot product is zero. For an obtuse angle, the projection lands behind the tail, opposite a’s direction, so the dot product is negative. If either vector is zero, the dot product is zero even though the angle is undefined.\"\n    }\n  ]\n}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"choice\\\",\\\"result\\\"]},\\\"choice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Chimes\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/n\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Beats\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/n\\\"},\\\"b\\\":3}}}}}}\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ],
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Graphic",
+            "props": {
+              "label": "Project b onto the line through a. The circle marks where the vertical perpendicular from b's tip meets the line.",
+              "items": [
+                {
+                  "kind": "text",
+                  "x": 16,
+                  "y": 20,
+                  "text": "Positive"
+                },
+                {
+                  "kind": "text",
+                  "x": 166,
+                  "y": 20,
+                  "text": "Orthogonal"
+                },
+                {
+                  "kind": "text",
+                  "x": 316,
+                  "y": 20,
+                  "text": "Negative"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 16 99 H 133 M 166 99 H 283 M 316 99 H 433"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 62 99 H 124 M 117 94 L 124 99 L 117 104 M 212 99 H 274 M 267 94 L 274 99 L 267 104 M 362 99 H 424 M 417 94 L 424 99 L 417 104"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 62 99 L 97 49 M 89 52 L 97 49 L 97 58 M 212 99 V 49 M 207 56 L 212 49 L 217 56 M 362 99 L 327 49 M 327 58 L 327 49 L 335 52"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 97 55 V 62 M 97 67 V 74 M 97 79 V 86 M 97 91 V 95 M 327 55 V 62 M 327 67 V 74 M 327 79 V 86 M 327 91 V 95"
+                },
+                {
+                  "kind": "circle",
+                  "cx": 97,
+                  "cy": 99,
+                  "r": 3
+                },
+                {
+                  "kind": "circle",
+                  "cx": 212,
+                  "cy": 99,
+                  "r": 3
+                },
+                {
+                  "kind": "circle",
+                  "cx": 327,
+                  "cy": 99,
+                  "r": 3
+                },
+                {
+                  "kind": "text",
+                  "x": 113,
+                  "y": 121,
+                  "text": "a"
+                },
+                {
+                  "kind": "text",
+                  "x": 263,
+                  "y": 121,
+                  "text": "a"
+                },
+                {
+                  "kind": "text",
+                  "x": 413,
+                  "y": 121,
+                  "text": "a"
+                },
+                {
+                  "kind": "text",
+                  "x": 100,
+                  "y": 45,
+                  "text": "b"
+                },
+                {
+                  "kind": "text",
+                  "x": 220,
+                  "y": 49,
+                  "text": "b"
+                },
+                {
+                  "kind": "text",
+                  "x": 316,
+                  "y": 44,
+                  "text": "b"
+                }
+              ]
+            }
+          }
+        ],
+        "state": {}
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The dot product measures how much one vector points along another. For nonzero vectors a and b with angle θ between them, a · b = ‖a‖‖b‖ cos θ. Drop a perpendicular from the tip of b to the line through a. The signed distance from the shared tail to that point is ‖b‖ cos θ. Multiply this signed projection by ‖a‖ to get the dot product."
+        },
+        {
+          "type": "ui"
+        },
+        {
+          "type": "text",
+          "text": "For an acute angle, the projection lands ahead of the shared tail, in a’s direction, so the dot product is positive. At 90°, the vectors are orthogonal: the projection lands at the tail, so the dot product is zero. For an obtuse angle, the projection lands behind the tail, opposite a’s direction, so the dot product is negative. If either vector is zero, the dot product is zero even though the angle is undefined."
+        }
+      ],
+      "transport": true
+    }
+  ]
+}

@@ -5,9 +5,11 @@ import {createHash} from 'node:crypto'
 import {execFileSync} from 'node:child_process'
 import {preview} from 'vite'
 import {chromium} from '@playwright/test'
-import {version,arms,core,holdout,prompt,seeds} from './plan.mjs'
+import {version,arms as baselineArms,core,holdout,prompt,seeds} from './plan.mjs'
 import {request} from './provider.mjs'
 import {replay} from '../browser.mjs'
+const sol=process.argv[3]==="gpt-6.2-sol"
+const arms=sol?[{...baselineArms.at(-1),id:"G",model:"gpt-6.2-sol"}]:baselineArms
 const out=resolve(process.argv[2]||'runs/2b1-'+Date.now());await mkdir(join(out,'episodes'),{recursive:true})
 if((await readdir(join(out,'episodes'))).length)throw Error('Use a fresh experiment directory')
 execFileSync('npm',['run','build'],{stdio:'inherit'})
@@ -20,10 +22,10 @@ const hashes={}
 for(const file of ['generation/v2/plan.mjs','generation/v2/schema.json','generation/v2/rubric.md','generation/harness.mjs','package-lock.json'])hashes[file]=createHash('sha256').update(await readFile(file)).digest('hex')
 const jobs=[]
 for(const seed of seeds)for(const task of [...Object.keys(core),...Object.keys(holdout)])for(const protocol of ['oui','json'])for(const arm of arms){
- if(task in holdout&&!['D','E','F'].includes(arm.id))continue
+ if(task in holdout&&!['D','E','F','G'].includes(arm.id))continue
  jobs.push({id:[arm.id,task,protocol,seed].join('-'),task,protocol,seed,arm:arm.id})
 }
-await writeFile(join(out,'manifest.json'),JSON.stringify({version,arms,seeds,jobs,hashes,sourceBaseline:'dcd0701',catalog:'1.1',policy:'1.5.0',protocols:{oui:'1.2.0',json:'0.23.2'},node:process.version,chromium:'1255',repairLimit:1,temperature:.35,top_p:.9},null,2))
+await writeFile(join(out,'manifest.json'),JSON.stringify({version,arms,seeds,jobs,hashes,sourceBaseline:'dcd0701',catalog:'1.1',policy:'1.5.0',protocols:{oui:'1.2.0',json:'0.23.2'},node:process.version,chromium:'1255',repairLimit:1,temperature:sol?1:.35,top_p:sol?"provider default":.9},null,2))
 const server=await preview({preview:{host:'127.0.0.1',port:0}}),url=new URL('replay.html',server.resolvedUrls.local[0]).href
 const browser=await chromium.launch(),cancel=new AbortController()
 process.once('SIGINT',()=>cancel.abort());process.once('SIGTERM',()=>cancel.abort())

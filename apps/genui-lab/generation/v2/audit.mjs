@@ -25,7 +25,7 @@ try{
     assert.equal(observed.status,a.status,j.id);if(observed.frame)assert.deepEqual(observed.frame,a.frame);if(observed.text)assert.equal(observed.text,a.text)
     if(a.diagnostic)assert.equal(observed.diagnostic,a.diagnostic)
     const usage=a.usage,cached=usage?.prompt_tokens_details?.cached_tokens??0,scale=j.arm==='F'?5:1
-    const cost=usage?scale*((usage.prompt_tokens-cached)*0.4+cached*0.1+usage.completion_tokens*1.6)/1e6:null
+    const cost=usage&&j.arm!=='G'?scale*((usage.prompt_tokens-cached)*0.4+cached*0.1+usage.completion_tokens*1.6)/1e6:null
     checks.push({status:a.status,transport:delivered(a)||a.transport===true,category:delivered(a)?null:a.status==='rejected'?(a.transport?'specification':'envelope'):a.status,diagnostic:a.diagnostic,latencyMs:a.latencyMs,input:usage?.prompt_tokens,output:usage?.completion_tokens,cost})
    }
    const a=episode.attempts.at(-1),behavior=interactive.has(j.task)&&a.frame?await probe(page,j.task,a.frame):null

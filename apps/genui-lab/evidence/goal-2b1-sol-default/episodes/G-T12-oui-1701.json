@@ -1,0 +1,91 @@
+{
+  "id": "G-T12-oui-1701",
+  "task": "T12",
+  "protocol": "oui",
+  "seed": 1701,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooIVDmeJesu0gZoeyUk7kLSrfnid\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795778451,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Small lockers cost 2 credits per block; Large lockers cost 5. There are no other charges.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([locker, duration, total])\\\\n$size = 0\\\\n$blocks = 1\\\\nlocker = Control(\\\\\\\"Locker size\\\\\\\", 0, 1, [\\\\\\\"Small\\\\\\\", \\\\\\\"Large\\\\\\\"], $size)\\\\nduration = Control(\\\\\\\"Visit length (whole blocks)\\\\\\\", 1, 8, [], $blocks)\\\\nrate = $size == 0 ? 2 : 5\\\\ntotal = Metric(\\\\\\\"Total credits\\\\\\\", rate * $blocks)\\\",\\n      \\\"state\\\": []\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 808,\n    \"completion_tokens\": 183,\n    \"total_tokens\": 991,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 3736,
+      "usage": {
+        "prompt_tokens": 808,
+        "completion_tokens": 183,
+        "total_tokens": 991,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Small lockers cost 2 credits per block; Large lockers cost 5. There are no other charges.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([locker, duration, total])\\n$size = 0\\n$blocks = 1\\nlocker = Control(\\\"Locker size\\\", 0, 1, [\\\"Small\\\", \\\"Large\\\"], $size)\\nduration = Control(\\\"Visit length (whole blocks)\\\", 1, 8, [], $blocks)\\nrate = $size == 0 ? 2 : 5\\ntotal = Metric(\\\"Total credits\\\", rate * $blocks)\",\n      \"state\": []\n    }\n  ]\n}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Build a locker credit calculator. Small lockers cost 2 credits per block, Large cost 5. A visit lasts 1 to 8 whole blocks. Start on Small for 1 block. Show total credits; there are no other charges or locker sizes."
+        }
+      ],
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Control",
+            "binding": "size",
+            "props": {
+              "label": "Locker size",
+              "min": 0,
+              "max": 1,
+              "choices": [
+                "Small",
+                "Large"
+              ],
+              "value": 0
+            }
+          },
+          {
+            "type": "Control",
+            "binding": "blocks",
+            "props": {
+              "label": "Visit length (whole blocks)",
+              "min": 1,
+              "max": 8,
+              "choices": [],
+              "value": 1
+            }
+          },
+          {
+            "type": "Metric",
+            "props": {
+              "label": "Total credits",
+              "value": 2
+            }
+          }
+        ],
+        "state": {
+          "size": 0,
+          "blocks": 1
+        }
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Small lockers cost 2 credits per block; Large lockers cost 5. There are no other charges."
+        },
+        {
+          "type": "ui"
+        }
+      ],
+      "transport": true
+    }
+  ]
+}
