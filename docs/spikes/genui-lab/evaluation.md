@@ -1,0 +1,10 @@
+# Evaluation rubric
+Proposed weights: semantic correctness 25%, representation fitness 20%, visual quality 15%, functional correctness 15%, conversational integration 10%, refinement stability 10%, efficiency 5%. Mark N/A explicitly; normalize applicable weights and report denominator. Hard failures: invalid/unrenderable required spec, wrong critical calculation, broken required interaction, unauthorized access, fabricated facts, regression of required behavior. Hard failure cannot be compensated by aesthetics.
+
+Structural oracle: parser/schema/registry/reference validation. Behavioral: independent fixture logic and Playwright interactions (not renderer's own calculation). Visual: screenshots, overflow/overlap/contrast/readability checks plus human review. Cognitive: users answer task-specific questions, measure accuracy and time; LLM judge not sole evaluator.
+
+Experimental controls: shared model/config, prompts, component semantics and output budget when feasible; native ChatGPT is experience reference, not controlled model ablation. Compare API HTML/JS only in a secure isolated future experiment, declarative and hybrid harness variants. Store raw outputs and all failures. Measure first meaningful render, completion, local interaction latency, token usage, repair costs. Replay without LLM. Separate baseline and optimization, version harness. Human blind paired comparison when possible.
+
+Proposed eventual targets, not statistically justified: render validity >=98%, functional correctness >=95%, representation fitness >=85%, ChatGPT-comparable visual quality >=80%, multi-turn complete pass >=85%; zero known unauthorized access. Small core suite is exploratory, not proof of parity. Review actual sample sizes before setting release gates.
+
+Capability matrix rows: composition, custom SVG, reactive SVG, derived state, conditions, aggregation/sorting, state export, restore, context projection, security. Columns json-render and OpenUI; record native / documented extension / custom / unsupported / unverified, version, test evidence, effort and limitations.

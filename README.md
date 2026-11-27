@@ -2,6 +2,16 @@
 
 **Think with AI. Beyond the conversation.**
 
-AI Thinking Workspace for complex problem solving: graph-based conversations, generative UI and composable context.
+An AI Thinking Workspace for complex problem solving: graph-based conversation, generative UI and composable context.
 
-Handoff baseline: 2026-11-27. Start with `docs/spikes/genui-lab/goal-01.md`; review evidence before Goal 2.
+Handoff baseline: 2026-11-27. Product discovery, not an implemented system. Start with [Goal 1](docs/spikes/genui-lab/goal-01.md); review evidence before Goal 2. This package is self-contained and does not require the originating chat.
+
+## Reading order
+- [Product](docs/product/vision.md)
+- [Architecture](docs/architecture/overview.md)
+- [Conversation](docs/architecture/conversation.md), [Context](docs/architecture/context.md), [GenUI](docs/architecture/genui.md), [Artifacts](docs/architecture/artifacts.md)
+- [Decision log](docs/architecture/decisions.md)
+- [Spike specification](docs/spikes/genui-lab/specification.md), [Benchmark](docs/spikes/genui-lab/benchmark.md), [Evaluation](docs/spikes/genui-lab/evaluation.md)
+- [Goal 1](docs/spikes/genui-lab/goal-01.md), [Goal 2](docs/spikes/genui-lab/goal-02.md)
+- [References](docs/references/research.md), [UI concepts](docs/references/ui-concepts.md), [Open questions](docs/open-questions.md)
+- [Agent instructions](AGENTS.md)
