@@ -26,6 +26,7 @@ Open [the workspace](http://127.0.0.1:4178). Supply an authorized OpenAI API cre
 ## Verification
 
 ```sh
+(cd apps/genui-lab && npx --no-install vite build --config workspace.config.mjs)
 node --test apps/workspace/*.test.mjs
 cd apps/genui-lab
 npx --no-install playwright install chromium

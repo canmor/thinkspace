@@ -58,6 +58,7 @@ export async function serve({ path, port = 4178, provider }) {
             node,
             input.instruction,
             provider,
+            { context: input.context, refinement: input.refinement },
           );
         } else throw Error("Unknown operation");
         res.setHeader("Content-Type", "application/json");

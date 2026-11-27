@@ -180,6 +180,8 @@ try {
     1,
   );
   await button("Include snapshot").click();
+  await expect(button("Remove snapshot")).toHaveCount(2);
+  await expect(button("Include snapshot")).toBeEnabled();
   await take("06-context");
   await send(
     "Synthesize the architecture trade-offs using the selected artifact state and conversation.",

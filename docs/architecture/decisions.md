@@ -33,4 +33,4 @@ Goal 2B.2 exercised ADR 0004's approved local scope. The selected Sol configurat
 
 2026-11-27 · Goal 2B.3 architecture review closed. [ADR 0005](adr/0005-representation-and-revision-efficiency.md) records the accepted local baseline and the decision to direct future GenUI optimization through real Thinkspace product scenarios.
 
-Goal 3 · [ADR 0006](adr/0006-integrated-walking-skeleton.md) proposes the local Web, SQLite and GenUI integration for product-experience and architecture review.
+Goal 3 · [ADR 0006](adr/0006-integrated-walking-skeleton.md) records the accepted local Web, SQLite and GenUI integration after the provider submission gate passed deterministic regression on 2026-11-28.

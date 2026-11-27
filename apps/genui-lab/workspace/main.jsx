@@ -277,11 +277,6 @@ function App() {
       node = next.conversations.find(
         (x) => x.id === (c?.id || a.origin.conversation),
       );
-    const instruction = a
-      ? draft +
-        "\nRegenerate the complete artifact. Preserve existing semantic bindings and control contracts.\n" +
-        JSON.stringify({ source: a.source, state: a.state })
-      : draft;
     for (const reference of node.references.filter(
       (r) => r.representation === "artifact",
     )) {
@@ -304,7 +299,11 @@ function App() {
       id: w.id,
       revision: record.revision,
       node: node.id,
-      instruction,
+      instruction: draft,
+      context: compile(w, node),
+      refinement: a
+        ? { id: a.id, revision: a.revision, source: a.source, state: a.state }
+        : undefined,
     });
     Object.assign(gen, {
       instruction: draft,

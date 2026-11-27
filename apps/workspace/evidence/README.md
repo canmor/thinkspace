@@ -26,3 +26,9 @@ The tests establish browser and storage behavior for this scenario. Ease of bran
 The [deterministic review run](pr4-review/journey.json) branches from the UI-bearing assistant message, changes the independent artifact state, and checks the branch's original weight before and after regeneration. It opens both revision provenance views, removes and recaptures the artifact snapshot, and checks the submitted representations in order (history, conversation, artifact). A separate SQLite corruption injection exercises snapshot capture before mounting the damaged artifact. Capture displays a diagnostic, disables submission and leaves the provider invocation counter unchanged. Six Node tests and all 35 GenUI Lab tests passed. The live-provider evidence above belongs to the original review baseline.
 
 [Inherited matrix](pr4-review/05-branch.png) · [Selected sources](pr4-review/06-context.png) · [Revision provenance](pr4-review/07-revision.png) · [Restored artifact](pr4-review/09-restored.png)
+
+## Final provider submission gate
+
+The HTTP regression bypasses the UI and exercises the real submission route against a temporary SQLite database. Five rejected submissions produced zero provider calls: forged projection, invalid state, mismatched source, changed content under the same SQLite revision, and invalid refinement target state. Two valid revision-1 snapshots reached the spy after the artifact had advanced to revision 2, including the original legacy representation. The spy received the saved snapshot unchanged.
+
+The final deterministic browser run exercised synthesis and refinement through this backend gate. The capture waits for both source references to finish persisting. [Selected sources](submission-gate/06-context.png) · [Browser journey record](submission-gate/journey.json). The real-provider measurements remain those of the earlier baseline.

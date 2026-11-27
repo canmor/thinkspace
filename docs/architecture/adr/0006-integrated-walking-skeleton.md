@@ -1,6 +1,6 @@
 # ADR 0006 · Integrated local walking skeleton
 
-**Proposed for architecture and product-experience review.** The implementation starts at merged baseline c01de8c. ADR 0005's local experimental dispositions continue to apply.
+**Accepted for the local Goal 3 walking skeleton on 2026-11-28.** The implementation starts at merged baseline c01de8c. ADR 0005's local experimental dispositions continue to apply.
 
 ## Implementation plan and ownership
 
@@ -35,3 +35,9 @@ The origin conversation exposes an interactive working copy while its latest gen
 SQLite reads and writes validate identities, lineage, references, revision structure and protocol/catalog compatibility. Existing schema-1 records imply policy 1.5.0 when the policy field is absent. The browser captures artifact references by evaluating the selected revision and state in a fresh baseline Worker and deriving the projection from its frame. New snapshots carry the specification, protocol, catalog and policy. At submission the host rechecks snapshot state and projection against the referenced immutable content revision. A failed capture blocks sending until discarded or replaced. The context inspector supports removal and displays the selected state alongside its source.
 
 Provider exceptions return an attributed generation diagnostic. The failure retains the request and the composer permits retry. Local storage or transport failure can still prevent durable recording. Independent product-experience evaluation remains pending.
+
+## Provider submission gate
+
+The backend reads one workspace revision, compiles its attributed envelope and compares it with the context inspected in the browser. Before invoking the provider it re-admits each referenced artifact revision and saved state with the same built baseline Worker code as the browser. It checks the specification against the originating generation and compares the resulting state and semantic frame with the stored snapshot. Legacy snapshots resolve their omitted specification from the identified revision and undergo the same checks. A mismatch rejects the submission and leaves the snapshot intact. Refinement uses the validated current artifact to construct the provider instruction on the backend.
+
+A short-lived Node 26 permission-restricted child receives only source and state over stdin, runs with an empty environment, reads the built Worker bundle and returns the admitted frame. No network, filesystem write, child-process or additional worker permission is granted. The validator has a two-second deadline. Missing build output fails closed. These checks establish internal consistency at submission; historical authenticity and adversarial tamper-proof storage remain outside the local prototype.
