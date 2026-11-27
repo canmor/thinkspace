@@ -1,0 +1,787 @@
+{
+  "protocol": "oui",
+  "seed": 1702,
+  "turn": 2,
+  "before": {
+    "items": [
+      {
+        "type": "Control",
+        "binding": "cabin",
+        "props": {
+          "label": "Cabin",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "Economy",
+            "Business"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "gold",
+        "props": {
+          "label": "Gold status",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "No Gold",
+            "Gold"
+          ],
+          "value": 1
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "route",
+        "props": {
+          "label": "Route",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "Domestic",
+            "International"
+          ],
+          "value": 1
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "weight",
+        "props": {
+          "label": "Bag weight (kg)",
+          "min": 10,
+          "max": 40,
+          "choices": [],
+          "value": 38
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Bag allowance (kg)",
+          "value": 30
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Single-bag fee ($)",
+          "value": 120
+        }
+      }
+    ],
+    "state": {
+      "cabin": 0,
+      "gold": 1,
+      "route": 1,
+      "weight": 38
+    }
+  },
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eop3wA43nU2ESxIaGyJ5HSh4eQRg8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795781392,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Domestic allowances are 23 kg in Economy and 32 kg in Business. Gold adds 5 kg, and International adds 2 kg. You pay $15 per kilogram over your allowance and $0 at or below it. Each dot on the curve represents a whole kilogram; the larger dot marks your selected bag weight.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([cabin, status, route, weight, allowanceResult, feeResult, feeCurve])\\\\n$cabin = 0\\\\n$gold = 1\\\\n$route = 1\\\\n$weight = 38\\\\ncabin = Control(\\\\\\\"Cabin\\\\\\\", 0, 1, [\\\\\\\"Economy\\\\\\\", \\\\\\\"Business\\\\\\\"], $cabin)\\\\nstatus = Control(\\\\\\\"Gold status\\\\\\\", 0, 1, [\\\\\\\"No Gold\\\\\\\", \\\\\\\"Gold\\\\\\\"], $gold)\\\\nroute = Control(\\\\\\\"Route\\\\\\\", 0, 1, [\\\\\\\"Domestic\\\\\\\", \\\\\\\"International\\\\\\\"], $route)\\\\nweight = Control(\\\\\\\"Bag weight (kg)\\\\\\\", 10, 40, [], $weight)\\\\nbase = $cabin == 0 ? 23 : 32\\\\nallowance = base + $gold * 5 + $route * 2\\\\nexcess = $weight > allowance ? $weight - allowance : 0\\\\nallowanceResult = Metric(\\\\\\\"Bag allowance (kg)\\\\\\\", allowance)\\\\nfeeResult = Metric(\\\\\\\"Single-bag fee ($)\\\\\\\", excess * 15)\\\\ncurve = allowance == 23 ? \\\\\\\"M 40 106 H 209 L 430 21\\\\\\\" : allowance == 25 ? \\\\\\\"M 40 106 H 235 L 430 31\\\\\\\" : allowance == 28 ? \\\\\\\"M 40 106 H 274 L 430 46\\\\\\\" : allowance == 30 ? \\\\\\\"M 40 106 H 300 L 430 56\\\\\\\" : allowance == 32 ? \\\\\\\"M 40 106 H 326 L 430 66\\\\\\\" : allowance == 34 ? \\\\\\\"M 40 106 H 352 L 430 76\\\\\\\" : allowance == 37 ? \\\\\\\"M 40 106 H 391 L 430 91\\\\\\\" : \\\\\\\"M 40 106 H 417 L 430 101\\\\\\\"\\\\nfeeCurve = Graphic(\\\\\\\"Single-bag fee by weight\\\\\\\", [{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 36 21 H 40 V 106 H 430 M 40 106 V 110 M 235 106 V 110 M 430 106 V 110\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:curve},{kind:\\\\\\\"text\\\\\\\",x:4,y:12,text:\\\\\\\"Fee ($)\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:5,y:25,text:\\\\\\\"255\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:22,y:105,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:33,y:125,text:\\\\\\\"10\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:212,y:125,text:\\\\\\\"25 kg\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:420,y:125,text:\\\\\\\"40\\\\\\\"},{kind:\\\\\\\"circle\\\\\\\",cx:40,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:53,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:66,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:79,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:92,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:105,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:118,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:131,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:144,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:157,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:170,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:183,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:196,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:209,cy:106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:222,cy:24 > allowance ? 106 - (24 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:235,cy:25 > allowance ? 106 - (25 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:248,cy:26 > allowance ? 106 - (26 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:261,cy:27 > allowance ? 106 - (27 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:274,cy:28 > allowance ? 106 - (28 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:287,cy:29 > allowance ? 106 - (29 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:300,cy:30 > allowance ? 106 - (30 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:313,cy:31 > allowance ? 106 - (31 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:326,cy:32 > allowance ? 106 - (32 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:339,cy:33 > allowance ? 106 - (33 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:352,cy:34 > allowance ? 106 - (34 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:365,cy:35 > allowance ? 106 - (35 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:378,cy:36 > allowance ? 106 - (36 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:391,cy:37 > allowance ? 106 - (37 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:404,cy:38 > allowance ? 106 - (38 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:417,cy:39 > allowance ? 106 - (39 - allowance) * 5 : 106,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:430,cy:106 - (40 - allowance) * 5,r:2},{kind:\\\\\\\"circle\\\\\\\",cx:40 + ($weight - 10) * 13,cy:106 - excess * 5,r:5}])\\\",\\n      \\\"state\\\": []\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1652,\n    \"completion_tokens\": 1731,\n    \"total_tokens\": 3383,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 1191,\n      \"cache_write_tokens\": 458,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 267,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 26971,
+      "usage": {
+        "prompt_tokens": 1652,
+        "completion_tokens": 1731,
+        "total_tokens": 3383,
+        "prompt_tokens_details": {
+          "cached_tokens": 1191,
+          "cache_write_tokens": 458,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 267,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Domestic allowances are 23 kg in Economy and 32 kg in Business. Gold adds 5 kg, and International adds 2 kg. You pay $15 per kilogram over your allowance and $0 at or below it. Each dot on the curve represents a whole kilogram; the larger dot marks your selected bag weight.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([cabin, status, route, weight, allowanceResult, feeResult, feeCurve])\\n$cabin = 0\\n$gold = 1\\n$route = 1\\n$weight = 38\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nroute = Control(\\\"Route\\\", 0, 1, [\\\"Domestic\\\", \\\"International\\\"], $route)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowance = base + $gold * 5 + $route * 2\\nexcess = $weight > allowance ? $weight - allowance : 0\\nallowanceResult = Metric(\\\"Bag allowance (kg)\\\", allowance)\\nfeeResult = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\\ncurve = allowance == 23 ? \\\"M 40 106 H 209 L 430 21\\\" : allowance == 25 ? \\\"M 40 106 H 235 L 430 31\\\" : allowance == 28 ? \\\"M 40 106 H 274 L 430 46\\\" : allowance == 30 ? \\\"M 40 106 H 300 L 430 56\\\" : allowance == 32 ? \\\"M 40 106 H 326 L 430 66\\\" : allowance == 34 ? \\\"M 40 106 H 352 L 430 76\\\" : allowance == 37 ? \\\"M 40 106 H 391 L 430 91\\\" : \\\"M 40 106 H 417 L 430 101\\\"\\nfeeCurve = Graphic(\\\"Single-bag fee by weight\\\", [{kind:\\\"path\\\",d:\\\"M 36 21 H 40 V 106 H 430 M 40 106 V 110 M 235 106 V 110 M 430 106 V 110\\\"},{kind:\\\"path\\\",d:curve},{kind:\\\"text\\\",x:4,y:12,text:\\\"Fee ($)\\\"},{kind:\\\"text\\\",x:5,y:25,text:\\\"255\\\"},{kind:\\\"text\\\",x:22,y:105,text:\\\"0\\\"},{kind:\\\"text\\\",x:33,y:125,text:\\\"10\\\"},{kind:\\\"text\\\",x:212,y:125,text:\\\"25 kg\\\"},{kind:\\\"text\\\",x:420,y:125,text:\\\"40\\\"},{kind:\\\"circle\\\",cx:40,cy:106,r:2},{kind:\\\"circle\\\",cx:53,cy:106,r:2},{kind:\\\"circle\\\",cx:66,cy:106,r:2},{kind:\\\"circle\\\",cx:79,cy:106,r:2},{kind:\\\"circle\\\",cx:92,cy:106,r:2},{kind:\\\"circle\\\",cx:105,cy:106,r:2},{kind:\\\"circle\\\",cx:118,cy:106,r:2},{kind:\\\"circle\\\",cx:131,cy:106,r:2},{kind:\\\"circle\\\",cx:144,cy:106,r:2},{kind:\\\"circle\\\",cx:157,cy:106,r:2},{kind:\\\"circle\\\",cx:170,cy:106,r:2},{kind:\\\"circle\\\",cx:183,cy:106,r:2},{kind:\\\"circle\\\",cx:196,cy:106,r:2},{kind:\\\"circle\\\",cx:209,cy:106,r:2},{kind:\\\"circle\\\",cx:222,cy:24 > allowance ? 106 - (24 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:235,cy:25 > allowance ? 106 - (25 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:248,cy:26 > allowance ? 106 - (26 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:261,cy:27 > allowance ? 106 - (27 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:274,cy:28 > allowance ? 106 - (28 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:287,cy:29 > allowance ? 106 - (29 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:300,cy:30 > allowance ? 106 - (30 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:313,cy:31 > allowance ? 106 - (31 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:326,cy:32 > allowance ? 106 - (32 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:339,cy:33 > allowance ? 106 - (33 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:352,cy:34 > allowance ? 106 - (34 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:365,cy:35 > allowance ? 106 - (35 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:378,cy:36 > allowance ? 106 - (36 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:391,cy:37 > allowance ? 106 - (37 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:404,cy:38 > allowance ? 106 - (38 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:417,cy:39 > allowance ? 106 - (39 - allowance) * 5 : 106,r:2},{kind:\\\"circle\\\",cx:430,cy:106 - (40 - allowance) * 5,r:2},{kind:\\\"circle\\\",cx:40 + ($weight - 10) * 13,cy:106 - excess * 5,r:5}])\",\n      \"state\": []\n    }\n  ]\n}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"For one bag, Gold adds 5 kg to the cabin allowance. You pay $15 for each kilogram over your allowance and nothing if the bag is at or below it.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([cabin, status, weight, allowanceResult, feeResult])\\n$cabin = 0\\n$gold = 0\\n$weight = 23\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowance = base + $gold * 5\\nexcess = $weight > allowance ? $weight - allowance : 0\\nallowanceResult = Metric(\\\"Bag allowance (kg)\\\", allowance)\\nfeeResult = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\",\n      \"state\": []\n    }\n  ]\n}"
+        },
+        {
+          "role": "user",
+          "content": "Add a route selector. Domestic stays the default with the same rules. International adds 2 kg to every allowance. Keep my current selections. Return the full revised response. Current visible controls: [{\"label\":\"Cabin\",\"min\":0,\"max\":1,\"choices\":[\"Economy\",\"Business\"],\"value\":0},{\"label\":\"Gold status\",\"min\":0,\"max\":1,\"choices\":[\"No Gold\",\"Gold\"],\"value\":1},{\"label\":\"Bag weight (kg)\",\"min\":10,\"max\":40,\"choices\":[],\"value\":38}]"
+        },
+        {
+          "role": "assistant",
+          "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Domestic allowances are 23 kg in Economy and 32 kg in Business. Gold adds 5 kg, and International adds another 2 kg whether or not you have Gold. The fee is $15 per kilogram over the allowance and $0 at or below it.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([cabin, status, route, weight, allowanceResult, feeResult])\\n$cabin = 0\\n$gold = 1\\n$route = 0\\n$weight = 38\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nroute = Control(\\\"Route\\\", 0, 1, [\\\"Domestic\\\", \\\"International\\\"], $route)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowance = base + $gold * 5 + $route * 2\\nexcess = $weight > allowance ? $weight - allowance : 0\\nallowanceResult = Metric(\\\"Bag allowance (kg)\\\", allowance)\\nfeeResult = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\",\n      \"state\": []\n    }\n  ]\n}"
+        },
+        {
+          "role": "user",
+          "content": "Add a fee curve covering every whole weight from 10 to 40 kg for the selected fare, membership and route. Keep the calculator and my selections. Return the full revised response. Current visible controls: [{\"label\":\"Cabin\",\"min\":0,\"max\":1,\"choices\":[\"Economy\",\"Business\"],\"value\":0},{\"label\":\"Gold status\",\"min\":0,\"max\":1,\"choices\":[\"No Gold\",\"Gold\"],\"value\":1},{\"label\":\"Route\",\"min\":0,\"max\":1,\"choices\":[\"Domestic\",\"International\"],\"value\":1},{\"label\":\"Bag weight (kg)\",\"min\":10,\"max\":40,\"choices\":[],\"value\":38}]"
+        }
+      ],
+      "result": {
+        "status": "accepted",
+        "frame": {
+          "items": [
+            {
+              "type": "Control",
+              "binding": "cabin",
+              "props": {
+                "label": "Cabin",
+                "min": 0,
+                "max": 1,
+                "choices": [
+                  "Economy",
+                  "Business"
+                ],
+                "value": 0
+              }
+            },
+            {
+              "type": "Control",
+              "binding": "gold",
+              "props": {
+                "label": "Gold status",
+                "min": 0,
+                "max": 1,
+                "choices": [
+                  "No Gold",
+                  "Gold"
+                ],
+                "value": 1
+              }
+            },
+            {
+              "type": "Control",
+              "binding": "route",
+              "props": {
+                "label": "Route",
+                "min": 0,
+                "max": 1,
+                "choices": [
+                  "Domestic",
+                  "International"
+                ],
+                "value": 1
+              }
+            },
+            {
+              "type": "Control",
+              "binding": "weight",
+              "props": {
+                "label": "Bag weight (kg)",
+                "min": 10,
+                "max": 40,
+                "choices": [],
+                "value": 38
+              }
+            },
+            {
+              "type": "Metric",
+              "props": {
+                "label": "Bag allowance (kg)",
+                "value": 30
+              }
+            },
+            {
+              "type": "Metric",
+              "props": {
+                "label": "Single-bag fee ($)",
+                "value": 120
+              }
+            },
+            {
+              "type": "Graphic",
+              "props": {
+                "label": "Single-bag fee by weight",
+                "items": [
+                  {
+                    "kind": "path",
+                    "d": "M 36 21 H 40 V 106 H 430 M 40 106 V 110 M 235 106 V 110 M 430 106 V 110"
+                  },
+                  {
+                    "kind": "path",
+                    "d": "M 40 106 H 300 L 430 56"
+                  },
+                  {
+                    "kind": "text",
+                    "x": 4,
+                    "y": 12,
+                    "text": "Fee ($)"
+                  },
+                  {
+                    "kind": "text",
+                    "x": 5,
+                    "y": 25,
+                    "text": "255"
+                  },
+                  {
+                    "kind": "text",
+                    "x": 22,
+                    "y": 105,
+                    "text": "0"
+                  },
+                  {
+                    "kind": "text",
+                    "x": 33,
+                    "y": 125,
+                    "text": "10"
+                  },
+                  {
+                    "kind": "text",
+                    "x": 212,
+                    "y": 125,
+                    "text": "25 kg"
+                  },
+                  {
+                    "kind": "text",
+                    "x": 420,
+                    "y": 125,
+                    "text": "40"
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 40,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 53,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 66,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 79,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 92,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 105,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 118,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 131,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 144,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 157,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 170,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 183,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 196,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 209,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 222,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 235,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 248,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 261,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 274,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 287,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 300,
+                    "cy": 106,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 313,
+                    "cy": 101,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 326,
+                    "cy": 96,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 339,
+                    "cy": 91,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 352,
+                    "cy": 86,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 365,
+                    "cy": 81,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 378,
+                    "cy": 76,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 391,
+                    "cy": 71,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 404,
+                    "cy": 66,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 417,
+                    "cy": 61,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 430,
+                    "cy": 56,
+                    "r": 2
+                  },
+                  {
+                    "kind": "circle",
+                    "cx": 404,
+                    "cy": 66,
+                    "r": 5
+                  }
+                ]
+              }
+            }
+          ],
+          "state": {
+            "cabin": 0,
+            "gold": 1,
+            "route": 1,
+            "weight": 38
+          }
+        },
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Domestic allowances are 23 kg in Economy and 32 kg in Business. Gold adds 5 kg, and International adds 2 kg. You pay $15 per kilogram over your allowance and $0 at or below it. Each dot on the curve represents a whole kilogram; the larger dot marks your selected bag weight."
+          },
+          {
+            "type": "ui"
+          }
+        ],
+        "transport": true
+      }
+    }
+  ],
+  "after": {
+    "items": [
+      {
+        "type": "Control",
+        "binding": "cabin",
+        "props": {
+          "label": "Cabin",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "Economy",
+            "Business"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "gold",
+        "props": {
+          "label": "Gold status",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "No Gold",
+            "Gold"
+          ],
+          "value": 1
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "route",
+        "props": {
+          "label": "Route",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "Domestic",
+            "International"
+          ],
+          "value": 1
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "weight",
+        "props": {
+          "label": "Bag weight (kg)",
+          "min": 10,
+          "max": 40,
+          "choices": [],
+          "value": 38
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Bag allowance (kg)",
+          "value": 30
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Single-bag fee ($)",
+          "value": 120
+        }
+      },
+      {
+        "type": "Graphic",
+        "props": {
+          "label": "Single-bag fee by weight",
+          "items": [
+            {
+              "kind": "path",
+              "d": "M 36 21 H 40 V 106 H 430 M 40 106 V 110 M 235 106 V 110 M 430 106 V 110"
+            },
+            {
+              "kind": "path",
+              "d": "M 40 106 H 300 L 430 56"
+            },
+            {
+              "kind": "text",
+              "x": 4,
+              "y": 12,
+              "text": "Fee ($)"
+            },
+            {
+              "kind": "text",
+              "x": 5,
+              "y": 25,
+              "text": "255"
+            },
+            {
+              "kind": "text",
+              "x": 22,
+              "y": 105,
+              "text": "0"
+            },
+            {
+              "kind": "text",
+              "x": 33,
+              "y": 125,
+              "text": "10"
+            },
+            {
+              "kind": "text",
+              "x": 212,
+              "y": 125,
+              "text": "25 kg"
+            },
+            {
+              "kind": "text",
+              "x": 420,
+              "y": 125,
+              "text": "40"
+            },
+            {
+              "kind": "circle",
+              "cx": 40,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 53,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 66,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 79,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 92,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 105,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 118,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 131,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 144,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 157,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 170,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 183,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 196,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 209,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 222,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 235,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 248,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 261,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 274,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 287,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 300,
+              "cy": 106,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 313,
+              "cy": 101,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 326,
+              "cy": 96,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 339,
+              "cy": 91,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 352,
+              "cy": 86,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 365,
+              "cy": 81,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 378,
+              "cy": 76,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 391,
+              "cy": 71,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 404,
+              "cy": 66,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 417,
+              "cy": 61,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 430,
+              "cy": 56,
+              "r": 2
+            },
+            {
+              "kind": "circle",
+              "cx": 404,
+              "cy": 66,
+              "r": 5
+            }
+          ]
+        }
+      }
+    ],
+    "state": {
+      "cabin": 0,
+      "gold": 1,
+      "route": 1,
+      "weight": 38
+    }
+  },
+  "delivery": "accepted"
+}

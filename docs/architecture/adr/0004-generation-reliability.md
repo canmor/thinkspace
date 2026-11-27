@@ -49,3 +49,7 @@ G used 30,514 input and 13,201 completion tokens over 35 calls. Its billed cost 
 ## Next experiment for separate review
 
 Freeze Sol and the current profile. Arrange independent assessments of rendered outputs including B01/B02, compare representation choice and cognitive quality with actual native ChatGPT responses, and add B05 multi-turn refinement. Record model configuration, latency and available cost data. This decision covers local experiments only. Goal 2C and product integration require separate approval.
+
+## Goal 2B.2 follow-up evidence
+
+[Goal 2B.2 results](../../../apps/genui-lab/evidence/goal-2b2/findings.md) exercise this decision with B05 and native product samples. Rejected revisions retained the last admitted artifact. Chart generation within the existing output cap was the principal observed delivery bottleneck. The independent reader assessment remains pending.

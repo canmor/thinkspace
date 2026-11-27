@@ -28,3 +28,5 @@ Alternatives considered: chat-centric faster initial delivery but context/artifa
 2026-11-27 · ADR 0002 conditionally accepted for Goal 2A only. [ADR 0003](adr/0003-restricted-generation.md) records the restricted generation results, residual risks and proposed next experiment. Human architecture review is pending.
 
 [ADR 0004 — Restricted generation reliability](adr/0004-generation-reliability.md) records the conditional architecture review, revised scoring and Sol reference configuration for the next local experiment.
+
+Goal 2B.2 exercised ADR 0004's approved local scope. The selected Sol configuration delivered one of four complete three-revision trajectories. Keep the existing execution and admission limits for review. Native render captures and a separate reader worksheet are available for independent assessment. [Evidence and limitations](../../apps/genui-lab/evidence/goal-2b2/findings.md)
