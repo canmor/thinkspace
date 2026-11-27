@@ -1,0 +1,95 @@
+{
+  "id": "G-T11-json-1701",
+  "task": "T11",
+  "protocol": "json",
+  "seed": 1701,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooIUVdF33CA3r1TUzsfXiS7ptmIf\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795778450,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Each tray cell holds 1 seedling and needs 0.25 litres of water.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"{\\\\\\\"root\\\\\\\":\\\\\\\"layout\\\\\\\",\\\\\\\"elements\\\\\\\":{\\\\\\\"layout\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"props\\\\\\\":{},\\\\\\\"children\\\\\\\":[\\\\\\\"rowsInput\\\\\\\",\\\\\\\"columnsInput\\\\\\\",\\\\\\\"seedlings\\\\\\\",\\\\\\\"water\\\\\\\"]},\\\\\\\"rowsInput\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Tray rows\\\\\\\",\\\\\\\"min\\\\\\\":1,\\\\\\\"max\\\\\\\":4,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/rows\\\\\\\"}}},\\\\\\\"columnsInput\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Tray columns\\\\\\\",\\\\\\\"min\\\\\\\":2,\\\\\\\"max\\\\\\\":6,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/columns\\\\\\\"}}},\\\\\\\"seedlings\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Metric\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Seedling count\\\\\\\",\\\\\\\"value\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/rows\\\\\\\"},\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/columns\\\\\\\"}}}}},\\\\\\\"water\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Metric\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Water needed (litres)\\\\\\\",\\\\\\\"value\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/rows\\\\\\\"},\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/columns\\\\\\\"}}},\\\\\\\"b\\\\\\\":0.25}}}}}}\\\",\\n      \\\"state\\\": [\\n        {\\\"name\\\": \\\"rows\\\", \\\"value\\\": 2},\\n        {\\\"name\\\": \\\"columns\\\", \\\"value\\\": 3}\\n      ]\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 891,\n    \"completion_tokens\": 331,\n    \"total_tokens\": 1222,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 5344,
+      "usage": {
+        "prompt_tokens": 891,
+        "completion_tokens": 331,
+        "total_tokens": 1222,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Each tray cell holds 1 seedling and needs 0.25 litres of water.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"rowsInput\\\",\\\"columnsInput\\\",\\\"seedlings\\\",\\\"water\\\"]},\\\"rowsInput\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Tray rows\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/rows\\\"}}},\\\"columnsInput\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Tray columns\\\",\\\"min\\\":2,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/columns\\\"}}},\\\"seedlings\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Seedling count\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/rows\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/columns\\\"}}}}},\\\"water\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Water needed (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/rows\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/columns\\\"}}},\\\"b\\\":0.25}}}}}}\",\n      \"state\": [\n        {\"name\": \"rows\", \"value\": 2},\n        {\"name\": \"columns\", \"value\": 3}\n      ]\n    }\n  ]\n}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"choice\\\",\\\"result\\\"]},\\\"choice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Chimes\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/n\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Beats\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/n\\\"},\\\"b\\\":3}}}}}}\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Build a greenhouse tray planner. Rows range from 1 to 4, columns from 2 to 6, initially 2 rows and 3 columns. Each cell holds one seedling and needs 0.25 litres of water. Show the seedling count and water needed as both dimensions change."
+        }
+      ],
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Control",
+            "props": {
+              "label": "Tray rows",
+              "min": 1,
+              "max": 4,
+              "choices": [],
+              "value": 2
+            },
+            "binding": "rows"
+          },
+          {
+            "type": "Control",
+            "props": {
+              "label": "Tray columns",
+              "min": 2,
+              "max": 6,
+              "choices": [],
+              "value": 3
+            },
+            "binding": "columns"
+          },
+          {
+            "type": "Metric",
+            "props": {
+              "label": "Seedling count",
+              "value": 6
+            }
+          },
+          {
+            "type": "Metric",
+            "props": {
+              "label": "Water needed (litres)",
+              "value": 1.5
+            }
+          }
+        ],
+        "state": {
+          "rows": 2,
+          "columns": 3
+        }
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Each tray cell holds 1 seedling and needs 0.25 litres of water."
+        },
+        {
+          "type": "ui"
+        }
+      ],
+      "transport": true
+    }
+  ]
+}

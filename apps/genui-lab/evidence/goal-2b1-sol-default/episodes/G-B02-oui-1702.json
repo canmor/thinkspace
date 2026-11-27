@@ -1,0 +1,135 @@
+{
+  "id": "G-B02-oui-1702",
+  "task": "B02",
+  "protocol": "oui",
+  "seed": 1702,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooIaIBYWv3a9jj68gCCVaH1nHo7C\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795778456,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Decouple the three components by giving each a different decision: the Conversation Engine decides what happened in the conversation, the Context Engine decides what fits in the next model request, and the Application Orchestrator decides what happens next.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([diagram])\\\\ndiagram = Graphic(\\\\\\\"The orchestrator calls both engines; neither engine calls the other\\\\\\\", [{kind:\\\\\\\"rect\\\\\\\",x:106,y:8,width:238,height:30},{kind:\\\\\\\"text\\\\\\\",x:128,y:28,text:\\\\\\\"Application Orchestrator\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 225 38 V 59 H 110 V 83 M 105 77 L 110 83 L 115 77 M 225 59 H 340 V 83 M 335 77 L 340 83 L 345 77\\\\\\\"},{kind:\\\\\\\"rect\\\\\\\",x:8,y:85,width:204,height:42},{kind:\\\\\\\"text\\\\\\\",x:28,y:102,text:\\\\\\\"Conversation Engine\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:28,y:120,text:\\\\\\\"Messages and lineage\\\\\\\"},{kind:\\\\\\\"rect\\\\\\\",x:238,y:85,width:204,height:42},{kind:\\\\\\\"text\\\\\\\",x:258,y:102,text:\\\\\\\"Context Engine\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:258,y:120,text:\\\\\\\"Selection and budget\\\\\\\"}])\\\",\\n      \\\"state\\\": []\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Conversation Engine: append messages against explicit parent IDs and return a read-only snapshot of the selected branch. It owns IDs and lineage validation. It does not rank references, count prompt tokens, or call the model.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Context Engine: take the snapshot, candidate references, and the token budget available for references. Return the selected references in prompt order, with their source IDs and token usage. Measure cost using the tokenizer for the target model. If nothing fits, return an empty selection rather than exceeding the budget. It never writes messages or changes lineage.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Application Orchestrator: append the user message, read the branch snapshot at that message, and compute the reference budget after accounting for required prompt content and reserved response capacity. Ask the Context Engine for a selection, call the model, then append the reply to the original user message—not whichever message is newest when the model returns.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Use explicit request and response types rather than shared mutable state. Pass the snapshot into context selection instead of letting the Context Engine fetch live conversation state. Keep retries in the orchestrator and make appends idempotent so a retried turn does not create duplicate messages. That gives you three independent tests: lineage with fixed IDs, selection with fixed snapshots and budgets, and workflow with stubbed engines.\\\"\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 789,\n    \"completion_tokens\": 751,\n    \"total_tokens\": 1540,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 94,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 15884,
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 751,
+        "total_tokens": 1540,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 94,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Decouple the three components by giving each a different decision: the Conversation Engine decides what happened in the conversation, the Context Engine decides what fits in the next model request, and the Application Orchestrator decides what happens next.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([diagram])\\ndiagram = Graphic(\\\"The orchestrator calls both engines; neither engine calls the other\\\", [{kind:\\\"rect\\\",x:106,y:8,width:238,height:30},{kind:\\\"text\\\",x:128,y:28,text:\\\"Application Orchestrator\\\"},{kind:\\\"path\\\",d:\\\"M 225 38 V 59 H 110 V 83 M 105 77 L 110 83 L 115 77 M 225 59 H 340 V 83 M 335 77 L 340 83 L 345 77\\\"},{kind:\\\"rect\\\",x:8,y:85,width:204,height:42},{kind:\\\"text\\\",x:28,y:102,text:\\\"Conversation Engine\\\"},{kind:\\\"text\\\",x:28,y:120,text:\\\"Messages and lineage\\\"},{kind:\\\"rect\\\",x:238,y:85,width:204,height:42},{kind:\\\"text\\\",x:258,y:102,text:\\\"Context Engine\\\"},{kind:\\\"text\\\",x:258,y:120,text:\\\"Selection and budget\\\"}])\",\n      \"state\": []\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Conversation Engine: append messages against explicit parent IDs and return a read-only snapshot of the selected branch. It owns IDs and lineage validation. It does not rank references, count prompt tokens, or call the model.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Context Engine: take the snapshot, candidate references, and the token budget available for references. Return the selected references in prompt order, with their source IDs and token usage. Measure cost using the tokenizer for the target model. If nothing fits, return an empty selection rather than exceeding the budget. It never writes messages or changes lineage.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Application Orchestrator: append the user message, read the branch snapshot at that message, and compute the reference budget after accounting for required prompt content and reserved response capacity. Ask the Context Engine for a selection, call the model, then append the reply to the original user message—not whichever message is newest when the model returns.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Use explicit request and response types rather than shared mutable state. Pass the snapshot into context selection instead of letting the Context Engine fetch live conversation state. Keep retries in the orchestrator and make appends idempotent so a retried turn does not create duplicate messages. That gives you three independent tests: lineage with fixed IDs, selection with fixed snapshots and budgets, and workflow with stubbed engines.\"\n    }\n  ]\n}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ],
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Graphic",
+            "props": {
+              "label": "The orchestrator calls both engines; neither engine calls the other",
+              "items": [
+                {
+                  "kind": "rect",
+                  "x": 106,
+                  "y": 8,
+                  "width": 238,
+                  "height": 30
+                },
+                {
+                  "kind": "text",
+                  "x": 128,
+                  "y": 28,
+                  "text": "Application Orchestrator"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 225 38 V 59 H 110 V 83 M 105 77 L 110 83 L 115 77 M 225 59 H 340 V 83 M 335 77 L 340 83 L 345 77"
+                },
+                {
+                  "kind": "rect",
+                  "x": 8,
+                  "y": 85,
+                  "width": 204,
+                  "height": 42
+                },
+                {
+                  "kind": "text",
+                  "x": 28,
+                  "y": 102,
+                  "text": "Conversation Engine"
+                },
+                {
+                  "kind": "text",
+                  "x": 28,
+                  "y": 120,
+                  "text": "Messages and lineage"
+                },
+                {
+                  "kind": "rect",
+                  "x": 238,
+                  "y": 85,
+                  "width": 204,
+                  "height": 42
+                },
+                {
+                  "kind": "text",
+                  "x": 258,
+                  "y": 102,
+                  "text": "Context Engine"
+                },
+                {
+                  "kind": "text",
+                  "x": 258,
+                  "y": 120,
+                  "text": "Selection and budget"
+                }
+              ]
+            }
+          }
+        ],
+        "state": {}
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Decouple the three components by giving each a different decision: the Conversation Engine decides what happened in the conversation, the Context Engine decides what fits in the next model request, and the Application Orchestrator decides what happens next."
+        },
+        {
+          "type": "ui"
+        },
+        {
+          "type": "text",
+          "text": "Conversation Engine: append messages against explicit parent IDs and return a read-only snapshot of the selected branch. It owns IDs and lineage validation. It does not rank references, count prompt tokens, or call the model."
+        },
+        {
+          "type": "text",
+          "text": "Context Engine: take the snapshot, candidate references, and the token budget available for references. Return the selected references in prompt order, with their source IDs and token usage. Measure cost using the tokenizer for the target model. If nothing fits, return an empty selection rather than exceeding the budget. It never writes messages or changes lineage."
+        },
+        {
+          "type": "text",
+          "text": "Application Orchestrator: append the user message, read the branch snapshot at that message, and compute the reference budget after accounting for required prompt content and reserved response capacity. Ask the Context Engine for a selection, call the model, then append the reply to the original user message—not whichever message is newest when the model returns."
+        },
+        {
+          "type": "text",
+          "text": "Use explicit request and response types rather than shared mutable state. Pass the snapshot into context selection instead of letting the Context Engine fetch live conversation state. Keep retries in the orchestrator and make appends idempotent so a retried turn does not create duplicate messages. That gives you three independent tests: lineage with fixed IDs, selection with fixed snapshots and budgets, and workflow with stubbed engines."
+        }
+      ],
+      "transport": true
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "D-B01-json-1701",
+  "task": "B01",
+  "protocol": "json",
+  "seed": 1701,
+  "arm": "D",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo7X3YaSQM2zHoYix3dJ2UpgIqme\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777771,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If \\\\\\\\( \\\\\\\\mathbf{a} \\\\\\\\) and \\\\\\\\( \\\\\\\\mathbf{b} \\\\\\\\) are vectors, then \\\\\\\\( \\\\\\\\mathbf{a} \\\\\\\\cdot \\\\\\\\mathbf{b} = |\\\\\\\\mathbf{a}| |\\\\\\\\mathbf{b}| \\\\\\\\cos(\\\\\\\\theta) \\\\\\\\), where \\\\\\\\( \\\\\\\\theta \\\\\\\\) is the angle between them.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"When the vectors are orthogonal (perpendicular), \\\\\\\\( \\\\\\\\theta = 90^\\\\\\\\circ \\\\\\\\) and \\\\\\\\( \\\\\\\\cos(90^\\\\\\\\circ) = 0 \\\\\\\\), so their dot product is zero. This means there is no component of one vector along the other.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If the dot product is negative, the angle between vectors is greater than 90°, indicating that the projection of one vector onto the other points in the opposite direction. This is called a negative projection.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Protocol source and initial state for dot product demonstration\\\\n// Inputs: Vector A components (Ax, Ay), Vector B components (Bx, By)\\\\n// Outputs: Dot product, lengths, angle, projection\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"Ax\\\",\\\"value\\\":3},{\\\"name\\\":\\\"Ay\\\",\\\"value\\\":4},{\\\"name\\\":\\\"Bx\\\",\\\"value\\\":4},{\\\"name\\\":\\\"By\\\",\\\"value\\\":-3}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 672,\n    \"completion_tokens\": 343,\n    \"total_tokens\": 1015,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 5537,
+      "usage": {
+        "prompt_tokens": 672,
+        "completion_tokens": 343,
+        "total_tokens": 1015,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\"},{\"type\":\"text\",\"text\":\"If \\\\( \\\\mathbf{a} \\\\) and \\\\( \\\\mathbf{b} \\\\) are vectors, then \\\\( \\\\mathbf{a} \\\\cdot \\\\mathbf{b} = |\\\\mathbf{a}| |\\\\mathbf{b}| \\\\cos(\\\\theta) \\\\), where \\\\( \\\\theta \\\\) is the angle between them.\"},{\"type\":\"text\",\"text\":\"When the vectors are orthogonal (perpendicular), \\\\( \\\\theta = 90^\\\\circ \\\\) and \\\\( \\\\cos(90^\\\\circ) = 0 \\\\), so their dot product is zero. This means there is no component of one vector along the other.\"},{\"type\":\"text\",\"text\":\"If the dot product is negative, the angle between vectors is greater than 90°, indicating that the projection of one vector onto the other points in the opposite direction. This is called a negative projection.\"},{\"type\":\"ui\",\"source\":\"// Protocol source and initial state for dot product demonstration\\n// Inputs: Vector A components (Ax, Ay), Vector B components (Bx, By)\\n// Outputs: Dot product, lengths, angle, projection\\n\",\"state\":[{\"name\":\"Ax\",\"value\":3},{\"name\":\"Ay\",\"value\":4},{\"name\":\"Bx\",\"value\":4},{\"name\":\"By\",\"value\":-3}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Unexpected token '/', \"// Protoco\"... is not valid JSON"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo7caN5Cd2wR44TysPvWipxMc6Tg\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777776,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If \\\\\\\\( \\\\\\\\mathbf{a} \\\\\\\\) and \\\\\\\\( \\\\\\\\mathbf{b} \\\\\\\\) are vectors, then \\\\\\\\( \\\\\\\\mathbf{a} \\\\\\\\cdot \\\\\\\\mathbf{b} = |\\\\\\\\mathbf{a}| |\\\\\\\\mathbf{b}| \\\\\\\\cos(\\\\\\\\theta) \\\\\\\\), where \\\\\\\\( \\\\\\\\theta \\\\\\\\) is the angle between them.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"When the vectors are orthogonal (perpendicular), \\\\\\\\( \\\\\\\\theta = 90^\\\\\\\\circ \\\\\\\\) and \\\\\\\\( \\\\\\\\cos(90^\\\\\\\\circ) = 0 \\\\\\\\), so their dot product is zero. This means there is no component of one vector along the other.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If the dot product is negative, the angle between vectors is greater than 90°, indicating that the projection of one vector onto the other points in the opposite direction. This is called a negative projection.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"Ax: integer 0 100 3\\\\nAy: integer 0 100 4\\\\nBx: integer 0 100 4\\\\nBy: integer -100 100 -3\\\\nDotProduct: integer 0 10000 0\\\\nLengthA: integer 0 100 0\\\\nLengthB: integer 0 100 0\\\\nAngleDegrees: integer 0 180 0\\\\nProjection: integer -100 100 0\\\",\\\"state\\\":[{\\\"name\\\":\\\"Ax\\\",\\\"value\\\":3},{\\\"name\\\":\\\"Ay\\\",\\\"value\\\":4},{\\\"name\\\":\\\"Bx\\\",\\\"value\\\":4},{\\\"name\\\":\\\"By\\\",\\\"value\\\":-3}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1055,\n    \"completion_tokens\": 394,\n    \"total_tokens\": 1449,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 6025,
+      "usage": {
+        "prompt_tokens": 1055,
+        "completion_tokens": 394,
+        "total_tokens": 1449,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\"},{\"type\":\"text\",\"text\":\"If \\\\( \\\\mathbf{a} \\\\) and \\\\( \\\\mathbf{b} \\\\) are vectors, then \\\\( \\\\mathbf{a} \\\\cdot \\\\mathbf{b} = |\\\\mathbf{a}| |\\\\mathbf{b}| \\\\cos(\\\\theta) \\\\), where \\\\( \\\\theta \\\\) is the angle between them.\"},{\"type\":\"text\",\"text\":\"When the vectors are orthogonal (perpendicular), \\\\( \\\\theta = 90^\\\\circ \\\\) and \\\\( \\\\cos(90^\\\\circ) = 0 \\\\), so their dot product is zero. This means there is no component of one vector along the other.\"},{\"type\":\"text\",\"text\":\"If the dot product is negative, the angle between vectors is greater than 90°, indicating that the projection of one vector onto the other points in the opposite direction. This is called a negative projection.\"},{\"type\":\"ui\",\"source\":\"Ax: integer 0 100 3\\nAy: integer 0 100 4\\nBx: integer 0 100 4\\nBy: integer -100 100 -3\\nDotProduct: integer 0 10000 0\\nLengthA: integer 0 100 0\\nLengthB: integer 0 100 0\\nAngleDegrees: integer 0 180 0\\nProjection: integer -100 100 0\",\"state\":[{\"name\":\"Ax\",\"value\":3},{\"name\":\"Ay\",\"value\":4},{\"name\":\"Bx\",\"value\":4},{\"name\":\"By\",\"value\":-3}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\"},{\"type\":\"text\",\"text\":\"If \\\\( \\\\mathbf{a} \\\\) and \\\\( \\\\mathbf{b} \\\\) are vectors, then \\\\( \\\\mathbf{a} \\\\cdot \\\\mathbf{b} = |\\\\mathbf{a}| |\\\\mathbf{b}| \\\\cos(\\\\theta) \\\\), where \\\\( \\\\theta \\\\) is the angle between them.\"},{\"type\":\"text\",\"text\":\"When the vectors are orthogonal (perpendicular), \\\\( \\\\theta = 90^\\\\circ \\\\) and \\\\( \\\\cos(90^\\\\circ) = 0 \\\\), so their dot product is zero. This means there is no component of one vector along the other.\"},{\"type\":\"text\",\"text\":\"If the dot product is negative, the angle between vectors is greater than 90°, indicating that the projection of one vector onto the other points in the opposite direction. This is called a negative projection.\"},{\"type\":\"ui\",\"source\":\"// Protocol source and initial state for dot product demonstration\\n// Inputs: Vector A components (Ax, Ay), Vector B components (Bx, By)\\n// Outputs: Dot product, lengths, angle, projection\\n\",\"state\":[{\"name\":\"Ax\",\"value\":3},{\"name\":\"Ay\",\"value\":4},{\"name\":\"Bx\",\"value\":4},{\"name\":\"By\",\"value\":-3}]}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Unexpected token '/', \"// Protoco\"... is not valid JSON. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Unexpected token 'A', \"Ax: intege\"... is not valid JSON"
+    }
+  ]
+}

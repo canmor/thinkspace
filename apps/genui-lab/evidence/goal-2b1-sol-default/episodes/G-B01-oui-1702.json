@@ -1,0 +1,152 @@
+{
+  "id": "G-B01-oui-1702",
+  "task": "B01",
+  "protocol": "oui",
+  "seed": 1702,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooIZvsYeZov1vnwnglfoNd22kewF\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795778455,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product measures how much one vector points along another. For nonzero b, drop a perpendicular from the tip of a to the line through b. The signed distance from the common starting point to where it lands is the scalar projection of a onto b. Multiply that distance by the length of b: a · b = ‖a‖ ‖b‖ cos θ, where θ is the angle between the vectors.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([diagram])\\\\ndiagram = Graphic(\\\\\\\"Signed projection of a onto b\\\\\\\",[{kind:\\\\\\\"text\\\\\\\",x:12,y:20,text:\\\\\\\"Positive\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:161,y:20,text:\\\\\\\"Orthogonal\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:311,y:20,text:\\\\\\\"Negative\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 25 96 H 130 M 122 91 L 130 96 L 122 101 M 25 96 L 87 43 M 77 45 L 87 43 L 84 53 M 87 50 V 58 M 87 63 V 71 M 87 76 V 84 M 87 89 V 96\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:93,y:44,text:\\\\\\\"a\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:118,y:84,text:\\\\\\\"b\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:64,y:119,text:\\\\\\\"a · b > 0\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 180 96 H 279 M 271 91 L 279 96 L 271 101 M 180 96 V 42 M 175 50 L 180 42 L 185 50 M 180 85 H 191 V 96\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:190,y:47,text:\\\\\\\"a\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:267,y:84,text:\\\\\\\"b\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:204,y:119,text:\\\\\\\"a · b = 0\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 314 96 H 431 M 423 91 L 431 96 L 423 101 M 369 96 L 327 43 M 329 53 L 327 43 L 337 47 M 327 50 V 58 M 327 63 V 71 M 327 76 V 84 M 327 89 V 96\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:315,y:43,text:\\\\\\\"a\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:419,y:84,text:\\\\\\\"b\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:351,y:119,text:\\\\\\\"a · b < 0\\\\\\\"}])\\\",\\\"state\\\":[]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If the projection lands in the direction b points, the dot product is positive. If the vectors are orthogonal (at 90°), it lands at the starting point, so the dot product is zero. If it lands on the opposite side, the projection and dot product are negative. A dot product with the zero vector is also zero, even though the angle is undefined.\\\"}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 774,\n    \"completion_tokens\": 788,\n    \"total_tokens\": 1562,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 117,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 15661,
+      "usage": {
+        "prompt_tokens": 774,
+        "completion_tokens": 788,
+        "total_tokens": 1562,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 117,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product measures how much one vector points along another. For nonzero b, drop a perpendicular from the tip of a to the line through b. The signed distance from the common starting point to where it lands is the scalar projection of a onto b. Multiply that distance by the length of b: a · b = ‖a‖ ‖b‖ cos θ, where θ is the angle between the vectors.\"},{\"type\":\"ui\",\"source\":\"root = Stack([diagram])\\ndiagram = Graphic(\\\"Signed projection of a onto b\\\",[{kind:\\\"text\\\",x:12,y:20,text:\\\"Positive\\\"},{kind:\\\"text\\\",x:161,y:20,text:\\\"Orthogonal\\\"},{kind:\\\"text\\\",x:311,y:20,text:\\\"Negative\\\"},{kind:\\\"path\\\",d:\\\"M 25 96 H 130 M 122 91 L 130 96 L 122 101 M 25 96 L 87 43 M 77 45 L 87 43 L 84 53 M 87 50 V 58 M 87 63 V 71 M 87 76 V 84 M 87 89 V 96\\\"},{kind:\\\"text\\\",x:93,y:44,text:\\\"a\\\"},{kind:\\\"text\\\",x:118,y:84,text:\\\"b\\\"},{kind:\\\"text\\\",x:64,y:119,text:\\\"a · b > 0\\\"},{kind:\\\"path\\\",d:\\\"M 180 96 H 279 M 271 91 L 279 96 L 271 101 M 180 96 V 42 M 175 50 L 180 42 L 185 50 M 180 85 H 191 V 96\\\"},{kind:\\\"text\\\",x:190,y:47,text:\\\"a\\\"},{kind:\\\"text\\\",x:267,y:84,text:\\\"b\\\"},{kind:\\\"text\\\",x:204,y:119,text:\\\"a · b = 0\\\"},{kind:\\\"path\\\",d:\\\"M 314 96 H 431 M 423 91 L 431 96 L 423 101 M 369 96 L 327 43 M 329 53 L 327 43 L 337 47 M 327 50 V 58 M 327 63 V 71 M 327 76 V 84 M 327 89 V 96\\\"},{kind:\\\"text\\\",x:315,y:43,text:\\\"a\\\"},{kind:\\\"text\\\",x:419,y:84,text:\\\"b\\\"},{kind:\\\"text\\\",x:351,y:119,text:\\\"a · b < 0\\\"}])\",\"state\":[]},{\"type\":\"text\",\"text\":\"If the projection lands in the direction b points, the dot product is positive. If the vectors are orthogonal (at 90°), it lands at the starting point, so the dot product is zero. If it lands on the opposite side, the projection and dot product are negative. A dot product with the zero vector is also zero, even though the angle is undefined.\"}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ],
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Graphic",
+            "props": {
+              "label": "Signed projection of a onto b",
+              "items": [
+                {
+                  "kind": "text",
+                  "x": 12,
+                  "y": 20,
+                  "text": "Positive"
+                },
+                {
+                  "kind": "text",
+                  "x": 161,
+                  "y": 20,
+                  "text": "Orthogonal"
+                },
+                {
+                  "kind": "text",
+                  "x": 311,
+                  "y": 20,
+                  "text": "Negative"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 25 96 H 130 M 122 91 L 130 96 L 122 101 M 25 96 L 87 43 M 77 45 L 87 43 L 84 53 M 87 50 V 58 M 87 63 V 71 M 87 76 V 84 M 87 89 V 96"
+                },
+                {
+                  "kind": "text",
+                  "x": 93,
+                  "y": 44,
+                  "text": "a"
+                },
+                {
+                  "kind": "text",
+                  "x": 118,
+                  "y": 84,
+                  "text": "b"
+                },
+                {
+                  "kind": "text",
+                  "x": 64,
+                  "y": 119,
+                  "text": "a · b > 0"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 180 96 H 279 M 271 91 L 279 96 L 271 101 M 180 96 V 42 M 175 50 L 180 42 L 185 50 M 180 85 H 191 V 96"
+                },
+                {
+                  "kind": "text",
+                  "x": 190,
+                  "y": 47,
+                  "text": "a"
+                },
+                {
+                  "kind": "text",
+                  "x": 267,
+                  "y": 84,
+                  "text": "b"
+                },
+                {
+                  "kind": "text",
+                  "x": 204,
+                  "y": 119,
+                  "text": "a · b = 0"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 314 96 H 431 M 423 91 L 431 96 L 423 101 M 369 96 L 327 43 M 329 53 L 327 43 L 337 47 M 327 50 V 58 M 327 63 V 71 M 327 76 V 84 M 327 89 V 96"
+                },
+                {
+                  "kind": "text",
+                  "x": 315,
+                  "y": 43,
+                  "text": "a"
+                },
+                {
+                  "kind": "text",
+                  "x": 419,
+                  "y": 84,
+                  "text": "b"
+                },
+                {
+                  "kind": "text",
+                  "x": 351,
+                  "y": 119,
+                  "text": "a · b < 0"
+                }
+              ]
+            }
+          }
+        ],
+        "state": {}
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The dot product measures how much one vector points along another. For nonzero b, drop a perpendicular from the tip of a to the line through b. The signed distance from the common starting point to where it lands is the scalar projection of a onto b. Multiply that distance by the length of b: a · b = ‖a‖ ‖b‖ cos θ, where θ is the angle between the vectors."
+        },
+        {
+          "type": "ui"
+        },
+        {
+          "type": "text",
+          "text": "If the projection lands in the direction b points, the dot product is positive. If the vectors are orthogonal (at 90°), it lands at the starting point, so the dot product is zero. If it lands on the opposite side, the projection and dot product are negative. A dot product with the zero vector is also zero, even though the angle is undefined."
+        }
+      ],
+      "transport": true
+    }
+  ]
+}

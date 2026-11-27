@@ -1,0 +1,83 @@
+{
+  "id": "A-B03-json-1702",
+  "task": "B03",
+  "protocol": "json",
+  "seed": 1702,
+  "arm": "A",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooABoS6zHrcoI3tL49vSWr7xOf5y\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777935,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"root\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"weightControl\\\",\\\"rankingTable\\\"]},\\\"elements\\\":{\\\"weightControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\\\",\\\"min\\\":0,\\\"max\\\":100,\\\"value\\\":{\\\"$bindState\\\":\\\"/weights\\\"},\\\"choices\\\":[\\\"Native Experience\\\",\\\"Lightweight Runtime\\\",\\\"Delivery Efficiency\\\"]}},\\\"rankingTable\\\":{\\\"type\\\":\\\"Table\\\",\\\"props\\\":{\\\"values\\\":{\\\"$computed\\\":\\\"Rank\\\",\\\"args\\\":{\\\"rows\\\":[[\\\"Native Hybrid\\\",[9,8,7]],[\\\"Tauri\\\",[7,8,8]],[\\\"Electron\\\",[6,4,10]]],\\\"a\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weights[0]\\\"},\\\"b\\\":0.01}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weights[1]\\\"},\\\"b\\\":0.01}},\\\"c\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weights[2]\\\"},\\\"b\\\":0.01}}}}}}},\\\"$state\\\":{\\\"weights\\\":[40,25,35]}}}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 536,\n    \"completion_tokens\": 226,\n    \"total_tokens\": 762,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 3134,
+      "usage": {
+        "prompt_tokens": 536,
+        "completion_tokens": 226,
+        "total_tokens": 762,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"root\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightControl\",\"rankingTable\"]},\"elements\":{\"weightControl\":{\"type\":\"Control\",\"props\":{\"label\":\"Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",\"min\":0,\"max\":100,\"value\":{\"$bindState\":\"/weights\"},\"choices\":[\"Native Experience\",\"Lightweight Runtime\",\"Delivery Efficiency\"]}},\"rankingTable\":{\"type\":\"Table\",\"props\":{\"values\":{\"$computed\":\"Rank\",\"args\":{\"rows\":[[\"Native Hybrid\",[9,8,7]],[\"Tauri\",[7,8,8]],[\"Electron\",[6,4,10]]],\"a\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights[0]\"},\"b\":0.01}},\"b\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights[1]\"},\"b\":0.01}},\"c\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights[2]\"},\"b\":0.01}}}}}}},\"$state\":{\"weights\":[40,25,35]}}}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooAEtDFNZekqPkL3i1kRs50Iw6u3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777938,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"UI\\n{\\\"root\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"weightControls\\\",\\\"rankingTable\\\"]},\\\"elements\\\":{\\\"weightControls\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"weightNative\\\",\\\"weightLightweight\\\",\\\"weightDelivery\\\"]},\\\"weightNative\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Weight: Native Experience\\\",\\\"min\\\":0,\\\"max\\\":100,\\\"value\\\":{\\\"$bindState\\\":\\\"/weights/0\\\"}}},\\\"weightLightweight\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Weight: Lightweight Runtime\\\",\\\"min\\\":0,\\\"max\\\":100,\\\"value\\\":{\\\"$bindState\\\":\\\"/weights/1\\\"}}},\\\"weightDelivery\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Weight: Delivery Efficiency\\\",\\\"min\\\":0,\\\"max\\\":100,\\\"value\\\":{\\\"$bindState\\\":\\\"/weights/2\\\"}}},\\\"rankingTable\\\":{\\\"type\\\":\\\"Table\\\",\\\"props\\\":{\\\"values\\\":{\\\"$computed\\\":\\\"Rank\\\",\\\"args\\\":{\\\"rows\\\":[[\\\"Native Hybrid\\\",[9,8,7]],[\\\"Tauri\\\",[7,8,8]],[\\\"Electron\\\",[6,4,10]]],\\\"a\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weights/0\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/weights/1\\\"}}},\\\"b\\\":0}},\\\"b\\\":0.01}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weights/1\\\"},\\\"b\\\":0.01}},\\\"c\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weights/2\\\"},\\\"b\\\":0.01}}}}}}},\\\"$state\\\":{\\\"weights\\\":[40,25,35]}}}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 790,\n    \"completion_tokens\": 338,\n    \"total_tokens\": 1128,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 4081,
+      "usage": {
+        "prompt_tokens": 790,
+        "completion_tokens": 338,
+        "total_tokens": 1128,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "UI\n{\"root\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightControls\",\"rankingTable\"]},\"elements\":{\"weightControls\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightNative\",\"weightLightweight\",\"weightDelivery\"]},\"weightNative\":{\"type\":\"Control\",\"props\":{\"label\":\"Weight: Native Experience\",\"min\":0,\"max\":100,\"value\":{\"$bindState\":\"/weights/0\"}}},\"weightLightweight\":{\"type\":\"Control\",\"props\":{\"label\":\"Weight: Lightweight Runtime\",\"min\":0,\"max\":100,\"value\":{\"$bindState\":\"/weights/1\"}}},\"weightDelivery\":{\"type\":\"Control\",\"props\":{\"label\":\"Weight: Delivery Efficiency\",\"min\":0,\"max\":100,\"value\":{\"$bindState\":\"/weights/2\"}}},\"rankingTable\":{\"type\":\"Table\",\"props\":{\"values\":{\"$computed\":\"Rank\",\"args\":{\"rows\":[[\"Native Hybrid\",[9,8,7]],[\"Tauri\",[7,8,8]],[\"Electron\",[6,4,10]]],\"a\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$computed\":\"Excess\",\"args\":{\"a\":{\"$computed\":\"Add\",\"args\":{\"a\":{\"$state\":\"/weights/0\"},\"b\":{\"$state\":\"/weights/1\"}}},\"b\":0}},\"b\":0.01}},\"b\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights/1\"},\"b\":0.01}},\"c\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights/2\"},\"b\":0.01}}}}}}},\"$state\":{\"weights\":[40,25,35]}}}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"root\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"weightControl\",\"rankingTable\"]},\"elements\":{\"weightControl\":{\"type\":\"Control\",\"props\":{\"label\":\"Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",\"min\":0,\"max\":100,\"value\":{\"$bindState\":\"/weights\"},\"choices\":[\"Native Experience\",\"Lightweight Runtime\",\"Delivery Efficiency\"]}},\"rankingTable\":{\"type\":\"Table\",\"props\":{\"values\":{\"$computed\":\"Rank\",\"args\":{\"rows\":[[\"Native Hybrid\",[9,8,7]],[\"Tauri\",[7,8,8]],[\"Electron\",[6,4,10]]],\"a\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights[0]\"},\"b\":0.01}},\"b\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights[1]\"},\"b\":0.01}},\"c\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/weights[2]\"},\"b\":0.01}}}}}}},\"$state\":{\"weights\":[40,25,35]}}}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1133 (line 1 column 1134)"
+    }
+  ]
+}

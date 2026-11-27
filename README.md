@@ -27,3 +27,5 @@ Handoff baseline: 2026-11-27. Product discovery, not an implemented system. Star
 ## Goal 2A evidence
 
 [Restricted generation results and architecture review](docs/architecture/adr/0003-restricted-generation.md) · [Run or replay the experiments](apps/genui-lab/generation/README.md).
+
+[Goal 2B.1 findings and architecture review](docs/architecture/adr/0004-generation-reliability.md) · [Offline replay and evaluation](apps/genui-lab/generation/v2/README.md)

@@ -1,0 +1,83 @@
+{
+  "id": "A-B02-oui-1702",
+  "task": "B02",
+  "protocol": "oui",
+  "seed": 1702,
+  "arm": "A",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo9oLP4Gxv21A7NtrN2yFwgWwFAr\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777912,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"TEXT Conversation Engine owns messages and lineage, managing the flow and history of interactions. Context Engine selects relevant references and budgets their use, focusing on context relevance and resource limits. Application Orchestrator coordinates both engines, ensuring clear interfaces and communication protocols. To decouple them: define explicit APIs for message handling (Conversation Engine) and context selection (Context Engine); use asynchronous messaging or event-driven patterns for interaction; isolate state management within each engine; apply dependency inversion so Orchestrator depends on abstractions, not implementations; and enforce clear responsibility boundaries to minimize direct dependencies and allow independent evolution.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 476,\n    \"completion_tokens\": 117,\n    \"total_tokens\": 593,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 1685,
+      "usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 117,
+        "total_tokens": 593,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "TEXT Conversation Engine owns messages and lineage, managing the flow and history of interactions. Context Engine selects relevant references and budgets their use, focusing on context relevance and resource limits. Application Orchestrator coordinates both engines, ensuring clear interfaces and communication protocols. To decouple them: define explicit APIs for message handling (Conversation Engine) and context selection (Context Engine); use asynchronous messaging or event-driven patterns for interaction; isolate state management within each engine; apply dependency inversion so Orchestrator depends on abstractions, not implementations; and enforce clear responsibility boundaries to minimize direct dependencies and allow independent evolution.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo9qXNrCQ6FEbbwQXnDg0Siigp6K\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777914,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"TEXT To decouple a Conversation Engine (handling messages and lineage), a Context Engine (selecting and budgeting references), and an Application Orchestrator (coordinating them), follow these principles: 1) Define clear, minimal APIs for each engine to expose their core functions without leaking internal details. 2) Use asynchronous communication or event-driven messaging between components to avoid tight coupling and blocking calls. 3) Keep state management isolated within each engine to prevent shared mutable state. 4) The Application Orchestrator should depend on abstractions (interfaces) of the engines, enabling swapping or independent updates. 5) Enforce single responsibility per engine: Conversation Engine manages dialogue flow and history; Context Engine manages reference selection and resource budgeting; Orchestrator manages workflow and coordination logic. This separation allows independent development, testing, and scaling of each component.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 621,\n    \"completion_tokens\": 172,\n    \"total_tokens\": 793,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 2634,
+      "usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 172,
+        "total_tokens": 793,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "TEXT To decouple a Conversation Engine (handling messages and lineage), a Context Engine (selecting and budgeting references), and an Application Orchestrator (coordinating them), follow these principles: 1) Define clear, minimal APIs for each engine to expose their core functions without leaking internal details. 2) Use asynchronous communication or event-driven messaging between components to avoid tight coupling and blocking calls. 3) Keep state management isolated within each engine to prevent shared mutable state. 4) The Application Orchestrator should depend on abstractions (interfaces) of the engines, enabling swapping or independent updates. 5) Enforce single responsibility per engine: Conversation Engine manages dialogue flow and history; Context Engine manages reference selection and resource budgeting; Orchestrator manages workflow and coordination logic. This separation allows independent development, testing, and scaling of each component.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        },
+        {
+          "role": "assistant",
+          "content": "TEXT Conversation Engine owns messages and lineage, managing the flow and history of interactions. Context Engine selects relevant references and budgets their use, focusing on context relevance and resource limits. Application Orchestrator coordinates both engines, ensuring clear interfaces and communication protocols. To decouple them: define explicit APIs for message handling (Conversation Engine) and context selection (Context Engine); use asynchronous messaging or event-driven patterns for interaction; isolate state management within each engine; apply dependency inversion so Orchestrator depends on abstractions, not implementations; and enforce clear responsibility boundaries to minimize direct dependencies and allow independent evolution."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    }
+  ]
+}

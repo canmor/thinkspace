@@ -1,0 +1,3477 @@
+{
+  "rubric": "2.0",
+  "sources": [
+    {
+      "cohort": "openai",
+      "source": "evidence/goal-2a/openai/semantic-review.json",
+      "sha256": "585e45466a85836efe50da3360a0802a87fda96ae8dfc6df13c2bde4cf8d7e1f",
+      "sourceVersion": "2a.1",
+      "remap": "rubric-2.0",
+      "assessor": "assistant; independent human assessment pending"
+    },
+    {
+      "cohort": "local",
+      "source": "evidence/goal-2a/semantic-review.json",
+      "sha256": "4690e1d592916fb263136b28864472e483dee159c828dc3ec299a0571dfadf66",
+      "sourceVersion": "2a.1",
+      "remap": "rubric-2.0",
+      "assessor": "assistant; independent human assessment pending"
+    }
+  ],
+  "results": [
+    {
+      "cohort": "openai",
+      "id": "B01-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H0-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H0-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H0-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H0-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H1-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H1-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H1-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H1-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H1-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H1-oui-1703",
+        "semanticCorrect": true,
+        "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H2-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H2-json-1702",
+        "semanticCorrect": true,
+        "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H2-json-1703",
+        "semanticCorrect": true,
+        "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H2-oui-1701",
+        "semanticCorrect": true,
+        "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H2-oui-1702",
+        "semanticCorrect": true,
+        "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B01-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H2-oui-1703",
+        "semanticCorrect": true,
+        "reason": "Explains the magnitude/cosine relationship, zero orthogonal case and sign of projection.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H0-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H0-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H0-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H0-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H1-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H1-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H1-json-1702",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H1-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H1-json-1703",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H1-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H1-oui-1702",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H1-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H2-json-1701",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H2-json-1702",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H2-json-1703",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H2-oui-1701",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H2-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Assigns budget management to both Context Engine and Orchestrator.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B02-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H2-oui-1703",
+        "semanticCorrect": true,
+        "reason": "Separates message ownership, reference selection and orchestrator coordination with explicit interfaces.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H0-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H0-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H0-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H0-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NE",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B03-H0-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Claims a slider and ranking are displayed, but returns their proposed source as inert prose.",
+        "presentationIssue": "Specification printed as text."
+      },
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n\n'text' !== 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H0-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H1-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H1-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H1-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H1-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H1-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H1-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B03-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H0-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H0-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H0-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H0-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H0-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H1-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H1-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H1-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H1-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H1-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "fail",
+        "domain": "pass",
+        "behavior": "NE",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B04-H1-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Claims interactive inputs are present, but delivers a prose description.",
+        "presentationIssue": "Requested explorer is absent."
+      },
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n\n'text' !== 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H1-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "fail",
+        "domain": "pass",
+        "behavior": "NE",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B04-H1-oui-1703",
+        "semanticCorrect": false,
+        "reason": "Claims interactive inputs are present, but delivers a prose description.",
+        "presentationIssue": "Requested explorer is absent."
+      },
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n\n'text' !== 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B04-H2-oui-1701",
+        "semanticCorrect": false,
+        "reason": "Introduces a First class fare outside the fictional rules.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": {
+        "pass": true,
+        "checked": 124
+      },
+      "v2Probe": {
+        "domain": "fail",
+        "issues": [
+          "Fare options: [\"Economy\",\"Business\",\"First\"]"
+        ],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Excess Fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                1,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Excess Fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B04-H2-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Introduces a First class fare and Silver membership outside the fictional rules.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": {
+        "pass": true,
+        "checked": 124
+      },
+      "v2Probe": {
+        "domain": "fail",
+        "issues": [
+          "Fare options: [\"Economy\",\"Business\",\"First\"]",
+          "Membership options: [\"None\",\"Silver\",\"Gold\"]"
+        ],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B04-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B04-H2-oui-1703",
+        "semanticCorrect": true,
+        "reason": "Uses only the specified fare and membership cases. Fee and allowance agree with the exhaustive independent oracle.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": {
+        "pass": true,
+        "checked": 124
+      },
+      "v2Probe": {
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Excess Fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                1,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Excess Fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H0-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H0-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H0-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H0-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H1-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H1-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H1-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H1-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H1-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H2-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B06-H2-json-1702",
+        "semanticCorrect": false,
+        "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H2-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B06-H2-oui-1701",
+        "semanticCorrect": false,
+        "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B06-H2-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "openai",
+      "id": "B06-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B06-H2-oui-1703",
+        "semanticCorrect": false,
+        "reason": "Describes encryption-key custody instead of user-supplied inference API credentials and provider charges.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H0-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H0-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H0-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H0-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H0-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H1-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H1-json-1701",
+        "semanticCorrect": false,
+        "reason": "Conflates the dot product with scalar projection, omitting the magnitude factor from that interpretation. Also calls orthogonal vectors parallel.",
+        "presentationIssue": "Repetition or contradiction distracts from the geometric explanation."
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H1-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B01-H1-json-1702",
+        "semanticCorrect": false,
+        "reason": "Conflates the dot product with scalar projection, omitting the magnitude factor from that interpretation.",
+        "presentationIssue": "Repetition or contradiction distracts from the geometric explanation."
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H1-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H1-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H1-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B01-H2-json-1701",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B01-H2-json-1702",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H2-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B01-H2-oui-1701",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B01-H2-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B01-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B01-H2-oui-1703",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H0-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H0-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H0-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H0-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H0-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H1-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "fail",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B02-H1-json-1701",
+        "semanticCorrect": false,
+        "reason": "Restates the request without an interface or coordination design.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H1-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H1-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H1-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H1-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B02-H2-json-1701",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B02-H2-json-1702",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B02-H2-json-1703",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B02-H2-oui-1701",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B02-H2-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B02-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B02-H2-oui-1703",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H0-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H0-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H0-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H0-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H1-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H1-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H1-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H1-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H1-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H1-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H2-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B03-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H0-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H0-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H0-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H0-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H0-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H1-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H1-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H1-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H1-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H1-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B04-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": {
+        "pass": false,
+        "checked": 0,
+        "context": null,
+        "reason": "Interactive UI required\n+ actual - expected\n\n+ 'rejected'\n- 'accepted'\n"
+      }
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H0-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H0-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H0-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H0-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H0-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H0-oui-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H1-json-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H1-json-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H1-json-1703",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H1-oui-1701",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H1-oui-1702",
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "prior": null,
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H1-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "fail",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "prior": {
+        "id": "B06-H1-oui-1703",
+        "semanticCorrect": false,
+        "reason": "Echoes the repair instruction instead of defining BYOK.",
+        "presentationIssue": null
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H2-json-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B06-H2-json-1701",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H2-json-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B06-H2-json-1702",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H2-json-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B06-H2-json-1703",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H2-oui-1701",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B06-H2-oui-1701",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H2-oui-1702",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B06-H2-oui-1702",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    },
+    {
+      "cohort": "local",
+      "id": "B06-H2-oui-1703",
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "fail",
+        "modality": "fail"
+      },
+      "prior": {
+        "id": "B06-H2-oui-1703",
+        "semanticCorrect": false,
+        "reason": "Reproduces the unrelated duration converter instead of answering the task.",
+        "presentationIssue": "Irrelevant controls"
+      },
+      "behaviorEvidence": null
+    }
+  ]
+}

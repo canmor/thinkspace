@@ -1,0 +1,83 @@
+{
+  "id": "B-B01-json-1702",
+  "task": "B01",
+  "protocol": "json",
+  "seed": 1702,
+  "arm": "B",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo9Z2AoXSDPcQtpCgUqNMahE1fJ4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777897,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product of two vectors is a number that measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"protocol source\\\",\\\"state\\\":[{\\\"name\\\":\\\"lengthA\\\",\\\"value\\\":3},{\\\"name\\\":\\\"lengthB\\\",\\\"value\\\":4},{\\\"name\\\":\\\"angleDegrees\\\",\\\"value\\\":60}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If we have vectors A and B with lengths |A| and |B| and angle θ between them, then: dot(A,B) = |A| × |B| × cos(θ).\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"initial state\\\",\\\"state\\\":[{\\\"name\\\":\\\"angleDegrees\\\",\\\"value\\\":60}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"When the vectors are orthogonal (at 90°), cos(90°) = 0, so their dot product is zero. This means they have no component in common direction.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If the angle is greater than 90°, the cosine is negative, so the dot product is negative. This corresponds to a negative projection of one vector onto the other.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"vector visualization\\\",\\\"state\\\":[{\\\"name\\\":\\\"lengthA\\\",\\\"value\\\":3},{\\\"name\\\":\\\"lengthB\\\",\\\"value\\\":4},{\\\"name\\\":\\\"angleDegrees\\\",\\\"value\\\":120}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product can be seen as the length of one vector times the projection of the other vector onto it. The sign indicates the direction of the projection: positive if they point roughly the same way, zero if perpendicular, and negative if pointing opposite.\\\"}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 603,\n    \"completion_tokens\": 354,\n    \"total_tokens\": 957,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_4ed30fd522\"\n}\n",
+      "latencyMs": 11133,
+      "usage": {
+        "prompt_tokens": 603,
+        "completion_tokens": 354,
+        "total_tokens": 957,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a number that measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them.\"},{\"type\":\"ui\",\"source\":\"protocol source\",\"state\":[{\"name\":\"lengthA\",\"value\":3},{\"name\":\"lengthB\",\"value\":4},{\"name\":\"angleDegrees\",\"value\":60}]},{\"type\":\"text\",\"text\":\"If we have vectors A and B with lengths |A| and |B| and angle θ between them, then: dot(A,B) = |A| × |B| × cos(θ).\"},{\"type\":\"ui\",\"source\":\"initial state\",\"state\":[{\"name\":\"angleDegrees\",\"value\":60}]},{\"type\":\"text\",\"text\":\"When the vectors are orthogonal (at 90°), cos(90°) = 0, so their dot product is zero. This means they have no component in common direction.\"},{\"type\":\"text\",\"text\":\"If the angle is greater than 90°, the cosine is negative, so the dot product is negative. This corresponds to a negative projection of one vector onto the other.\"},{\"type\":\"ui\",\"source\":\"vector visualization\",\"state\":[{\"name\":\"lengthA\",\"value\":3},{\"name\":\"lengthB\",\"value\":4},{\"name\":\"angleDegrees\",\"value\":120}]},{\"type\":\"text\",\"text\":\"The dot product can be seen as the length of one vector times the projection of the other vector onto it. The sign indicates the direction of the projection: positive if they point roughly the same way, zero if perpendicular, and negative if pointing opposite.\"}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: One live UI per artifact"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo9kDhhhcl2jnglSNSp1c3sp8Uat\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777908,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product of two vectors is a number that measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"protocol source\\\",\\\"state\\\":[{\\\"name\\\":\\\"lengthA\\\",\\\"value\\\":3},{\\\"name\\\":\\\"lengthB\\\",\\\"value\\\":4},{\\\"name\\\":\\\"angleDegrees\\\",\\\"value\\\":60}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If we have vectors A and B with lengths |A| and |B| and angle θ between them, then: dot(A,B) = |A| × |B| × cos(θ).\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"When the vectors are orthogonal (at 90°), cos(90°) = 0, so their dot product is zero. This means they have no component in common direction.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"If the angle is greater than 90°, the cosine is negative, so the dot product is negative. This corresponds to a negative projection of one vector onto the other.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product can be seen as the length of one vector times the projection of the other vector onto it. The sign indicates the direction of the projection: positive if they point roughly the same way, zero if perpendicular, and negative if pointing opposite.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"vector diagram\\\",\\\"state\\\":[{\\\"name\\\":\\\"lengthA\\\",\\\"value\\\":3},{\\\"name\\\":\\\"lengthB\\\",\\\"value\\\":4},{\\\"name\\\":\\\"angleDegrees\\\",\\\"value\\\":120}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 991,\n    \"completion_tokens\": 332,\n    \"total_tokens\": 1323,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 5864,
+      "usage": {
+        "prompt_tokens": 991,
+        "completion_tokens": 332,
+        "total_tokens": 1323,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a number that measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them.\"},{\"type\":\"ui\",\"source\":\"protocol source\",\"state\":[{\"name\":\"lengthA\",\"value\":3},{\"name\":\"lengthB\",\"value\":4},{\"name\":\"angleDegrees\",\"value\":60}]},{\"type\":\"text\",\"text\":\"If we have vectors A and B with lengths |A| and |B| and angle θ between them, then: dot(A,B) = |A| × |B| × cos(θ).\"},{\"type\":\"text\",\"text\":\"When the vectors are orthogonal (at 90°), cos(90°) = 0, so their dot product is zero. This means they have no component in common direction.\"},{\"type\":\"text\",\"text\":\"If the angle is greater than 90°, the cosine is negative, so the dot product is negative. This corresponds to a negative projection of one vector onto the other.\"},{\"type\":\"text\",\"text\":\"The dot product can be seen as the length of one vector times the projection of the other vector onto it. The sign indicates the direction of the projection: positive if they point roughly the same way, zero if perpendicular, and negative if pointing opposite.\"},{\"type\":\"ui\",\"source\":\"vector diagram\",\"state\":[{\"name\":\"lengthA\",\"value\":3},{\"name\":\"lengthB\",\"value\":4},{\"name\":\"angleDegrees\",\"value\":120}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a number that measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them.\"},{\"type\":\"ui\",\"source\":\"protocol source\",\"state\":[{\"name\":\"lengthA\",\"value\":3},{\"name\":\"lengthB\",\"value\":4},{\"name\":\"angleDegrees\",\"value\":60}]},{\"type\":\"text\",\"text\":\"If we have vectors A and B with lengths |A| and |B| and angle θ between them, then: dot(A,B) = |A| × |B| × cos(θ).\"},{\"type\":\"ui\",\"source\":\"initial state\",\"state\":[{\"name\":\"angleDegrees\",\"value\":60}]},{\"type\":\"text\",\"text\":\"When the vectors are orthogonal (at 90°), cos(90°) = 0, so their dot product is zero. This means they have no component in common direction.\"},{\"type\":\"text\",\"text\":\"If the angle is greater than 90°, the cosine is negative, so the dot product is negative. This corresponds to a negative projection of one vector onto the other.\"},{\"type\":\"ui\",\"source\":\"vector visualization\",\"state\":[{\"name\":\"lengthA\",\"value\":3},{\"name\":\"lengthB\",\"value\":4},{\"name\":\"angleDegrees\",\"value\":120}]},{\"type\":\"text\",\"text\":\"The dot product can be seen as the length of one vector times the projection of the other vector onto it. The sign indicates the direction of the projection: positive if they point roughly the same way, zero if perpendicular, and negative if pointing opposite.\"}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: One live UI per artifact. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: One live UI per artifact"
+    }
+  ]
+}

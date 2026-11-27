@@ -1,0 +1,123 @@
+{
+  "id": "G-B02-oui-1701",
+  "task": "B02",
+  "protocol": "oui",
+  "seed": 1701,
+  "arm": "G",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooIGDiOudWuL2Rd71Ar0vK40EEfi\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795778436,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Separate the record of what happened from the decision about what to include next. The Conversation Engine owns the record, the Context Engine builds a budgeted input, and the Application Orchestrator runs the turn. Neither engine calls the other.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([diagram])\\\\ndiagram = Graphic(\\\\\\\"The orchestrator calls both engines\\\\\\\", [{kind:\\\\\\\"rect\\\\\\\",x:108,y:8,width:234,height:34},{kind:\\\\\\\"text\\\\\\\",x:130,y:30,text:\\\\\\\"Application Orchestrator\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 225 42 V 59 H 110 V 81 M 105 75 L 110 81 L 115 75 M 225 59 H 340 V 81 M 335 75 L 340 81 L 345 75\\\\\\\"},{kind:\\\\\\\"rect\\\\\\\",x:12,y:82,width:196,height:40},{kind:\\\\\\\"text\\\\\\\",x:23,y:107,text:\\\\\\\"Conversation Engine\\\\\\\"},{kind:\\\\\\\"rect\\\\\\\",x:242,y:82,width:196,height:40},{kind:\\\\\\\"text\\\\\\\",x:281,y:107,text:\\\\\\\"Context Engine\\\\\\\"}])\\\",\\n      \\\"state\\\": []\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Conversation Engine — Store messages and their parent links. Expose operations to append a message against an explicit parent and read a snapshot at a specific branch tip. It answers “What happened on this branch?” without deciding what belongs in a model prompt.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Context Engine — Given a read-only conversation snapshot, a reference query, and an input-token budget, select and fit the references. Return the selected content, source IDs, and token counts. Make omissions or an insufficient budget explicit; never rewrite messages or lineage to make the input fit.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Application Orchestrator — Append the user message, read the snapshot ending at that message, and call the Context Engine with the budget left after reserving space for fixed instructions and the model’s reply. Call the model, then append the reply to that same user message—not to whichever branch tip happens to be current.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Use immutable snapshots and stable IDs at the boundaries, not shared tables. Give message writes idempotency keys so a retried turn does not duplicate messages. If a run must be auditable, record its snapshot ID, selected reference versions, and budget separately from the conversation record.\\\"\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 789,\n    \"completion_tokens\": 640,\n    \"total_tokens\": 1429,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 48,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+      "latencyMs": 14300,
+      "usage": {
+        "prompt_tokens": 789,
+        "completion_tokens": 640,
+        "total_tokens": 1429,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 48,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Separate the record of what happened from the decision about what to include next. The Conversation Engine owns the record, the Context Engine builds a budgeted input, and the Application Orchestrator runs the turn. Neither engine calls the other.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([diagram])\\ndiagram = Graphic(\\\"The orchestrator calls both engines\\\", [{kind:\\\"rect\\\",x:108,y:8,width:234,height:34},{kind:\\\"text\\\",x:130,y:30,text:\\\"Application Orchestrator\\\"},{kind:\\\"path\\\",d:\\\"M 225 42 V 59 H 110 V 81 M 105 75 L 110 81 L 115 75 M 225 59 H 340 V 81 M 335 75 L 340 81 L 345 75\\\"},{kind:\\\"rect\\\",x:12,y:82,width:196,height:40},{kind:\\\"text\\\",x:23,y:107,text:\\\"Conversation Engine\\\"},{kind:\\\"rect\\\",x:242,y:82,width:196,height:40},{kind:\\\"text\\\",x:281,y:107,text:\\\"Context Engine\\\"}])\",\n      \"state\": []\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Conversation Engine — Store messages and their parent links. Expose operations to append a message against an explicit parent and read a snapshot at a specific branch tip. It answers “What happened on this branch?” without deciding what belongs in a model prompt.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Context Engine — Given a read-only conversation snapshot, a reference query, and an input-token budget, select and fit the references. Return the selected content, source IDs, and token counts. Make omissions or an insufficient budget explicit; never rewrite messages or lineage to make the input fit.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Application Orchestrator — Append the user message, read the snapshot ending at that message, and call the Context Engine with the budget left after reserving space for fixed instructions and the model’s reply. Call the model, then append the reply to that same user message—not to whichever branch tip happens to be current.\"\n    },\n    {\n      \"type\": \"text\",\n      \"text\": \"Use immutable snapshots and stable IDs at the boundaries, not shared tables. Give message writes idempotency keys so a retried turn does not duplicate messages. If a run must be auditable, record its snapshot ID, selected reference versions, and budget separately from the conversation record.\"\n    }\n  ]\n}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them."
+        }
+      ],
+      "status": "accepted",
+      "frame": {
+        "items": [
+          {
+            "type": "Graphic",
+            "props": {
+              "label": "The orchestrator calls both engines",
+              "items": [
+                {
+                  "kind": "rect",
+                  "x": 108,
+                  "y": 8,
+                  "width": 234,
+                  "height": 34
+                },
+                {
+                  "kind": "text",
+                  "x": 130,
+                  "y": 30,
+                  "text": "Application Orchestrator"
+                },
+                {
+                  "kind": "path",
+                  "d": "M 225 42 V 59 H 110 V 81 M 105 75 L 110 81 L 115 75 M 225 59 H 340 V 81 M 335 75 L 340 81 L 345 75"
+                },
+                {
+                  "kind": "rect",
+                  "x": 12,
+                  "y": 82,
+                  "width": 196,
+                  "height": 40
+                },
+                {
+                  "kind": "text",
+                  "x": 23,
+                  "y": 107,
+                  "text": "Conversation Engine"
+                },
+                {
+                  "kind": "rect",
+                  "x": 242,
+                  "y": 82,
+                  "width": 196,
+                  "height": 40
+                },
+                {
+                  "kind": "text",
+                  "x": 281,
+                  "y": 107,
+                  "text": "Context Engine"
+                }
+              ]
+            }
+          }
+        ],
+        "state": {}
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Separate the record of what happened from the decision about what to include next. The Conversation Engine owns the record, the Context Engine builds a budgeted input, and the Application Orchestrator runs the turn. Neither engine calls the other."
+        },
+        {
+          "type": "ui"
+        },
+        {
+          "type": "text",
+          "text": "Conversation Engine — Store messages and their parent links. Expose operations to append a message against an explicit parent and read a snapshot at a specific branch tip. It answers “What happened on this branch?” without deciding what belongs in a model prompt."
+        },
+        {
+          "type": "text",
+          "text": "Context Engine — Given a read-only conversation snapshot, a reference query, and an input-token budget, select and fit the references. Return the selected content, source IDs, and token counts. Make omissions or an insufficient budget explicit; never rewrite messages or lineage to make the input fit."
+        },
+        {
+          "type": "text",
+          "text": "Application Orchestrator — Append the user message, read the snapshot ending at that message, and call the Context Engine with the budget left after reserving space for fixed instructions and the model’s reply. Call the model, then append the reply to that same user message—not to whichever branch tip happens to be current."
+        },
+        {
+          "type": "text",
+          "text": "Use immutable snapshots and stable IDs at the boundaries, not shared tables. Give message writes idempotency keys so a retried turn does not duplicate messages. If a run must be auditable, record its snapshot ID, selected reference versions, and budget separately from the conversation record."
+        }
+      ],
+      "transport": true
+    }
+  ]
+}

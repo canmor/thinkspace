@@ -1,0 +1,83 @@
+{
+  "id": "B-B06-oui-1702",
+  "task": "B06",
+  "protocol": "oui",
+  "seed": 1702,
+  "arm": "B",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooB2NUVXbHSpw0gTjDOiyMdTpbhV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777988,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"BYOK stands for \\\\\\\"Bring Your Own Key.\\\\\\\" In a model-powered application, it refers to a security feature that allows users or organizations to provide and manage their own encryption keys for data protection rather than relying on keys managed by the service provider.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"This approach enhances data security and compliance by giving users full control over encryption keys, ensuring that only they can decrypt their sensitive data processed or stored by the application.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Below is a simple diagram illustrating the BYOK concept in a model-powered application:\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// BYOK Concept Diagram\\\\n// Rectangles represent components, arrows show data flow\\\\n// User manages their own encryption key\\\\n// Data encrypted with user key before sending to model\\\\n// Model processes encrypted data without accessing keys\\\\n// Only user can decrypt results\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"showDetails\\\",\\\"value\\\":0}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Use the control below to toggle between a brief and detailed explanation of BYOK.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Control for explanation detail\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"showDetails\\\",\\\"value\\\":0}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Explanation Detail:\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Control for explanation detail\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"showDetails\\\",\\\"value\\\":0}]}] }\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 579,\n    \"completion_tokens\": 286,\n    \"total_tokens\": 865,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 4579,
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 286,
+        "total_tokens": 865,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it refers to a security feature that allows users or organizations to provide and manage their own encryption keys for data protection rather than relying on keys managed by the service provider.\"},{\"type\":\"text\",\"text\":\"This approach enhances data security and compliance by giving users full control over encryption keys, ensuring that only they can decrypt their sensitive data processed or stored by the application.\"},{\"type\":\"text\",\"text\":\"Below is a simple diagram illustrating the BYOK concept in a model-powered application:\"},{\"type\":\"ui\",\"source\":\"// BYOK Concept Diagram\\n// Rectangles represent components, arrows show data flow\\n// User manages their own encryption key\\n// Data encrypted with user key before sending to model\\n// Model processes encrypted data without accessing keys\\n// Only user can decrypt results\\n\",\"state\":[{\"name\":\"showDetails\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Use the control below to toggle between a brief and detailed explanation of BYOK.\"},{\"type\":\"ui\",\"source\":\"// Control for explanation detail\\n\",\"state\":[{\"name\":\"showDetails\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Explanation Detail:\"},{\"type\":\"ui\",\"source\":\"// Control for explanation detail\\n\",\"state\":[{\"name\":\"showDetails\",\"value\":0}]}] }",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: One live UI per artifact"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooB7J7YKbyB1hXQ3WwSRk49NotiV\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777993,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"BYOK stands for \\\\\\\"Bring Your Own Key.\\\\\\\" In a model-powered application, it means that users or organizations supply and manage their own encryption keys to protect data, rather than relying on keys managed by the service provider.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"This enhances security and compliance by ensuring that only the user controls the encryption keys, so sensitive data processed or stored by the application remains under their exclusive control.\\\"},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The diagram below illustrates the BYOK concept in a model-powered application:\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"group(items=[\\\\n  rect(x=10,y=20,width=120,height=60),\\\\n  text(x=20,y=40,text=\\\\\\\"User with Encryption Key\\\\\\\"),\\\\n  rect(x=160,y=20,width=120,height=60),\\\\n  text(x=170,y=40,text=\\\\\\\"Model-Powered Application\\\\\\\"),\\\\n  path(d=\\\\\\\"M130 50 L160 50\\\\\\\",),\\\\n  text(x=80,y=55,text=\\\\\\\"Encrypted Data\\\\\\\"),\\\\n  path(d=\\\\\\\"M280 50 L310 50\\\\\\\",),\\\\n  rect(x=320,y=20,width=120,height=60),\\\\n  text(x=330,y=40,text=\\\\\\\"Data Storage\\\\\\\"),\\\\n  path(d=\\\\\\\"M250 80 L250 100 L350 100\\\\\\\",),\\\\n  text(x=260,y=110,text=\\\\\\\"Encrypted Data at Rest\\\\\\\")\\\\n])\\\",\\\"state\\\":[{\\\"name\\\":\\\"showDetail\\\",\\\"value\\\":0}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Use the control below to toggle explanation detail.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"Control(\\\\\\\"Explanation Detail\\\\\\\",0,1,[\\\\\\\"Brief\\\\\\\",\\\\\\\"Detailed\\\\\\\"],$showDetail)\\\",\\\"state\\\":[{\\\"name\\\":\\\"showDetail\\\",\\\"value\\\":0}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 899,\n    \"completion_tokens\": 390,\n    \"total_tokens\": 1289,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 8987,
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 390,
+        "total_tokens": 1289,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it means that users or organizations supply and manage their own encryption keys to protect data, rather than relying on keys managed by the service provider.\"},{\"type\":\"text\",\"text\":\"This enhances security and compliance by ensuring that only the user controls the encryption keys, so sensitive data processed or stored by the application remains under their exclusive control.\"},{\"type\":\"text\",\"text\":\"The diagram below illustrates the BYOK concept in a model-powered application:\"},{\"type\":\"ui\",\"source\":\"group(items=[\\n  rect(x=10,y=20,width=120,height=60),\\n  text(x=20,y=40,text=\\\"User with Encryption Key\\\"),\\n  rect(x=160,y=20,width=120,height=60),\\n  text(x=170,y=40,text=\\\"Model-Powered Application\\\"),\\n  path(d=\\\"M130 50 L160 50\\\",),\\n  text(x=80,y=55,text=\\\"Encrypted Data\\\"),\\n  path(d=\\\"M280 50 L310 50\\\",),\\n  rect(x=320,y=20,width=120,height=60),\\n  text(x=330,y=40,text=\\\"Data Storage\\\"),\\n  path(d=\\\"M250 80 L250 100 L350 100\\\",),\\n  text(x=260,y=110,text=\\\"Encrypted Data at Rest\\\")\\n])\",\"state\":[{\"name\":\"showDetail\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Use the control below to toggle explanation detail.\"},{\"type\":\"ui\",\"source\":\"Control(\\\"Explanation Detail\\\",0,1,[\\\"Brief\\\",\\\"Detailed\\\"],$showDetail)\",\"state\":[{\"name\":\"showDetail\",\"value\":0}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it refers to a security feature that allows users or organizations to provide and manage their own encryption keys for data protection rather than relying on keys managed by the service provider.\"},{\"type\":\"text\",\"text\":\"This approach enhances data security and compliance by giving users full control over encryption keys, ensuring that only they can decrypt their sensitive data processed or stored by the application.\"},{\"type\":\"text\",\"text\":\"Below is a simple diagram illustrating the BYOK concept in a model-powered application:\"},{\"type\":\"ui\",\"source\":\"// BYOK Concept Diagram\\n// Rectangles represent components, arrows show data flow\\n// User manages their own encryption key\\n// Data encrypted with user key before sending to model\\n// Model processes encrypted data without accessing keys\\n// Only user can decrypt results\\n\",\"state\":[{\"name\":\"showDetails\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Use the control below to toggle between a brief and detailed explanation of BYOK.\"},{\"type\":\"ui\",\"source\":\"// Control for explanation detail\\n\",\"state\":[{\"name\":\"showDetails\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Explanation Detail:\"},{\"type\":\"ui\",\"source\":\"// Control for explanation detail\\n\",\"state\":[{\"name\":\"showDetails\",\"value\":0}]}] }"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: One live UI per artifact. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: One live UI per artifact"
+    }
+  ]
+}

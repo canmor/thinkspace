@@ -1,0 +1,44 @@
+[
+  {
+    "id": "D-T13-json-1701",
+    "axes": {
+      "presentation": "pass"
+    },
+    "rationale": "Assistant reading of delivered text: one legible, self-contained sentence identifies the inner margin between facing pages."
+  },
+  {
+    "id": "D-T13-oui-1701",
+    "axes": {
+      "presentation": "pass"
+    },
+    "rationale": "Assistant reading of delivered text: one legible, self-contained sentence identifies the inner margin between facing pages."
+  },
+  {
+    "id": "E-T13-json-1701",
+    "axes": {
+      "presentation": "pass"
+    },
+    "rationale": "Assistant reading of delivered text: one legible, self-contained sentence identifies the inner margin between facing pages."
+  },
+  {
+    "id": "E-T13-oui-1701",
+    "axes": {
+      "presentation": "pass"
+    },
+    "rationale": "Assistant reading of delivered text: one legible, self-contained sentence identifies the inner margin between facing pages."
+  },
+  {
+    "id": "F-T13-json-1701",
+    "axes": {
+      "presentation": "pass"
+    },
+    "rationale": "Assistant reading of delivered text: one legible, self-contained sentence identifies the inner margin between facing pages."
+  },
+  {
+    "id": "F-T13-oui-1701",
+    "axes": {
+      "presentation": "pass"
+    },
+    "rationale": "Assistant reading of delivered text: one legible, self-contained sentence identifies the inner margin between facing pages."
+  }
+]

@@ -1,0 +1,878 @@
+[
+  {
+    "case": "10a55215b898",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interfaces for communication:\n\n1. Conversation Engine:\n- Owns messages and lineage (history, threading).\n- Responsible for storing, retrieving, and updating message data and conversation state.\n- Exposes APIs/events for adding messages, querying conversation history, and lineage relationships.\n\n2. Context Engine:\n- Selects relevant references and budgets their usage (e.g., limits on context size or token count).\n- Operates independently by consuming conversation state snapshots or message summaries.\n- Provides APIs to request context references and returns curated, budgeted context data.\n\n3. Application Orchestrator:\n- Coordinates interactions between Conversation and Context Engines.\n- Calls Conversation Engine to get message lineage and history.\n- Passes relevant data to Context Engine to select and budget references.\n- Integrates results and manages workflow, error handling, and timing.\n- Does not manage message storage or context selection internally.\n\nDecoupling Approach:\n- Use asynchronous message passing or API calls with well-defined data contracts.\n- Avoid shared mutable state; each engine manages its own data.\n- Define clear input/output schemas for each engine.\n- Application Orchestrator acts as a mediator, orchestrating calls and combining results without owning internal data.\n- This separation improves modularity, testability, and scalability.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interfaces for communication:\n\n1. Conversation Engine:\n- Owns messages and lineage (history, threading).\n- Responsible for storing, retrieving, and updating message data and conversation state.\n- Exposes APIs/events for adding messages, querying conversation history, and lineage relationships.\n\n2. Context Engine:\n- Selects relevant references and budgets their usage (e.g., limits on context size or token count).\n- Operates independently by consuming conversation state snapshots or message summaries.\n- Provides APIs to request context references and returns curated, budgeted context data.\n\n3. Application Orchestrator:\n- Coordinates interactions between Conversation and Context Engines.\n- Calls Conversation Engine to get message lineage and history.\n- Passes relevant data to Context Engine to select and budget references.\n- Integrates results and manages workflow, error handling, and timing.\n- Does not manage message storage or context selection internally.\n\nDecoupling Approach:\n- Use asynchronous message passing or API calls with well-defined data contracts.\n- Avoid shared mutable state; each engine manages its own data.\n- Define clear input/output schemas for each engine.\n- Application Orchestrator acts as a mediator, orchestrating calls and combining results without owning internal data.\n- This separation improves modularity, testability, and scalability.",
+    "protocol": "oui"
+  },
+  {
+    "case": "1a9c01703106",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "visibleText": "An interactive single-bag fee explorer lets you select travel class (Economy or Business), gold status (No or Yes), and bag weight (10–40 kg). Economy allows 23 kg, Business 32 kg; Gold adds 5 kg allowance. The fee is $15 per excess kg over allowance, never negative. The interface shows allowance and fee updating as inputs change.",
+    "replaySource": "TEXT\nAn interactive single-bag fee explorer lets you select travel class (Economy or Business), gold status (No or Yes), and bag weight (10–40 kg). Economy allows 23 kg, Business 32 kg; Gold adds 5 kg allowance. The fee is $15 per excess kg over allowance, never negative. The interface shows allowance and fee updating as inputs change.",
+    "protocol": "oui"
+  },
+  {
+    "case": "1fef4a56f7aa",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "replaySource": "TEXT\n\nExplain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "protocol": "json"
+  },
+  {
+    "case": "24df45749840",
+    "request": "What does BYOK mean in a model-powered application?",
+    "visibleText": "BYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to the practice where users or organizations provide and control their own encryption keys to secure data or models, rather than relying solely on the application's default encryption keys. This enhances security and compliance by giving users direct control over cryptographic keys used for protecting sensitive information.",
+    "replaySource": "TEXT\nBYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to the practice where users or organizations provide and control their own encryption keys to secure data or models, rather than relying solely on the application's default encryption keys. This enhances security and compliance by giving users direct control over cryptographic keys used for protecting sensitive information.",
+    "protocol": "oui"
+  },
+  {
+    "case": "282ea501a93a",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interfaces:\n\n1. Conversation Engine:\n- Owns messages and lineage (message history, threading).\n- Provides APIs to add, retrieve, and update messages and their relationships.\n- Does not manage context selection or budgeting.\n\n2. Context Engine:\n- Selects relevant references and manages context budgets (e.g., token limits).\n- Interfaces with Conversation Engine to fetch message data but does not modify messages.\n- Provides context data to the Application Orchestrator on request.\n\n3. Application Orchestrator:\n- Coordinates the Conversation and Context Engines.\n- Requests messages from Conversation Engine.\n- Requests context selection and budgeting from Context Engine.\n- Combines outputs to drive application logic (e.g., generating responses).\n\nDecoupling is achieved by:\n- Defining clear API boundaries: Conversation Engine handles message storage and lineage; Context Engine handles context selection and budgeting; Orchestrator manages flow.\n- Using event-driven or request/response communication, avoiding direct data sharing.\n- Keeping each engine focused on its domain to allow independent development, testing, and scaling.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interfaces:\n\n1. Conversation Engine:\n- Owns messages and lineage (message history, threading).\n- Provides APIs to add, retrieve, and update messages and their relationships.\n- Does not manage context selection or budgeting.\n\n2. Context Engine:\n- Selects relevant references and manages context budgets (e.g., token limits).\n- Interfaces with Conversation Engine to fetch message data but does not modify messages.\n- Provides context data to the Application Orchestrator on request.\n\n3. Application Orchestrator:\n- Coordinates the Conversation and Context Engines.\n- Requests messages from Conversation Engine.\n- Requests context selection and budgeting from Context Engine.\n- Combines outputs to drive application logic (e.g., generating responses).\n\nDecoupling is achieved by:\n- Defining clear API boundaries: Conversation Engine handles message storage and lineage; Context Engine handles context selection and budgeting; Orchestrator manages flow.\n- Using event-driven or request/response communication, avoiding direct data sharing.\n- Keeping each engine focused on its domain to allow independent development, testing, and scaling.",
+    "protocol": "json"
+  },
+  {
+    "case": "2ab847d2250e",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "classIndex",
+        "props": {
+          "label": "Class",
+          "min": 0,
+          "max": 2,
+          "choices": [
+            "Economy",
+            "Business",
+            "First"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "statusIndex",
+        "props": {
+          "label": "Status",
+          "min": 0,
+          "max": 2,
+          "choices": [
+            "None",
+            "Silver",
+            "Gold"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "bagWeight",
+        "props": {
+          "label": "Bag Weight (kg)",
+          "min": 10,
+          "max": 40,
+          "choices": [],
+          "value": 23
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Allowance (kg)",
+          "value": 23
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Fee ($)",
+          "value": 0
+        }
+      }
+    ],
+    "initialState": {
+      "classIndex": 0,
+      "statusIndex": 0,
+      "bagWeight": 23
+    },
+    "replaySource": "UI\nroot = Stack([classControl, statusControl, bagWeightControl, allowanceMetric, feeMetric])\n$classIndex = 0\n$statusIndex = 0\n$bagWeight = 23\nclassAllowance = $classIndex == 0 ? 23 : $classIndex == 1 ? 32 : 40\nstatusAllowance = $statusIndex == 2 ? 5 : 0\ntotalAllowance = classAllowance + statusAllowance\nallowanceMetric = Metric(\"Allowance (kg)\", totalAllowance)\nexcessWeight = $bagWeight > totalAllowance ? $bagWeight - totalAllowance : 0\nfee = excessWeight * 15\nclassControl = Control(\"Class\", 0, 2, [\"Economy\",\"Business\",\"First\"], $classIndex)\nstatusControl = Control(\"Status\", 0, 2, [\"None\",\"Silver\",\"Gold\"], $statusIndex)\nbagWeightControl = Control(\"Bag Weight (kg)\", 10, 40, [], $bagWeight)\nfeeMetric = Metric(\"Fee ($)\", fee)",
+    "protocol": "oui"
+  },
+  {
+    "case": "2ebe9d2b2b22",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "visibleText": "This interactive explorer lets you select your travel class (Economy or Business), Gold status (No or Yes), and your bag weight (10 to 40 kg). It calculates your baggage allowance and any excess fee at $15 per kg over the allowance. Economy allows 23 kg, Business 32 kg; Gold status adds 5 kg. Fees never go below zero.",
+    "replaySource": "TEXT\nThis interactive explorer lets you select your travel class (Economy or Business), Gold status (No or Yes), and your bag weight (10 to 40 kg). It calculates your baggage allowance and any excess fee at $15 per kg over the allowance. Economy allows 23 kg, Business 32 kg; Gold status adds 5 kg. Fees never go below zero.",
+    "protocol": "oui"
+  },
+  {
+    "case": "351bb0be85fd",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "41e1744258c0",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear interfaces:\n   - Conversation Engine manages messages and their lineage (history, threading).\n   - Context Engine selects relevant references and manages budgets (limits on context size or relevance).\n   - Application Orchestrator coordinates interactions between them.\n\n2. Use asynchronous messaging or event-driven communication:\n   - Conversation Engine emits events about message updates.\n   - Context Engine listens for these events to update context selection.\n   - Application Orchestrator listens and sends commands to both engines.\n\n3. Separate data ownership:\n   - Conversation Engine owns and persists message data and lineage.\n   - Context Engine owns context references and budget state.\n   - Orchestrator owns coordination logic but no direct data.\n\n4. Define data contracts:\n   - Use well-defined data structures for messages, references, and commands.\n   - Avoid sharing internal state; communicate via APIs or events.\n\n5. Implement dependency injection or service registries:\n   - Allow engines to be replaced or updated independently.\n\nThis separation improves modularity, testability, and scalability by ensuring each component focuses on its responsibility and communicates through defined interfaces.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear interfaces:\n   - Conversation Engine manages messages and their lineage (history, threading).\n   - Context Engine selects relevant references and manages budgets (limits on context size or relevance).\n   - Application Orchestrator coordinates interactions between them.\n\n2. Use asynchronous messaging or event-driven communication:\n   - Conversation Engine emits events about message updates.\n   - Context Engine listens for these events to update context selection.\n   - Application Orchestrator listens and sends commands to both engines.\n\n3. Separate data ownership:\n   - Conversation Engine owns and persists message data and lineage.\n   - Context Engine owns context references and budget state.\n   - Orchestrator owns coordination logic but no direct data.\n\n4. Define data contracts:\n   - Use well-defined data structures for messages, references, and commands.\n   - Avoid sharing internal state; communicate via APIs or events.\n\n5. Implement dependency injection or service registries:\n   - Allow engines to be replaced or updated independently.\n\nThis separation improves modularity, testability, and scalability by ensuring each component focuses on its responsibility and communicates through defined interfaces.",
+    "protocol": "json"
+  },
+  {
+    "case": "437d87d78331",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The dot product of two vectors represents how much one vector extends in the direction of the other. Geometrically, it equals the product of their magnitudes and the cosine of the angle between them. When vectors are orthogonal (at 90°), their dot product is zero, indicating no directional overlap. A negative dot product means the projection of one vector onto the other points opposite to that vector's direction, showing they form an obtuse angle.",
+    "replaySource": "TEXT\nThe dot product of two vectors represents how much one vector extends in the direction of the other. Geometrically, it equals the product of their magnitudes and the cosine of the angle between them. When vectors are orthogonal (at 90°), their dot product is zero, indicating no directional overlap. A negative dot product means the projection of one vector onto the other points opposite to that vector's direction, showing they form an obtuse angle.",
+    "protocol": "oui"
+  },
+  {
+    "case": "46732a0c8035",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The geometric meaning of a vector dot product is the projection of one vector onto another. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector. The dot product is calculated as the sum of the products of the corresponding components of the two vectors.\n\nWhen the vectors are orthogonal, the dot product is zero. This means that the vectors are perpendicular to each other, and the projection of one vector onto the other is zero. In this case, the vectors are perpendicular to each other, and the projection of one vector onto the other is zero.\n\nWhen the vectors are not orthogonal, the dot product is non-zero. This means that the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero. In this case, the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero.\n\nThe negative projection of one vector onto the other is the projection of the first vector onto the second vector in the opposite direction. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector in the opposite direction. The negative projection of one vector onto the other is the projection of the first vector onto the second vector in the opposite direction.",
+    "replaySource": "TEXT\n\nThe geometric meaning of a vector dot product is the projection of one vector onto another. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector. The dot product is calculated as the sum of the products of the corresponding components of the two vectors.\n\nWhen the vectors are orthogonal, the dot product is zero. This means that the vectors are perpendicular to each other, and the projection of one vector onto the other is zero. In this case, the vectors are perpendicular to each other, and the projection of one vector onto the other is zero.\n\nWhen the vectors are not orthogonal, the dot product is non-zero. This means that the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero. In this case, the vectors are not perpendicular to each other, and the projection of one vector onto the other is not zero.\n\nThe negative projection of one vector onto the other is the projection of the first vector onto the second vector in the opposite direction. This projection is a scalar value that represents the length of the projection of the first vector onto the second vector in the opposite direction. The negative projection of one vector onto the other is the projection of the first vector onto the second vector in the opposite direction.",
+    "protocol": "json"
+  },
+  {
+    "case": "47176f443c09",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The geometric meaning of a vector dot product is the projection of one vector onto another. It can be calculated as the product of the magnitudes of the vectors and the cosine of the angle between them. The dot product is also known as the scalar product and is denoted by the symbol $\\vec{a} \\cdot \\vec{b}$.\n\nWhen the vectors are orthogonal, their dot product is zero. This means that the vectors are perpendicular to each other. In this case, the projection of one vector onto the other is zero, and the vectors are essentially parallel to each other.\n\nWhen the vectors are not orthogonal, their dot product is non-zero. This means that the vectors are not perpendicular to each other. In this case, the projection of one vector onto the other is a non-zero value, and the vectors are not parallel to each other.\n\nThe negative projection of one vector onto the other is the projection of the first vector onto the second vector in the opposite direction. This can be calculated as the product of the magnitudes of the vectors and the negative cosine of the angle between them.\n\nThe geometric meaning of the dot product is that it measures the extent to which two vectors are aligned. It is a measure of the cosine of the angle between the vectors, and it is also a measure of the length of the projection of one vector onto the other.",
+    "replaySource": "TEXT\n\nThe geometric meaning of a vector dot product is the projection of one vector onto another. It can be calculated as the product of the magnitudes of the vectors and the cosine of the angle between them. The dot product is also known as the scalar product and is denoted by the symbol $\\vec{a} \\cdot \\vec{b}$.\n\nWhen the vectors are orthogonal, their dot product is zero. This means that the vectors are perpendicular to each other. In this case, the projection of one vector onto the other is zero, and the vectors are essentially parallel to each other.\n\nWhen the vectors are not orthogonal, their dot product is non-zero. This means that the vectors are not perpendicular to each other. In this case, the projection of one vector onto the other is a non-zero value, and the vectors are not parallel to each other.\n\nThe negative projection of one vector onto the other is the projection of the first vector onto the second vector in the opposite direction. This can be calculated as the product of the magnitudes of the vectors and the negative cosine of the angle between them.\n\nThe geometric meaning of the dot product is that it measures the extent to which two vectors are aligned. It is a measure of the cosine of the angle between the vectors, and it is also a measure of the length of the projection of one vector onto the other.",
+    "protocol": "json"
+  },
+  {
+    "case": "4ade816e569e",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "4e5d3c7ca803",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob, minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "5117812c4858",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear responsibilities:\n   - Conversation Engine: owns message storage, manages message lineage (history, threading).\n   - Context Engine: selects relevant references from conversation, budgets usage (limits, priorities).\n   - Application Orchestrator: coordinates interactions, triggers engines, manages workflows.\n\n2. Use well-defined interfaces and data contracts:\n   - Conversation Engine exposes APIs for message retrieval and lineage queries.\n   - Context Engine accepts message data, returns selected references and budgets.\n   - Orchestrator calls both engines via APIs, handles sequencing and error handling.\n\n3. Employ asynchronous communication or event-driven messaging:\n   - Engines publish and subscribe to events (e.g., new message, context updated).\n   - Decouples timing and dependencies, improves scalability.\n\n4. Maintain separation of state and logic:\n   - Conversation Engine stores messages and lineage state.\n   - Context Engine maintains reference selection and budgeting logic.\n   - Orchestrator holds workflow state and decision logic.\n\n5. Use dependency injection or service registries:\n   - Orchestrator dynamically binds to Conversation and Context Engines.\n   - Enables easy replacement or upgrading of components.\n\n6. Implement monitoring and logging separately:\n   - Each engine logs its own activity.\n   - Orchestrator aggregates logs for overall system health.\n\nThis modular design allows independent development, testing, and scaling of each engine, minimizing coupling and enhancing maintainability.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear responsibilities:\n   - Conversation Engine: owns message storage, manages message lineage (history, threading).\n   - Context Engine: selects relevant references from conversation, budgets usage (limits, priorities).\n   - Application Orchestrator: coordinates interactions, triggers engines, manages workflows.\n\n2. Use well-defined interfaces and data contracts:\n   - Conversation Engine exposes APIs for message retrieval and lineage queries.\n   - Context Engine accepts message data, returns selected references and budgets.\n   - Orchestrator calls both engines via APIs, handles sequencing and error handling.\n\n3. Employ asynchronous communication or event-driven messaging:\n   - Engines publish and subscribe to events (e.g., new message, context updated).\n   - Decouples timing and dependencies, improves scalability.\n\n4. Maintain separation of state and logic:\n   - Conversation Engine stores messages and lineage state.\n   - Context Engine maintains reference selection and budgeting logic.\n   - Orchestrator holds workflow state and decision logic.\n\n5. Use dependency injection or service registries:\n   - Orchestrator dynamically binds to Conversation and Context Engines.\n   - Enables easy replacement or upgrading of components.\n\n6. Implement monitoring and logging separately:\n   - Each engine logs its own activity.\n   - Orchestrator aggregates logs for overall system health.\n\nThis modular design allows independent development, testing, and scaling of each engine, minimizing coupling and enhancing maintainability.",
+    "protocol": "oui"
+  },
+  {
+    "case": "58ff6b251d61",
+    "request": "What does BYOK mean in a model-powered application?",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "60a31b77a54f",
+    "request": "What does BYOK mean in a model-powered application?",
+    "visibleText": "BYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to the practice where users or organizations provide and control their own encryption keys to secure data, rather than relying solely on the service provider's keys. This enhances data security and compliance by giving users direct control over encryption and access.",
+    "replaySource": "TEXT\nBYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to the practice where users or organizations provide and control their own encryption keys to secure data, rather than relying solely on the service provider's keys. This enhances data security and compliance by giving users direct control over encryption and access.",
+    "protocol": "oui"
+  },
+  {
+    "case": "7394c7516a5e",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interaction boundaries:\n\n1. Conversation Engine:\n- Owns messages and lineage (conversation history and structure).\n- Focuses on managing dialogue state, message flow, and conversation logic.\n- Exposes APIs/events to send/receive messages and query lineage.\n\n2. Context Engine:\n- Selects relevant references and budgets their usage (e.g., memory, tokens).\n- Operates independently to fetch, rank, and manage contextual data.\n- Provides interfaces to request context and report usage.\n\n3. Application Orchestrator:\n- Coordinates Conversation and Context Engines.\n- Controls workflow, triggers context selection, and manages budgets.\n- Listens to Conversation Engine events and requests context as needed.\n- Integrates outputs and handles overall application logic.\n\nDecoupling approach:\n- Use asynchronous messaging or event-driven communication between components.\n- Define clear API contracts for data exchange (e.g., messages, context requests).\n- Keep each engine focused on its domain, avoiding direct dependencies on internal states.\n- The Orchestrator acts as the mediator, coordinating without embedding logic from engines.\n- This modular design enables independent development, testing, and scaling of each component.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interaction boundaries:\n\n1. Conversation Engine:\n- Owns messages and lineage (conversation history and structure).\n- Focuses on managing dialogue state, message flow, and conversation logic.\n- Exposes APIs/events to send/receive messages and query lineage.\n\n2. Context Engine:\n- Selects relevant references and budgets their usage (e.g., memory, tokens).\n- Operates independently to fetch, rank, and manage contextual data.\n- Provides interfaces to request context and report usage.\n\n3. Application Orchestrator:\n- Coordinates Conversation and Context Engines.\n- Controls workflow, triggers context selection, and manages budgets.\n- Listens to Conversation Engine events and requests context as needed.\n- Integrates outputs and handles overall application logic.\n\nDecoupling approach:\n- Use asynchronous messaging or event-driven communication between components.\n- Define clear API contracts for data exchange (e.g., messages, context requests).\n- Keep each engine focused on its domain, avoiding direct dependencies on internal states.\n- The Orchestrator acts as the mediator, coordinating without embedding logic from engines.\n- This modular design enables independent development, testing, and scaling of each component.",
+    "protocol": "oui"
+  },
+  {
+    "case": "75110265ee18",
+    "request": "What does BYOK mean in a model-powered application?",
+    "visibleText": "BYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to a security feature where users provide and control their own encryption keys to protect data used or generated by the application.",
+    "replaySource": "TEXT\nBYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to a security feature where users provide and control their own encryption keys to protect data used or generated by the application.",
+    "protocol": "oui"
+  },
+  {
+    "case": "84fa737b3647",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them. If the vectors are orthogonal (at 90°), their dot product is zero, meaning no projection onto each other. A negative dot product means the angle between them is greater than 90°, so one vector projects negatively onto the other, pointing in the opposite direction.",
+    "replaySource": "TEXT\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them. If the vectors are orthogonal (at 90°), their dot product is zero, meaning no projection onto each other. A negative dot product means the angle between them is greater than 90°, so one vector projects negatively onto the other, pointing in the opposite direction.",
+    "protocol": "oui"
+  },
+  {
+    "case": "8acb460c94ab",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interfaces:\n\n1. Conversation Engine:\n- Owns messages and lineage (the history and structure of the conversation).\n- Manages message creation, storage, and retrieval.\n- Exposes APIs to get conversation state and add new messages.\n\n2. Context Engine:\n- Selects relevant references or context snippets from external or internal sources.\n- Budgets or limits how much context is included (e.g., token limits).\n- Provides APIs to request context based on conversation state or queries.\n\n3. Application Orchestrator:\n- Coordinates the Conversation and Context Engines.\n- Requests context from the Context Engine as needed.\n- Passes context and conversation state to the Conversation Engine to generate or update messages.\n- Manages workflow, timing, and integration with other components or user interfaces.\n\nDecoupling approach:\n- Use well-defined APIs or message passing between components.\n- Avoid shared state; each engine manages its own data.\n- The Orchestrator acts as the mediator, invoking each engine’s functions and combining results.\n- This separation allows independent development, testing, scaling, and replacement of each engine.\n\nIn summary, the Conversation Engine handles message data and conversation flow, the Context Engine manages contextual references and budgets, and the Application Orchestrator coordinates their interaction through clear interfaces without shared internal state.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator, separate their responsibilities and define clear interfaces:\n\n1. Conversation Engine:\n- Owns messages and lineage (the history and structure of the conversation).\n- Manages message creation, storage, and retrieval.\n- Exposes APIs to get conversation state and add new messages.\n\n2. Context Engine:\n- Selects relevant references or context snippets from external or internal sources.\n- Budgets or limits how much context is included (e.g., token limits).\n- Provides APIs to request context based on conversation state or queries.\n\n3. Application Orchestrator:\n- Coordinates the Conversation and Context Engines.\n- Requests context from the Context Engine as needed.\n- Passes context and conversation state to the Conversation Engine to generate or update messages.\n- Manages workflow, timing, and integration with other components or user interfaces.\n\nDecoupling approach:\n- Use well-defined APIs or message passing between components.\n- Avoid shared state; each engine manages its own data.\n- The Orchestrator acts as the mediator, invoking each engine’s functions and combining results.\n- This separation allows independent development, testing, scaling, and replacement of each engine.\n\nIn summary, the Conversation Engine handles message data and conversation flow, the Context Engine manages contextual references and budgets, and the Application Orchestrator coordinates their interaction through clear interfaces without shared internal state.",
+    "protocol": "json"
+  },
+  {
+    "case": "900cfa92eeb4",
+    "request": "What does BYOK mean in a model-powered application?",
+    "visibleText": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means the user or organization provides and controls their own encryption keys to secure data, rather than relying solely on the service provider's keys. This enhances data security and compliance by giving users full control over encryption and access.",
+    "replaySource": "TEXT\nBYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means the user or organization provides and controls their own encryption keys to secure data, rather than relying solely on the service provider's keys. This enhances data security and compliance by giving users full control over encryption and access.",
+    "protocol": "json"
+  },
+  {
+    "case": "90befe4e3a3b",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them. If the vectors are orthogonal (at 90°), their dot product is zero, meaning no projection onto each other. A negative dot product means the angle is greater than 90°, so one vector projects negatively onto the other, pointing in the opposite direction.",
+    "replaySource": "TEXT\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them. If the vectors are orthogonal (at 90°), their dot product is zero, meaning no projection onto each other. A negative dot product means the angle is greater than 90°, so one vector projects negatively onto the other, pointing in the opposite direction.",
+    "protocol": "json"
+  },
+  {
+    "case": "910441e5d57f",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "976cbe51831a",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "a7efce0df779",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "ac4f79f4a1f1",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths times the cosine of the angle between them. If the vectors are orthogonal (at 90°), their dot product is zero, meaning no projection of one onto the other. A negative dot product means the angle between them is greater than 90°, so one vector projects negatively onto the other, pointing in the opposite direction.",
+    "replaySource": "TEXT\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths times the cosine of the angle between them. If the vectors are orthogonal (at 90°), their dot product is zero, meaning no projection of one onto the other. A negative dot product means the angle between them is greater than 90°, so one vector projects negatively onto the other, pointing in the opposite direction.",
+    "protocol": "json"
+  },
+  {
+    "case": "ac83290b3f80",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The dot product of two vectors geometrically represents the product of the length of one vector and the length of the projection of the other vector onto it. If vectors A and B have an angle θ between them, then their dot product A·B = |A| |B| cos(θ). When vectors are orthogonal (θ = 90°), cos(90°) = 0, so the dot product is zero, indicating no projection. If the angle is greater than 90°, cos(θ) is negative, meaning the projection of one vector onto the other points in the opposite direction, resulting in a negative dot product. Thus, the dot product encodes both the magnitude of projection and the directional relationship between vectors.",
+    "replaySource": "TEXT\nThe dot product of two vectors geometrically represents the product of the length of one vector and the length of the projection of the other vector onto it. If vectors A and B have an angle θ between them, then their dot product A·B = |A| |B| cos(θ). When vectors are orthogonal (θ = 90°), cos(90°) = 0, so the dot product is zero, indicating no projection. If the angle is greater than 90°, cos(θ) is negative, meaning the projection of one vector onto the other points in the opposite direction, resulting in a negative dot product. Thus, the dot product encodes both the magnitude of projection and the directional relationship between vectors.",
+    "protocol": "oui"
+  },
+  {
+    "case": "b461d1b6b2cf",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "bf527670fd61",
+    "request": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic.",
+    "visibleText": "Adjust the criteria weights using the slider below. The scores for Native Hybrid, Tauri, and Electron are weighted by native experience, lightweight runtime, and delivery efficiency. Normalized weights and ranking are shown. If all weights are zero, no ranking is displayed.\n\nroot = Stack([WeightsControl, NormalizedWeightsText, ScoresTable, RankedResultsText])\n\nweights = integer[3]\nweights = [40,25,35]\n\nWeightsControl = Control(\"Criteria Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,weights,$weights)\n\nsumWeights = weights[0] + weights[1] + weights[2]\nnativeNorm = sumWeights == 0 ? 0 : weights[0] / sumWeights\nlightweightNorm = sumWeights == 0 ? 0 : weights[1] / sumWeights\ndeliveryNorm = sumWeights == 0 ? 0 : weights[2] / sumWeights\n\nNormalizedWeightsText = Text(\n  sumWeights == 0 ? \n  \"Normalized Weights: N/A (all weights zero)\" : \n  \"Normalized Weights: Native Experience: \" + (nativeNorm*100).toFixed(1) + \"%, Lightweight Runtime: \" + (lightweightNorm*100).toFixed(1) + \"%, Delivery Efficiency: \" + (deliveryNorm*100).toFixed(1) + \"%\"\n)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", native:9, lightweight:8, delivery:7},\n  {label:\"Tauri\", native:7, lightweight:8, delivery:8},\n  {label:\"Electron\", native:6, lightweight:4, delivery:10}\n])\n\nscoreNativeHybrid = 9 * nativeNorm + 8 * lightweightNorm + 7 * deliveryNorm\nscoreTauri = 7 * nativeNorm + 8 * lightweightNorm + 8 * deliveryNorm\nscoreElectron = 6 * nativeNorm + 4 * lightweightNorm + 10 * deliveryNorm\n\nranked = sumWeights == 0 ? [] : @Sort([\n  {label:\"Native Hybrid\", score:scoreNativeHybrid},\n  {label:\"Tauri\", score:scoreTauri},\n  {label:\"Electron\", score:scoreElectron}\n],\"score\",\"desc\")\n\nrankStrings = sumWeights == 0 ? \"No ranking (all weights zero)\" : \n  \"Ranking:\\n1. \" + ranked[0].label + \" (\" + ranked[0].score.toFixed(2) + \")\\n2. \" + ranked[1].label + \" (\" + ranked[1].score.toFixed(2) + \")\\n3. \" + ranked[2].label + \" (\" + ranked[2].score.toFixed(2) + \")\"\n\nRankedResultsText = Text(rankStrings)",
+    "replaySource": "TEXT\nAdjust the criteria weights using the slider below. The scores for Native Hybrid, Tauri, and Electron are weighted by native experience, lightweight runtime, and delivery efficiency. Normalized weights and ranking are shown. If all weights are zero, no ranking is displayed.\n\nroot = Stack([WeightsControl, NormalizedWeightsText, ScoresTable, RankedResultsText])\n\nweights = integer[3]\nweights = [40,25,35]\n\nWeightsControl = Control(\"Criteria Weights (Native Experience, Lightweight Runtime, Delivery Efficiency)\",0,100,weights,$weights)\n\nsumWeights = weights[0] + weights[1] + weights[2]\nnativeNorm = sumWeights == 0 ? 0 : weights[0] / sumWeights\nlightweightNorm = sumWeights == 0 ? 0 : weights[1] / sumWeights\ndeliveryNorm = sumWeights == 0 ? 0 : weights[2] / sumWeights\n\nNormalizedWeightsText = Text(\n  sumWeights == 0 ? \n  \"Normalized Weights: N/A (all weights zero)\" : \n  \"Normalized Weights: Native Experience: \" + (nativeNorm*100).toFixed(1) + \"%, Lightweight Runtime: \" + (lightweightNorm*100).toFixed(1) + \"%, Delivery Efficiency: \" + (deliveryNorm*100).toFixed(1) + \"%\"\n)\n\nScoresTable = Table([\n  {label:\"Native Hybrid\", native:9, lightweight:8, delivery:7},\n  {label:\"Tauri\", native:7, lightweight:8, delivery:8},\n  {label:\"Electron\", native:6, lightweight:4, delivery:10}\n])\n\nscoreNativeHybrid = 9 * nativeNorm + 8 * lightweightNorm + 7 * deliveryNorm\nscoreTauri = 7 * nativeNorm + 8 * lightweightNorm + 8 * deliveryNorm\nscoreElectron = 6 * nativeNorm + 4 * lightweightNorm + 10 * deliveryNorm\n\nranked = sumWeights == 0 ? [] : @Sort([\n  {label:\"Native Hybrid\", score:scoreNativeHybrid},\n  {label:\"Tauri\", score:scoreTauri},\n  {label:\"Electron\", score:scoreElectron}\n],\"score\",\"desc\")\n\nrankStrings = sumWeights == 0 ? \"No ranking (all weights zero)\" : \n  \"Ranking:\\n1. \" + ranked[0].label + \" (\" + ranked[0].score.toFixed(2) + \")\\n2. \" + ranked[1].label + \" (\" + ranked[1].score.toFixed(2) + \")\\n3. \" + ranked[2].label + \" (\" + ranked[2].score.toFixed(2) + \")\"\n\nRankedResultsText = Text(rankStrings)",
+    "protocol": "oui"
+  },
+  {
+    "case": "bff0cdf2ce99",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob, minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "c070f485cc01",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "classIndex",
+        "props": {
+          "label": "Class",
+          "min": 0,
+          "max": 2,
+          "choices": [
+            "Economy",
+            "Business",
+            "First"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "goldIndex",
+        "props": {
+          "label": "Gold Status",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "No",
+            "Yes"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "bagWeight",
+        "props": {
+          "label": "Bag Weight (kg)",
+          "min": 10,
+          "max": 40,
+          "choices": [],
+          "value": 23
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Allowance (kg)",
+          "value": 23
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Excess Fee ($)",
+          "value": 0
+        }
+      }
+    ],
+    "initialState": {
+      "classIndex": 0,
+      "goldIndex": 0,
+      "bagWeight": 23
+    },
+    "replaySource": "UI\nroot = Stack([classControl, goldControl, bagWeightControl, allowanceMetric, feeMetric])\n$classIndex = 0\n$goldIndex = 0\n$bagWeight = 23\nclassControl = Control(\"Class\", 0, 2, [\"Economy\",\"Business\",\"First\"], $classIndex)\ngoldControl = Control(\"Gold Status\", 0, 1, [\"No\",\"Yes\"], $goldIndex)\nbagWeightControl = Control(\"Bag Weight (kg)\", 10, 40, [], $bagWeight)\nbaseAllowance = $classIndex == 0 ? 23 : $classIndex == 1 ? 32 : 0\ngoldBonus = $goldIndex == 1 ? 5 : 0\ntotalAllowance = baseAllowance + goldBonus\nallowanceMetric = Metric(\"Allowance (kg)\", totalAllowance)\nexcessKg = $bagWeight > totalAllowance ? $bagWeight - totalAllowance : 0\nfee = excessKg * 15\nfeeMetric = Metric(\"Excess Fee ($)\", fee)",
+    "protocol": "oui"
+  },
+  {
+    "case": "c7a06a1de139",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "visibleText": "The dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them. If the dot product is zero, the vectors are orthogonal (perpendicular), meaning no projection of one onto the other. A negative dot product means the projection points opposite to the direction of the second vector, indicating an obtuse angle between them.",
+    "replaySource": "TEXT\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Geometrically, it equals the product of their lengths and the cosine of the angle between them. If the dot product is zero, the vectors are orthogonal (perpendicular), meaning no projection of one onto the other. A negative dot product means the projection points opposite to the direction of the second vector, indicating an obtuse angle between them.",
+    "protocol": "oui"
+  },
+  {
+    "case": "cc88227d3e6a",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interactions via well-specified interfaces and data flows:\n\n1. Conversation Engine:\n- Owns messages and lineage (the history and structure of the conversation).\n- Manages message creation, storage, and retrieval.\n- Exposes APIs to add, update, and fetch messages and lineage data.\n- Does not handle context selection or budgeting.\n\n2. Context Engine:\n- Selects relevant references and manages their usage budgets.\n- Operates independently to evaluate and provide context data.\n- Exposes APIs to request context references and report usage.\n- Does not store messages or conversation history.\n\n3. Application Orchestrator:\n- Coordinates the Conversation and Context Engines.\n- Calls the Conversation Engine to get or add messages.\n- Calls the Context Engine to select and budget references.\n- Integrates their outputs to drive application logic.\n- Maintains no message or context data itself, only coordination logic.\n\nBy separating concerns:\n- Each engine has a single responsibility.\n- Communication is via defined interfaces (e.g., REST, RPC, message queues).\n- Data ownership is exclusive to each engine.\n- The Orchestrator acts as the mediator, ensuring loose coupling and easier maintenance or replacement of components.",
+    "replaySource": "TEXT\nDecoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interactions via well-specified interfaces and data flows:\n\n1. Conversation Engine:\n- Owns messages and lineage (the history and structure of the conversation).\n- Manages message creation, storage, and retrieval.\n- Exposes APIs to add, update, and fetch messages and lineage data.\n- Does not handle context selection or budgeting.\n\n2. Context Engine:\n- Selects relevant references and manages their usage budgets.\n- Operates independently to evaluate and provide context data.\n- Exposes APIs to request context references and report usage.\n- Does not store messages or conversation history.\n\n3. Application Orchestrator:\n- Coordinates the Conversation and Context Engines.\n- Calls the Conversation Engine to get or add messages.\n- Calls the Context Engine to select and budget references.\n- Integrates their outputs to drive application logic.\n- Maintains no message or context data itself, only coordination logic.\n\nBy separating concerns:\n- Each engine has a single responsibility.\n- Communication is via defined interfaces (e.g., REST, RPC, message queues).\n- Data ownership is exclusive to each engine.\n- The Orchestrator acts as the mediator, ensuring loose coupling and easier maintenance or replacement of components.",
+    "protocol": "oui"
+  },
+  {
+    "case": "cd02dfb47794",
+    "request": "What does BYOK mean in a model-powered application?",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "d4b1b8555dde",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "d5f4994443b8",
+    "request": "What does BYOK mean in a model-powered application?",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "da2b800bf636",
+    "request": "What does BYOK mean in a model-powered application?",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "dd0b003e693d",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "classIndex",
+        "props": {
+          "label": "Class",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "Economy",
+            "Business"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "goldIndex",
+        "props": {
+          "label": "Gold Status",
+          "min": 0,
+          "max": 1,
+          "choices": [
+            "No",
+            "Yes"
+          ],
+          "value": 0
+        }
+      },
+      {
+        "type": "Control",
+        "binding": "bagWeight",
+        "props": {
+          "label": "Bag Weight (kg)",
+          "min": 10,
+          "max": 40,
+          "choices": [],
+          "value": 23
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Allowance (kg)",
+          "value": 23
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Excess Fee ($)",
+          "value": 0
+        }
+      }
+    ],
+    "initialState": {
+      "classIndex": 0,
+      "goldIndex": 0,
+      "bagWeight": 23
+    },
+    "replaySource": "UI\nroot = Stack([classControl, goldControl, bagWeightControl, allowanceMetric, feeMetric])\n$classIndex = 0\n$goldIndex = 0\n$bagWeight = 23\nclassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $classIndex)\ngoldControl = Control(\"Gold Status\", 0, 1, [\"No\", \"Yes\"], $goldIndex)\nbagWeightControl = Control(\"Bag Weight (kg)\", 10, 40, [], $bagWeight)\nbaseAllowance = $classIndex == 0 ? 23 : 32\ngoldBonus = $goldIndex == 1 ? 5 : 0\ntotalAllowance = baseAllowance + goldBonus\nallowanceMetric = Metric(\"Allowance (kg)\", totalAllowance)\nexcessKg = $bagWeight > totalAllowance ? $bagWeight - totalAllowance : 0\nfee = excessKg * 15\nfeeMetric = Metric(\"Excess Fee ($)\", fee)",
+    "protocol": "oui"
+  },
+  {
+    "case": "decb852da309",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear interfaces:\n   - Conversation Engine exposes APIs to add, retrieve, and manage messages and their lineage.\n   - Context Engine exposes APIs to select relevant references and manage budget constraints.\n   - Application Orchestrator exposes APIs to coordinate workflows and invoke Conversation and Context Engines.\n\n2. Use asynchronous communication or message passing:\n   - Application Orchestrator sends requests and receives responses without tight coupling.\n   - Engines operate independently and communicate only via defined interfaces.\n\n3. Separate state and responsibilities:\n   - Conversation Engine owns message storage and lineage tracking.\n   - Context Engine owns reference selection logic and budget management.\n   - Application Orchestrator owns process flow and coordination logic.\n\n4. Employ dependency injection or service registries:\n   - Application Orchestrator dynamically binds to engines, enabling swapping or updating without code changes.\n\n5. Maintain data contracts:\n   - Use well-defined data formats for messages, references, and commands to ensure compatibility.\n\nThis modular design enables independent development, testing, scaling, and maintenance of each component.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear interfaces:\n   - Conversation Engine exposes APIs to add, retrieve, and manage messages and their lineage.\n   - Context Engine exposes APIs to select relevant references and manage budget constraints.\n   - Application Orchestrator exposes APIs to coordinate workflows and invoke Conversation and Context Engines.\n\n2. Use asynchronous communication or message passing:\n   - Application Orchestrator sends requests and receives responses without tight coupling.\n   - Engines operate independently and communicate only via defined interfaces.\n\n3. Separate state and responsibilities:\n   - Conversation Engine owns message storage and lineage tracking.\n   - Context Engine owns reference selection logic and budget management.\n   - Application Orchestrator owns process flow and coordination logic.\n\n4. Employ dependency injection or service registries:\n   - Application Orchestrator dynamically binds to engines, enabling swapping or updating without code changes.\n\n5. Maintain data contracts:\n   - Use well-defined data formats for messages, references, and commands to ensure compatibility.\n\nThis modular design enables independent development, testing, scaling, and maintenance of each component.",
+    "protocol": "json"
+  },
+  {
+    "case": "e57805976c5e",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        },
+        "binding": "hours"
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nSTATE {\"hours\":1}\n{\"root\":\"layout\",\"elements\":{\"layout\":{\"type\":\"Stack\",\"props\":{},\"children\":[\"knob\",\"minutes\"]},\"knob\":{\"type\":\"Control\",\"props\":{\"label\":\"Hours\",\"min\":0,\"max\":12,\"choices\":[],\"value\":{\"$bindState\":\"/hours\"}}},\"minutes\":{\"type\":\"Metric\",\"props\":{\"label\":\"Minutes\",\"value\":{\"$computed\":\"Multiply\",\"args\":{\"a\":{\"$state\":\"/hours\"},\"b\":60}}}}}}",
+    "protocol": "json"
+  },
+  {
+    "case": "e934e3570777",
+    "request": "What does BYOK mean in a model-powered application?",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "f1568db7afa2",
+    "request": "What does BYOK mean in a model-powered application?",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob,minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "f615b93c7324",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "orderedItems": [
+      {
+        "type": "Control",
+        "binding": "hours",
+        "props": {
+          "label": "Hours",
+          "min": 0,
+          "max": 12,
+          "choices": [],
+          "value": 1
+        }
+      },
+      {
+        "type": "Metric",
+        "props": {
+          "label": "Minutes",
+          "value": 60
+        }
+      }
+    ],
+    "initialState": {
+      "hours": 1
+    },
+    "replaySource": "UI\nroot = Stack([knob, minutes])\n$hours = 1\nknob = Control(\"Hours\", 0, 12, [], $hours)\nminutes = Metric(\"Minutes\", $hours * 60)",
+    "protocol": "oui"
+  },
+  {
+    "case": "f9e49346e473",
+    "request": "What does BYOK mean in a model-powered application?",
+    "visibleText": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response.",
+    "replaySource": "TEXT\n\nThe complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response.",
+    "protocol": "oui"
+  },
+  {
+    "case": "fa9c68a083e5",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "visibleText": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear responsibilities:\n   - Conversation Engine manages messages and their lineage (history, threading).\n   - Context Engine handles selection and budgeting of references (contextual info, memory).\n   - Application Orchestrator coordinates interactions and workflows between engines.\n\n2. Use well-defined interfaces and data contracts:\n   - Conversation Engine exposes APIs to send, receive, and retrieve message lineage.\n   - Context Engine exposes APIs to request context references and manage budgets.\n   - Orchestrator uses these APIs to invoke engines without internal knowledge of their implementations.\n\n3. Employ asynchronous communication or event-driven patterns:\n   - Engines communicate via messages or events to avoid tight coupling.\n   - Orchestrator listens to events or responses and triggers next steps.\n\n4. Separate state management:\n   - Each engine owns its state (messages, context, orchestration state).\n   - Share only necessary data via interface calls or events.\n\n5. Design for extensibility:\n   - Engines can be replaced or upgraded independently.\n   - Orchestrator adapts to changes via interface versioning or feature negotiation.\n\nThis approach ensures modularity, easier maintenance, and scalability.",
+    "replaySource": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear responsibilities:\n   - Conversation Engine manages messages and their lineage (history, threading).\n   - Context Engine handles selection and budgeting of references (contextual info, memory).\n   - Application Orchestrator coordinates interactions and workflows between engines.\n\n2. Use well-defined interfaces and data contracts:\n   - Conversation Engine exposes APIs to send, receive, and retrieve message lineage.\n   - Context Engine exposes APIs to request context references and manage budgets.\n   - Orchestrator uses these APIs to invoke engines without internal knowledge of their implementations.\n\n3. Employ asynchronous communication or event-driven patterns:\n   - Engines communicate via messages or events to avoid tight coupling.\n   - Orchestrator listens to events or responses and triggers next steps.\n\n4. Separate state management:\n   - Each engine owns its state (messages, context, orchestration state).\n   - Share only necessary data via interface calls or events.\n\n5. Design for extensibility:\n   - Engines can be replaced or upgraded independently.\n   - Orchestrator adapts to changes via interface versioning or feature negotiation.\n\nThis approach ensures modularity, easier maintenance, and scalability.",
+    "protocol": "json"
+  }
+]
