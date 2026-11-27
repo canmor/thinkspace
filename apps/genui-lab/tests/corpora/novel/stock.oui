@@ -1,0 +1,4 @@
+root = Stack([units,status])
+$count = 2
+units = Control("Stock", 0, 20, [], $count)
+status = Text($count > 0 ? "Available" : "Empty")

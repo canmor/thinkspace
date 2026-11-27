@@ -1,0 +1,1 @@
+{"root":"layout","elements":{"layout":{"type":"Stack","props":{},"children":["setting","result"]},"setting":{"type":"Control","props":{"label":"Metres","value":{"$bindState":"/length"},"min":1,"max":12,"choices":[]}},"result":{"type":"Metric","props":{"label":"Centimetres","value":{"$computed":"Multiply","args":{"a":{"$state":"/length"},"b":100}}}}}}

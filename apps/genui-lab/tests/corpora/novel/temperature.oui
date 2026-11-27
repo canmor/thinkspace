@@ -1,0 +1,4 @@
+root = Stack([setting,reading])
+$celsius = 20
+setting = Control("Celsius", 0, 100, [], $celsius)
+reading = Metric("Fahrenheit", $celsius * 9 / 5 + 32)

@@ -22,3 +22,5 @@ Accepted = explicit product agreement, not technical verification. Proposed = re
 Alternatives considered: chat-centric faster initial delivery but context/artifact coupling; event-driven runtime useful for streaming but full event sourcing premature. Native rendering maximizes system fidelity but reduces Web ecosystem reuse; native shell + Web content balances; Electron consistent Chromium with resource tradeoffs; Tauri uses system WebView and requires compatibility tests. No final shell or protocol selection.
 
 2026-11-27 · UI-02 evidence and proposed protocol direction are recorded in [ADR 0001](adr/0001-genui-protocol-feasibility.md). Human architecture review is pending.
+
+2026-11-27 · OpenUI Lang is conditionally accepted as the primary candidate and json-render is retained for comparison. [ADR 0002](adr/0002-generated-spec-admission.md) supersedes the fixture-only admission proposal. Its restricted runtime and Goal 2 readiness assessment await human review.

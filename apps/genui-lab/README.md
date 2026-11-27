@@ -1,6 +1,6 @@
 # GenUI protocol feasibility lab
 
-Six hand-authored fixtures run through two public React renderers. Use the task buttons to compare panes. Each pane has independent inputs and a raw specification. Save snapshot stores one revision in browser storage and exposes portable JSON under Artifact and context. Paste that JSON in a fresh browser context, choose the matching task and protocol, and select Import snapshot. Each artifact includes its specification, input state, typed semantic outputs and provenance.
+The current lab runs OpenUI Lang 1.2.0 and json-render 0.23.2 in bounded Workers. Both feed a shared React catalog. The Goal 1 baseline used the upstream React renderers. Use the task buttons to compare panes. Each pane has independent inputs and a raw specification. Save snapshot stores one revision in browser storage and exposes portable JSON under Artifact and context. Paste that JSON in a fresh browser context, choose the matching task and protocol, and select Import snapshot. Each artifact includes its specification, input state, typed semantic outputs and provenance.
 
 ## Reproduce
 
@@ -17,9 +17,15 @@ npx vite preview --host 127.0.0.1
 
 The tests start their own production preview on port 4187. The production build carries the offline content security policy. Vite development mode is for trusted source development. Package-lock records exact transitive versions and integrity digests. The pinned browser is Chromium headless shell revision 1255.
 
-## Evidence
+## Goal 1.5 admission and runtime
 
-- [Current Playwright report](evidence/results.json) covers six task/protocol pairs and two boundary tests. Screenshots capture both panes at default state. Each task/protocol prefix in [evidence](evidence) has a screenshot, initial and final snapshots and a timing sample.
+Use Raw specification → Revised specification → Admit revision in either pane. Each candidate goes through the same controller as initial load, snapshot import and restore. A successful revision starts a new session with its admitted defaults. Compile-time resource settings and compatibility versions live in [policy.ts](src/admission/policy.ts). The production preview serves a response CSP on the worker asset itself. Use this preview for containment tests.
+
+The [Goal 1.5 report](evidence/goal-1.5/results.json), screenshots, state and timing samples are separate from the original evidence. The [new programs](tests/corpora/novel) are outside the application's fixture glob. [Admission tests](tests/admission.spec.ts) include a deterministic generated corpus and trusted fault injection. The upstream feasibility findings, policy, resource limits and readiness recommendation are recorded in [ADR 0002](../../docs/architecture/adr/0002-generated-spec-admission.md). Acorn 8.15.0 (MIT) provides strict syntax inspection. Its [license](licenses/acorn.txt) is preserved.
+
+## Goal 1 baseline evidence
+
+- [Baseline Playwright report](evidence/results.json) covers six task/protocol pairs and two boundary tests. Screenshots capture both panes at default state. Each task/protocol prefix in [evidence](evidence) has a screenshot, initial and final snapshots and a timing sample.
 - The B04 oracle enumerates four fare and membership combinations across 31 weights. The test checks the allowance, fee, rectangle width and circle position after every change. B03 checks defaults, three one-hot settings, zero and a changed setting with tied scores. [Independent oracles](tests/oracles.mjs) and [browser assertions](tests/lab.spec.mjs).
 - Timing measures test-driver wall time from navigation through task selection and visibility. B04 also records driver round trips including assertions. One Chromium run per fixture cannot estimate population latency. No generation, model tokens or model repair costs apply.
 - Error reports preserve the missing browser installation, the initial OpenUI empty-diagnostic callback bug, the lost OpenUI variable bindings on restore and a test comparator field-name mismatch. The OpenUI adapter translates dollar-prefixed store keys in both directions. Raw reports may contain timing and machine-specific paths when regenerated.

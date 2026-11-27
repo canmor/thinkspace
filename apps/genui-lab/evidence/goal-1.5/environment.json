@@ -1,0 +1,19 @@
+{
+  "node": "v26.7.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "browser": {
+    "name": "chromium-headless-shell",
+    "revision": "1255",
+    "installByDefault": true,
+    "browserVersion": "159.0.8154.6",
+    "title": "Chrome Headless Shell"
+  },
+  "sourceHashes": {
+    "@openuidev/lang-core/dist/index.mjs": "39b48dba8fefc88faadb0ef730d89ab2b469bebb7c91706d71e5079954769b6c",
+    "@openuidev/react-lang/dist/index.mjs": "7639da192547d915e136cccdcdd674e0f2b46b842491b5d97c9b1ef6abc15c79",
+    "@json-render/core/dist/index.mjs": "127a871391ae0b5a96916c67a5d891f90663b985fd0a3a6ba51655e0002a9bc8",
+    "acorn/dist/acorn.mjs": "b4c8c70200e72bae33cf1085e0ecb1e792c1b6924ed50cab817caf14f51bb249"
+  },
+  "modelCalls": 0
+}
