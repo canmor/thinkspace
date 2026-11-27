@@ -1,6 +1,6 @@
 # ADR 0005 · Representation and revision efficiency
 
-**Status: Proposed for architecture review.** Scope is the local Goal 2B.3 generative UI lab.
+**Status: Accepted as a local experimental baseline.** Scope is the local Goal 2B.3 generative UI lab.
 
 ## Accepted existing capabilities
 
@@ -57,4 +57,12 @@ Acceptance cases for that future version include an explicit non-minimum default
 
 ### Implemented experimental follow-up
 
-Patch v2 now requires an explicit, exact initializer set for newly introduced host roles. Both historical water-json counterexamples replayed at the original 2 L/min under the legacy contract and at the requested 3 under v2 with the same operations. In a fresh two-seed matched study, full regeneration and v2 each delivered 2/2 correct initializations, 4/6 correctness-qualified turns and 0/2 complete trajectories. All four plot turns truncated. The final regression run passed 36 tests. The original evidence is preserved. Full regeneration remains the reference pending architecture review. [Implementation, replay commands, limitations and paired results](../../../apps/genui-lab/evidence/initializer-v2/README.md)
+Patch v2 now requires an explicit, exact initializer set for newly introduced host roles. Both historical water-json counterexamples replayed at the original 2 L/min under the legacy contract and at the requested 3 under v2 with the same operations. In a fresh two-seed matched study, full regeneration and v2 each delivered 2/2 correct initializations, 4/6 correctness-qualified turns and 0/2 complete trajectories. All four plot turns truncated. The final regression run passed 36 tests. The original evidence is preserved. Full regeneration remains the default and reference. [Implementation, replay commands, limitations and paired results](../../../apps/genui-lab/evidence/initializer-v2/README.md)
+
+## Final architecture re-review
+
+The [re-review of 1636567](https://github.com/canmor/thinkspace/pull/3#pullrequestreview-6088788569) passed the experimental baseline for merge and closed the explicit-initialization finding within the restricted lab contract. Full regeneration remains the default. Chart and patch v2 remain opt-in. The reviewer examined the source and committed evidence. The recorded test and model runs were performed by the experiment author.
+
+Before generalizing migration, introduce stable semantic field and categorical choice identities, distinguish failure during provisional evaluation at defaults from failure at the migrated state, and keep legacy replay explicitly selected. The transaction publishes a validated frame in memory. React rendering follows publication, and durable storage requires its own lifecycle guarantees. A follow-up with nonempty inherited prose is needed to evaluate stale commentary. Future public test reports should omit machine-specific absolute paths. Independent accessibility assessment and dependency advisory triage remain prerequisites for Chart promotion.
+
+The recommended next milestone is an integrated walking skeleton using accepted capabilities. This review grants no approval for Goal 2C or production deployment.
