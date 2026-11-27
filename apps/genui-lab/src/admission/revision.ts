@@ -10,10 +10,16 @@ const schema=z.object({
   artifact:z.string().min(1).max(80), base:z.number().int().nonnegative(),
   operations:z.array(operation).min(1).max(32)
 }).strict();
-export function reconstruct(protocol:Protocol, source:string, raw:string, artifact:string, revision:number){
+const initializer = z.object({role:z.string().refine(safeKey),value:z.number().int().safe()}).strict();
+const explicitSchema = schema.extend({version:z.literal(2),initializers:z.array(initializer).max(limits.components)});
+export type Initializer = z.infer<typeof initializer>;
+export type Reconstruction = {source:string; initializers?:Initializer[]};
+export function reconstruct(protocol:Protocol, source:string, raw:string, artifact:string, revision:number,explicit=false):Reconstruction{
   check(bytes(raw)<=8192,"Revision byte budget");
   checkUniqueJsonMembers(raw);
-  const patch=schema.parse(JSON.parse(raw));
+  const input=JSON.parse(raw);
+  const packetV2=explicit?explicitSchema.parse(input):undefined;
+  const patch=packetV2??schema.parse(input);
   check(patch.artifact===artifact && patch.base===revision,"Wrong artifact or stale revision");
   const declarations=new Map<string,string>();
   let root:string|undefined;
@@ -46,5 +52,5 @@ export function reconstruct(protocol:Protocol, source:string, raw:string, artifa
   const candidate=protocol==="oui"?Array.from(declarations,([k,v])=>k+" = "+v).join("\n"):
     JSON.stringify({root,elements:Object.fromEntries(Array.from(declarations,([k,v])=>[k,JSON.parse(v)]))});
   check(bytes(candidate)<=limits.sourceBytes,"Reconstructed source budget");
-  return candidate;
+  return {source:candidate,initializers:packetV2?.initializers};
 }

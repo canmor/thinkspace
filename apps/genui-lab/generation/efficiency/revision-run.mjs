@@ -16,21 +16,30 @@ const schema={type:'object',additionalProperties:false,required:['artifact','bas
  artifact:{type:'string'},base:{type:'integer'},operations:{type:'array',items:{type:'object',additionalProperties:false,
  required:['op','key','value'],properties:{op:{type:'string',enum:['add','replace','remove']},key:{type:'string'},value:{type:'string'}}}}}}
 const arm={...arms.at(-1),model:'gpt-6.2-sol'}
-const guide='Return only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose.'
+const followup=process.argv.includes('--initializer-study')
+const patchMode=followup?'patch-v2':'patch'
+const tasks=followup?{water:revisions.water}:revisions
+if(followup){
+ schema.required.push('version','initializers')
+ schema.properties.version={type:'integer',enum:[2]}
+ schema.properties.initializers={type:'array',items:{type:'object',additionalProperties:false,required:['role','value'],properties:{role:{type:'string'},value:{type:'integer'}}}}
+}
+let guide='Return only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose.'
+if(followup)guide+=' Use version 2. Include initializers with exactly one {role,value} for each newly introduced role, using the requested initial integer. Host water roles are time and rate. Retained or renamed roles must be omitted. Use [] if none are introduced.'
 const seeds=[1701,1702], key=offline?null:parseEnv(await readFile('../../.env','utf8')).OPENAI_TOKEN
 if(!offline)assert.ok(key);assert.equal(JSON.parse(await readFile('evidence/goal-2b3/revision-preflight.json')).length,30)
 if(!offline)await mkdir(dir,{recursive:true})
 const save=(name,value)=>writeFile(join(dir,name+'.json'),JSON.stringify(value,null,2)+'\n')
 const load=async name=>{try{return JSON.parse(await readFile(join(dir,name+'.json')))}catch(e){if(e.code==='ENOENT')return null;throw e}}
-const manifest={arm,seeds,revisions,schema,guide,repairs:1,context:'current artifact, prior user requirements, and host selections; same in both arms',origin:'matched hand-authored fresh tasks and historical B04'}
+const manifest={arm,seeds,revisions:tasks,schema,guide,repairs:1,context:'current artifact, prior user requirements, and host selections; same in both arms',origin:'matched hand-authored fresh tasks and historical B04'}
 const oldManifest=await load('manifest')
 if(offline)assert.ok(oldManifest);
 if(oldManifest)assert.deepEqual(oldManifest,manifest);else await save('manifest',manifest)
 const server=await preview({build:{outDir},preview:{host:'127.0.0.1',port:0}})
 const browser=await chromium.launch(),signal=new AbortController()
 async function lane(protocol,seed){
- for(const [i,[task,trajectory]] of Object.entries(revisions).entries()){
-  for(const mode of (i+seed)%2?['full','patch']:['patch','full']){
+ for(const [i,[task,trajectory]] of Object.entries(tasks).entries()){
+  for(const mode of (i+seed)%2?['full',patchMode]:[patchMode,'full']){
    const artifact=task+'-'+protocol+'-'+seed,name=artifact+'-'+mode
    const page=await browser.newPage({viewport:{width:1024,height:800}})
    const invoke=(method,...args)=>page.evaluate(async({method,args})=>window.revisionLab[method](...args),{method,args})
@@ -55,7 +64,7 @@ async function lane(protocol,seed){
     for(const [turn,change] of trajectory.changes.entries()){
      const stem=name+'-turn'+(turn+1),before=current,attempts=[]
      const messages=prompt(arm,protocol,'B04')
-     if(mode==='patch'){
+     if(mode===patchMode){
       messages[0].content=messages[0].content.slice(messages[0].content.indexOf('No JavaScript')).split('Unrelated response-shape examples.')[0]+'\n'+guide
      }
      messages[1].content=JSON.stringify({artifact,base:before.revision,original:task==='baggage'?prompt(arm,protocol,'B04')[1].content:trajectory.origin,
@@ -64,7 +73,7 @@ async function lane(protocol,seed){
      for(let n=0;n<=1;n++){
       const record=stem+'.attempt'+n,saved=await load(record)
       if(offline)assert.ok(saved,"Missing "+record);
-      const a=saved??await request(arm,messages,seed+turn*10+n,key,signal.signal,mode==='patch'?schema:undefined).catch(e=>({status:'provider-error',diagnostic:e.message}))
+      const a=saved??await request(arm,messages,seed+turn*10+n,key,signal.signal,mode===patchMode?schema:undefined).catch(e=>({status:'provider-error',diagnostic:e.message}))
       let result
       try{
        if(!a.raw)throw Error(a.diagnostic??a.status)
@@ -101,5 +110,5 @@ async function lane(protocol,seed){
   }
  }
 }
-try{await Promise.all(['oui','json'].flatMap(p=>seeds.map(s=>lane(p,s))))}
+try{await Promise.all((followup?['json']:['oui','json']).flatMap(p=>seeds.map(s=>lane(p,s))))}
 finally{signal.abort();await browser.close();await server.close()}

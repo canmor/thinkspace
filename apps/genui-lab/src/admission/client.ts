@@ -1,9 +1,10 @@
+import type { Reconstruction } from "./revision";
 import { validateTransfer } from "./transport";
 import { limits, type Frame } from "./policy";
 export class RestrictedClient {
   private worker: Worker;
   private queue: {
-    resolve: (frame: Frame | {source:string}) => void;
+    resolve: (frame: Frame | Reconstruction) => void;
     reject: (e: Error) => void;
   }[] = [];
   private closed = false;
@@ -22,9 +23,9 @@ export class RestrictedClient {
     this.worker.onerror = () => this.close("Worker failed");
     this.worker.onmessageerror = () => this.close("Invalid runtime response");
   }
-  request(message: {kind:"reconstruct";protocol:string;source:string;raw:string;artifact:string;base:number}): Promise<{source:string}>;
+  request(message: {kind:"reconstruct";protocol:string;source:string;raw:string;artifact:string;base:number;version?:2}): Promise<Reconstruction>;
   request(message: object): Promise<Frame>;
-  request(message: object): Promise<Frame | {source:string}> {
+  request(message: object): Promise<Frame | Reconstruction> {
     try {
       validateTransfer(message);
     } catch (e) {

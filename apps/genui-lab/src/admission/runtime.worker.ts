@@ -6,8 +6,8 @@ self.onmessage = ({ data }) => {
   try {
     validateTransfer(data);
     if(data.kind==="reconstruct" && self.name==="revision-experiment"){
-      const source=reconstruct(data.protocol,data.source,data.raw,data.artifact,data.base);
-      self.postMessage({frame:{source}});
+      const result=reconstruct(data.protocol,data.source,data.raw,data.artifact,data.base,data.version===2);
+      self.postMessage({frame:result});
       return;
     }
     let frame;

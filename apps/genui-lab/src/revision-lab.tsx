@@ -35,7 +35,7 @@ const api={
    await session.open(artifact,protocol,raw);render();return api.snapshot();
  },
  async change(key:string,value:number){await session.change(key,value);render();return api.snapshot()},
- async revise(artifact:string,base:number,raw:string,mode:"full"|"patch"){
+ async revise(artifact:string,base:number,raw:string,mode:"full"|"patch"|"patch-v2"){
    const result=await session.revise(artifact,base,raw,mode);render();return result;
  },
  snapshot(){const {artifact,revision,raw,frame}=session.current!;return {artifact,revision,raw,frame}},

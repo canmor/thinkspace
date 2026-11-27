@@ -1,7 +1,8 @@
+import type {Initializer} from "./revision";
 import {check,type Frame,type State} from "./policy";
 type Control=Extract<Frame["items"][number],{type:"Control"}>;
 type Identify=(control:Control)=>string|undefined;
-export function migrate(before:Frame, candidate:Frame, identify:Identify) {
+export function migrate(before:Frame, candidate:Frame, identify:Identify, initializers?:Initializer[]) {
   function roles(frame:Frame){
     const found=new Map<string,Control>();
     for(const c of frame.items){
@@ -13,10 +14,24 @@ export function migrate(before:Frame, candidate:Frame, identify:Identify) {
     return found;
   }
   const prior=roles(before), next=roles(candidate);
+  const explicit = new Map<string,number>();
+  for(const {role,value} of initializers??[]){
+    check(next.has(role) && !prior.has(role) && !explicit.has(role),"Unexpected or duplicate initializer: "+role);
+    explicit.set(role,value);
+  }
   const state:State={...candidate.state}, decisions=[];
   for(const [role,c] of next){
     const from=prior.get(role), key=c.binding!;
-    if(!from){decisions.push({role,key,action:"introduced",value:state[key]});continue;}
+    if(!from){
+      if(initializers!==undefined){
+        const value=explicit.get(role);
+        check(value!==undefined,"Missing initializer: "+role);
+        check(Number.isSafeInteger(value)&&value>=c.props.min&&value<=c.props.max,"Invalid initializer: "+role);
+        state[key]=value;
+      }
+      decisions.push({role,key,action:"introduced",value:state[key]});
+      continue;
+    }
     const old=before.state[from.binding!];
     const choices=from.props.choices, options=c.props.choices;
     check(Boolean(choices.length)===Boolean(options.length),"Incompatible control representation: "+role);
