@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "policies",
+  "seed": 1701,
+  "mode": "chart",
+  "endToEndMs": 81380.75329200001,
+  "attempts": 2,
+  "delivery": "truncated"
+}

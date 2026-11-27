@@ -1,0 +1,9 @@
+{
+  "protocol": "oui",
+  "task": "archive",
+  "seed": 1701,
+  "mode": "svg",
+  "endToEndMs": 34779.76058299997,
+  "attempts": 2,
+  "delivery": "accepted"
+}

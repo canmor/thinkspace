@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "tide",
+  "seed": 1702,
+  "mode": "chart",
+  "endToEndMs": 7218.978332999977,
+  "attempts": 1,
+  "delivery": "accepted"
+}

@@ -1,0 +1,9 @@
+{
+  "protocol": "oui",
+  "task": "fee",
+  "seed": 1702,
+  "mode": "svg",
+  "endToEndMs": 67452.65570900001,
+  "attempts": 2,
+  "delivery": "truncated"
+}

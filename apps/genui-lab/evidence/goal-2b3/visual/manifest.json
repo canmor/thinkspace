@@ -1,0 +1,27 @@
+{
+  "tasks": {
+    "fee": "A bag weighs 10–40 whole kg, initially 38. Economy allowance is 23 kg and Business allowance is 32 kg. Gold adds 5 kg and International adds 2 kg. Start at Economy, Gold, International. The fee is $15 per excess kg. Include controls for all four inputs. Plot the fee in dollars at every whole weight and indicate the selected weight.",
+    "policies": "A bag weighs 10–40 whole kg, initially 38. Economy allowance is 23 kg and Business allowance is 32 kg. Gold adds 5 kg and International adds 2 kg. Start at Economy, Gold, International. The fee is $15 per excess kg. Include controls for all four inputs. Compare old $15 and new $20 per excess kg in two labeled series at every whole weight. Indicate the selected weight.",
+    "tide": "Plot harbor depth in metres at hours 0 through 5. The six readings are 2, 3, 5, 4, 2, 1 metres. A datum adjustment control ranges from -1 to 1 whole metres, initially 0. Add that adjustment to every reading.",
+    "kiln": "Plot kiln temperature in degrees Celsius at minutes 0 through 6. Start at 20 degrees, rise by 30 degrees per minute until minute 3, then hold that temperature. Compare against a second run rising by 20 degrees per minute for the same three minutes.",
+    "archive": "Plot the number of pages remaining after each whole day from 0 through 8. Start with 30 pages. A control selects a daily pace of 3 to 6 whole pages, initially 4. Remaining pages cannot go below zero."
+  },
+  "arm": {
+    "id": "F",
+    "wire": "structured",
+    "tokens": 2048,
+    "ground": true,
+    "examples": true,
+    "model": "gpt-6.2-sol"
+  },
+  "seeds": [
+    1701,
+    1702
+  ],
+  "chartGuide": "Use the experimental Chart line component for this plot. Its exact positional arguments (json-render prop names in order) are title, xLabel, yLabel, x, series, selected, decimals. Axis labels include units. x is an increasing numeric array (2–40 values). series is 1–3 objects with distinct label strings and numeric values arrays aligned to x. selected is [] or [one x value]. decimals is a fixed integer 0–3. Include complete requested data. No new functions.",
+  "svgGuide": "Use the existing Graphic component for this plot. Include complete requested data.",
+  "oracleCommit": "a3cb62a",
+  "repairs": 1,
+  "control": "default",
+  "experiment": "chart-experiment"
+}

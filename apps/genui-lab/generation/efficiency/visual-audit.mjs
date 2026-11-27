@@ -4,6 +4,7 @@ import {join} from 'node:path'
 import {preview} from 'vite'
 import {chromium} from '@playwright/test'
 import {replay} from '../browser.mjs'
+import {auditSvg} from './svg-audit.mjs'
 import {expectedSeries} from './oracles.mjs'
 const [outDir,dir,report]=process.argv.slice(2)
 if(!report)throw Error('Supply build directory, record directory and report path')
@@ -63,7 +64,7 @@ try{
     const state=Object.fromEntries(Object.entries(s).map(([k,v])=>[k,v.val]))
     const expected=expectedSeries(run.task,state)
     const chart=frame.items.find(c=>c.type==='Chart')
-    if(!chart){row.encoding=frame.items.some(c=>c.type==='Graphic')?'SVG requires calibration':'missing plot';break}
+    if(!chart){auditSvg(run,frame,expected,units[run.task]);row.checked++;continue}
     const p=chart.props
     const actual=p.series.map(serie=>p.x.map((x,i)=>[x,serie.values[i]]))
     assert.deepEqual(actual,expected,'Series at '+JSON.stringify(state))

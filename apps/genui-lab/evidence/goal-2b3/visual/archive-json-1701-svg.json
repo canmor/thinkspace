@@ -1,0 +1,9 @@
+{
+  "protocol": "json",
+  "task": "archive",
+  "seed": 1701,
+  "mode": "svg",
+  "endToEndMs": 30641.16841699998,
+  "attempts": 2,
+  "delivery": "accepted"
+}

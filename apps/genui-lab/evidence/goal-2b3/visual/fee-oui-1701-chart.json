@@ -1,0 +1,9 @@
+{
+  "protocol": "oui",
+  "task": "fee",
+  "seed": 1701,
+  "mode": "chart",
+  "endToEndMs": 14954.613417,
+  "attempts": 1,
+  "delivery": "accepted"
+}

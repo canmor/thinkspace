@@ -1,0 +1,205 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-EopaWsGLAXZ0uoZCUWXsmcUlBNZA4\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783412,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"{\\\\\\\"root\\\\\\\":\\\\\\\"layout\\\\\\\",\\\\\\\"elements\\\\\\\":{\\\\\\\"layout\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"props\\\\\\\":{},\\\\\\\"children\\\\\\\":[\\\\\\\"datum\\\\\\\",\\\\\\\"plot\\\\\\\"]},\\\\\\\"datum\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Datum adjustment (m)\\\\\\\",\\\\\\\"min\\\\\\\":-1,\\\\\\\"max\\\\\\\":1,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}},\\\\\\\"plot\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Graphic\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Harbor depth by hour after datum adjustment\\\\\\\",\\\\\\\"items\\\\\\\":[{\\\\\\\"kind\\\\\\\":\\\\\\\"path\\\\\\\",\\\\\\\"d\\\\\\\":\\\\\\\"M 52 18 V 108 H 430 M 48 18 H 52 M 48 33 H 52 M 48 48 H 52 M 48 63 H 52 M 48 78 H 52 M 48 93 H 52 M 48 108 H 52 M 72 108 V 112 M 140 108 V 112 M 208 108 V 112 M 276 108 V 112 M 344 108 V 112 M 412 108 V 112\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":2,\\\\\\\"y\\\\\\\":12,\\\\\\\"text\\\\\\\":\\\\\\\"Depth (m)\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":22,\\\\\\\"text\\\\\\\":\\\\\\\"6\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":37,\\\\\\\"text\\\\\\\":\\\\\\\"5\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":52,\\\\\\\"text\\\\\\\":\\\\\\\"4\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":67,\\\\\\\"text\\\\\\\":\\\\\\\"3\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":82,\\\\\\\"text\\\\\\\":\\\\\\\"2\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":97,\\\\\\\"text\\\\\\\":\\\\\\\"1\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":34,\\\\\\\"y\\\\\\\":112,\\\\\\\"text\\\\\\\":\\\\\\\"0\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":4,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"Hour\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":68,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"0\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":136,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"1\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":204,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"2\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":272,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"3\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":340,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"4\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"text\\\\\\\",\\\\\\\"x\\\\\\\":408,\\\\\\\"y\\\\\\\":128,\\\\\\\"text\\\\\\\":\\\\\\\"5\\\\\\\"},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":72,\\\\\\\"cy\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":78,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":-15,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}}}},\\\\\\\"r\\\\\\\":4},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":140,\\\\\\\"cy\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":63,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":-15,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}}}},\\\\\\\"r\\\\\\\":4},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":208,\\\\\\\"cy\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":33,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":-15,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}}}},\\\\\\\"r\\\\\\\":4},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":276,\\\\\\\"cy\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":48,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":-15,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}}}},\\\\\\\"r\\\\\\\":4},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":344,\\\\\\\"cy\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":78,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":-15,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}}}},\\\\\\\"r\\\\\\\":4},{\\\\\\\"kind\\\\\\\":\\\\\\\"circle\\\\\\\",\\\\\\\"cx\\\\\\\":412,\\\\\\\"cy\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":93,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":-15,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/adjustment\\\\\\\"}}}}},\\\\\\\"r\\\\\\\":4}]}}}}\\\",\\n      \\\"state\\\": [\\n        {\\n          \\\"name\\\": \\\"adjustment\\\",\\n          \\\"value\\\": 0\\n        }\\n      ]\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 2013,\n    \"completion_tokens\": 878,\n    \"total_tokens\": 2891,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 2010,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 11133,
+  "usage": {
+    "prompt_tokens": 2013,
+    "completion_tokens": 878,
+    "total_tokens": 2891,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2010,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"datum\\\",\\\"plot\\\"]},\\\"datum\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Datum adjustment (m)\\\",\\\"min\\\":-1,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/adjustment\\\"}}},\\\"plot\\\":{\\\"type\\\":\\\"Graphic\\\",\\\"props\\\":{\\\"label\\\":\\\"Harbor depth by hour after datum adjustment\\\",\\\"items\\\":[{\\\"kind\\\":\\\"path\\\",\\\"d\\\":\\\"M 52 18 V 108 H 430 M 48 18 H 52 M 48 33 H 52 M 48 48 H 52 M 48 63 H 52 M 48 78 H 52 M 48 93 H 52 M 48 108 H 52 M 72 108 V 112 M 140 108 V 112 M 208 108 V 112 M 276 108 V 112 M 344 108 V 112 M 412 108 V 112\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":2,\\\"y\\\":12,\\\"text\\\":\\\"Depth (m)\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":22,\\\"text\\\":\\\"6\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":37,\\\"text\\\":\\\"5\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":52,\\\"text\\\":\\\"4\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":67,\\\"text\\\":\\\"3\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":82,\\\"text\\\":\\\"2\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":97,\\\"text\\\":\\\"1\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":112,\\\"text\\\":\\\"0\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":4,\\\"y\\\":128,\\\"text\\\":\\\"Hour\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":68,\\\"y\\\":128,\\\"text\\\":\\\"0\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":136,\\\"y\\\":128,\\\"text\\\":\\\"1\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":204,\\\"y\\\":128,\\\"text\\\":\\\"2\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":272,\\\"y\\\":128,\\\"text\\\":\\\"3\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":340,\\\"y\\\":128,\\\"text\\\":\\\"4\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":408,\\\"y\\\":128,\\\"text\\\":\\\"5\\\"},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":72,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":78,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":140,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":63,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":208,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":33,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":276,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":48,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":344,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":78,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":412,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":93,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}},\\\"r\\\":4}]}}}}\",\n      \"state\": [\n        {\n          \"name\": \"adjustment\",\n          \"value\": 0\n        }\n      ]\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"choice\\\",\\\"result\\\"]},\\\"choice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Chimes\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/n\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Beats\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/n\\\"},\\\"b\\\":3}}}}}}\",\"state\":[]}]}\nUse the existing Graphic component for this plot. Include complete requested data."
+    },
+    {
+      "role": "user",
+      "content": "Plot harbor depth in metres at hours 0 through 5. The six readings are 2, 3, 5, 4, 2, 1 metres. A datum adjustment control ranges from -1 to 1 whole metres, initially 0. Add that adjustment to every reading."
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"datum\\\",\\\"plot\\\"]},\\\"datum\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Datum adjustment (m)\\\",\\\"min\\\":-1,\\\"max\\\":1,\\\"choices\\\":[-1,0,1],\\\"value\\\":{\\\"$bindState\\\":\\\"/adjustment\\\"}}},\\\"plot\\\":{\\\"type\\\":\\\"Graphic\\\",\\\"props\\\":{\\\"label\\\":\\\"Harbor depth by hour, with the datum adjustment added to each reading\\\",\\\"items\\\":[{\\\"kind\\\":\\\"path\\\",\\\"d\\\":\\\"M 52 18 V 108 H 430 M 48 18 H 52 M 48 33 H 52 M 48 48 H 52 M 48 63 H 52 M 48 78 H 52 M 48 93 H 52 M 48 108 H 52 M 72 108 V 112 M 140 108 V 112 M 208 108 V 112 M 276 108 V 112 M 344 108 V 112 M 412 108 V 112\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":2,\\\"y\\\":12,\\\"text\\\":\\\"Depth (m)\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":22,\\\"text\\\":\\\"6\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":37,\\\"text\\\":\\\"5\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":52,\\\"text\\\":\\\"4\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":67,\\\"text\\\":\\\"3\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":82,\\\"text\\\":\\\"2\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":97,\\\"text\\\":\\\"1\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":34,\\\"y\\\":112,\\\"text\\\":\\\"0\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":4,\\\"y\\\":128,\\\"text\\\":\\\"Hour\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":68,\\\"y\\\":128,\\\"text\\\":\\\"0\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":136,\\\"y\\\":128,\\\"text\\\":\\\"1\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":204,\\\"y\\\":128,\\\"text\\\":\\\"2\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":272,\\\"y\\\":128,\\\"text\\\":\\\"3\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":340,\\\"y\\\":128,\\\"text\\\":\\\"4\\\"},{\\\"kind\\\":\\\"text\\\",\\\"x\\\":408,\\\"y\\\":128,\\\"text\\\":\\\"5\\\"},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":72,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":108,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":140,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":108,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":208,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":108,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":5,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":276,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":108,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":4,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":344,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":108,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}}}},\\\"r\\\":4},{\\\"kind\\\":\\\"circle\\\",\\\"cx\\\":412,\\\"cy\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":108,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":-15,\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":1,\\\"b\\\":{\\\"$state\\\":\\\"/adjustment\\\"}}}}}}},\\\"r\\\":4}]}}}}\",\n      \"state\": [\n        {\n          \"name\": \"adjustment\",\n          \"value\": 0\n        }\n      ]\n    }\n  ]\n}"
+    },
+    {
+      "role": "user",
+      "content": "Complete response rejected: Error: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      0\n    ],\n    \"message\": \"Invalid input: expected string, received number\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      1\n    ],\n    \"message\": \"Invalid input: expected string, received number\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      2\n    ],\n    \"message\": \"Invalid input: expected string, received n. Return one complete corrected response."
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Datum adjustment (m)",
+            "min": -1,
+            "max": 1,
+            "choices": [],
+            "value": 0
+          },
+          "binding": "adjustment"
+        },
+        {
+          "type": "Graphic",
+          "props": {
+            "label": "Harbor depth by hour after datum adjustment",
+            "items": [
+              {
+                "kind": "path",
+                "d": "M 52 18 V 108 H 430 M 48 18 H 52 M 48 33 H 52 M 48 48 H 52 M 48 63 H 52 M 48 78 H 52 M 48 93 H 52 M 48 108 H 52 M 72 108 V 112 M 140 108 V 112 M 208 108 V 112 M 276 108 V 112 M 344 108 V 112 M 412 108 V 112"
+              },
+              {
+                "kind": "text",
+                "x": 2,
+                "y": 12,
+                "text": "Depth (m)"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 22,
+                "text": "6"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 37,
+                "text": "5"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 52,
+                "text": "4"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 67,
+                "text": "3"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 82,
+                "text": "2"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 97,
+                "text": "1"
+              },
+              {
+                "kind": "text",
+                "x": 34,
+                "y": 112,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 4,
+                "y": 128,
+                "text": "Hour"
+              },
+              {
+                "kind": "text",
+                "x": 68,
+                "y": 128,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 136,
+                "y": 128,
+                "text": "1"
+              },
+              {
+                "kind": "text",
+                "x": 204,
+                "y": 128,
+                "text": "2"
+              },
+              {
+                "kind": "text",
+                "x": 272,
+                "y": 128,
+                "text": "3"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 128,
+                "text": "4"
+              },
+              {
+                "kind": "text",
+                "x": 408,
+                "y": 128,
+                "text": "5"
+              },
+              {
+                "kind": "circle",
+                "cx": 72,
+                "cy": 78,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 140,
+                "cy": 63,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 208,
+                "cy": 33,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 276,
+                "cy": 48,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 344,
+                "cy": 78,
+                "r": 4
+              },
+              {
+                "kind": "circle",
+                "cx": 412,
+                "cy": 93,
+                "r": 4
+              }
+            ]
+          }
+        }
+      ],
+      "state": {
+        "adjustment": 0
+      }
+    },
+    "blocks": [
+      {
+        "type": "ui"
+      }
+    ],
+    "transport": true
+  },
+  "replayMs": 94.14029099995969
+}

@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useLayoutEffect } from "react";
 import { createRoot } from "react-dom/client";
 import {decodeEnvelope} from "./envelope";
 import { RestrictedClient } from "./admission/client";
@@ -19,6 +20,11 @@ type Result = {
   transport?: boolean;
   blocks?: ({type:"text",text:string}|{type:"ui"})[];
 };
+function MeasuredSurface(props:Parameters<typeof Surface>[0]){
+  const started=performance.now();
+  useLayoutEffect(()=>{performance.measure("artifact-surface-render",{start:started,end:performance.now()})});
+  return <Surface {...props}/>;
+}
 function Replay() {
   const [result, show] = useState<Result>({ status: "waiting" }),
     [epoch, reset] = useState(0);
@@ -134,7 +140,7 @@ function Replay() {
             show({ status: "runtime-error", diagnostic });
           }}
         >
-          <Surface frame={result.frame!} change={change} />
+          <MeasuredSurface frame={result.frame!} change={change} />
         </ArtifactBoundary>:null)}
       {result.diagnostic && <p role="alert">{result.diagnostic}</p>}
       <details>
