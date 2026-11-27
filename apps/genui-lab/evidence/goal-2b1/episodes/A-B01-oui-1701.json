@@ -1,0 +1,82 @@
+{
+  "id": "A-B01-oui-1701",
+  "task": "B01",
+  "protocol": "oui",
+  "seed": 1701,
+  "arm": "A",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo7JuXQZnffp0CqTUUUgJ9I2AUa5\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777757,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"root = Stack([TextExplanation, Diagram])\\n\\nTextExplanation = Text(\\n\\\"Geometric Meaning of Vector Dot Product:\\\\n\\\"\\n\\\"The dot product of two vectors measures how much one vector extends in the direction of the other. \\\"\\n\\\"Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\\\\n\\\\n\\\"\\n\\\"Key points:\\\\n\\\"\\n\\\"1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\\\\n\\\"\\n\\\"2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\\\\n\\\"\\n\\\"3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction.\\\"\\n)\\n\\nDiagram = Graphic(\\\"DotProductDiagram\\\", [\\n  // Draw vector A from origin\\n  path(\\\"M 50 100 L 150 50\\\"), // vector A\\n  text(155, 45, \\\"A\\\"),\\n  // Draw vector B at angle θ < 90°\\n  path(\\\"M 50 100 L 120 130\\\"), // vector B\\n  text(125, 135, \\\"B\\\"),\\n  // Draw projection of B onto A\\n  path(\\\"M 120 130 L 120 90 L 150 90\\\"), // projection line vertical and horizontal to A\\n  path(\\\"M 120 90 L 150 90\\\"), // projection on A line\\n  text(130, 85, \\\"Projection of B on A\\\"),\\n  // Angle θ mark\\n  path(\\\"M 50 100 L 70 90 L 80 100\\\"),\\n  text(70, 80, \\\"θ\\\"),\\n  // Orthogonal vectors example\\n  path(\\\"M 250 100 L 350 100\\\"), // vector A'\\n  text(355, 100, \\\"A'\\\"),\\n  path(\\\"M 250 100 L 250 30\\\"), // vector B' orthogonal to A'\\n  text(255, 30, \\\"B'\\\"),\\n  // Negative projection example\\n  path(\\\"M 400 100 L 480 50\\\"), // vector A''\\n  text(485, 45, \\\"A''\\\"),\\n  path(\\\"M 400 100 L 350 130\\\"), // vector B'' with angle > 90°\\n  text(345, 135, \\\"B''\\\"),\\n  // Projection line for negative projection\\n  path(\\\"M 350 130 L 400 130 L 400 100\\\"),\\n  text(375, 135, \\\"Negative Projection\\\")\\n])\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 461,\n    \"completion_tokens\": 557,\n    \"total_tokens\": 1018,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 8642,
+      "usage": {
+        "prompt_tokens": 461,
+        "completion_tokens": 557,
+        "total_tokens": 1018,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "root = Stack([TextExplanation, Diagram])\n\nTextExplanation = Text(\n\"Geometric Meaning of Vector Dot Product:\\n\"\n\"The dot product of two vectors measures how much one vector extends in the direction of the other. \"\n\"Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\\n\\n\"\n\"Key points:\\n\"\n\"1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\\n\"\n\"2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\\n\"\n\"3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction.\"\n)\n\nDiagram = Graphic(\"DotProductDiagram\", [\n  // Draw vector A from origin\n  path(\"M 50 100 L 150 50\"), // vector A\n  text(155, 45, \"A\"),\n  // Draw vector B at angle θ < 90°\n  path(\"M 50 100 L 120 130\"), // vector B\n  text(125, 135, \"B\"),\n  // Draw projection of B onto A\n  path(\"M 120 130 L 120 90 L 150 90\"), // projection line vertical and horizontal to A\n  path(\"M 120 90 L 150 90\"), // projection on A line\n  text(130, 85, \"Projection of B on A\"),\n  // Angle θ mark\n  path(\"M 50 100 L 70 90 L 80 100\"),\n  text(70, 80, \"θ\"),\n  // Orthogonal vectors example\n  path(\"M 250 100 L 350 100\"), // vector A'\n  text(355, 100, \"A'\"),\n  path(\"M 250 100 L 250 30\"), // vector B' orthogonal to A'\n  text(255, 30, \"B'\"),\n  // Negative projection example\n  path(\"M 400 100 L 480 50\"), // vector A''\n  text(485, 45, \"A''\"),\n  path(\"M 400 100 L 350 130\"), // vector B'' with angle > 90°\n  text(345, 135, \"B''\"),\n  // Projection line for negative projection\n  path(\"M 350 130 L 400 130 L 400 100\"),\n  text(375, 135, \"Negative Projection\")\n])",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo7RzE9ioCPeszCn9LTErHsKsz1a\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777765,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"TEXT\\nGeometric Meaning of Vector Dot Product:\\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\\n\\nKey points:\\n1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\\n2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\\n3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1046,\n    \"completion_tokens\": 147,\n    \"total_tokens\": 1193,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 3418,
+      "usage": {
+        "prompt_tokens": 1046,
+        "completion_tokens": 147,
+        "total_tokens": 1193,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "TEXT\nGeometric Meaning of Vector Dot Product:\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\n\nKey points:\n1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\n2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\n3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "root = Stack([TextExplanation, Diagram])\n\nTextExplanation = Text(\n\"Geometric Meaning of Vector Dot Product:\\n\"\n\"The dot product of two vectors measures how much one vector extends in the direction of the other. \"\n\"Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\\n\\n\"\n\"Key points:\\n\"\n\"1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\\n\"\n\"2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\\n\"\n\"3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction.\"\n)\n\nDiagram = Graphic(\"DotProductDiagram\", [\n  // Draw vector A from origin\n  path(\"M 50 100 L 150 50\"), // vector A\n  text(155, 45, \"A\"),\n  // Draw vector B at angle θ < 90°\n  path(\"M 50 100 L 120 130\"), // vector B\n  text(125, 135, \"B\"),\n  // Draw projection of B onto A\n  path(\"M 120 130 L 120 90 L 150 90\"), // projection line vertical and horizontal to A\n  path(\"M 120 90 L 150 90\"), // projection on A line\n  text(130, 85, \"Projection of B on A\"),\n  // Angle θ mark\n  path(\"M 50 100 L 70 90 L 80 100\"),\n  text(70, 80, \"θ\"),\n  // Orthogonal vectors example\n  path(\"M 250 100 L 350 100\"), // vector A'\n  text(355, 100, \"A'\"),\n  path(\"M 250 100 L 250 30\"), // vector B' orthogonal to A'\n  text(255, 30, \"B'\"),\n  // Negative projection example\n  path(\"M 400 100 L 480 50\"), // vector A''\n  text(485, 45, \"A''\"),\n  path(\"M 400 100 L 350 130\"), // vector B'' with angle > 90°\n  text(345, 135, \"B''\"),\n  // Projection line for negative projection\n  path(\"M 350 130 L 400 130 L 400 100\"),\n  text(375, 135, \"Negative Projection\")\n])"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ],
+      "status": "text",
+      "text": "Geometric Meaning of Vector Dot Product:\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\n\nKey points:\n1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\n2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\n3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction."
+    }
+  ]
+}

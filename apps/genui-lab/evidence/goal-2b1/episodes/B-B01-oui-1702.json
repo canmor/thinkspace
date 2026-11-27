@@ -1,0 +1,83 @@
+{
+  "id": "B-B01-oui-1702",
+  "task": "B01",
+  "protocol": "oui",
+  "seed": 1702,
+  "arm": "B",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo9LyfbF65F860Ido5qXsvIVbRc8\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777883,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"$angle = 0\\\\n$lengthA = 100\\\\n$lengthB = 80\\\\n$cosAngle = cos($angle * 3.14159 / 180)\\\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\\\n$angleChoice = 0\\\\n$angleLabels = [\\\\\\\"0° (Same direction)\\\\\\\", \\\\\\\"90° (Orthogonal)\\\\\\\", \\\\\\\"135° (Obtuse angle)\\\\\\\"]\\\\n$angleValues = [0, 90, 135]\\\\n$angle = $angleValues[$angleChoice]\\\\n$cosAngle = cos($angle * 3.14159 / 180)\\\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\\\n\\\\nroot = Stack([\\\\n  Text(\\\\\\\"Vector A and Vector B with angle $angleLabels[$angleChoice] between them.\\\\\\\"),\\\\n  Graphic(\\\\\\\"Vectors\\\\\\\",\\\\n    group([\\\\n      path(\\\\\\\"M 50 120 L 50 120 H 50\\\\\\\"),\\\\n      path(\\\\\\\"M 50 120 L 50 120\\\\\\\"),\\\\n      path(\\\\\\\"M 50 120 L 50 120\\\\\\\"),\\\\n      group([\\\\n        path(\\\\\\\"M 50 120 L 50 120\\\\\\\"),\\\\n        path(\\\\\\\"M 50 120 L 50 120\\\\\\\")\\\\n      ]),\\\\n      circle(50,120,3),\\\\n      text(50,130,\\\\\\\"Origin\\\\\\\")\\\\n    ])\\\\n  ),\\\\n  Text(\\\\\\\"Dot product = lengthA * lengthB * cos(angle) = $lengthA * $lengthB * cos($angle°) = $dotProduct\\\\\\\"),\\\\n  Control(\\\\\\\"Angle between vectors\\\\\\\",0,2,$angleChoice, $angleLabels)\\\\n])\\\",\\\"state\\\":[{\\\"name\\\":\\\"angleChoice\\\",\\\"value\\\":0},{\\\"name\\\":\\\"lengthA\\\",\\\"value\\\":100},{\\\"name\\\":\\\"lengthB\\\",\\\"value\\\":80}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 586,\n    \"completion_tokens\": 476,\n    \"total_tokens\": 1062,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 6375,
+      "usage": {
+        "prompt_tokens": 586,
+        "completion_tokens": 476,
+        "total_tokens": 1062,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\"},{\"type\":\"ui\",\"source\":\"$angle = 0\\n$lengthA = 100\\n$lengthB = 80\\n$cosAngle = cos($angle * 3.14159 / 180)\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\n$angleChoice = 0\\n$angleLabels = [\\\"0° (Same direction)\\\", \\\"90° (Orthogonal)\\\", \\\"135° (Obtuse angle)\\\"]\\n$angleValues = [0, 90, 135]\\n$angle = $angleValues[$angleChoice]\\n$cosAngle = cos($angle * 3.14159 / 180)\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\n\\nroot = Stack([\\n  Text(\\\"Vector A and Vector B with angle $angleLabels[$angleChoice] between them.\\\"),\\n  Graphic(\\\"Vectors\\\",\\n    group([\\n      path(\\\"M 50 120 L 50 120 H 50\\\"),\\n      path(\\\"M 50 120 L 50 120\\\"),\\n      path(\\\"M 50 120 L 50 120\\\"),\\n      group([\\n        path(\\\"M 50 120 L 50 120\\\"),\\n        path(\\\"M 50 120 L 50 120\\\")\\n      ]),\\n      circle(50,120,3),\\n      text(50,130,\\\"Origin\\\")\\n    ])\\n  ),\\n  Text(\\\"Dot product = lengthA * lengthB * cos(angle) = $lengthA * $lengthB * cos($angle°) = $dotProduct\\\"),\\n  Control(\\\"Angle between vectors\\\",0,2,$angleChoice, $angleLabels)\\n])\",\"state\":[{\"name\":\"angleChoice\",\"value\":0},{\"name\":\"lengthA\",\"value\":100},{\"name\":\"lengthB\",\"value\":80}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: State default must be integer"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo9SCzgVsoOe7omY9rKiw4hzeD7Z\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777890,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"The dot product of two vectors is a scalar quantity that represents how much one vector extends in the direction of another. Geometrically, it equals the product of the magnitudes (lengths) of the two vectors and the cosine of the angle between them: dot = |A| * |B| * cos(θ).\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"$angleChoice = 0\\\\n$lengthA = 100\\\\n$lengthB = 80\\\\n$angleValues = [0, 90, 135]\\\\n$angleLabels = [\\\\\\\"0° (Same direction)\\\\\\\", \\\\\\\"90° (Orthogonal)\\\\\\\", \\\\\\\"135° (Obtuse angle)\\\\\\\"]\\\\n$angle = $angleValues[$angleChoice]\\\\n$cosAngle = cos($angle * 3.14159 / 180)\\\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\\\n\\\\nroot = Stack([\\\\n  Text(\\\\\\\"Vector A and Vector B with angle $angleLabels[$angleChoice] between them.\\\\\\\"),\\\\n  Graphic(\\\\\\\"Vectors\\\\\\\",\\\\n    group([\\\\n      path(\\\\\\\"M 50 120 L 150 120\\\\\\\"),\\\\n      path(\\\\\\\"M 50 120 L \\\\\\\" + (50 + $lengthB * cos($angle * 3.14159 / 180)) + \\\\\\\" \\\\\\\" + (120 - $lengthB * sin($angle * 3.14159 / 180)) ),\\\\n      circle(50,120,3),\\\\n      text(45,130,\\\\\\\"Origin\\\\\\\"),\\\\n      text(150,125,\\\\\\\"A\\\\\\\"),\\\\n      text(50 + $lengthB * cos($angle * 3.14159 / 180), 120 - $lengthB * sin($angle * 3.14159 / 180) - 5, \\\\\\\"B\\\\\\\")\\\\n    ])\\\\n  ),\\\\n  Text(\\\\\\\"Dot product = |A| * |B| * cos(θ) = $lengthA * $lengthB * cos($angle°) = $dotProduct\\\\\\\"),\\\\n  Text(\\\\\\\"- When vectors are orthogonal (90°), cos(90°) = 0, so dot product is zero, indicating no projection.\\\\\\\"),\\\\n  Text(\\\\\\\"- When the angle is obtuse (e.g., 135°), cos(θ) is negative, so the dot product is negative, indicating a negative projection.\\\\\\\"),\\\\n  Control(\\\\\\\"Angle between vectors\\\\\\\",0,2,$angleChoice, $angleLabels)\\\\n])\\\",\\\"state\\\":[{\\\"name\\\":\\\"angleChoice\\\",\\\"value\\\":0},{\\\"name\\\":\\\"lengthA\\\",\\\"value\\\":100},{\\\"name\\\":\\\"lengthB\\\",\\\"value\\\":80}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1096,\n    \"completion_tokens\": 577,\n    \"total_tokens\": 1673,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_4ed30fd522\"\n}\n",
+      "latencyMs": 8915,
+      "usage": {
+        "prompt_tokens": 1096,
+        "completion_tokens": 577,
+        "total_tokens": 1673,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a scalar quantity that represents how much one vector extends in the direction of another. Geometrically, it equals the product of the magnitudes (lengths) of the two vectors and the cosine of the angle between them: dot = |A| * |B| * cos(θ).\"},{\"type\":\"ui\",\"source\":\"$angleChoice = 0\\n$lengthA = 100\\n$lengthB = 80\\n$angleValues = [0, 90, 135]\\n$angleLabels = [\\\"0° (Same direction)\\\", \\\"90° (Orthogonal)\\\", \\\"135° (Obtuse angle)\\\"]\\n$angle = $angleValues[$angleChoice]\\n$cosAngle = cos($angle * 3.14159 / 180)\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\n\\nroot = Stack([\\n  Text(\\\"Vector A and Vector B with angle $angleLabels[$angleChoice] between them.\\\"),\\n  Graphic(\\\"Vectors\\\",\\n    group([\\n      path(\\\"M 50 120 L 150 120\\\"),\\n      path(\\\"M 50 120 L \\\" + (50 + $lengthB * cos($angle * 3.14159 / 180)) + \\\" \\\" + (120 - $lengthB * sin($angle * 3.14159 / 180)) ),\\n      circle(50,120,3),\\n      text(45,130,\\\"Origin\\\"),\\n      text(150,125,\\\"A\\\"),\\n      text(50 + $lengthB * cos($angle * 3.14159 / 180), 120 - $lengthB * sin($angle * 3.14159 / 180) - 5, \\\"B\\\")\\n    ])\\n  ),\\n  Text(\\\"Dot product = |A| * |B| * cos(θ) = $lengthA * $lengthB * cos($angle°) = $dotProduct\\\"),\\n  Text(\\\"- When vectors are orthogonal (90°), cos(90°) = 0, so dot product is zero, indicating no projection.\\\"),\\n  Text(\\\"- When the angle is obtuse (e.g., 135°), cos(θ) is negative, so the dot product is negative, indicating a negative projection.\\\"),\\n  Control(\\\"Angle between vectors\\\",0,2,$angleChoice, $angleLabels)\\n])\",\"state\":[{\"name\":\"angleChoice\",\"value\":0},{\"name\":\"lengthA\",\"value\":100},{\"name\":\"lengthB\",\"value\":80}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The dot product of two vectors is a scalar that measures how much one vector extends in the direction of another. Geometrically, it equals the product of the lengths of the two vectors and the cosine of the angle between them.\"},{\"type\":\"ui\",\"source\":\"$angle = 0\\n$lengthA = 100\\n$lengthB = 80\\n$cosAngle = cos($angle * 3.14159 / 180)\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\n$angleChoice = 0\\n$angleLabels = [\\\"0° (Same direction)\\\", \\\"90° (Orthogonal)\\\", \\\"135° (Obtuse angle)\\\"]\\n$angleValues = [0, 90, 135]\\n$angle = $angleValues[$angleChoice]\\n$cosAngle = cos($angle * 3.14159 / 180)\\n$dotProduct = $lengthA * $lengthB * $cosAngle\\n\\nroot = Stack([\\n  Text(\\\"Vector A and Vector B with angle $angleLabels[$angleChoice] between them.\\\"),\\n  Graphic(\\\"Vectors\\\",\\n    group([\\n      path(\\\"M 50 120 L 50 120 H 50\\\"),\\n      path(\\\"M 50 120 L 50 120\\\"),\\n      path(\\\"M 50 120 L 50 120\\\"),\\n      group([\\n        path(\\\"M 50 120 L 50 120\\\"),\\n        path(\\\"M 50 120 L 50 120\\\")\\n      ]),\\n      circle(50,120,3),\\n      text(50,130,\\\"Origin\\\")\\n    ])\\n  ),\\n  Text(\\\"Dot product = lengthA * lengthB * cos(angle) = $lengthA * $lengthB * cos($angle°) = $dotProduct\\\"),\\n  Control(\\\"Angle between vectors\\\",0,2,$angleChoice, $angleLabels)\\n])\",\"state\":[{\"name\":\"angleChoice\",\"value\":0},{\"name\":\"lengthA\",\"value\":100},{\"name\":\"lengthB\",\"value\":80}]}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: State default must be integer. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: State default must be integer"
+    }
+  ]
+}

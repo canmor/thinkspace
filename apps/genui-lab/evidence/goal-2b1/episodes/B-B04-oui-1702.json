@@ -1,0 +1,83 @@
+{
+  "id": "B-B04-oui-1702",
+  "task": "B04",
+  "protocol": "oui",
+  "seed": 1702,
+  "arm": "B",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooAXZ4RPL8fnRzUElXfEeAd4J3OD\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777957,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"protocol BagFeeExplorer\\\\n  input class : integer [0,1,2] // 0=Economy,1=Business,2=Gold\\\\n  input bagWeight : integer [10,40]\\\\n  // Base allowance by class\\\\n  allowance = (class == 0) ? 23 : (class == 1) ? 32 : 32 + 5\\\\n  // Calculate excess kg, never negative\\\\n  excess = (bagWeight > allowance) ? (bagWeight - allowance) : 0\\\\n  fee = excess * 15\\\\nend\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":23}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Single-Bag Fee Explorer\\\\n\\\\nThis tool calculates the fee for a single checked bag based on your travel class and bag weight.\\\\n\\\\nClasses:\\\\n- Economy: 23 kg allowance\\\\n- Business: 32 kg allowance\\\\n- Gold: Business allowance plus 5 kg (total 37 kg)\\\\n\\\\nFee:\\\\n- $15 per kilogram over the allowance\\\\n- No fee if bag weight is within allowance\\\\n\\\\nAdjust your class and bag weight to see your allowance and fee.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"Stack([\\\\n  Control(\\\\\\\"Travel Class\\\\\\\",0,2,[\\\\\\\"Economy\\\\\\\",\\\\\\\"Business\\\\\\\",\\\\\\\"Gold\\\\\\\"],$class),\\\\n  Control(\\\\\\\"Bag Weight (kg)\\\\\\\",10,40,[],$bagWeight),\\\\n  Text(\\\\\\\"Allowance: \\\\\\\" + allowance + \\\\\\\" kg\\\\\\\"),\\\\n  Text(\\\\\\\"Excess Weight: \\\\\\\" + excess + \\\\\\\" kg\\\\\\\"),\\\\n  Text(\\\\\\\"Fee: $\\\\\\\" + fee)\\\\n])\\\",\\\"state\\\":[{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":23}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 629,\n    \"completion_tokens\": 384,\n    \"total_tokens\": 1013,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_4ed30fd522\"\n}\n",
+      "latencyMs": 5627,
+      "usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 384,
+        "total_tokens": 1013,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"protocol BagFeeExplorer\\n  input class : integer [0,1,2] // 0=Economy,1=Business,2=Gold\\n  input bagWeight : integer [10,40]\\n  // Base allowance by class\\n  allowance = (class == 0) ? 23 : (class == 1) ? 32 : 32 + 5\\n  // Calculate excess kg, never negative\\n  excess = (bagWeight > allowance) ? (bagWeight - allowance) : 0\\n  fee = excess * 15\\nend\\n\",\"state\":[{\"name\":\"class\",\"value\":0},{\"name\":\"bagWeight\",\"value\":23}]},{\"type\":\"text\",\"text\":\"Single-Bag Fee Explorer\\n\\nThis tool calculates the fee for a single checked bag based on your travel class and bag weight.\\n\\nClasses:\\n- Economy: 23 kg allowance\\n- Business: 32 kg allowance\\n- Gold: Business allowance plus 5 kg (total 37 kg)\\n\\nFee:\\n- $15 per kilogram over the allowance\\n- No fee if bag weight is within allowance\\n\\nAdjust your class and bag weight to see your allowance and fee.\"},{\"type\":\"ui\",\"source\":\"Stack([\\n  Control(\\\"Travel Class\\\",0,2,[\\\"Economy\\\",\\\"Business\\\",\\\"Gold\\\"],$class),\\n  Control(\\\"Bag Weight (kg)\\\",10,40,[],$bagWeight),\\n  Text(\\\"Allowance: \\\" + allowance + \\\" kg\\\"),\\n  Text(\\\"Excess Weight: \\\" + excess + \\\" kg\\\"),\\n  Text(\\\"Fee: $\\\" + fee)\\n])\",\"state\":[{\"name\":\"class\",\"value\":0},{\"name\":\"bagWeight\",\"value\":23}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: One live UI per artifact"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooAdgOgNDh3HcrwYXu1mOZTDMpSq\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777963,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"protocol BagFeeExplorer\\\\n  input class : integer [0,1,2] // 0=Economy,1=Business,2=Gold\\\\n  input bagWeight : integer [10,40]\\\\n  // Base allowance by class\\\\n  allowance = (class == 0) ? 23 : (class == 1) ? 32 : 32 + 5\\\\n  // Calculate excess kg, never negative\\\\n  excess = (bagWeight > allowance) ? (bagWeight - allowance) : 0\\\\n  fee = excess * 15\\\\nend\\\\n\\\\nStack([\\\\n  Control(\\\\\\\"Travel Class\\\\\\\",0,2,[\\\\\\\"Economy\\\\\\\",\\\\\\\"Business\\\\\\\",\\\\\\\"Gold\\\\\\\"],$class),\\\\n  Control(\\\\\\\"Bag Weight (kg)\\\\\\\",10,40,[],$bagWeight),\\\\n  Text(\\\\\\\"Allowance: \\\\\\\" + allowance + \\\\\\\" kg\\\\\\\"),\\\\n  Text(\\\\\\\"Excess Weight: \\\\\\\" + excess + \\\\\\\" kg\\\\\\\"),\\\\n  Text(\\\\\\\"Fee: $\\\\\\\" + fee)\\\\n])\\\",\\\"state\\\":[{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":23}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Single-Bag Fee Explorer\\\\n\\\\nThis tool calculates the fee for a single checked bag based on your travel class and bag weight.\\\\n\\\\nClasses:\\\\n- Economy: 23 kg allowance\\\\n- Business: 32 kg allowance\\\\n- Gold: Business allowance plus 5 kg (total 37 kg)\\\\n\\\\nFee:\\\\n- $15 per kilogram over the allowance\\\\n- No fee if bag weight is within allowance\\\\n\\\\nAdjust your class and bag weight to see your allowance and fee.\\\"}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1047,\n    \"completion_tokens\": 357,\n    \"total_tokens\": 1404,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 4234,
+      "usage": {
+        "prompt_tokens": 1047,
+        "completion_tokens": 357,
+        "total_tokens": 1404,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"protocol BagFeeExplorer\\n  input class : integer [0,1,2] // 0=Economy,1=Business,2=Gold\\n  input bagWeight : integer [10,40]\\n  // Base allowance by class\\n  allowance = (class == 0) ? 23 : (class == 1) ? 32 : 32 + 5\\n  // Calculate excess kg, never negative\\n  excess = (bagWeight > allowance) ? (bagWeight - allowance) : 0\\n  fee = excess * 15\\nend\\n\\nStack([\\n  Control(\\\"Travel Class\\\",0,2,[\\\"Economy\\\",\\\"Business\\\",\\\"Gold\\\"],$class),\\n  Control(\\\"Bag Weight (kg)\\\",10,40,[],$bagWeight),\\n  Text(\\\"Allowance: \\\" + allowance + \\\" kg\\\"),\\n  Text(\\\"Excess Weight: \\\" + excess + \\\" kg\\\"),\\n  Text(\\\"Fee: $\\\" + fee)\\n])\",\"state\":[{\"name\":\"class\",\"value\":0},{\"name\":\"bagWeight\",\"value\":23}]},{\"type\":\"text\",\"text\":\"Single-Bag Fee Explorer\\n\\nThis tool calculates the fee for a single checked bag based on your travel class and bag weight.\\n\\nClasses:\\n- Economy: 23 kg allowance\\n- Business: 32 kg allowance\\n- Gold: Business allowance plus 5 kg (total 37 kg)\\n\\nFee:\\n- $15 per kilogram over the allowance\\n- No fee if bag weight is within allowance\\n\\nAdjust your class and bag weight to see your allowance and fee.\"}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"protocol BagFeeExplorer\\n  input class : integer [0,1,2] // 0=Economy,1=Business,2=Gold\\n  input bagWeight : integer [10,40]\\n  // Base allowance by class\\n  allowance = (class == 0) ? 23 : (class == 1) ? 32 : 32 + 5\\n  // Calculate excess kg, never negative\\n  excess = (bagWeight > allowance) ? (bagWeight - allowance) : 0\\n  fee = excess * 15\\nend\\n\",\"state\":[{\"name\":\"class\",\"value\":0},{\"name\":\"bagWeight\",\"value\":23}]},{\"type\":\"text\",\"text\":\"Single-Bag Fee Explorer\\n\\nThis tool calculates the fee for a single checked bag based on your travel class and bag weight.\\n\\nClasses:\\n- Economy: 23 kg allowance\\n- Business: 32 kg allowance\\n- Gold: Business allowance plus 5 kg (total 37 kg)\\n\\nFee:\\n- $15 per kilogram over the allowance\\n- No fee if bag weight is within allowance\\n\\nAdjust your class and bag weight to see your allowance and fee.\"},{\"type\":\"ui\",\"source\":\"Stack([\\n  Control(\\\"Travel Class\\\",0,2,[\\\"Economy\\\",\\\"Business\\\",\\\"Gold\\\"],$class),\\n  Control(\\\"Bag Weight (kg)\\\",10,40,[],$bagWeight),\\n  Text(\\\"Allowance: \\\" + allowance + \\\" kg\\\"),\\n  Text(\\\"Excess Weight: \\\" + excess + \\\" kg\\\"),\\n  Text(\\\"Fee: $\\\" + fee)\\n])\",\"state\":[{\"name\":\"class\",\"value\":0},{\"name\":\"bagWeight\",\"value\":23}]}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: One live UI per artifact. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Invalid or duplicate declaration"
+    }
+  ]
+}

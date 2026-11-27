@@ -1,0 +1,83 @@
+{
+  "id": "A-B06-json-1702",
+  "task": "B06",
+  "protocol": "json",
+  "seed": 1702,
+  "arm": "A",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooB8lPpOJc2z1ONdVpSpxaCmRgpz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777994,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"TEXT BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it means the user or organization provides their own encryption keys to control data security and encryption, rather than relying solely on the service provider's keys. This enhances data privacy and compliance by giving users direct control over cryptographic keys used to protect their data.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 468,\n    \"completion_tokens\": 67,\n    \"total_tokens\": 535,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 1634,
+      "usage": {
+        "prompt_tokens": 468,
+        "completion_tokens": 67,
+        "total_tokens": 535,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "TEXT BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means the user or organization provides their own encryption keys to control data security and encryption, rather than relying solely on the service provider's keys. This enhances data privacy and compliance by giving users direct control over cryptographic keys used to protect their data.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooBABTqYnf1gJRe6z77sDEYpVEJC\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777996,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"TEXT BYOK means \\\"Bring Your Own Key.\\\" In a model-powered application, it refers to the practice where users or organizations supply their own encryption keys to secure data, giving them direct control over data encryption and enhancing privacy and compliance.\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 563,\n    \"completion_tokens\": 47,\n    \"total_tokens\": 610,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 1279,
+      "usage": {
+        "prompt_tokens": 563,
+        "completion_tokens": 47,
+        "total_tokens": 610,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "TEXT BYOK means \"Bring Your Own Key.\" In a model-powered application, it refers to the practice where users or organizations supply their own encryption keys to secure data, giving them direct control over data encryption and enhancing privacy and compliance.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless STATE supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "What does BYOK mean in a model-powered application?"
+        },
+        {
+          "role": "assistant",
+          "content": "TEXT BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means the user or organization provides their own encryption keys to control data security and encryption, rather than relying solely on the service provider's keys. This enhances data privacy and compliance by giving users direct control over cryptographic keys used to protect their data."
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    }
+  ]
+}

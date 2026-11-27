@@ -1,0 +1,83 @@
+{
+  "id": "E-B04-oui-1701",
+  "task": "B04",
+  "protocol": "oui",
+  "seed": 1701,
+  "arm": "E",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo8adBWJZI6ETGCyQYgJwkt8nIef\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777836,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"This fee explorer calculates the excess baggage fee based on the class of travel, membership status, and the actual bag weight. Economy class allows 23 kg, Business class allows 32 kg, and Gold members get an additional 5 kg allowance. The fee is $15 per kilogram over the allowance, with no negative fees.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([classChoice, goldChoice, bagWeight, allowance, excessKg, fee])\\\\n\\\\nclassChoice = Control(\\\\\\\"Class\\\\\\\", 0, 1, [\\\\\\\"Economy\\\\\\\", \\\\\\\"Business\\\\\\\"], $classIndex)\\\\n$gold = 0\\\\ngoldChoice = Control(\\\\\\\"Gold Member\\\\\\\", 0, 1, [\\\\\\\"No\\\\\\\", \\\\\\\"Yes\\\\\\\"], $gold)\\\\n\\\\nbagWeight = Control(\\\\\\\"Bag Weight (kg)\\\\\\\", 10, 40, [], $weight)\\\\n\\\\nallowance = Metric(\\\\\\\"Allowance (kg)\\\\\\\", $allowance)\\\\nexcessKg = Metric(\\\\\\\"Excess (kg)\\\\\\\", $excess)\\\\nfee = Metric(\\\\\\\"Fee ($)\\\\\\\", $fee)\\\\n\\\\n$classIndex = 0\\\\n$weight = 23\\\\n\\\\n$allowance = ($classIndex == 0 ? 23 : 32) + ($gold == 1 ? 5 : 0)\\\\n$excess = $weight > $allowance ? $weight - $allowance : 0\\\\n$fee = $excess * 15\\\",\\\"state\\\":[{\\\"name\\\":\\\"classIndex\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":0},{\\\"name\\\":\\\"weight\\\",\\\"value\\\":23}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 821,\n    \"completion_tokens\": 344,\n    \"total_tokens\": 1165,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 6342,
+      "usage": {
+        "prompt_tokens": 821,
+        "completion_tokens": 344,
+        "total_tokens": 1165,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This fee explorer calculates the excess baggage fee based on the class of travel, membership status, and the actual bag weight. Economy class allows 23 kg, Business class allows 32 kg, and Gold members get an additional 5 kg allowance. The fee is $15 per kilogram over the allowance, with no negative fees.\"},{\"type\":\"ui\",\"source\":\"root = Stack([classChoice, goldChoice, bagWeight, allowance, excessKg, fee])\\n\\nclassChoice = Control(\\\"Class\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $classIndex)\\n$gold = 0\\ngoldChoice = Control(\\\"Gold Member\\\", 0, 1, [\\\"No\\\", \\\"Yes\\\"], $gold)\\n\\nbagWeight = Control(\\\"Bag Weight (kg)\\\", 10, 40, [], $weight)\\n\\nallowance = Metric(\\\"Allowance (kg)\\\", $allowance)\\nexcessKg = Metric(\\\"Excess (kg)\\\", $excess)\\nfee = Metric(\\\"Fee ($)\\\", $fee)\\n\\n$classIndex = 0\\n$weight = 23\\n\\n$allowance = ($classIndex == 0 ? 23 : 32) + ($gold == 1 ? 5 : 0)\\n$excess = $weight > $allowance ? $weight - $allowance : 0\\n$fee = $excess * 15\",\"state\":[{\"name\":\"classIndex\",\"value\":0},{\"name\":\"gold\",\"value\":0},{\"name\":\"weight\",\"value\":23}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: State default must be integer"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo8gUmTgZ4Ghabe3tDkCN0xg9BQe\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777842,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"This fee explorer calculates the excess baggage fee based on the class of travel, membership status, and the actual bag weight. Economy class allows 23 kg, Business class allows 32 kg, and Gold members get an additional 5 kg allowance. The fee is $15 per kilogram over the allowance, with no negative fees.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([classChoice, goldChoice, bagWeight, allowance, excessKg, fee])\\\\n\\\\nclassChoice = Control(\\\\\\\"Class\\\\\\\", 0, 1, [\\\\\\\"Economy\\\\\\\", \\\\\\\"Business\\\\\\\"], $classIndex)\\\\n$gold = 0\\\\ngoldChoice = Control(\\\\\\\"Gold Member\\\\\\\", 0, 1, [\\\\\\\"No\\\\\\\", \\\\\\\"Yes\\\\\\\"], $gold)\\\\n\\\\nbagWeight = Control(\\\\\\\"Bag Weight (kg)\\\\\\\", 10, 40, [], $weight)\\\\n\\\\nallowance = Metric(\\\\\\\"Allowance (kg)\\\\\\\", $allowance)\\\\nexcessKg = Metric(\\\\\\\"Excess (kg)\\\\\\\", $excess)\\\\nfee = Metric(\\\\\\\"Fee ($)\\\\\\\", $fee)\\\\n\\\\n$classIndex = 0\\\\n$gold = 0\\\\n$weight = 23\\\\n\\\\n$allowance = ($classIndex == 0 ? 23 : 32) + ($gold == 1 ? 5 : 0)\\\\n$excess = $weight > $allowance ? $weight - $allowance : 0\\\\n$fee = $excess * 15\\\",\\\"state\\\":[{\\\"name\\\":\\\"classIndex\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":0},{\\\"name\\\":\\\"weight\\\",\\\"value\\\":23}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1200,\n    \"completion_tokens\": 351,\n    \"total_tokens\": 1551,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 5484,
+      "usage": {
+        "prompt_tokens": 1200,
+        "completion_tokens": 351,
+        "total_tokens": 1551,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This fee explorer calculates the excess baggage fee based on the class of travel, membership status, and the actual bag weight. Economy class allows 23 kg, Business class allows 32 kg, and Gold members get an additional 5 kg allowance. The fee is $15 per kilogram over the allowance, with no negative fees.\"},{\"type\":\"ui\",\"source\":\"root = Stack([classChoice, goldChoice, bagWeight, allowance, excessKg, fee])\\n\\nclassChoice = Control(\\\"Class\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $classIndex)\\n$gold = 0\\ngoldChoice = Control(\\\"Gold Member\\\", 0, 1, [\\\"No\\\", \\\"Yes\\\"], $gold)\\n\\nbagWeight = Control(\\\"Bag Weight (kg)\\\", 10, 40, [], $weight)\\n\\nallowance = Metric(\\\"Allowance (kg)\\\", $allowance)\\nexcessKg = Metric(\\\"Excess (kg)\\\", $excess)\\nfee = Metric(\\\"Fee ($)\\\", $fee)\\n\\n$classIndex = 0\\n$gold = 0\\n$weight = 23\\n\\n$allowance = ($classIndex == 0 ? 23 : 32) + ($gold == 1 ? 5 : 0)\\n$excess = $weight > $allowance ? $weight - $allowance : 0\\n$fee = $excess * 15\",\"state\":[{\"name\":\"classIndex\",\"value\":0},{\"name\":\"gold\",\"value\":0},{\"name\":\"weight\",\"value\":23}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This fee explorer calculates the excess baggage fee based on the class of travel, membership status, and the actual bag weight. Economy class allows 23 kg, Business class allows 32 kg, and Gold members get an additional 5 kg allowance. The fee is $15 per kilogram over the allowance, with no negative fees.\"},{\"type\":\"ui\",\"source\":\"root = Stack([classChoice, goldChoice, bagWeight, allowance, excessKg, fee])\\n\\nclassChoice = Control(\\\"Class\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $classIndex)\\n$gold = 0\\ngoldChoice = Control(\\\"Gold Member\\\", 0, 1, [\\\"No\\\", \\\"Yes\\\"], $gold)\\n\\nbagWeight = Control(\\\"Bag Weight (kg)\\\", 10, 40, [], $weight)\\n\\nallowance = Metric(\\\"Allowance (kg)\\\", $allowance)\\nexcessKg = Metric(\\\"Excess (kg)\\\", $excess)\\nfee = Metric(\\\"Fee ($)\\\", $fee)\\n\\n$classIndex = 0\\n$weight = 23\\n\\n$allowance = ($classIndex == 0 ? 23 : 32) + ($gold == 1 ? 5 : 0)\\n$excess = $weight > $allowance ? $weight - $allowance : 0\\n$fee = $excess * 15\",\"state\":[{\"name\":\"classIndex\",\"value\":0},{\"name\":\"gold\",\"value\":0},{\"name\":\"weight\",\"value\":23}]}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: State default must be integer. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Invalid or duplicate declaration"
+    }
+  ]
+}

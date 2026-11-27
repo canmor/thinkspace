@@ -1,0 +1,1697 @@
+[
+  {
+    "case": "0aa66e8e6590",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK refers to a security approach where users or organizations provide and control their own cryptographic keys for encrypting and decrypting data. This gives users greater control over data privacy and security, as only they have access to the keys used to protect sensitive information."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK refers to a security approach where users or organizations provide and control their own cryptographic keys for encrypting and decrypting data. This gives users greater control over data privacy and security, as only they have access to the keys used to protect sensitive information.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, BYOK refers to a security approach where users or organizations provide and control their own cryptographic keys for encrypting and decrypting data. This gives users greater control over data privacy and security, as only they have access to the keys used to protect sensitive information.\"}]}"
+  },
+  {
+    "case": "1a88cd267d9e",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, this means that users or organizations can provide and manage their own encryption keys for securing data, rather than relying solely on keys managed by the service provider. This approach gives users more control over data privacy and security."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, this means that users or organizations can provide and manage their own encryption keys for securing data, rather than relying solely on keys managed by the service provider. This approach gives users more control over data privacy and security.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, this means that users or organizations can provide and manage their own encryption keys for securing data, rather than relying solely on keys managed by the service provider. This approach gives users more control over data privacy and security.\"}]}"
+  },
+  {
+    "case": "1f00a6c42199",
+    "request": "Build a greenhouse tray planner. Rows range from 1 to 4, columns from 2 to 6, initially 2 rows and 3 columns. Each cell holds one seedling and needs 0.25 litres of water. Show the seedling count and water needed as both dimensions change.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This planner calculates the total number of seedlings in a greenhouse tray and the total water needed based on the number of rows and columns. Each cell holds one seedling and requires 0.25 litres of water."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "This planner calculates the total number of seedlings in a greenhouse tray and the total water needed based on the number of rows and columns. Each cell holds one seedling and requires 0.25 litres of water.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "rows",
+          "props": {
+            "label": "Rows",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 2
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "columns",
+          "props": {
+            "label": "Columns",
+            "min": 2,
+            "max": 6,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Seedlings",
+            "value": 6
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water (litres)",
+            "value": 1.5
+          }
+        }
+      ],
+      "state": {
+        "rows": 2,
+        "columns": 3
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This planner calculates the total number of seedlings in a greenhouse tray and the total water needed based on the number of rows and columns. Each cell holds one seedling and requires 0.25 litres of water.\"},{\"type\":\"ui\",\"source\":\"root = Stack([rowsControl, columnsControl, seedlingCount, waterNeeded])\\n$rows = 2\\n$columns = 3\\nrowsControl = Control(\\\"Rows\\\", 1, 4, [], $rows)\\ncolumnsControl = Control(\\\"Columns\\\", 2, 6, [], $columns)\\nseedlingCount = Metric(\\\"Seedlings\\\", $rows * $columns)\\nwaterNeeded = Metric(\\\"Water (litres)\\\", $rows * $columns * 0.25)\",\"state\":[{\"name\":\"rows\",\"value\":2},{\"name\":\"columns\",\"value\":3}]}]}"
+  },
+  {
+    "case": "206f2211eb6f",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, this means that users or organizations can provide and manage their own cryptographic keys for encrypting data, rather than relying on keys managed by the application provider. This approach gives users greater control over data security and privacy."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, this means that users or organizations can provide and manage their own cryptographic keys for encrypting data, rather than relying on keys managed by the application provider. This approach gives users greater control over data security and privacy.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, this means that users or organizations can provide and manage their own cryptographic keys for encrypting data, rather than relying on keys managed by the application provider. This approach gives users greater control over data security and privacy.\"}]}"
+  },
+  {
+    "case": "2b95da9eeb4a",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "A gutter in a two-page book layout is the inner margin space between the facing pages where the book is bound, allowing for readability and preventing text from being obscured."
+      }
+    ],
+    "text": "A gutter in a two-page book layout is the inner margin space between the facing pages where the book is bound, allowing for readability and preventing text from being obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A gutter in a two-page book layout is the inner margin space between the facing pages where the book is bound, allowing for readability and preventing text from being obscured.\"}]}"
+  },
+  {
+    "case": "30cff86d6298",
+    "request": "Build a greenhouse tray planner. Rows range from 1 to 4, columns from 2 to 6, initially 2 rows and 3 columns. Each cell holds one seedling and needs 0.25 litres of water. Show the seedling count and water needed as both dimensions change.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "A greenhouse tray planner helps you organize seedlings in rows and columns. Each cell holds one seedling and requires 0.25 litres of water."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "A greenhouse tray planner helps you organize seedlings in rows and columns. Each cell holds one seedling and requires 0.25 litres of water.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Rows",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 2
+          },
+          "binding": "rows"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Columns",
+            "min": 2,
+            "max": 6,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "cols"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Seedling Count",
+            "value": 6
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water Needed (litres)",
+            "value": 1.5
+          }
+        }
+      ],
+      "state": {
+        "rows": 2,
+        "cols": 3
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A greenhouse tray planner helps you organize seedlings in rows and columns. Each cell holds one seedling and requires 0.25 litres of water.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"rowsControl\\\",\\\"colsControl\\\",\\\"seedlingCount\\\",\\\"waterNeeded\\\"]},\\\"rowsControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Rows\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/rows\\\"}}},\\\"colsControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Columns\\\",\\\"min\\\":2,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/cols\\\"}}},\\\"seedlingCount\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Seedling Count\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/rows\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/cols\\\"}}}}},\\\"waterNeeded\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Water Needed (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/rows\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/cols\\\"}}},\\\"b\\\":0.25}}}}}}\",\"state\":[{\"name\":\"rows\",\"value\":2},{\"name\":\"cols\",\"value\":3}]}]}"
+  },
+  {
+    "case": "34cb133a8dc2",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means that the user or organization provides their own encryption key to secure data or control access to the model, rather than relying on keys managed by the service provider."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means that the user or organization provides their own encryption key to secure data or control access to the model, rather than relying on keys managed by the service provider.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it means that the user or organization provides their own encryption key to secure data or control access to the model, rather than relying on keys managed by the service provider.\"}]}"
+  },
+  {
+    "case": "44508e66d9cf",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: This component owns the messages and their lineage. It manages the creation, storage, and tracking of message sequences and their relationships (lineage). It does not handle how references are selected or budgeted."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: This component is responsible for selecting relevant references and managing their budgets (limits on usage or importance). It operates independently from the message storage and lineage, focusing on context management."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the interaction between message handling and context selection, ensuring that references are properly selected and budgeted while messages are tracked correctly."
+      },
+      {
+        "type": "text",
+        "text": "Decoupling Approach:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces between components: Conversation Engine exposes message lineage and storage APIs; Context Engine exposes reference selection and budgeting APIs."
+      },
+      {
+        "type": "text",
+        "text": "- The Application Orchestrator acts as the mediator, invoking Conversation Engine to manage messages and Context Engine to manage references, without either engine depending directly on the other."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication or event-driven patterns to notify components of changes, avoiding tight coupling."
+      }
+    ],
+    "text": "This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\n1. Conversation Engine: This component owns the messages and their lineage. It manages the creation, storage, and tracking of message sequences and their relationships (lineage). It does not handle how references are selected or budgeted.\n2. Context Engine: This component is responsible for selecting relevant references and managing their budgets (limits on usage or importance). It operates independently from the message storage and lineage, focusing on context management.\n3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the interaction between message handling and context selection, ensuring that references are properly selected and budgeted while messages are tracked correctly.\nDecoupling Approach:\n- Define clear interfaces between components: Conversation Engine exposes message lineage and storage APIs; Context Engine exposes reference selection and budgeting APIs.\n- The Application Orchestrator acts as the mediator, invoking Conversation Engine to manage messages and Context Engine to manage references, without either engine depending directly on the other.\n- Use asynchronous communication or event-driven patterns to notify components of changes, avoiding tight coupling.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: This component owns the messages and their lineage. It manages the creation, storage, and tracking of message sequences and their relationships (lineage). It does not handle how references are selected or budgeted.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: This component is responsible for selecting relevant references and managing their budgets (limits on usage or importance). It operates independently from the message storage and lineage, focusing on context management.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the interaction between message handling and context selection, ensuring that references are properly selected and budgeted while messages are tracked correctly.\"},{\"type\":\"text\",\"text\":\"Decoupling Approach:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces between components: Conversation Engine exposes message lineage and storage APIs; Context Engine exposes reference selection and budgeting APIs.\"},{\"type\":\"text\",\"text\":\"- The Application Orchestrator acts as the mediator, invoking Conversation Engine to manage messages and Context Engine to manage references, without either engine depending directly on the other.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication or event-driven patterns to notify components of changes, avoiding tight coupling.\"}]}"
+  },
+  {
+    "case": "49a1f804fddd",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption keys to secure their data and control access to it, rather than relying solely on the application's default encryption keys. This approach enhances security and compliance by allowing users to manage and rotate their encryption keys independently."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption keys to secure their data and control access to it, rather than relying solely on the application's default encryption keys. This approach enhances security and compliance by allowing users to manage and rotate their encryption keys independently.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, BYOK means that the user or organization provides their own encryption keys to secure their data and control access to it, rather than relying solely on the application's default encryption keys. This approach enhances security and compliance by allowing users to manage and rotate their encryption keys independently.\"}]}"
+  },
+  {
+    "case": "5208958fd564",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: This component owns messages and their lineage. It manages the creation, storage, and tracking of message sequences, ensuring that each message's origin and relationship to others is maintained."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: This component selects and budgets references. It determines which contextual information or references are relevant to the current conversation and manages resource limits or quotas for using these references."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the interaction between them, ensuring that messages are processed with the appropriate context and that resource budgets are respected."
+      },
+      {
+        "type": "text",
+        "text": "To decouple these components effectively:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces: Each component should expose well-defined APIs for interaction. For example, the Conversation Engine provides methods to add and retrieve messages and their lineage. The Context Engine offers methods to select references and report budget usage. The Orchestrator calls these APIs without accessing internal states directly."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication: Components communicate via message passing or events rather than direct calls, reducing tight coupling and allowing independent scaling and development."
+      },
+      {
+        "type": "text",
+        "text": "- Separate data ownership: The Conversation Engine exclusively manages message data and lineage, while the Context Engine manages reference selection and budgeting data. This separation prevents data duplication and conflicts."
+      }
+    ],
+    "text": "This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\n1. Conversation Engine: This component owns messages and their lineage. It manages the creation, storage, and tracking of message sequences, ensuring that each message's origin and relationship to others is maintained.\n2. Context Engine: This component selects and budgets references. It determines which contextual information or references are relevant to the current conversation and manages resource limits or quotas for using these references.\n3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the interaction between them, ensuring that messages are processed with the appropriate context and that resource budgets are respected.\nTo decouple these components effectively:\n- Define clear interfaces: Each component should expose well-defined APIs for interaction. For example, the Conversation Engine provides methods to add and retrieve messages and their lineage. The Context Engine offers methods to select references and report budget usage. The Orchestrator calls these APIs without accessing internal states directly.\n- Use asynchronous communication: Components communicate via message passing or events rather than direct calls, reducing tight coupling and allowing independent scaling and development.\n- Separate data ownership: The Conversation Engine exclusively manages message data and lineage, while the Context Engine manages reference selection and budgeting data. This separation prevents data duplication and conflicts.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: This component owns messages and their lineage. It manages the creation, storage, and tracking of message sequences, ensuring that each message's origin and relationship to others is maintained.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: This component selects and budgets references. It determines which contextual information or references are relevant to the current conversation and manages resource limits or quotas for using these references.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the interaction between them, ensuring that messages are processed with the appropriate context and that resource budgets are respected.\"},{\"type\":\"text\",\"text\":\"To decouple these components effectively:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces: Each component should expose well-defined APIs for interaction. For example, the Conversation Engine provides methods to add and retrieve messages and their lineage. The Context Engine offers methods to select references and report budget usage. The Orchestrator calls these APIs without accessing internal states directly.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication: Components communicate via message passing or events rather than direct calls, reducing tight coupling and allowing independent scaling and development.\"},{\"type\":\"text\",\"text\":\"- Separate data ownership: The Conversation Engine exclusively manages message data and lineage, while the Context Engine manages reference selection and budgeting data. This separation prevents data duplication and conflicts.\"}]}"
+  },
+  {
+    "case": "5ce5ab16f805",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data or models, rather than relying solely on keys managed by the service provider. This approach enhances security and control over sensitive information by allowing users to manage encryption keys according to their own policies."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data or models, rather than relying solely on keys managed by the service provider. This approach enhances security and control over sensitive information by allowing users to manage encryption keys according to their own policies.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data or models, rather than relying solely on keys managed by the service provider. This approach enhances security and control over sensitive information by allowing users to manage encryption keys according to their own policies.\"}]}"
+  },
+  {
+    "case": "62d1b948f9d8",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data, rather than relying solely on the service provider's keys. This approach gives users greater control over data security and compliance by managing their own cryptographic keys used to encrypt and decrypt sensitive information within the application."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data, rather than relying solely on the service provider's keys. This approach gives users greater control over data security and compliance by managing their own cryptographic keys used to encrypt and decrypt sensitive information within the application.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data, rather than relying solely on the service provider's keys. This approach gives users greater control over data security and compliance by managing their own cryptographic keys used to encrypt and decrypt sensitive information within the application.\"}]}"
+  },
+  {
+    "case": "65fa59ae34c9",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly separating their responsibilities and interactions to improve modularity and maintainability."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: This component owns messages and lineage. It manages the flow of conversation, tracks message history, and maintains the relationships between messages (lineage). It should expose interfaces to send, receive, and query messages without depending on how context is selected or budgeted."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: This engine selects relevant context and manages reference budgets. It decides which external or internal references to include in the conversation to support responses, ensuring the usage stays within set limits. It should operate independently of message management, providing context data upon request."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: This component coordinates the Conversation and Context Engines. It manages the workflow, invoking the Context Engine to select and budget references as needed, then passing the selected context to the Conversation Engine to generate or process messages. It acts as the mediator, ensuring each engine performs its role without direct dependencies on each other."
+      },
+      {
+        "type": "text",
+        "text": "By defining clear interfaces and communication protocols between these components, each engine can be developed, tested, and maintained independently, enabling flexible integration and scalability."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly separating their responsibilities and interactions to improve modularity and maintainability.\n1. Conversation Engine: This component owns messages and lineage. It manages the flow of conversation, tracks message history, and maintains the relationships between messages (lineage). It should expose interfaces to send, receive, and query messages without depending on how context is selected or budgeted.\n2. Context Engine: This engine selects relevant context and manages reference budgets. It decides which external or internal references to include in the conversation to support responses, ensuring the usage stays within set limits. It should operate independently of message management, providing context data upon request.\n3. Application Orchestrator: This component coordinates the Conversation and Context Engines. It manages the workflow, invoking the Context Engine to select and budget references as needed, then passing the selected context to the Conversation Engine to generate or process messages. It acts as the mediator, ensuring each engine performs its role without direct dependencies on each other.\nBy defining clear interfaces and communication protocols between these components, each engine can be developed, tested, and maintained independently, enabling flexible integration and scalability.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly separating their responsibilities and interactions to improve modularity and maintainability.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: This component owns messages and lineage. It manages the flow of conversation, tracks message history, and maintains the relationships between messages (lineage). It should expose interfaces to send, receive, and query messages without depending on how context is selected or budgeted.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: This engine selects relevant context and manages reference budgets. It decides which external or internal references to include in the conversation to support responses, ensuring the usage stays within set limits. It should operate independently of message management, providing context data upon request.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: This component coordinates the Conversation and Context Engines. It manages the workflow, invoking the Context Engine to select and budget references as needed, then passing the selected context to the Conversation Engine to generate or process messages. It acts as the mediator, ensuring each engine performs its role without direct dependencies on each other.\"},{\"type\":\"text\",\"text\":\"By defining clear interfaces and communication protocols between these components, each engine can be developed, tested, and maintained independently, enabling flexible integration and scalability.\"}]}"
+  },
+  {
+    "case": "697e8b31ea44",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation describes how to decouple three components: a Conversation Engine, a Context Engine, and an Application Orchestrator, each with distinct responsibilities."
+      },
+      {
+        "type": "text",
+        "text": "The Conversation Engine owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage) to maintain context and history."
+      },
+      {
+        "type": "text",
+        "text": "The Context Engine selects and budgets references. It chooses which external or internal references to include in the conversation context and manages resource limits or quotas (budgets) to optimize relevance and efficiency."
+      },
+      {
+        "type": "text",
+        "text": "The Application Orchestrator coordinates the Conversation Engine and Context Engine. It acts as a controller, managing interactions between the two engines, ensuring smooth data flow and timing, and enforcing policies or priorities."
+      },
+      {
+        "type": "text",
+        "text": "Decoupling these components involves defining clear interfaces and responsibilities, so each can operate independently while collaborating effectively."
+      },
+      {
+        "type": "text",
+        "text": "Key decoupling strategies:"
+      },
+      {
+        "type": "text",
+        "text": "1. Define explicit APIs or message protocols for communication between components. For example, the Conversation Engine can expose methods to submit and retrieve messages and lineage data, while the Context Engine can provide methods to request references and report budget usage."
+      },
+      {
+        "type": "text",
+        "text": "2. Use asynchronous messaging or event-driven patterns to reduce tight coupling. The Application Orchestrator can listen for events from the Conversation Engine (e.g., new message added) and trigger Context Engine actions (e.g., select references) without blocking."
+      }
+    ],
+    "text": "This explanation describes how to decouple three components: a Conversation Engine, a Context Engine, and an Application Orchestrator, each with distinct responsibilities.\nThe Conversation Engine owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage) to maintain context and history.\nThe Context Engine selects and budgets references. It chooses which external or internal references to include in the conversation context and manages resource limits or quotas (budgets) to optimize relevance and efficiency.\nThe Application Orchestrator coordinates the Conversation Engine and Context Engine. It acts as a controller, managing interactions between the two engines, ensuring smooth data flow and timing, and enforcing policies or priorities.\nDecoupling these components involves defining clear interfaces and responsibilities, so each can operate independently while collaborating effectively.\nKey decoupling strategies:\n1. Define explicit APIs or message protocols for communication between components. For example, the Conversation Engine can expose methods to submit and retrieve messages and lineage data, while the Context Engine can provide methods to request references and report budget usage.\n2. Use asynchronous messaging or event-driven patterns to reduce tight coupling. The Application Orchestrator can listen for events from the Conversation Engine (e.g., new message added) and trigger Context Engine actions (e.g., select references) without blocking.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation describes how to decouple three components: a Conversation Engine, a Context Engine, and an Application Orchestrator, each with distinct responsibilities.\"},{\"type\":\"text\",\"text\":\"The Conversation Engine owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage) to maintain context and history.\"},{\"type\":\"text\",\"text\":\"The Context Engine selects and budgets references. It chooses which external or internal references to include in the conversation context and manages resource limits or quotas (budgets) to optimize relevance and efficiency.\"},{\"type\":\"text\",\"text\":\"The Application Orchestrator coordinates the Conversation Engine and Context Engine. It acts as a controller, managing interactions between the two engines, ensuring smooth data flow and timing, and enforcing policies or priorities.\"},{\"type\":\"text\",\"text\":\"Decoupling these components involves defining clear interfaces and responsibilities, so each can operate independently while collaborating effectively.\"},{\"type\":\"text\",\"text\":\"Key decoupling strategies:\"},{\"type\":\"text\",\"text\":\"1. Define explicit APIs or message protocols for communication between components. For example, the Conversation Engine can expose methods to submit and retrieve messages and lineage data, while the Context Engine can provide methods to request references and report budget usage.\"},{\"type\":\"text\",\"text\":\"2. Use asynchronous messaging or event-driven patterns to reduce tight coupling. The Application Orchestrator can listen for events from the Conversation Engine (e.g., new message added) and trigger Context Engine actions (e.g., select references) without blocking.\"}]}"
+  },
+  {
+    "case": "6c712141ecb1",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound.\"}]}"
+  },
+  {
+    "case": "6c80362a8dcb",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation covers how to decouple three components: the Conversation Engine, the Context Engine, and the Application Orchestrator, each with distinct responsibilities."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage, managing the flow and history of conversations."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects relevant references and manages budgeting of these references to optimize context usage."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the interaction between the Conversation Engine and Context Engine, ensuring smooth operation and data flow."
+      },
+      {
+        "type": "text",
+        "text": "Decoupling Strategy:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces: Each component should expose well-defined APIs for communication, avoiding direct dependencies on internal implementations."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous messaging or event-driven patterns: The Orchestrator can send commands and receive events without blocking or tight coupling."
+      },
+      {
+        "type": "text",
+        "text": "- Maintain separation of concerns: Conversation Engine focuses solely on message handling and lineage tracking; Context Engine handles reference selection and budgeting independently."
+      }
+    ],
+    "text": "This explanation covers how to decouple three components: the Conversation Engine, the Context Engine, and the Application Orchestrator, each with distinct responsibilities.\n1. Conversation Engine: Owns messages and lineage, managing the flow and history of conversations.\n2. Context Engine: Selects relevant references and manages budgeting of these references to optimize context usage.\n3. Application Orchestrator: Coordinates the interaction between the Conversation Engine and Context Engine, ensuring smooth operation and data flow.\nDecoupling Strategy:\n- Define clear interfaces: Each component should expose well-defined APIs for communication, avoiding direct dependencies on internal implementations.\n- Use asynchronous messaging or event-driven patterns: The Orchestrator can send commands and receive events without blocking or tight coupling.\n- Maintain separation of concerns: Conversation Engine focuses solely on message handling and lineage tracking; Context Engine handles reference selection and budgeting independently.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation covers how to decouple three components: the Conversation Engine, the Context Engine, and the Application Orchestrator, each with distinct responsibilities.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage, managing the flow and history of conversations.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects relevant references and manages budgeting of these references to optimize context usage.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the interaction between the Conversation Engine and Context Engine, ensuring smooth operation and data flow.\"},{\"type\":\"text\",\"text\":\"Decoupling Strategy:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces: Each component should expose well-defined APIs for communication, avoiding direct dependencies on internal implementations.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous messaging or event-driven patterns: The Orchestrator can send commands and receive events without blocking or tight coupling.\"},{\"type\":\"text\",\"text\":\"- Maintain separation of concerns: Conversation Engine focuses solely on message handling and lineage tracking; Context Engine handles reference selection and budgeting independently.\"}]}"
+  },
+  {
+    "case": "6e29dfb3ae9c",
+    "request": "Build a locker credit calculator. Small lockers cost 2 credits per block, Large cost 5. A visit lasts 1 to 8 whole blocks. Start on Small for 1 block. Show total credits; there are no other charges or locker sizes.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This calculator computes the total credits needed for locker rental. You choose the locker size and the number of blocks for your visit. Small lockers cost 2 credits per block, Large lockers cost 5 credits per block. A visit lasts between 1 and 8 whole blocks."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "This calculator computes the total credits needed for locker rental. You choose the locker size and the number of blocks for your visit. Small lockers cost 2 credits per block, Large lockers cost 5 credits per block. A visit lasts between 1 and 8 whole blocks.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "locker",
+          "props": {
+            "label": "Locker Size",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Small",
+              "Large"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "blocks",
+          "props": {
+            "label": "Blocks",
+            "min": 1,
+            "max": 8,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total Credits",
+            "value": 2
+          }
+        }
+      ],
+      "state": {
+        "locker": 0,
+        "blocks": 1
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This calculator computes the total credits needed for locker rental. You choose the locker size and the number of blocks for your visit. Small lockers cost 2 credits per block, Large lockers cost 5 credits per block. A visit lasts between 1 and 8 whole blocks.\"},{\"type\":\"ui\",\"source\":\"root = Stack([lockerChoice, blockChoice, totalCredits])\\n\\n$locker = 0\\n$blocks = 1\\n\\nlockerChoice = Control(\\\"Locker Size\\\", 0, 1, [\\\"Small\\\", \\\"Large\\\"], $locker)\\nblockChoice = Control(\\\"Blocks\\\", 1, 8, [], $blocks)\\n\\npricePerBlock = $locker == 0 ? 2 : 5\\n\\ntotalCredits = Metric(\\\"Total Credits\\\", pricePerBlock * $blocks)\",\"state\":[{\"name\":\"locker\",\"value\":0},{\"name\":\"blocks\",\"value\":1}]}]}"
+  },
+  {
+    "case": "6e3814dc22df",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Explore your single-bag fee under a fictional airline policy. Select your cabin, Gold status, and bag weight to see your allowance and any excess fee."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "Explore your single-bag fee under a fictional airline policy. Select your cabin, Gold status, and bag weight to see your allowance and any excess fee.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          },
+          "binding": "cabin"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Gold status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No",
+              "Yes"
+            ],
+            "value": 0
+          },
+          "binding": "gold"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 23
+          },
+          "binding": "weight"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Allowance (kg)",
+            "value": 32
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Excess fee ($)",
+            "value": 0
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 0,
+        "weight": 23
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Explore your single-bag fee under a fictional airline policy. Select your cabin, Gold status, and bag weight to see your allowance and any excess fee.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"mainStack\\\",\\\"elements\\\":{\\\"mainStack\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"cabinControl\\\",\\\"goldControl\\\",\\\"weightControl\\\",\\\"allowanceMetric\\\",\\\"feeMetric\\\"]},\\\"cabinControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Cabin\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[\\\"Economy\\\",\\\"Business\\\"],\\\"value\\\":{\\\"$bindState\\\":\\\"/cabin\\\"}}},\\\"goldControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Gold status\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[\\\"No\\\",\\\"Yes\\\"],\\\"value\\\":{\\\"$bindState\\\":\\\"/gold\\\"}}},\\\"weightControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Bag weight (kg)\\\",\\\"min\\\":10,\\\"max\\\":40,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/weight\\\"}}},\\\"allowanceMetric\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Allowance (kg)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":32,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/cabin\\\"},\\\"b\\\":9}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/gold\\\"},\\\"b\\\":5}}}},\\\"b\\\":0}}}},\\\"feeMetric\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Excess fee ($)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":15,\\\"b\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weight\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":32,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/cabin\\\"},\\\"b\\\":9}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/gold\\\"},\\\"b\\\":5}}}},\\\"b\\\":0}}}}}}}}}}\",\"state\":[{\"name\":\"cabin\",\"value\":0},{\"name\":\"gold\",\"value\":0},{\"name\":\"weight\",\"value\":23}]}]}"
+  },
+  {
+    "case": "738bf8b1b732",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, allowing for readability and preventing text from being obscured."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, allowing for readability and preventing text from being obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, allowing for readability and preventing text from being obscured.\"}]}"
+  },
+  {
+    "case": "73c67fc1c045",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "legacy",
+    "protocol": "json",
+    "orderedBlocks": null,
+    "text": "To decouple a Conversation Engine, a Context Engine, and an Application Orchestrator:\n\n1. Define clear responsibilities:\n   - Conversation Engine: owns message storage, manages message lineage and sequencing.\n   - Context Engine: selects relevant references, manages context budgeting (limits on references).\n   - Application Orchestrator: coordinates interaction between engines, controls data flow and timing.\n\n2. Use well-defined interfaces:\n   - Conversation Engine exposes APIs for message retrieval, lineage queries, and message submission.\n   - Context Engine exposes APIs for requesting context references and reporting budget usage.\n   - Application Orchestrator calls these APIs to coordinate conversation flow and context updates.\n\n3. Decouple data ownership:\n   - Conversation Engine stores all messages and lineage data internally.\n   - Context Engine maintains its own reference selection and budgeting state.\n   - Application Orchestrator holds no message or context state but manages orchestration logic.\n\n4. Use asynchronous messaging or event-driven communication:\n   - Engines communicate via events or messages to avoid tight coupling.\n   - For example, Conversation Engine emits new message events; Context Engine listens and updates references.\n\n5. Maintain separation of concerns:\n   - Avoid sharing internal data structures directly.\n   - Pass only necessary data via interfaces or messages.\n\n6. Enable independent scaling and testing:\n   - Each engine can be developed, tested, and scaled independently.\n\nThis approach ensures modularity, easier maintenance, and flexibility in evolving each engine independently.",
+    "raw": "TEXT\nTo decouple a Conversation Engine, a Context Engine, and an Application Orchestrator:\n\n1. Define clear responsibilities:\n   - Conversation Engine: owns message storage, manages message lineage and sequencing.\n   - Context Engine: selects relevant references, manages context budgeting (limits on references).\n   - Application Orchestrator: coordinates interaction between engines, controls data flow and timing.\n\n2. Use well-defined interfaces:\n   - Conversation Engine exposes APIs for message retrieval, lineage queries, and message submission.\n   - Context Engine exposes APIs for requesting context references and reporting budget usage.\n   - Application Orchestrator calls these APIs to coordinate conversation flow and context updates.\n\n3. Decouple data ownership:\n   - Conversation Engine stores all messages and lineage data internally.\n   - Context Engine maintains its own reference selection and budgeting state.\n   - Application Orchestrator holds no message or context state but manages orchestration logic.\n\n4. Use asynchronous messaging or event-driven communication:\n   - Engines communicate via events or messages to avoid tight coupling.\n   - For example, Conversation Engine emits new message events; Context Engine listens and updates references.\n\n5. Maintain separation of concerns:\n   - Avoid sharing internal data structures directly.\n   - Pass only necessary data via interfaces or messages.\n\n6. Enable independent scaling and testing:\n   - Each engine can be developed, tested, and scaled independently.\n\nThis approach ensures modularity, easier maintenance, and flexibility in evolving each engine independently."
+  },
+  {
+    "case": "75f3ed8ad561",
+    "request": "Explain the geometric meaning of a vector dot product, including orthogonal vectors and negative projection.",
+    "wire": "legacy",
+    "protocol": "oui",
+    "orderedBlocks": null,
+    "text": "Geometric Meaning of Vector Dot Product:\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\n\nKey points:\n1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\n2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\n3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction.",
+    "raw": "TEXT\nGeometric Meaning of Vector Dot Product:\nThe dot product of two vectors measures how much one vector extends in the direction of the other. Mathematically, for vectors A and B, the dot product A·B = |A||B|cos(θ), where θ is the angle between them.\n\nKey points:\n1. Projection: The dot product equals the length of one vector times the projection of the other onto it.\n2. Orthogonal Vectors: If A·B = 0, vectors are perpendicular (θ = 90°), meaning no projection.\n3. Negative Projection: If A·B < 0, the angle θ is greater than 90°, indicating the projection is opposite in direction."
+  },
+  {
+    "case": "79978ea70be4",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it refers to a security practice where the user or organization provides and controls their own encryption keys rather than relying on the service provider's keys. This ensures that the user maintains control over data encryption and decryption, enhancing privacy and compliance with data protection regulations."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it refers to a security practice where the user or organization provides and controls their own encryption keys rather than relying on the service provider's keys. This ensures that the user maintains control over data encryption and decryption, enhancing privacy and compliance with data protection regulations.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it refers to a security practice where the user or organization provides and controls their own encryption keys rather than relying on the service provider's keys. This ensures that the user maintains control over data encryption and decryption, enhancing privacy and compliance with data protection regulations.\"}]}"
+  },
+  {
+    "case": "7a44f410699a",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, ensuring text and images are not obscured."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, ensuring text and images are not obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, ensuring text and images are not obscured.\"}]}"
+  },
+  {
+    "case": "7a706f4ab8cf",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interaction boundaries to enable modularity and independent evolution."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, tracks their sequence and relationships (lineage), and handles message creation and retrieval."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It determines which contextual information or references are relevant for the current conversation state and manages resource constraints (budgets) to optimize context usage."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the overall workflow, triggers context selection based on conversation state, and integrates outputs from both engines to produce coherent application behavior."
+      },
+      {
+        "type": "text",
+        "text": "To decouple these components:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces: Conversation Engine exposes methods to add, retrieve, and query messages and lineage. Context Engine exposes methods to request context selection and report budget usage."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous messaging or event-driven communication: The Orchestrator sends requests and receives responses without tight coupling, enabling independent scaling and replacement."
+      },
+      {
+        "type": "text",
+        "text": "- Maintain separate data stores: Each engine manages its own data to avoid shared state dependencies."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interaction boundaries to enable modularity and independent evolution.\n1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, tracks their sequence and relationships (lineage), and handles message creation and retrieval.\n2. Context Engine: Selects and budgets references. It determines which contextual information or references are relevant for the current conversation state and manages resource constraints (budgets) to optimize context usage.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the overall workflow, triggers context selection based on conversation state, and integrates outputs from both engines to produce coherent application behavior.\nTo decouple these components:\n- Define clear interfaces: Conversation Engine exposes methods to add, retrieve, and query messages and lineage. Context Engine exposes methods to request context selection and report budget usage.\n- Use asynchronous messaging or event-driven communication: The Orchestrator sends requests and receives responses without tight coupling, enabling independent scaling and replacement.\n- Maintain separate data stores: Each engine manages its own data to avoid shared state dependencies.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interaction boundaries to enable modularity and independent evolution.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, tracks their sequence and relationships (lineage), and handles message creation and retrieval.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It determines which contextual information or references are relevant for the current conversation state and manages resource constraints (budgets) to optimize context usage.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the overall workflow, triggers context selection based on conversation state, and integrates outputs from both engines to produce coherent application behavior.\"},{\"type\":\"text\",\"text\":\"To decouple these components:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces: Conversation Engine exposes methods to add, retrieve, and query messages and lineage. Context Engine exposes methods to request context selection and report budget usage.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous messaging or event-driven communication: The Orchestrator sends requests and receives responses without tight coupling, enabling independent scaling and replacement.\"},{\"type\":\"text\",\"text\":\"- Maintain separate data stores: Each engine manages its own data to avoid shared state dependencies.\"}]}"
+  },
+  {
+    "case": "7c0709608c9d",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "legacy",
+    "protocol": "json",
+    "orderedBlocks": null,
+    "text": "To decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear interfaces:\n   - Conversation Engine exposes APIs to add, retrieve, and manage messages and lineage.\n   - Context Engine exposes APIs to select references and manage budgets without direct message management.\n   - Application Orchestrator coordinates by calling these APIs without internal knowledge of their implementations.\n\n2. Use message passing or event-driven communication:\n   - Conversation Engine emits events when messages or lineage change.\n   - Context Engine listens for relevant events to update references and budgets.\n   - Application Orchestrator listens and triggers actions based on events or state changes.\n\n3. Separate responsibilities strictly:\n   - Conversation Engine handles message storage and tracking lineage only.\n   - Context Engine focuses on selecting and budgeting references based on current context.\n   - Application Orchestrator manages workflow, invoking engines as needed and handling orchestration logic.\n\n4. Employ dependency injection or service registries:\n   - Orchestrator receives references to Conversation and Context Engines via interfaces.\n   - Engines do not depend on each other directly, only on their defined contracts.\n\n5. Maintain state isolation:\n   - Each engine manages its own state independently.\n   - Shared data is passed explicitly through interfaces or events.\n\nThis approach ensures modularity, easier testing, and flexibility to replace or update components independently.",
+    "raw": "TEXT\nTo decouple a Conversation Engine, Context Engine, and Application Orchestrator:\n\n1. Define clear interfaces:\n   - Conversation Engine exposes APIs to add, retrieve, and manage messages and lineage.\n   - Context Engine exposes APIs to select references and manage budgets without direct message management.\n   - Application Orchestrator coordinates by calling these APIs without internal knowledge of their implementations.\n\n2. Use message passing or event-driven communication:\n   - Conversation Engine emits events when messages or lineage change.\n   - Context Engine listens for relevant events to update references and budgets.\n   - Application Orchestrator listens and triggers actions based on events or state changes.\n\n3. Separate responsibilities strictly:\n   - Conversation Engine handles message storage and tracking lineage only.\n   - Context Engine focuses on selecting and budgeting references based on current context.\n   - Application Orchestrator manages workflow, invoking engines as needed and handling orchestration logic.\n\n4. Employ dependency injection or service registries:\n   - Orchestrator receives references to Conversation and Context Engines via interfaces.\n   - Engines do not depend on each other directly, only on their defined contracts.\n\n5. Maintain state isolation:\n   - Each engine manages its own state independently.\n   - Shared data is passed explicitly through interfaces or events.\n\nThis approach ensures modularity, easier testing, and flexibility to replace or update components independently."
+  },
+  {
+    "case": "89c0681ae15f",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, allowing for readability and preventing text from being obscured."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, allowing for readability and preventing text from being obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin or space between the two facing pages where the book is bound, allowing for readability and preventing text from being obscured.\"}]}"
+  },
+  {
+    "case": "8a7d63e780ef",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explorer calculates the single-bag fee for a fictional airline policy. Choose your cabin, Gold status, and enter your bag's weight to see your allowance and any excess fee. The fee is $15 for each kilogram over your allowance, but never less than $0."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "This explorer calculates the single-bag fee for a fictional airline policy. Choose your cabin, Gold status, and enter your bag's weight to see your allowance and any excess fee. The fee is $15 for each kilogram over your allowance, but never less than $0.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "cabin",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "gold",
+          "props": {
+            "label": "Gold Status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No",
+              "Yes"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "bagweight",
+          "props": {
+            "label": "Bag Weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 23
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Allowance (kg)",
+            "value": 23
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Excess Fee ($)",
+            "value": 0
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 0,
+        "bagweight": 23
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explorer calculates the single-bag fee for a fictional airline policy. Choose your cabin, Gold status, and enter your bag's weight to see your allowance and any excess fee. The fee is $15 for each kilogram over your allowance, but never less than $0.\"},{\"type\":\"ui\",\"source\":\"root = Stack([cabin, gold, bagweight, allowance, fee])\\n$cabin = 0\\n$gold = 0\\n$bagweight = 23\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\",\\\"Business\\\"], $cabin)\\ngold = Control(\\\"Gold Status\\\", 0, 1, [\\\"No\\\",\\\"Yes\\\"], $gold)\\nbagweight = Control(\\\"Bag Weight (kg)\\\", 10, 40, [], $bagweight)\\nallow = ($cabin == 0 ? 23 : 32) + ($gold == 1 ? 5 : 0)\\nallowance = Metric(\\\"Allowance (kg)\\\", allow)\\nfee = Metric(\\\"Excess Fee ($)\\\", ($bagweight > allow ? ($bagweight - allow) * 15 : 0))\",\"state\":[{\"name\":\"cabin\",\"value\":0},{\"name\":\"gold\",\"value\":0},{\"name\":\"bagweight\",\"value\":23}]}]}"
+  },
+  {
+    "case": "905042cb07e3",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation covers how to decouple three components: a Conversation Engine, a Context Engine, and an Application Orchestrator, each with distinct responsibilities."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, storing messages and tracking their relationships (lineage) to maintain context and history."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It decides which external or internal references to include in the conversation, managing the allocation of limited resources (budgets) to these references."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages interactions between them, ensuring smooth operation and data flow without tightly coupling their internal logic."
+      },
+      {
+        "type": "text",
+        "text": "Decoupling Strategy:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces: Each component exposes well-defined APIs or message protocols that specify inputs and outputs without revealing internal state."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication: Components communicate via events or messages, avoiding direct synchronous calls that create tight dependencies."
+      },
+      {
+        "type": "text",
+        "text": "- Employ a shared data contract: Agree on data formats for messages, references, and budgets to ensure compatibility."
+      }
+    ],
+    "text": "This explanation covers how to decouple three components: a Conversation Engine, a Context Engine, and an Application Orchestrator, each with distinct responsibilities.\n1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, storing messages and tracking their relationships (lineage) to maintain context and history.\n2. Context Engine: Selects and budgets references. It decides which external or internal references to include in the conversation, managing the allocation of limited resources (budgets) to these references.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages interactions between them, ensuring smooth operation and data flow without tightly coupling their internal logic.\nDecoupling Strategy:\n- Define clear interfaces: Each component exposes well-defined APIs or message protocols that specify inputs and outputs without revealing internal state.\n- Use asynchronous communication: Components communicate via events or messages, avoiding direct synchronous calls that create tight dependencies.\n- Employ a shared data contract: Agree on data formats for messages, references, and budgets to ensure compatibility.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation covers how to decouple three components: a Conversation Engine, a Context Engine, and an Application Orchestrator, each with distinct responsibilities.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, storing messages and tracking their relationships (lineage) to maintain context and history.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It decides which external or internal references to include in the conversation, managing the allocation of limited resources (budgets) to these references.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages interactions between them, ensuring smooth operation and data flow without tightly coupling their internal logic.\"},{\"type\":\"text\",\"text\":\"Decoupling Strategy:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces: Each component exposes well-defined APIs or message protocols that specify inputs and outputs without revealing internal state.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication: Components communicate via events or messages, avoiding direct synchronous calls that create tight dependencies.\"},{\"type\":\"text\",\"text\":\"- Employ a shared data contract: Agree on data formats for messages, references, and budgets to ensure compatibility.\"}]}"
+  },
+  {
+    "case": "926168dac3d0",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means that the user or organization provides and controls their own encryption keys to secure data, rather than relying solely on the application's default keys. This approach enhances security and compliance by giving users direct control over data encryption."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, it means that the user or organization provides and controls their own encryption keys to secure data, rather than relying solely on the application's default keys. This approach enhances security and compliance by giving users direct control over data encryption.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, it means that the user or organization provides and controls their own encryption keys to secure data, rather than relying solely on the application's default keys. This approach enhances security and compliance by giving users direct control over data encryption.\"}]}"
+  },
+  {
+    "case": "9984d0f15602",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to protect data or models. This approach allows users to maintain control over the cryptographic keys used to secure their sensitive information, rather than relying solely on the application's default keys. BYOK enhances security by enabling compliance with organizational policies, regulatory requirements, and giving users the ability to revoke or rotate keys independently."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to protect data or models. This approach allows users to maintain control over the cryptographic keys used to secure their sensitive information, rather than relying solely on the application's default keys. BYOK enhances security by enabling compliance with organizational policies, regulatory requirements, and giving users the ability to revoke or rotate keys independently.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, BYOK means that the user or organization provides their own encryption key to protect data or models. This approach allows users to maintain control over the cryptographic keys used to secure their sensitive information, rather than relying solely on the application's default keys. BYOK enhances security by enabling compliance with organizational policies, regulatory requirements, and giving users the ability to revoke or rotate keys independently.\"}]}"
+  },
+  {
+    "case": "9cf77d108b40",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation covers how to decouple three key components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: This component owns messages and lineage. It manages the creation, storage, and tracking of message history and their relationships (lineage). It focuses solely on message data and flow without concern for external context or orchestration."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: This component selects and budgets references. It determines which external references or resources are relevant to the conversation and manages their usage limits or budgets. It operates independently from message storage, focusing on context selection and resource management."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It acts as the central controller, managing interactions between message handling and context selection to fulfill application-level goals."
+      },
+      {
+        "type": "text",
+        "text": "Decoupling Strategy:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces for each component. The Conversation Engine exposes message lineage and retrieval APIs without exposing internal storage details."
+      },
+      {
+        "type": "text",
+        "text": "- The Context Engine provides APIs to select references and report budget usage, independent of message details."
+      },
+      {
+        "type": "text",
+        "text": "- The Application Orchestrator uses these APIs to coordinate workflows, invoking Conversation Engine to get messages and Context Engine to manage references."
+      }
+    ],
+    "text": "This explanation covers how to decouple three key components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\n1. Conversation Engine: This component owns messages and lineage. It manages the creation, storage, and tracking of message history and their relationships (lineage). It focuses solely on message data and flow without concern for external context or orchestration.\n2. Context Engine: This component selects and budgets references. It determines which external references or resources are relevant to the conversation and manages their usage limits or budgets. It operates independently from message storage, focusing on context selection and resource management.\n3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It acts as the central controller, managing interactions between message handling and context selection to fulfill application-level goals.\nDecoupling Strategy:\n- Define clear interfaces for each component. The Conversation Engine exposes message lineage and retrieval APIs without exposing internal storage details.\n- The Context Engine provides APIs to select references and report budget usage, independent of message details.\n- The Application Orchestrator uses these APIs to coordinate workflows, invoking Conversation Engine to get messages and Context Engine to manage references.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation covers how to decouple three key components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: This component owns messages and lineage. It manages the creation, storage, and tracking of message history and their relationships (lineage). It focuses solely on message data and flow without concern for external context or orchestration.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: This component selects and budgets references. It determines which external references or resources are relevant to the conversation and manages their usage limits or budgets. It operates independently from message storage, focusing on context selection and resource management.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It acts as the central controller, managing interactions between message handling and context selection to fulfill application-level goals.\"},{\"type\":\"text\",\"text\":\"Decoupling Strategy:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces for each component. The Conversation Engine exposes message lineage and retrieval APIs without exposing internal storage details.\"},{\"type\":\"text\",\"text\":\"- The Context Engine provides APIs to select references and report budget usage, independent of message details.\"},{\"type\":\"text\",\"text\":\"- The Application Orchestrator uses these APIs to coordinate workflows, invoking Conversation Engine to get messages and Context Engine to manage references.\"}]}"
+  },
+  {
+    "case": "a7278dedd047",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages where the book is bound, allowing for readability and preventing content from being obscured."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages where the book is bound, allowing for readability and preventing content from being obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the facing pages where the book is bound, allowing for readability and preventing content from being obscured.\"}]}"
+  },
+  {
+    "case": "a9cffc58c177",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage). It should expose interfaces to add, retrieve, and trace messages without depending on context or orchestration logic."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It decides which references or contextual information to include in the conversation, managing constraints like budgets or limits. It operates independently by receiving requests for context and returning selected references."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It directs the flow by invoking the Conversation Engine to handle messages and the Context Engine to provide context, managing their interaction without embedding their internal logic."
+      },
+      {
+        "type": "text",
+        "text": "To decouple them:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear APIs for each engine. For example, Conversation Engine API for message handling, Context Engine API for context selection, and Orchestrator API for coordination."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous or message-based communication to avoid tight coupling."
+      },
+      {
+        "type": "text",
+        "text": "- Keep state management within each engine, exposing only necessary data."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability.\n1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage). It should expose interfaces to add, retrieve, and trace messages without depending on context or orchestration logic.\n2. Context Engine: Selects and budgets references. It decides which references or contextual information to include in the conversation, managing constraints like budgets or limits. It operates independently by receiving requests for context and returning selected references.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It directs the flow by invoking the Conversation Engine to handle messages and the Context Engine to provide context, managing their interaction without embedding their internal logic.\nTo decouple them:\n- Define clear APIs for each engine. For example, Conversation Engine API for message handling, Context Engine API for context selection, and Orchestrator API for coordination.\n- Use asynchronous or message-based communication to avoid tight coupling.\n- Keep state management within each engine, exposing only necessary data.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage). It should expose interfaces to add, retrieve, and trace messages without depending on context or orchestration logic.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It decides which references or contextual information to include in the conversation, managing constraints like budgets or limits. It operates independently by receiving requests for context and returning selected references.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It directs the flow by invoking the Conversation Engine to handle messages and the Context Engine to provide context, managing their interaction without embedding their internal logic.\"},{\"type\":\"text\",\"text\":\"To decouple them:\"},{\"type\":\"text\",\"text\":\"- Define clear APIs for each engine. For example, Conversation Engine API for message handling, Context Engine API for context selection, and Orchestrator API for coordination.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous or message-based communication to avoid tight coupling.\"},{\"type\":\"text\",\"text\":\"- Keep state management within each engine, exposing only necessary data.\"}]}"
+  },
+  {
+    "case": "ab7f97c8ee93",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages where the book is bound."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages where the book is bound.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the facing pages where the book is bound.\"}]}"
+  },
+  {
+    "case": "ac00024ea614",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine.\"}]}"
+  },
+  {
+    "case": "acd08a2a6fb7",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: This component owns messages and their lineage. It manages the creation, storage, and tracking of message sequences and their relationships (lineage). It ensures message integrity and ordering."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: This component selects and budgets references. It decides which contextual references (such as prior messages, external data, or knowledge snippets) to include in responses, managing their quantity and relevance to optimize resource use."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the workflow, triggering the Conversation Engine to produce messages and the Context Engine to supply context, ensuring smooth interaction between them."
+      },
+      {
+        "type": "text",
+        "text": "Decoupling Strategy:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear interfaces: Each component exposes a well-defined API. The Conversation Engine provides methods to add, retrieve, and track messages. The Context Engine offers methods to request and budget references."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication: Components communicate via messages or events rather than direct calls, reducing tight coupling and allowing independent scaling."
+      },
+      {
+        "type": "text",
+        "text": "- Separate data ownership: The Conversation Engine exclusively manages message data and lineage, while the Context Engine manages reference data and budgeting logic."
+      }
+    ],
+    "text": "This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\n1. Conversation Engine: This component owns messages and their lineage. It manages the creation, storage, and tracking of message sequences and their relationships (lineage). It ensures message integrity and ordering.\n2. Context Engine: This component selects and budgets references. It decides which contextual references (such as prior messages, external data, or knowledge snippets) to include in responses, managing their quantity and relevance to optimize resource use.\n3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the workflow, triggering the Conversation Engine to produce messages and the Context Engine to supply context, ensuring smooth interaction between them.\nDecoupling Strategy:\n- Define clear interfaces: Each component exposes a well-defined API. The Conversation Engine provides methods to add, retrieve, and track messages. The Context Engine offers methods to request and budget references.\n- Use asynchronous communication: Components communicate via messages or events rather than direct calls, reducing tight coupling and allowing independent scaling.\n- Separate data ownership: The Conversation Engine exclusively manages message data and lineage, while the Context Engine manages reference data and budgeting logic.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This explanation describes how to decouple three components in a messaging system: the Conversation Engine, the Context Engine, and the Application Orchestrator.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: This component owns messages and their lineage. It manages the creation, storage, and tracking of message sequences and their relationships (lineage). It ensures message integrity and ordering.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: This component selects and budgets references. It decides which contextual references (such as prior messages, external data, or knowledge snippets) to include in responses, managing their quantity and relevance to optimize resource use.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: This component coordinates the Conversation Engine and Context Engine. It manages the workflow, triggering the Conversation Engine to produce messages and the Context Engine to supply context, ensuring smooth interaction between them.\"},{\"type\":\"text\",\"text\":\"Decoupling Strategy:\"},{\"type\":\"text\",\"text\":\"- Define clear interfaces: Each component exposes a well-defined API. The Conversation Engine provides methods to add, retrieve, and track messages. The Context Engine offers methods to request and budget references.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication: Components communicate via messages or events rather than direct calls, reducing tight coupling and allowing independent scaling.\"},{\"type\":\"text\",\"text\":\"- Separate data ownership: The Conversation Engine exclusively manages message data and lineage, while the Context Engine manages reference data and budgeting logic.\"}]}"
+  },
+  {
+    "case": "ae07677be2cc",
+    "request": "Build a greenhouse tray planner. Rows range from 1 to 4, columns from 2 to 6, initially 2 rows and 3 columns. Each cell holds one seedling and needs 0.25 litres of water. Show the seedling count and water needed as both dimensions change.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This greenhouse tray planner lets you choose the number of rows and columns. Each cell holds one seedling and needs 0.25 litres of water. Adjust the rows and columns to see the total seedlings and water needed."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "This greenhouse tray planner lets you choose the number of rows and columns. Each cell holds one seedling and needs 0.25 litres of water. Adjust the rows and columns to see the total seedlings and water needed.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Rows",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 2
+          },
+          "binding": "rows"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Columns",
+            "min": 2,
+            "max": 6,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "cols"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Seedlings",
+            "value": 6
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water Needed (litres)",
+            "value": 1.5
+          }
+        }
+      ],
+      "state": {
+        "rows": 2,
+        "cols": 3
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This greenhouse tray planner lets you choose the number of rows and columns. Each cell holds one seedling and needs 0.25 litres of water. Adjust the rows and columns to see the total seedlings and water needed.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"trayPlannerLayout\\\",\\\"elements\\\":{\\\"trayPlannerLayout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"rowControl\\\",\\\"colControl\\\",\\\"seedlingCount\\\",\\\"waterNeeded\\\"]},\\\"rowControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Rows\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/rows\\\"}}},\\\"colControl\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Columns\\\",\\\"min\\\":2,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/cols\\\"}}},\\\"seedlingCount\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Seedlings\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/rows\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/cols\\\"}}}}},\\\"waterNeeded\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Water Needed (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/rows\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/cols\\\"}}},\\\"b\\\":0.25}}}}}}\",\"state\":[{\"name\":\"rows\",\"value\":2},{\"name\":\"cols\",\"value\":3}]}]}"
+  },
+  {
+    "case": "b4ad50c38140",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities and interfaces to enable independent development and scalability."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the dialogue flow, stores messages, tracks conversation history, and maintains the lineage of interactions to understand context evolution."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It processes the conversation history to select relevant context snippets or knowledge, managing the budget (e.g., token limits) to optimize context size and relevance."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It handles the workflow, triggering context selection based on conversation state, passing messages between components, and managing timing and error handling."
+      },
+      {
+        "type": "text",
+        "text": "To decouple these components:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear APIs: Each engine exposes well-defined interfaces. The Conversation Engine provides message history and lineage queries. The Context Engine accepts conversation state and returns selected context references. The Orchestrator invokes these interfaces without internal knowledge of their implementations."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication: Components communicate via message queues or event-driven patterns to avoid tight coupling and allow independent scaling."
+      },
+      {
+        "type": "text",
+        "text": "- Separate data ownership: Conversation Engine owns message storage; Context Engine owns context selection logic and budgeting; Orchestrator owns coordination logic without storing messages or context."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities and interfaces to enable independent development and scalability.\n1. Conversation Engine: Owns messages and lineage. It manages the dialogue flow, stores messages, tracks conversation history, and maintains the lineage of interactions to understand context evolution.\n2. Context Engine: Selects and budgets references. It processes the conversation history to select relevant context snippets or knowledge, managing the budget (e.g., token limits) to optimize context size and relevance.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It handles the workflow, triggering context selection based on conversation state, passing messages between components, and managing timing and error handling.\nTo decouple these components:\n- Define clear APIs: Each engine exposes well-defined interfaces. The Conversation Engine provides message history and lineage queries. The Context Engine accepts conversation state and returns selected context references. The Orchestrator invokes these interfaces without internal knowledge of their implementations.\n- Use asynchronous communication: Components communicate via message queues or event-driven patterns to avoid tight coupling and allow independent scaling.\n- Separate data ownership: Conversation Engine owns message storage; Context Engine owns context selection logic and budgeting; Orchestrator owns coordination logic without storing messages or context.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities and interfaces to enable independent development and scalability.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the dialogue flow, stores messages, tracks conversation history, and maintains the lineage of interactions to understand context evolution.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It processes the conversation history to select relevant context snippets or knowledge, managing the budget (e.g., token limits) to optimize context size and relevance.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It handles the workflow, triggering context selection based on conversation state, passing messages between components, and managing timing and error handling.\"},{\"type\":\"text\",\"text\":\"To decouple these components:\"},{\"type\":\"text\",\"text\":\"- Define clear APIs: Each engine exposes well-defined interfaces. The Conversation Engine provides message history and lineage queries. The Context Engine accepts conversation state and returns selected context references. The Orchestrator invokes these interfaces without internal knowledge of their implementations.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication: Components communicate via message queues or event-driven patterns to avoid tight coupling and allow independent scaling.\"},{\"type\":\"text\",\"text\":\"- Separate data ownership: Conversation Engine owns message storage; Context Engine owns context selection logic and budgeting; Orchestrator owns coordination logic without storing messages or context.\"}]}"
+  },
+  {
+    "case": "bf11b1482cb6",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the flow of dialogue, stores messages, and tracks the history and relationships between them (lineage). It should expose interfaces to receive new inputs and provide message history without depending on context selection or budgeting."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It determines which contextual information or external references to include in the conversation, managing resource limits (budgets) for these references. It should operate independently from message storage, receiving requests for context and returning selections based on budgets."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the workflow by invoking the Conversation Engine to handle messages and the Context Engine to select context, ensuring they work together without tightly coupling their internal logic."
+      },
+      {
+        "type": "text",
+        "text": "To decouple:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear APIs for each component. The Conversation Engine provides message history and accepts new messages. The Context Engine accepts context requests and returns selected references within budget constraints."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication or message passing between components to avoid direct dependencies."
+      },
+      {
+        "type": "text",
+        "text": "- The Application Orchestrator acts as the mediator, invoking each engine as needed and combining their outputs."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability.\n1. Conversation Engine: Owns messages and lineage. It manages the flow of dialogue, stores messages, and tracks the history and relationships between them (lineage). It should expose interfaces to receive new inputs and provide message history without depending on context selection or budgeting.\n2. Context Engine: Selects and budgets references. It determines which contextual information or external references to include in the conversation, managing resource limits (budgets) for these references. It should operate independently from message storage, receiving requests for context and returning selections based on budgets.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the workflow by invoking the Conversation Engine to handle messages and the Context Engine to select context, ensuring they work together without tightly coupling their internal logic.\nTo decouple:\n- Define clear APIs for each component. The Conversation Engine provides message history and accepts new messages. The Context Engine accepts context requests and returns selected references within budget constraints.\n- Use asynchronous communication or message passing between components to avoid direct dependencies.\n- The Application Orchestrator acts as the mediator, invoking each engine as needed and combining their outputs.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the flow of dialogue, stores messages, and tracks the history and relationships between them (lineage). It should expose interfaces to receive new inputs and provide message history without depending on context selection or budgeting.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It determines which contextual information or external references to include in the conversation, managing resource limits (budgets) for these references. It should operate independently from message storage, receiving requests for context and returning selections based on budgets.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the workflow by invoking the Conversation Engine to handle messages and the Context Engine to select context, ensuring they work together without tightly coupling their internal logic.\"},{\"type\":\"text\",\"text\":\"To decouple:\"},{\"type\":\"text\",\"text\":\"- Define clear APIs for each component. The Conversation Engine provides message history and accepts new messages. The Context Engine accepts context requests and returns selected references within budget constraints.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication or message passing between components to avoid direct dependencies.\"},{\"type\":\"text\",\"text\":\"- The Application Orchestrator acts as the mediator, invoking each engine as needed and combining their outputs.\"}]}"
+  },
+  {
+    "case": "bf6889d607c2",
+    "request": "Build a locker credit calculator. Small lockers cost 2 credits per block, Large cost 5. A visit lasts 1 to 8 whole blocks. Start on Small for 1 block. Show total credits; there are no other charges or locker sizes.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Calculate the total credits needed for a locker based on size and duration. Small lockers cost 2 credits per block, Large lockers cost 5 credits per block. Choose locker size and number of blocks to see the total credits required."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "Calculate the total credits needed for a locker based on size and duration. Small lockers cost 2 credits per block, Large lockers cost 5 credits per block. Choose locker size and number of blocks to see the total credits required.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Locker Size",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Small",
+              "Large"
+            ],
+            "value": 0
+          },
+          "binding": "lockerSize"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Blocks (1-8)",
+            "min": 1,
+            "max": 8,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "blocks"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total Credits",
+            "value": 2
+          }
+        }
+      ],
+      "state": {
+        "lockerSize": 0,
+        "blocks": 1
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Calculate the total credits needed for a locker based on size and duration. Small lockers cost 2 credits per block, Large lockers cost 5 credits per block. Choose locker size and number of blocks to see the total credits required.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"lockerCalcStack\\\",\\\"elements\\\":{\\\"lockerCalcStack\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"sizeChoice\\\",\\\"blockCount\\\",\\\"totalCredits\\\"]},\\\"sizeChoice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Locker Size\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[\\\"Small\\\",\\\"Large\\\"],\\\"value\\\":{\\\"$bindState\\\":\\\"/lockerSize\\\"}}},\\\"blockCount\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Blocks (1-8)\\\",\\\"min\\\":1,\\\"max\\\":8,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/blocks\\\"}}},\\\"totalCredits\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total Credits\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/blocks\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/lockerSize\\\"},\\\"b\\\":3}}}}}}}}}}\",\"state\":[{\"name\":\"lockerSize\",\"value\":0},{\"name\":\"blocks\",\"value\":1}]}]}"
+  },
+  {
+    "case": "c088b00073e3",
+    "request": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change.",
+    "wire": "legacy",
+    "protocol": "oui",
+    "orderedBlocks": null,
+    "text": "Bag weight (kg): 10 to 40  \nClass: Economy or Business  \nStatus: Standard or Gold  \nAllowance and fee update as inputs change.\n\nroot = Stack([WeightControl, ClassControl, StatusControl, AllowanceText, FeeText])\n\nWeightControl = Control(\"Bag weight (kg)\", 10, 40, [], $weight)\nClassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $class)\nStatusControl = Control(\"Status\", 0, 1, [\"Standard\", \"Gold\"], $status)\n\nBaseAllowance = $class == 0 ? 23 : 32\nExtraAllowance = $status == 1 ? 5 : 0\nTotalAllowance = BaseAllowance + ExtraAllowance\n\nAllowanceText = Text(\"Allowance: \" + TotalAllowance + \" kg\")\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\nFee = ExcessWeight * 15\nFeeText = Text(\"Fee: $\" + Fee)",
+    "raw": "TEXT\nBag weight (kg): 10 to 40  \nClass: Economy or Business  \nStatus: Standard or Gold  \nAllowance and fee update as inputs change.\n\nroot = Stack([WeightControl, ClassControl, StatusControl, AllowanceText, FeeText])\n\nWeightControl = Control(\"Bag weight (kg)\", 10, 40, [], $weight)\nClassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $class)\nStatusControl = Control(\"Status\", 0, 1, [\"Standard\", \"Gold\"], $status)\n\nBaseAllowance = $class == 0 ? 23 : 32\nExtraAllowance = $status == 1 ? 5 : 0\nTotalAllowance = BaseAllowance + ExtraAllowance\n\nAllowanceText = Text(\"Allowance: \" + TotalAllowance + \" kg\")\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\nFee = ExcessWeight * 15\nFeeText = Text(\"Fee: $\" + Fee)"
+  },
+  {
+    "case": "c4bfa0827e7d",
+    "request": "Build a locker credit calculator. Small lockers cost 2 credits per block, Large cost 5. A visit lasts 1 to 8 whole blocks. Start on Small for 1 block. Show total credits; there are no other charges or locker sizes.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This calculator shows the total credits needed to rent a locker for a given number of time blocks. Small lockers cost 2 credits per block, and Large lockers cost 5 credits per block. Choose the locker size and the number of blocks to see the total credits required."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "This calculator shows the total credits needed to rent a locker for a given number of time blocks. Small lockers cost 2 credits per block, and Large lockers cost 5 credits per block. Choose the locker size and the number of blocks to see the total credits required.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "size",
+          "props": {
+            "label": "Locker Size",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Small",
+              "Large"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "blocks",
+          "props": {
+            "label": "Blocks",
+            "min": 1,
+            "max": 8,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total Credits",
+            "value": 2
+          }
+        }
+      ],
+      "state": {
+        "size": 0,
+        "blocks": 1
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This calculator shows the total credits needed to rent a locker for a given number of time blocks. Small lockers cost 2 credits per block, and Large lockers cost 5 credits per block. Choose the locker size and the number of blocks to see the total credits required.\"},{\"type\":\"ui\",\"source\":\"root = Stack([lockerSize,blocks,total])\\n$size = 0\\n$blocks = 1\\nlockerSize = Control(\\\"Locker Size\\\", 0, 1, [\\\"Small\\\",\\\"Large\\\"], $size)\\nblocks = Control(\\\"Blocks\\\", 1, 8, [], $blocks)\\nrate = $size == 0 ? 2 : 5\\ntotal = Metric(\\\"Total Credits\\\", rate * $blocks)\",\"state\":[{\"name\":\"size\",\"value\":0},{\"name\":\"blocks\",\"value\":1}]}]}"
+  },
+  {
+    "case": "cd5f64d2e1e9",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the two facing pages where the book is bound, ensuring text and images are not obscured."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the two facing pages where the book is bound, ensuring text and images are not obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the two facing pages where the book is bound, ensuring text and images are not obscured.\"}]}"
+  },
+  {
+    "case": "cfb7a8129033",
+    "request": "Build a locker credit calculator. Small lockers cost 2 credits per block, Large cost 5. A visit lasts 1 to 8 whole blocks. Start on Small for 1 block. Show total credits; there are no other charges or locker sizes.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Calculate total credits for a locker visit. Small lockers cost 2 credits per block, Large lockers cost 5. Visits last 1 to 8 blocks. Select locker size and duration to see total credits."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "Calculate total credits for a locker visit. Small lockers cost 2 credits per block, Large lockers cost 5. Visits last 1 to 8 blocks. Select locker size and duration to see total credits.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "size",
+          "props": {
+            "label": "Locker Size",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Small",
+              "Large"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "blocks",
+          "props": {
+            "label": "Blocks",
+            "min": 1,
+            "max": 8,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total Credits",
+            "value": 2
+          }
+        }
+      ],
+      "state": {
+        "size": 0,
+        "blocks": 1
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Calculate total credits for a locker visit. Small lockers cost 2 credits per block, Large lockers cost 5. Visits last 1 to 8 blocks. Select locker size and duration to see total credits.\"},{\"type\":\"ui\",\"source\":\"$size = 0\\n$blocks = 1\\nlocker_size = Control(\\\"Locker Size\\\", 0, 1, [\\\"Small\\\",\\\"Large\\\"], $size)\\nblock_count = Control(\\\"Blocks\\\", 1, 8, [], $blocks)\\ncredit_total = Metric(\\\"Total Credits\\\", ($size == 0 ? 2 : 5) * $blocks)\\nroot = Stack([locker_size, block_count, credit_total])\",\"state\":[{\"name\":\"size\",\"value\":0},{\"name\":\"blocks\",\"value\":1}]}]}"
+  },
+  {
+    "case": "d1da007c5403",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities and interfaces to enable independent development and scalability."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the dialogue flow, stores message history, and tracks the sequence and dependencies of messages."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It determines which external or internal references to include in the conversation context and manages resource limits or quotas for these references."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the interaction between them, ensuring that context selections align with the conversation flow and that messages are processed correctly."
+      },
+      {
+        "type": "text",
+        "text": "To decouple these components:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear APIs for each component. The Conversation Engine exposes interfaces for message retrieval and lineage queries. The Context Engine provides methods for reference selection and budget management. The Orchestrator uses these APIs to coordinate actions."
+      },
+      {
+        "type": "text",
+        "text": "- Use asynchronous communication or message passing to avoid tight coupling. For example, the Orchestrator sends requests to the Context Engine for references and receives responses without blocking the Conversation Engine."
+      },
+      {
+        "type": "text",
+        "text": "- Maintain independent data stores. Each engine manages its own data to prevent cross-dependencies and enable independent scaling."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities and interfaces to enable independent development and scalability.\n1. Conversation Engine: Owns messages and lineage. It manages the dialogue flow, stores message history, and tracks the sequence and dependencies of messages.\n2. Context Engine: Selects and budgets references. It determines which external or internal references to include in the conversation context and manages resource limits or quotas for these references.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the interaction between them, ensuring that context selections align with the conversation flow and that messages are processed correctly.\nTo decouple these components:\n- Define clear APIs for each component. The Conversation Engine exposes interfaces for message retrieval and lineage queries. The Context Engine provides methods for reference selection and budget management. The Orchestrator uses these APIs to coordinate actions.\n- Use asynchronous communication or message passing to avoid tight coupling. For example, the Orchestrator sends requests to the Context Engine for references and receives responses without blocking the Conversation Engine.\n- Maintain independent data stores. Each engine manages its own data to prevent cross-dependencies and enable independent scaling.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves defining clear responsibilities and interfaces to enable independent development and scalability.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the dialogue flow, stores message history, and tracks the sequence and dependencies of messages.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It determines which external or internal references to include in the conversation context and manages resource limits or quotas for these references.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the interaction between them, ensuring that context selections align with the conversation flow and that messages are processed correctly.\"},{\"type\":\"text\",\"text\":\"To decouple these components:\"},{\"type\":\"text\",\"text\":\"- Define clear APIs for each component. The Conversation Engine exposes interfaces for message retrieval and lineage queries. The Context Engine provides methods for reference selection and budget management. The Orchestrator uses these APIs to coordinate actions.\"},{\"type\":\"text\",\"text\":\"- Use asynchronous communication or message passing to avoid tight coupling. For example, the Orchestrator sends requests to the Context Engine for references and receives responses without blocking the Conversation Engine.\"},{\"type\":\"text\",\"text\":\"- Maintain independent data stores. Each engine manages its own data to prevent cross-dependencies and enable independent scaling.\"}]}"
+  },
+  {
+    "case": "dbdc2797e395",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption keys to secure data or control access to the model or its outputs. This approach enhances security and compliance by allowing users to manage their own cryptographic keys rather than relying solely on the service provider's keys."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, BYOK means that the user or organization provides their own encryption keys to secure data or control access to the model or its outputs. This approach enhances security and compliance by allowing users to manage their own cryptographic keys rather than relying solely on the service provider's keys.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, BYOK means that the user or organization provides their own encryption keys to secure data or control access to the model or its outputs. This approach enhances security and compliance by allowing users to manage their own cryptographic keys rather than relying solely on the service provider's keys.\"}]}"
+  },
+  {
+    "case": "e4028bf413f9",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key\". In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data or models, rather than relying solely on the service provider's keys. This approach enhances security and control over sensitive information by allowing users to manage key lifecycle, access, and permissions directly."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key\". In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data or models, rather than relying solely on the service provider's keys. This approach enhances security and control over sensitive information by allowing users to manage key lifecycle, access, and permissions directly.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key\\\". In a model-powered application, BYOK means that the user or organization provides their own encryption key to secure data or models, rather than relying solely on the service provider's keys. This approach enhances security and control over sensitive information by allowing users to manage key lifecycle, access, and permissions directly.\"}]}"
+  },
+  {
+    "case": "e9f0ee670644",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability."
+      },
+      {
+        "type": "text",
+        "text": "1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage). It should expose interfaces for adding, retrieving, and updating messages without depending on how context is selected or how the application coordinates."
+      },
+      {
+        "type": "text",
+        "text": "2. Context Engine: Selects and budgets references. It decides which references or context pieces are relevant and manages their usage budget (e.g., token limits). It should operate independently by receiving requests for context and returning selected references without managing messages or conversation flow."
+      },
+      {
+        "type": "text",
+        "text": "3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the overall workflow, invoking the Conversation Engine to handle messages and the Context Engine to select context. It ensures that these components communicate via well-defined interfaces and remain loosely coupled."
+      },
+      {
+        "type": "text",
+        "text": "To achieve decoupling:"
+      },
+      {
+        "type": "text",
+        "text": "- Define clear APIs for each engine, focusing on their core responsibilities."
+      },
+      {
+        "type": "text",
+        "text": "- Use message passing or event-driven communication rather than direct calls to reduce dependencies."
+      },
+      {
+        "type": "text",
+        "text": "- Keep shared state minimal and managed by the orchestrator or through controlled interfaces."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability.\n1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage). It should expose interfaces for adding, retrieving, and updating messages without depending on how context is selected or how the application coordinates.\n2. Context Engine: Selects and budgets references. It decides which references or context pieces are relevant and manages their usage budget (e.g., token limits). It should operate independently by receiving requests for context and returning selected references without managing messages or conversation flow.\n3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the overall workflow, invoking the Conversation Engine to handle messages and the Context Engine to select context. It ensures that these components communicate via well-defined interfaces and remain loosely coupled.\nTo achieve decoupling:\n- Define clear APIs for each engine, focusing on their core responsibilities.\n- Use message passing or event-driven communication rather than direct calls to reduce dependencies.\n- Keep shared state minimal and managed by the orchestrator or through controlled interfaces.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves separating their responsibilities and interactions clearly to improve modularity and maintainability.\"},{\"type\":\"text\",\"text\":\"1. Conversation Engine: Owns messages and lineage. It manages the flow of conversation, stores messages, and tracks their relationships (lineage). It should expose interfaces for adding, retrieving, and updating messages without depending on how context is selected or how the application coordinates.\"},{\"type\":\"text\",\"text\":\"2. Context Engine: Selects and budgets references. It decides which references or context pieces are relevant and manages their usage budget (e.g., token limits). It should operate independently by receiving requests for context and returning selected references without managing messages or conversation flow.\"},{\"type\":\"text\",\"text\":\"3. Application Orchestrator: Coordinates the Conversation and Context Engines. It manages the overall workflow, invoking the Conversation Engine to handle messages and the Context Engine to select context. It ensures that these components communicate via well-defined interfaces and remain loosely coupled.\"},{\"type\":\"text\",\"text\":\"To achieve decoupling:\"},{\"type\":\"text\",\"text\":\"- Define clear APIs for each engine, focusing on their core responsibilities.\"},{\"type\":\"text\",\"text\":\"- Use message passing or event-driven communication rather than direct calls to reduce dependencies.\"},{\"type\":\"text\",\"text\":\"- Keep shared state minimal and managed by the orchestrator or through controlled interfaces.\"}]}"
+  },
+  {
+    "case": "efd40ddd221f",
+    "request": "What does BYOK mean in a model-powered application?",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, this means that users or organizations can provide and manage their own encryption keys to protect sensitive data processed or stored by the application. This approach gives users greater control over data security and privacy, as only those with access to the key can decrypt the protected information."
+      }
+    ],
+    "text": "BYOK stands for \"Bring Your Own Key.\" In a model-powered application, this means that users or organizations can provide and manage their own encryption keys to protect sensitive data processed or stored by the application. This approach gives users greater control over data security and privacy, as only those with access to the key can decrypt the protected information.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"BYOK stands for \\\"Bring Your Own Key.\\\" In a model-powered application, this means that users or organizations can provide and manage their own encryption keys to protect sensitive data processed or stored by the application. This approach gives users greater control over data security and privacy, as only those with access to the key can decrypt the protected information.\"}]}"
+  },
+  {
+    "case": "f59157c2c14f",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine, where the pages are bound together."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine, where the pages are bound together.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine, where the pages are bound together.\"}]}"
+  },
+  {
+    "case": "f7b6cb715620",
+    "request": "Build a greenhouse tray planner. Rows range from 1 to 4, columns from 2 to 6, initially 2 rows and 3 columns. Each cell holds one seedling and needs 0.25 litres of water. Show the seedling count and water needed as both dimensions change.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Plan your greenhouse tray by selecting the number of rows and columns. Each cell holds one seedling and requires 0.25 litres of water. The total seedlings and water needed update automatically."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "Plan your greenhouse tray by selecting the number of rows and columns. Each cell holds one seedling and requires 0.25 litres of water. The total seedlings and water needed update automatically.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "rows",
+          "props": {
+            "label": "Rows",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 2
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "cols",
+          "props": {
+            "label": "Columns",
+            "min": 2,
+            "max": 6,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Seedlings",
+            "value": 6
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water (litres)",
+            "value": 1.5
+          }
+        }
+      ],
+      "state": {
+        "rows": 2,
+        "cols": 3
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Plan your greenhouse tray by selecting the number of rows and columns. Each cell holds one seedling and requires 0.25 litres of water. The total seedlings and water needed update automatically.\"},{\"type\":\"ui\",\"source\":\"root = Stack([rowsControl, colsControl, seedlingCount, waterNeeded])\\n$rows = 2\\n$cols = 3\\nrowsControl = Control(\\\"Rows\\\", 1, 4, [], $rows)\\ncolsControl = Control(\\\"Columns\\\", 2, 6, [], $cols)\\nseedlingCount = Metric(\\\"Seedlings\\\", $rows * $cols)\\nwaterNeeded = Metric(\\\"Water (litres)\\\", ($rows * $cols) * 0.25)\",\"state\":[{\"name\":\"rows\",\"value\":2},{\"name\":\"cols\",\"value\":3}]}]}"
+  },
+  {
+    "case": "f7f2f6d478f4",
+    "request": "Explain how to decouple a Conversation Engine that owns messages and lineage, a Context Engine that selects and budgets references, and an Application Orchestrator that coordinates them.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interaction boundaries to ensure modularity and maintainability."
+      },
+      {
+        "type": "text",
+        "text": "The Conversation Engine manages messages and their lineage, tracking the flow and history of the conversation. It should expose interfaces to send, receive, and query messages without embedding context selection logic."
+      },
+      {
+        "type": "text",
+        "text": "The Context Engine is responsible for selecting relevant references and managing budgets for resource usage. It operates independently by receiving requests for context and returning selected references, without managing message flow or orchestration."
+      },
+      {
+        "type": "text",
+        "text": "The Application Orchestrator coordinates the Conversation and Context Engines. It invokes the Conversation Engine to handle messages and queries the Context Engine to obtain context references as needed. It manages the workflow and timing, ensuring each engine performs its role without direct dependencies on internal implementations of the others."
+      },
+      {
+        "type": "text",
+        "text": "To achieve decoupling:"
+      },
+      {
+        "type": "text",
+        "text": "1. Define clear APIs for each engine: Conversation Engine API for message operations, Context Engine API for context selection and budgeting, and Orchestrator API for coordination."
+      },
+      {
+        "type": "text",
+        "text": "2. Use asynchronous or event-driven communication between components to avoid tight coupling and enable independent scaling and testing."
+      },
+      {
+        "type": "text",
+        "text": "3. Keep shared data minimal and pass only necessary information through well-defined interfaces."
+      }
+    ],
+    "text": "Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interaction boundaries to ensure modularity and maintainability.\nThe Conversation Engine manages messages and their lineage, tracking the flow and history of the conversation. It should expose interfaces to send, receive, and query messages without embedding context selection logic.\nThe Context Engine is responsible for selecting relevant references and managing budgets for resource usage. It operates independently by receiving requests for context and returning selected references, without managing message flow or orchestration.\nThe Application Orchestrator coordinates the Conversation and Context Engines. It invokes the Conversation Engine to handle messages and queries the Context Engine to obtain context references as needed. It manages the workflow and timing, ensuring each engine performs its role without direct dependencies on internal implementations of the others.\nTo achieve decoupling:\n1. Define clear APIs for each engine: Conversation Engine API for message operations, Context Engine API for context selection and budgeting, and Orchestrator API for coordination.\n2. Use asynchronous or event-driven communication between components to avoid tight coupling and enable independent scaling and testing.\n3. Keep shared data minimal and pass only necessary information through well-defined interfaces.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Decoupling a Conversation Engine, Context Engine, and Application Orchestrator involves clearly defining their responsibilities and interaction boundaries to ensure modularity and maintainability.\"},{\"type\":\"text\",\"text\":\"The Conversation Engine manages messages and their lineage, tracking the flow and history of the conversation. It should expose interfaces to send, receive, and query messages without embedding context selection logic.\"},{\"type\":\"text\",\"text\":\"The Context Engine is responsible for selecting relevant references and managing budgets for resource usage. It operates independently by receiving requests for context and returning selected references, without managing message flow or orchestration.\"},{\"type\":\"text\",\"text\":\"The Application Orchestrator coordinates the Conversation and Context Engines. It invokes the Conversation Engine to handle messages and queries the Context Engine to obtain context references as needed. It manages the workflow and timing, ensuring each engine performs its role without direct dependencies on internal implementations of the others.\"},{\"type\":\"text\",\"text\":\"To achieve decoupling:\"},{\"type\":\"text\",\"text\":\"1. Define clear APIs for each engine: Conversation Engine API for message operations, Context Engine API for context selection and budgeting, and Orchestrator API for coordination.\"},{\"type\":\"text\",\"text\":\"2. Use asynchronous or event-driven communication between components to avoid tight coupling and enable independent scaling and testing.\"},{\"type\":\"text\",\"text\":\"3. Keep shared data minimal and pass only necessary information through well-defined interfaces.\"}]}"
+  },
+  {
+    "case": "f8c2196b5f6c",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the two facing pages where the book is bound, ensuring text and images are not obscured."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the two facing pages where the book is bound, ensuring text and images are not obscured.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the two facing pages where the book is bound, ensuring text and images are not obscured.\"}]}"
+  },
+  {
+    "case": "f9a7a7737017",
+    "request": "What is a gutter in a two-page book layout? Answer in one sentence.",
+    "wire": "structured",
+    "protocol": "json",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine."
+      }
+    ],
+    "text": "In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine.",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"In a two-page book layout, the gutter is the inner margin space between the facing pages, near the book's spine.\"}]}"
+  },
+  {
+    "case": "fe88cd4cf370",
+    "request": "Build a greenhouse tray planner. Rows range from 1 to 4, columns from 2 to 6, initially 2 rows and 3 columns. Each cell holds one seedling and needs 0.25 litres of water. Show the seedling count and water needed as both dimensions change.",
+    "wire": "structured",
+    "protocol": "oui",
+    "orderedBlocks": [
+      {
+        "type": "text",
+        "text": "This greenhouse tray planner helps you determine the number of seedlings and total water needed based on the number of rows and columns in your tray. Each cell holds one seedling and requires 0.25 litres of water."
+      },
+      {
+        "type": "ui"
+      }
+    ],
+    "text": "This greenhouse tray planner helps you determine the number of seedlings and total water needed based on the number of rows and columns in your tray. Each cell holds one seedling and requires 0.25 litres of water.",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "rows",
+          "props": {
+            "label": "Rows",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 2
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "cols",
+          "props": {
+            "label": "Columns",
+            "min": 2,
+            "max": 6,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Seedling Count",
+            "value": 6
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water Needed (litres)",
+            "value": 1.5
+          }
+        }
+      ],
+      "state": {
+        "rows": 2,
+        "cols": 3
+      }
+    },
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This greenhouse tray planner helps you determine the number of seedlings and total water needed based on the number of rows and columns in your tray. Each cell holds one seedling and requires 0.25 litres of water.\"},{\"type\":\"ui\",\"source\":\"rows = Control(\\\"Rows\\\", 1, 4, [], $rows)\\ncols = Control(\\\"Columns\\\", 2, 6, [], $cols)\\nseedlings = Metric(\\\"Seedling Count\\\", $rows * $cols)\\nwater = Metric(\\\"Water Needed (litres)\\\", ($rows * $cols) * 0.25)\\nroot = Stack([rows, cols, seedlings, water])\\n$rows = 2\\n$cols = 3\",\"state\":[{\"name\":\"rows\",\"value\":2},{\"name\":\"cols\",\"value\":3}]}]}"
+  }
+]

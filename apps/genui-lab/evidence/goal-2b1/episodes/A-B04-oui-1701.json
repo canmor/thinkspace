@@ -1,0 +1,82 @@
+{
+  "id": "A-B04-oui-1701",
+  "task": "B04",
+  "protocol": "oui",
+  "seed": 1701,
+  "arm": "A",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo8U69YetkrgQptOj9ZZDq97CdgB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777830,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"root = Stack([WeightControl, ClassControl, StatusControl, AllowanceDisplay, FeeDisplay])\\n\\nWeightControl = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nClassControl = Control(\\\"Class\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $class)\\nStatusControl = Control(\\\"Status\\\", 0, 1, [\\\"Standard\\\", \\\"Gold\\\"], $status)\\n\\nBaseAllowance = $class == 0 ? 23 : 32\\nExtraAllowance = $status == 1 ? 5 : 0\\nTotalAllowance = BaseAllowance + ExtraAllowance\\n\\nAllowanceDisplay = Text(\\\"Allowance: \\\" + TotalAllowance + \\\" kg\\\")\\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\\nFee = ExcessWeight * 15\\nFeeDisplay = Text(\\\"Fee: $\\\" + Fee)\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 504,\n    \"completion_tokens\": 177,\n    \"total_tokens\": 681,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 2756,
+      "usage": {
+        "prompt_tokens": 504,
+        "completion_tokens": 177,
+        "total_tokens": 681,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "root = Stack([WeightControl, ClassControl, StatusControl, AllowanceDisplay, FeeDisplay])\n\nWeightControl = Control(\"Bag weight (kg)\", 10, 40, [], $weight)\nClassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $class)\nStatusControl = Control(\"Status\", 0, 1, [\"Standard\", \"Gold\"], $status)\n\nBaseAllowance = $class == 0 ? 23 : 32\nExtraAllowance = $status == 1 ? 5 : 0\nTotalAllowance = BaseAllowance + ExtraAllowance\n\nAllowanceDisplay = Text(\"Allowance: \" + TotalAllowance + \" kg\")\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\nFee = ExcessWeight * 15\nFeeDisplay = Text(\"Fee: $\" + Fee)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: Expected UI or TEXT header"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo8X437RQDVm0pOXm4opCIBmqkWz\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777833,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"TEXT\\nBag weight (kg): 10 to 40  \\nClass: Economy or Business  \\nStatus: Standard or Gold  \\nAllowance and fee update as inputs change.\\n\\nroot = Stack([WeightControl, ClassControl, StatusControl, AllowanceText, FeeText])\\n\\nWeightControl = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nClassControl = Control(\\\"Class\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $class)\\nStatusControl = Control(\\\"Status\\\", 0, 1, [\\\"Standard\\\", \\\"Gold\\\"], $status)\\n\\nBaseAllowance = $class == 0 ? 23 : 32\\nExtraAllowance = $status == 1 ? 5 : 0\\nTotalAllowance = BaseAllowance + ExtraAllowance\\n\\nAllowanceText = Text(\\\"Allowance: \\\" + TotalAllowance + \\\" kg\\\")\\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\\nFee = ExcessWeight * 15\\nFeeText = Text(\\\"Fee: $\\\" + Fee)\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 709,\n    \"completion_tokens\": 210,\n    \"total_tokens\": 919,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1ae3bbdbb5\"\n}\n",
+      "latencyMs": 3184,
+      "usage": {
+        "prompt_tokens": 709,
+        "completion_tokens": 210,
+        "total_tokens": 919,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "TEXT\nBag weight (kg): 10 to 40  \nClass: Economy or Business  \nStatus: Standard or Gold  \nAllowance and fee update as inputs change.\n\nroot = Stack([WeightControl, ClassControl, StatusControl, AllowanceText, FeeText])\n\nWeightControl = Control(\"Bag weight (kg)\", 10, 40, [], $weight)\nClassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $class)\nStatusControl = Control(\"Status\", 0, 1, [\"Standard\", \"Gold\"], $status)\n\nBaseAllowance = $class == 0 ? 23 : 32\nExtraAllowance = $status == 1 ? 5 : 0\nTotalAllowance = BaseAllowance + ExtraAllowance\n\nAllowanceText = Text(\"Allowance: \" + TotalAllowance + \" kg\")\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\nFee = ExcessWeight * 15\nFeeText = Text(\"Fee: $\" + Fee)",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only a complete response. First line TEXT then a concise plain-text answer, or first line UI then the requested specification. For UI an optional second line STATE followed by one space and a JSON object of initial integer inputs is allowed. No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose TEXT for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "root = Stack([WeightControl, ClassControl, StatusControl, AllowanceDisplay, FeeDisplay])\n\nWeightControl = Control(\"Bag weight (kg)\", 10, 40, [], $weight)\nClassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $class)\nStatusControl = Control(\"Status\", 0, 1, [\"Standard\", \"Gold\"], $status)\n\nBaseAllowance = $class == 0 ? 23 : 32\nExtraAllowance = $status == 1 ? 5 : 0\nTotalAllowance = BaseAllowance + ExtraAllowance\n\nAllowanceDisplay = Text(\"Allowance: \" + TotalAllowance + \" kg\")\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\nFee = ExcessWeight * 15\nFeeDisplay = Text(\"Fee: $\" + Fee)"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Expected UI or TEXT header. Return one complete corrected response."
+        }
+      ],
+      "status": "text",
+      "text": "Bag weight (kg): 10 to 40  \nClass: Economy or Business  \nStatus: Standard or Gold  \nAllowance and fee update as inputs change.\n\nroot = Stack([WeightControl, ClassControl, StatusControl, AllowanceText, FeeText])\n\nWeightControl = Control(\"Bag weight (kg)\", 10, 40, [], $weight)\nClassControl = Control(\"Class\", 0, 1, [\"Economy\", \"Business\"], $class)\nStatusControl = Control(\"Status\", 0, 1, [\"Standard\", \"Gold\"], $status)\n\nBaseAllowance = $class == 0 ? 23 : 32\nExtraAllowance = $status == 1 ? 5 : 0\nTotalAllowance = BaseAllowance + ExtraAllowance\n\nAllowanceText = Text(\"Allowance: \" + TotalAllowance + \" kg\")\nExcessWeight = $weight > TotalAllowance ? $weight - TotalAllowance : 0\nFee = ExcessWeight * 15\nFeeText = Text(\"Fee: $\" + Fee)"
+    }
+  ]
+}

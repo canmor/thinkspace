@@ -21,6 +21,7 @@ test("host blocks UTF-8 source and envelope before a Worker receives a message",
     };
   });
   await page.goto("/replay.html");
+  await page.getByLabel("Envelope").selectOption("legacy");
   await page
     .getByLabel("Complete model output")
     .fill("UI\n" + "字".repeat(5500));
@@ -34,6 +35,7 @@ test("replay retains repeated labels, multiple text values and exact plain text"
   page,
 }) => {
   await page.goto("/replay.html");
+  await page.getByLabel("Envelope").selectOption("legacy");
   const raw = page.getByLabel("Complete model output");
   const spec = 'root = Stack([a,b,c,d])\na = Text("one")\nb = Text("two")\nc = Metric("Value",1)\nd = Metric("Value",2)';
   await raw.fill("UI\n"+spec);

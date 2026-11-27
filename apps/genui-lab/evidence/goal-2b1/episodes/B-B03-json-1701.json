@@ -1,0 +1,81 @@
+{
+  "id": "B-B03-json-1701",
+  "task": "B03",
+  "protocol": "json",
+  "seed": 1701,
+  "arm": "B",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo8Ay8wOxnDjVksGOaMJzRyJuBji\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777810,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"This interactive comparison ranks three frameworks—Native Hybrid, Tauri, and Electron—based on three criteria: native experience, lightweight runtime, and delivery efficiency. Adjust the weights to reflect your priorities; the scores represent synthetic evaluations on each criterion. The ranking updates dynamically, normalizing weights so they sum to 1. If all weights are zero, no ranking is shown.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"weights=[40,25,35]\\\\ncriteria=[\\\\\\\"Native Experience\\\\\\\",\\\\\\\"Lightweight Runtime\\\\\\\",\\\\\\\"Delivery Efficiency\\\\\\\"]\\\\nframeworks=[\\\\n  {name:\\\\\\\"Native Hybrid\\\\\\\",scores:[9,8,7]},\\\\n  {name:\\\\\\\"Tauri\\\\\\\",scores:[7,8,8]},\\\\n  {name:\\\\\\\"Electron\\\\\\\",scores:[6,4,10]}\\\\n]\\\\n\\\\nweightsSum=weights[0]+weights[1]+weights[2]\\\\n\\\\nnormalizedWeights=weightsSum>0 ? [weights[0]/weightsSum,weights[1]/weightsSum,weights[2]/weightsSum] : [0,0,0]\\\\n\\\\nweightedScores=frameworks.map(f=>{\\\\n  let score=0\\\\n  for(let i=0;i<3;i++) score+=f.scores[i]*normalizedWeights[i]\\\\n  return {name:f.name,score:score}\\\\n})\\\\n\\\\nranked=weightsSum>0 ? weightedScores.sort((a,b)=>b.score-a.score) : []\\\\n\\\\nranked\\\",\\\"state\\\":[{\\\"name\\\":\\\"weight_native_experience\\\",\\\"value\\\":40},{\\\"name\\\":\\\"weight_lightweight_runtime\\\",\\\"value\\\":25},{\\\"name\\\":\\\"weight_delivery_efficiency\\\",\\\"value\\\":35}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 664,\n    \"completion_tokens\": 357,\n    \"total_tokens\": 1021,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 6694,
+      "usage": {
+        "prompt_tokens": 664,
+        "completion_tokens": 357,
+        "total_tokens": 1021,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This interactive comparison ranks three frameworks—Native Hybrid, Tauri, and Electron—based on three criteria: native experience, lightweight runtime, and delivery efficiency. Adjust the weights to reflect your priorities; the scores represent synthetic evaluations on each criterion. The ranking updates dynamically, normalizing weights so they sum to 1. If all weights are zero, no ranking is shown.\"},{\"type\":\"ui\",\"source\":\"weights=[40,25,35]\\ncriteria=[\\\"Native Experience\\\",\\\"Lightweight Runtime\\\",\\\"Delivery Efficiency\\\"]\\nframeworks=[\\n  {name:\\\"Native Hybrid\\\",scores:[9,8,7]},\\n  {name:\\\"Tauri\\\",scores:[7,8,8]},\\n  {name:\\\"Electron\\\",scores:[6,4,10]}\\n]\\n\\nweightsSum=weights[0]+weights[1]+weights[2]\\n\\nnormalizedWeights=weightsSum>0 ? [weights[0]/weightsSum,weights[1]/weightsSum,weights[2]/weightsSum] : [0,0,0]\\n\\nweightedScores=frameworks.map(f=>{\\n  let score=0\\n  for(let i=0;i<3;i++) score+=f.scores[i]*normalizedWeights[i]\\n  return {name:f.name,score:score}\\n})\\n\\nranked=weightsSum>0 ? weightedScores.sort((a,b)=>b.score-a.score) : []\\n\\nranked\",\"state\":[{\"name\":\"weight_native_experience\",\"value\":40},{\"name\":\"weight_lightweight_runtime\",\"value\":25},{\"name\":\"weight_delivery_efficiency\",\"value\":35}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Unexpected token 'w', \"weights=[4\"... is not valid JSON"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-Eoo8HWORhaydOPwpAfYojLh6W2nnB\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777817,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"This interactive comparison ranks three frameworks—Native Hybrid, Tauri, and Electron—based on three criteria: native experience, lightweight runtime, and delivery efficiency. Adjust the weights to reflect your priorities; the scores represent synthetic evaluations on each criterion. The ranking updates dynamically, normalizing weights so they sum to 1. If all weights are zero, no ranking is shown.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Inputs: weights for each criterion\\\\n// Scores: predefined for each framework\\\\n\\\\n// Framework scores for criteria: Native Experience, Lightweight Runtime, Delivery Efficiency\\\\nconst frameworks = [\\\\n  {name: \\\\\\\"Native Hybrid\\\\\\\", scores: [9, 8, 7]},\\\\n  {name: \\\\\\\"Tauri\\\\\\\", scores: [7, 8, 8]},\\\\n  {name: \\\\\\\"Electron\\\\\\\", scores: [6, 4, 10]}\\\\n];\\\\n\\\\n// Weights bound to state\\\\nconst weights = [\\\\n  {label: \\\\\\\"Native Experience\\\\\\\", name: \\\\\\\"weight_native_experience\\\\\\\", min: 0, max: 100, value: 40},\\\\n  {label: \\\\\\\"Lightweight Runtime\\\\\\\", name: \\\\\\\"weight_lightweight_runtime\\\\\\\", min: 0, max: 100, value: 25},\\\\n  {label: \\\\\\\"Delivery Efficiency\\\\\\\", name: \\\\\\\"weight_delivery_efficiency\\\\\\\", min: 0, max: 100, value: 35}\\\\n];\\\\n\\\\n// Compute sum of weights\\\\nconst weightsSum = {\\\\\\\"$computed\\\\\\\": \\\\\\\"Add\\\\\\\", \\\\\\\"args\\\\\\\": {\\\\\\\"a\\\\\\\": {\\\\\\\"$state\\\\\\\": \\\\\\\"/weight_native_experience\\\\\\\"}, \\\\\\\"b\\\\\\\": {\\\\\\\"$computed\\\\\\\": \\\\\\\"Add\\\\\\\", \\\\\\\"args\\\\\\\": {\\\\\\\"a\\\\\\\": {\\\\\\\"$state\\\\\\\": \\\\\\\"/weight_lightweight_runtime\\\\\\\"}, \\\\\\\"b\\\\\\\": {\\\\\\\"$state\\\\\\\": \\\\\\\"/weight_delivery_efficiency\\\\\\\"}}}}};\\\\n\\\\n// Normalize weights\\\\nconst normalizedWeights = [\\\\n  {\\\\\\\"$computed\\\\\\\": \\\\\\\"Excess\\\\\\\", \\\\\\\"args\\\\\\\": {\\\\\\\"a\\\\\\\": {\\\\\\\"$state\\\\\\\": \\\\\\\"/weight_native_experience\\\\\\\"}, \\\\\\\"b\\\\\\\": 0}},\\\\n  {\\\\\\\"$computed\\\\\\\": \\\\\\\"Excess\\\\\\\", \\\\\\\"args\\\\\\\": {\\\\\\\"a\\\\\\\": {\\\\\\\"$state\\\\\\\": \\\\\\\"/weight_lightweight_runtime\\\\\\\"}, \\\\\\\"b\\\\\\\": 0}},\\\\n  {\\\\\\\"$computed\\\\\\\": \\\\\\\"Excess\\\\\\\", \\\\\\\"args\\\\\\\": {\\\\\\\"a\\\\\\\": {\\\\\\\"$state\\\\\\\": \\\\\\\"/weight_delivery_efficiency\\\\\\\"}, \\\\\\\"b\\\\\\\": 0}}\\\\n];\\\\n\\\\n// We will normalize by dividing each weight by weightsSum if weightsSum > 0, else zero\\\\n// Since no direct division, we will multiply scores by weights and then by 1/weightsSum\\\\n// 1/weightsSum is computed as a float, but we only have integer arithmetic, so we approximate by multiplying scores by weights and then use Rank with weights as is\\\\n\\\\n// Compute weighted scores for each framework\\\\n// Each score is sum over criteria of (score * weight)\\\\n\\\\n// We'll use Rank with rows: [frameworkName, [score1*weight1, score2*weight2, score3*weight3]] and weights: [1,1,1] to sum weighted scores\\\\n\\\\n// Prepare rows for Rank\\\\n\\\\n// Since Rank expects numeric scores, we compute weighted scores by multiplying each score by weight\\\\n\\\\n// Because weights are integers, and scores are integers, multiplication is integer\\\\n\\\\n// Rank weights are 1,1,1 to sum weighted scores\\\\n\\\\n// If weightsSum == 0, no ranking shown\\\\n\\\\n// So we will use Rank with rows:\\\\n// [\\\\\\\"Native\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"length\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1064,\n    \"completion_tokens\": 768,\n    \"total_tokens\": 1832,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 14835,
+      "usage": {
+        "prompt_tokens": 1064,
+        "completion_tokens": 768,
+        "total_tokens": 1832,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "status": "truncated",
+      "diagnostic": "Incomplete output: length",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive weighted comparison of Native Hybrid [9,8,7], Tauri [7,8,8], and Electron [6,4,10]. The three criteria are native experience, lightweight runtime, delivery efficiency. Start with integer weights 40,25,35. Normalize by their sum, rank descending, and show no ranking if all weights are zero. Scores are synthetic."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"This interactive comparison ranks three frameworks—Native Hybrid, Tauri, and Electron—based on three criteria: native experience, lightweight runtime, and delivery efficiency. Adjust the weights to reflect your priorities; the scores represent synthetic evaluations on each criterion. The ranking updates dynamically, normalizing weights so they sum to 1. If all weights are zero, no ranking is shown.\"},{\"type\":\"ui\",\"source\":\"weights=[40,25,35]\\ncriteria=[\\\"Native Experience\\\",\\\"Lightweight Runtime\\\",\\\"Delivery Efficiency\\\"]\\nframeworks=[\\n  {name:\\\"Native Hybrid\\\",scores:[9,8,7]},\\n  {name:\\\"Tauri\\\",scores:[7,8,8]},\\n  {name:\\\"Electron\\\",scores:[6,4,10]}\\n]\\n\\nweightsSum=weights[0]+weights[1]+weights[2]\\n\\nnormalizedWeights=weightsSum>0 ? [weights[0]/weightsSum,weights[1]/weightsSum,weights[2]/weightsSum] : [0,0,0]\\n\\nweightedScores=frameworks.map(f=>{\\n  let score=0\\n  for(let i=0;i<3;i++) score+=f.scores[i]*normalizedWeights[i]\\n  return {name:f.name,score:score}\\n})\\n\\nranked=weightsSum>0 ? weightedScores.sort((a,b)=>b.score-a.score) : []\\n\\nranked\",\"state\":[{\"name\":\"weight_native_experience\",\"value\":40},{\"name\":\"weight_lightweight_runtime\",\"value\":25},{\"name\":\"weight_delivery_efficiency\",\"value\":35}]}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: Unexpected token 'w', \"weights=[4\"... is not valid JSON. Return one complete corrected response."
+        }
+      ]
+    }
+  ]
+}

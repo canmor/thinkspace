@@ -1,0 +1,83 @@
+{
+  "id": "B-B04-json-1702",
+  "task": "B04",
+  "protocol": "json",
+  "seed": 1702,
+  "arm": "B",
+  "attempts": [
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooAkn76blJFl0OmY38WXxgQtfnWP\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777970,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Protocol source for single-bag fee explorer\\\\n// State bindings for bagWeight, class, and gold status\\\\n// bagWeight: integer from 10 to 40\\\\n// class: 0 for Economy, 1 for Business\\\\n// gold: 0 for no, 1 for yes\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":10},{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":0}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Single-Bag Fee Explorer\\\\n\\\\nThis tool calculates the baggage fee for a single bag based on your travel class, Gold membership status, and bag weight.\\\\n\\\\n- Economy class allowance: 23 kg\\\\n- Business class allowance: 32 kg\\\\n- Gold members get an extra 5 kg allowance\\\\n- Fee: $15 per kilogram over the allowance (never negative)\\\\n\\\\nAdjust the controls below to see your allowance and fee.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Controls for bag weight, class, and gold status\\\\n// Outputs for allowance and fee\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":10},{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":0}]},{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Select your travel class, Gold status, and bag weight.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Controls and outputs\\\\n// bagWeight control: 10 to 40 kg\\\\n// class control: Economy or Business\\\\n// gold control: No or Yes\\\\n// allowance computed\\\\n// excess = max(0, bagWeight - allowance)\\\\n// fee = excess * 15\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":10},{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":0}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 646,\n    \"completion_tokens\": 372,\n    \"total_tokens\": 1018,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 7237,
+      "usage": {
+        "prompt_tokens": 646,
+        "completion_tokens": 372,
+        "total_tokens": 1018,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"// Protocol source for single-bag fee explorer\\n// State bindings for bagWeight, class, and gold status\\n// bagWeight: integer from 10 to 40\\n// class: 0 for Economy, 1 for Business\\n// gold: 0 for no, 1 for yes\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Single-Bag Fee Explorer\\n\\nThis tool calculates the baggage fee for a single bag based on your travel class, Gold membership status, and bag weight.\\n\\n- Economy class allowance: 23 kg\\n- Business class allowance: 32 kg\\n- Gold members get an extra 5 kg allowance\\n- Fee: $15 per kilogram over the allowance (never negative)\\n\\nAdjust the controls below to see your allowance and fee.\"},{\"type\":\"ui\",\"source\":\"// Controls for bag weight, class, and gold status\\n// Outputs for allowance and fee\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Select your travel class, Gold status, and bag weight.\"},{\"type\":\"ui\",\"source\":\"// Controls and outputs\\n// bagWeight control: 10 to 40 kg\\n// class control: Economy or Business\\n// gold control: No or Yes\\n// allowance computed\\n// excess = max(0, bagWeight - allowance)\\n// fee = excess * 15\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        }
+      ],
+      "status": "rejected",
+      "transport": false,
+      "diagnostic": "Error: One live UI per artifact"
+    },
+    {
+      "rawResponse": "{\n  \"id\": \"chatcmpl-EooAr8HdXixBYnYAWboymamHT13rE\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795777977,\n  \"model\": \"gpt-4.1-mini-2025-04-14\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"// Single-bag fee explorer protocol\\\\n// State bindings:\\\\n// bagWeight: integer 10 to 40 (kg)\\\\n// class: 0 Economy, 1 Business\\\\n// gold: 0 No, 1 Yes\\\\n// Computed allowance = base + goldBonus\\\\n// base: 23 if Economy, 32 if Business\\\\n// goldBonus: 5 if gold, else 0\\\\n// excess = max(0, bagWeight - allowance)\\\\n// fee = excess * 15\\\\n\\\\n// Bindings:\\\\n// bagWeight: integer input 10..40\\\\n// class: choice Economy(0), Business(1)\\\\n// gold: choice No(0), Yes(1)\\\\n\\\\n// Computed values:\\\\n// allowance\\\\n// excess\\\\n// fee\\\\n\\\\n// All geometry and text inside viewBox 0 0 450 135\\\\n\\\",\\\"state\\\":[{\\\"name\\\":\\\"bagWeight\\\",\\\"value\\\":10},{\\\"name\\\":\\\"class\\\",\\\"value\\\":0},{\\\"name\\\":\\\"gold\\\",\\\"value\\\":0}]}]}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1052,\n    \"completion_tokens\": 230,\n    \"total_tokens\": 1282,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_1fffd65103\"\n}\n",
+      "latencyMs": 4679,
+      "usage": {
+        "prompt_tokens": 1052,
+        "completion_tokens": 230,
+        "total_tokens": 1282,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"// Single-bag fee explorer protocol\\n// State bindings:\\n// bagWeight: integer 10 to 40 (kg)\\n// class: 0 Economy, 1 Business\\n// gold: 0 No, 1 Yes\\n// Computed allowance = base + goldBonus\\n// base: 23 if Economy, 32 if Business\\n// goldBonus: 5 if gold, else 0\\n// excess = max(0, bagWeight - allowance)\\n// fee = excess * 15\\n\\n// Bindings:\\n// bagWeight: integer input 10..40\\n// class: choice Economy(0), Business(1)\\n// gold: choice No(0), Yes(1)\\n\\n// Computed values:\\n// allowance\\n// excess\\n// fee\\n\\n// All geometry and text inside viewBox 0 0 450 135\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]}]}",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox."
+        },
+        {
+          "role": "user",
+          "content": "Build an interactive single-bag fee explorer for a fictional policy. Economy allows 23 kg, Business 32 kg; Gold adds 5 kg. Charge $15 per excess kg, never negative. Support all integer bag weights from 10 to 40 kg. Show allowance and fee as inputs change."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"// Protocol source for single-bag fee explorer\\n// State bindings for bagWeight, class, and gold status\\n// bagWeight: integer from 10 to 40\\n// class: 0 for Economy, 1 for Business\\n// gold: 0 for no, 1 for yes\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Single-Bag Fee Explorer\\n\\nThis tool calculates the baggage fee for a single bag based on your travel class, Gold membership status, and bag weight.\\n\\n- Economy class allowance: 23 kg\\n- Business class allowance: 32 kg\\n- Gold members get an extra 5 kg allowance\\n- Fee: $15 per kilogram over the allowance (never negative)\\n\\nAdjust the controls below to see your allowance and fee.\"},{\"type\":\"ui\",\"source\":\"// Controls for bag weight, class, and gold status\\n// Outputs for allowance and fee\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]},{\"type\":\"text\",\"text\":\"Select your travel class, Gold status, and bag weight.\"},{\"type\":\"ui\",\"source\":\"// Controls and outputs\\n// bagWeight control: 10 to 40 kg\\n// class control: Economy or Business\\n// gold control: No or Yes\\n// allowance computed\\n// excess = max(0, bagWeight - allowance)\\n// fee = excess * 15\\n\",\"state\":[{\"name\":\"bagWeight\",\"value\":10},{\"name\":\"class\",\"value\":0},{\"name\":\"gold\",\"value\":0}]}]}"
+        },
+        {
+          "role": "user",
+          "content": "The complete response was rejected: Error: One live UI per artifact. Return one complete corrected response."
+        }
+      ],
+      "status": "rejected",
+      "transport": true,
+      "diagnostic": "Error: Unexpected token '/', \"// Single-\"... is not valid JSON"
+    }
+  ]
+}

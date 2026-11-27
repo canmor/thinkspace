@@ -1,0 +1,3772 @@
+{
+  "core": {
+    "A": {
+      "n": 20,
+      "firstTransport": 2,
+      "firstDelivered": 2,
+      "finalDelivered": 4,
+      "corePass": 3,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 11,
+          "pass": 9
+        },
+        "specification": {
+          "NE": 11,
+          "NA": 4,
+          "fail": 5
+        },
+        "intent": {
+          "NE": 16,
+          "pass": 3,
+          "fail": 1
+        },
+        "domain": {
+          "NE": 17,
+          "pass": 3
+        },
+        "behavior": {
+          "NA": 12,
+          "NE": 8
+        },
+        "presentation": {
+          "NE": 20
+        },
+        "modality": {
+          "NE": 16,
+          "pass": 3,
+          "fail": 1
+        }
+      },
+      "failures": {
+        "envelope": 26,
+        "truncated": 3,
+        "specification": 5
+      },
+      "usage": {
+        "calls": 38,
+        "input": 24020,
+        "output": 10394,
+        "costUSD": 0.0255856,
+        "medianMs": 2756
+      },
+      "repairs": {
+        "calls": 18,
+        "input": 14212,
+        "output": 4953,
+        "costUSD": 0.012956800000000001,
+        "medianMs": 3001
+      }
+    },
+    "B": {
+      "n": 20,
+      "firstTransport": 9,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 8,
+          "pass": 12
+        },
+        "specification": {
+          "NE": 8,
+          "fail": 8,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 16,
+          "pass": 4
+        },
+        "domain": {
+          "NE": 16,
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 12,
+          "NE": 8
+        },
+        "presentation": {
+          "NE": 20
+        },
+        "modality": {
+          "NE": 16,
+          "pass": 4
+        }
+      },
+      "failures": {
+        "envelope": 12,
+        "specification": 13,
+        "truncated": 7
+      },
+      "usage": {
+        "calls": 36,
+        "input": 30472,
+        "output": 16673,
+        "costUSD": 0.0377904,
+        "medianMs": 7237
+      },
+      "repairs": {
+        "calls": 16,
+        "input": 18134,
+        "output": 7766,
+        "costUSD": 0.018604000000000002,
+        "medianMs": 8915
+      }
+    },
+    "C": {
+      "n": 20,
+      "firstTransport": 8,
+      "firstDelivered": 7,
+      "finalDelivered": 7,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 16,
+          "fail": 4
+        },
+        "specification": {
+          "fail": 9,
+          "NE": 4,
+          "NA": 7
+        },
+        "intent": {
+          "NE": 13,
+          "pass": 7
+        },
+        "domain": {
+          "NE": 13,
+          "pass": 4,
+          "fail": 3
+        },
+        "behavior": {
+          "NA": 12,
+          "NE": 8
+        },
+        "presentation": {
+          "NE": 20
+        },
+        "modality": {
+          "NE": 13,
+          "pass": 7
+        }
+      },
+      "failures": {
+        "envelope": 15,
+        "specification": 10,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 33,
+        "input": 29314,
+        "output": 18776,
+        "costUSD": 0.0393096,
+        "medianMs": 7287
+      },
+      "repairs": {
+        "calls": 13,
+        "input": 16976,
+        "output": 8998,
+        "costUSD": 0.018729600000000002,
+        "medianMs": 7295
+      }
+    },
+    "D": {
+      "n": 20,
+      "firstTransport": 14,
+      "firstDelivered": 6,
+      "finalDelivered": 6,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 16,
+          "fail": 4
+        },
+        "specification": {
+          "fail": 10,
+          "NE": 4,
+          "NA": 6
+        },
+        "intent": {
+          "NE": 14,
+          "pass": 6
+        },
+        "domain": {
+          "NE": 14,
+          "pass": 4,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 12,
+          "NE": 8
+        },
+        "presentation": {
+          "NE": 20
+        },
+        "modality": {
+          "NE": 14,
+          "pass": 6
+        }
+      },
+      "failures": {
+        "specification": 18,
+        "envelope": 9,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 34,
+        "input": 32747,
+        "output": 18028,
+        "costUSD": 0.041290799999999996,
+        "medianMs": 6904
+      },
+      "repairs": {
+        "calls": 14,
+        "input": 19029,
+        "output": 7304,
+        "costUSD": 0.0186452,
+        "medianMs": 8646
+      }
+    },
+    "E": {
+      "n": 20,
+      "firstTransport": 19,
+      "firstDelivered": 7,
+      "finalDelivered": 7,
+      "corePass": 3,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 19,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 12,
+          "NA": 7,
+          "NE": 1
+        },
+        "intent": {
+          "NE": 13,
+          "pass": 7
+        },
+        "domain": {
+          "NE": 13,
+          "pass": 3,
+          "fail": 4
+        },
+        "behavior": {
+          "NA": 12,
+          "NE": 8
+        },
+        "presentation": {
+          "NE": 20
+        },
+        "modality": {
+          "NE": 13,
+          "pass": 7
+        }
+      },
+      "failures": {
+        "specification": 24,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 33,
+        "input": 34907,
+        "output": 14694,
+        "costUSD": 0.0344012,
+        "medianMs": 6879
+      },
+      "repairs": {
+        "calls": 13,
+        "input": 18159,
+        "output": 6793,
+        "costUSD": 0.015060400000000003,
+        "medianMs": 9122
+      }
+    },
+    "F": {
+      "n": 20,
+      "firstTransport": 17,
+      "firstDelivered": 6,
+      "finalDelivered": 6,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 5,
+          "pass": 15
+        },
+        "specification": {
+          "NE": 5,
+          "fail": 9,
+          "pass": 2,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 14,
+          "pass": 6
+        },
+        "domain": {
+          "NE": 14,
+          "pass": 2,
+          "fail": 4
+        },
+        "behavior": {
+          "NA": 12,
+          "NE": 6,
+          "fail": 1,
+          "pass": 1
+        },
+        "presentation": {
+          "NE": 20
+        },
+        "modality": {
+          "NE": 14,
+          "pass": 6
+        }
+      },
+      "failures": {
+        "truncated": 6,
+        "specification": 20,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 34,
+        "input": 38263,
+        "output": 22552,
+        "costUSD": 0.24254200000000006,
+        "medianMs": 2727
+      },
+      "repairs": {
+        "calls": 14,
+        "input": 21515,
+        "output": 12208,
+        "costUSD": 0.126294,
+        "medianMs": 2532
+      }
+    }
+  },
+  "holdout": {
+    "D": {
+      "n": 12,
+      "firstTransport": 7,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 9,
+          "fail": 3
+        },
+        "specification": {
+          "fail": 5,
+          "NE": 3,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 8,
+          "pass": 4
+        },
+        "domain": {
+          "NE": 8,
+          "pass": 4
+        },
+        "behavior": {
+          "NE": 8,
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 10,
+          "pass": 2
+        },
+        "modality": {
+          "NE": 8,
+          "pass": 4
+        }
+      },
+      "failures": {
+        "envelope": 7,
+        "specification": 8,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 20,
+        "input": 18902,
+        "output": 7087,
+        "costUSD": 0.018285600000000003,
+        "medianMs": 4686
+      },
+      "repairs": {
+        "calls": 8,
+        "input": 10640,
+        "output": 2155,
+        "costUSD": 0.0070896,
+        "medianMs": 4311
+      }
+    },
+    "E": {
+      "n": 12,
+      "firstTransport": 12,
+      "firstDelivered": 8,
+      "finalDelivered": 8,
+      "corePass": 8,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 12
+        },
+        "specification": {
+          "fail": 4,
+          "pass": 4,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 4,
+          "pass": 8
+        },
+        "domain": {
+          "NE": 4,
+          "pass": 8
+        },
+        "behavior": {
+          "NE": 4,
+          "pass": 4,
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 10,
+          "pass": 2
+        },
+        "modality": {
+          "NE": 4,
+          "pass": 8
+        }
+      },
+      "failures": {
+        "specification": 8
+      },
+      "usage": {
+        "calls": 16,
+        "input": 14803,
+        "output": 3281,
+        "costUSD": 0.010249200000000002,
+        "medianMs": 3841
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4723,
+        "output": 1095,
+        "costUSD": 0.0027196000000000004,
+        "medianMs": 4393
+      }
+    },
+    "F": {
+      "n": 12,
+      "firstTransport": 12,
+      "firstDelivered": 8,
+      "finalDelivered": 9,
+      "corePass": 9,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 12
+        },
+        "specification": {
+          "fail": 3,
+          "pass": 5,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 3,
+          "pass": 9
+        },
+        "domain": {
+          "NE": 3,
+          "pass": 9
+        },
+        "behavior": {
+          "NE": 3,
+          "pass": 5,
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 10,
+          "pass": 2
+        },
+        "modality": {
+          "NE": 3,
+          "pass": 9
+        }
+      },
+      "failures": {
+        "specification": 7
+      },
+      "usage": {
+        "calls": 16,
+        "input": 14928,
+        "output": 3739,
+        "costUSD": 0.05631200000000001,
+        "medianMs": 1610
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4848,
+        "output": 1300,
+        "costUSD": 0.016640000000000002,
+        "medianMs": 1888
+      }
+    }
+  },
+  "contrasts": [
+    {
+      "split": "core",
+      "from": "A",
+      "to": "B",
+      "metric": "finalDelivery",
+      "pairs": 20,
+      "wins": 2,
+      "losses": 2,
+      "unchanged": 16,
+      "net": 0
+    },
+    {
+      "split": "core",
+      "from": "A",
+      "to": "B",
+      "metric": "coreSuccess",
+      "pairs": 20,
+      "wins": 2,
+      "losses": 1,
+      "unchanged": 17,
+      "net": 1
+    },
+    {
+      "split": "core",
+      "from": "B",
+      "to": "C",
+      "metric": "finalDelivery",
+      "pairs": 20,
+      "wins": 3,
+      "losses": 0,
+      "unchanged": 17,
+      "net": 3
+    },
+    {
+      "split": "core",
+      "from": "B",
+      "to": "C",
+      "metric": "coreSuccess",
+      "pairs": 20,
+      "wins": 0,
+      "losses": 0,
+      "unchanged": 20,
+      "net": 0
+    },
+    {
+      "split": "core",
+      "from": "C",
+      "to": "D",
+      "metric": "finalDelivery",
+      "pairs": 20,
+      "wins": 0,
+      "losses": 1,
+      "unchanged": 19,
+      "net": -1
+    },
+    {
+      "split": "core",
+      "from": "C",
+      "to": "D",
+      "metric": "coreSuccess",
+      "pairs": 20,
+      "wins": 0,
+      "losses": 0,
+      "unchanged": 20,
+      "net": 0
+    },
+    {
+      "split": "core",
+      "from": "D",
+      "to": "E",
+      "metric": "finalDelivery",
+      "pairs": 20,
+      "wins": 2,
+      "losses": 1,
+      "unchanged": 17,
+      "net": 1
+    },
+    {
+      "split": "core",
+      "from": "D",
+      "to": "E",
+      "metric": "coreSuccess",
+      "pairs": 20,
+      "wins": 0,
+      "losses": 1,
+      "unchanged": 19,
+      "net": -1
+    },
+    {
+      "split": "core",
+      "from": "E",
+      "to": "F",
+      "metric": "finalDelivery",
+      "pairs": 20,
+      "wins": 2,
+      "losses": 3,
+      "unchanged": 15,
+      "net": -1
+    },
+    {
+      "split": "core",
+      "from": "E",
+      "to": "F",
+      "metric": "coreSuccess",
+      "pairs": 20,
+      "wins": 1,
+      "losses": 3,
+      "unchanged": 16,
+      "net": -2
+    },
+    {
+      "split": "holdout",
+      "from": "D",
+      "to": "E",
+      "metric": "finalDelivery",
+      "pairs": 12,
+      "wins": 4,
+      "losses": 0,
+      "unchanged": 8,
+      "net": 4
+    },
+    {
+      "split": "holdout",
+      "from": "D",
+      "to": "E",
+      "metric": "coreSuccess",
+      "pairs": 12,
+      "wins": 4,
+      "losses": 0,
+      "unchanged": 8,
+      "net": 4
+    },
+    {
+      "split": "holdout",
+      "from": "E",
+      "to": "F",
+      "metric": "finalDelivery",
+      "pairs": 12,
+      "wins": 2,
+      "losses": 1,
+      "unchanged": 9,
+      "net": 1
+    },
+    {
+      "split": "holdout",
+      "from": "E",
+      "to": "F",
+      "metric": "coreSuccess",
+      "pairs": 12,
+      "wins": 2,
+      "losses": 1,
+      "unchanged": 9,
+      "net": 1
+    }
+  ],
+  "baseline": {
+    "openai": {
+      "n": 90,
+      "axes": {
+        "transport": {
+          "pass": 50,
+          "fail": 40,
+          "NA": 0,
+          "NE": 0
+        },
+        "specification": {
+          "pass": 3,
+          "fail": 25,
+          "NA": 22,
+          "NE": 40
+        },
+        "intent": {
+          "pass": 22,
+          "fail": 3,
+          "NA": 0,
+          "NE": 65
+        },
+        "domain": {
+          "pass": 17,
+          "fail": 8,
+          "NA": 0,
+          "NE": 65
+        },
+        "behavior": {
+          "pass": 3,
+          "fail": 0,
+          "NA": 54,
+          "NE": 33
+        },
+        "presentation": {
+          "pass": 0,
+          "fail": 3,
+          "NA": 0,
+          "NE": 87
+        },
+        "modality": {
+          "pass": 22,
+          "fail": 3,
+          "NA": 0,
+          "NE": 65
+        }
+      },
+      "corePass": 15
+    },
+    "local": {
+      "n": 90,
+      "axes": {
+        "transport": {
+          "pass": 56,
+          "fail": 34,
+          "NA": 0,
+          "NE": 0
+        },
+        "specification": {
+          "pass": 17,
+          "fail": 35,
+          "NA": 4,
+          "NE": 34
+        },
+        "intent": {
+          "pass": 2,
+          "fail": 19,
+          "NA": 0,
+          "NE": 69
+        },
+        "domain": {
+          "pass": 0,
+          "fail": 19,
+          "NA": 0,
+          "NE": 71
+        },
+        "behavior": {
+          "pass": 0,
+          "fail": 0,
+          "NA": 54,
+          "NE": 36
+        },
+        "presentation": {
+          "pass": 0,
+          "fail": 19,
+          "NA": 0,
+          "NE": 71
+        },
+        "modality": {
+          "pass": 4,
+          "fail": 17,
+          "NA": 0,
+          "NE": 69
+        }
+      },
+      "corePass": 0
+    }
+  },
+  "byProtocol": {
+    "core/A/oui": {
+      "n": 10,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 2,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 5,
+          "fail": 5
+        },
+        "specification": {
+          "NA": 2,
+          "NE": 5,
+          "fail": 3
+        },
+        "intent": {
+          "pass": 1,
+          "NE": 8,
+          "fail": 1
+        },
+        "domain": {
+          "pass": 1,
+          "NE": 9
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "pass": 1,
+          "NE": 8,
+          "fail": 1
+        }
+      },
+      "failures": {
+        "envelope": 15,
+        "specification": 3
+      },
+      "usage": {
+        "calls": 20,
+        "input": 12411,
+        "output": 4640,
+        "costUSD": 0.0120812,
+        "medianMs": 2634
+      },
+      "repairs": {
+        "calls": 10,
+        "input": 7577,
+        "output": 2177,
+        "costUSD": 0.0062068,
+        "medianMs": 3001
+      }
+    },
+    "core/A/json": {
+      "n": 10,
+      "firstTransport": 2,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 6,
+          "pass": 4
+        },
+        "specification": {
+          "NE": 6,
+          "NA": 2,
+          "fail": 2
+        },
+        "intent": {
+          "NE": 8,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 8,
+          "pass": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 8,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "envelope": 11,
+        "truncated": 3,
+        "specification": 2
+      },
+      "usage": {
+        "calls": 18,
+        "input": 11609,
+        "output": 5754,
+        "costUSD": 0.013504400000000001,
+        "medianMs": 3910
+      },
+      "repairs": {
+        "calls": 8,
+        "input": 6635,
+        "output": 2776,
+        "costUSD": 0.00675,
+        "medianMs": 4081
+      }
+    },
+    "core/B/oui": {
+      "n": 10,
+      "firstTransport": 4,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 7,
+          "fail": 3
+        },
+        "specification": {
+          "fail": 5,
+          "NA": 2,
+          "NE": 3
+        },
+        "intent": {
+          "NE": 8,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 8,
+          "pass": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 8,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "specification": 7,
+        "truncated": 4,
+        "envelope": 5
+      },
+      "usage": {
+        "calls": 18,
+        "input": 15555,
+        "output": 8960,
+        "costUSD": 0.019866800000000004,
+        "medianMs": 8690
+      },
+      "repairs": {
+        "calls": 8,
+        "input": 9471,
+        "output": 4021,
+        "costUSD": 0.0095308,
+        "medianMs": 8987
+      }
+    },
+    "core/B/json": {
+      "n": 10,
+      "firstTransport": 5,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 5,
+          "pass": 5
+        },
+        "specification": {
+          "NE": 5,
+          "NA": 2,
+          "fail": 3
+        },
+        "intent": {
+          "NE": 8,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 8,
+          "pass": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 8,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "envelope": 7,
+        "specification": 6,
+        "truncated": 3
+      },
+      "usage": {
+        "calls": 18,
+        "input": 14917,
+        "output": 7713,
+        "costUSD": 0.0179236,
+        "medianMs": 7237
+      },
+      "repairs": {
+        "calls": 8,
+        "input": 8663,
+        "output": 3745,
+        "costUSD": 0.0090732,
+        "medianMs": 8311
+      }
+    },
+    "core/C/oui": {
+      "n": 10,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 9,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 5,
+          "NE": 1,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 6,
+          "pass": 4
+        },
+        "domain": {
+          "NE": 6,
+          "pass": 2,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 6,
+          "pass": 4
+        }
+      },
+      "failures": {
+        "envelope": 7,
+        "specification": 5
+      },
+      "usage": {
+        "calls": 16,
+        "input": 14192,
+        "output": 8898,
+        "costUSD": 0.018684800000000005,
+        "medianMs": 7261
+      },
+      "repairs": {
+        "calls": 6,
+        "input": 8108,
+        "output": 4032,
+        "costUSD": 0.0084656,
+        "medianMs": 7529
+      }
+    },
+    "core/C/json": {
+      "n": 10,
+      "firstTransport": 4,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 7,
+          "fail": 3
+        },
+        "specification": {
+          "fail": 4,
+          "NE": 3,
+          "NA": 3
+        },
+        "intent": {
+          "NE": 7,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 7,
+          "pass": 2,
+          "fail": 1
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 7,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "envelope": 8,
+        "specification": 5,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 17,
+        "input": 15122,
+        "output": 9878,
+        "costUSD": 0.020624800000000002,
+        "medianMs": 7295
+      },
+      "repairs": {
+        "calls": 7,
+        "input": 8868,
+        "output": 4966,
+        "costUSD": 0.010264,
+        "medianMs": 7295
+      }
+    },
+    "core/D/oui": {
+      "n": 10,
+      "firstTransport": 6,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 8,
+          "fail": 2
+        },
+        "specification": {
+          "fail": 4,
+          "NE": 2,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 6,
+          "pass": 4
+        },
+        "domain": {
+          "NE": 6,
+          "pass": 2,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 6,
+          "pass": 4
+        }
+      },
+      "failures": {
+        "specification": 6,
+        "truncated": 1,
+        "envelope": 5
+      },
+      "usage": {
+        "calls": 16,
+        "input": 15580,
+        "output": 9313,
+        "costUSD": 0.0211328,
+        "medianMs": 8646
+      },
+      "repairs": {
+        "calls": 6,
+        "input": 8806,
+        "output": 3504,
+        "costUSD": 0.009128800000000001,
+        "medianMs": 9755
+      }
+    },
+    "core/D/json": {
+      "n": 10,
+      "firstTransport": 8,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 8,
+          "fail": 2
+        },
+        "specification": {
+          "fail": 6,
+          "NA": 2,
+          "NE": 2
+        },
+        "intent": {
+          "NE": 8,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 8,
+          "pass": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 8,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "specification": 12,
+        "envelope": 4
+      },
+      "usage": {
+        "calls": 18,
+        "input": 17167,
+        "output": 8715,
+        "costUSD": 0.020157999999999995,
+        "medianMs": 6904
+      },
+      "repairs": {
+        "calls": 8,
+        "input": 10223,
+        "output": 3800,
+        "costUSD": 0.009516400000000001,
+        "medianMs": 6904
+      }
+    },
+    "core/E/oui": {
+      "n": 10,
+      "firstTransport": 9,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 9,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 6,
+          "NA": 3,
+          "NE": 1
+        },
+        "intent": {
+          "NE": 7,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 7,
+          "pass": 1,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 7,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "specification": 12,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 17,
+        "input": 17776,
+        "output": 7972,
+        "costUSD": 0.018905599999999998,
+        "medianMs": 6342
+      },
+      "repairs": {
+        "calls": 7,
+        "input": 9772,
+        "output": 3635,
+        "costUSD": 0.008764800000000001,
+        "medianMs": 9373
+      }
+    },
+    "core/E/json": {
+      "n": 10,
+      "firstTransport": 10,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 10
+        },
+        "specification": {
+          "fail": 6,
+          "NA": 4
+        },
+        "intent": {
+          "NE": 6,
+          "pass": 4
+        },
+        "domain": {
+          "NE": 6,
+          "pass": 2,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 6,
+          "pass": 4
+        }
+      },
+      "failures": {
+        "specification": 12
+      },
+      "usage": {
+        "calls": 16,
+        "input": 17131,
+        "output": 6722,
+        "costUSD": 0.0154956,
+        "medianMs": 6892
+      },
+      "repairs": {
+        "calls": 6,
+        "input": 8387,
+        "output": 3158,
+        "costUSD": 0.0062956,
+        "medianMs": 9122
+      }
+    },
+    "core/F/oui": {
+      "n": 10,
+      "firstTransport": 9,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 9,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 6,
+          "NE": 1,
+          "pass": 1,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 7,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 7,
+          "pass": 1,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 3,
+          "pass": 1
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 7,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "specification": 12,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 17,
+        "input": 16701,
+        "output": 5998,
+        "costUSD": 0.076778,
+        "medianMs": 2372
+      },
+      "repairs": {
+        "calls": 7,
+        "input": 8697,
+        "output": 2713,
+        "costUSD": 0.03449,
+        "medianMs": 2361
+      }
+    },
+    "core/F/json": {
+      "n": 10,
+      "firstTransport": 8,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 4,
+          "pass": 6
+        },
+        "specification": {
+          "NE": 4,
+          "fail": 3,
+          "pass": 1,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 7,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 7,
+          "pass": 1,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 6,
+          "NE": 3,
+          "fail": 1
+        },
+        "presentation": {
+          "NE": 10
+        },
+        "modality": {
+          "NE": 7,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "truncated": 6,
+        "specification": 8
+      },
+      "usage": {
+        "calls": 17,
+        "input": 21562,
+        "output": 16554,
+        "costUSD": 0.16576400000000002,
+        "medianMs": 3151
+      },
+      "repairs": {
+        "calls": 7,
+        "input": 12818,
+        "output": 9495,
+        "costUSD": 0.09180399999999998,
+        "medianMs": 8106
+      }
+    },
+    "holdout/D/oui": {
+      "n": 6,
+      "firstTransport": 2,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 1,
+          "pass": 5
+        },
+        "specification": {
+          "NE": 1,
+          "fail": 3,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 4,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 4,
+          "pass": 2
+        },
+        "behavior": {
+          "NE": 4,
+          "NA": 2
+        },
+        "presentation": {
+          "NE": 5,
+          "pass": 1
+        },
+        "modality": {
+          "NE": 4,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "truncated": 1,
+        "envelope": 4,
+        "specification": 3
+      },
+      "usage": {
+        "calls": 10,
+        "input": 9955,
+        "output": 4011,
+        "costUSD": 0.0103996,
+        "medianMs": 4311
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5875,
+        "output": 936,
+        "costUSD": 0.0038476,
+        "medianMs": 3682
+      }
+    },
+    "holdout/D/json": {
+      "n": 6,
+      "firstTransport": 5,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4,
+          "fail": 2
+        },
+        "specification": {
+          "fail": 2,
+          "NE": 2,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 4,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 4,
+          "pass": 2
+        },
+        "behavior": {
+          "NE": 4,
+          "NA": 2
+        },
+        "presentation": {
+          "NE": 5,
+          "pass": 1
+        },
+        "modality": {
+          "NE": 4,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "envelope": 3,
+        "specification": 5
+      },
+      "usage": {
+        "calls": 10,
+        "input": 8947,
+        "output": 3076,
+        "costUSD": 0.007886,
+        "medianMs": 4745
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4765,
+        "output": 1219,
+        "costUSD": 0.003242,
+        "medianMs": 4745
+      }
+    },
+    "holdout/E/oui": {
+      "n": 6,
+      "firstTransport": 6,
+      "firstDelivered": 5,
+      "finalDelivered": 5,
+      "corePass": 5,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 6
+        },
+        "specification": {
+          "pass": 3,
+          "fail": 1,
+          "NA": 2
+        },
+        "intent": {
+          "pass": 5,
+          "NE": 1
+        },
+        "domain": {
+          "pass": 5,
+          "NE": 1
+        },
+        "behavior": {
+          "pass": 3,
+          "NE": 1,
+          "NA": 2
+        },
+        "presentation": {
+          "NE": 5,
+          "pass": 1
+        },
+        "modality": {
+          "pass": 5,
+          "NE": 1
+        }
+      },
+      "failures": {
+        "specification": 2
+      },
+      "usage": {
+        "calls": 7,
+        "input": 5873,
+        "output": 1098,
+        "costUSD": 0.004106,
+        "medianMs": 3199
+      },
+      "repairs": {
+        "calls": 1,
+        "input": 1055,
+        "output": 204,
+        "costUSD": 0.0007484000000000001,
+        "medianMs": 3199
+      }
+    },
+    "holdout/E/json": {
+      "n": 6,
+      "firstTransport": 6,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 3,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 6
+        },
+        "specification": {
+          "fail": 3,
+          "pass": 1,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 3,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 3,
+          "pass": 3
+        },
+        "behavior": {
+          "NE": 3,
+          "pass": 1,
+          "NA": 2
+        },
+        "presentation": {
+          "NE": 5,
+          "pass": 1
+        },
+        "modality": {
+          "NE": 3,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "specification": 6
+      },
+      "usage": {
+        "calls": 9,
+        "input": 8930,
+        "output": 2183,
+        "costUSD": 0.0061432000000000014,
+        "medianMs": 4369
+      },
+      "repairs": {
+        "calls": 3,
+        "input": 3668,
+        "output": 891,
+        "costUSD": 0.0019712,
+        "medianMs": 4393
+      }
+    },
+    "holdout/F/oui": {
+      "n": 6,
+      "firstTransport": 6,
+      "firstDelivered": 4,
+      "finalDelivered": 5,
+      "corePass": 5,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 6
+        },
+        "specification": {
+          "fail": 1,
+          "pass": 3,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 1,
+          "pass": 5
+        },
+        "domain": {
+          "NE": 1,
+          "pass": 5
+        },
+        "behavior": {
+          "NE": 1,
+          "pass": 3,
+          "NA": 2
+        },
+        "presentation": {
+          "NE": 5,
+          "pass": 1
+        },
+        "modality": {
+          "NE": 1,
+          "pass": 5
+        }
+      },
+      "failures": {
+        "specification": 3
+      },
+      "usage": {
+        "calls": 8,
+        "input": 6917,
+        "output": 1260,
+        "costUSD": 0.023914,
+        "medianMs": 1581
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 2099,
+        "output": 385,
+        "costUSD": 0.007278000000000001,
+        "medianMs": 1581
+      }
+    },
+    "holdout/F/json": {
+      "n": 6,
+      "firstTransport": 6,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 6
+        },
+        "specification": {
+          "fail": 2,
+          "pass": 2,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 2,
+          "pass": 4
+        },
+        "domain": {
+          "NE": 2,
+          "pass": 4
+        },
+        "behavior": {
+          "NE": 2,
+          "pass": 2,
+          "NA": 2
+        },
+        "presentation": {
+          "NE": 5,
+          "pass": 1
+        },
+        "modality": {
+          "NE": 2,
+          "pass": 4
+        }
+      },
+      "failures": {
+        "specification": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8011,
+        "output": 2479,
+        "costUSD": 0.032398,
+        "medianMs": 2044
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 2749,
+        "output": 915,
+        "costUSD": 0.009362,
+        "medianMs": 3603
+      }
+    }
+  },
+  "byTask": {
+    "A/B01": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 1,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 3,
+          "pass": 1
+        },
+        "specification": {
+          "NE": 3,
+          "NA": 1
+        },
+        "intent": {
+          "NE": 3,
+          "pass": 1
+        },
+        "domain": {
+          "NE": 3,
+          "pass": 1
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 3,
+          "pass": 1
+        }
+      },
+      "failures": {
+        "envelope": 7
+      },
+      "usage": {
+        "calls": 8,
+        "input": 4725,
+        "output": 1337,
+        "costUSD": 0.0040292,
+        "medianMs": 2500
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 2853,
+        "output": 468,
+        "costUSD": 0.0018900000000000002,
+        "medianMs": 2588
+      }
+    },
+    "A/B02": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 2,
+          "fail": 2
+        },
+        "specification": {
+          "NA": 2,
+          "NE": 2
+        },
+        "intent": {
+          "pass": 2,
+          "NE": 2
+        },
+        "domain": {
+          "pass": 2,
+          "NE": 2
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 2,
+          "NE": 2
+        }
+      },
+      "failures": {
+        "envelope": 4
+      },
+      "usage": {
+        "calls": 6,
+        "input": 3179,
+        "output": 1124,
+        "costUSD": 0.0030700000000000002,
+        "medianMs": 3001
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 1247,
+        "output": 326,
+        "costUSD": 0.0010204,
+        "medianMs": 3001
+      }
+    },
+    "A/B03": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 1,
+          "pass": 3
+        },
+        "specification": {
+          "NE": 1,
+          "fail": 3
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 4,
+        "truncated": 1,
+        "specification": 3
+      },
+      "usage": {
+        "calls": 8,
+        "input": 6249,
+        "output": 4176,
+        "costUSD": 0.008874,
+        "medianMs": 6795
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4133,
+        "output": 2271,
+        "costUSD": 0.004979600000000001,
+        "medianMs": 8199
+      }
+    },
+    "A/B04": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 1,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 1,
+          "pass": 3
+        },
+        "specification": {
+          "NE": 1,
+          "fail": 2,
+          "NA": 1
+        },
+        "intent": {
+          "NE": 3,
+          "fail": 1
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 3,
+          "fail": 1
+        }
+      },
+      "failures": {
+        "truncated": 2,
+        "envelope": 3,
+        "specification": 2
+      },
+      "usage": {
+        "calls": 8,
+        "input": 5888,
+        "output": 3417,
+        "costUSD": 0.007476799999999999,
+        "medianMs": 8032
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 3844,
+        "output": 1727,
+        "costUSD": 0.003955200000000001,
+        "medianMs": 8032
+      }
+    },
+    "A/B06": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 4
+        },
+        "specification": {
+          "NE": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 8
+      },
+      "usage": {
+        "calls": 8,
+        "input": 3979,
+        "output": 340,
+        "costUSD": 0.0021356,
+        "medianMs": 1279
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 2135,
+        "output": 161,
+        "costUSD": 0.0011116000000000001,
+        "medianMs": 1279
+      }
+    },
+    "B/B01": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 2,
+          "pass": 2
+        },
+        "specification": {
+          "NE": 2,
+          "fail": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 4,
+        "specification": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 6798,
+        "output": 3945,
+        "costUSD": 0.008723999999999999,
+        "medianMs": 8690
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4420,
+        "output": 2038,
+        "costUSD": 0.0047216,
+        "medianMs": 8915
+      }
+    },
+    "B/B02": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 2438,
+        "output": 1235,
+        "costUSD": 0.0029512,
+        "medianMs": 4846
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "B/B03": {
+      "n": 4,
+      "firstTransport": 1,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 4
+        },
+        "specification": {
+          "NE": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 1,
+        "truncated": 7
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8044,
+        "output": 5733,
+        "costUSD": 0.011622400000000003,
+        "medianMs": 10142
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5422,
+        "output": 3072,
+        "costUSD": 0.006316,
+        "medianMs": 14835
+      }
+    },
+    "B/B04": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 4,
+        "specification": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 7495,
+        "output": 3912,
+        "costUSD": 0.0092572,
+        "medianMs": 7237
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4945,
+        "output": 1655,
+        "costUSD": 0.004626,
+        "medianMs": 6165
+      }
+    },
+    "B/B06": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 2,
+          "pass": 2
+        },
+        "specification": {
+          "NE": 2,
+          "fail": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 4,
+        "envelope": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 5697,
+        "output": 1848,
+        "costUSD": 0.0052356,
+        "medianMs": 4572
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 3347,
+        "output": 1001,
+        "costUSD": 0.0029404,
+        "medianMs": 5210
+      }
+    },
+    "C/B01": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 2,
+          "fail": 2
+        },
+        "specification": {
+          "fail": 2,
+          "NE": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 6,
+        "specification": 2
+      },
+      "usage": {
+        "calls": 8,
+        "input": 6538,
+        "output": 3944,
+        "costUSD": 0.008925599999999999,
+        "medianMs": 7529
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4160,
+        "output": 2298,
+        "costUSD": 0.005340800000000001,
+        "medianMs": 8538
+      }
+    },
+    "C/B02": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 2438,
+        "output": 1201,
+        "costUSD": 0.0028968,
+        "medianMs": 4735
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "C/B03": {
+      "n": 4,
+      "firstTransport": 1,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 2,
+          "pass": 2
+        },
+        "specification": {
+          "NE": 2,
+          "fail": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 3,
+        "envelope": 4,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 8,
+        "input": 9507,
+        "output": 8913,
+        "costUSD": 0.0165276,
+        "medianMs": 18742
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 6885,
+        "output": 4855,
+        "costUSD": 0.008986000000000001,
+        "medianMs": 23057
+      }
+    },
+    "C/B04": {
+      "n": 4,
+      "firstTransport": 0,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 4,
+        "specification": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 7462,
+        "output": 3745,
+        "costUSD": 0.008055200000000002,
+        "medianMs": 7287
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4912,
+        "output": 1519,
+        "costUSD": 0.0034736,
+        "medianMs": 7172
+      }
+    },
+    "C/B06": {
+      "n": 4,
+      "firstTransport": 3,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 1,
+          "NA": 3
+        },
+        "intent": {
+          "NE": 1,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 1,
+          "fail": 3
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 1,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "envelope": 1,
+        "specification": 1
+      },
+      "usage": {
+        "calls": 5,
+        "input": 3369,
+        "output": 973,
+        "costUSD": 0.0029044,
+        "medianMs": 2176
+      },
+      "repairs": {
+        "calls": 1,
+        "input": 1019,
+        "output": 326,
+        "costUSD": 0.0009292,
+        "medianMs": 4532
+      }
+    },
+    "D/B01": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 3,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 3,
+          "NE": 1
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 5,
+        "envelope": 2,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8461,
+        "output": 5525,
+        "costUSD": 0.0119172,
+        "medianMs": 8646
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5807,
+        "output": 2004,
+        "costUSD": 0.005222,
+        "medianMs": 8646
+      }
+    },
+    "D/B02": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 2714,
+        "output": 1211,
+        "costUSD": 0.0030232,
+        "medianMs": 4638
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "D/B03": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 6,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 8,
+        "input": 9705,
+        "output": 6395,
+        "costUSD": 0.014114000000000002,
+        "medianMs": 11733
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 6807,
+        "output": 2633,
+        "costUSD": 0.0069356,
+        "medianMs": 10196
+      }
+    },
+    "D/B04": {
+      "n": 4,
+      "firstTransport": 3,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 2,
+          "fail": 2
+        },
+        "specification": {
+          "fail": 2,
+          "NE": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 5,
+        "envelope": 3
+      },
+      "usage": {
+        "calls": 8,
+        "input": 7171,
+        "output": 3528,
+        "costUSD": 0.0081676,
+        "medianMs": 5367
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4345,
+        "output": 2164,
+        "costUSD": 0.0048548,
+        "medianMs": 8894
+      }
+    },
+    "D/B06": {
+      "n": 4,
+      "firstTransport": 3,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 3,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 1,
+          "NE": 1,
+          "NA": 2
+        },
+        "intent": {
+          "NE": 2,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 2,
+          "fail": 2
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 2,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "specification": 2,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 6,
+        "input": 4696,
+        "output": 1369,
+        "costUSD": 0.0040688,
+        "medianMs": 2822
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 2070,
+        "output": 503,
+        "costUSD": 0.0016328000000000002,
+        "medianMs": 5391
+      }
+    },
+    "E/B01": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 8
+      },
+      "usage": {
+        "calls": 8,
+        "input": 9004,
+        "output": 4780,
+        "costUSD": 0.0105968,
+        "medianMs": 10327
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5744,
+        "output": 2431,
+        "costUSD": 0.005534400000000001,
+        "medianMs": 10327
+      }
+    },
+    "E/B02": {
+      "n": 4,
+      "firstTransport": 3,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 3,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 3,
+          "fail": 1
+        },
+        "specification": {
+          "NA": 3,
+          "NE": 1
+        },
+        "intent": {
+          "pass": 3,
+          "NE": 1
+        },
+        "domain": {
+          "pass": 3,
+          "NE": 1
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 3,
+          "NE": 1
+        }
+      },
+      "failures": {
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 5,
+        "input": 4540,
+        "output": 1656,
+        "costUSD": 0.0041584000000000005,
+        "medianMs": 4974
+      },
+      "repairs": {
+        "calls": 1,
+        "input": 1220,
+        "output": 382,
+        "costUSD": 0.000792,
+        "medianMs": 5545
+      }
+    },
+    "E/B03": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 8
+      },
+      "usage": {
+        "calls": 8,
+        "input": 9195,
+        "output": 4083,
+        "costUSD": 0.009174000000000002,
+        "medianMs": 8921
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5691,
+        "output": 2043,
+        "costUSD": 0.0045084,
+        "medianMs": 10440
+      }
+    },
+    "E/B04": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 8
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8936,
+        "output": 3856,
+        "costUSD": 0.0086688,
+        "medianMs": 6879
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5504,
+        "output": 1937,
+        "costUSD": 0.0042256,
+        "medianMs": 6879
+      }
+    },
+    "E/B06": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "fail": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 3232,
+        "output": 319,
+        "costUSD": 0.0018032,
+        "medianMs": 2148
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "F/B01": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 2,
+          "pass": 2
+        },
+        "specification": {
+          "NE": 2,
+          "fail": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "truncated": 4,
+        "specification": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 11643,
+        "output": 9956,
+        "costUSD": 0.091798,
+        "medianMs": 8983
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 8383,
+        "output": 4959,
+        "costUSD": 0.045302,
+        "medianMs": 9907
+      }
+    },
+    "F/B02": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 4
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 8
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8435,
+        "output": 3182,
+        "costUSD": 0.040597999999999995,
+        "medianMs": 2924
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5115,
+        "output": 1531,
+        "costUSD": 0.02075,
+        "medianMs": 2727
+      }
+    },
+    "F/B03": {
+      "n": 4,
+      "firstTransport": 3,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 3,
+          "pass": 1
+        },
+        "specification": {
+          "NE": 3,
+          "fail": 1
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 4,
+        "truncated": 2,
+        "envelope": 2
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8911,
+        "output": 6644,
+        "costUSD": 0.06943800000000001,
+        "medianMs": 2577
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 5407,
+        "output": 4904,
+        "costUSD": 0.04851,
+        "medianMs": 8106
+      }
+    },
+    "F/B04": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "pass": 2,
+          "fail": 2
+        },
+        "intent": {
+          "pass": 2,
+          "NE": 2
+        },
+        "domain": {
+          "pass": 2,
+          "NE": 2
+        },
+        "behavior": {
+          "fail": 1,
+          "NE": 2,
+          "pass": 1
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 2,
+          "NE": 2
+        }
+      },
+      "failures": {
+        "specification": 4
+      },
+      "usage": {
+        "calls": 6,
+        "input": 6042,
+        "output": 2446,
+        "costUSD": 0.031652,
+        "medianMs": 2532
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 2610,
+        "output": 814,
+        "costUSD": 0.011732000000000001,
+        "medianMs": 2532
+      }
+    },
+    "F/B06": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "fail": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 3232,
+        "output": 324,
+        "costUSD": 0.009056,
+        "medianMs": 1181
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "D/T11": {
+      "n": 4,
+      "firstTransport": 1,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 3,
+          "fail": 1
+        },
+        "specification": {
+          "fail": 3,
+          "NE": 1
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "envelope": 3,
+        "specification": 4,
+        "truncated": 1
+      },
+      "usage": {
+        "calls": 8,
+        "input": 8914,
+        "output": 4097,
+        "costUSD": 0.009813599999999999,
+        "medianMs": 4686
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 6088,
+        "output": 977,
+        "costUSD": 0.0036912,
+        "medianMs": 3794
+      }
+    },
+    "D/T12": {
+      "n": 4,
+      "firstTransport": 2,
+      "firstDelivered": 0,
+      "finalDelivered": 0,
+      "corePass": 0,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "fail": 2,
+          "pass": 2
+        },
+        "specification": {
+          "NE": 2,
+          "fail": 2
+        },
+        "intent": {
+          "NE": 4
+        },
+        "domain": {
+          "NE": 4
+        },
+        "behavior": {
+          "NE": 4
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 4
+        }
+      },
+      "failures": {
+        "specification": 4,
+        "envelope": 4
+      },
+      "usage": {
+        "calls": 8,
+        "input": 7342,
+        "output": 2778,
+        "costUSD": 0.0070744000000000015,
+        "medianMs": 4770
+      },
+      "repairs": {
+        "calls": 4,
+        "input": 4552,
+        "output": 1178,
+        "costUSD": 0.0033984,
+        "medianMs": 4745
+      }
+    },
+    "D/T13": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "pass": 2,
+          "NE": 2
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 2646,
+        "output": 212,
+        "costUSD": 0.0013976,
+        "medianMs": 1373
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "E/T11": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 3,
+      "finalDelivered": 3,
+      "corePass": 3,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 1,
+          "pass": 3
+        },
+        "intent": {
+          "NE": 1,
+          "pass": 3
+        },
+        "domain": {
+          "NE": 1,
+          "pass": 3
+        },
+        "behavior": {
+          "NE": 1,
+          "pass": 3
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 1,
+          "pass": 3
+        }
+      },
+      "failures": {
+        "specification": 2
+      },
+      "usage": {
+        "calls": 5,
+        "input": 4661,
+        "output": 1282,
+        "costUSD": 0.0036084000000000003,
+        "medianMs": 4321
+      },
+      "repairs": {
+        "calls": 1,
+        "input": 1229,
+        "output": 302,
+        "costUSD": 0.0006676000000000001,
+        "medianMs": 4537
+      }
+    },
+    "E/T12": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 1,
+      "finalDelivered": 1,
+      "corePass": 1,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 3,
+          "pass": 1
+        },
+        "intent": {
+          "NE": 3,
+          "pass": 1
+        },
+        "domain": {
+          "NE": 3,
+          "pass": 1
+        },
+        "behavior": {
+          "NE": 3,
+          "pass": 1
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 3,
+          "pass": 1
+        }
+      },
+      "failures": {
+        "specification": 6
+      },
+      "usage": {
+        "calls": 7,
+        "input": 6890,
+        "output": 1795,
+        "costUSD": 0.0050136,
+        "medianMs": 3841
+      },
+      "repairs": {
+        "calls": 3,
+        "input": 3494,
+        "output": 793,
+        "costUSD": 0.002052,
+        "medianMs": 4369
+      }
+    },
+    "E/T13": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "pass": 2,
+          "NE": 2
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 3252,
+        "output": 204,
+        "costUSD": 0.0016272,
+        "medianMs": 1483
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    },
+    "F/T11": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 2,
+      "finalDelivered": 2,
+      "corePass": 2,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "fail": 2,
+          "pass": 2
+        },
+        "intent": {
+          "NE": 2,
+          "pass": 2
+        },
+        "domain": {
+          "NE": 2,
+          "pass": 2
+        },
+        "behavior": {
+          "NE": 2,
+          "pass": 2
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "NE": 2,
+          "pass": 2
+        }
+      },
+      "failures": {
+        "specification": 4
+      },
+      "usage": {
+        "calls": 6,
+        "input": 6011,
+        "output": 2115,
+        "costUSD": 0.027021999999999997,
+        "medianMs": 2044
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 2579,
+        "output": 828,
+        "costUSD": 0.009862000000000001,
+        "medianMs": 3603
+      }
+    },
+    "F/T12": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 2,
+      "finalDelivered": 3,
+      "corePass": 3,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "pass": 3,
+          "fail": 1
+        },
+        "intent": {
+          "pass": 3,
+          "NE": 1
+        },
+        "domain": {
+          "pass": 3,
+          "NE": 1
+        },
+        "behavior": {
+          "pass": 3,
+          "NE": 1
+        },
+        "presentation": {
+          "NE": 4
+        },
+        "modality": {
+          "pass": 3,
+          "NE": 1
+        }
+      },
+      "failures": {
+        "specification": 3
+      },
+      "usage": {
+        "calls": 6,
+        "input": 5665,
+        "output": 1446,
+        "costUSD": 0.021362000000000003,
+        "medianMs": 1782
+      },
+      "repairs": {
+        "calls": 2,
+        "input": 2269,
+        "output": 472,
+        "costUSD": 0.006778000000000001,
+        "medianMs": 1888
+      }
+    },
+    "F/T13": {
+      "n": 4,
+      "firstTransport": 4,
+      "firstDelivered": 4,
+      "finalDelivered": 4,
+      "corePass": 4,
+      "exampleCopy": 0,
+      "axes": {
+        "transport": {
+          "pass": 4
+        },
+        "specification": {
+          "NA": 4
+        },
+        "intent": {
+          "pass": 4
+        },
+        "domain": {
+          "pass": 4
+        },
+        "behavior": {
+          "NA": 4
+        },
+        "presentation": {
+          "pass": 2,
+          "NE": 2
+        },
+        "modality": {
+          "pass": 4
+        }
+      },
+      "failures": {},
+      "usage": {
+        "calls": 4,
+        "input": 3252,
+        "output": 178,
+        "costUSD": 0.007928000000000001,
+        "medianMs": 977
+      },
+      "repairs": {
+        "calls": 0,
+        "input": 0,
+        "output": 0,
+        "costUSD": 0,
+        "medianMs": null
+      }
+    }
+  },
+  "confirmedHumanAssessments": 0
+}

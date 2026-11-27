@@ -1,0 +1,11 @@
+✔ neutral labels still resolve fare by options and weight by range; extra option is a domain failure (1.096292ms)
+✔ tray roles use numeric domains and defaults independently of order and IDs (0.539208ms)
+✔ only complete non-refused output can enter replay (0.55675ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52.219834

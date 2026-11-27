@@ -1,0 +1,1170 @@
+{
+  "version": "2b1.1",
+  "arms": [
+    {
+      "id": "A",
+      "wire": "legacy",
+      "tokens": 768,
+      "ground": false,
+      "examples": false,
+      "model": "gpt-4.1-mini-2025-04-14"
+    },
+    {
+      "id": "B",
+      "wire": "structured",
+      "tokens": 768,
+      "ground": false,
+      "examples": false,
+      "model": "gpt-4.1-mini-2025-04-14"
+    },
+    {
+      "id": "C",
+      "wire": "structured",
+      "tokens": 2048,
+      "ground": false,
+      "examples": false,
+      "model": "gpt-4.1-mini-2025-04-14"
+    },
+    {
+      "id": "D",
+      "wire": "structured",
+      "tokens": 2048,
+      "ground": true,
+      "examples": false,
+      "model": "gpt-4.1-mini-2025-04-14"
+    },
+    {
+      "id": "E",
+      "wire": "structured",
+      "tokens": 2048,
+      "ground": true,
+      "examples": true,
+      "model": "gpt-4.1-mini-2025-04-14"
+    },
+    {
+      "id": "F",
+      "wire": "structured",
+      "tokens": 2048,
+      "ground": true,
+      "examples": true,
+      "model": "gpt-4.1-2025-04-14"
+    }
+  ],
+  "seeds": [
+    1701,
+    1702
+  ],
+  "jobs": [
+    {
+      "id": "A-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A"
+    },
+    {
+      "id": "B-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B"
+    },
+    {
+      "id": "C-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C"
+    },
+    {
+      "id": "D-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "D-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "D-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "D-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "D-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "D-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "D-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D"
+    },
+    {
+      "id": "E-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E"
+    },
+    {
+      "id": "F-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F"
+    },
+    {
+      "id": "A-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "A-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A"
+    },
+    {
+      "id": "B-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B"
+    },
+    {
+      "id": "C-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C"
+    },
+    {
+      "id": "D-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "D-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "D-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "D-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "D-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "D-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F"
+    },
+    {
+      "id": "D-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D"
+    },
+    {
+      "id": "E-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E"
+    },
+    {
+      "id": "F-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F"
+    }
+  ],
+  "hashes": {
+    "generation/v2/plan.mjs": "d2b6b894243d223e7c003801b1c47b4a70ee361045095d8bd6b48a86d5a0703e",
+    "generation/v2/schema.json": "b631f9778d83e060ba251d25bc028387ab1397dbffc94d8cdf906d4d9fe93734",
+    "generation/v2/rubric.md": "55cf9ae57b653c321a75760c303e88265ca8c456a3a7b6d4f1dad9bbe23f505f",
+    "generation/harness.mjs": "3131239545dd170c96b0ab780dd38571450964dc9593a6009c58f4b28964db5f",
+    "package-lock.json": "4ec29fd626ab4366d46b8a400a05c4e119af430e3063e18e5bbf72c7daa464b3"
+  },
+  "sourceBaseline": "dcd0701",
+  "catalog": "1.1",
+  "policy": "1.5.0",
+  "protocols": {
+    "oui": "1.2.0",
+    "json": "0.23.2"
+  },
+  "node": "v26.7.0",
+  "chromium": "1255",
+  "repairLimit": 1,
+  "temperature": 0.35,
+  "top_p": 0.9
+}
