@@ -73,7 +73,7 @@ async function lane(protocol,seed){
       }catch(e){result={status:a.status??'rejected',diagnostic:String(e.message).split('\n')[0]}}
       attempts.push(result)
       if(!saved)await save(record,{...a,messages:structuredClone(messages),result})
-      else assert.deepEqual(result,saved.result)
+      else assert.deepEqual(JSON.parse(JSON.stringify(result)),saved.result)
       if(n||!['rejected','truncated'].includes(result.status))break
       messages.push({role:'assistant',content:a.raw??''},{role:'user',content:'Revision rejected: '+result.diagnostic+'. Return a corrected response.'})
      }
@@ -83,7 +83,7 @@ async function lane(protocol,seed){
      if(delivery!=='accepted')assert.deepEqual(current,before)
      const recorded=await load(stem)
      if(offline){
-      assert.ok(recorded,stem);assert.deepEqual(before,recorded.before);assert.deepEqual(current,recorded.after)
+      assert.ok(recorded,stem);assert.deepEqual(JSON.parse(JSON.stringify(before)),recorded.before);assert.deepEqual(JSON.parse(JSON.stringify(current)),recorded.after)
       assert.equal(delivery,recorded.delivery);assert.equal(attempts.length,recorded.attempts)
      }
      if(!recorded){

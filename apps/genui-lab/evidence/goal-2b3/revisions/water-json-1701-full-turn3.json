@@ -1,0 +1,101 @@
+{
+  "task": "water",
+  "protocol": "json",
+  "seed": 1701,
+  "mode": "full",
+  "turn": 3,
+  "before": {
+    "artifact": "water-json-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The tank starts with 24 litres and drains at the selected rate until it is empty.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"input\\\",\\\"rate\\\",\\\"result\\\"]},\\\"input\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Elapsed time (minutes)\\\",\\\"min\\\":0,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/minutes\\\"}}},\\\"rate\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Drain rate (litres per minute)\\\",\\\"min\\\":2,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/drainRate\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Water remaining (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":24,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/minutes\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/drainRate\\\"}}}}}}}}}\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"drainRate\",\"value\":3}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "minutes"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "drainRate"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water remaining (litres)",
+            "value": 8
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "drainRate": 4
+      }
+    }
+  },
+  "after": {
+    "artifact": "water-json-1701",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"The tank starts with 24 litres. It drains at the selected rate until empty, so no more than 24 litres can drain.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"input\\\",\\\"rate\\\",\\\"result\\\",\\\"drained\\\"]},\\\"input\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Elapsed time (minutes)\\\",\\\"min\\\":0,\\\"max\\\":6,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/minutes\\\"}}},\\\"rate\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Drain rate (litres per minute)\\\",\\\"min\\\":2,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/drainRate\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Water remaining (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":24,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/minutes\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/drainRate\\\"}}}}}}},\\\"drained\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Water drained (litres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":24,\\\"b\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":24,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/minutes\\\"},\\\"b\\\":{\\\"$state\\\":\\\"/drainRate\\\"}}}}}}}}}}}\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"drainRate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "minutes"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          },
+          "binding": "drainRate"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water drained (litres)",
+            "value": 16
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "drainRate": 4
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 6772.526457999949,
+  "attempts": 1
+}

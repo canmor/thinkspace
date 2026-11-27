@@ -1,16 +1,17 @@
 import { validateTransfer } from "./transport";
 import { limits, type Frame } from "./policy";
 export class RestrictedClient {
-  private worker = new Worker(new URL("./runtime.worker.ts", import.meta.url), {
-    type: "module",
-  });
+  private worker: Worker;
   private queue: {
-    resolve: (frame: Frame) => void;
+    resolve: (frame: Frame | {source:string}) => void;
     reject: (e: Error) => void;
   }[] = [];
   private closed = false;
   private timer: ReturnType<typeof setTimeout> | undefined;
-  constructor() {
+  constructor(purpose: "baseline" | "revision-experiment" = "baseline") {
+    this.worker = new Worker(new URL("./runtime.worker.ts", import.meta.url), {
+      type: "module", name: purpose,
+    });
     this.worker.onmessage = ({ data }) => {
       const task = this.queue.shift();
       if (!task) return;
@@ -23,7 +24,7 @@ export class RestrictedClient {
   }
   request(message: {kind:"reconstruct";protocol:string;source:string;raw:string;artifact:string;base:number}): Promise<{source:string}>;
   request(message: object): Promise<Frame>;
-  request(message: object): Promise<any> {
+  request(message: object): Promise<Frame | {source:string}> {
     try {
       validateTransfer(message);
     } catch (e) {

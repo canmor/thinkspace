@@ -1,0 +1,103 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-Eopet9eXOfZ33jrfV3xqDzDUjNGy3\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783683,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([start,timeInput,rateInput,remainingMetric,drainedMetric])\\\\n$minutes = 2\\\\n$rate = 3\\\\nstart = Text(\\\\\\\"The tank starts with 24 litres and stops draining when empty.\\\\\\\")\\\\ntimeInput = Control(\\\\\\\"Elapsed time (minutes)\\\\\\\", 0, 6, [], $minutes)\\\\nrateInput = Control(\\\\\\\"Drain rate (litres per minute)\\\\\\\", 2, 5, [], $rate)\\\\nbalance = 24 - $minutes * $rate\\\\nremaining = balance > 0 ? balance : 0\\\\nremainingMetric = Metric(\\\\\\\"Water remaining (litres)\\\\\\\", remaining)\\\\ndrainedMetric = Metric(\\\\\\\"Water drained (litres)\\\\\\\", 24 - remaining)\\\",\\n      \\\"state\\\": [\\n        {\\\"name\\\": \\\"minutes\\\", \\\"value\\\": 4},\\n        {\\\"name\\\": \\\"rate\\\", \\\"value\\\": 4}\\n      ]\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1695,\n    \"completion_tokens\": 229,\n    \"total_tokens\": 1924,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1692,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 4114,
+  "usage": {
+    "prompt_tokens": 1695,
+    "completion_tokens": 229,
+    "total_tokens": 1924,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1692,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([start,timeInput,rateInput,remainingMetric,drainedMetric])\\n$minutes = 2\\n$rate = 3\\nstart = Text(\\\"The tank starts with 24 litres and stops draining when empty.\\\")\\ntimeInput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nrateInput = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - $minutes * $rate\\nremaining = balance > 0 ? balance : 0\\nremainingMetric = Metric(\\\"Water remaining (litres)\\\", remaining)\\ndrainedMetric = Metric(\\\"Water drained (litres)\\\", 24 - remaining)\",\n      \"state\": [\n        {\"name\": \"minutes\", \"value\": 4},\n        {\"name\": \"rate\", \"value\": 4}\n      ]\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"water-oui-1702\",\"base\":2,\"original\":\"Build a water tank calculator. Elapsed time is 0–6 whole minutes, initially 2. A tank starts with 24 litres and drains 3 litres per minute. Show remaining litres.\",\"previousRequests\":[\"Add a control for the drain rate, 2–5 whole litres per minute, initially 3. Stop at zero litres.\",\"Add a line plot of remaining litres at each whole minute from 0 through 6 for the chosen rate.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([start,timeInput,rateInput,result,plot])\\\\n$minutes = 2\\\\n$rate = 3\\\\nstart = Text(\\\\\\\"The tank starts with 24 litres and stops draining when empty.\\\\\\\")\\\\ntimeInput = Control(\\\\\\\"Elapsed time (minutes)\\\\\\\", 0, 6, [], $minutes)\\\\nrateInput = Control(\\\\\\\"Drain rate (litres per minute)\\\\\\\", 2, 5, [], $rate)\\\\nbalance = 24 - $minutes * $rate\\\\nresult = Metric(\\\\\\\"Water remaining (litres)\\\\\\\", balance > 0 ? balance : 0)\\\\nline = $rate == 2 ? \\\\\\\"M 60 34 L 115 40 L 170 46 L 225 52 L 280 58 L 335 64 L 390 70\\\\\\\" : $rate == 3 ? \\\\\\\"M 60 34 L 115 43 L 170 52 L 225 61 L 280 70 L 335 79 L 390 88\\\\\\\" : $rate == 4 ? \\\\\\\"M 60 34 L 115 46 L 170 58 L 225 70 L 280 82 L 335 94 L 390 106\\\\\\\" : \\\\\\\"M 60 34 L 115 49 L 170 64 L 225 79 L 280 94 L 335 106 L 390 106\\\\\\\"\\\\nplot = Graphic(\\\\\\\"Water remaining by minute at the chosen drain rate\\\\\\\", [{kind:\\\\\\\"path\\\\\\\",d:\\\\\\\"M 54 28 V 106 H 396 M 49 34 H 54 M 49 70 H 54 M 49 106 H 54 M 60 106 V 111 M 115 106 V 111 M 170 106 V 111 M 225 106 V 111 M 280 106 V 111 M 335 106 V 111 M 390 106 V 111\\\\\\\"},{kind:\\\\\\\"path\\\\\\\",d:line},{kind:\\\\\\\"text\\\\\\\",x:13,y:19,text:\\\\\\\"Litres\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:28,y:39,text:\\\\\\\"24\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:28,y:75,text:\\\\\\\"12\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:36,y:110,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:56,y:126,text:\\\\\\\"0\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:111,y:126,text:\\\\\\\"1\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:166,y:126,text:\\\\\\\"2\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:221,y:126,text:\\\\\\\"3\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:276,y:126,text:\\\\\\\"4\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:331,y:126,text:\\\\\\\"5\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:386,y:126,text:\\\\\\\"6\\\\\\\"},{kind:\\\\\\\"text\\\\\\\",x:404,y:126,text:\\\\\\\"min\\\\\\\"}])\\\",\\\"state\\\":[{\\\"name\\\":\\\"minutes\\\",\\\"value\\\":4},{\\\"name\\\":\\\"rate\\\",\\\"value\\\":4}]}]}\",\"controls\":[{\"type\":\"Control\",\"binding\":\"minutes\",\"props\":{\"label\":\"Elapsed time (minutes)\",\"min\":0,\"max\":6,\"choices\":[],\"value\":4}},{\"type\":\"Control\",\"binding\":\"rate\",\"props\":{\"label\":\"Drain rate (litres per minute)\",\"min\":2,\"max\":5,\"choices\":[],\"value\":4}}],\"request\":\"Replace the plot with a metric for litres drained by the selected time. Retain the remaining-litres metric.\"}"
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([start,timeInput,rateInput,remainingMetric,drainedMetric])\\n$minutes = 2\\n$rate = 3\\nstart = Text(\\\"The tank starts with 24 litres and stops draining when empty.\\\")\\ntimeInput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nrateInput = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - $minutes * $rate\\nremaining = balance > 0 ? balance : 0\\nremainingMetric = Metric(\\\"Water remaining (litres)\\\", remaining)\\ndrainedMetric = Metric(\\\"Water drained (litres)\\\", 24 - remaining)\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Text",
+          "props": {
+            "text": "The tank starts with 24 litres and stops draining when empty."
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Water drained (litres)",
+            "value": 16
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 4
+      }
+    },
+    "decisions": [
+      {
+        "role": "time",
+        "from": "minutes",
+        "key": "minutes",
+        "action": "retained",
+        "value": 4,
+        "domainChanged": false
+      },
+      {
+        "role": "rate",
+        "from": "rate",
+        "key": "rate",
+        "action": "retained",
+        "value": 4,
+        "domainChanged": false
+      }
+    ]
+  }
+}

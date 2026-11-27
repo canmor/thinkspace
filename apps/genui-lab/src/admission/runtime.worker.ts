@@ -5,7 +5,7 @@ let session: ReturnType<typeof admit> | undefined;
 self.onmessage = ({ data }) => {
   try {
     validateTransfer(data);
-    if(data.kind==="reconstruct"){
+    if(data.kind==="reconstruct" && self.name==="revision-experiment"){
       const source=reconstruct(data.protocol,data.source,data.raw,data.artifact,data.base);
       self.postMessage({frame:{source}});
       return;

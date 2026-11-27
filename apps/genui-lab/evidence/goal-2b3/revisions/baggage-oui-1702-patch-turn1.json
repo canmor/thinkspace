@@ -1,0 +1,159 @@
+{
+  "task": "baggage",
+  "protocol": "oui",
+  "seed": 1702,
+  "mode": "patch",
+  "turn": 1,
+  "before": {
+    "artifact": "baggage-oui-1702",
+    "revision": 0,
+    "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"For one bag, Gold adds 5 kg to the cabin allowance. You pay $15 for each kilogram over your allowance and nothing if the bag is at or below it.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([cabin, status, weight, allowanceResult, feeResult])\\n$cabin = 0\\n$gold = 0\\n$weight = 23\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowance = base + $gold * 5\\nexcess = $weight > allowance ? $weight - allowance : 0\\nallowanceResult = Metric(\\\"Bag allowance (kg)\\\", allowance)\\nfeeResult = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\",\n      \"state\": []\n    }\n  ]\n}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "cabin",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "gold",
+          "props": {
+            "label": "Gold status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No Gold",
+              "Gold"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "weight",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 28
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 150
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 1,
+        "weight": 38
+      }
+    }
+  },
+  "after": {
+    "artifact": "baggage-oui-1702",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"For one bag, Gold adds 5 kg to the cabin allowance. You pay $15 for each kilogram over your allowance and nothing if the bag is at or below it.\"},{\"type\":\"ui\",\"source\":\"root = Stack([cabin, status, route, weight, allowanceResult, feeResult])\\n$cabin = 0\\n$gold = 1\\n$weight = 38\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowance = base + $gold * 5 + $route * 2\\nexcess = $weight > allowance ? $weight - allowance : 0\\nallowanceResult = Metric(\\\"Bag allowance (kg)\\\", allowance)\\nfeeResult = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\\n$route = 0\\nroute = Control(\\\"Route\\\", 0, 1, [\\\"Domestic\\\", \\\"International\\\"], $route)\",\"state\":[{\"name\":\"cabin\",\"value\":0},{\"name\":\"gold\",\"value\":1},{\"name\":\"weight\",\"value\":38},{\"name\":\"route\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "cabin",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "gold",
+          "props": {
+            "label": "Gold status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No Gold",
+              "Gold"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "route",
+          "props": {
+            "label": "Route",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Domestic",
+              "International"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "weight",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 28
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 150
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 1,
+        "weight": 38,
+        "route": 0
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 4505.413042,
+  "attempts": 1
+}

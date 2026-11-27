@@ -1,0 +1,232 @@
+{
+  "task": "baggage",
+  "protocol": "oui",
+  "seed": 1701,
+  "mode": "full",
+  "turn": 2,
+  "before": {
+    "artifact": "baggage-oui-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Economy includes 23 kg and Business includes 32 kg for one bag. Gold adds 5 kg, and International adds 2 kg. The fee is $15 per kg over your allowance, or $0 at or below it.\"},{\"type\":\"ui\",\"source\":\"root = Stack([cabin, status, route, weight, allowance, fee])\\n$cabin = 0\\n$gold = 0\\n$route = 0\\n$weight = 23\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nroute = Control(\\\"Route\\\", 0, 1, [\\\"Domestic\\\", \\\"International\\\"], $route)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowed = base + $gold * 5 + $route * 2\\nexcess = $weight > allowed ? $weight - allowed : 0\\nallowance = Metric(\\\"Bag allowance (kg)\\\", allowed)\\nfee = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\",\"state\":[{\"name\":\"cabin\",\"value\":0},{\"name\":\"gold\",\"value\":1},{\"name\":\"route\",\"value\":0},{\"name\":\"weight\",\"value\":38}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "cabin",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "gold",
+          "props": {
+            "label": "Gold status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No Gold",
+              "Gold"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "route",
+          "props": {
+            "label": "Route",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Domestic",
+              "International"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "weight",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 30
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 120
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 1,
+        "route": 1,
+        "weight": 38
+      }
+    }
+  },
+  "after": {
+    "artifact": "baggage-oui-1701",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Economy includes 23 kg and Business includes 32 kg for one bag. Gold adds 5 kg, and International adds 2 kg. The fee is $15 per kg over your allowance and $0 at or below it. The curve covers every whole weight from 10 to 40 kg; the dot marks your selected weight.\"},{\"type\":\"ui\",\"source\":\"root = Stack([cabin, status, route, weight, allowance, fee, curve])\\n$cabin = 0\\n$gold = 0\\n$route = 0\\n$weight = 23\\ncabin = Control(\\\"Cabin\\\", 0, 1, [\\\"Economy\\\", \\\"Business\\\"], $cabin)\\nstatus = Control(\\\"Gold status\\\", 0, 1, [\\\"No Gold\\\", \\\"Gold\\\"], $gold)\\nroute = Control(\\\"Route\\\", 0, 1, [\\\"Domestic\\\", \\\"International\\\"], $route)\\nweight = Control(\\\"Bag weight (kg)\\\", 10, 40, [], $weight)\\nbase = $cabin == 0 ? 23 : 32\\nallowed = base + $gold * 5 + $route * 2\\nexcess = $weight > allowed ? $weight - allowed : 0\\nallowance = Metric(\\\"Bag allowance (kg)\\\", allowed)\\nfee = Metric(\\\"Single-bag fee ($)\\\", excess * 15)\\nline = allowed == 23 ? \\\"M 40 102 H 209 L 430 17\\\" : allowed == 25 ? \\\"M 40 102 H 235 L 430 27\\\" : allowed == 28 ? \\\"M 40 102 H 274 L 430 42\\\" : allowed == 30 ? \\\"M 40 102 H 300 L 430 52\\\" : allowed == 32 ? \\\"M 40 102 H 326 L 430 62\\\" : allowed == 34 ? \\\"M 40 102 H 352 L 430 72\\\" : allowed == 37 ? \\\"M 40 102 H 391 L 430 87\\\" : \\\"M 40 102 H 417 L 430 97\\\"\\nmarkX = 40 + ($weight - 10) * 13\\nmarkY = 102 - excess * 5\\ncurve = Graphic(\\\"Single-bag fee ($) by bag weight (kg)\\\", [{kind:\\\"path\\\",d:\\\"M 35 17 H 40 V 108 H 430 M 35 102 H 40 M 40 108 V 112 M 170 108 V 112 M 300 108 V 112 M 430 108 V 112\\\"},{kind:\\\"text\\\",x:2,y:21,text:\\\"$255\\\"},{kind:\\\"text\\\",x:12,y:105,text:\\\"$0\\\"},{kind:\\\"text\\\",x:33,y:127,text:\\\"10\\\"},{kind:\\\"text\\\",x:163,y:127,text:\\\"20\\\"},{kind:\\\"text\\\",x:293,y:127,text:\\\"30\\\"},{kind:\\\"text\\\",x:411,y:127,text:\\\"40 kg\\\"},{kind:\\\"path\\\",d:line},{kind:\\\"circle\\\",cx:markX,cy:markY,r:4}])\",\"state\":[{\"name\":\"cabin\",\"value\":0},{\"name\":\"gold\",\"value\":1},{\"name\":\"route\",\"value\":1},{\"name\":\"weight\",\"value\":38}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "cabin",
+          "props": {
+            "label": "Cabin",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Economy",
+              "Business"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "gold",
+          "props": {
+            "label": "Gold status",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "No Gold",
+              "Gold"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "route",
+          "props": {
+            "label": "Route",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Domestic",
+              "International"
+            ],
+            "value": 1
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "weight",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 30
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 120
+          }
+        },
+        {
+          "type": "Graphic",
+          "props": {
+            "label": "Single-bag fee ($) by bag weight (kg)",
+            "items": [
+              {
+                "kind": "path",
+                "d": "M 35 17 H 40 V 108 H 430 M 35 102 H 40 M 40 108 V 112 M 170 108 V 112 M 300 108 V 112 M 430 108 V 112"
+              },
+              {
+                "kind": "text",
+                "x": 2,
+                "y": 21,
+                "text": "$255"
+              },
+              {
+                "kind": "text",
+                "x": 12,
+                "y": 105,
+                "text": "$0"
+              },
+              {
+                "kind": "text",
+                "x": 33,
+                "y": 127,
+                "text": "10"
+              },
+              {
+                "kind": "text",
+                "x": 163,
+                "y": 127,
+                "text": "20"
+              },
+              {
+                "kind": "text",
+                "x": 293,
+                "y": 127,
+                "text": "30"
+              },
+              {
+                "kind": "text",
+                "x": 411,
+                "y": 127,
+                "text": "40 kg"
+              },
+              {
+                "kind": "path",
+                "d": "M 40 102 H 300 L 430 52"
+              },
+              {
+                "kind": "circle",
+                "cx": 404,
+                "cy": 62,
+                "r": 4
+              }
+            ]
+          }
+        }
+      ],
+      "state": {
+        "cabin": 0,
+        "gold": 1,
+        "route": 1,
+        "weight": 38
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 24609.943499999998,
+  "attempts": 1
+}

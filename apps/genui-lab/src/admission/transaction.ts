@@ -35,17 +35,17 @@ export class ArtifactTransaction {
     const live=this.live;
     check(live && live.artifact===artifact && live.revision===base,"Wrong artifact or stale revision");
     const ticket=++this.epoch;
-    const client=new RestrictedClient();
+    const client=new RestrictedClient("revision-experiment");
     try{
-    if(mode==="patch"){
-      const env=decodeEnvelope(live.raw);
-      check(env.view,"Missing base UI");
-      env.view.source=(await client.request({kind:"reconstruct",protocol:live.protocol,source:env.view.source,raw,artifact,base})).source;
-      env.view.state=[];
-      raw=JSON.stringify({version:"2b1",blocks:env.blocks});
-    }
-    const env=decodeEnvelope(raw);
-    check(env.view,"Missing revised UI");
+      if(mode==="patch"){
+        const env=decodeEnvelope(live.raw);
+        check(env.view,"Missing base UI");
+        env.view.source=(await client.request({kind:"reconstruct",protocol:live.protocol,source:env.view.source,raw,artifact,base})).source;
+        env.view.state=[];
+        raw=JSON.stringify({version:"2b1",blocks:env.blocks});
+      }
+      const env=decodeEnvelope(raw);
+      check(env.view,"Missing revised UI");
       const open={kind:"open",protocol:live.protocol,source:env.view.source};
       const candidate=await client.request({...open,state:env.state});
       const {state,decisions}=migrate(live.frame,candidate,this.identify);

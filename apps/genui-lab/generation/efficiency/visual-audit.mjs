@@ -52,6 +52,8 @@ try{
     return {role,c,positions,semantic:domain[0] instanceof RegExp?[0,1]:domain}
    })
    const states=bindings.reduce((rows,b)=>rows.flatMap(s=>b.positions.map((pos,i)=>({...s,[b.role]:{pos,val:b.semantic[i]}}))),[{}])
+   const defaults={business:0,gold:1,international:1,weight:38,adjustment:0,pace:4}
+   row.initialSelections=bindings.every(b=>b.semantic[b.positions.indexOf(frame.state[b.c.binding])]===defaults[b.role])
    for(const s of states){
     for(const {c,role} of bindings){
      const value=s[role].pos
@@ -66,6 +68,8 @@ try{
     const chart=frame.items.find(c=>c.type==='Chart')
     if(!chart){auditSvg(run,frame,expected,units[run.task]);row.checked++;continue}
     const p=chart.props
+    const labels={fee:[/fee/i],policies:[/old|15/i,/new|20/i],kiln:[/30/,/20/],tide:[/depth/i],archive:[/page/i]}
+    assert.ok(labels[run.task].every((re,i)=>re.test(p.series[i]?.label)),'Series identity')
     const actual=p.series.map(serie=>p.x.map((x,i)=>[x,serie.values[i]]))
     assert.deepEqual(actual,expected,'Series at '+JSON.stringify(state))
     assert.ok(units[run.task][0].test(p.xLabel)&&units[run.task][1].test(p.yLabel),'Axis units')

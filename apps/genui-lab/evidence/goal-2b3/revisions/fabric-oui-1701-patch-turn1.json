@@ -1,0 +1,82 @@
+{
+  "task": "fabric",
+  "protocol": "oui",
+  "seed": 1701,
+  "mode": "patch",
+  "turn": 1,
+  "before": {
+    "artifact": "fabric-oui-1701",
+    "revision": 0,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input,result])\\n$count = 2\\ninput = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nresult = Metric(\\\"Total (metres)\\\", $count * 3)\",\"state\":[{\"name\":\"count\",\"value\":2}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total (metres)",
+            "value": 9
+          }
+        }
+      ],
+      "state": {
+        "count": 3
+      }
+    }
+  },
+  "after": {
+    "artifact": "fabric-oui-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, hemInput, result])\\n$count = 2\\ninput = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nresult = Metric(\\\"Total cloth (metres)\\\", $count * (3 + $hem))\\n$hem = 0\\nhemInput = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $hem)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "hem",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 0
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth (metres)",
+            "value": 9
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 0
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 3336.527541999996,
+  "attempts": 1
+}

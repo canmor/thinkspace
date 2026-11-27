@@ -1,0 +1,85 @@
+{
+  "task": "tickets",
+  "protocol": "oui",
+  "seed": 1701,
+  "mode": "full",
+  "turn": 1,
+  "before": {
+    "artifact": "tickets-oui-1701",
+    "revision": 0,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input,result])\\n$count = 2\\ninput = Control(\\\"Ticket count\\\", 1, 5, [], $count)\\nresult = Metric(\\\"Total ($)\\\", $count * 8)\",\"state\":[{\"name\":\"count\",\"value\":2}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 24
+          }
+        }
+      ],
+      "state": {
+        "count": 3
+      }
+    }
+  },
+  "after": {
+    "artifact": "tickets-oui-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([countInput, typeInput, total])\\n$count = 2\\n$ticketType = 0\\ncountInput = Control(\\\"Ticket count\\\", 1, 5, [], $count)\\ntypeInput = Control(\\\"Ticket type\\\", 0, 1, [\\\"Adult\\\", \\\"Child\\\"], $ticketType)\\nprice = $ticketType == 0 ? 8 : 5\\ntotal = Metric(\\\"Total ($)\\\", $count * price)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"ticketType\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Ticket count",
+            "min": 1,
+            "max": 5,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "ticketType",
+          "props": {
+            "label": "Ticket type",
+            "min": 0,
+            "max": 1,
+            "choices": [
+              "Adult",
+              "Child"
+            ],
+            "value": 0
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total ($)",
+            "value": 24
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "ticketType": 0
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 3724.7845839999936,
+  "attempts": 1
+}

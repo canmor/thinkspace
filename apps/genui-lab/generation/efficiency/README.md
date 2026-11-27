@@ -10,6 +10,7 @@ npx playwright install chromium
 npm run build
 records=evidence/goal-2b3
 scratch=$(mktemp -d)
+node generation/efficiency/visual-replay.mjs dist "$records/visual" "$scratch/visual-replay.json"
 node generation/efficiency/visual-audit.mjs dist "$records/visual" "$scratch/visual-audit.json"
 node generation/efficiency/render-audit.mjs dist "$records/visual" "$scratch/render-audit.json"
 node generation/efficiency/revision-preflight.mjs dist "$scratch/revision-preflight.json"

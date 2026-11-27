@@ -1,0 +1,97 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-EopcN42QbpfACyxMbdQ368aKQtqfH\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783527,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"root = Stack([input, hemControl, result, cost])\\\\n$count = 2\\\\n$hem = 0\\\\ninput = Control(\\\\\\\"Panel count\\\\\\\", 1, 4, [], $count)\\\\nhemControl = Control(\\\\\\\"Hem allowance (metres per panel)\\\\\\\", 0, 2, [], $hem)\\\\ntotal = $count * (3 + $hem)\\\\nresult = Metric(\\\\\\\"Total cloth including hems (metres)\\\\\\\", total)\\\\ncost = Metric(\\\\\\\"Total cost at $6 per metre (dollars)\\\\\\\", total * 6)\\\",\\n      \\\"state\\\": [\\n        {\\\"name\\\": \\\"count\\\", \\\"value\\\": 3},\\n        {\\\"name\\\": \\\"hem\\\", \\\"value\\\": 1}\\n      ]\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1068,\n    \"completion_tokens\": 194,\n    \"total_tokens\": 1262,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1065,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 4547,
+  "usage": {
+    "prompt_tokens": 1068,
+    "completion_tokens": 194,
+    "total_tokens": 1262,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1065,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"ui\",\n      \"source\": \"root = Stack([input, hemControl, result, cost])\\n$count = 2\\n$hem = 0\\ninput = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nhemControl = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $hem)\\ntotal = $count * (3 + $hem)\\nresult = Metric(\\\"Total cloth including hems (metres)\\\", total)\\ncost = Metric(\\\"Total cost at $6 per metre (dollars)\\\", total * 6)\",\n      \"state\": [\n        {\"name\": \"count\", \"value\": 3},\n        {\"name\": \"hem\", \"value\": 1}\n      ]\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nOne assignment per physical line. root = Stack([leafName, otherLeaf]). Each leaf is one named call: Text(\"text\"), Metric(\"label\",numericValue), Control(\"label\",literalMin,literalMax,choices,$variable), Table([{label:\"name\",score:number}]), Graphic(\"label\",items). Declare $variable = integer and bind it to exactly one Control. Use [] for range or literal string options indexed 0..n-1. Derived name = expression. Strings use double quotes. Numeric + - * /, == > <, condition ? yes : no, arrays, objects, named references, @Sum(numbers), @Sort(rows,\"score\",\"desc\") are allowed. No unary minus, concatenation, member access, map, interpolation or inline nested components. Produce complete root and definitions.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"root = Stack([choice,result])\\n$n = 1\\nchoice = Control(\\\"Chimes\\\", 1, 5, [], $n)\\nresult = Metric(\\\"Beats\\\", $n * 3)\",\"state\":[]}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"fabric-oui-1701\",\"base\":1,\"original\":\"Build a cloth estimator. Panel count is 1–4 whole panels, initially 2. Each requires 3 metres of cloth. Show total metres.\",\"previousRequests\":[\"Add a hem allowance control, 0–2 whole metres per panel, initially 0. Include hems in the total.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"root = Stack([input,hemControl,result])\\\\n$count = 2\\\\n$hem = 0\\\\ninput = Control(\\\\\\\"Panel count\\\\\\\", 1, 4, [], $count)\\\\nhemControl = Control(\\\\\\\"Hem allowance (metres per panel)\\\\\\\", 0, 2, [], $hem)\\\\nresult = Metric(\\\\\\\"Total cloth including hems (metres)\\\\\\\", $count * (3 + $hem))\\\",\\\"state\\\":[{\\\"name\\\":\\\"count\\\",\\\"value\\\":3},{\\\"name\\\":\\\"hem\\\",\\\"value\\\":0}]}]}\",\"controls\":[{\"type\":\"Control\",\"binding\":\"count\",\"props\":{\"label\":\"Panel count\",\"min\":1,\"max\":4,\"choices\":[],\"value\":3}},{\"type\":\"Control\",\"binding\":\"hem\",\"props\":{\"label\":\"Hem allowance (metres per panel)\",\"min\":0,\"max\":2,\"choices\":[],\"value\":1}}],\"request\":\"Show the cost in dollars at 6 dollars per metre as a separate metric.\"}"
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, hemControl, result, cost])\\n$count = 2\\n$hem = 0\\ninput = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nhemControl = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $hem)\\ntotal = $count * (3 + $hem)\\nresult = Metric(\\\"Total cloth including hems (metres)\\\", total)\\ncost = Metric(\\\"Total cost at $6 per metre (dollars)\\\", total * 6)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "hem",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth including hems (metres)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cost at $6 per metre (dollars)",
+            "value": 72
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 1
+      }
+    },
+    "decisions": [
+      {
+        "role": "count",
+        "from": "count",
+        "key": "count",
+        "action": "retained",
+        "value": 3,
+        "domainChanged": false
+      },
+      {
+        "role": "hem",
+        "from": "hem",
+        "key": "hem",
+        "action": "retained",
+        "value": 1,
+        "domainChanged": false
+      }
+    ]
+  }
+}

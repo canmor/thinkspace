@@ -1,0 +1,97 @@
+{
+  "rawResponse": "{\n  \"id\": \"chatcmpl-EopinAmQ4gOvZyBacbq1LsMtSjHPt\",\n  \"object\": \"chat.completion\",\n  \"created\": 1795783925,\n  \"model\": \"gpt-6.2-sol\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"version\\\": \\\"2b1\\\",\\n  \\\"blocks\\\": [\\n    {\\n      \\\"type\\\": \\\"text\\\",\\n      \\\"text\\\": \\\"Each panel uses 3 metres of cloth plus its hem allowance. Cloth costs $6 per metre.\\\"\\n    },\\n    {\\n      \\\"type\\\": \\\"ui\\\",\\n      \\\"source\\\": \\\"{\\\\\\\"root\\\\\\\":\\\\\\\"layout\\\\\\\",\\\\\\\"elements\\\\\\\":{\\\\\\\"layout\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"props\\\\\\\":{},\\\\\\\"children\\\\\\\":[\\\\\\\"panels\\\\\\\",\\\\\\\"hem\\\\\\\",\\\\\\\"total\\\\\\\",\\\\\\\"cost\\\\\\\"]},\\\\\\\"panels\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Panel count\\\\\\\",\\\\\\\"min\\\\\\\":1,\\\\\\\"max\\\\\\\":4,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/count\\\\\\\"}}},\\\\\\\"hem\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Hem allowance (metres per panel)\\\\\\\",\\\\\\\"min\\\\\\\":0,\\\\\\\"max\\\\\\\":2,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/hem\\\\\\\"}}},\\\\\\\"total\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Metric\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Total cloth including hems (metres)\\\\\\\",\\\\\\\"value\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/count\\\\\\\"},\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":3,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/hem\\\\\\\"}}}}}}},\\\\\\\"cost\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Metric\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Total cloth cost (dollars)\\\\\\\",\\\\\\\"value\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":6,\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/count\\\\\\\"},\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":3,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/hem\\\\\\\"}}}}}}}}}}}\\\",\\n      \\\"state\\\": [\\n        {\\\"name\\\": \\\"count\\\", \\\"value\\\": 3},\\n        {\\\"name\\\": \\\"hem\\\", \\\"value\\\": 1}\\n      ]\\n    }\\n  ]\\n}\",\n        \"refusal\": null,\n        \"annotations\": []\n      },\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 1413,\n    \"completion_tokens\": 368,\n    \"total_tokens\": 1781,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"cache_write_tokens\": 1410,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": null\n}\n",
+  "latencyMs": 6145,
+  "usage": {
+    "prompt_tokens": 1413,
+    "completion_tokens": 368,
+    "total_tokens": 1781,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1410,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": "{\n  \"version\": \"2b1\",\n  \"blocks\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"Each panel uses 3 metres of cloth plus its hem allowance. Cloth costs $6 per metre.\"\n    },\n    {\n      \"type\": \"ui\",\n      \"source\": \"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"panels\\\",\\\"hem\\\",\\\"total\\\",\\\"cost\\\"]},\\\"panels\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Panel count\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/count\\\"}}},\\\"hem\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Hem allowance (metres per panel)\\\",\\\"min\\\":0,\\\"max\\\":2,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/hem\\\"}}},\\\"total\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth including hems (metres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}},\\\"cost\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth cost (dollars)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":6,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}}}}}}\",\n      \"state\": [\n        {\"name\": \"count\", \"value\": 3},\n        {\"name\": \"hem\", \"value\": 1}\n      ]\n    }\n  ]\n}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return a complete version 2b1 ordered block envelope using the supplied JSON schema. Use text blocks for prose. At most one ui block contains only the requested protocol source and initial integer state entries (empty uses defaults). No fences. No JavaScript, tools, events, HTML or links. One Stack with unique named leaves. Up to 40 leaves, 40 collection members, 64 declarations, depth 32, 16000 UTF-8 source bytes, 10000 frame bytes. Integers for input state. Names start with ASCII letter, then alphanumeric or underscore, at most 48 characters. All declarations must be reachable. Text and labels at most 512 characters. Safe Graphic items use kind plus only required fields: rect(x,y,width,height), circle(cx,cy,r), text(x,y,text), path(d using only M L H V Z, lowercase equivalents, numbers, spaces or commas), group(items of leaves). Numeric coordinates 0..640; viewBox 0 0 450 135.\nReturn strict JSON with only root (element ID) and elements (object). Root element {\"type\":\"Stack\",\"props\":{},\"children\":[\"leafId\"]}. Each leaf has only type and props. Text props {text}; Metric {label,value}; Control {label,min,max,choices,value:{\"$bindState\":\"/name\"}}; Table {values:[{label,score}]}; Graphic {label,items}. Numeric inputs default to minima unless the envelope initial state supplies every binding. Read with {\"$state\":\"/name\"}. Computations use {\"$computed\":\"Add\",\"args\":{\"a\":number,\"b\":number}}; Multiply and Excess have the same args, Excess means max(0,a-b). Rank takes args rows (array of [name,[three numeric scores]]), a,b,c (numeric weights) and produces sorted weighted rows. No other functions, properties or nesting of components.\nChoose text for a simple definition. Use a legible diagram if spatial relationships aid understanding. Use controls for a changing decision. Label units, state assumptions, use short readable labels, give each output an informative name and check zero or boundary conditions. Keep geometry inside the viewBox.\nTreat the request as the complete source of domain rules. Include exactly its input dimensions, options, units, defaults and ranges. Check that each input changes the intended outputs. Do not invent extra tiers, exceptions or fees. Interpret terminology in its application context. Provide an actual interaction when requested. Do not claim a visible control exists in prose alone.\nUnrelated response-shape examples. Derive the actual content from the user request.\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"A glossary lists terms and their meanings.\"}]}\n{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each chime has three beats.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"choice\\\",\\\"result\\\"]},\\\"choice\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Chimes\\\",\\\"min\\\":1,\\\"max\\\":5,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/n\\\"}}},\\\"result\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Beats\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/n\\\"},\\\"b\\\":3}}}}}}\",\"state\":[]}]}"
+    },
+    {
+      "role": "user",
+      "content": "{\"artifact\":\"fabric-json-1701\",\"base\":1,\"original\":\"Build a cloth estimator. Panel count is 1–4 whole panels, initially 2. Each requires 3 metres of cloth. Show total metres.\",\"previousRequests\":[\"Add a hem allowance control, 0–2 whole metres per panel, initially 0. Include hems in the total.\"],\"currentArtifact\":\"{\\\"version\\\":\\\"2b1\\\",\\\"blocks\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Each panel uses 3 metres of cloth plus the selected hem allowance.\\\"},{\\\"type\\\":\\\"ui\\\",\\\"source\\\":\\\"{\\\\\\\"root\\\\\\\":\\\\\\\"layout\\\\\\\",\\\\\\\"elements\\\\\\\":{\\\\\\\"layout\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Stack\\\\\\\",\\\\\\\"props\\\\\\\":{},\\\\\\\"children\\\\\\\":[\\\\\\\"panels\\\\\\\",\\\\\\\"hem\\\\\\\",\\\\\\\"total\\\\\\\"]},\\\\\\\"panels\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Panel count\\\\\\\",\\\\\\\"min\\\\\\\":1,\\\\\\\"max\\\\\\\":4,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/count\\\\\\\"}}},\\\\\\\"hem\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Control\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Hem allowance (metres per panel)\\\\\\\",\\\\\\\"min\\\\\\\":0,\\\\\\\"max\\\\\\\":2,\\\\\\\"choices\\\\\\\":[],\\\\\\\"value\\\\\\\":{\\\\\\\"$bindState\\\\\\\":\\\\\\\"/hem\\\\\\\"}}},\\\\\\\"total\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"Metric\\\\\\\",\\\\\\\"props\\\\\\\":{\\\\\\\"label\\\\\\\":\\\\\\\"Total cloth including hems (metres)\\\\\\\",\\\\\\\"value\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Multiply\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/count\\\\\\\"},\\\\\\\"b\\\\\\\":{\\\\\\\"$computed\\\\\\\":\\\\\\\"Add\\\\\\\",\\\\\\\"args\\\\\\\":{\\\\\\\"a\\\\\\\":3,\\\\\\\"b\\\\\\\":{\\\\\\\"$state\\\\\\\":\\\\\\\"/hem\\\\\\\"}}}}}}}}}\\\",\\\"state\\\":[{\\\"name\\\":\\\"count\\\",\\\"value\\\":3},{\\\"name\\\":\\\"hem\\\",\\\"value\\\":0}]}]}\",\"controls\":[{\"type\":\"Control\",\"props\":{\"label\":\"Panel count\",\"min\":1,\"max\":4,\"choices\":[],\"value\":3},\"binding\":\"count\"},{\"type\":\"Control\",\"props\":{\"label\":\"Hem allowance (metres per panel)\",\"min\":0,\"max\":2,\"choices\":[],\"value\":1},\"binding\":\"hem\"}],\"request\":\"Show the cost in dollars at 6 dollars per metre as a separate metric.\"}"
+    }
+  ],
+  "result": {
+    "status": "accepted",
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each panel uses 3 metres of cloth plus its hem allowance. Cloth costs $6 per metre.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"panels\\\",\\\"hem\\\",\\\"total\\\",\\\"cost\\\"]},\\\"panels\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Panel count\\\",\\\"min\\\":1,\\\"max\\\":4,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/count\\\"}}},\\\"hem\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Hem allowance (metres per panel)\\\",\\\"min\\\":0,\\\"max\\\":2,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/hem\\\"}}},\\\"total\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth including hems (metres)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}},\\\"cost\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Total cloth cost (dollars)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":6,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/count\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":3,\\\"b\\\":{\\\"$state\\\":\\\"/hem\\\"}}}}}}}}}}}\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"hem\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          },
+          "binding": "count"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "hem"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth including hems (metres)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth cost (dollars)",
+            "value": 72
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "hem": 1
+      }
+    },
+    "decisions": [
+      {
+        "role": "count",
+        "from": "count",
+        "key": "count",
+        "action": "retained",
+        "value": 3,
+        "domainChanged": false
+      },
+      {
+        "role": "hem",
+        "from": "hem",
+        "key": "hem",
+        "action": "retained",
+        "value": 1,
+        "domainChanged": false
+      }
+    ]
+  }
+}

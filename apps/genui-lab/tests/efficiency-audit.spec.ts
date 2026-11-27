@@ -3,6 +3,7 @@ import {readdirSync,readFileSync,writeFileSync} from "node:fs";
 import {join} from "node:path";
 import {admit} from "../src/admission/session";
 import {decodeEnvelope} from "../src/envelope";
+import {checkRevisionCurve} from "../generation/efficiency/revision-curves.mjs";
 import {expectedMetrics} from "../generation/efficiency/oracles.mjs";
 
 const range=(lo:number,hi:number)=>Array.from({length:hi-lo+1},(_,i)=>lo+i);
@@ -32,8 +33,7 @@ function mapControls(task,frame){
  return map;
 }
 const root=process.env.EFFICIENCY_AUDIT_DIR;
-test("independent generated revision behavior and rollback audit",()=>{
- test.skip(!root,"Requires collected revision evidence");
+if(root)test("independent generated revision behavior and rollback audit",()=>{
  const results=[];
  for(const file of readdirSync(root).filter(n=>/-turn[123]\.json$/.test(n)).sort()){
   const row=JSON.parse(readFileSync(join(root,file),"utf8")),r={file,status:row.delivery,checked:0};
@@ -49,6 +49,10 @@ test("independent generated revision behavior and rollback audit",()=>{
     expect(next.positions.indexOf(frame.state[next.key])).toBe(prior.positions.indexOf(row.before.frame.state[prior.key]));
    }
    r.continuity=true;
+   if(row.turn===1){
+    const [role,want]={baggage:["international",0],tickets:["child",0],water:["rate",3],fabric:["hem",0]}[row.task];
+    const c=now[role];r.introducedDefault=c?.values[c.positions.indexOf(frame.state[c.key])]===want;
+   }
    expect(Object.keys(now).sort()).toEqual(Object.keys(domains[row.task]).sort());
    const states=Object.entries(now).reduce((rows,[role,c])=>rows.flatMap(s=>c.values.map((v,i)=>({...s,[role]:[v,c.positions[i]]}))),[{}]);
    for(const s of states){
@@ -59,12 +63,15 @@ test("independent generated revision behavior and rollback audit",()=>{
     const metrics=frame.items.filter(x=>x.type==="Metric");
     for(const [role,want] of Object.entries(expectedMetrics(row.task,row.turn,values))){
      const pattern=role==="fee"&&row.turn===3?/old|original/i:role==="metres"&&row.turn>=2?/metre|meter|length/i:metricRoles[role];
-     const found=metrics.filter(x=>pattern.test(x.props.label));
+     const found=metrics.filter(x=>pattern.test(x.props.label)&&(role!=="metres"||!/cost|dollar|price|\$/.test(x.props.label.toLowerCase())));
      expect(found,role+" at "+JSON.stringify(values)).toHaveLength(1);expect(found[0].props.value).toBe(want);
     }
     if(row.task==="tickets"&&row.turn===3){expect(metrics[0].props.label).toBe("Group savings ($)");}
     const charts=frame.items.filter(x=>x.type==="Graphic");
     if((row.task==="baggage"&&row.turn>=2)||(row.task==="water"&&row.turn===2))expect(charts.length).toBeGreaterThan(0);
+    for(const chart of charts){
+     try{r.curve=r.curve==="fail"?"fail":checkRevisionCurve(file,chart,values,row.task)}catch(e){r.curve="fail";r.curveDiagnostic=e.message;}
+    }
     if(row.task==="water"&&row.turn===3)expect(charts).toHaveLength(0);
     r.checked++;
    }

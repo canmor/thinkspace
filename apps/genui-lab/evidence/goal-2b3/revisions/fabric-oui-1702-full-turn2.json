@@ -1,0 +1,101 @@
+{
+  "task": "fabric",
+  "protocol": "oui",
+  "seed": 1702,
+  "mode": "full",
+  "turn": 2,
+  "before": {
+    "artifact": "fabric-oui-1702",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each panel uses 3 metres of cloth plus its hem allowance.\"},{\"type\":\"ui\",\"source\":\"root = Stack([panels, hem, total])\\n$count = 2\\n$allowance = 0\\npanels = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nhem = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $allowance)\\ntotal = Metric(\\\"Total cloth (metres)\\\", $count * (3 + $allowance))\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"allowance\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "allowance",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth (metres)",
+            "value": 12
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "allowance": 1
+      }
+    }
+  },
+  "after": {
+    "artifact": "fabric-oui-1702",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Each panel uses 3 metres of cloth plus its hem allowance. Cloth costs $6 per metre, including the cloth used for hems.\"},{\"type\":\"ui\",\"source\":\"root = Stack([panels, hem, total, cost])\\n$count = 2\\n$allowance = 0\\npanels = Control(\\\"Panel count\\\", 1, 4, [], $count)\\nhem = Control(\\\"Hem allowance (metres per panel)\\\", 0, 2, [], $allowance)\\nmetres = $count * (3 + $allowance)\\ntotal = Metric(\\\"Total cloth (metres)\\\", metres)\\ncost = Metric(\\\"Total cloth cost (dollars)\\\", metres * 6)\",\"state\":[{\"name\":\"count\",\"value\":3},{\"name\":\"allowance\",\"value\":1}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "count",
+          "props": {
+            "label": "Panel count",
+            "min": 1,
+            "max": 4,
+            "choices": [],
+            "value": 3
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "allowance",
+          "props": {
+            "label": "Hem allowance (metres per panel)",
+            "min": 0,
+            "max": 2,
+            "choices": [],
+            "value": 1
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth (metres)",
+            "value": 12
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Total cloth cost (dollars)",
+            "value": 72
+          }
+        }
+      ],
+      "state": {
+        "count": 3,
+        "allowance": 1
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 4280.532082999998,
+  "attempts": 1
+}

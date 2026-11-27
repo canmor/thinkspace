@@ -1,0 +1,183 @@
+{
+  "task": "water",
+  "protocol": "oui",
+  "seed": 1701,
+  "mode": "full",
+  "turn": 3,
+  "before": {
+    "artifact": "water-oui-1701",
+    "revision": 2,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([input, rateControl, result, plot])\\n$minutes = 2\\n$rate = 3\\ninput = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nrateControl = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - ($minutes * $rate)\\nremaining = balance > 0 ? balance : 0\\nresult = Metric(\\\"Remaining (litres)\\\", remaining)\\nline = $rate == 2 ? \\\"M 40 14 L 104 22 L 168 30 L 232 38 L 296 46 L 360 54 L 424 62\\\" : $rate == 3 ? \\\"M 40 14 L 104 26 L 168 38 L 232 50 L 296 62 L 360 74 L 424 86\\\" : $rate == 4 ? \\\"M 40 14 L 104 30 L 168 46 L 232 62 L 296 78 L 360 94 L 424 110\\\" : \\\"M 40 14 L 104 34 L 168 54 L 232 74 L 296 94 L 360 110 L 424 110\\\"\\nplot = Graphic(\\\"Remaining litres by elapsed minute (dot marks selected time)\\\", [{kind:\\\"path\\\",d:\\\"M 40 14 V 110 H 432 M 35 14 H 40 M 35 62 H 40 M 35 110 H 40 M 104 110 V 114 M 168 110 V 114 M 232 110 V 114 M 296 110 V 114 M 360 110 V 114 M 424 110 V 114\\\"},{kind:\\\"text\\\",x:12,y:18,text:\\\"24\\\"},{kind:\\\"text\\\",x:12,y:66,text:\\\"12\\\"},{kind:\\\"text\\\",x:21,y:114,text:\\\"0\\\"},{kind:\\\"text\\\",x:36,y:129,text:\\\"0\\\"},{kind:\\\"text\\\",x:100,y:129,text:\\\"1\\\"},{kind:\\\"text\\\",x:164,y:129,text:\\\"2\\\"},{kind:\\\"text\\\",x:228,y:129,text:\\\"3\\\"},{kind:\\\"text\\\",x:292,y:129,text:\\\"4\\\"},{kind:\\\"text\\\",x:356,y:129,text:\\\"5\\\"},{kind:\\\"text\\\",x:420,y:129,text:\\\"6\\\"},{kind:\\\"path\\\",d:line},{kind:\\\"circle\\\",cx:40 + $minutes * 64,cy:110 - remaining * 4,r:4}])\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Graphic",
+          "props": {
+            "label": "Remaining litres by elapsed minute (dot marks selected time)",
+            "items": [
+              {
+                "kind": "path",
+                "d": "M 40 14 V 110 H 432 M 35 14 H 40 M 35 62 H 40 M 35 110 H 40 M 104 110 V 114 M 168 110 V 114 M 232 110 V 114 M 296 110 V 114 M 360 110 V 114 M 424 110 V 114"
+              },
+              {
+                "kind": "text",
+                "x": 12,
+                "y": 18,
+                "text": "24"
+              },
+              {
+                "kind": "text",
+                "x": 12,
+                "y": 66,
+                "text": "12"
+              },
+              {
+                "kind": "text",
+                "x": 21,
+                "y": 114,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 36,
+                "y": 129,
+                "text": "0"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 129,
+                "text": "1"
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 129,
+                "text": "2"
+              },
+              {
+                "kind": "text",
+                "x": 228,
+                "y": 129,
+                "text": "3"
+              },
+              {
+                "kind": "text",
+                "x": 292,
+                "y": 129,
+                "text": "4"
+              },
+              {
+                "kind": "text",
+                "x": 356,
+                "y": 129,
+                "text": "5"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 129,
+                "text": "6"
+              },
+              {
+                "kind": "path",
+                "d": "M 40 14 L 104 30 L 168 46 L 232 62 L 296 78 L 360 94 L 424 110"
+              },
+              {
+                "kind": "circle",
+                "cx": 296,
+                "cy": 78,
+                "r": 4
+              }
+            ]
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 4
+      }
+    }
+  },
+  "after": {
+    "artifact": "water-oui-1701",
+    "revision": 3,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"ui\",\"source\":\"root = Stack([timeControl, rateControl, remainingMetric, drainedMetric])\\n$minutes = 2\\n$rate = 3\\ntimeControl = Control(\\\"Elapsed time (minutes)\\\", 0, 6, [], $minutes)\\nrateControl = Control(\\\"Drain rate (litres per minute)\\\", 2, 5, [], $rate)\\nbalance = 24 - ($minutes * $rate)\\nremaining = balance > 0 ? balance : 0\\nremainingMetric = Metric(\\\"Remaining (litres)\\\", remaining)\\ndrainedMetric = Metric(\\\"Drained (litres)\\\", 24 - remaining)\",\"state\":[{\"name\":\"minutes\",\"value\":4},{\"name\":\"rate\",\"value\":4}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "binding": "minutes",
+          "props": {
+            "label": "Elapsed time (minutes)",
+            "min": 0,
+            "max": 6,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Control",
+          "binding": "rate",
+          "props": {
+            "label": "Drain rate (litres per minute)",
+            "min": 2,
+            "max": 5,
+            "choices": [],
+            "value": 4
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Remaining (litres)",
+            "value": 8
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Drained (litres)",
+            "value": 16
+          }
+        }
+      ],
+      "state": {
+        "minutes": 4,
+        "rate": 4
+      }
+    }
+  },
+  "delivery": "accepted",
+  "endToEndMs": 4330.691041999991,
+  "attempts": 1
+}

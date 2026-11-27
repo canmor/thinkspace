@@ -1,0 +1,97 @@
+{
+  "arm": {
+    "id": "F",
+    "wire": "structured",
+    "tokens": 2048,
+    "ground": true,
+    "examples": true,
+    "model": "gpt-6.2-sol"
+  },
+  "seeds": [
+    1701,
+    1702
+  ],
+  "revisions": {
+    "baggage": {
+      "origin": "saved B04",
+      "changes": [
+        "Add a route selector. Domestic stays the default with the same rules. International adds 2 kg to every allowance. Keep my current selections.",
+        "Add a fee curve covering every whole weight from 10 to 40 kg for the selected fare, membership and route. Keep the calculator and my selections.",
+        "Compare the old fee of $15 per excess kg with a new fee of $20 per excess kg, using identical allowances. Keep the previous calculator, fee curve, and my selections."
+      ]
+    },
+    "tickets": {
+      "origin": "Build a ticket calculator. Count is 1 to 5 whole tickets, initially 2. Each ticket costs 8 dollars. Show total dollars.",
+      "changes": [
+        "Add an Adult or Child selector, default Adult. Children pay 5 dollars per ticket. Keep my selections.",
+        "Change the child price to 4 dollars. Add a metric for the savings compared with adult tickets.",
+        "Put the savings metric before the total. Label it Group savings ($). Keep the same behavior."
+      ]
+    },
+    "water": {
+      "origin": "Build a water tank calculator. Elapsed time is 0–6 whole minutes, initially 2. A tank starts with 24 litres and drains 3 litres per minute. Show remaining litres.",
+      "changes": [
+        "Add a control for the drain rate, 2–5 whole litres per minute, initially 3. Stop at zero litres.",
+        "Add a line plot of remaining litres at each whole minute from 0 through 6 for the chosen rate.",
+        "Replace the plot with a metric for litres drained by the selected time. Retain the remaining-litres metric."
+      ]
+    },
+    "fabric": {
+      "origin": "Build a cloth estimator. Panel count is 1–4 whole panels, initially 2. Each requires 3 metres of cloth. Show total metres.",
+      "changes": [
+        "Add a hem allowance control, 0–2 whole metres per panel, initially 0. Include hems in the total.",
+        "Show the cost in dollars at 6 dollars per metre as a separate metric.",
+        "Change the cost to 5 dollars per metre for orders totaling at least 12 metres. Keep the other controls and metrics."
+      ]
+    }
+  },
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "artifact",
+      "base",
+      "operations"
+    ],
+    "properties": {
+      "artifact": {
+        "type": "string"
+      },
+      "base": {
+        "type": "integer"
+      },
+      "operations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "op",
+            "key",
+            "value"
+          ],
+          "properties": {
+            "op": {
+              "type": "string",
+              "enum": [
+                "add",
+                "replace",
+                "remove"
+              ]
+            },
+            "key": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "guide": "Return only the strict revision packet. Copy artifact and base from context. Each operation adds, replaces or removes one named declaration (OpenUI) or one named elements entry (json-render). value is the RHS expression or the JSON element encoded as a string. Remove uses an empty string. Touch a key at most once. Include root/layout updates when children change. No change is made to surrounding prose.",
+  "repairs": 1,
+  "context": "current artifact, prior user requirements, and host selections; same in both arms",
+  "origin": "matched hand-authored fresh tasks and historical B04"
+}

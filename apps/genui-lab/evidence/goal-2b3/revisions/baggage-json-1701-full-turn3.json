@@ -1,0 +1,156 @@
+{
+  "task": "baggage",
+  "protocol": "json",
+  "seed": 1701,
+  "mode": "full",
+  "turn": 3,
+  "before": {
+    "artifact": "baggage-json-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Domestic allowances are 23 kg in Economy and 32 kg in Business. Gold adds 5 kg, and an international route adds another 2 kg. The fee is $15 per kg over your allowance and $0 at or below it.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"cabin\\\",\\\"status\\\",\\\"route\\\",\\\"weight\\\",\\\"allowance\\\",\\\"fee\\\"]},\\\"cabin\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Cabin (0 = Economy, 1 = Business)\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/business\\\"}}},\\\"status\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Status (0 = No Gold, 1 = Gold)\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/gold\\\"}}},\\\"route\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Route (0 = Domestic, 1 = International)\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/international\\\"}}},\\\"weight\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Bag weight (kg)\\\",\\\"min\\\":10,\\\"max\\\":40,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/weight\\\"}}},\\\"allowance\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Bag allowance (kg)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":23,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":9,\\\"b\\\":{\\\"$state\\\":\\\"/business\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":5,\\\"b\\\":{\\\"$state\\\":\\\"/gold\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$state\\\":\\\"/international\\\"}}}}}}},\\\"fee\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Single-bag fee ($)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":15,\\\"b\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weight\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":23,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":9,\\\"b\\\":{\\\"$state\\\":\\\"/business\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":5,\\\"b\\\":{\\\"$state\\\":\\\"/gold\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$state\\\":\\\"/international\\\"}}}}}}}}}}}}}\",\"state\":[{\"name\":\"business\",\"value\":0},{\"name\":\"gold\",\"value\":1},{\"name\":\"weight\",\"value\":38},{\"name\":\"international\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Cabin (0 = Economy, 1 = Business)",
+            "min": 0,
+            "max": 1,
+            "choices": [],
+            "value": 0
+          },
+          "binding": "business"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Status (0 = No Gold, 1 = Gold)",
+            "min": 0,
+            "max": 1,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "gold"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Route (0 = Domestic, 1 = International)",
+            "min": 0,
+            "max": 1,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "international"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          },
+          "binding": "weight"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 30
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 120
+          }
+        }
+      ],
+      "state": {
+        "business": 0,
+        "gold": 1,
+        "weight": 38,
+        "international": 1
+      }
+    }
+  },
+  "after": {
+    "artifact": "baggage-json-1701",
+    "revision": 1,
+    "raw": "{\"version\":\"2b1\",\"blocks\":[{\"type\":\"text\",\"text\":\"Domestic allowances are 23 kg in Economy and 32 kg in Business. Gold adds 5 kg, and an international route adds another 2 kg. The fee is $15 per kg over your allowance and $0 at or below it.\"},{\"type\":\"ui\",\"source\":\"{\\\"root\\\":\\\"layout\\\",\\\"elements\\\":{\\\"layout\\\":{\\\"type\\\":\\\"Stack\\\",\\\"props\\\":{},\\\"children\\\":[\\\"cabin\\\",\\\"status\\\",\\\"route\\\",\\\"weight\\\",\\\"allowance\\\",\\\"fee\\\"]},\\\"cabin\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Cabin (0 = Economy, 1 = Business)\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/business\\\"}}},\\\"status\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Status (0 = No Gold, 1 = Gold)\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/gold\\\"}}},\\\"route\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Route (0 = Domestic, 1 = International)\\\",\\\"min\\\":0,\\\"max\\\":1,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/international\\\"}}},\\\"weight\\\":{\\\"type\\\":\\\"Control\\\",\\\"props\\\":{\\\"label\\\":\\\"Bag weight (kg)\\\",\\\"min\\\":10,\\\"max\\\":40,\\\"choices\\\":[],\\\"value\\\":{\\\"$bindState\\\":\\\"/weight\\\"}}},\\\"allowance\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Bag allowance (kg)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":23,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":9,\\\"b\\\":{\\\"$state\\\":\\\"/business\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":5,\\\"b\\\":{\\\"$state\\\":\\\"/gold\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$state\\\":\\\"/international\\\"}}}}}}},\\\"fee\\\":{\\\"type\\\":\\\"Metric\\\",\\\"props\\\":{\\\"label\\\":\\\"Single-bag fee ($)\\\",\\\"value\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":15,\\\"b\\\":{\\\"$computed\\\":\\\"Excess\\\",\\\"args\\\":{\\\"a\\\":{\\\"$state\\\":\\\"/weight\\\"},\\\"b\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":{\\\"$computed\\\":\\\"Add\\\",\\\"args\\\":{\\\"a\\\":23,\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":9,\\\"b\\\":{\\\"$state\\\":\\\"/business\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":5,\\\"b\\\":{\\\"$state\\\":\\\"/gold\\\"}}}}},\\\"b\\\":{\\\"$computed\\\":\\\"Multiply\\\",\\\"args\\\":{\\\"a\\\":2,\\\"b\\\":{\\\"$state\\\":\\\"/international\\\"}}}}}}}}}}}}}\",\"state\":[{\"name\":\"business\",\"value\":0},{\"name\":\"gold\",\"value\":1},{\"name\":\"weight\",\"value\":38},{\"name\":\"international\",\"value\":0}]}]}",
+    "frame": {
+      "items": [
+        {
+          "type": "Control",
+          "props": {
+            "label": "Cabin (0 = Economy, 1 = Business)",
+            "min": 0,
+            "max": 1,
+            "choices": [],
+            "value": 0
+          },
+          "binding": "business"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Status (0 = No Gold, 1 = Gold)",
+            "min": 0,
+            "max": 1,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "gold"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Route (0 = Domestic, 1 = International)",
+            "min": 0,
+            "max": 1,
+            "choices": [],
+            "value": 1
+          },
+          "binding": "international"
+        },
+        {
+          "type": "Control",
+          "props": {
+            "label": "Bag weight (kg)",
+            "min": 10,
+            "max": 40,
+            "choices": [],
+            "value": 38
+          },
+          "binding": "weight"
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Bag allowance (kg)",
+            "value": 30
+          }
+        },
+        {
+          "type": "Metric",
+          "props": {
+            "label": "Single-bag fee ($)",
+            "value": 120
+          }
+        }
+      ],
+      "state": {
+        "business": 0,
+        "gold": 1,
+        "weight": 38,
+        "international": 1
+      }
+    }
+  },
+  "delivery": "truncated",
+  "endToEndMs": 91258.898208,
+  "attempts": 2
+}

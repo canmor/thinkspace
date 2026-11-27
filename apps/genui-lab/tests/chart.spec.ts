@@ -29,3 +29,12 @@ test("Chart browser renders complete accessible data in the isolated replay",asy
   await expect(page.getByRole("table").getByRole("row")).toHaveCount(4);
   await expect(page.getByRole("cell",{name:"4.0"})).toBeVisible();
 });
+test("aggregate chart cap applies across components in one evaluated frame",()=>{
+  const x=Array.from({length:40},(_,i)=>i), base=JSON.parse(json({
+    ...props,x,series:["a","b","c"].map(label=>({label,values:x}))
+  }));
+  expect(admit("json",JSON.stringify(base),undefined,true).initial.items).toHaveLength(1);
+  base.elements.extra={type:"Chart",props};
+  base.elements.r.children.push("extra");
+  expect(()=>admit("json",JSON.stringify(base),undefined,true)).toThrow(/Aggregate chart data budget/);
+});
