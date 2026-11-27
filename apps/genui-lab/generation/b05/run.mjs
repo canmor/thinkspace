@@ -38,12 +38,18 @@ async function lane(protocol,seed){
  async function select(rx,index){
   const controls=current.frame.items.filter(i=>i.type==='Control')
   const i=controls.findIndex(c=>rx.test(c.props.label+' '+c.binding))
-  if(i<0)return
+  if(i<0){if(offline)return;throw Error('Required selection missing: '+rx)}
   const c=controls[i],el=page.locator('.stack label').nth(i).locator('input,select')
   const n=typeof index==='number'?index:c.props.choices.findIndex(x=>index.test(x))
-  if(n<0)return
-  if(c.props.choices.length)await el.selectOption(String(n));else await el.fill(String(n))
-  await page.waitForFunction(({k,n})=>JSON.parse(document.querySelector('#result').textContent).frame?.state[k]===n,{k:c.binding,n})
+  if(n<0){
+   if(offline)return // reproduce the historical numeric-route omission
+   assert.equal(controls.filter(c=>rx.test(c.props.label+' '+c.binding)).length,1)
+   assert.match(c.props.label,/1\s*=\s*International/i)
+   assert.deepEqual([c.props.min,c.props.max,c.props.choices.length],[0,1,0])
+  }
+  const selected=n<0?1:n
+  if(c.props.choices.length)await el.selectOption(String(selected));else await el.fill(String(selected))
+  await page.waitForFunction(({k,n})=>JSON.parse(document.querySelector('#result').textContent).frame?.state[k]===n,{k:c.binding,n:selected})
   current=JSON.parse(await page.locator('#result').textContent())
  }
  await select(/status|gold|member/i,1);await select(/weight/i,38)
@@ -67,7 +73,8 @@ async function lane(protocol,seed){
    if(n===0&&['rejected','truncated'].includes(result.status)){messages.push({role:'user',content:'Complete revision rejected: '+result.diagnostic+'. Return one complete corrected response.'});continue}
    break
   }
-  if(result.frame){
+  const last=row.attempts.at(-1)
+  if(result.status==='accepted' && result.frame && JSON.parse(last.rawResponse).choices[0].finish_reason==='stop'){
    await page.close();page=candidate;current=result
    // Capture only rendered response content, including prose around the UI.
    const bounds=await page.locator('main > p, main > .stack').evaluateAll(nodes=>nodes.map(e=>e.getBoundingClientRect().toJSON()))

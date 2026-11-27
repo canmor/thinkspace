@@ -8,4 +8,6 @@ Native ChatGPT is an experience comparator. Use a fresh product conversation per
 
 ## Reproduction
 
-From apps/genui-lab, run npm ci and npm run build with the pinned Chromium installed. Run `node generation/b05/run.mjs evidence/goal-2b2 --offline` to reproduce every attempt and retained state. Run `node generation/b05/audit.mjs` to exercise the submitted controls and compare outputs. For a new paid run supply a fresh directory to run.mjs. The captured signed-out product output in native-rendered.txt is synthetic benchmark content only. Native app versions, pricing and seeds are unobserved.
+From apps/genui-lab, run npm ci and npm run build with the pinned Chromium installed. Run `node generation/b05/run.mjs evidence/goal-2b2 --offline` to reproduce every attempt and retained state. Create a fresh output directory and run `node generation/b05/audit.mjs evidence/goal-2b2 <output-directory>` to exercise the submitted controls and compare outputs. For a new paid run supply a fresh directory to run.mjs. The captured signed-out product output in native-rendered.txt is synthetic benchmark content only. Native app versions, pricing and seeds are unobserved.
+
+See the [architecture review addendum](review-addendum.md) for limitations and the paired reviewer session.
