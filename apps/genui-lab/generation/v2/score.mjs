@@ -10,6 +10,25 @@ export function visible(a){
  }
  return parts.join('\n')
 }
+// Domain checks have no natural-language or arbitrary additional-metric oracle.
+export function claimReview(task,a,test,prose){
+ const reasons=[]
+ if(prose.trim())reasons.push('Independent review required for explanatory claims.')
+ const items=a.frame.items, dimensions={
+  T11:[/row/i,/col/i],T12:[/size|locker/i,/block|duration/i],
+  B04:[/class|fare|cabin/i,/member|gold|status/i,/weight|mass|kg/i],
+  B03:[/native/i,/light|runtime/i,/delivery|efficien/i]
+ }[task]
+ const controls=items.filter(i=>i.type==='Control')
+ for(const [i,binding] of (test.roleBindings??[]).entries()){
+  const c=controls.find(c=>c.binding===binding)
+  if(!c||!dimensions[i].test(c.props.label))reasons.push('Unverified visible input role: '+String(binding))
+ }
+ const expected={T11:[/seed|plant|count|cell/i,/water|litre|liter/i],T12:[/credit|cost|total/i],B04:[/allow|limit|free/i,/fee|charge|cost/i],B03:[]}[task]
+ const metrics=items.filter(i=>i.type==='Metric')
+ if(metrics.length!==expected.length||expected.some(rx=>metrics.filter(i=>rx.test(i.props.label)).length!==1))reasons.push('Additional or unverified displayed metric requires review.')
+ return reasons
+}
 export function axes(task,a,test){
  const prose=visible(a),data=prose+' '+JSON.stringify(a.frame?.items??[]),notes=[]
  const tr=delivered(a)||a.transport===true
@@ -22,6 +41,8 @@ export function axes(task,a,test){
   status.intent=pf(Boolean(a.frame?.items.some(i=>i.type==='Control'))&&topical)
   status.modality=pf(Boolean(a.frame?.items.some(i=>i.type==='Control')))
   if(test){status.domain=test.domain;status.behavior=test.behavior;notes.push(...test.issues);if(test.reason)notes.push(test.reason)
+   const unresolved=claimReview(task,a,test,prose)
+   if(unresolved.length){if(status.domain==='pass')status.domain='NE';notes.push(...unresolved)}
    if(test.behavior==='fail')notes.push('Observed mapping differs from independent oracle or evaluation failed; see counterexample.')
   }else notes.push('No admitted interactive controls to exercise.')
  }else{
@@ -29,10 +50,10 @@ export function axes(task,a,test){
   if(task==='B01'){
    status.intent=pf(/dot product|scalar product/i.test(prose)&&/project/i.test(prose))
    const valid=has(/cos|signed projection/i,/orthogonal|perpendicular/i,/zero|\b0\b/i,/negative|obtuse|opposite/i,/length|magnitude|norm/i)
-   status.domain=valid?'pass':'NE';notes.push('Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review.')
+   notes.push('Checklist candidate: '+valid);notes.push('Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review.')
   }else if(task==='B02'){
    status.intent=pf(has(/conversation/i,/context/i,/orchestrat/i,/interface|contract|mediat|decoupl|independen/i))
-   status.domain=has(/message/i,/lineage|history/i,/reference/i,/budget/i,/coordinat|workflow/i)?'pass':'NE'
+   notes.push('Checklist candidate: '+has(/message/i,/lineage|history/i,/reference/i,/budget/i,/coordinat|workflow/i))
    notes.push('Checked core ownership concepts. Ambiguous authority assignments require content review.')
   }else if(task==='B06'){
    status.intent=pf(/bring your own key/i.test(prose))

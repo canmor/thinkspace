@@ -33,6 +33,6 @@ try{
   }
  }
  await Promise.all(Array.from({length:4},lane))
- results.sort((a,b)=>a.id.localeCompare(b.id));await writeFile(join(dir,'evaluation.json'),JSON.stringify({version:'2.0',assessor:'deterministic checks and assistant review; human review pending',results},null,2)+'\n')
+ results.sort((a,b)=>a.id.localeCompare(b.id));await writeFile(join(dir,'evaluation-reviewed.json'),JSON.stringify({version:'2.1',assessor:'deterministic checks and assistant review; human review pending',results},null,2)+'\n')
  console.log('Offline replay verified for',results.length,'episodes;',results.reduce((n,r)=>n+r.checks.length,0),'attempts')
 }finally{await browser.close();await server.close()}

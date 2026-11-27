@@ -29,8 +29,8 @@ export function design(task,frame){
  let roles
  if(task==='B03'){
   const start=[40,25,35],names=[/native/i,/light|runtime/i,/delivery|efficien/i]
-  names.forEach((rx,i)=>{const c=choose(named(rx),x=>frame.state[x.binding]===start[i]);add(['native','runtime','delivery'][i],c,null,null,start[i]);if(c&&(c.props.min!==0||c.props.max<start[i]||c.props.choices.length))issues.push('Weight domain excludes requested inputs')})
-  for(const weights of [[40,25,35],[1,0,0],[0,1,0],[0,0,1],[0,0,0],[1,0,2]])cases.push({inputs:weights,ranking:ranking(weights)})
+  names.forEach((rx,i)=>{const c=choose(named(rx));add(['native','runtime','delivery'][i],c,null,null,start[i]);if(c&&(c.props.min!==0||c.props.max<start[i]||c.props.choices.length))issues.push('Weight domain excludes requested inputs')})
+  for(const weights of [[40,25,35],[1,0,0],[0,1,0],[0,0,1],[0,0,0],[1,0,2],[13,7,19],[2,2,2],[0,9,3],[17,4,0]])cases.push({inputs:weights,ranking:ranking(weights)})
  }else if(task==='B04'){
   const fare=choose(c=>category(c,/economy/i)>=0,named(/fare|class/i)),member=choose(c=>category(c,gold)>=0&&c!==fare,named(/gold|member|status/i)),weight=choose(range(10,40),named(/weight|mass|kg/i))
   add('fare',fare);add('membership',member);add('weight',weight,10,40)
@@ -58,7 +58,7 @@ function rankingMatches(values,expected){
 }
 export async function probe(page,task,frame){
  const {issues,units,cases,roles}=design(task,frame),controls=frame.items.filter(x=>x.type==='Control'),state={...frame.state}
- const report={domain:issues.length?'fail':'pass',issues,behavior:'NE',tested:0,required:cases.length,observations:[]}
+ const report={roleBindings:units.map(u=>u.c?.binding??null),domain:units.some(u=>!u.c)?'NE':issues.length?'fail':'pass',issues,behavior:'NE',tested:0,required:cases.length,observations:[]}
  if(units.some(u=>!u.c)||cases.some(c=>c.inputs.includes(-1))){report.reason='Required input cannot be identified or selected';return report}
  const indexes=units.map(u=>controls.indexOf(u.c)),candidates=roles?.map(rx=>{
   const metrics=frame.items.map((x,i)=>({x,i})).filter(({x})=>x.type==='Metric')
@@ -89,6 +89,6 @@ export async function probe(page,task,frame){
    if(mismatch){report.behavior='fail';report.reason='No stable observable output matches the independent mapping';return report}
   }
   report.behavior='pass'
- }catch(e){report.behavior='fail';report.reason=String(e).slice(0,300)}
+ }catch(e){report.behavior=String(e).includes('Runtime:')?'fail':'NE';report.reason=String(e).slice(0,300)}
  return report
 }

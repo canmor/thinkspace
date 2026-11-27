@@ -3,8 +3,8 @@ import {join} from 'node:path'
 
 const dir=process.argv[2]??'evidence/goal-2b1-sol-default'
 const read=async path=>JSON.parse(await readFile(path,'utf8'))
-const current=(await read(join(dir,'evaluation.json'))).results
-const previous=(await read('evidence/goal-2b1/scored-v2.json')).results.filter(r=>r.arm==='F')
+const current=(await read(join(dir,'evaluation-reviewed.json'))).results
+const previous=(await read('evidence/goal-2b1/evaluation-reviewed.json')).results.filter(r=>r.arm==='F')
 const delivered=c=>['accepted','text'].includes(c.status)
 function count(rows) {
  const calls=rows.flatMap(r=>r.checks)
@@ -21,5 +21,5 @@ for(const [name,rows] of [['sol',current],['gpt41',previous]]){
   groups[name][group]=count(rows.filter(r=>group==='core'?r.task.startsWith('B'):group==='holdout'?r.task.startsWith('T'):r.task===group))
  }
 }
-await writeFile(join(dir,'comparison.json'),JSON.stringify(groups,null,2)+'\n')
+await writeFile(join(dir,'comparison-reviewed.json'),JSON.stringify(groups,null,2)+'\n')
 console.log(groups.sol.core,groups.sol.holdout)

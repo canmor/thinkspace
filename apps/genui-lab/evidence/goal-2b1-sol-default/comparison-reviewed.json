@@ -1,0 +1,226 @@
+{
+  "sol": {
+    "core": {
+      "episodes": 20,
+      "first": 19,
+      "final": 20,
+      "success": 4,
+      "behavioralPass": 7,
+      "repairs": 1,
+      "truncated": 0,
+      "inputTokens": 17997,
+      "outputTokens": 10359
+    },
+    "holdout": {
+      "episodes": 12,
+      "first": 10,
+      "final": 11,
+      "success": 4,
+      "behavioralPass": 7,
+      "repairs": 2,
+      "truncated": 0,
+      "inputTokens": 12517,
+      "outputTokens": 2842
+    },
+    "B01": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 0,
+      "behavioralPass": 0,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3244,
+      "outputTokens": 3116
+    },
+    "B02": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 0,
+      "behavioralPass": 0,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3304,
+      "outputTokens": 2512
+    },
+    "B03": {
+      "episodes": 4,
+      "first": 3,
+      "final": 4,
+      "success": 0,
+      "behavioralPass": 4,
+      "repairs": 1,
+      "truncated": 0,
+      "inputTokens": 4817,
+      "outputTokens": 2652
+    },
+    "B04": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 0,
+      "behavioralPass": 3,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3416,
+      "outputTokens": 1689
+    },
+    "B06": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 4,
+      "behavioralPass": 0,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3216,
+      "outputTokens": 390
+    },
+    "T11": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 0,
+      "behavioralPass": 4,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3416,
+      "outputTokens": 1018
+    },
+    "T12": {
+      "episodes": 4,
+      "first": 2,
+      "final": 3,
+      "success": 0,
+      "behavioralPass": 3,
+      "repairs": 2,
+      "truncated": 0,
+      "inputTokens": 5865,
+      "outputTokens": 1632
+    },
+    "T13": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 4,
+      "behavioralPass": 0,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3236,
+      "outputTokens": 192
+    }
+  },
+  "gpt41": {
+    "core": {
+      "episodes": 20,
+      "first": 6,
+      "final": 6,
+      "success": 0,
+      "behavioralPass": 1,
+      "repairs": 14,
+      "truncated": 6,
+      "inputTokens": 38263,
+      "outputTokens": 22552
+    },
+    "holdout": {
+      "episodes": 12,
+      "first": 8,
+      "final": 9,
+      "success": 4,
+      "behavioralPass": 5,
+      "repairs": 4,
+      "truncated": 0,
+      "inputTokens": 14928,
+      "outputTokens": 3739
+    },
+    "B01": {
+      "episodes": 4,
+      "first": 0,
+      "final": 0,
+      "success": 0,
+      "behavioralPass": 0,
+      "repairs": 4,
+      "truncated": 4,
+      "inputTokens": 11643,
+      "outputTokens": 9956
+    },
+    "B02": {
+      "episodes": 4,
+      "first": 0,
+      "final": 0,
+      "success": 0,
+      "behavioralPass": 0,
+      "repairs": 4,
+      "truncated": 0,
+      "inputTokens": 8435,
+      "outputTokens": 3182
+    },
+    "B03": {
+      "episodes": 4,
+      "first": 0,
+      "final": 0,
+      "success": 0,
+      "behavioralPass": 0,
+      "repairs": 4,
+      "truncated": 2,
+      "inputTokens": 8911,
+      "outputTokens": 6644
+    },
+    "B04": {
+      "episodes": 4,
+      "first": 2,
+      "final": 2,
+      "success": 0,
+      "behavioralPass": 1,
+      "repairs": 2,
+      "truncated": 0,
+      "inputTokens": 6042,
+      "outputTokens": 2446
+    },
+    "B06": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 0,
+      "behavioralPass": 0,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3232,
+      "outputTokens": 324
+    },
+    "T11": {
+      "episodes": 4,
+      "first": 2,
+      "final": 2,
+      "success": 0,
+      "behavioralPass": 2,
+      "repairs": 2,
+      "truncated": 0,
+      "inputTokens": 6011,
+      "outputTokens": 2115
+    },
+    "T12": {
+      "episodes": 4,
+      "first": 2,
+      "final": 3,
+      "success": 0,
+      "behavioralPass": 3,
+      "repairs": 2,
+      "truncated": 0,
+      "inputTokens": 5665,
+      "outputTokens": 1446
+    },
+    "T13": {
+      "episodes": 4,
+      "first": 4,
+      "final": 4,
+      "success": 4,
+      "behavioralPass": 0,
+      "repairs": 0,
+      "truncated": 0,
+      "inputTokens": 3252,
+      "outputTokens": 178
+    }
+  }
+}

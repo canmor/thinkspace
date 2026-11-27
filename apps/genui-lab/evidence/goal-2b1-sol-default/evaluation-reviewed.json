@@ -1,0 +1,2058 @@
+{
+  "version": "2.1",
+  "assessor": "deterministic checks and assistant review; human review pending",
+  "results": [
+    {
+      "id": "G-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 13981,
+          "input": 848,
+          "output": 809,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: false",
+        "Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 14329,
+          "input": 848,
+          "output": 829,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 13039,
+          "input": 774,
+          "output": 690,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 15661,
+          "input": 774,
+          "output": 788,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 14194,
+          "input": 863,
+          "output": 700,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 10954,
+          "input": 863,
+          "output": 421,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: false",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 14300,
+          "input": 789,
+          "output": 640,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "fail",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: false",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 15884,
+          "input": 789,
+          "output": 751,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 10004,
+          "input": 909,
+          "output": 538,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "native",
+          "runtime",
+          "delivery"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 10,
+        "required": 10,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                40,
+                25,
+                35
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.05
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.6
+                },
+                {
+                  "name": "Electron",
+                  "score": 6.9
+                }
+              ]
+            },
+            "actual": [
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.05
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.6
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 6.9
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                17,
+                4,
+                0
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.80952380952381
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.190476190476191
+                },
+                {
+                  "name": "Electron",
+                  "score": 5.619047619047619
+                }
+              ]
+            },
+            "actual": [
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.80952380952381
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.190476190476191
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 5.619047619047619
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 935 (line 1 column 936)",
+          "latencyMs": 9602,
+          "input": 909,
+          "output": 534,
+          "cost": null
+        },
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 8552,
+          "input": 1329,
+          "output": 544,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "native",
+          "runtime",
+          "delivery"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 10,
+        "required": 10,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                40,
+                25,
+                35
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.05
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.6
+                },
+                {
+                  "name": "Electron",
+                  "score": 6.9
+                }
+              ]
+            },
+            "actual": [
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.05
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.6
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 6.9
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                17,
+                4,
+                0
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.80952380952381
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.190476190476191
+                },
+                {
+                  "name": "Electron",
+                  "score": 5.619047619047619
+                }
+              ]
+            },
+            "actual": [
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.80952380952381
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.190476190476191
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 5.619047619047619
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 10865,
+          "input": 835,
+          "output": 550,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "native",
+          "runtime",
+          "delivery"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 10,
+        "required": 10,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                40,
+                25,
+                35
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.05
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.6
+                },
+                {
+                  "name": "Electron",
+                  "score": 6.9
+                }
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total weight (points)",
+                "value": 100
+              },
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.05
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.6
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 6.9
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                17,
+                4,
+                0
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.80952380952381
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.190476190476191
+                },
+                {
+                  "name": "Electron",
+                  "score": 5.619047619047619
+                }
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total weight (points)",
+                "value": 21
+              },
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.80952380952381
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.190476190476191
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 5.619047619047619
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims.",
+        "Additional or unverified displayed metric requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 9619,
+          "input": 835,
+          "output": 486,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "native",
+          "runtime",
+          "delivery"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 10,
+        "required": 10,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                40,
+                25,
+                35
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.05
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.6
+                },
+                {
+                  "name": "Electron",
+                  "score": 6.9
+                }
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total weight (points)",
+                "value": 100
+              },
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.05
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.6
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 6.9
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                17,
+                4,
+                0
+              ],
+              "ranking": [
+                {
+                  "name": "Native Hybrid",
+                  "score": 8.80952380952381
+                },
+                {
+                  "name": "Tauri",
+                  "score": 7.190476190476191
+                },
+                {
+                  "name": "Electron",
+                  "score": 5.619047619047619
+                }
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total weight (points)",
+                "value": 21
+              },
+              {
+                "values": [
+                  {
+                    "label": "Native Hybrid",
+                    "score": 8.80952380952381
+                  },
+                  {
+                    "label": "Tauri",
+                    "score": 7.190476190476191
+                  },
+                  {
+                    "label": "Electron",
+                    "score": 5.619047619047619
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims.",
+        "Additional or unverified displayed metric requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 10227,
+          "input": 891,
+          "output": 596,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          null,
+          "gold",
+          "weight"
+        ],
+        "domain": "NE",
+        "issues": [
+          "Missing or ambiguous input: fare",
+          "Membership options: []"
+        ],
+        "behavior": "NE",
+        "tested": 0,
+        "required": 124,
+        "observations": [],
+        "reason": "Required input cannot be identified or selected"
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Missing or ambiguous input: fare",
+        "Membership options: []",
+        "Required input cannot be identified or selected",
+        "Independent review required for explanatory claims.",
+        "Unverified visible input role: null"
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 8478,
+          "input": 891,
+          "output": 530,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "cabin",
+          "gold",
+          "weight"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Bag allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Single-bag fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                1,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Bag allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Single-bag fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 5527,
+          "input": 817,
+          "output": 278,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "cabin",
+          "gold",
+          "weight"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Bag allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Single-bag fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                1,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Bag allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Single-bag fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 5920,
+          "input": 817,
+          "output": 285,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "cabin",
+          "gold",
+          "weight"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Bag allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Single-bag fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                1,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Bag allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Single-bag fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2997,
+          "input": 841,
+          "output": 92,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3286,
+          "input": 841,
+          "output": 119,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3436,
+          "input": 767,
+          "output": 94,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2988,
+          "input": 767,
+          "output": 85,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 5344,
+          "input": 891,
+          "output": 331,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "columns"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 2
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 24
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4941,
+          "input": 891,
+          "output": 324,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "columns"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 2
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 24
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4154,
+          "input": 817,
+          "output": 177,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "columns"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 2
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 24
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3661,
+          "input": 817,
+          "output": 186,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "columns"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 2
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling count",
+                "value": 24
+              },
+              {
+                "label": "Water needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      0\n    ],\n    \"message\": \"Invalid input: expected string, received object\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      1\n    ],\n    \"message\": \"Invalid input: expected string, received object\"\n  }\n]",
+          "latencyMs": 5852,
+          "input": 882,
+          "output": 318,
+          "cost": null
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 696 (line 1 column 697)",
+          "latencyMs": 4944,
+          "input": 1240,
+          "output": 286,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 696 (line 1 column 697)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "G-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      0\n    ],\n    \"message\": \"Invalid input: expected string, received object\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"choices\",\n      1\n    ],\n    \"message\": \"Invalid input: expected string, received object\"\n  }\n]",
+          "latencyMs": 6026,
+          "input": 882,
+          "output": 342,
+          "cost": null
+        },
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 5168,
+          "input": 1245,
+          "output": 318,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "locker",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3736,
+          "input": 808,
+          "output": 183,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "size",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3693,
+          "input": 808,
+          "output": 185,
+          "cost": null
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "size",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2800,
+          "input": 846,
+          "output": 50,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2346,
+          "input": 846,
+          "output": 48,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2202,
+          "input": 772,
+          "output": 48,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "G-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "G",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2399,
+          "input": 772,
+          "output": 46,
+          "cost": null
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    }
+  ]
+}

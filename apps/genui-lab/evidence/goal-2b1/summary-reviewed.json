@@ -1,0 +1,94 @@
+{
+  "rubric": "2.1",
+  "independentHumanRatings": 0,
+  "summary": {
+    "A/core": {
+      "episodes": 20,
+      "confirmed": 0,
+      "domainPending": 4,
+      "mappingPass": 0,
+      "delivered": 4,
+      "medianCallMs": 2695
+    },
+    "B/core": {
+      "episodes": 20,
+      "confirmed": 0,
+      "domainPending": 4,
+      "mappingPass": 0,
+      "delivered": 4,
+      "medianCallMs": 6965.5
+    },
+    "C/core": {
+      "episodes": 20,
+      "confirmed": 0,
+      "domainPending": 4,
+      "mappingPass": 0,
+      "delivered": 7,
+      "medianCallMs": 7287
+    },
+    "D/core": {
+      "episodes": 20,
+      "confirmed": 0,
+      "domainPending": 4,
+      "mappingPass": 0,
+      "delivered": 6,
+      "medianCallMs": 6514
+    },
+    "D/holdout": {
+      "episodes": 12,
+      "confirmed": 4,
+      "domainPending": 0,
+      "mappingPass": 0,
+      "delivered": 4,
+      "medianCallMs": 4627.5
+    },
+    "E/core": {
+      "episodes": 20,
+      "confirmed": 0,
+      "domainPending": 3,
+      "mappingPass": 0,
+      "delivered": 7,
+      "medianCallMs": 6879
+    },
+    "E/holdout": {
+      "episodes": 12,
+      "confirmed": 4,
+      "domainPending": 4,
+      "mappingPass": 4,
+      "delivered": 8,
+      "medianCallMs": 3630
+    },
+    "F/core": {
+      "episodes": 20,
+      "confirmed": 0,
+      "domainPending": 2,
+      "mappingPass": 1,
+      "delivered": 6,
+      "medianCallMs": 2652
+    },
+    "F/holdout": {
+      "episodes": 12,
+      "confirmed": 4,
+      "domainPending": 5,
+      "mappingPass": 5,
+      "delivered": 9,
+      "medianCallMs": 1595.5
+    },
+    "G/core": {
+      "episodes": 20,
+      "confirmed": 4,
+      "domainPending": 16,
+      "mappingPass": 7,
+      "delivered": 20,
+      "medianCallMs": 10004
+    },
+    "G/holdout": {
+      "episodes": 12,
+      "confirmed": 4,
+      "domainPending": 7,
+      "mappingPass": 7,
+      "delivered": 11,
+      "medianCallMs": 3945
+    }
+  }
+}

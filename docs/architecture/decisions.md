@@ -27,4 +27,4 @@ Alternatives considered: chat-centric faster initial delivery but context/artifa
 
 2026-11-27 · ADR 0002 conditionally accepted for Goal 2A only. [ADR 0003](adr/0003-restricted-generation.md) records the restricted generation results, residual risks and proposed next experiment. Human architecture review is pending.
 
-[ADR 0004 — Restricted generation reliability](adr/0004-generation-reliability.md) records the Goal 2B.1 experiment and awaits human review.
+[ADR 0004 — Restricted generation reliability](adr/0004-generation-reliability.md) records the conditional architecture review, revised scoring and Sol reference configuration for the next local experiment.

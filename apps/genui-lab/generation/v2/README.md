@@ -22,3 +22,15 @@ For a fresh paid experiment run `node generation/v2/run.mjs` from apps/genui-lab
 ## GPT-6.2 Sol follow-up
 
 Run `node generation/v2/run.mjs runs/sol-repeat gpt-6.2-sol` in a fresh directory. This repeats arm F's tasks, seeds, prompts, output cap and repair policy using Sol. The API rejected the original sampling temperature. Sol uses its default temperature and top-p, and its completion-token cap includes reasoning tokens. The model ID is the provider alias returned by the API. Use `node generation/v2/audit.mjs runs/sol-repeat` and `node generation/v2/compare-sol.mjs runs/sol-repeat` for offline scoring against the frozen F results. Cost is unpriced for Sol. The first incompatible request diagnostics are preserved in evidence/goal-2b1-sol; the completed experiment is in evidence/goal-2b1-sol-default.
+
+## Post-review rubric 2.1
+
+From apps/genui-lab, run both offline audits and then the aggregate:
+
+```sh
+node generation/v2/audit.mjs evidence/goal-2b1
+node generation/v2/audit.mjs evidence/goal-2b1-sol-default
+node generation/v2/review-summary.mjs
+```
+
+Read evaluation-reviewed.json and summary-reviewed.json for revised judgments. Historical report.mjs reads the frozen rubric 2.0 evaluation. Under 2.1 conceptual checklists for B01/B02 are candidate evidence only. Interaction probes measure specified outputs; additional metrics, uncertain labels and explanatory claims require independent content review. Missing oracle evidence is NE. Assess presentation and modality separately. For Sol, replay each review-cases.json entry, record the opaque case ID, reviewer, rubric version, seven axis ratings and rationale in a separate scorecard. All current independent scorecards are unfilled.

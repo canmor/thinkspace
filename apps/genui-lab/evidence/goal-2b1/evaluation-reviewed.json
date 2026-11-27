@@ -1,0 +1,6875 @@
+{
+  "version": "2.1",
+  "assessor": "deterministic checks and assistant review; human review pending",
+  "results": [
+    {
+      "id": "A-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 2500,
+          "input": 475,
+          "output": 106,
+          "cost": 0.0003596
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 2588,
+          "input": 609,
+          "output": 113,
+          "cost": 0.0004244
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1918,
+          "input": 475,
+          "output": 107,
+          "cost": 0.00036120000000000005
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1793,
+          "input": 610,
+          "output": 107,
+          "cost": 0.00041520000000000006
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 8642,
+          "input": 461,
+          "output": 557,
+          "cost": 0.0010756000000000001
+        },
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3418,
+          "input": 1046,
+          "output": 147,
+          "cost": 0.0006536000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Geometric checklist: length/cosine or signed projection, perpendicular zero and negative direction. Ambiguous wording requires review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "A-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1804,
+          "input": 461,
+          "output": 99,
+          "cost": 0.00034280000000000004
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1884,
+          "input": 588,
+          "output": 101,
+          "cost": 0.00039680000000000005
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4384,
+          "input": 490,
+          "output": 290,
+          "cost": 0.00066
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "A-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3910,
+          "input": 490,
+          "output": 269,
+          "cost": 0.0006264
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "A-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 2403,
+          "input": 476,
+          "output": 122,
+          "cost": 0.00038560000000000005
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 3001,
+          "input": 626,
+          "output": 154,
+          "cost": 0.0004968
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1685,
+          "input": 476,
+          "output": 117,
+          "cost": 0.0003776
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 2634,
+          "input": 621,
+          "output": 172,
+          "cost": 0.0005236
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 6686,
+          "input": 536,
+          "output": 513,
+          "cost": 0.0010352
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 8957,
+          "input": 1077,
+          "output": 768,
+          "cost": 0.0016596000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 3134,
+          "input": 536,
+          "output": 226,
+          "cost": 0.000576
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1133 (line 1 column 1134)",
+          "latencyMs": 4081,
+          "input": 790,
+          "output": 338,
+          "cost": 0.0008568000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 1133 (line 1 column 1134)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 9226,
+          "input": 522,
+          "output": 624,
+          "cost": 0.0012072
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unsupported syntax: MemberExpression",
+          "latencyMs": 8199,
+          "input": 1174,
+          "output": 626,
+          "cost": 0.001164
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unsupported syntax: MemberExpression"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 6315,
+          "input": 522,
+          "output": 542,
+          "cost": 0.001076
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: State default must be integer",
+          "latencyMs": 6795,
+          "input": 1092,
+          "output": 539,
+          "cost": 0.0012992000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: State default must be integer"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9615,
+          "input": 518,
+          "output": 768,
+          "cost": 0.0014360000000000002
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 11530,
+          "input": 1312,
+          "output": 768,
+          "cost": 0.0014080000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 16242,
+          "input": 518,
+          "output": 589,
+          "cost": 0.0011496000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1000 (line 1 column 1001)",
+          "latencyMs": 8032,
+          "input": 1135,
+          "output": 591,
+          "cost": 0.0013996
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 1000 (line 1 column 1001)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 2756,
+          "input": 504,
+          "output": 177,
+          "cost": 0.0004848
+        },
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3184,
+          "input": 709,
+          "output": 210,
+          "cost": 0.0006196
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "fail",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "fail"
+      },
+      "notes": [
+        "No admitted interactive controls to exercise."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "A-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 2472,
+          "input": 504,
+          "output": 156,
+          "cost": 0.00045120000000000007
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token (1:8)",
+          "latencyMs": 2585,
+          "input": 688,
+          "output": 158,
+          "cost": 0.000528
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token (1:8)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1072,
+          "input": 468,
+          "output": 43,
+          "cost": 0.000256
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1107,
+          "input": 539,
+          "output": 44,
+          "cost": 0.000286
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1634,
+          "input": 468,
+          "output": 67,
+          "cost": 0.00029440000000000005
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1279,
+          "input": 563,
+          "output": 47,
+          "cost": 0.00030040000000000004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1663,
+          "input": 454,
+          "output": 37,
+          "cost": 0.0002408
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1403,
+          "input": 519,
+          "output": 37,
+          "cost": 0.00026680000000000003
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "A-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "A",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 989,
+          "input": 454,
+          "output": 32,
+          "cost": 0.00023280000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Expected UI or TEXT header",
+          "latencyMs": 1207,
+          "input": 514,
+          "output": 33,
+          "cost": 0.00025840000000000005
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected UI or TEXT header"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8580,
+          "input": 603,
+          "output": 504,
+          "cost": 0.0010476
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8311,
+          "input": 1141,
+          "output": 563,
+          "cost": 0.0013572
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 11133,
+          "input": 603,
+          "output": 354,
+          "cost": 0.0008076
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 5864,
+          "input": 991,
+          "output": 332,
+          "cost": 0.0009276000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 8690,
+          "input": 586,
+          "output": 573,
+          "cost": 0.0011512
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 9181,
+          "input": 1192,
+          "output": 566,
+          "cost": 0.0010752000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: State default must be integer",
+          "latencyMs": 6375,
+          "input": 586,
+          "output": 476,
+          "cost": 0.000996
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: State default must be integer",
+          "latencyMs": 8915,
+          "input": 1096,
+          "output": 577,
+          "cost": 0.0013616000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: State default must be integer"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 5033,
+          "input": 618,
+          "output": 319,
+          "cost": 0.0007576
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "B-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3786,
+          "input": 618,
+          "output": 297,
+          "cost": 0.0007224000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "B-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4846,
+          "input": 601,
+          "output": 303,
+          "cost": 0.0007252000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "B-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4817,
+          "input": 601,
+          "output": 316,
+          "cost": 0.000746
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "B-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'w', \"weights=[4\"... is not valid JSON",
+          "latencyMs": 6694,
+          "input": 664,
+          "output": 357,
+          "cost": 0.0008368000000000001
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 14835,
+          "input": 1064,
+          "output": 768,
+          "cost": 0.0016544
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9770,
+          "input": 664,
+          "output": 768,
+          "cost": 0.0014944000000000001
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9299,
+          "input": 1464,
+          "output": 768,
+          "cost": 0.0014304
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 13292,
+          "input": 647,
+          "output": 768,
+          "cost": 0.0014876000000000002
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 15053,
+          "input": 1447,
+          "output": 768,
+          "cost": 0.0018076000000000004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 10142,
+          "input": 647,
+          "output": 768,
+          "cost": 0.0014876000000000002
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9569,
+          "input": 1447,
+          "output": 768,
+          "cost": 0.0014236000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 9427,
+          "input": 646,
+          "output": 752,
+          "cost": 0.0014616000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'p', \"protocol F\"... is not valid JSON",
+          "latencyMs": 11044,
+          "input": 1432,
+          "output": 732,
+          "cost": 0.001744
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'p', \"protocol F\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 7237,
+          "input": 646,
+          "output": 372,
+          "cost": 0.0008536000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// Single-\"... is not valid JSON",
+          "latencyMs": 4679,
+          "input": 1052,
+          "output": 230,
+          "cost": 0.0007888
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token '/', \"// Single-\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 13242,
+          "input": 629,
+          "output": 749,
+          "cost": 0.00145
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unsupported syntax: MemberExpression",
+          "latencyMs": 6165,
+          "input": 1414,
+          "output": 336,
+          "cost": 0.0011032000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unsupported syntax: MemberExpression"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 5627,
+          "input": 629,
+          "output": 384,
+          "cost": 0.0008660000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 4234,
+          "input": 1047,
+          "output": 357,
+          "cost": 0.00099
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// BYOK ke\"... is not valid JSON",
+          "latencyMs": 2093,
+          "input": 596,
+          "output": 126,
+          "cost": 0.00044
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      1,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  }\n]",
+          "latencyMs": 1721,
+          "input": 763,
+          "output": 90,
+          "cost": 0.00044919999999999997
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      1,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  }\n]"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'G', \"Graphic\" is not valid JSON",
+          "latencyMs": 2777,
+          "input": 596,
+          "output": 119,
+          "cost": 0.0004288
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 5210,
+          "input": 756,
+          "output": 262,
+          "cost": 0.0007216000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected object fields"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4572,
+          "input": 579,
+          "output": 316,
+          "cost": 0.0007372
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 3788,
+          "input": 929,
+          "output": 259,
+          "cost": 0.000786
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "B-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "B",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4579,
+          "input": 579,
+          "output": 286,
+          "cost": 0.0006892000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8987,
+          "input": 899,
+          "output": 390,
+          "cost": 0.0009836
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 7324,
+          "input": 603,
+          "output": 428,
+          "cost": 0.0009260000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// Vector \"... is not valid JSON",
+          "latencyMs": 10737,
+          "input": 1065,
+          "output": 776,
+          "cost": 0.0016676000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token '/', \"// Vector \"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 5452,
+          "input": 603,
+          "output": 315,
+          "cost": 0.0007452
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8538,
+          "input": 952,
+          "output": 513,
+          "cost": 0.0012016000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 7690,
+          "input": 586,
+          "output": 509,
+          "cost": 0.0010488000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 7261,
+          "input": 1129,
+          "output": 444,
+          "cost": 0.001162
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 6115,
+          "input": 586,
+          "output": 394,
+          "cost": 0.0008648000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 7529,
+          "input": 1014,
+          "output": 565,
+          "cost": 0.0013096
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4735,
+          "input": 618,
+          "output": 303,
+          "cost": 0.000732
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "C-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4496,
+          "input": 618,
+          "output": 322,
+          "cost": 0.0007624000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "C-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4128,
+          "input": 601,
+          "output": 239,
+          "cost": 0.0006228000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "C-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4977,
+          "input": 601,
+          "output": 337,
+          "cost": 0.0007796
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "C-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'w', \"weights = \"... is not valid JSON",
+          "latencyMs": 7822,
+          "input": 664,
+          "output": 360,
+          "cost": 0.0008416000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      3,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      5,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      7,\n      \"sour",
+          "latencyMs": 7295,
+          "input": 1066,
+          "output": 389,
+          "cost": 0.0010488000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      3,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      5,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      7,\n      \"sour"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 18742,
+          "input": 664,
+          "output": 1602,
+          "cost": 0.0028288000000000002
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 41594,
+          "input": 2300,
+          "output": 2048,
+          "cost": 0.0035824
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"blocks\",\n      4,\n      \"source\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  }\n]",
+          "latencyMs": 23092,
+          "input": 647,
+          "output": 1322,
+          "cost": 0.0023740000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 23057,
+          "input": 2064,
+          "output": 1296,
+          "cost": 0.0023615999999999997
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 10152,
+          "input": 647,
+          "output": 774,
+          "cost": 0.0014972
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 13466,
+          "input": 1455,
+          "output": 1122,
+          "cost": 0.0019932
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 11414,
+          "input": 646,
+          "output": 602,
+          "cost": 0.0012216000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'C', \"Control {l\"... is not valid JSON",
+          "latencyMs": 7287,
+          "input": 1282,
+          "output": 504,
+          "cost": 0.001012
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'C', \"Control {l\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 9723,
+          "input": 646,
+          "output": 504,
+          "cost": 0.0010648
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'c', \"class:Cont\"... is not valid JSON",
+          "latencyMs": 7172,
+          "input": 1184,
+          "output": 410,
+          "cost": 0.0008223999999999999
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'c', \"class:Cont\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8880,
+          "input": 629,
+          "output": 497,
+          "cost": 0.0010468
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: State default must be integer",
+          "latencyMs": 5982,
+          "input": 1160,
+          "output": 318,
+          "cost": 0.0009727999999999999
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: State default must be integer"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 7255,
+          "input": 629,
+          "output": 623,
+          "cost": 0.0012484
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 3821,
+          "input": 1286,
+          "output": 287,
+          "cost": 0.0006664
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 5026,
+          "input": 596,
+          "output": 389,
+          "cost": 0.0008608000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'G', \"Graphic {l\"... is not valid JSON",
+          "latencyMs": 4532,
+          "input": 1019,
+          "output": 326,
+          "cost": 0.0009292
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'G', \"Graphic {l\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "C-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2176,
+          "input": 596,
+          "output": 87,
+          "cost": 0.0003776
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "C-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2081,
+          "input": 579,
+          "output": 86,
+          "cost": 0.00036920000000000003
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "C-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "C",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1951,
+          "input": 579,
+          "output": 85,
+          "cost": 0.00036760000000000004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// Protoco\"... is not valid JSON",
+          "latencyMs": 5537,
+          "input": 672,
+          "output": 343,
+          "cost": 0.0008176000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'A', \"Ax: intege\"... is not valid JSON",
+          "latencyMs": 6025,
+          "input": 1055,
+          "output": 394,
+          "cost": 0.0010524
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'A', \"Ax: intege\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8559,
+          "input": 672,
+          "output": 503,
+          "cost": 0.0010736
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// Inputs:\"... is not valid JSON",
+          "latencyMs": 6124,
+          "input": 1209,
+          "output": 376,
+          "cost": 0.000778
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token '/', \"// Inputs:\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 9430,
+          "input": 655,
+          "output": 627,
+          "cost": 0.0012652
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 9755,
+          "input": 1315,
+          "output": 586,
+          "cost": 0.0014636
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 28547,
+          "input": 655,
+          "output": 2048,
+          "cost": 0.0035388000000000004
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8646,
+          "input": 2228,
+          "output": 648,
+          "cost": 0.001928
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4638,
+          "input": 687,
+          "output": 274,
+          "cost": 0.0007132000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3955,
+          "input": 687,
+          "output": 305,
+          "cost": 0.0007628
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 5530,
+          "input": 670,
+          "output": 328,
+          "cost": 0.0007928000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4503,
+          "input": 670,
+          "output": 304,
+          "cost": 0.0007544000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'w', \"weights = \"... is not valid JSON",
+          "latencyMs": 7688,
+          "input": 733,
+          "output": 381,
+          "cost": 0.0009027999999999999
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'w', \"weights = \"... is not valid JSON",
+          "latencyMs": 6904,
+          "input": 1156,
+          "output": 394,
+          "cost": 0.0010928
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'w', \"weights = \"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// Protoco\"... is not valid JSON",
+          "latencyMs": 21802,
+          "input": 733,
+          "output": 1632,
+          "cost": 0.0029044
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'C', \"Control(la\"... is not valid JSON",
+          "latencyMs": 10179,
+          "input": 2404,
+          "output": 643,
+          "cost": 0.0019904000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'C', \"Control(la\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 13726,
+          "input": 716,
+          "output": 840,
+          "cost": 0.0016304000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unsupported syntax: MemberExpression",
+          "latencyMs": 14704,
+          "input": 1588,
+          "output": 777,
+          "cost": 0.0018784000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unsupported syntax: MemberExpression"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 11733,
+          "input": 716,
+          "output": 909,
+          "cost": 0.0017408000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 10196,
+          "input": 1659,
+          "output": 819,
+          "cost": 0.001974
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'p', \"protocol T\"... is not valid JSON",
+          "latencyMs": 4300,
+          "input": 715,
+          "output": 243,
+          "cost": 0.0006747999999999999
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Duplicate JSON field",
+          "latencyMs": 10937,
+          "input": 1000,
+          "output": 846,
+          "cost": 0.0017536000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Duplicate JSON field"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 67 (line 7 column 1)",
+          "latencyMs": 9780,
+          "input": 715,
+          "output": 567,
+          "cost": 0.0011932
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8894,
+          "input": 1329,
+          "output": 644,
+          "cost": 0.0012164
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 3875,
+          "input": 698,
+          "output": 169,
+          "cost": 0.0005496
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 5367,
+          "input": 899,
+          "output": 328,
+          "cost": 0.0008844000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4931,
+          "input": 698,
+          "output": 385,
+          "cost": 0.0008952000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 4293,
+          "input": 1117,
+          "output": 346,
+          "cost": 0.0010004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token '/', \"// BYOK co\"... is not valid JSON",
+          "latencyMs": 2822,
+          "input": 665,
+          "output": 195,
+          "cost": 0.000578
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'C', \"Control { \"... is not valid JSON",
+          "latencyMs": 2563,
+          "input": 901,
+          "output": 168,
+          "cost": 0.0006292
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'C', \"Control { \"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 8436,
+          "input": 665,
+          "output": 472,
+          "cost": 0.0010212
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 5391,
+          "input": 1169,
+          "output": 335,
+          "cost": 0.0010036
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1954,
+          "input": 648,
+          "output": 91,
+          "cost": 0.0004048
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2815,
+          "input": 648,
+          "output": 108,
+          "cost": 0.000432
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4686,
+          "input": 715,
+          "output": 330,
+          "cost": 0.000814
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'r', \"rows: Cont\"... is not valid JSON",
+          "latencyMs": 4569,
+          "input": 1079,
+          "output": 300,
+          "cost": 0.0009116
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'r', \"rows: Cont\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'r', \"rows: Cont\"... is not valid JSON",
+          "latencyMs": 6961,
+          "input": 715,
+          "output": 467,
+          "cost": 0.0010332
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token 'r', \"rows: Cont\"... is not valid JSON",
+          "latencyMs": 3794,
+          "input": 1225,
+          "output": 271,
+          "cost": 0.0006164000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected token 'r', \"rows: Cont\"... is not valid JSON"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 26555,
+          "input": 698,
+          "output": 2048,
+          "cost": 0.003556
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 3548,
+          "input": 2777,
+          "output": 242,
+          "cost": 0.001498
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4791,
+          "input": 698,
+          "output": 275,
+          "cost": 0.0007192
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 2690,
+          "input": 1007,
+          "output": 164,
+          "cost": 0.0006652
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 99 (line 7 column 1)",
+          "latencyMs": 7168,
+          "input": 706,
+          "output": 483,
+          "cost": 0.0010552
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4770,
+          "input": 1236,
+          "output": 337,
+          "cost": 0.0007264000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 101 (line 7 column 1)",
+          "latencyMs": 6386,
+          "input": 706,
+          "output": 472,
+          "cost": 0.0010376
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4745,
+          "input": 1225,
+          "output": 311,
+          "cost": 0.0009876
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: One live UI per artifact"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4707,
+          "input": 689,
+          "output": 344,
+          "cost": 0.000826
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 3682,
+          "input": 1067,
+          "output": 238,
+          "cost": 0.0008076
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: One live UI per artifact",
+          "latencyMs": 4927,
+          "input": 689,
+          "output": 301,
+          "cost": 0.0007572000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 4311,
+          "input": 1024,
+          "output": 292,
+          "cost": 0.0008768000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "D-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1316,
+          "input": 670,
+          "output": 53,
+          "cost": 0.0003528
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1414,
+          "input": 670,
+          "output": 52,
+          "cost": 0.00035119999999999997
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1373,
+          "input": 653,
+          "output": 55,
+          "cost": 0.0003492
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "D-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "D",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1295,
+          "input": 653,
+          "output": 52,
+          "cost": 0.00034439999999999997
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 4732,
+          "input": 852,
+          "output": 327,
+          "cost": 0.000864
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 7391,
+          "input": 1211,
+          "output": 479,
+          "cost": 0.0009436000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected object fields"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Duplicate JSON field",
+          "latencyMs": 8448,
+          "input": 852,
+          "output": 519,
+          "cost": 0.0011712
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Duplicate JSON field",
+          "latencyMs": 9122,
+          "input": 1403,
+          "output": 643,
+          "cost": 0.0012444
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Duplicate JSON field"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: State default must be integer",
+          "latencyMs": 10378,
+          "input": 778,
+          "output": 734,
+          "cost": 0.0014856000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 10327,
+          "input": 1548,
+          "output": 659,
+          "cost": 0.0016736000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 11667,
+          "input": 778,
+          "output": 769,
+          "cost": 0.0015416000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 10888,
+          "input": 1582,
+          "output": 650,
+          "cost": 0.0016728000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4827,
+          "input": 867,
+          "output": 281,
+          "cost": 0.0007964000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3779,
+          "input": 867,
+          "output": 298,
+          "cost": 0.0008236000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4974,
+          "input": 793,
+          "output": 302,
+          "cost": 0.0008004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Checklist candidate: true",
+        "Checked core ownership concepts. Ambiguous authority assignments require content review."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Invalid or duplicate state key",
+          "latencyMs": 5424,
+          "input": 793,
+          "output": 393,
+          "cost": 0.0009460000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Invalid or duplicate state key",
+          "latencyMs": 5545,
+          "input": 1220,
+          "output": 382,
+          "cost": 0.000792
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate state key"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 6892,
+          "input": 913,
+          "output": 391,
+          "cost": 0.0009908
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 10440,
+          "input": 1336,
+          "output": 469,
+          "cost": 0.0009392000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected object fields"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1008 (line 1 column 1009)",
+          "latencyMs": 4939,
+          "input": 913,
+          "output": 393,
+          "cost": 0.000994
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 895 (line 1 column 896)",
+          "latencyMs": 4901,
+          "input": 1355,
+          "output": 356,
+          "cost": 0.000766
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 895 (line 1 column 896)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 8921,
+          "input": 839,
+          "output": 535,
+          "cost": 0.0011916
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 9373,
+          "input": 1407,
+          "output": 497,
+          "cost": 0.0010124
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Syntax balance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 8715,
+          "input": 839,
+          "output": 721,
+          "cost": 0.0014892000000000002
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 10661,
+          "input": 1593,
+          "output": 721,
+          "cost": 0.0017908000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 7493,
+          "input": 895,
+          "output": 499,
+          "cost": 0.0011564000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 6879,
+          "input": 1426,
+          "output": 499,
+          "cost": 0.0010232000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected object fields"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1896 (line 1 column 1897)",
+          "latencyMs": 9833,
+          "input": 895,
+          "output": 712,
+          "cost": 0.0014972
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1896 (line 1 column 1897)",
+          "latencyMs": 13177,
+          "input": 1656,
+          "output": 712,
+          "cost": 0.0013792000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 1896 (line 1 column 1897)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: State default must be integer",
+          "latencyMs": 6342,
+          "input": 821,
+          "output": 344,
+          "cost": 0.0008788
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Invalid or duplicate declaration",
+          "latencyMs": 5484,
+          "input": 1200,
+          "output": 351,
+          "cost": 0.0010416
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate declaration"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unknown or cyclic reference: $baseAllowance",
+          "latencyMs": 5132,
+          "input": 821,
+          "output": 364,
+          "cost": 0.0009107999999999999
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unknown or cyclic reference: $baseAllowance",
+          "latencyMs": 4994,
+          "input": 1222,
+          "output": 375,
+          "cost": 0.0007816
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unknown or cyclic reference: $baseAllowance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1654,
+          "input": 845,
+          "output": 77,
+          "cost": 0.0004612
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2148,
+          "input": 845,
+          "output": 67,
+          "cost": 0.0004452
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1823,
+          "input": 771,
+          "output": 88,
+          "cost": 0.0004492
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2587,
+          "input": 771,
+          "output": 87,
+          "cost": 0.00044760000000000004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 4321,
+          "input": 895,
+          "output": 302,
+          "cost": 0.0008412000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 4537,
+          "input": 1229,
+          "output": 302,
+          "cost": 0.0006676000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected object fields"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4895,
+          "input": 895,
+          "output": 297,
+          "cost": 0.0008332000000000001
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "cols"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling Count",
+                "value": 2
+              },
+              {
+                "label": "Water Needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling Count",
+                "value": 24
+              },
+              {
+                "label": "Water Needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3010,
+          "input": 821,
+          "output": 189,
+          "cost": 0.0006308
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "cols"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedlings",
+                "value": 2
+              },
+              {
+                "label": "Water (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedlings",
+                "value": 24
+              },
+              {
+                "label": "Water (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 4012,
+          "input": 821,
+          "output": 192,
+          "cost": 0.0006356000000000002
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "columns"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedlings",
+                "value": 2
+              },
+              {
+                "label": "Water (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedlings",
+                "value": 24
+              },
+              {
+                "label": "Water (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 705 (line 1 column 706)",
+          "latencyMs": 4972,
+          "input": 886,
+          "output": 313,
+          "cost": 0.0008552000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 705 (line 1 column 706)",
+          "latencyMs": 4369,
+          "input": 1246,
+          "output": 313,
+          "cost": 0.000692
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 705 (line 1 column 706)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 3841,
+          "input": 886,
+          "output": 275,
+          "cost": 0.0007944000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 619 (line 1 column 620)",
+          "latencyMs": 4393,
+          "input": 1193,
+          "output": 276,
+          "cost": 0.0006116
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 619 (line 1 column 620)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3419,
+          "input": 812,
+          "output": 206,
+          "cost": 0.0006544000000000001
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "locker",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Function capability denied: Control",
+          "latencyMs": 3253,
+          "input": 812,
+          "output": 208,
+          "cost": 0.0006576
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Function capability denied: Control",
+          "latencyMs": 3199,
+          "input": 1055,
+          "output": 204,
+          "cost": 0.0007484000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Function capability denied: Control"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "E-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1483,
+          "input": 850,
+          "output": 52,
+          "cost": 0.0004232
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1296,
+          "input": 850,
+          "output": 53,
+          "cost": 0.0004248
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1483,
+          "input": 776,
+          "output": 44,
+          "cost": 0.0003808000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "E-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "E",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1341,
+          "input": 776,
+          "output": 55,
+          "cost": 0.00039840000000000003
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-B01-json-1701",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9464,
+          "input": 852,
+          "output": 2048,
+          "cost": 0.018088
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9952,
+          "input": 2932,
+          "output": 2048,
+          "cost": 0.018216
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B01-json-1702",
+      "task": "B01",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 8983,
+          "input": 852,
+          "output": 2048,
+          "cost": 0.018088
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9907,
+          "input": 2932,
+          "output": 2048,
+          "cost": 0.018216
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B01-oui-1701",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 4160,
+          "input": 778,
+          "output": 466,
+          "cost": 0.0052840000000000005
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 2361,
+          "input": 1275,
+          "output": 458,
+          "cost": 0.004678000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Syntax balance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B01-oui-1702",
+      "task": "B01",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 3052,
+          "input": 778,
+          "output": 435,
+          "cost": 0.005036
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 2372,
+          "input": 1244,
+          "output": 405,
+          "cost": 0.004192
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Syntax balance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B02-json-1701",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unknown component",
+          "latencyMs": 2826,
+          "input": 867,
+          "output": 466,
+          "cost": 0.005462
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unknown component",
+          "latencyMs": 2727,
+          "input": 1364,
+          "output": 456,
+          "cost": 0.004648
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unknown component"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B02-json-1702",
+      "task": "B02",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 960 (line 1 column 961)",
+          "latencyMs": 3125,
+          "input": 867,
+          "output": 389,
+          "cost": 0.004846
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 736 (line 1 column 737)",
+          "latencyMs": 1931,
+          "input": 1303,
+          "output": 349,
+          "cost": 0.005398
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 736 (line 1 column 737)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B02-oui-1701",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected token (1:8)",
+          "latencyMs": 2924,
+          "input": 793,
+          "output": 359,
+          "cost": 0.004458
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Malformed expression token",
+          "latencyMs": 2957,
+          "input": 1187,
+          "output": 337,
+          "cost": 0.00507
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Malformed expression token"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B02-oui-1702",
+      "task": "B02",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Collection budget",
+          "latencyMs": 2996,
+          "input": 793,
+          "output": 437,
+          "cost": 0.005082
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Collection budget",
+          "latencyMs": 2250,
+          "input": 1261,
+          "output": 389,
+          "cost": 0.005634000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Collection budget"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B03-json-1701",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 824 (line 1 column 825)",
+          "latencyMs": 2214,
+          "input": 913,
+          "output": 353,
+          "cost": 0.0046500000000000005
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 9065,
+          "input": 1313,
+          "output": 2048,
+          "cost": 0.01901
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B03-json-1702",
+      "task": "B03",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 1285 (line 1 column 1286)",
+          "latencyMs": 3151,
+          "input": 913,
+          "output": 570,
+          "cost": 0.006386
+        },
+        {
+          "status": "truncated",
+          "transport": false,
+          "category": "truncated",
+          "diagnostic": "Incomplete output: length",
+          "latencyMs": 8106,
+          "input": 1534,
+          "output": 2048,
+          "cost": 0.019452
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Incomplete output: length"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B03-oui-1701",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Invalid or duplicate state key",
+          "latencyMs": 2577,
+          "input": 839,
+          "output": 408,
+          "cost": 0.004942
+        },
+        {
+          "status": "rejected",
+          "transport": false,
+          "category": "envelope",
+          "diagnostic": "Error: Invalid or duplicate state key",
+          "latencyMs": 2391,
+          "input": 1281,
+          "output": 399,
+          "cost": 0.005754000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "fail",
+        "specification": "NE",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Invalid or duplicate state key"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B03-oui-1702",
+      "task": "B03",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 2510,
+          "input": 839,
+          "output": 409,
+          "cost": 0.004950000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 2336,
+          "input": 1279,
+          "output": 409,
+          "cost": 0.004294
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Syntax balance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B04-json-1701",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 3279,
+          "input": 895,
+          "output": 509,
+          "cost": 0.005862
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "cabin",
+          "gold",
+          "weight"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "fail",
+        "tested": 1,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 32
+              },
+              {
+                "label": "Excess fee ($)",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "reason": "No stable observable output matches the independent mapping"
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "fail",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "No stable observable output matches the independent mapping",
+        "Independent review required for explanatory claims.",
+        "Observed mapping differs from independent oracle or evaluation failed; see counterexample."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-B04-json-1702",
+      "task": "B04",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected object fields",
+          "latencyMs": 3200,
+          "input": 895,
+          "output": 513,
+          "cost": 0.005894000000000001
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Expected ',' or '}' after property value in JSON at position 1187 (line 1 column 1188)",
+          "latencyMs": 2532,
+          "input": 1440,
+          "output": 498,
+          "cost": 0.006864000000000001
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected ',' or '}' after property value in JSON at position 1187 (line 1 column 1188)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B04-oui-1701",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2278,
+          "input": 821,
+          "output": 292,
+          "cost": 0.003978000000000001
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "cabin",
+          "gold",
+          "bagweight"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 124,
+        "required": 124,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                0,
+                10
+              ],
+              "outputs": [
+                23,
+                0
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 23
+              },
+              {
+                "label": "Excess Fee ($)",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                1,
+                40
+              ],
+              "outputs": [
+                37,
+                45
+              ]
+            },
+            "actual": [
+              {
+                "label": "Allowance (kg)",
+                "value": 37
+              },
+              {
+                "label": "Excess Fee ($)",
+                "value": 45
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-B04-oui-1702",
+      "task": "B04",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 2057,
+          "input": 821,
+          "output": 318,
+          "cost": 0.004186
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 1907,
+          "input": 1170,
+          "output": 316,
+          "cost": 0.004868
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Syntax balance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-B06-json-1701",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1181,
+          "input": 845,
+          "output": 86,
+          "cost": 0.002378
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-B06-json-1702",
+      "task": "B06",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1286,
+          "input": 845,
+          "output": 77,
+          "cost": 0.002306
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-B06-oui-1701",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1074,
+          "input": 771,
+          "output": 76,
+          "cost": 0.0021500000000000004
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-B06-oui-1702",
+      "task": "B06",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1036,
+          "input": 771,
+          "output": 85,
+          "cost": 0.002222
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "fail",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Inference credential and provider usage responsibility required; encryption-key custody is a different meaning."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T11-json-1701",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 946 (line 1 column 947)",
+          "latencyMs": 3381,
+          "input": 895,
+          "output": 581,
+          "cost": 0.006438
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Expected ',' or '}' after property value in JSON at position 1605 (line 1 column 1606)",
+          "latencyMs": 3603,
+          "input": 1523,
+          "output": 623,
+          "cost": 0.00611
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Expected ',' or '}' after property value in JSON at position 1605 (line 1 column 1606)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-T11-json-1702",
+      "task": "T11",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 2044,
+          "input": 895,
+          "output": 315,
+          "cost": 0.00431
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "cols"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedlings",
+                "value": 2
+              },
+              {
+                "label": "Water Needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedlings",
+                "value": 24
+              },
+              {
+                "label": "Water Needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T11-oui-1701",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 1708,
+          "input": 821,
+          "output": 204,
+          "cost": 0.0032740000000000004
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Syntax balance",
+          "latencyMs": 1581,
+          "input": 1056,
+          "output": 205,
+          "cost": 0.0037520000000000006
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Syntax balance"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-T11-oui-1702",
+      "task": "T11",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1440,
+          "input": 821,
+          "output": 187,
+          "cost": 0.003138
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "rows",
+          "cols"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 20,
+        "required": 20,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                1,
+                2
+              ],
+              "outputs": [
+                2,
+                0.5
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling Count",
+                "value": 2
+              },
+              {
+                "label": "Water Needed (litres)",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                4,
+                6
+              ],
+              "outputs": [
+                24,
+                6
+              ]
+            },
+            "actual": [
+              {
+                "label": "Seedling Count",
+                "value": 24
+              },
+              {
+                "label": "Water Needed (litres)",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T12-json-1701",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1782,
+          "input": 886,
+          "output": 290,
+          "cost": 0.004092
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "lockerSize",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T12-json-1702",
+      "task": "T12",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 655 (line 1 column 656)",
+          "latencyMs": 2121,
+          "input": 886,
+          "output": 293,
+          "cost": 0.004116
+        },
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Unexpected non-whitespace character after JSON at position 657 (line 1 column 658)",
+          "latencyMs": 1888,
+          "input": 1226,
+          "output": 292,
+          "cost": 0.0032520000000000005
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "fail",
+        "intent": "NE",
+        "domain": "NE",
+        "behavior": "NE",
+        "presentation": "NE",
+        "modality": "NE"
+      },
+      "notes": [
+        "Error: Unexpected non-whitespace character after JSON at position 657 (line 1 column 658)"
+      ],
+      "corePass": false,
+      "exampleCopy": null
+    },
+    {
+      "id": "F-T12-oui-1701",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "rejected",
+          "transport": true,
+          "category": "specification",
+          "diagnostic": "Error: Expected Stack root",
+          "latencyMs": 1581,
+          "input": 812,
+          "output": 199,
+          "cost": 0.003216
+        },
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1575,
+          "input": 1043,
+          "output": 180,
+          "cost": 0.003526
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "size",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T12-oui-1702",
+      "task": "T12",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "accepted",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1610,
+          "input": 812,
+          "output": 192,
+          "cost": 0.00316
+        }
+      ],
+      "behavior": {
+        "roleBindings": [
+          "size",
+          "blocks"
+        ],
+        "domain": "pass",
+        "issues": [],
+        "behavior": "pass",
+        "tested": 16,
+        "required": 16,
+        "observations": [
+          {
+            "sample": {
+              "inputs": [
+                0,
+                1
+              ],
+              "outputs": [
+                2
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "sample": {
+              "inputs": [
+                1,
+                8
+              ],
+              "outputs": [
+                40
+              ]
+            },
+            "actual": [
+              {
+                "label": "Total Credits",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "status": {
+        "transport": "pass",
+        "specification": "pass",
+        "intent": "pass",
+        "domain": "NE",
+        "behavior": "pass",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Independent review required for explanatory claims."
+      ],
+      "corePass": false,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T13-json-1701",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 938,
+          "input": 850,
+          "output": 43,
+          "cost": 0.002044
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T13-json-1702",
+      "task": "T13",
+      "protocol": "json",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 749,
+          "input": 850,
+          "output": 42,
+          "cost": 0.002036
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T13-oui-1701",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1701,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 1192,
+          "input": 776,
+          "output": 50,
+          "cost": 0.0019520000000000002
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    },
+    {
+      "id": "F-T13-oui-1702",
+      "task": "T13",
+      "protocol": "oui",
+      "seed": 1702,
+      "arm": "F",
+      "checks": [
+        {
+          "status": "text",
+          "transport": true,
+          "category": null,
+          "latencyMs": 977,
+          "input": 776,
+          "output": 43,
+          "cost": 0.0018960000000000003
+        }
+      ],
+      "behavior": null,
+      "status": {
+        "transport": "pass",
+        "specification": "NA",
+        "intent": "pass",
+        "domain": "pass",
+        "behavior": "NA",
+        "presentation": "NE",
+        "modality": "pass"
+      },
+      "notes": [
+        "Requires the inner binding margin in a facing-page spread and one sentence."
+      ],
+      "corePass": true,
+      "exampleCopy": false
+    }
+  ]
+}
